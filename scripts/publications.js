@@ -86,9 +86,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 pubItem.style.color = 'inherit';
             }
 
+            // Function to highlight Manuel Castillo's name in bold
+            const formatAuthors = (authorsStr) => {
+                const searchNames = [
+                    "Castillo, Manuel I",
+                    "Castillo, Manuel",
+                    "Castillo, M. I.",
+                    "Castillo M. I.",
+                    "Castillo, M.I.",
+                    "Castillo Silva, Manuel Ignacio"
+                ];
+
+                let formatted = authorsStr;
+                searchNames.forEach(name => {
+                    // Using regex to match the name precisely including boundaries/commas
+                    const regex = new RegExp(`(${name.replace('.', '\\.')})`, 'gi');
+                    formatted = formatted.replace(regex, '<strong>$1</strong>');
+                });
+                return formatted;
+            };
+
             pubItem.innerHTML = `
                 <div class="apa-entry">
-                    <span class="apa-authors">${pub.authors}</span>
+                    <span class="apa-authors">${formatAuthors(pub.authors)}</span>
                     <span class="apa-year"> (${pub.year || 'n.d.'}).</span>
                     <span class="apa-title"> ${pub.title}.</span>
                     <span class="apa-journal"> <i>${pub.journal}</i>.</span>

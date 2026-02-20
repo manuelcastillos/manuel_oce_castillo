@@ -1,51 +1,46 @@
 # Guía de Despliegue y Mantenimiento
 
-Este documento explica cómo subir tu sitio web a internet de forma gratuita y cómo actualizarlo fácilmente en el futuro. He preparado los archivos para que el sitio se llame **manuel-oce-castillo**.
+Este documento explica cómo subir tu sitio web a internet de forma gratuita y cómo actualizarlo fácilmente en el futuro.
 
 ---
 
-## Opción 1: GitHub Pages (Recomendada para académicos)
+## Opción 1: GitHub Pages (Recomendada)
 
-Esta opción es gratuita, profesional y permanente.
+### Paso 1: Configurar el Repositorio Local
+Abre una terminal (**Git Bash** o PowerShell) y ejecuta estos comandos uno por uno para subir tus archivos al repositorio que creaste (`manuel_oce_castillo` con guiones bajos):
 
-### Paso 1: Crear el Repositorio
-1. Ve a [GitHub.com](https://github.com/) e inicia sesión (o crea una cuenta).
-2. Haz clic en el botón **"New"** para crear un nuevo repositorio.
-3. Nombre del repositorio: `manuel-oce-castillo`
-4. Selecciónalo como **Public**.
-5. Haz clic en **"Create repository"**.
+```bash
+# Entrar a la carpeta
+cd /d/Proyectos_atigravity/web_personal
 
-### Paso 2: Subir los Archivos
-1. En la página de tu nuevo repositorio, haz clic en el enlace que dice **"uploading an existing file"**.
-2. Arrastra y suelta **TODOS** los archivos de la carpeta `web_personal` (index.html, carpetas scripts, styles, images, etc.).
-3. Espera a que se carguen y haz clic en **"Commit changes"**.
+# 1. Quitar configuración previa por si el nombre era distinto
+git remote remove origin
 
-### Paso 3: Activar la Web
-1. Ve a la pestaña **"Settings"** de tu repositorio.
-2. En el menú de la izquierda, haz clic en **"Pages"**.
-3. En **"Build and deployment"**, asegúrate de que esté en "Deploy from a branch" y selecciona la rama `main` y la carpeta `/ (root)`.
-4. Haz clic en **Save**.
-5. En unos minutos, tu sitio estará vivo en: `https://tu-usuario.github.io/manuel-oce-castillo/`
+# 2. Configurar el repositorio con el nombre exacto (con guiones bajos)
+git remote add origin https://github.com/manuelcastillos/manuel_oce_castillo.git
 
----
+# 3. Asegurar que la rama se llame main
+git branch -M main
 
-## Opción 2: Netlify Drop (La más rápida)
+# 4. Subir los archivos
+git push -u origin main
+```
 
-Si quieres verla online **YA mismo** sin crear repositorios:
-
-1. Ve a [Netlify Drop](https://app.netlify.com/drop).
-2. Arrastra la carpeta completa `web_personal` al recuadro.
-3. ¡Listo! Te dará una URL aleatoria que puedes cambiar en los ajustes del sitio a `manuel-oce-castillo.netlify.app`.
+### Paso 2: Activar la Web en GitHub
+1. Ve a tu repositorio: `https://github.com/manuelcastillos/manuel_oce_castillo`
+2. Ve a la pestaña **"Settings"**.
+3. En el menú de la izquierda, haz clic en **"Pages"**.
+4. En **"Build and deployment"**, selecciona la rama `main` y la carpeta `/(root)`.
+5. Haz clic en **Save**.
+6. Tu sitio estará vivo en: `https://manuelcastillos.github.io/manuel_oce_castillo/`
 
 ---
 
 ## Cómo Actualizar el Sitio en el Futuro
 
-He creado un archivo llamado `actualizar_sitio.bat` en tu carpeta. Cuando hagas cambios:
-
-1. Ejecuta `actualizar_sitio.bat` haciendo doble clic.
-2. Esto creará un archivo llamado `web_actualizada.zip`.
-3. Ve a tu repositorio en GitHub o al panel de Netlify y sube ese nuevo archivo (o extrae su contenido allí).
-
-> [!TIP]
-> Si en el futuro instalas **Git**, podré automatizar esto para que se actualice con un solo comando. Por ahora, este método manual es el más seguro dado que no tenemos herramientas de comandos instaladas.
+Cada vez que hagas cambios, abre la terminal y ejecuta:
+```bash
+git add .
+git commit -m "Mis nuevos cambios"
+git push origin main
+```
