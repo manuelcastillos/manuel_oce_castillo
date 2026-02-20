@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuel I. Castillo | Oceanógrafo Físico</title>
+    <meta name="description"
+        content="Portafolio personal de Manuel I. Castillo, Oceanógrafo Físico y Profesor Adjunto.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">MC.</div>
+        <ul class="nav-links">
+            <li><a href="index.html#home" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="index.html#about" data-i18n="nav.about">Sobre Mí</a></li>
+            <li><a href="index.html#research" data-i18n="nav.research">Investigación</a></li>
+            <li><a href="publicaciones.html" class="active" data-i18n="nav.publications">Publicaciones</a></li>
+            <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
+            <li><a href="index.html#gallery" data-i18n="nav.field">Terreno</a></li>
+            <li><a href="index.html#contact" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header section text-center">
+        <div class="container">
+            <h1 class="animate-text" data-i18n="publicaciones.title">Publicaciones Científicas</h1>
+            <p class="subtitle animate-text delay-1" data-i18n="publicaciones.subtitle">Investigación y contribuciones
+                académicas</p>
+            <div class="cta-buttons animate-text delay-2">
+                <a href="./index.html" class="btn btn-outline" data-i18n="proyectos.back_home"><i
+                        class="fa-solid fa-arrow-left"></i> Volver al
+                    Inicio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Detailed List -->
+    <section class="section">
+        <div class="container">
+            <div id="publications-list" class="publications-list-full">
+                <p class="loading-text" data-i18n="publicaciones.loading">Cargando listado completo...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Manuel I. Castillo. Diseño inspirado en el océano.</p>
+    </footer>
+
+    <script src="./scripts/translations.js"></script>
+    <script src="./scripts/i18n.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/publications.js"></script>
+</body>
+
+</html>

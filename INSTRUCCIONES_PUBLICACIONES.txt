@@ -1,0 +1,26 @@
+# Instrucciones para Publicaciones (Formato CSV)
+
+Para incorporar tus publicaciones en el sitio web, sigue estos pasos:
+
+1.  **Ubicación del archivo:**
+    Debes colocar tu archivo CSV en la carpeta:
+    `d:\Proyectos_atigravity\web_personal\data\`
+
+2.  **Nombre del archivo:**
+    El archivo DEBE llamarse: `publicaciones.csv`
+
+3.  **Formato del contenido:**
+    El archivo debe tener las siguientes columnas en este orden exacto (separadas por comas):
+    `Titulo, Autores, Revista, Año, Link`
+
+    **Ejemplo del contenido del archivo (puedes copiar esto en Excel y guardar como CSV):**
+
+    ```csv
+    Dynamical response of the Patagonian fjords, Castillo M.I. & Author B., Journal of Geophysical Research, 2023, https://doi.org/10.1002/example
+    Another strict APA paper, Castillo M.I. et al., Estuarine Coastal and Shelf Science, 2022, https://doi.org/10.1016/example
+    ```
+
+    *Notas:*
+    - No incluyas una fila de encabezados si no quieres, o si la incluyes, asegúrate de que la primera columna contenga la palabra "Titulo" (el sistema intenta detectarla para ignorarla).
+    - Si usas Excel, guarda como "CSV (delimitado por comas)".
+    - Si tus títulos o autores tienen comas (ej: "Castillo, M.I."), asegúrate de que ese campo esté entre comillas dobles, ejemplo: `"Castillo, M.I."`. Excel lo hace automático.

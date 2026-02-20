@@ -1,0 +1,40 @@
+/* Full List Styles */
+.publications-list-full {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.publications-list-full .publication-item {
+    font-size: 0.9rem;
+    /* Smaller font as requested */
+    padding: 10px 15px;
+    border-left-width: 2px;
+}
+
+.publications-list-full .apa-authors {
+    color: var(--color-primary);
+}
+
+.page-header {
+    background: linear-gradient(135deg, var(--color-bg) 0%, #fff 100%);
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.stat-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.stat-item.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.stat-item.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}

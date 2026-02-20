@@ -1,0 +1,21 @@
+# Instrucciones para agregar tus fotos
+
+Para que ty sitio web se vea increíble con tus propias fotos, sigue estos pasos:
+
+1.  **Copia tus fotos** dentro de la carpeta:
+    `d:\Proyectos_atigravity\web_personal\assets\`
+
+2.  **Renombra tus fotos** para que coincidan con los nombres que espera el sitio web. De esta forma se cargarán automáticamente sin que tengas que tocar el código.
+
+    Lista de nombres esperados:
+
+    *   **Foto de Perfil**: `perfil.jpg` (Reemplazará al ícono de astronauta)
+    *   **Fondo Sección Falkor**: `falkor_bg.jpg` (Fondo oscuro de toda la sección)
+    *   **Tarjeta Falkor**: `falkor_card.jpg` (Opcional. Si no existe, se usará el fondo anterior)
+    *   **Tarjeta Antártica**: `antarctica_card.jpg` (Reemplazará el icono de hielo automáticamente)
+    *   **Tarjeta Seals**: `seals_card.jpg` (Reemplazará el icono de huella automáticamente)
+    *   **Galería 1** a **6**: `galeria_1.jpg`, etc.
+
+    *Nota: Si después de subir las fotos no las ves, asegúrate de refrescar la página (Ctrl+F5).*
+
+3.  ¡Listo! El sitio detectará tus fotos automáticamente.

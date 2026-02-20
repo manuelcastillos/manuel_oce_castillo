@@ -1,0 +1,212 @@
+﻿.layer {
+    position: absolute;
+    width: 200%;
+    left: -100%;
+    will-change: transform;
+    mask-image: radial-gradient(ellipse 100% 100% at 50% 100%, transparent 98%, black 100%);
+    -webkit-mask-image: radial-gradient(ellipse 100% 100% at 50% 100%, transparent 98%, black 100%);
+}
+
+/* Surface layer - lightest cyan/turquoise */
+.layer-1 {
+    top: 0;
+    height: 25%;
+    background: linear-gradient(to bottom, rgba(135, 206, 235, 0.7), rgba(100, 180, 220, 0.6));
+    animation: wave1 20s linear infinite;
+    mask-image: radial-gradient(ellipse 120% 50% at 50% 100%, transparent 96%, black 100%);
+}
+
+/* Mid-upper layer - medium blue */
+.layer-2 {
+    top: 20%;
+    height: 30%;
+    background: linear-gradient(to bottom, rgba(70, 150, 200, 0.6), rgba(50, 120, 180, 0.5));
+    animation: wave2 25s linear infinite;
+    animation-delay: -7s;
+    mask-image: radial-gradient(ellipse 110% 60% at 50% 100%, transparent 97%, black 100%);
+}
+
+/* Mid-lower layer - deeper blue */
+.layer-3 {
+    top: 45%;
+    height: 30%;
+    background: linear-gradient(to bottom, rgba(30, 90, 150, 0.5), rgba(20, 60, 120, 0.4));
+    animation: wave3 30s linear infinite;
+    animation-delay: -14s;
+    mask-image: radial-gradient(ellipse 105% 70% at 50% 100%, transparent 98%, black 100%);
+}
+
+/* Deep layer - darkest blue */
+.layer-4 {
+    top: 70%;
+    height: 30%;
+    background: linear-gradient(to bottom, rgba(10, 40, 80, 0.4), rgba(5, 20, 50, 0.3));
+    animation: wave4 35s linear infinite;
+    animation-delay: -21s;
+    mask-image: radial-gradient(ellipse 100% 80% at 50% 100%, transparent 99%, black 100%);
+}
+
+@keyframes wave1 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(50%);
+    }
+}
+
+@keyframes wave2 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(50%);
+    }
+}
+
+@keyframes wave3 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(50%);
+    }
+}
+
+@keyframes wave4 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(50%);
+    }
+}
+
+/* ADCP Realistic Visualization */
+.adcp-visualization.realistic {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 600px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    pointer-events: none;
+}
+
+.nortek-device {
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+}
+
+.device-top {
+    width: 45px;
+    height: 12px;
+    background: #222;
+    border-radius: 6px 6px 0 0;
+}
+
+.device-body {
+    width: 40px;
+    height: 50px;
+    background: #111;
+    border-radius: 2px;
+}
+
+.device-base {
+    width: 50px;
+    height: 5px;
+    background: #000;
+}
+
+/* Beams */
+.adcp-beams {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.beam-ray {
+    position: absolute;
+    bottom: 0;
+    width: 2px;
+    height: 150%;
+    background: rgba(255, 255, 0, 0.7);
+    /* Yellow beam */
+    transform-origin: bottom center;
+    box-shadow: 0 0 8px rgba(255, 255, 0, 0.4);
+}
+
+.angle-left {
+    transform: rotate(-22deg);
+}
+
+.angle-right {
+    transform: rotate(22deg);
+}
+
+.bins {
+    position: absolute;
+    left: -12px;
+    width: 26px;
+    height: 100%;
+    background: repeating-linear-gradient(to top,
+            transparent,
+            transparent 14px,
+            rgba(255, 255, 255, 0.6) 14px,
+            rgba(255, 255, 255, 0.6) 15px);
+}
+
+/* Acoustic Pulse Animation */
+.beam-ray::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 40px;
+    left: -2px;
+    background: linear-gradient(to top, transparent, white, transparent);
+    animation: pingPulse 2s linear infinite;
+    opacity: 0;
+}
+
+@keyframes pingPulse {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    90% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-800px);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .adcp-visualization.realistic {
+        transform: translateX(-50%) scale(0.6);
+    }
+}

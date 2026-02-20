@@ -1,0 +1,208 @@
+/* Profile Image Modal Styles */
+.profile-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 0.3s ease;
+}
+
+.profile-modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 10000;
+}
+
+.modal-close:hover {
+    color: #ccc;
+}
+
+.modal-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    max-height: 90%;
+    animation: zoomIn 0.3s ease;
+}
+
+.modal-image-container {
+    max-width: 80vw;
+    max-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+    position: relative;
+    /* For logo positioning */
+}
+
+.modal-logos-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-lab-logo {
+    width: 92px;
+    /* Increased 15% from 80px */
+    height: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.modal-caption {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-caption strong {
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    /* Increased size */
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: block;
+    /* Forced to separate lines */
+    margin: 5px 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-image-container {
+        max-width: 95vw;
+        max-height: 70vh;
+    }
+
+    .modal-close {
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+    }
+
+    .modal-caption strong {
+        font-size: 1rem;
+    }
+}
+
+/* Expedition Modal Specific Styles */
+.expedition-modal .modal-content-wrapper {
+    max-width: 1000px;
+    width: 90%;
+}
+
+.expedition-modal-layout {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background: rgba(10, 25, 41, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 0 50px rgba(0, 229, 255, 0.2);
+}
+
+.expedition-modal .modal-image-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.expedition-info {
+    flex: 1;
+    color: #fff;
+}
+
+.expedition-info h2 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    font-family: var(--font-heading);
+}
+
+.expedition-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.clickable-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clickable-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
+}
+
+@media (max-width: 900px) {
+    .expedition-modal-layout {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .expedition-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .expedition-info p {
+        font-size: 1rem;
+    }
+}

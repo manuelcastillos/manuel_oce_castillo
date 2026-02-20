@@ -1,0 +1,14 @@
+/* Publication Link Styling */
+.apa-title a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.apa-title a:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+/* Obsolete styles replaced by clickable publication items */

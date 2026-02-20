@@ -1,0 +1,51 @@
+/* APA Styling for Publications */
+.apa-style {
+    padding: 15px 20px;
+    border-left: 3px solid var(--color-primary);
+    background: var(--card-bg);
+    margin-bottom: 10px;
+    border-radius: 4px;
+    /* Less rounded for academic look */
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+.apa-entry {
+    text-indent: -20px;
+    /* Hanging indent */
+    padding-left: 20px;
+    font-family: var(--font-body);
+    /* Serif is traditional for APA, but keeping sans-serif for web consistency is usually better. Can switch to 'Times New Roman' if strictly requested. */
+}
+
+.apa-authors {
+    font-weight: 600;
+    color: var(--color-text-heading);
+}
+
+.apa-year {
+    color: var(--color-text-muted);
+}
+
+.apa-title {
+    font-weight: 500;
+}
+
+.apa-journal {
+    font-style: italic;
+    color: var(--color-secondary);
+}
+
+.pub-link {
+    display: inline-block;
+    color: var(--color-primary);
+    text-decoration: none;
+    word-break: break-all;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.pub-link:hover {
+    text-decoration: underline;
+    color: var(--color-accent);
+}
