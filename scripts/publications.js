@@ -89,20 +89,24 @@ document.addEventListener('DOMContentLoaded', () => {
             // Function to highlight Manuel Castillo's name in bold
             const formatAuthors = (authorsStr) => {
                 const searchNames = [
+                    "Castillo Silva, Manuel Ignacio",
+                    "Castillo, Manuel I.",
                     "Castillo, Manuel I",
                     "Castillo, Manuel",
                     "Castillo, M. I.",
                     "Castillo M. I.",
-                    "Castillo, M.I.",
-                    "Castillo Silva, Manuel Ignacio"
+                    "Castillo, M.I."
                 ];
 
                 let formatted = authorsStr;
-                searchNames.forEach(name => {
-                    // Using regex to match the name precisely including boundaries/commas
-                    const regex = new RegExp(`(${name.replace('.', '\\.')})`, 'gi');
-                    formatted = formatted.replace(regex, '<strong>$1</strong>');
-                });
+                for (const name of searchNames) {
+                    const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                    const regex = new RegExp(`(${escapedName})`, 'gi');
+                    if (regex.test(formatted)) {
+                        formatted = formatted.replace(regex, '<strong>$1</strong>');
+                        break; // Stop after the first match to avoid multiple boldings
+                    }
+                }
                 return formatted;
             };
 
