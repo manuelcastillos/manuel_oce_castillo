@@ -85,7 +85,7 @@
     <!-- About Section -->
     <section id="about" class="section about-section">
         <div class="container">
-            <h2 class="section-title">Sobre Mí</h2>
+            <h2 class="section-title" data-i18n="nav.about">Sobre Mí</h2>
             <div class="about-content">
                 <div class="about-image-container">
                     <div class="image-frame">
@@ -153,13 +153,17 @@
                         Proyecto SEALS <i class="fa-solid fa-link"></i></a>
                 </div>
                 <div class="highlight-visual">
-                    <div class="seals-card clickable-card featured-bg-card" data-title="Proyecto Anillo SEALS"
-                        style="background-image: url('images/antartica/imagen03.jpg'); background-size: cover; background-position: center; position: relative;">
+                    <div class="seals-card gallery-trigger clickable-card featured-bg-card" data-gallery="seals"
+                        data-title="Proyecto Anillo SEALS"
+                        style="background-image: url('images/anillo_seals/IMG_20250126_081128.jpg'); background-size: cover; background-position: center; position: relative; cursor: pointer;">
                         <div class="card-overlay"
                             style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.3);">
                         </div>
-                        <i class="fa-solid fa-paw seals-icon" style="position: relative; z-index: 1;"></i>
                         <div class="wave-pulse"></div>
+                        <div class="gallery-hint-overlay"
+                            style="position: absolute; bottom: 10px; right: 10px; color: white; font-size: 0.8em; z-index: 2;">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,13 +188,17 @@
                         data-i18n="highlights.antarctica_btn">Ver INACH <i class="fa-solid fa-snowflake"></i></a>
                 </div>
                 <div class="highlight-visual">
-                    <div class="antarctica-card antarctic-gallery-trigger"
-                        style="background-image: url('images/antartica/imagen07.jpg'); background-size: cover; background-position: center; position: relative; cursor: pointer;">
+                    <div class="antarctica-card gallery-trigger clickable-card featured-bg-card"
+                        data-gallery="antartica"
+                        style="background-image: url('images/antartica/05.03.2020.antartica.editadas.253.JPG'); background-size: cover; background-position: center; position: relative; cursor: pointer;">
                         <div class="card-overlay"
                             style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.3);">
                         </div>
-                        <i class="fa-solid fa-icicles ice-icon" style="position: relative; z-index: 1;"></i>
                         <div class="snow-animation"></div>
+                        <div class="gallery-hint-overlay"
+                            style="position: absolute; bottom: 10px; right: 10px; color: white; font-size: 0.8em; z-index: 2;">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -207,7 +215,8 @@
                     <p data-i18n="highlights.falkor_desc1">Participación en la prestigiosa expedición del
                         <strong>Schmidt Ocean Institute</strong>
                         explorando y mapeando cañones submarinos y fuentes hidrotermales en el margen continental de
-                        Chile.</p>
+                        Chile.
+                    </p>
                     <p data-i18n="highlights.falkor_desc2">Uso de tecnología de punta como el ROV SuBastian para
                         estudiar la biodiversidad de nuestros
                         fondos marinos.</p>
@@ -215,10 +224,17 @@
                         data-i18n="highlights.falkor_btn">Ver Expedición <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
                 <div class="highlight-visual">
-                    <div class="falkor-card clickable-card" data-title="Expedición R/V Falkor (too)"
-                        data-caption="Durante Octubre de 2024 acompañé las mediciones oceanográficas del Falkor (too) entre Coquimbo y Puerto Montt, logrando adquirir información de corrientes e hidrografía de estos sectores">
-                        <img src="images/falkor_bg.jpg" alt="R/V Falkor (too)" class="card-photo">
+                    <div class="falkor-card gallery-trigger clickable-card featured-bg-card" data-gallery="falkor"
+                        data-title="Expedición R/V Falkor (too)"
+                        style="background-image: url('images/falkor/IMG_20241102_202352.jpg'); background-size: cover; background-position: center; position: relative; cursor: pointer;">
+                        <div class="card-overlay"
+                            style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.3);">
+                        </div>
                         <div class="sonar-animation"></div>
+                        <div class="gallery-hint-overlay"
+                            style="position: absolute; bottom: 10px; right: 10px; color: white; font-size: 0.8em; z-index: 2;">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -231,19 +247,30 @@
             <h2 class="section-title" data-i18n="research_grid.title">Investigaciones Destacadas</h2>
             <div class="projects-grid">
                 <!-- Project Card: Anillo Seals -->
-                <div class="project-card">
+                <div class="project-card gallery-trigger" data-gallery="seals"
+                    style="background-image: linear-gradient(rgba(0, 50, 20, 0.6), rgba(0, 50, 20, 0.8)), url('images/anillo_seals/IMG_20250126_081128.jpg'); background-size: cover; background-position: center; color: white; cursor: pointer;">
                     <div class="card-content">
-                        <div class="icon-box"><i class="fa-solid fa-paw"></i></div>
-                        <h3 data-i18n="highlights.seals_title">Anillo Seals</h3>
-                        <p data-i18n="research_grid.seals_desc">Estudio en Tierra del Fuego utilizando elefantes marinos
+                        <div class="project-img-icon-overlay"
+                            style="margin-bottom: 15px; border: 3px solid white; width: 80px; height: 80px; border-radius: 50%; overflow: hidden; display: inline-block;">
+                            <img src="images/anillo_seals/IMG_20250126_081128.jpg" alt="Seals"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h3 style="color: white;" data-i18n="highlights.seals_title">Anillo Seals</h3>
+                        <p style="color: rgba(255,255,255,0.9);" data-i18n="research_grid.seals_desc">Estudio en Tierra
+                            del Fuego utilizando elefantes marinos
                             como sensores bio-oceanográficos
                             para monitorear condiciones extremas.</p>
-                        <span class="tag">ANILLO ATE220044</span>
+                        <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">ANILLO
+                            ATE220044</span>
+                        <div class="gallery-hint" style="color: white; margin-top: 15px;">
+                            <span data-i18n="research_grid.antarctica_hint">Click para ver galería</span> <i
+                                class="fa-solid fa-camera"></i>
+                        </div>
                     </div>
                 </div>
                 <!-- Project Card: Antártica -->
-                <div class="project-card featured-item antarctic-gallery-trigger"
-                    style="background-image: linear-gradient(rgba(0, 18, 50, 0.6), rgba(0, 18, 50, 0.8)), url('images/antartica/imagen07.jpg'); background-size: cover; background-position: center; color: white; cursor: pointer;">
+                <div class="project-card featured-item gallery-trigger" data-gallery="antartica"
+                    style="background-image: linear-gradient(rgba(0, 18, 50, 0.6), rgba(0, 18, 50, 0.8)), url('images/antartica/05.03.2020.antartica.editadas.253.JPG'); background-size: cover; background-position: center; color: white; cursor: pointer;">
                     <div class="card-content">
                         <div class="project-img-icon-overlay"
                             style="margin-bottom: 15px; border: 3px solid white; width: 80px; height: 80px; border-radius: 50%; overflow: hidden; display: inline-block;">
@@ -262,20 +289,36 @@
                     </div>
                 </div>
                 <!-- Project Card: Falkor -->
-                <div class="project-card">
+                <div class="project-card gallery-trigger" data-gallery="falkor"
+                    style="background-image: linear-gradient(rgba(0, 30, 80, 0.6), rgba(0, 30, 80, 0.8)), url('images/falkor/IMG_20241102_202352.jpg'); background-size: cover; background-position: center; color: white; cursor: pointer;">
                     <div class="card-content">
-                        <div class="icon-box"><i class="fa-solid fa-ship"></i></div>
-                        <h3 data-i18n="research_grid.falkor_title">Expedición R/V Falkor (too)</h3>
-                        <p data-i18n="research_grid.falkor_desc">Exploración de cañones submarinos y fuentes
+                        <div class="project-img-icon-overlay"
+                            style="margin-bottom: 15px; border: 3px solid white; width: 80px; height: 80px; border-radius: 50%; overflow: hidden; display: inline-block;">
+                            <img src="images/falkor/IMG_20241102_202352.jpg" alt="Falkor"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h3 style="color: white;" data-i18n="research_grid.falkor_title">Expedición R/V Falkor (too)
+                        </h3>
+                        <p style="color: rgba(255,255,255,0.9);" data-i18n="research_grid.falkor_desc">Exploración de
+                            cañones submarinos y fuentes
                             hidrotermales en el margen continental de Chile
                             con el Schmidt Ocean Institute.</p>
-                        <span class="tag">Schmidt Ocean Institute</span>
+                        <span class="tag" style="background: rgba(255,255,255,0.2); color: white;">Schmidt Ocean
+                            Institute</span>
+                        <div class="gallery-hint" style="color: white; margin-top: 15px;">
+                            <span data-i18n="research_grid.antarctica_hint">Click para ver galería</span> <i
+                                class="fa-solid fa-camera"></i>
+                        </div>
                     </div>
                 </div>
                 <!-- Project Card: Dinámica de Fiordos -->
                 <div class="project-card">
                     <div class="card-content">
-                        <div class="icon-box"><i class="fa-solid fa-water"></i></div>
+                        <div class="project-img-icon-overlay"
+                            style="margin-bottom: 15px; border: 3px solid #007bff; width: 80px; height: 80px; border-radius: 50%; overflow: hidden; display: inline-block;">
+                            <img src="images/antartica/imagen01.jpg" alt="Fiordos"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
                         <h3 data-i18n="research_grid.fjords_title">Dinámica de Fiordos</h3>
                         <p data-i18n="research_grid.fjords_desc">Investigación sobre la circulación y mezcla en fiordos
                             de la Patagonia, analizando efectos
@@ -286,7 +329,11 @@
                 <!-- Project Card: Oceanografía Satelital -->
                 <div class="project-card">
                     <div class="card-content">
-                        <div class="icon-box"><i class="fa-solid fa-satellite"></i></div>
+                        <div class="project-img-icon-overlay"
+                            style="margin-bottom: 15px; border: 3px solid #007bff; width: 80px; height: 80px; border-radius: 50%; overflow: hidden; display: inline-block;">
+                            <img src="images/logo_lofisat.jpg" alt="Satelital"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
                         <h3 data-i18n="research_grid.sat_title">Oceanografía Satelital</h3>
                         <p data-i18n="research_grid.sat_desc">Uso de datos satelitales para monitorear temperaturas
                             superficiales y clorofila en zonas
@@ -297,12 +344,55 @@
                 <!-- Project Card: Riesgo Costero -->
                 <div class="project-card">
                     <div class="card-content">
-                        <div class="icon-box"><i class="fa-solid fa-circle-exclamation"></i></div>
+                        <div class="project-img-icon-overlay"
+                            style="margin-bottom: 15px; border: 3px solid #007bff; width: 80px; height: 80px; border-radius: 50%; overflow: hidden; display: inline-block;">
+                            <img src="images/logo_costar.jpg" alt="Riesgo"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
                         <h3 data-i18n="research_grid.risk_title">Riesgo Costero</h3>
                         <p data-i18n="research_grid.risk_desc">Evaluación de riesgos ambientales en zonas costeras a
                             través del centro COSTA-R UV.</p>
                         <span class="tag">COSTA-R</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Assistance Section -->
+    <section id="assistance" class="section assistance-section" style="background: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title" data-i18n="assistance.title">Asistencias Técnicas y Asesorías</h2>
+            <p class="section-subtitle" data-i18n="assistance.subtitle">Consultoría especializada en oceanografía
+                aplicada y servicios técnicos.</p>
+            <div class="assistance-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px;">
+                <div class="assistance-card"
+                    style="background: white; padding: 30px; border-radius: 15px; box-shadow: var(--shadow-sm); border-top: 5px solid var(--primary-color);">
+                    <div class="assistance-icon"
+                        style="font-size: 2.5em; color: var(--primary-color); margin-bottom: 20px;"><i
+                            class="fa-solid fa-clipboard-check"></i></div>
+                    <h3 data-i18n="assistance.consulting_title">Asesoría Oceanográfica</h3>
+                    <p data-i18n="assistance.consulting_desc">Consultoría técnica para sector público y privado en
+                        dinámica de sistemas costeros, estuarios y fiordos.</p>
+                </div>
+                <div class="assistance-card"
+                    style="background: white; padding: 30px; border-radius: 15px; box-shadow: var(--shadow-sm); border-top: 5px solid var(--accent-color);">
+                    <div class="assistance-icon"
+                        style="font-size: 2.5em; color: var(--accent-color); margin-bottom: 20px;"><i
+                            class="fa-solid fa-chart-line"></i></div>
+                    <h3 data-i18n="assistance.monitoring_title">Monitoreo y Riesgo</h3>
+                    <p data-i18n="assistance.monitoring_desc">Evaluación de riesgos ambientales y diseño de campañas de
+                        monitoreo oceanográfico de alta resolución.</p>
+                </div>
+                <div class="assistance-card"
+                    style="background: white; padding: 30px; border-radius: 15px; box-shadow: var(--shadow-sm); border-top: 5px solid var(--secondary-color);">
+                    <div class="assistance-icon"
+                        style="font-size: 2.5em; color: var(--secondary-color); margin-bottom: 20px;"><i
+                            class="fa-solid fa-satellite-dish"></i></div>
+                    <h3 data-i18n="assistance.remote_title">Vigilancia Satelital</h3>
+                    <p data-i18n="assistance.remote_desc">Aplicación de sensores remotos para la vigilancia y análisis
+                        de procesos bio-físicos en el mar chileno.</p>
                 </div>
             </div>
         </div>
@@ -332,7 +422,8 @@
                     <p data-i18n="outreach.spotify_desc">Escucha nuestras conversaciones sobre la dinámica del océano y
                         la importancia de su conservación.
                     </p>
-                    <a href="https://open.spotify.com/show/3HYOCVnALYjIO2jw5hJd4I?si=sRVtTu0WTQu2GS5mapjTNQ" target="_blank" class="btn btn-outline" id="spotify-link"
+                    <a href="https://open.spotify.com/show/3HYOCVnALYjIO2jw5hJd4I?si=sRVtTu0WTQu2GS5mapjTNQ"
+                        target="_blank" class="btn btn-outline" id="spotify-link"
                         data-i18n="outreach.spotify_btn">Escuchar Podcast</a>
                 </div>
             </div>

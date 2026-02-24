@@ -1,81 +1,150 @@
 /**
- * Antarctic Gallery Script
- * Manages the display and interaction of the Antarctic photo gallery.
+ * Dynamic Gallery Script
+ * Manages multiple photo galleries (Antarctica, Seals, Falkor).
  */
 
-const antarcticImages = [
-    'images/antartica/imagen01.jpg',
-    'images/antartica/imagen02.jpg',
-    'images/antartica/imagen03.jpg',
-    'images/antartica/imagen04.jpg',
-    'images/antartica/imagen05.jpg',
-    'images/antartica/imagen06.jpg',
-    'images/antartica/imagen07.jpg',
-    'images/antartica/imagen087.jpg',
-    'images/antartica/imagen10.jpg',
-    'images/antartica/imagen09.jpg',
-    'images/antartica/06.03.2020.antartica.editadas.319.JPG',
-    'images/antartica/06.03.2020.antartica.editadas.331.JPG',
-    'images/antartica/06.03.2020.antartica.editadas.344.JPG',
-    'images/antartica/11.03.2020.antartica.editadas.720.JPG',
-    'images/antartica/G0065704.JPG'
-];
+const galleriesData = {
+    antartica: {
+        titleKey: 'modals.gallery_ant_title',
+        descKey: 'modals.gallery_ant_desc',
+        images: [
+            'images/antartica/05.03.2020.antartica.editadas.253.JPG',
+            'images/antartica/06.03.2020.antartica.editadas.319.JPG',
+            'images/antartica/06.03.2020.antartica.editadas.331.JPG',
+            'images/antartica/06.03.2020.antartica.editadas.344.JPG',
+            'images/antartica/11.03.2020.antartica.editadas.720.JPG',
+            'images/antartica/20200229104653_IMG_2875.jpg',
+            'images/antartica/20200310182031_IMG_3166.JPG',
+            'images/antartica/20220302163909_IMG_9099.JPG',
+            'images/antartica/G0065704.JPG',
+            'images/antartica/IMG-20220205-WA0004.jpg',
+            'images/antartica/IMG_20200319_130943_490.jpg',
+            'images/antartica/IMG_20200320_130356_927.jpg',
+            'images/antartica/IMG_20200321_234723_156.jpg',
+            'images/antartica/IMG_swgbcp.jpg',
+            'images/antartica/imagen01.jpg',
+            'images/antartica/imagen02.jpg',
+            'images/antartica/imagen03.jpg',
+            'images/antartica/imagen04.jpg',
+            'images/antartica/imagen05.jpg',
+            'images/antartica/imagen06.jpg',
+            'images/antartica/imagen07.jpg',
+            'images/antartica/imagen087.jpg',
+            'images/antartica/imagen09.jpg',
+            'images/antartica/imagen10.jpg'
+        ]
+    },
+    seals: {
+        titleKey: 'modals.gallery_seals_title',
+        descKey: 'modals.gallery_seals_desc',
+        images: [
+            'images/anillo_seals/IMG_20250126_081128.jpg',
+            'images/anillo_seals/IMG_20240125_082416.jpg',
+            'images/anillo_seals/IMG_20240128_072501.jpg',
+            'images/anillo_seals/IMG_20240625_172424.jpg',
+            'images/anillo_seals/IMG_20240626_125639.jpg',
+            'images/anillo_seals/IMG_20250121_090519.jpg',
+            'images/anillo_seals/IMG_20250122_093135.jpg',
+            'images/anillo_seals/IMG_20250122_125309.jpg',
+            'images/anillo_seals/IMG_20250122_142021.jpg',
+            'images/anillo_seals/IMG_20250123_142340.jpg',
+            'images/anillo_seals/IMG_20250124_123101.jpg',
+            'images/anillo_seals/IMG_20250125_061657.jpg',
+            'images/anillo_seals/IMG_20250126_081215.jpg',
+            'images/anillo_seals/IMG_20250126_123325.jpg',
+            'images/anillo_seals/PANO_2025-01-16_15-15-41.jpg'
+        ]
+    },
+    falkor: {
+        titleKey: 'modals.gallery_falkor_title',
+        descKey: 'modals.gallery_falkor_desc',
+        images: [
+            'images/falkor/IMG_20241102_202352.jpg',
+            'images/falkor/Captura de pantalla 2026-02-24 155758.jpg',
+            'images/falkor/IMG_20241012_191426.jpg',
+            'images/falkor/IMG_20241020_143809.jpg',
+            'images/falkor/IMG_20241030_130549.jpg',
+            'images/falkor/IMG_20241102_202346.jpg',
+            'images/falkor/falkor_bg.jpg'
+        ]
+    }
+};
 
 document.addEventListener('DOMContentLoaded', () => {
-    const triggers = document.querySelectorAll('.antarctic-gallery-trigger');
-    if (triggers.length === 0) return;
-
-    // Create Modal Structure
-    const modalHTML = `
-        <div class="gallery-modal" id="gallery-modal">
-            <div class="gallery-container">
-                <i class="fa-solid fa-xmark modal-close" id="modal-close"></i>
-                <div class="gallery-header">
-                    <h2>Expediciones Antárticas</h2>
-                    <p>Una mirada al trabajo científico en el continente blanco.</p>
+    // Create Modal Structure if not exists
+    if (!document.getElementById('gallery-modal')) {
+        const modalHTML = `
+            <div class="gallery-modal" id="gallery-modal">
+                <div class="gallery-container">
+                    <i class="fa-solid fa-xmark modal-close" id="modal-close"></i>
+                    <div class="gallery-header">
+                        <h2 id="gallery-title" data-i18n="">Galería</h2>
+                        <p id="gallery-description" data-i18n=""></p>
+                    </div>
+                    <div class="gallery-grid" id="gallery-grid"></div>
                 </div>
-                <div class="gallery-grid" id="gallery-grid"></div>
             </div>
-        </div>
 
-        <div class="lightbox-overlay" id="lightbox-overlay">
-            <i class="fa-solid fa-xmark lightbox-close" id="lightbox-close"></i>
-            <div class="lightbox-content">
-                <img src="" alt="Full size" class="lightbox-img" id="lightbox-img">
+            <div class="lightbox-overlay" id="lightbox-overlay">
+                <i class="fa-solid fa-xmark lightbox-close" id="lightbox-close"></i>
+                <div class="lightbox-content">
+                    <img src="" alt="Full size" class="lightbox-img" id="lightbox-img">
+                </div>
             </div>
-        </div>
-    `;
-
-    document.body.insertAdjacentHTML('beforeend', modalHTML);
+        `;
+        document.body.insertAdjacentHTML('beforeend', modalHTML);
+    }
 
     const modal = document.getElementById('gallery-modal');
     const grid = document.getElementById('gallery-grid');
+    const titleEl = document.getElementById('gallery-title');
+    const descEl = document.getElementById('gallery-description');
     const lightbox = document.getElementById('lightbox-overlay');
     const lightboxImg = document.getElementById('lightbox-img');
 
-    // Load Images into Grid
-    antarcticImages.forEach(src => {
-        const item = document.createElement('div');
-        item.className = 'gallery-item';
-        item.innerHTML = `<img src="${src}" alt="Antártica Photo" loading="lazy">`;
+    const openGallery = (galleryKey) => {
+        const data = galleriesData[galleryKey];
+        if (!data) return;
 
-        item.addEventListener('click', (e) => {
-            e.stopPropagation();
-            lightboxImg.src = src;
-            lightbox.classList.add('active');
+        // Set Title & Description with i18n
+        titleEl.setAttribute('data-i18n', data.titleKey);
+        descEl.setAttribute('data-i18n', data.descKey);
+
+        // Update content immediately if i18n is available
+        if (window.i18n) {
+            window.i18n.updateDOM();
+        }
+
+        // Clear and fill grid
+        grid.innerHTML = '';
+        data.images.forEach(src => {
+            const item = document.createElement('div');
+            item.className = 'gallery-item';
+            item.innerHTML = `<img src="${src}" alt="Gallery Photo" loading="lazy">`;
+
+            item.addEventListener('click', (e) => {
+                e.stopPropagation();
+                lightboxImg.src = src;
+                lightbox.classList.add('active');
+            });
+
+            grid.appendChild(item);
         });
 
-        grid.appendChild(item);
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    };
+
+    // Event Delegation for triggers
+    document.addEventListener('click', (e) => {
+        const trigger = e.target.closest('.gallery-trigger');
+        if (trigger) {
+            const galleryKey = trigger.getAttribute('data-gallery');
+            if (galleryKey) openGallery(galleryKey);
+        }
     });
 
-    // Event Listeners
-    triggers.forEach(trigger => {
-        trigger.addEventListener('click', () => {
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent scroll
-        });
-    });
-
+    // Close buttons
     document.getElementById('modal-close').addEventListener('click', () => {
         modal.classList.remove('active');
         document.body.style.overflow = 'auto';

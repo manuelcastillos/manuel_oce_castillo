@@ -97,7 +97,21 @@ const translations = {
             profile_ocean: "Oceanógrafo PUCV",
             profile_dr: "Dr. en Oceanografía UdeC",
             gallery_ant_title: "Expediciones Antárticas",
-            gallery_ant_desc: "Una mirada al trabajo científico en el continente blanco."
+            gallery_ant_desc: "Una mirada al trabajo científico en el continente blanco.",
+            gallery_seals_title: "Proyecto Anillo SEALS",
+            gallery_seals_desc: "Uso de elefantes marinos como sensores bio-oceanográficos en la Patagonia.",
+            gallery_falkor_title: "Expedición R/V Falkor (too)",
+            gallery_falkor_desc: "Exploración de cañones submarinos y fuentes hidrotermales en Chile."
+        },
+        assistance: {
+            title: "Asistencias Técnicas y Asesorías",
+            subtitle: "Consultoría especializada en oceanografía aplicada y servicios técnicos.",
+            consulting_title: "Asesoría Oceanográfica",
+            consulting_desc: "Consultoría técnica para sector público y privado en dinámica de sistemas costeros, estuarios y fiordos.",
+            monitoring_title: "Monitoreo y Riesgo",
+            monitoring_desc: "Evaluación de riesgos ambientales y diseño de campañas de monitoreo oceanográfico de alta resolución.",
+            remote_title: "Vigilancia Satelital",
+            remote_desc: "Aplicación de sensores remotos para la vigilancia y análisis de procesos bio-físicos en el mar chileno."
         },
         proyectos: {
             title: "Proyectos de Investigación",
@@ -209,7 +223,21 @@ const translations = {
             profile_ocean: "Oceanographer PUCV",
             profile_dr: "PhD in Oceanography UdeC",
             gallery_ant_title: "Antarctic Expeditions",
-            gallery_ant_desc: "A look at scientific work on the white continent."
+            gallery_ant_desc: "A look at scientific work on the white continent.",
+            gallery_seals_title: "Anillo SEALS Project",
+            gallery_seals_desc: "Using Southern elephant seals as bio-oceanographic sensors in Patagonia.",
+            gallery_falkor_title: "R/V Falkor (too) Expedition",
+            gallery_falkor_desc: "Exploration of submarine canyons and hydrothermal vents in Chile."
+        },
+        assistance: {
+            title: "Technical Assistance & Consulting",
+            subtitle: "Specialized consulting in applied oceanography and technical services.",
+            consulting_title: "Oceanographic Consulting",
+            consulting_desc: "Technical consulting for public and private sectors in the dynamics of coastal systems, estuaries, and fjords.",
+            monitoring_title: "Monitoring & Risk",
+            monitoring_desc: "Environmental risk assessment and design of high-resolution oceanographic monitoring campaigns.",
+            remote_title: "Satellite Surveillance",
+            remote_desc: "Application of remote sensors for surveillance and analysis of bio-physical processes in the Chilean sea."
         },
         proyectos: {
             title: "Research Projects",
