@@ -30,8 +30,8 @@ const translations = {
             seals_title: "Anillo SEALS",
             seals_accent: "",
             seals_subtitle: "Focas como Observadores Dinámicos",
-            seals_desc1: "Liderando el proyecto Anillo ATE 220033, una investigación pionera que utiliza elefantes marinos como sensores bio-oceanográficos para medir cambios en las aguas costeras del sur de Chile y Tierra del Fuego.",
-            seals_desc2: "Esta colaboración internacional permite obtener datos en áreas de difícil acceso, transformando a los animales en recolectores de información vital sobre el océano austral.",
+            seals_desc1: "El proyecto Anillo ATE 220033, fue una investigación pionera que utilizó elefantes marinos como sensores bio-oceanográficos para medir cambios en las aguas costeras del sur de Chile y Tierra del Fuego.",
+            seals_desc2: "Esta colaboración internacional permitió obtener datos en áreas de difícil acceso, transformando a los animales en recolectores de información vital sobre el océano austral.",
             seals_btn: "Ver Proyecto SEALS",
 
             label_expedition: "EXPEDICIÓN ANTÁRTICA",
@@ -52,7 +52,7 @@ const translations = {
         },
         research_grid: {
             title: "Investigaciones Destacadas",
-            seals_desc: "Estudio en Tierra del Fuego utilizando elefantes marinos como sensores bio-oceanográficos para monitorear condiciones extremas.",
+            seals_desc: "Estudio finalizado en Tierra del Fuego utilizando elefantes marinos como sensores bio-oceanográficos para monitorear condiciones extremas.",
             antarctica_title: "Investigación Antártica",
             antarctica_desc: "Estudios sobre la morfología del mesozooplancton y respuesta de peces antárticos al calentamiento global.",
             antarctica_hint: "Click para ver galería",
@@ -168,8 +168,8 @@ const translations = {
             seals_title: "Anillo SEALS",
             seals_accent: "",
             seals_subtitle: "Seals as Dynamic Observers",
-            seals_desc1: "Leading the Anillo ATE 220033 project, a pioneering research that uses Southern elephant seals as bio-oceanographic sensors to measure changes in the coastal waters of southern Chile and Tierra del Fuego.",
-            seals_desc2: "This international collaboration allows data collection in hard-to-access areas, turning animals into collectors of vital information about the Southern Ocean.",
+            seals_desc1: "The Anillo ATE 220033 project was a pioneering research that used Southern elephant seals as bio-oceanographic sensors to measure changes in the coastal waters of southern Chile and Tierra del Fuego.",
+            seals_desc2: "This international collaboration allowed data collection in hard-to-access areas, turning animals into collectors of vital information about the Southern Ocean.",
             seals_btn: "View SEALS Project",
 
             label_expedition: "ANTARCTIC EXPEDITION",
@@ -190,7 +190,7 @@ const translations = {
         },
         research_grid: {
             title: "Featured Research",
-            seals_desc: "Study in Tierra del Fuego using elephant seals as bio-oceanographic sensors to monitor extreme conditions.",
+            seals_desc: "Concluded study in Tierra del Fuego using elephant seals as bio-oceanographic sensors to monitor extreme conditions.",
             antarctica_title: "Antarctic Research",
             antarctica_desc: "Studies on the morphology of mesozooplankton and the response of Antarctic fish to global warming.",
             antarctica_hint: "Click to view gallery",
