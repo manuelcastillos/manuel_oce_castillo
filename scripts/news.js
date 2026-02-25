@@ -68,7 +68,10 @@ async function loadInstagramNews() {
                 const wrapper = document.createElement('div');
                 wrapper.innerHTML = staticCardHTML;
                 const followCard = wrapper.firstChild;
-                followCard.style.cssText = 'background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 30px; border-radius: 15px; backdrop-filter: blur(10px); display: flex; flex-direction: column; height: 100%; min-height: 480px;';
+                followCard.style.cssText = 'background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 20px; border-radius: 15px; backdrop-filter: blur(10px); display: flex; flex-direction: row; gap: 25px; align-items: center; margin-bottom: 25px; min-height: 220px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);';
+
+                // Adjust static card inner structure to match horizontal layout if needed
+                // But generally keep it as is if it's already a flex container with icon or text.
                 container.appendChild(followCard);
             }
         }
