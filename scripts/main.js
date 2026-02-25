@@ -1,7 +1,7 @@
 // Mobile Navigation Toggle
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
-const navLinks = document.querySelectorAll('.nav-links li');
+const navLinks = document.querySelectorAll('.nav-links a');
 
 burger.addEventListener('click', () => {
     // Toggle Nav
@@ -9,6 +9,16 @@ burger.addEventListener('click', () => {
 
     // Burger Animation
     burger.classList.toggle('toggle');
+});
+
+// Close menu when clicking a link
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (nav.classList.contains('nav-active')) {
+            nav.classList.remove('nav-active');
+            burger.classList.remove('toggle');
+        }
+    });
 });
 
 // Scroll Reveal Animation
@@ -70,10 +80,9 @@ for (let i = 0; i < 30; i++) {
     setTimeout(() => createCurrent(), i * 100);
 }
 
-
-// Add CSS class for hidden elements dynamically
-const style = document.createElement('style');
-style.innerHTML = `
+// Hidden/Visible classes already handled in style.css
+const style_reveal = document.createElement('style');
+style_reveal.innerHTML = `
     .hidden {
         opacity: 0;
         transform: translateY(30px);
@@ -83,39 +92,8 @@ style.innerHTML = `
         opacity: 1;
         transform: translateY(0);
     }
-    
-    /* Mobile Nav Active State */
-    .nav-active {
-        display: flex !important;
-        flex-direction: column;
-        position: absolute;
-        right: 0;
-        top: 80px;
-        background-color: var(--color-bg-dark);
-        width: 100%;
-        text-align: center;
-        padding-bottom: 20px;
-        animation: navSlide 0.5s ease forwards;
-        border-bottom: 1px solid var(--color-primary);
-    }
-    
-    @keyframes navSlide {
-        from { opacity: 0; transform: translateY(-20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-    
-    /* Burger Animation */
-    .toggle .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-    .toggle .line2 {
-        opacity: 0;
-    }
-    .toggle .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
 `;
-document.head.appendChild(style);
+document.head.appendChild(style_reveal);
 
 // Profile Image Modal Functionality
 const profileImg = document.getElementById('profileImg');
