@@ -111,7 +111,8 @@ const translations = {
             monitoring_title: "Monitoreo y Riesgo",
             monitoring_desc: "Evaluación de riesgos ambientales y diseño de campañas de monitoreo oceanográfico de alta resolución.",
             remote_title: "Vigilancia Satelital",
-            remote_desc: "Aplicación de sensores remotos para la vigilancia y análisis de procesos bio-físicos en el mar chileno."
+            remote_desc: "Aplicación de sensores remotos para la vigilancia y análisis de procesos bio-físicos en el mar chileno.",
+            linkedin_btn: "Conectar en LinkedIn"
         },
         proyectos: {
             title: "Proyectos de Investigación",
