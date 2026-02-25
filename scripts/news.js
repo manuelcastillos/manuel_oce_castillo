@@ -35,8 +35,9 @@ async function loadInstagramNews() {
                 const date = new Date(post.timestamp).toLocaleDateString();
 
                 card.innerHTML = `
-                    <div class="news-image" style="margin: -30px -30px 20px -30px; height: 200px; overflow: hidden; border-radius: 15px 15px 0 0;">
+                    <div class="news-image" style="margin: -30px -30px 20px -30px; height: 200px; overflow: hidden; border-radius: 15px 15px 0 0; position: relative;">
                         <img src="${post.thumbnail}" alt="Instagram post" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/logo_lofisat.jpg" alt="Logo LOFISAT" style="position: absolute; top: 10px; right: 10px; width: 40px; height: 40px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.3);">
                     </div>
                     <div class="news-date" style="font-size: 0.8em; color: var(--ocean-blue); margin-bottom: 10px;">${date}</div>
                     <h3 style="font-size: 1.1em; margin-bottom: 15px;">LOFISAT Post</h3>
