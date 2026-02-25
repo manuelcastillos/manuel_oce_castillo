@@ -63,7 +63,9 @@ const translations = {
             sat_title: "Oceanografía Satelital",
             sat_desc: "Uso de datos satelitales para monitorear temperaturas superficiales y clorofila en zonas costeras.",
             risk_title: "Riesgo Costero",
-            risk_desc: "Evaluación de riesgos ambientales en zonas costeras a través del centro COSTA-R UV."
+            risk_desc: "Evaluación de riesgos ambientales en zonas costeras a través del centro COSTA-R UV.",
+            climate_title: "Cambio Climático",
+            climate_desc: "Efectos del Cambio Climático en ambientes costeros y su impacto en la dinámica bio-física."
         },
         outreach: {
             title: "Divulgación Científica",
@@ -112,7 +114,9 @@ const translations = {
             monitoring_desc: "Evaluación de riesgos ambientales y diseño de campañas de monitoreo oceanográfico de alta resolución.",
             remote_title: "Vigilancia Satelital",
             remote_desc: "Aplicación de sensores remotos para la vigilancia y análisis de procesos bio-físicos en el mar chileno.",
-            linkedin_btn: "Conectar en LinkedIn"
+            linkedin_btn: "Conectar en LinkedIn",
+            training_title: "Análisis Geofísico",
+            training_desc: "Capacitaciones especializadas en teoría y análisis de datos geofísicos aplicados al océano."
         },
         proyectos: {
             title: "Proyectos de Investigación",
@@ -124,6 +128,11 @@ const translations = {
             title: "Publicaciones Científicas",
             subtitle: "Investigación y contribuciones académicas",
             loading: "Cargando listado completo..."
+        },
+        news: {
+            title: "Noticias del Laboratorio",
+            subtitle: "Actividades y novedades del LOFISAT-UV",
+            insta_btn: "Seguir @lofisat_uv"
         }
     },
     en: {
@@ -190,7 +199,9 @@ const translations = {
             sat_title: "Satellite Oceanography",
             sat_desc: "Use of satellite data to monitor sea surface temperatures and chlorophyll in coastal areas.",
             risk_title: "Coastal Risk",
-            risk_desc: "Evaluation of environmental risks in coastal zones through the COSTA-R UV center."
+            risk_desc: "Evaluation of environmental risks in coastal zones through the COSTA-R UV center.",
+            climate_title: "Climate Change",
+            climate_desc: "Effects of Climate Change in coastal environments and its impact on bio-physical dynamics."
         },
         outreach: {
             title: "Science Outreach",
@@ -251,6 +262,11 @@ const translations = {
             title: "Scientific Publications",
             subtitle: "Research and academic contributions",
             loading: "Loading full list..."
+        },
+        news: {
+            title: "Lab News",
+            subtitle: "Activities and updates from LOFISAT-UV",
+            insta_btn: "Follow @lofisat_uv"
         }
     }
 };
