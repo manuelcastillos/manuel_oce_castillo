@@ -250,7 +250,9 @@ const translations = {
             monitoring_desc: "Environmental risk assessment and design of high-resolution oceanographic monitoring campaigns.",
             remote_title: "Satellite Surveillance",
             remote_desc: "Application of remote sensors for surveillance and analysis of bio-physical processes in the Chilean sea.",
-            linkedin_btn: "Connect on LinkedIn"
+            linkedin_btn: "Connect on LinkedIn",
+            training_title: "Geophysical Analysis",
+            training_desc: "Specialized training in theory and analysis of geophysical data applied to the ocean."
         },
         proyectos: {
             title: "Research Projects",
