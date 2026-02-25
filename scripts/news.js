@@ -16,7 +16,8 @@ async function loadInstagramNews() {
 
     try {
         console.log('Fetching news data from: ./data/instagram_news.json');
-        const response = await fetch('./data/instagram_news.json');
+        // Cache busting to ensure we always get the latest news
+        const response = await fetch(`./data/instagram_news.json?v=${new Date().getTime()}`);
         console.log('Fetch response received. Status:', response.status);
 
         if (!response.ok) {
