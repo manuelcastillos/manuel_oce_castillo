@@ -19,7 +19,7 @@ const translations = {
         about: {
             title: "Sobre Mí",
             subtitle: "Pasión por el Océano y la Ciencia",
-            description1: "Soy Oceanógrafo Físico y Doctor en Oceanografía, especializado en la dinámica de estuarios, fiordos y oceanografía costera. Mi trabajo se centra en comprender cómo los procesos físicos interactúan con los ecosistemas marinos, especialmente en la Patagonia chilena.",
+            description1: "Soy Oceanógrafo de la Pontificia Universidad Católica de Valparaíso y Doctor en Oceanografía de la Universidad de Concepción, especializado en la dinámica de estuarios, fiordos y oceanografía costera. Mi trabajo se centra en comprender cómo los procesos físicos interactúan con los ecosistemas marinos, especialmente en la Patagonia chilena.",
             description2: "Actualmente me desempeño como Profesor Adjunto e Investigador en la Universidad de Valparaíso, donde dirijo el Laboratorio de Oceanografía Física y Satelital (LOFISAT- UV).",
             stat_exp: "Años de Exp.",
             stat_projects: "Proyectos",
@@ -155,7 +155,7 @@ const translations = {
         about: {
             title: "About Me",
             subtitle: "A Passion for the Ocean and Science",
-            description1: "I am a Physical Oceanographer with a PhD in Oceanography, specialized in the dynamics of estuaries, fjords, and coastal oceanography. My work focuses on understanding how physical processes interact with marine ecosystems, especially in the Chilean Patagonia.",
+            description1: "I am an Oceanographer from the Pontificia Universidad Católica de Valparaíso with a PhD in Oceanography from the Universidad de Concepción, specialized in the dynamics of estuaries, fjords, and coastal oceanography. My work focuses on understanding how physical processes interact with marine ecosystems, especially in the Chilean Patagonia.",
             description2: "I am currently an Assistant Professor and Researcher at the University of Valparaíso, where I lead the Physical and Satellite Oceanography Laboratory (LOFISAT-UV).",
             stat_exp: "Years of Exp.",
             stat_projects: "Projects",

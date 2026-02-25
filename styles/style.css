@@ -193,7 +193,7 @@ ul {
     justify-content: center;
     align-items: center;
     position: relative;
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../images/falkor/falkor_bg.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../images/falkor/IMG_20241102_202346.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
