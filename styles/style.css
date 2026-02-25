@@ -1489,3 +1489,152 @@ header.hero::before {
         transform: translateX(-50%) scale(0.6);
     }
 }
+/* --- Mobile Responsiveness --- */
+
+/* Mobile Nav Styles */
+.nav-links.nav-active {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    background-color: var(--color-bg-dark);
+    width: 100%;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-bottom: 2px solid var(--color-primary);
+    animation: navSlide 0.4s ease forwards;
+    z-index: 1000;
+}
+
+@keyframes navSlide {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.nav-links.nav-active li {
+    padding: 15px 0;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 900px) {
+    .highlight-content {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .highlight-text {
+        padding: 0 15px;
+    }
+
+    .highlight-visual {
+        min-height: 220px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .spacer-50, .spacer-80 {
+        height: 30px;
+    }
+
+    /* Flip the Antarctica diamond back to normal or scale it down for mobile */
+    .antarctica-card {
+        margin: 10px auto;
+        transform: rotate(0deg);
+        width: 180px;
+        height: 180px;
+        border-radius: 12px;
+    }
+    
+    .ice-icon, .antarctica-card .card-photo {
+        transform: rotate(0deg);
+    }
+
+    .seals-card, .falkor-card {
+        width: 220px;
+        height: 220px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-content .btn {
+        margin: 8px 0;
+        width: 90%;
+    }
+
+    .navbar {
+        padding: 12px 5%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .image-frame {
+        width: 200px;
+        height: 200px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .research-grid, .outreach-grid, .assistance-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .contact-item {
+        width: 100%;
+        padding: 12px 15px;
+        justify-content: flex-start;
+        border-radius: 15px;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
