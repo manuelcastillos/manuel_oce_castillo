@@ -15,7 +15,7 @@ async function loadInstagramNews() {
         const posts = await response.json();
 
         if (posts && posts.length > 0) {
-            const topPosts = posts.slice(0, 3);
+            const topPosts = posts.slice(0, 5);
 
             // Capture the static Follow Us card
             const staticCard = container.querySelector('.news-card');
@@ -51,11 +51,11 @@ async function loadInstagramNews() {
                         </div>
                     </div>
                     <div class="news-content" style="flex-grow: 1; display: flex; flex-direction: column;">
-                        <div class="news-date" style="font-size: 0.85em; color: var(--ocean-blue); margin-bottom: 8px; font-weight: 500;">${date}</div>
-                        <h3 style="font-size: 1.1em; margin-bottom: 15px; color: #fff;">@lofi_sat</h3>
-                        <p style="margin-bottom: 25px; color: rgba(255,255,255,0.8); font-size: 0.95em; line-height: 1.6; flex-grow: 1;">${caption}</p>
+                        <div class="news-date" style="font-size: 0.85em; color: #00E5FF; margin-bottom: 8px; font-weight: 500;">${date}</div>
+                        <h3 style="font-size: 1.1em; margin-bottom: 15px; color: #B3E5FC;">@lofi_sat</h3>
+                        <p style="margin-bottom: 25px; color: #E1F5FE; font-size: 0.95em; line-height: 1.6; flex-grow: 1;">${caption}</p>
                         <a href="${post.permalink}" target="_blank" class="btn btn-outline" 
-                           style="border-color: rgba(255,255,255,0.3); color: white; align-self: flex-start; padding: 10px 22px; font-size: 0.9em; transition: all 0.3s ease;">
+                           style="border-color: #00E5FF; color: #00E5FF; align-self: flex-start; padding: 10px 22px; font-size: 0.9em; transition: all 0.3s ease;">
                             <i class="fa-brands fa-instagram"></i> Ver publicación
                         </a>
                     </div>
