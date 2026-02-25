@@ -137,7 +137,12 @@ const expeditionCaption = document.getElementById('expeditionModalCaption');
 
 if (expeditionModal && clickableCards.length > 0) {
     clickableCards.forEach(card => {
-        card.addEventListener('click', () => {
+        card.addEventListener('click', (e) => {
+            // SKIP IF IT'S ALSO A GALLERY TRIGGER (to avoid double modals)
+            if (card.classList.contains('gallery-trigger')) {
+                return;
+            }
+
             const title = card.getAttribute('data-title');
             const caption = card.getAttribute('data-caption');
             const img = card.querySelector('img');

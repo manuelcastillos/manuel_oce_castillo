@@ -87,9 +87,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
             <div class="lightbox-overlay" id="lightbox-overlay">
                 <i class="fa-solid fa-xmark lightbox-close" id="lightbox-close"></i>
+                
+                <button class="lightbox-nav prev" id="lightbox-prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                
                 <div class="lightbox-content">
                     <img src="" alt="Full size" class="lightbox-img" id="lightbox-img">
+                    <div class="lightbox-watermark" id="lightbox-watermark"></div>
                 </div>
+
+                <button class="lightbox-nav next" id="lightbox-next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
         `;
         document.body.insertAdjacentHTML('beforeend', modalHTML);
@@ -101,10 +111,50 @@ document.addEventListener('DOMContentLoaded', () => {
     const descEl = document.getElementById('gallery-description');
     const lightbox = document.getElementById('lightbox-overlay');
     const lightboxImg = document.getElementById('lightbox-img');
+    const watermarkEl = document.getElementById('lightbox-watermark');
+    const prevBtn = document.getElementById('lightbox-prev');
+    const nextBtn = document.getElementById('lightbox-next');
+
+    let currentGalleryKey = null;
+    let currentImageIndex = 0;
+
+    const showImage = (index) => {
+        const data = galleriesData[currentGalleryKey];
+        if (!data || !data.images[index]) return;
+
+        currentImageIndex = index;
+        lightboxImg.src = data.images[index];
+
+        // Watermark: Use the translated title of the project
+        const title = window.i18n ? window.i18n.getTranslation(data.titleKey) : "Investigación";
+        watermarkEl.textContent = title;
+
+        // Visual opacity fade-in
+        lightboxImg.style.opacity = '0';
+        setTimeout(() => {
+            lightboxImg.style.opacity = '1';
+        }, 50);
+    };
+
+    const nextImage = () => {
+        const data = galleriesData[currentGalleryKey];
+        if (!data) return;
+        const nextIdx = (currentImageIndex + 1) % data.images.length;
+        showImage(nextIdx);
+    };
+
+    const prevImage = () => {
+        const data = galleriesData[currentGalleryKey];
+        if (!data) return;
+        const prevIdx = (currentImageIndex - 1 + data.images.length) % data.images.length;
+        showImage(prevIdx);
+    };
 
     const openGallery = (galleryKey) => {
         const data = galleriesData[galleryKey];
         if (!data) return;
+
+        currentGalleryKey = galleryKey;
 
         // Set Title & Description with i18n
         titleEl.setAttribute('data-i18n', data.titleKey);
@@ -117,14 +167,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Clear and fill grid
         grid.innerHTML = '';
-        data.images.forEach(src => {
+        data.images.forEach((src, index) => {
             const item = document.createElement('div');
             item.className = 'gallery-item';
             item.innerHTML = `<img src="${src}" alt="Gallery Photo" loading="lazy">`;
 
             item.addEventListener('click', (e) => {
                 e.stopPropagation();
-                lightboxImg.src = src;
+                showImage(index);
                 lightbox.classList.add('active');
             });
 
@@ -154,6 +204,17 @@ document.addEventListener('DOMContentLoaded', () => {
         lightbox.classList.remove('active');
     });
 
+    // Navigation buttons
+    prevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        prevImage();
+    });
+
+    nextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        nextImage();
+    });
+
     // Close on click outside
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
@@ -162,8 +223,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Lightbox click outside
     lightbox.addEventListener('click', (e) => {
-        if (e.target === lightbox) {
+        if (e.target === lightbox || e.target.classList.contains('lightbox-content')) {
             lightbox.classList.remove('active');
         }
     });
@@ -174,6 +236,10 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.classList.remove('active');
             lightbox.classList.remove('active');
             document.body.style.overflow = 'auto';
+        }
+        if (lightbox.classList.contains('active')) {
+            if (e.key === 'ArrowRight') nextImage();
+            if (e.key === 'ArrowLeft') prevImage();
         }
     });
 });
