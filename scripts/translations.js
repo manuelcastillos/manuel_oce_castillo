@@ -103,7 +103,9 @@ const translations = {
             gallery_seals_title: "Proyecto Anillo SEALS",
             gallery_seals_desc: "Uso de elefantes marinos como sensores bio-oceanográficos en la Patagonia.",
             gallery_falkor_title: "Expedición R/V Falkor (too)",
-            gallery_falkor_desc: "Exploración de cañones submarinos y fuentes hidrotermales en Chile."
+            gallery_falkor_desc: "Exploración de cañones submarinos y fuentes hidrotermales en Chile.",
+            gallery_fiordos_title: "Dinámica de Fiordos",
+            gallery_fiordos_desc: "Investigación sobre la circulación, mezcla y procesos físicos en los fiordos de la Patagonia."
         },
         assistance: {
             title: "Asistencias Técnicas y Asesorías",
@@ -239,7 +241,9 @@ const translations = {
             gallery_seals_title: "Anillo SEALS Project",
             gallery_seals_desc: "Using Southern elephant seals as bio-oceanographic sensors in Patagonia.",
             gallery_falkor_title: "R/V Falkor (too) Expedition",
-            gallery_falkor_desc: "Exploration of submarine canyons and hydrothermal vents in Chile."
+            gallery_falkor_desc: "Exploración of submarine canyons and hydrothermal vents in Chile.",
+            gallery_fiordos_title: "Fjord Dynamics",
+            gallery_fiordos_desc: "Research on circulation, mixing, and physical processes in Patagonia fjords."
         },
         assistance: {
             title: "Technical Assistance & Consulting",

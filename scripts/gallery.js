@@ -67,6 +67,28 @@ const galleriesData = {
             'images/falkor/IMG_20241102_202346.jpg',
             'images/falkor/falkor_bg.jpg'
         ]
+    },
+    fiordos: {
+        titleKey: 'modals.gallery_fiordos_title',
+        descKey: 'modals.gallery_fiordos_desc',
+        images: [
+            'images/fiordos/IMG_5687.JPG',
+            'images/fiordos/IMG_5685.JPG',
+            'images/fiordos/IMG_5690.JPG',
+            'images/fiordos/cochamo 137.jpg',
+            'images/fiordos/S4300181.JPG',
+            'images/fiordos/S4300119.JPG',
+            'images/fiordos/S4300175.JPG',
+            'images/fiordos/S4300185.JPG',
+            'images/fiordos/S4300192.JPG',
+            'images/fiordos/DSCN0031.jpg',
+            'images/fiordos/3personalSHOA.JPG',
+            'images/fiordos/100_1189.JPG',
+            'images/fiordos/PDRM5158.JPG',
+            'images/fiordos/PDRM5170.JPG',
+            'images/fiordos/PDRM5227.JPG',
+            'images/fiordos/foto11.jpg'
+        ]
     }
 };
 
