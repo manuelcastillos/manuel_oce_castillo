@@ -528,8 +528,9 @@
                     y novedades del LOFISAT-UV</p>
             </div>
 
-            <div class="news-grid"
+            <div class="news-grid" id="news-container"
                 style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <!-- News will be dynamically loaded here from Instagram -->
                 <div class="news-card"
                     style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 30px; border-radius: 15px; backdrop-filter: blur(10px);">
                     <div class="news-icon" style="color: var(--ocean-blue); font-size: 2em; margin-bottom: 20px;">
@@ -539,23 +540,9 @@
                     <p style="margin-bottom: 25px; color: rgba(255,255,255,0.8);">Sigue las actividades diarias,
                         lanzamientos de instrumentos y expediciones en tiempo real a través de nuestro perfil oficial.
                     </p>
-                    <a href="https://www.instagram.com/lofisat_uv/" target="_blank" class="btn btn-secondary">
+                    <a href="https://www.instagram.com/lofi_sat/" target="_blank" class="btn btn-secondary">
                         <i class="fa-brands fa-instagram"></i> <span data-i18n="news.insta_btn">Seguir
-                            @lofisat_uv</span>
-                    </a>
-                </div>
-
-                <div class="news-card"
-                    style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 30px; border-radius: 15px; backdrop-filter: blur(10px);">
-                    <div class="news-icon" style="color: var(--ocean-blue); font-size: 2em; margin-bottom: 20px;">
-                        <i class="fa-solid fa-microscope"></i>
-                    </div>
-                    <h3 style="margin-bottom: 15px;">Investigación LOFISAT</h3>
-                    <p style="margin-bottom: 25px; color: rgba(255,255,255,0.8);">Nuestro laboratorio lidera el análisis
-                        físico y satelital para comprender los cambios en el mar chileno.</p>
-                    <a href="#research" class="btn btn-outline"
-                        style="border-color: rgba(255,255,255,0.3); color: white;">
-                        Ver Investigaciones
+                            @lofi_sat</span>
                     </a>
                 </div>
             </div>
@@ -628,6 +615,7 @@
     <script src="./scripts/main.js"></script>
     <script src="./scripts/publications.js"></script>
     <script src="./scripts/gallery.js"></script>
+    <script src="./scripts/news.js"></script>
 </body>
 
 </html>

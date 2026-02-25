@@ -1,0 +1,34 @@
+name: Sync Instagram News
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Once a day
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install axios
+
+      - name: Sync Instagram Posts
+        env:
+          IG_HANDLE: 'lofi_sat'
+        run: node scripts/update_news.js
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add data/instagram_news.json
+          git commit -m "chore: auto-sync instagram news" || echo "No changes to commit"
+          git push
