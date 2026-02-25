@@ -132,7 +132,7 @@ const translations = {
             loading: "Cargando listado completo..."
         },
         news: {
-            title: "Noticias del Laboratorio",
+            title: "Noticias LOFISAT",
             subtitle: "Actividades y novedades del LOFISAT-UV",
             insta_btn: "Seguir @lofi_sat"
         }
@@ -270,7 +270,7 @@ const translations = {
             loading: "Loading full list..."
         },
         news: {
-            title: "Lab News",
+            title: "Noticias LOFISAT",
             subtitle: "Activities and updates from LOFISAT-UV",
             insta_btn: "Follow @lofi_sat"
         }

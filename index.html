@@ -520,10 +520,16 @@
     </section>
 
     <!-- Lab News Section (LOFISAT) -->
-    <section id="lab-news" class="section news-section" style="background: #0D1B2A; color: white;">
-        <div class="container">
-            <div class="news-header" style="text-align: center; margin-bottom: 50px;">
-                <h2 class="section-title" data-i18n="news.title" style="color: white;">Noticias del Laboratorio</h2>
+    <section id="lab-news" class="section news-section"
+        style="background: #0D1B2A; color: white; position: relative; overflow: hidden;">
+        <!-- Background watermark logo -->
+        <div class="section-bg-logo"
+            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60%; height: 60%; background: url('images/lofisat_sin_fondo.png') no-repeat center center; background-size: contain; opacity: 0.08; pointer-events: none; z-index: 0;">
+        </div>
+
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="news-header" style="margin-bottom: 50px;">
+                <h2 class="section-title" data-i18n="news.title" style="color: white;">Noticias LOFISAT</h2>
                 <p class="section-subtitle" data-i18n="news.subtitle" style="color: rgba(255,255,255,0.7);">Actividades
                     y novedades del LOFISAT-UV</p>
             </div>
