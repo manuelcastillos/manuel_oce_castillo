@@ -1,22 +1,25 @@
 # 🤖 Guía de Automatización de Noticias (Instagram -> Web)
 
-He configurado un sistema para que tu página web se actualice sola cada vez que publiques algo en Instagram con la cuenta **@lofi_sat**.
+¡Ya está todo configurado! Tu página web ahora se actualiza sola cada vez que publicas en Instagram (**@lofi_sat**) usando el feed de RSS.app que me proporcionaste.
 
-## ¿Cómo funciona?
+## Estado Actual
+- **Feed vinculado**: `https://rss.app/feeds/Izc71vq3Wly9kcqV.xml`
+- **Frecuencia**: Se sincroniza automáticamente una vez al día.
 
-1.  **Publicas en Instagram**: Subes una foto o video a `@lofi_sat`.
-2.  **GitHub Action (El Robot)**: Una vez al día (o cuando tú lo actives manualmente), un proceso en GitHub revisa tu cuenta.
-3.  **Sincronización**: El robot descarga la imagen y el texto de tu último post y lo guarda en el archivo `data/instagram_news.json` de tu repositorio.
-4.  **Actualización Web**: Al entrar a tu página, el script `scripts/news.js` lee ese archivo y genera automáticamente las tarjetas de noticias.
+## ¿Qué hace el sistema?
+1. **GitHub Action**: Un "robot" en GitHub revisa tu feed de Instagram diariamente.
+2. **Procesamiento**: El script `scripts/update_news.js` extrae la foto y el texto de tus últimos 3-5 posts.
+3. **Persistencia**: Los datos se guardan en `data/instagram_news.json`.
+4. **Visualización**: Tu web carga estos datos dinámicamente en la sección "Noticias del Laboratorio".
 
-## Cómo activarlo por primera vez
+## Cómo forzar una actualización ahora mismo
+Si acabas de publicar algo y no quieres esperar a mañana:
+1. Ve a la pestaña **Actions** en tu repositorio de GitHub.
+2. Selecciona **Sync Instagram News** en el menú de la izquierda.
+3. Haz clic en el botón gris **Run workflow** -> **Run workflow**.
 
-Para que funcione de forma totalmente automática y sin errores de "acceso denegado" por parte de Instagram, te recomiendo usar un **Token de Acceso** o un servicio de **RSS Feed**.
-
-### Opción A (Recomendada y Fácil): RSS Feed
-1. Crea un feed gratuito de tu Instagram en [RSS.app](https://rss.app/).
-2. Copia la URL del feed (ej: `https://rss.app/feeds/xyz.xml`).
-3. Avisame y actualizaré el script para que lea directamente de ahí. Es la forma más estable.
+---
+*El sistema ya es 100% autónomo. ¡Solo preocúpate de publicar en @lofi_sat!*
 
 ### Opción B: Ejecución Manual
 Si prefieres actualizarlo tú mismo:
