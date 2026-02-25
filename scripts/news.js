@@ -28,7 +28,7 @@ async function loadInstagramNews() {
                 card.className = 'news-card animate-on-scroll';
                 card.style.cssText = 'background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 20px; border-radius: 15px; backdrop-filter: blur(10px); display: flex; flex-direction: row; gap: 25px; align-items: stretch; margin-bottom: 25px; min-height: 220px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);';
 
-                const caption = post.caption ? (post.caption.length > 120 ? post.caption.substring(0, 120) + '...' : post.caption) : 'Nueva publicación';
+                const caption = post.caption ? (post.caption.length > 250 ? post.caption.substring(0, 250) + '...' : post.caption) : 'Nueva publicación';
                 const date = post.timestamp ? new Date(post.timestamp).toLocaleDateString() : 'Reciente';
 
                 // We try direct URL first, then proxied if needed (proxies can be blocked too)
