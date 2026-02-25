@@ -6,7 +6,7 @@
 @import url('./links.css');
 
 :root {
-    --color-bg: #CFD8DC;
+    --color-bg: #9DC4D1;
     /* Darker Blue-Grey (Blue Gray 100) */
     --color-bg-dark: #FFFFFF;
     /* White for sections */
@@ -193,7 +193,10 @@ ul {
     justify-content: center;
     align-items: center;
     position: relative;
-    background: linear-gradient(135deg, #B0BEC5 0%, #90A4AE 100%);
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../images/falkor/falkor_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     /* Blue Gray 200 to 300 */
     overflow: hidden;
 }
@@ -1489,6 +1492,7 @@ header.hero::before {
         transform: translateX(-50%) scale(0.6);
     }
 }
+
 /* --- Mobile Responsiveness --- */
 
 /* Mobile Nav Styles */
@@ -1504,15 +1508,22 @@ header.hero::before {
     overflow-y: auto;
     text-align: center;
     padding: 20px 0;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     border-bottom: 2px solid var(--color-primary);
     animation: navSlide 0.4s ease forwards;
     z-index: 1000;
 }
 
 @keyframes navSlide {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .nav-links.nav-active li {
@@ -1522,9 +1533,11 @@ header.hero::before {
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
+
 .toggle .line2 {
     opacity: 0;
 }
+
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
@@ -1547,7 +1560,8 @@ header.hero::before {
         justify-content: center;
     }
 
-    .spacer-50, .spacer-80 {
+    .spacer-50,
+    .spacer-80 {
         height: 30px;
     }
 
@@ -1559,12 +1573,14 @@ header.hero::before {
         height: 180px;
         border-radius: 12px;
     }
-    
-    .ice-icon, .antarctica-card .card-photo {
+
+    .ice-icon,
+    .antarctica-card .card-photo {
         transform: rotate(0deg);
     }
 
-    .seals-card, .falkor-card {
+    .seals-card,
+    .falkor-card {
         width: 220px;
         height: 220px;
         margin: 0 auto;
@@ -1579,7 +1595,7 @@ header.hero::before {
     .hero .subtitle {
         font-size: 1.1rem;
     }
-    
+
     .hero-content .btn {
         margin: 8px 0;
         width: 90%;
@@ -1612,8 +1628,10 @@ header.hero::before {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
-    
-    .research-grid, .outreach-grid, .assistance-grid {
+
+    .research-grid,
+    .outreach-grid,
+    .assistance-grid {
         grid-template-columns: 1fr !important;
     }
 
