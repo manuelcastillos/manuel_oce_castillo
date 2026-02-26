@@ -19,8 +19,8 @@ const translations = {
         about: {
             title: "Sobre Mí",
             subtitle: "Pasión por el Océano y la Ciencia",
-            description1: "Soy Oceanógrafo de la Pontificia Universidad Católica de Valparaíso y Doctor en Oceanografía de la Universidad de Concepción, especializado en la dinámica de estuarios, fiordos y oceanografía costera. Mi trabajo se centra en comprender cómo los procesos físicos interactúan con los ecosistemas marinos, especialmente en la Patagonia chilena.",
-            description2: "Actualmente me desempeño como Profesor Adjunto e Investigador en la Universidad de Valparaíso, donde dirijo el Laboratorio de Oceanografía Física y Satelital (LOFISAT- UV).",
+            description1: "Soy Oceanógrafo de la Pontificia Universidad Católica de Valparaíso y Doctor en Oceanografía de la Universidad de Concepción, especializado en la dinámica de estuarios, fiordos y oceanografía costera. Mi trayectoria profesional comenzó en el Servicio Hidrográfico y Oceanográfico de la Armada (SHOA), donde adquirí una sólida formación técnica y experiencia en trabajo de campo y en equipo. Posteriormente, me integré como Asistente de Investigación en el ECIM de la Pontificia Universidad Católica en Las Cruces, experiencia que encendió en mí una profunda vocación por la ciencia y me impulsó a cursar un Doctorado en Oceanografía.",
+            description2: "Hoy me desempeño como Profesor Adjunto e Investigador en la Universidad de Valparaíso, donde dirijo el Laboratorio de Oceanografía Física y Satelital (LOFISAT-UV). Mis más de 20 años de experiencia integran una base técnica forjada en el mar con una apasionada trayectoria investigadora en la Patagonia chilena y el océano austral.",
             stat_exp: "Años de Exp.",
             stat_projects: "Proyectos",
             stat_pubs: "Publicaciones"
@@ -157,8 +157,8 @@ const translations = {
         about: {
             title: "About Me",
             subtitle: "A Passion for the Ocean and Science",
-            description1: "I am an Oceanographer from the Pontificia Universidad Católica de Valparaíso with a PhD in Oceanography from the Universidad de Concepción, specialized in the dynamics of estuaries, fjords, and coastal oceanography. My work focuses on understanding how physical processes interact with marine ecosystems, especially in the Chilean Patagonia.",
-            description2: "I am currently an Assistant Professor and Researcher at the University of Valparaíso, where I lead the Physical and Satellite Oceanography Laboratory (LOFISAT-UV).",
+            description1: "I am an Oceanographer from the Pontificia Universidad Católica de Valparaíso with a PhD in Oceanography from the Universidad de Concepción, specialized in the dynamics of estuaries, fjords, and coastal oceanography. My professional career began at the Chilean Navy's Hydrographic and Oceanographic Service (SHOA), where I developed solid technical skills and hands-on fieldwork experience. I later joined the ECIM at the Pontificia Universidad Católica in Las Cruces as a Research Assistant — an experience that ignited my passion for science and led me to pursue a PhD in Oceanography.",
+            description2: "Today I serve as an Assistant Professor and Researcher at the University of Valparaíso, where I lead the Physical and Satellite Oceanography Laboratory (LOFISAT-UV). My 20+ years of experience blend a strong technical foundation built at sea with a dedicated research career focused on Chilean Patagonia and the Southern Ocean.",
             stat_exp: "Years of Exp.",
             stat_projects: "Projects",
             stat_pubs: "Publications"
