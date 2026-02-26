@@ -23,12 +23,14 @@ jobs:
       - name: Sync Instagram Posts
         env:
           IG_HANDLE: 'lofi_sat'
-        run: node scripts/update_news.js
+        run: |
+          node scripts/update_news.js
+          node scripts/update_field.js
 
       - name: Commit and push changes
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add data/instagram_news.json
+          git add data/instagram_news.json data/field_posts.json
           git commit -m "chore: auto-sync instagram news" || echo "No changes to commit"
           git push

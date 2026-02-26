@@ -1,0 +1,69 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Navy Outer Ring -->
+  <circle cx="400" cy="400" r="380" fill="none" stroke="#2C5282" stroke-width="2" />
+  <circle cx="400" cy="400" r="340" fill="none" stroke="#BEE3F8" stroke-width="4" />
+
+  <!-- Background Map (South America Simplified) -->
+  <path d="M510,210 C530,220 560,260 580,300 C600,340 680,450 630,550 C600,620 540,750 510,750 C490,750 480,650 470,600 C460,550 440,500 450,450 C460,400 460,350 470,300 C480,250 500,210 510,210 Z" fill="#E2E8F0" opacity="0.6" />
+
+  <!-- Circular Text -->
+  <defs>
+    <path id="circlePath" d="M400,400 m-310,0 a310,310 0 1,1 620,0 a310,310 0 1,1 -620,0" />
+  </defs>
+  <text font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#4A5568">
+    <textPath href="#circlePath" startOffset="50%">
+      Laboratorio de Oceanografía Física y Satelital
+    </textPath>
+  </text>
+
+  <!-- Central Text: LOFISAT -->
+  <!-- L -->
+  <text x="210" y="420" font-family="Verdana, Geneva, sans-serif" font-size="180" font-weight="900" fill="#2A4365">L</text>
+  
+  <!-- O as ADCP -->
+  <g transform="translate(390, 360)">
+    <!-- ADCP Body -->
+    <circle cx="0" cy="0" r="75" fill="#2D3748" />
+    <!-- 4 Transducers -->
+    <circle cx="-35" cy="-35" r="25" fill="#1A202C" stroke="#4A5568" stroke-width="2" />
+    <circle cx="35" cy="-35" r="25" fill="#1A202C" stroke="#4A5568" stroke-width="2" />
+    <circle cx="-35" cy="35" r="25" fill="#1A202C" stroke="#4A5568" stroke-width="2" />
+    <circle cx="35" cy="35" r="25" fill="#1A202C" stroke="#4A5568" stroke-width="2" />
+    <!-- Red Beams -->
+    <line x1="-35" y1="-35" x2="-80" y2="-80" stroke="#E53E3E" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+    <line x1="35" y1="-35" x2="80" y2="-80" stroke="#E53E3E" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+    <line x1="-35" y1="35" x2="-80" y2="80" stroke="#E53E3E" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+    <line x1="35" y1="35" x2="80" y2="80" stroke="#E53E3E" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+  </g>
+
+  <!-- F -->
+  <text x="490" y="420" font-family="Verdana, Geneva, sans-serif" font-size="180" font-weight="900" fill="#2A4365">F</text>
+
+  <!-- I as WiSens NKE CTD -->
+  <g transform="translate(630, 240)">
+    <!-- CTD Body -->
+    <rect x="-15" y="0" width="35" height="190" rx="10" fill="white" stroke="#2D3748" stroke-width="2" />
+    <!-- Sensor Head -->
+    <rect x="-15" y="-30" width="35" height="50" rx="5" fill="#1A202C" />
+    <rect x="-5" y="-45" width="15" height="20" fill="#4A5568" />
+    <!-- Text on CTD -->
+    <text x="0" y="100" transform="rotate(90, 0, 100)" font-family="Arial" font-size="18" fill="#2D3748" font-weight="bold">WiSens</text>
+  </g>
+
+  <!-- Sat -->
+  <text x="320" y="580" font-family="Verdana, Geneva, sans-serif" font-size="180" font-weight="900" fill="#D69E2E">Sat</text>
+
+  <!-- Satellite Icon (Bottom Left) -->
+  <g transform="translate(180, 620) rotate(-30)">
+    <!-- Satellite Body -->
+    <rect x="-20" y="-30" width="40" height="60" fill="#718096" />
+    <circle cx="0" cy="-10" r="15" fill="#A0AEC0" />
+    <!-- Solar Panels -->
+    <rect x="-90" y="-10" width="70" height="25" fill="#4A5568" stroke="#E2E8F0" stroke-width="2" />
+    <rect x="20" y="-10" width="70" height="25" fill="#4A5568" stroke="#E2E8F0" stroke-width="2" />
+    <line x1="-50" y1="-10" x2="-50" y2="15" stroke="#2D3748" />
+    <line x1="50" y1="-10" x2="50" y2="15" stroke="#2D3748" />
+    <line x1="-70" y1="-10" x2="-70" y2="15" stroke="#2D3748" />
+    <line x1="70" y1="-10" x2="70" y2="15" stroke="#2D3748" />
+  </g>
+</svg>
