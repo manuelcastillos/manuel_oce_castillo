@@ -28,15 +28,19 @@ const revealOnScroll = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
+            entry.target.classList.remove('hidden');
             observer.unobserve(entry.target);
         }
     });
 }, {
-    threshold: 0.1
+    threshold: 0.15,
+    rootMargin: '0px 0px -50px 0px'
 });
 
 revealElements.forEach(element => {
-    element.classList.add('hidden'); // Add initial hidden state via JS to avoid checking CSS
+    if (!element.classList.contains('visible')) {
+        element.classList.add('hidden');
+    }
     revealOnScroll.observe(element);
 });
 
@@ -190,6 +194,17 @@ if (expeditionModal && clickableCards.length > 0) {
         if (e.key === 'Escape' && expeditionModal.classList.contains('active')) {
             expeditionModal.classList.remove('active');
             document.body.style.overflow = '';
+        }
+    });
+}
+
+// Special trigger for "VER INACH" button to open Antarctic gallery
+const btnVerInach = document.getElementById('btn-ver-inach');
+if (btnVerInach) {
+    btnVerInach.addEventListener('click', () => {
+        const antarcticaGridItem = document.querySelector('.antarctica-card');
+        if (antarcticaGridItem) {
+            antarcticaGridItem.click();
         }
     });
 }

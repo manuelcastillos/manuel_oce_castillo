@@ -43,7 +43,7 @@ const publicationsData = [
     { authors: "Castillo, Manuel; Bello, Mónica; Reyes, Hernán; Guerrero, Yenny", title: "Patrones de corrientes y distribución vertical de temperatura y salinidad en la entrada oceánica del canal Darwin en invierno y primavera de 2002", journal: "Ciencia y Tecnología del Mar", year: "2006", url: "http://www.shoa.cl/servicios/cimar/resultados/cimar8/articulo2.pdf" },
     { authors: "Castillo, Manuel; Valenzuela, Claudia", title: "Circulation regime in the austral Chilean channels and fjords", journal: "Avances en el conocimiento oceanográfico de las aguas interiores chilenas", year: "2006", url: "" },
     { authors: "Valle–Levinson, A; Schneider, W; Sobarzo, M; Bello, M; Bravo, L; Castillo, M; Duarte, L; Fuenzalida, R; Gallegos, JM; Garcés–Vargas, J", title: "Wind-induced exchange at the entrance to Concepción Bay, an equatorward facing embayment in central Chile", journal: "Deep Sea Research Part II: Topical Studies in Oceanography", year: "2004", url: "https://doi.org/10.1016/j.dsr2.2004.09.014" }
-];
+];;
 
 document.addEventListener('DOMContentLoaded', () => {
     // Check for either the index list or the full page list
