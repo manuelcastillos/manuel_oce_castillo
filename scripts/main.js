@@ -198,16 +198,4 @@ if (expeditionModal && clickableCards.length > 0) {
     });
 }
 
-// Special trigger for "VER INACH" button to open Antarctic gallery
-const btnVerInach = document.getElementById('btn-ver-inach');
-if (btnVerInach) {
-    btnVerInach.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        // Target specifically the antarctica card in the highlights section
-        const antarcticaGridItem = document.querySelector('#featured-highlights .antarctica-card');
-        if (antarcticaGridItem) {
-            antarcticaGridItem.click();
-        }
-    });
-}
+// Button listeners are now handled directly in HTML via href for external links or data-gallery for modals
