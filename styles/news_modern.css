@@ -1,0 +1,327 @@
+/* 
+ * news_modern.css - Professional interactive styles for LOFISAT News
+ */
+
+:root {
+    --news-card-bg: rgba(255, 255, 255, 0.05);
+    --news-card-hover: rgba(255, 255, 255, 0.12);
+    --news-accent: #00E5FF;
+    --news-text: #FFFFFF;
+    --news-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Container Adjustments */
+.news-section {
+    background: #020C17 !important;
+    /* Deep ocean dark */
+    padding: 120px 0;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Interactive News Card */
+.interactive-news-card {
+    position: relative;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--news-card-bg);
+    border: 1px solid var(--news-glass-border);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUpNews 0.8s forwards;
+}
+
+.interactive-news-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    background: var(--news-card-hover);
+    border-color: var(--news-accent);
+    box-shadow: 0 20px 40px rgba(0, 229, 255, 0.2);
+}
+
+.card-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.interactive-news-card:hover .card-image img {
+    transform: scale(1.1) rotate(1deg);
+}
+
+.card-date-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--news-accent);
+    color: #000;
+    padding: 5px 15px;
+    font-weight: 800;
+    font-size: 0.8rem;
+    border-radius: 0 10px 0 0;
+    font-family: var(--font-heading);
+}
+
+.card-info {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-tag {
+    color: var(--news-accent);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.card-info h3 {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0;
+    flex-grow: 1;
+    font-weight: 400;
+}
+
+.card-footer {
+    border-top: 1px solid var(--news-glass-border);
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+.card-footer i {
+    font-size: 1.2rem;
+    color: var(--news-accent);
+    transition: transform 0.3s ease;
+}
+
+.interactive-news-card:hover .card-footer i {
+    transform: scale(1.2);
+}
+
+/* Follow Us Card Variant */
+.follow-us-card {
+    background: linear-gradient(135deg, rgba(0, 229, 255, 0.1), rgba(0, 40, 80, 0.4));
+    border-color: var(--news-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow-content {
+    text-align: center;
+    padding: 40px;
+}
+
+.follow-content i {
+    font-size: 4rem;
+    color: var(--news-accent);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.follow-content h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.follow-content p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 25px;
+}
+
+.btn-mini {
+    background: var(--news-accent);
+    color: #000;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-weight: 800;
+    transition: var(--transition);
+}
+
+.btn-mini:hover {
+    background: #fff;
+    transform: scale(1.1);
+}
+
+/* News Modal Overlay */
+.news-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 12, 23, 0.95);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(15px);
+}
+
+.news-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.news-modal-content {
+    width: 90%;
+    max-width: 1100px;
+    max-height: 90vh;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--news-glass-border);
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    transform: scale(0.9);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.news-modal-overlay.active .news-modal-content {
+    transform: scale(1);
+}
+
+.news-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 50;
+    line-height: 1;
+}
+
+.news-modal-body {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.modal-image-col {
+    flex: 1.2;
+    min-width: 400px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-image-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-text-col {
+    flex: 1;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #020C17;
+}
+
+.modal-date {
+    color: var(--news-accent);
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.modal-handle {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.modal-caption {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.btn-insta {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    align-self: flex-start;
+    transition: var(--transition);
+}
+
+.btn-insta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeInUpNews {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .modal-image-col {
+        flex: none;
+        width: 100%;
+        height: 300px;
+    }
+
+    .modal-text-col {
+        padding: 30px;
+    }
+
+    .modal-handle {
+        font-size: 1.8rem;
+    }
+}

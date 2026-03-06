@@ -40,7 +40,7 @@ const translations = {
             antarctica_subtitle: "Efectos del Cambio Climático en Peces Antárticos",
             antarctica_desc1: "Participación en la Expedición Científica Antártica (ECA) estudiando cómo el forzamiento ambiental afecta los rasgos de vida temprana de los peces antárticos en un océano en calentamiento.",
             antarctica_desc2: "Trabajo de campo en condiciones extremas para recolectar datos oceanográficos vitales para entender el futuro de los ecosistemas polares.",
-            antarctica_btn: "Ver INACH",
+            antarctica_btn: "Ver Galería Antártica",
 
             label_featured: "EXPEDICIÓN DESTACADA",
             falkor_title: "R/V Falkor (too)",
@@ -178,7 +178,7 @@ const translations = {
             antarctica_subtitle: "Climate Change Effects on Antarctic Fish",
             antarctica_desc1: "Participation in the Antarctic Scientific Expedition (ECA) studying how environmental forcing affects the early life traits of Antarctic fish in a warming ocean.",
             antarctica_desc2: "Fieldwork in extreme conditions to collect vital oceanographic data for understanding the future of polar ecosystems.",
-            antarctica_btn: "View INACH",
+            antarctica_btn: "View Antarctic Gallery",
 
             label_featured: "FEATURED EXPEDITION",
             falkor_title: "R/V Falkor (too)",
