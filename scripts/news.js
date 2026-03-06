@@ -65,6 +65,9 @@ async function loadInstagramNews() {
                         <div class="card-image">
                             <img src="${imgUrl}" alt="News" onerror="this.src='images/logo_lofisat.jpg'">
                             <div class="card-date-badge">${date}</div>
+                            <div class="card-watermark">
+                                <img src="images/logo_lofisat.jpg" alt="Logo LOFISAT">
+                            </div>
                         </div>
                         <div class="card-info">
                             <span class="card-tag">LOFISAT News</span>
