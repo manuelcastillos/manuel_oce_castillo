@@ -44,6 +44,9 @@ async function loadInstagramNews() {
         const posts = await response.json();
 
         if (posts && posts.length > 0) {
+            // Sort posts by timestamp descending to ensure newest are first
+            posts.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+
             container.innerHTML = '';
 
             posts.forEach((post, index) => {
