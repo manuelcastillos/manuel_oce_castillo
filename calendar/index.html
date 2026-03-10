@@ -9,94 +9,82 @@
         content="Calendario de disponibilidad de Manuel I. Castillo, Oceanógrafo Físico e Investigador.">
     <meta name="robots" content="noindex">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS SDK (autonomous email sending, no mail client needed) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS — replace with your own Public Key from emailjs.com
+        // Service ID: service_lofisat  |  Template ID: template_calendar
+        const EMAILJS_SERVICE = 'service_lofisat';
+        const EMAILJS_TEMPLATE = 'template_calendar';
+        const EMAILJS_PUBLIC = 'YOUR_EMAILJS_PUBLIC_KEY'; // <-- replace once
+
+        (function () {
+            emailjs.init({ publicKey: EMAILJS_PUBLIC });
+        })();
+    </script>
 </head>
 
 <body>
 
-    <!-- Floating particles background -->
-    <div class="particles"></div>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-badge">
+            <i class="fa-solid fa-wave-square"></i>
+            LOFISAT-UV · Universidad de Valparaíso
+        </div>
+        <h1>Calendario Manuel Castillo</h1>
+        <p class="subtitle">Oceanógrafo Físico · Gestión de Reuniones y Disponibilidad</p>
+    </header>
 
     <div class="page-wrapper">
-
-        <!-- ===== HEADER ===== -->
-        <header>
-            <div class="title-container">
-                <div class="header-badge">
-                    <i class="fa-solid fa-wave-square"></i>
-                    LOFISAT-UV · Universidad de Valparaíso
-                </div>
-                <h1>Calendario Manuel Castillo</h1>
-                <p class="subtitle">Física Oceánica · Gestión de Reuniones y Disponibilidad</p>
-            </div>
-        </header>
 
         <!-- ===== CALENDAR CARD ===== -->
         <div class="calendar-card">
 
-            <!-- Navigation bar -->
             <div class="cal-nav">
                 <button id="prev-btn" class="cal-nav-btn" aria-label="Mes anterior">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
-
-                <div class="cal-month-title" id="cal-month-title">
-                    <!-- Filled by JS -->
-                </div>
-
-                <div style="display:flex; gap:0.5rem; align-items:center;">
+                <div class="cal-month-title" id="cal-month-title"></div>
+                <div style="display:flex;gap:0.5rem;align-items:center;">
                     <button id="today-btn" class="cal-nav-btn"
-                        style="width:auto; padding: 0 1rem; font-size:0.82rem; font-weight:600; letter-spacing:0.04em;"
-                        aria-label="Hoy">
-                        HOY
-                    </button>
+                        style="width:auto;padding:0 1rem;font-size:0.8rem;font-weight:700;letter-spacing:0.06em;">HOY</button>
                     <button id="next-btn" class="cal-nav-btn" aria-label="Mes siguiente">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
             </div>
 
-            <!-- Calendar Grid -->
             <div class="cal-grid">
-                <div class="cal-weekdays" id="cal-weekdays">
-                    <!-- Filled by JS -->
-                </div>
-                <div class="cal-days" id="cal-days">
-                    <!-- Filled by JS -->
-                </div>
+                <div class="cal-weekdays" id="cal-weekdays"></div>
+                <div class="cal-days" id="cal-days"></div>
             </div>
 
-            <!-- Legend -->
             <div class="cal-legend">
                 <div class="legend-item">
-                    <div class="legend-dot today"></div>
-                    <span>Hoy</span>
+                    <div class="legend-dot today"></div><span>Hoy</span>
                 </div>
                 <div class="legend-item">
-                    <div class="legend-dot event"></div>
-                    <span>Evento marcado</span>
+                    <div class="legend-dot event"></div><span>Evento (haz clic para ver)</span>
                 </div>
                 <div class="legend-item">
-                    <div class="legend-dot avail"></div>
-                    <span>Disponible</span>
+                    <div class="legend-dot avail"></div><span>Sin eventos</span>
                 </div>
             </div>
         </div>
 
-        <!-- ===== ACTION BUTTONS ===== -->
+        <!-- ===== ACTION ===== -->
         <div class="actions">
             <button id="contact-btn" class="btn btn-contact">
-                <i class="fa-solid fa-paper-plane"></i> Contactar
+                <i class="fa-solid fa-paper-plane"></i> Solicitar Reunión
             </button>
             <a href="../index.html" class="btn btn-outline">
                 <i class="fa-solid fa-house"></i> Web Personal
@@ -106,7 +94,7 @@
         <!-- ===== FOOTER ===== -->
         <footer>
             <p>
-                <strong>Manuel I. Castillo</strong> · Investigador LOFISAT-UV &nbsp;|&nbsp;
+                <strong>Manuel I. Castillo</strong> · LOFISAT, Universidad de Valparaíso &nbsp;|&nbsp;
                 <a href="mailto:manuel.castillo@uv.cl"><i class="fa-solid fa-envelope"></i> manuel.castillo@uv.cl</a>
             </p>
         </footer>
@@ -116,62 +104,73 @@
 
     <!-- ===== DAY EVENT POPUP ===== -->
     <div class="day-popup" id="day-popup">
-        <header>
+        <div class="day-popup-header">
             <h3 id="day-popup-title"></h3>
             <button class="popup-close" id="day-popup-close" aria-label="Cerrar">
                 <i class="fa-solid fa-xmark"></i>
             </button>
-        </header>
+        </div>
         <div id="day-popup-list"></div>
     </div>
 
+
     <!-- ===== CONTACT MODAL ===== -->
     <div class="modal-overlay" id="contact-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
-
         <div class="modal">
             <button class="modal-close" id="modal-close" aria-label="Cerrar">
                 <i class="fa-solid fa-xmark"></i>
             </button>
 
-            <div class="modal-icon">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-
-            <h2 id="modal-heading">Enviar mensaje</h2>
+            <div class="modal-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <h2 id="modal-heading">Solicitar una reunión</h2>
             <p class="modal-desc">
-                Completa el formulario y se abrirá tu cliente de correo listo para enviar el mensaje a
-                <strong>manuel.castillo@uv.cl</strong>.
+                Completa el formulario y el mensaje llegará directamente a
+                <strong>manuel.castillo@uv.cl</strong> — sin abrir tu cliente de correo.
             </p>
 
-            <!-- Form -->
-            <form id="contact-form">
+            <form id="contact-form" novalidate>
                 <div class="form-group">
-                    <label for="cf-name">Tu nombre</label>
-                    <input type="text" id="cf-name" placeholder="Nombre completo" required autocomplete="name">
+                    <label for="cf-name">Tu nombre completo *</label>
+                    <input type="text" id="cf-name" name="from_name" placeholder="Ej: Dra. Camila Sola" required
+                        autocomplete="name">
                 </div>
                 <div class="form-group">
-                    <label for="cf-email">Tu correo electrónico</label>
-                    <input type="email" id="cf-email" placeholder="correo@ejemplo.com" required autocomplete="email">
+                    <label for="cf-email">Tu correo electrónico *</label>
+                    <input type="email" id="cf-email" name="reply_to" placeholder="tucorreo@institucion.cl" required
+                        autocomplete="email">
                 </div>
                 <div class="form-group">
-                    <label for="cf-msg">Mensaje</label>
-                    <textarea id="cf-msg" placeholder="¿En qué te puedo ayudar? ¿Cuándo quieres reunirte?..."
+                    <label for="cf-institution">Institución / Organización</label>
+                    <input type="text" id="cf-institution" name="institution"
+                        placeholder="Universidad / Centro de investigación">
+                </div>
+                <div class="form-group">
+                    <label for="cf-topic">Tema de la reunión *</label>
+                    <select id="cf-topic" name="topic" required>
+                        <option value="" disabled selected>Selecciona una opción...</option>
+                        <option value="Colaboración de investigación">Colaboración de investigación</option>
+                        <option value="Tesis / asesoría académica">Tesis / asesoría académica</option>
+                        <option value="Asesoría técnica u oceanográfica">Asesoría técnica u oceanográfica</option>
+                        <option value="Proyecto FONDECYT / fondos">Proyecto FONDECYT / fondos</option>
+                        <option value="Consulta general">Consulta general</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cf-msg">Mensaje / Detalles *</label>
+                    <textarea id="cf-msg" name="message"
+                        placeholder="Describe brevemente el motivo de la reunión y tu disponibilidad horaria..."
                         required></textarea>
                 </div>
-                <button type="submit" class="btn btn-send">
+
+                <button type="submit" class="btn btn-send" id="send-btn">
                     <i class="fa-solid fa-paper-plane"></i> Enviar mensaje
                 </button>
+
+                <div class="form-status" id="form-status"></div>
             </form>
-
-            <!-- Success state -->
-            <div class="success-state" id="success-state">
-                <div class="success-icon">✅</div>
-                <h3>¡Todo listo!</h3>
-                <p>Se abrió tu cliente de correo con el mensaje preparado. Solo tienes que hacer clic en Enviar.</p>
-            </div>
         </div>
-
-    </div><!-- /modal -->
+    </div>
 
     <script src="calendar.js"></script>
 </body>
