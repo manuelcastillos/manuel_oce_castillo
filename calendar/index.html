@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Manuel Castillo | Disponibilidad</title>
+    <meta name="description"
+        content="Calendario de disponibilidad y reuniones para Manuel Castillo, Oceanógrafo Físico.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="title-container">
+            <h1>Calendario Manuel Castillo</h1>
+            <p class="subtitle">Disponibilidad para reuniones, clases y terreno</p>
+        </div>
+    </header>
+
+    <main class="calendar-wrapper">
+        <section class="calendar-container">
+            <iframe
+                src="https://outlook.office365.com/owa/calendar/059f58253820411286047bf197467719@uv.cl/e1ace145710a4e07bc1f95f0f09437da15098587006899194286/calendar.html"
+                frameborder="0" scrolling="yes" allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+
+    <div class="actions">
+        <button id="copyBtn" class="btn btn-primary">
+            <i class="fa-solid fa-copy"></i> Copiar Link
+        </button>
+        <a href="../index.html" class="btn btn-outline">
+            <i class="fa-solid fa-house"></i> Volver a la Web
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Manuel I. Castillo. Professional Appointment System.</p>
+    </footer>
+
+    <script>
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
+                const btn = document.getElementById('copyBtn');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<i class="fa-solid fa-check"></i> ¡Copiado!';
+                btn.style.background = '#2a9d8f';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.background = '';
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+
+</html>
