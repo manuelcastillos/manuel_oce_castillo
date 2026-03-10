@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendario Manuel Castillo | Disponibilidad</title>
     <meta name="description"
-        content="Calendario de disponibilidad y reuniones para Manuel Castillo, Oceanógrafo Físico.">
+        content="Calendario de disponibilidad de Manuel I. Castillo, Oceanógrafo Físico e Investigador.">
+    <meta name="robots" content="noindex">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -22,50 +23,146 @@
 </head>
 
 <body>
-    <header>
-        <div class="title-container">
-            <h1>Calendario Manuel Castillo</h1>
-            <p class="subtitle">Disponibilidad para reuniones, clases y terreno</p>
+
+    <!-- Floating particles background -->
+    <div class="particles"></div>
+
+    <div class="page-wrapper">
+
+        <!-- ===== HEADER ===== -->
+        <header>
+            <div class="title-container">
+                <div class="header-badge">
+                    <i class="fa-solid fa-wave-square"></i>
+                    LOFISAT-UV · Universidad de Valparaíso
+                </div>
+                <h1>Calendario Manuel Castillo</h1>
+                <p class="subtitle">Física Oceánica · Gestión de Reuniones y Disponibilidad</p>
+            </div>
+        </header>
+
+        <!-- ===== CALENDAR CARD ===== -->
+        <div class="calendar-card">
+
+            <!-- Navigation bar -->
+            <div class="cal-nav">
+                <button id="prev-btn" class="cal-nav-btn" aria-label="Mes anterior">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="cal-month-title" id="cal-month-title">
+                    <!-- Filled by JS -->
+                </div>
+
+                <div style="display:flex; gap:0.5rem; align-items:center;">
+                    <button id="today-btn" class="cal-nav-btn"
+                        style="width:auto; padding: 0 1rem; font-size:0.82rem; font-weight:600; letter-spacing:0.04em;"
+                        aria-label="Hoy">
+                        HOY
+                    </button>
+                    <button id="next-btn" class="cal-nav-btn" aria-label="Mes siguiente">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Calendar Grid -->
+            <div class="cal-grid">
+                <div class="cal-weekdays" id="cal-weekdays">
+                    <!-- Filled by JS -->
+                </div>
+                <div class="cal-days" id="cal-days">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+
+            <!-- Legend -->
+            <div class="cal-legend">
+                <div class="legend-item">
+                    <div class="legend-dot today"></div>
+                    <span>Hoy</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot event"></div>
+                    <span>Evento marcado</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot avail"></div>
+                    <span>Disponible</span>
+                </div>
+            </div>
         </div>
-    </header>
 
-    <main class="calendar-wrapper">
-        <section class="calendar-container">
-            <iframe
-                src="https://outlook.office365.com/owa/calendar/059f58253820411286047bf197467719@uv.cl/e1ace145710a4e07bc1f95f0f09437da15098587006899194286/calendar.html"
-                frameborder="0" scrolling="yes" allowfullscreen>
-            </iframe>
-        </section>
-    </main>
+        <!-- ===== ACTION BUTTONS ===== -->
+        <div class="actions">
+            <button id="contact-btn" class="btn btn-contact">
+                <i class="fa-solid fa-paper-plane"></i> Contactar
+            </button>
+            <a href="../index.html" class="btn btn-outline">
+                <i class="fa-solid fa-house"></i> Web Personal
+            </a>
+        </div>
 
-    <div class="actions">
-        <button id="copyBtn" class="btn btn-primary">
-            <i class="fa-solid fa-copy"></i> Copiar Link
-        </button>
-        <a href="../index.html" class="btn btn-outline">
-            <i class="fa-solid fa-house"></i> Volver a la Web
-        </a>
-    </div>
+        <!-- ===== FOOTER ===== -->
+        <footer>
+            <p>
+                <strong>Manuel I. Castillo</strong> · Investigador LOFISAT-UV &nbsp;|&nbsp;
+                <a href="mailto:manuel.castillo@uv.cl"><i class="fa-solid fa-envelope"></i> manuel.castillo@uv.cl</a>
+            </p>
+        </footer>
 
-    <footer>
-        <p>&copy; 2026 Manuel I. Castillo. Professional Appointment System.</p>
-    </footer>
+    </div><!-- /page-wrapper -->
 
-    <script>
-        document.getElementById('copyBtn').addEventListener('click', () => {
-            const url = window.location.href;
-            navigator.clipboard.writeText(url).then(() => {
-                const btn = document.getElementById('copyBtn');
-                const originalText = btn.innerHTML;
-                btn.innerHTML = '<i class="fa-solid fa-check"></i> ¡Copiado!';
-                btn.style.background = '#2a9d8f';
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    btn.style.background = '';
-                }, 2000);
-            });
-        });
-    </script>
+
+    <!-- ===== CONTACT MODAL ===== -->
+    <div class="modal-overlay" id="contact-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+
+        <div class="modal">
+            <button class="modal-close" id="modal-close" aria-label="Cerrar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <h2 id="modal-heading">Enviar mensaje</h2>
+            <p class="modal-desc">
+                Completa el formulario y se abrirá tu cliente de correo listo para enviar el mensaje a
+                <strong>manuel.castillo@uv.cl</strong>.
+            </p>
+
+            <!-- Form -->
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="cf-name">Tu nombre</label>
+                    <input type="text" id="cf-name" placeholder="Nombre completo" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="cf-email">Tu correo electrónico</label>
+                    <input type="email" id="cf-email" placeholder="correo@ejemplo.com" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="cf-msg">Mensaje</label>
+                    <textarea id="cf-msg" placeholder="¿En qué te puedo ayudar? ¿Cuándo quieres reunirte?..."
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-send">
+                    <i class="fa-solid fa-paper-plane"></i> Enviar mensaje
+                </button>
+            </form>
+
+            <!-- Success state -->
+            <div class="success-state" id="success-state">
+                <div class="success-icon">✅</div>
+                <h3>¡Todo listo!</h3>
+                <p>Se abrió tu cliente de correo con el mensaje preparado. Solo tienes que hacer clic en Enviar.</p>
+            </div>
+        </div>
+
+    </div><!-- /modal -->
+
+    <script src="calendar.js"></script>
 </body>
 
 </html>
