@@ -259,19 +259,20 @@ h1 {
 }
 
 .cal-day {
-    aspect-ratio: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     border-radius: 12px;
     cursor: default;
     transition: var(--transition);
     position: relative;
-    min-height: 52px;
+    min-height: 64px;
+    padding: 6px 4px 4px;
     border: 1px solid transparent;
     font-size: 0.9rem;
     font-weight: 500;
+    overflow: hidden;
 }
 
 .cal-day.empty {
@@ -653,6 +654,130 @@ footer a:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* === EVENT LABELS === */
+.event-label {
+    font-size: 0.62rem;
+    font-weight: 600;
+    color: var(--accent-teal);
+    background: rgba(46, 196, 182, 0.15);
+    border-radius: 4px;
+    padding: 1px 4px;
+    margin-top: 3px;
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.3;
+}
+
+.more-badge {
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    padding: 1px 4px;
+    margin-top: 2px;
+}
+
+/* === DAY POPUP === */
+.day-popup {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(30px);
+    width: 90%;
+    max-width: 420px;
+    background: #071e34;
+    border: 1px solid var(--border-hover);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+    z-index: 900;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.day-popup.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateX(-50%) translateY(0);
+}
+
+.day-popup header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background: none;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.day-popup header h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-transform: capitalize;
+}
+
+.popup-close {
+    width: 28px;
+    height: 28px;
+    background: var(--bg-glass);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: var(--transition);
+}
+
+.popup-close:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.day-event-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.8rem;
+    background: var(--bg-glass);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 0.6rem;
+}
+
+.day-event-item:last-child {
+    margin-bottom: 0;
+}
+
+.ev-time {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--ocean-light);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.ev-summary {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.ev-loc {
+    font-size: 0.78rem;
+    color: var(--text-muted);
 }
 
 /* === RESPONSIVE === */

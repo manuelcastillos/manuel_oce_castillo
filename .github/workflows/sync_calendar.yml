@@ -1,0 +1,29 @@
+name: Sync Outlook Calendar
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # Every 6 hours
+  workflow_dispatch:          # Allow manual trigger from GitHub UI
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch Outlook calendar events
+        run: node scripts/update_calendar.js
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name  'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add data/calendar_events.json
+          git diff --cached --quiet || git commit -m "chore: auto-sync outlook calendar events"
+          git push
