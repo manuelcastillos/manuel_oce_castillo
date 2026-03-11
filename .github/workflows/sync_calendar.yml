@@ -2,7 +2,7 @@ name: Sync Outlook Calendar
 
 on:
   schedule:
-    - cron: '0 */6 * * *'   # Every 6 hours
+    - cron: '0 10-21 * * *'   # Every hour between 7:00 and 18:00 (UTC-3)
   workflow_dispatch:          # Allow manual trigger from GitHub UI
 
 jobs:
