@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anillo Seals ATE 220033 | Public Data Portal</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/data.css">
+</head>
+
+<body class="data-portal-body">
+
+    <header class="portal-header">
+        <h1>Anillo Seals <span style="font-weight: 300;">Data Portal</span></h1>
+        <div class="project-info">
+            Proyecto Anillo Seals ATE 220033: Seals as Dynamic Observers of the Chilean Coastal Ocean.
+        </div>
+    </header>
+
+    <div class="portal-container">
+        
+        <div class="legal-notice">
+            <h2><i class="fa-solid fa-circle-exclamation"></i> Terms of Use</h2>
+            <p>
+                Access to this information is restricted to <strong>academic and research purposes only</strong>. 
+                Users must acknowledge the source and the "Proyecto Anillo Seals ATE 220033" in any documentation, 
+                publications, or presentations resulting from the use of this data.
+            </p>
+        </div>
+
+        <div class="datasets-grid">
+            <!-- CTD AML -->
+            <div class="data-card">
+                <div class="card-icon"><i class="fa-solid fa-temperature-three-quarters"></i></div>
+                <h3>CTD AML</h3>
+                <p>Oceanographic profiles including Conductivity, Temperature, and Depth (CTD) collected using AML sensors.</p>
+                <button class="btn-download" onclick="openDownloadModal('CTD_AML')">Download Metadata & Data</button>
+            </div>
+
+            <!-- CTD NKE -->
+            <div class="data-card">
+                <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h3>CTD NKE Time Series</h3>
+                <p>Long-term time series of oceanographic parameters measured with NKE instrumentation platforms.</p>
+                <button class="btn-download" onclick="openDownloadModal('CTD_NKE_time_series')">Download Metadata & Data</button>
+            </div>
+
+            <!-- CTD SDLR -->
+            <div class="data-card">
+                <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
+                <h3>CTD SDLR</h3>
+                <p>High-resolution vertical profiles and specialized CTD data from SDLR sensor systems.</p>
+                <button class="btn-download" onclick="openDownloadModal('CTD_SDLR')">Download Metadata & Data</button>
+            </div>
+
+            <!-- Dissolved Oxygen -->
+            <div class="data-card">
+                <div class="card-icon"><i class="fa-solid fa-droplet"></i></div>
+                <h3>DO Time Series</h3>
+                <p>Continuous Dissolved Oxygen concentration monitoring across various depths and locations.</p>
+                <button class="btn-download" onclick="openDownloadModal('DO_time_series')">Download Metadata & Data</button>
+            </div>
+
+            <!-- Discharge -->
+            <div class="data-card">
+                <div class="card-icon"><i class="fa-solid fa-water"></i></div>
+                <h3>Discharge Time Series</h3>
+                <p>Freshwater inflow, river discharge measurements, and estimated continental runoff datasets.</p>
+                <button class="btn-download" onclick="openDownloadModal('Discharge_time_series')">Download Metadata & Data</button>
+            </div>
+
+            <!-- Meteo -->
+            <div class="data-card">
+                <div class="card-icon"><i class="fa-solid fa-wind"></i></div>
+                <h3>Meteo Time Series</h3>
+                <p>Local meteorological conditions including wind speed/direction, air temperature, and atmospheric pressure.</p>
+                <button class="btn-download" onclick="openDownloadModal('Meteo_time_series')">Download Metadata & Data</button>
+            </div>
+
+            <!-- Sealevel -->
+            <div class="data-card">
+                <div class="card-icon"><i class="fa-solid fa-arrow-up-wide-short"></i></div>
+                <h3>Sealevel Time Series</h3>
+                <p>Sea level measurements, tidal oscillations, and long-period wave analysis datasets.</p>
+                <button class="btn-download" onclick="openDownloadModal('Sealevel_time_series')">Download Metadata & Data</button>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 60px;">
+            <a href="./index.html" style="color: var(--portal-primary); text-decoration: none; font-weight: 600;">
+                <i class="fa-solid fa-chevron-left"></i> Back to Portfolio
+            </a>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="registration-modal">
+        <div class="modal-portal-content">
+            <span class="close-portal-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-portal-header">
+                <h2>Data Access Request</h2>
+                <p style="font-size: 0.85rem; color: #777;">Please provide your details to proceed with the download.</p>
+            </div>
+            <form id="downloadForm">
+                <input type="hidden" id="targetDataset" name="dataset">
+                
+                <div class="form-group">
+                    <label for="reg-name">Full Name *</label>
+                    <input type="text" id="reg-name" name="name" placeholder="Your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reg-inst">Institution *</label>
+                    <input type="text" id="reg-inst" name="institution" placeholder="University, Lab, or Organization" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reg-purpose">Purpose of Use *</label>
+                    <textarea id="reg-purpose" name="purpose" rows="3" placeholder="Briefly describe your research or academic use" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn" id="submitBtn">Submit & Download <i class="fa-solid fa-download"></i></button>
+                <p style="font-size: 0.75rem; color: #999; margin-top: 15px; text-align: center;">
+                    By clicking submit, you agree to the academic terms of use.
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById("registrationModal");
+        const form = document.getElementById("downloadForm");
+        let currentDataset = "";
+
+        // URL of your Google Apps Script Webhook
+        const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyawJZZauGdiTQK0_hsuK0-A1eb7YbxZtN6x2usS4muwXG_o06iqZ_y1Kpd4JAp65Ef/exec";
+
+        function openDownloadModal(datasetId) {
+            currentDataset = datasetId;
+            document.getElementById("targetDataset").value = datasetId;
+            modal.style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeModal() {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        form.onsubmit = function(e) {
+            e.preventDefault();
+            const submitBtn = document.getElementById("submitBtn");
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = "Processing... <i class='fa-solid fa-spinner fa-spin'></i>";
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            data.timestamp = new Date().toLocaleString();
+
+            // 1. Send to Google Sheets (if URL exists)
+            if (WEBHOOK_URL !== "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE") {
+                fetch(WEBHOOK_URL, {
+                    method: 'POST',
+                    mode: 'no-cors', // standard for simple webhooks
+                    body: JSON.stringify(data),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+            } else {
+                console.log("No webhook configured. Data recorded locally for demo:", data);
+            }
+
+            // 2. Trigger Download
+            // Path structure: data/datasets/ANILLO_SEALS_data/{category}.zip
+            // Assuming you compress folders into .zip files
+            const downloadUrl = `data/datasets/ANILLO_SEALS_data/${currentDataset}.zip`;
+            
+            // For now, let's just alert the URL since files might not be zipped yet
+            setTimeout(() => {
+                alert(`Thank you ${data.name}. The download for ${currentDataset} will start now.\nNote: Make sure to zip your folders as ${currentDataset}.zip in the data/datasets/ANILLO_SEALS_data/ directory.`);
+                
+                // Actual download trigger
+                const a = document.createElement("a");
+                a.href = downloadUrl;
+                a.download = `${currentDataset}.zip`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                
+                closeModal();
+                form.reset();
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = "Submit & Download <i class='fa-solid fa-download'></i>";
+            }, 1000);
+        };
+    </script>
+
+</body>
+</html>
