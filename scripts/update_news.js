@@ -1,55 +1,111 @@
 const fs = require('fs');
 const axios = require('axios');
+const path = require('path');
 
-async function syncInstagram() {
-    const rssUrl = 'https://rss.app/feeds/Izc71vq3Wly9kcqV.xml';
-    console.log(`Fetching RSS feed from ${rssUrl}...`);
+async function syncInstagramApify() {
+    const apiToken = process.env.APIFY_API_TOKEN;
+    if (!apiToken) {
+        console.error('APIFY_API_TOKEN is not set in environment variables');
+        process.exit(1);
+    }
+
+    console.log('Starting Instagram sync via Apify...');
+
+    // We use the official apify/instagram-scraper which handles profile posts well
+    const actorId = 'apify~instagram-scraper';
+    const apiUrl = `https://api.apify.com/v2/acts/${actorId}/runs?token=${apiToken}`;
+
+    const payload = {
+        addParentData: false,
+        directUrls: ["https://www.instagram.com/lofi_sat/"],
+        enhanceUserSearchWithFacebookPage: false,
+        isUserTaggedFeedURL: false,
+        resultsLimit: 12, // Get up to 12 latest posts/reels
+        resultsType: "posts",
+        searchLimit: 1,
+        searchType: "hashtag"
+    };
 
     try {
-        const response = await axios.get(rssUrl);
-        const xml = response.data;
-
-        // Simple regex-based parsing for RSS items
-        const items = [];
-        const itemRegex = /<item>([\s\S]*?)<\/item>/g;
-        let match;
-
-        while ((match = itemRegex.exec(xml)) !== null && items.length < 5) {
-            const content = match[1];
-
-            const titleMatch = content.match(/<title><!\[CDATA\[([\s\S]*?)\]\]><\/title>/);
-            const linkMatch = content.match(/<link>([\s\S]*?)<\/link>/);
-            const dateMatch = content.match(/<pubDate>([\s\S]*?)<\/pubDate>/);
-            const mediaMatch = content.match(/<media:content[\s\S]*?url="([\s\S]*?)"/);
-
-            // For description (caption), we take it from CDATA in description tag
-            const descMatch = content.match(/<description><!\[CDATA\[([\s\S]*?)\]\]><\/description>/);
-            let caption = '';
-            if (descMatch) {
-                // Remove HTML tags from description
-                caption = descMatch[1].replace(/<[^>]*>?/gm, '').trim();
+        console.log('Triggering Apify Actor...');
+        
+        let runResponse;
+        try {
+            runResponse = await axios.post(apiUrl, payload);
+        } catch (err) {
+            console.error('Failed to trigger Apify Actor. Error:', err.message);
+            if (err.response) {
+                console.error('Response data:', err.response.data);
             }
-
-            items.push({
-                id: linkMatch ? linkMatch[1].split('/').pop() : Math.random().toString(36).substr(2, 9),
-                thumbnail: mediaMatch ? mediaMatch[1].replace(/&amp;/g, '&') : '',
-                permalink: linkMatch ? linkMatch[1] : '',
-                caption: caption || (titleMatch ? titleMatch[1] : ''),
-                timestamp: dateMatch ? new Date(dateMatch[1]).toISOString() : new Date().toISOString()
-            });
+            process.exit(1);
         }
 
-        if (items.length > 0) {
-            fs.writeFileSync('./data/instagram_news.json', JSON.stringify(items, null, 2));
-            console.log(`Successfully synced ${items.length} news items.`);
-        } else {
-            console.log("No news items found in the feed.");
+        const runId = runResponse.data.data.id;
+        const defaultDatasetId = runResponse.data.data.defaultDatasetId;
+        
+        console.log(`Run started with ID: ${runId}. Waiting for completion...`);
+
+        let status = runResponse.data.data.status;
+        
+        // Poll for completion (timeout after 10 minutes)
+        let attempts = 0;
+        const maxAttempts = 60; // 60 * 10 seconds = 10 minutes
+
+        while (status !== 'SUCCEEDED' && status !== 'FAILED' && status !== 'ABORTED' && attempts < maxAttempts) {
+            await new Promise(resolve => setTimeout(resolve, 10000)); // Wait 10 seconds
+            attempts++;
+            
+            const statusUrl = `https://api.apify.com/v2/acts/${actorId}/runs/${runId}?token=${apiToken}`;
+            const statusResponse = await axios.get(statusUrl);
+            status = statusResponse.data.data.status;
+            console.log(`Attempt ${attempts}: Run status is ${status}`);
         }
+
+        if (status !== 'SUCCEEDED') {
+            console.error(`Apify run did not succeed within timeframe. Final status: ${status}`);
+            process.exit(1);
+        }
+
+        console.log('Fetching results from dataset...');
+        // Get dataset items
+        const datasetUrl = `https://api.apify.com/v2/datasets/${defaultDatasetId}/items?token=${apiToken}`;
+        const datasetResponse = await axios.get(datasetUrl);
+        const rawItems = datasetResponse.data;
+
+        if (!rawItems || rawItems.length === 0) {
+            console.log('No items found in dataset. Ensure the profile has posts.');
+            process.exit(0);
+        }
+
+        const formattedPosts = rawItems.map(item => {
+            // Safely extract data based on standard Apify Instagram Scraper output
+            const permalink = item.url || '';
+            const thumbnail = item.displayUrl || (item.images && item.images.length > 0 ? item.images[0] : '');
+            const caption = item.caption || '';
+            const timestamp = item.timestamp || new Date().toISOString();
+
+            return {
+                permalink,
+                thumbnail,
+                caption,
+                timestamp
+            };
+        });
+
+        // Ensure output directory exists
+        const outputDir = path.join(__dirname, '..', 'data');
+        if (!fs.existsSync(outputDir)){
+            fs.mkdirSync(outputDir, { recursive: true });
+        }
+
+        const outputPath = path.join(outputDir, 'instagram_news.json');
+        fs.writeFileSync(outputPath, JSON.stringify(formattedPosts, null, 2));
+        console.log(`Successfully saved ${formattedPosts.length} posts to data/instagram_news.json`);
 
     } catch (error) {
-        console.error('Error syncing Instagram RSS:', error.message);
+        console.error('Error during Apify sync:', error.message);
         process.exit(1);
     }
 }
 
-syncInstagram();
+syncInstagramApify();
