@@ -892,6 +892,7 @@ ul {
     border-radius: 50%;
     border: 2px solid var(--color-primary);
     opacity: 0;
+    pointer-events: none;
     animation: sonar 2s infinite;
 }
 
@@ -949,6 +950,10 @@ ul {
     /* Spacer */
 }
 
+.spacer-80 {
+    height: 150px;
+}
+
 .highlight-content.reverse {
     flex-direction: row-reverse;
 }
@@ -1003,6 +1008,7 @@ ul {
     border-radius: 50%;
     background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
     opacity: 0.5;
+    pointer-events: none;
     animation: pulse-ice 3s infinite alternate;
     /* Inner rotation handling needs care, simpler to just not rotate this specific child if it's round */
 }
@@ -1476,6 +1482,7 @@ header.hero::before {
     border-radius: 50%;
     border: 2px solid var(--color-secondary);
     opacity: 0;
+    pointer-events: none;
     animation: wavePulse 3s infinite;
 }
 
