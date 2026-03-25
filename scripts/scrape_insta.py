@@ -1,73 +1,238 @@
-import requests
+"""
+scrape_insta.py
+===============
+Extrae los ultimos posts de @lofi_sat en Instagram usando la API privada
+con sesion autenticada (sessionid cookie del navegador).
+
+CONFIGURACION INICIAL:
+    python scripts/setup_instagram.py
+
+EJECUCION:
+    python scripts/scrape_insta.py
+"""
+
+import io
 import json
-import re
-import os
-from datetime import datetime
+import sys
+import time
+from datetime import datetime, timezone
+from pathlib import Path
+from urllib.parse import unquote
 
-def scrape_lofisat_news():
-    print("Starting Instagram scraping for @lofi_sat...")
-    url = "https://www.instagram.com/lofi_sat/"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept-Language": "es-ES,es;q=0.9,en;q=0.8"
-    }
+# Fix encoding Windows
+if sys.stdout and hasattr(sys.stdout, 'encoding') and sys.stdout.encoding != 'utf-8':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
+import requests
+
+# -- Configuracion --
+TARGET_PROFILE = "lofi_sat"
+MAX_POSTS      = 12
+OUTPUT_FILE    = Path(__file__).parent.parent / "data" / "instagram_news.json"
+SESSION_FILE   = Path(__file__).parent.parent / "instagram_session.txt"
+
+
+def load_session_id() -> str:
+    if SESSION_FILE.exists():
+        sid = SESSION_FILE.read_text(encoding="utf-8").strip()
+        if sid:
+            return unquote(sid)
+    print("ERROR: No se encontro 'instagram_session.txt'.")
+    print("   Ejecuta primero: python scripts/setup_instagram.py")
+    sys.exit(1)
+
+
+def create_session(session_id: str) -> requests.Session:
+    """Crea una sesion HTTP autenticada que simula la app movil de Instagram."""
+    s = requests.Session()
+
+    # Extraer user_id del sessionid (formato: userid:hash:...)
+    ds_user_id = session_id.split(":")[0] if ":" in session_id else ""
+
+    s.cookies.set("sessionid", session_id, domain=".instagram.com")
+    if ds_user_id:
+        s.cookies.set("ds_user_id", ds_user_id, domain=".instagram.com")
+
+    s.headers.update({
+        "User-Agent": (
+            "Instagram 317.0.0.34.109 Android (33/13; 420dpi; 1080x2340; "
+            "samsung; SM-G991B; o1s; exynos2100; es_CL; 562530828)"
+        ),
+        "X-IG-App-ID": "936619743392459",
+        "X-IG-Connection-Type": "WIFI",
+        "Accept": "*/*",
+        "Accept-Language": "es-CL,es;q=0.9",
+        "X-CSRFToken": "missing",
+    })
+    return s
+
+
+def get_user_id_private(session: requests.Session, username: str) -> str | None:
+    """Busca el user_id usando el endpoint de busqueda privado."""
+    url = f"https://i.instagram.com/api/v1/users/web_profile_info/?username={username}"
+    headers_override = {"User-Agent": session.headers.get("User-Agent", "")}
+
+    print(f"   Buscando user_id de @{username} (API privada)...")
     try:
-        response = requests.get(url, headers=headers, timeout=15)
-        if response.status_code != 200:
-            print(f"Error fetching Instagram: {response.status_code}")
-            return False
+        resp = session.get(url, headers=headers_override, timeout=15)
+        if resp.status_code == 200:
+            data = resp.json()
+            user = data.get("data", {}).get("user", {})
+            uid = user.get("id")
+            if uid:
+                print(f"   Encontrado: user_id={uid}")
+                return uid
+    except Exception:
+        pass
 
-        # Extract shared data or embedded media JSON
-        # This is a fallback strategy when the API isn't available
-        html = response.text
+    # Fallback: search endpoint 
+    print("   Fallback: usando endpoint de busqueda...")
+    try:
+        search_url = f"https://i.instagram.com/api/v1/users/search/?q={username}"
+        resp = session.get(search_url, timeout=15)
+        if resp.status_code == 200:
+            users = resp.json().get("users", [])
+            for u in users:
+                if u.get("username", "").lower() == username.lower():
+                    uid = str(u.get("pk", ""))
+                    if uid:
+                        print(f"   Encontrado via busqueda: user_id={uid}")
+                        return uid
+    except Exception:
+        pass
+
+    # Fallback 2: info endpoint directo
+    print("   Fallback 2: endpoint /users/...")
+    try:
+        info_url = f"https://i.instagram.com/api/v1/users/{username}/usernameinfo/"
+        resp = session.get(info_url, timeout=15)
+        if resp.status_code == 200:
+            user = resp.json().get("user", {})
+            uid = str(user.get("pk", ""))
+            if uid:
+                print(f"   Encontrado via usernameinfo: user_id={uid}")
+                return uid
+    except Exception:
+        pass
+
+    return None
+
+
+def get_posts(session: requests.Session, user_id: str, count: int) -> list:
+    """Obtiene posts del feed del usuario via API privada (i.instagram.com)."""
+    url = f"https://i.instagram.com/api/v1/feed/user/{user_id}/?count={count}"
+
+    print(f"   Descargando feed (max {count} posts)...")
+    try:
+        resp = session.get(url, timeout=20)
+    except Exception as e:
+        print(f"   ERROR de conexion: {e}")
+        return []
+
+    if resp.status_code == 429:
+        print(f"   Rate limit (429). Esperando 30 segundos y reintentando...")
+        time.sleep(30)
+        try:
+            resp = session.get(url, timeout=20)
+        except Exception as e:
+            print(f"   ERROR tras reintento: {e}")
+            return []
+
+    if resp.status_code != 200:
+        print(f"   ERROR HTTP {resp.status_code}")
+        try:
+            print(f"   Detalle: {resp.text[:300]}")
+        except Exception:
+            pass
+        return []
+
+    data = resp.json()
+    items = data.get("items", [])
+    print(f"   Recibidos {len(items)} items del feed")
+
+    posts = []
+    for item in items[:count]:
+        shortcode = item.get("code", "")
+        timestamp = item.get("taken_at", 0)
+
+        # Caption
+        caption = ""
+        cap_obj = item.get("caption")
+        if cap_obj and isinstance(cap_obj, dict):
+            caption = cap_obj.get("text", "")
+
+        # Imagen: buscar la mejor version
+        img_url = ""
+        image_versions = item.get("image_versions2", {}).get("candidates", [])
+        if image_versions:
+            # Primera version suele ser la mas grande
+            img_url = image_versions[0].get("url", "")
         
-        # Regex to find the images and captions in the page source
-        # Note: Public Instagram pages often embed some data in script tags
-        pattern = r'"shortcode":"([^"]+)","display_url":"([^"]+)".*?"edge_media_to_caption":{"edges":\[{"node":{"text":"([^"]+)"}}\].*?"taken_at_timestamp":(\d+)'
-        matches = re.findall(pattern, html)
+        # Para carousel/album, tomar primer item
+        if not img_url:
+            carousel = item.get("carousel_media", [])
+            if carousel:
+                cv = carousel[0].get("image_versions2", {}).get("candidates", [])
+                if cv:
+                    img_url = cv[0].get("url", "")
 
-        if not matches:
-            # Fallback pattern for different HTML structure
-            pattern = r'{"node":{.*? "shortcode":"(?P<shortcode>[^"]+)",.*? "display_url":"(?P<url>[^"]+)",.*? "edge_media_to_caption":{"edges":\[{"node":{"text":"(?P<caption/>[^"]+)"}}\],.*? "taken_at_timestamp":(?P<time>\d+)'
-            # Cleaning the pattern from potential errors or using a more generic one
-            # For simplicity in this env, we'll try to find any link and caption
-            print("No direct script matches found. Using secondary extraction...")
-            
-        posts = []
-        for shortcode, img_url, caption, timestamp in matches[:10]:
-            # Clean caption (handle escaped unicode)
-            clean_caption = caption.encode('utf-8').decode('unicode-escape') if '\\u' in caption else caption
-            clean_caption = clean_caption.replace('\\n', '\n')
-            
-            iso_date = datetime.fromtimestamp(int(timestamp)).isoformat() + "Z"
-            
+        if shortcode:
+            iso_date = datetime.fromtimestamp(
+                timestamp, tz=timezone.utc
+            ).strftime("%Y-%m-%dT%H:%M:%S.000Z")
             posts.append({
                 "permalink": f"https://www.instagram.com/p/{shortcode}/",
-                "thumbnail": img_url.replace('\\u0026', '&'),
-                "caption": clean_caption,
-                "timestamp": iso_date
+                "thumbnail": img_url,
+                "caption":   caption,
+                "timestamp": iso_date,
             })
 
-        if not posts:
-            print("Could not extract posts. Check if Instagram structure changed or if blocked.")
-            return False
+    return posts
 
-        # Sort by timestamp descending
-        posts.sort(key=lambda x: x['timestamp'], reverse=True)
 
-        # Ensure the directory exists
-        os.makedirs('data', exist_ok=True)
-        
-        with open('data/instagram_news.json', 'w', encoding='utf-8') as f:
-            json.dump(posts, f, ensure_ascii=False, indent=2)
+def scrape_lofisat_news() -> bool:
+    print("=" * 55)
+    print(f"  Scraping Instagram @{TARGET_PROFILE}")
+    print("=" * 55)
 
-        print(f"Successfully updated data/instagram_news.json with {len(posts)} posts.")
-        return True
+    session_id = load_session_id()
+    print(f"   sessionid cargado ({len(session_id)} chars)")
 
-    except Exception as e:
-        print(f"Exception during scraping: {str(e)}")
+    session = create_session(session_id)
+
+    # Obtener user_id
+    user_id = get_user_id_private(session, TARGET_PROFILE)
+    if not user_id:
+        print("ERROR: No se pudo obtener el user_id.")
+        print("   Verifica tu sessionid o espera unos minutos si hay rate-limit.")
         return False
 
+    time.sleep(2)
+
+    # Obtener posts
+    posts = get_posts(session, user_id, MAX_POSTS)
+    if not posts:
+        print("ERROR: No se pudieron extraer posts.")
+        return False
+
+    # Ordenar por fecha descendente
+    posts.sort(key=lambda x: x["timestamp"], reverse=True)
+
+    # Guardar JSON
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(posts, f, ensure_ascii=False, indent=2)
+
+    print()
+    print(f"OK! Se guardaron {len(posts)} posts en 'data/instagram_news.json'")
+    for i, p in enumerate(posts[:3], 1):
+        cap_preview = (p['caption'][:60] + "...") if len(p['caption']) > 60 else p['caption']
+        print(f"  {i}. {p['timestamp'][:10]}  {cap_preview}")
+    if len(posts) > 3:
+        print(f"  ... y {len(posts) - 3} mas")
+    return True
+
+
 if __name__ == "__main__":
-    scrape_lofisat_news()
+    success = scrape_lofisat_news()
+    sys.exit(0 if success else 1)

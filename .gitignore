@@ -1,0 +1,9 @@
+# Sesión de Instagram (no subir a ningún repositorio)
+instagram_session.txt
+.env
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
