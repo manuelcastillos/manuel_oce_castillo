@@ -807,6 +807,8 @@ ul {
 
 .highlight-text {
     flex: 1;
+    position: relative;
+    z-index: 50;
 }
 
 .highlight-label {
