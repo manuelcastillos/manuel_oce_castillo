@@ -1,47 +1,5 @@
 [
   {
-    "summary": "Organización anclaje Laguna Verde",
-    "start": "2026-01-12T10:00:00-03:00",
-    "end": "2026-01-12T11:00:00-03:00",
-    "location": "https://pucv-cl.zoom.us/j/92413795233?pwd=lXL8aGuDNdv9UF7qMXTjCdDOrSmX9R.1",
-    "description": ""
-  },
-  {
-    "summary": " Reunión Team Oceanografía",
-    "start": "2026-01-15T09:00:00-03:00",
-    "end": "2026-01-15T10:00:00-03:00",
-    "location": "https://reuna.zoom.us/j/83049978165",
-    "description": ""
-  },
-  {
-    "summary": "Defensa de Tesis - SOFÍA ANTONIA HERRERA REBOLLEDO [En persona]",
-    "start": "2026-01-16T10:00:00-03:00",
-    "end": "2026-01-16T11:30:00-03:00",
-    "location": "",
-    "description": ""
-  },
-  {
-    "summary": "Cita privada",
-    "start": "2026-01-19T11:00:00-03:00",
-    "end": "2026-01-19T12:00:00-03:00",
-    "location": "",
-    "description": ""
-  },
-  {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2026-01-22T11:30:00-03:00",
-    "end": "2026-01-22T12:30:00-03:00",
-    "location": "https://reuna.zoom.us/j/81516807722",
-    "description": ""
-  },
-  {
-    "summary": "Congreso Meteorología 2026",
-    "start": "2026-01-22T14:00:00-03:00",
-    "end": "2026-01-22T15:00:00-03:00",
-    "location": "https://econgressvenue.zoom.us/j/87282687852?pwd=uRL7bftQZDjqGR54VTf03oA6iZru5Q.1",
-    "description": ""
-  },
-  {
     "summary": "colab",
     "start": "2026-01-29T11:00:00-03:00",
     "end": "2026-01-29T12:00:00-03:00",
@@ -84,6 +42,20 @@
     "description": ""
   },
   {
+    "summary": "Reunión CIMAR 1A",
+    "start": "2026-03-12T14:30:00-03:00",
+    "end": "2026-03-12T15:30:00-03:00",
+    "location": "https://reuna.zoom.us/j/87298259139?pwd=sxGimZNmntDh79bXbNd0XzuuPphY1N.1",
+    "description": ""
+  },
+  {
+    "summary": "reunion en horario por definir con LABITI",
+    "start": "2026-03-13T10:00:00-03:00",
+    "end": "2026-03-13T12:00:00-03:00",
+    "location": "",
+    "description": ""
+  },
+  {
     "summary": "Termo y Ondas",
     "start": "2026-03-16T14:45:00-03:00",
     "end": "2026-03-16T17:45:00-03:00",
@@ -105,9 +77,23 @@
     "description": ""
   },
   {
+    "summary": "Reunio potencial NUCLEO",
+    "start": "2026-03-18T09:30:00-03:00",
+    "end": "2026-03-18T12:00:00-03:00",
+    "location": "",
+    "description": ""
+  },
+  {
     "summary": "IOA: meteorología",
     "start": "2026-03-18T14:30:00-03:00",
     "end": "2026-03-18T17:45:00-03:00",
+    "location": "",
+    "description": ""
+  },
+  {
+    "summary": "Clases Magíster:  Oce Fisica-Geologica",
+    "start": "2026-03-19",
+    "end": "2026-03-20",
     "location": "",
     "description": ""
   },
@@ -133,9 +119,30 @@
     "description": ""
   },
   {
+    "summary": "Clases Magíster:  Oce Fisica-Geologica",
+    "start": "2026-03-26",
+    "end": "2026-03-27",
+    "location": "",
+    "description": ""
+  },
+  {
+    "summary": "PresentaciÓn Libro Gabriela",
+    "start": "2026-03-27T15:00:00-03:00",
+    "end": "2026-03-27T17:00:00-03:00",
+    "location": "",
+    "description": ""
+  },
+  {
     "summary": "Termo y Ondas",
     "start": "2026-03-30T14:45:00-03:00",
     "end": "2026-03-30T17:45:00-03:00",
+    "location": "",
+    "description": ""
+  },
+  {
+    "summary": "Presentacion Proyecto Magíster - UdeC",
+    "start": "2026-03-31T08:45:00-03:00",
+    "end": "2026-03-31T10:30:00-03:00",
     "location": "",
     "description": ""
   },
@@ -151,6 +158,13 @@
     "start": "2026-04-06T14:45:00-04:00",
     "end": "2026-04-06T17:45:00-04:00",
     "location": "",
+    "description": ""
+  },
+  {
+    "summary": "CAFÉ DE INNOVACIÓN ☕",
+    "start": "2026-04-07T10:00:00-04:00",
+    "end": "2026-04-07T11:00:00-04:00",
+    "location": "Montaña 885 (Montaña 885, 2571924 Viña del Mar Región de Valparaíso, Chile)",
     "description": ""
   },
   {
