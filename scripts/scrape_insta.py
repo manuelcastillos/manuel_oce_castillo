@@ -23,6 +23,7 @@ from urllib.parse import unquote
 if sys.stdout and hasattr(sys.stdout, 'encoding') and sys.stdout.encoding != 'utf-8':
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
+import hashlib
 import requests
 
 # -- Configuracion --
@@ -218,18 +219,41 @@ def scrape_lofisat_news() -> bool:
     # Ordenar por fecha descendente
     posts.sort(key=lambda x: x["timestamp"], reverse=True)
 
-    # Guardar JSON
+    # Guardar JSON de Noticias
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(posts, f, ensure_ascii=False, indent=2)
 
+    # --- NUEVO: Actualizar Field Work (Trabajo de Terreno) ---
+    field_file = OUTPUT_FILE.parent / "field_posts.json"
+    include_keywords = [
+        'terreno', 'campaña', 'antártica', 'oceanografía', 'muestreo',
+        'expedición', 'buque', 'embarque', 'mediciones', 'lanzamiento',
+        'instrumento', 'malla', 'estación', 'fiordos', 'patagonia',
+        'seals', 'falkor', 'lofisat', 'costar', 'ciencia'
+    ]
+    exclude_keywords = ['familia', 'cumpleaños', 'vacaciones', 'descanso']
+
+    field_posts = []
+    for p in posts:
+        text = p['caption'].lower()
+        if any(kw in text for kw in include_keywords) and not any(kw in text for kw in exclude_keywords):
+            # Simplificar para el formato de field.js
+            field_posts.append({
+                "id": hashlib.md5(p['permalink'].encode()).hexdigest(),
+                "thumbnail": p['thumbnail'],
+                "permalink": p['permalink'],
+                "caption": p['caption']
+            })
+    
+    with open(field_file, "w", encoding="utf-8") as f:
+        json.dump(field_posts[:5], f, ensure_ascii=False, indent=2)
+
     print()
-    print(f"OK! Se guardaron {len(posts)} posts en 'data/instagram_news.json'")
+    print(f"OK! Se actualizaron Noticias ({len(posts)}) y Field Work ({len(field_posts[:5])})")
     for i, p in enumerate(posts[:3], 1):
         cap_preview = (p['caption'][:60] + "...") if len(p['caption']) > 60 else p['caption']
         print(f"  {i}. {p['timestamp'][:10]}  {cap_preview}")
-    if len(posts) > 3:
-        print(f"  ... y {len(posts) - 3} mas")
     return True
 
 

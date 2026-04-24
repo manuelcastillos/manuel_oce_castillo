@@ -12,20 +12,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
-          node-version: '18'
+          python-version: '3.9'
 
       - name: Install dependencies
-        run: npm install axios
+        run: pip install requests
 
       - name: Sync Instagram Posts
         env:
           IG_HANDLE: 'lofi_sat'
         run: |
-          node scripts/update_news.js
-          node scripts/update_field.js
+          python scripts/scrape_insta.py
+          python scripts/download_news_images.py
 
       - name: Commit and push changes
         run: |
