@@ -38,6 +38,8 @@ def download_news_images():
         # Download if not exists
         if not filepath.exists():
             try:
+                import time
+                time.sleep(2)  # Delay to avoid 429
                 print(f"  Downloading {url[:50]}...")
                 response = requests.get(url, timeout=15)
                 if response.status_code == 200:
