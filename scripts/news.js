@@ -57,8 +57,15 @@ async function loadInstagramNews() {
                 const date = post.timestamp ? new Date(post.timestamp).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }) : 'Reciente';
                 const shortCaption = post.caption ? (post.caption.length > 100 ? post.caption.substring(0, 100) + '...' : post.caption) : '';
 
-                // Use a reliable proxy for IG images (weserv)
-                const imgUrl = post.thumbnail ? `https://images.weserv.nl/?url=${encodeURIComponent(post.thumbnail)}&w=600&fit=cover` : 'images/logo_lofisat.jpg';
+                // Use a reliable proxy for IG images if they are remote, otherwise use local path
+                let imgUrl = 'images/logo_lofisat.jpg';
+                if (post.thumbnail) {
+                    if (post.thumbnail.startsWith('http')) {
+                        imgUrl = `https://images.weserv.nl/?url=${encodeURIComponent(post.thumbnail)}&w=600&fit=cover`;
+                    } else {
+                        imgUrl = post.thumbnail; // Local path like 'images/news/...'
+                    }
+                }
 
                 card.innerHTML = `
                     <div class="card-inner">

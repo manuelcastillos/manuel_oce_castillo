@@ -1,6 +1,43 @@
 const fs = require('fs');
 const axios = require('axios');
 const path = require('path');
+const crypto = require('crypto');
+
+async function downloadImage(url, filename) {
+    const imagesDir = path.join(__dirname, '..', 'images', 'news');
+    if (!fs.existsSync(imagesDir)) {
+        fs.mkdirSync(imagesDir, { recursive: true });
+    }
+
+    const filePath = path.join(imagesDir, filename);
+    
+    // Check if image already exists to avoid redundant downloads
+    if (fs.existsSync(filePath)) {
+        return `images/news/${filename}`;
+    }
+
+    try {
+        const response = await axios({
+            url,
+            method: 'GET',
+            responseType: 'stream',
+            timeout: 10000
+        });
+
+        return new Promise((resolve, reject) => {
+            const writer = fs.createWriteStream(filePath);
+            response.data.pipe(writer);
+            writer.on('finish', () => resolve(`images/news/${filename}`));
+            writer.on('error', (err) => {
+                fs.unlinkSync(filePath); // Delete partial file
+                reject(err);
+            });
+        });
+    } catch (error) {
+        console.error(`Failed to download image ${url}:`, error.message);
+        return null;
+    }
+}
 
 async function syncInstagramApify() {
     const apiToken = process.env.APIFY_API_TOKEN;
@@ -11,7 +48,6 @@ async function syncInstagramApify() {
 
     console.log('Starting Instagram sync via Apify...');
 
-    // We use the official apify/instagram-scraper which handles profile posts well
     const actorId = 'apify~instagram-scraper';
     const apiUrl = `https://api.apify.com/v2/acts/${actorId}/runs?token=${apiToken}`;
 
@@ -20,7 +56,7 @@ async function syncInstagramApify() {
         directUrls: ["https://www.instagram.com/lofi_sat/"],
         enhanceUserSearchWithFacebookPage: false,
         isUserTaggedFeedURL: false,
-        resultsLimit: 12, // Get up to 12 latest posts/reels
+        resultsLimit: 12,
         resultsType: "posts",
         searchLimit: 1,
         searchType: "hashtag"
@@ -46,13 +82,11 @@ async function syncInstagramApify() {
         console.log(`Run started with ID: ${runId}. Waiting for completion...`);
 
         let status = runResponse.data.data.status;
-        
-        // Poll for completion (timeout after 10 minutes)
         let attempts = 0;
-        const maxAttempts = 60; // 60 * 10 seconds = 10 minutes
+        const maxAttempts = 60;
 
         while (status !== 'SUCCEEDED' && status !== 'FAILED' && status !== 'ABORTED' && attempts < maxAttempts) {
-            await new Promise(resolve => setTimeout(resolve, 10000)); // Wait 10 seconds
+            await new Promise(resolve => setTimeout(resolve, 10000));
             attempts++;
             
             const statusUrl = `https://api.apify.com/v2/acts/${actorId}/runs/${runId}?token=${apiToken}`;
@@ -67,32 +101,40 @@ async function syncInstagramApify() {
         }
 
         console.log('Fetching results from dataset...');
-        // Get dataset items
         const datasetUrl = `https://api.apify.com/v2/datasets/${defaultDatasetId}/items?token=${apiToken}`;
         const datasetResponse = await axios.get(datasetUrl);
         const rawItems = datasetResponse.data;
 
         if (!rawItems || rawItems.length === 0) {
-            console.log('No items found in dataset. Ensure the profile has posts.');
+            console.log('No items found in dataset.');
             process.exit(0);
         }
 
-        const formattedPosts = rawItems.map(item => {
-            // Safely extract data based on standard Apify Instagram Scraper output
+        console.log(`Processing ${rawItems.length} items and downloading images...`);
+        const formattedPosts = [];
+
+        for (const item of rawItems) {
             const permalink = item.url || '';
-            const thumbnail = item.displayUrl || (item.images && item.images.length > 0 ? item.images[0] : '');
+            const originalThumbnail = item.displayUrl || (item.images && item.images.length > 0 ? item.images[0] : '');
             const caption = item.caption || '';
             const timestamp = item.timestamp || new Date().toISOString();
 
-            return {
-                permalink,
-                thumbnail,
-                caption,
-                timestamp
-            };
-        });
+            if (originalThumbnail && permalink) {
+                // Generate a unique filename based on the permalink
+                const hash = crypto.createHash('md5').update(permalink).digest('hex');
+                const filename = `ig_${hash}.jpg`;
+                
+                const localThumbnail = await downloadImage(originalThumbnail, filename);
+                
+                formattedPosts.push({
+                    permalink,
+                    thumbnail: localThumbnail || originalThumbnail, // Fallback to original if download fails
+                    caption,
+                    timestamp
+                });
+            }
+        }
 
-        // Ensure output directory exists
         const outputDir = path.join(__dirname, '..', 'data');
         if (!fs.existsSync(outputDir)){
             fs.mkdirSync(outputDir, { recursive: true });
@@ -109,3 +151,4 @@ async function syncInstagramApify() {
 }
 
 syncInstagramApify();
+

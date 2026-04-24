@@ -31,6 +31,6 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add data/instagram_news.json data/field_posts.json
-          git commit -m "chore: auto-sync instagram news" || echo "No changes to commit"
+          git add data/instagram_news.json data/field_posts.json images/news/
+          git commit -m "chore: auto-sync instagram news and images" || echo "No changes to commit"
           git push
