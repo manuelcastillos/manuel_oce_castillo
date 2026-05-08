@@ -15,7 +15,7 @@
       "title": "Turbulent Mixing in Patagonian Fjords and Channels",
       "degree": "Magíster en Oceanografía, PUCV-UV",
       "doi": "10.5194/egusphere-2025-5846",
-      "image": "images/tesistas/marcela_rojas.jpg"
+      "image": "./images/tesistas/marcela_rojas.jpg"
     },
     {
       "name": "Claudia Morales",
@@ -23,7 +23,7 @@
       "title": "Ajuste espacio-temporal forzado por el viento de la hidrografía costera de la Bahía Fildes, Islas Shetland del Sur, Antártica",
       "degree": "Magíster en Oceanografía, PUCV-UV",
       "pdf": "https://repositorio.uv.cl/handle/123456789/456",
-      "image": "images/tesistas/claudia_morales.jpg"
+      "image": "./images/tesistas/claudia_morales.jpg"
     },
     {
       "name": "Mónica Alvarado-Niño",
@@ -57,7 +57,7 @@
       "year": "2025",
       "title": "Influencia del sistema de la corriente del Cabo de Hornos en la hidrografía del mar interior de tierra del fuego",
       "degree": "Biología Marina UV",
-      "image": "images/tesistas/constanza_escobedo.jpg"
+      "image": "./images/tesistas/constanza_escobedo.jpg"
     },
     {
       "name": "Catalina Ayala",
@@ -70,7 +70,7 @@
       "year": "2024",
       "title": "Variabilidad del esfuerzo del viento y su influencia en la temperatura y oxígeno disuelto en los sistemas de bahías de Coquimbo",
       "degree": "Biología Marina UV",
-      "image": "images/tesistas/marcela_rojas.jpg"
+      "image": "./images/tesistas/marcela_rojas.jpg"
     },
     {
       "name": "Angela Rodríguez",
@@ -83,7 +83,7 @@
       "year": "2022",
       "title": "Variabilidad temporal de la señal de retrodispersión y de la columna de agua, un proxy de la abundancia del zooplancton en Bahía Fildes, Antártica",
       "degree": "Biología Marina UV",
-      "image": "images/tesistas/claudia_morales.jpg"
+      "image": "./images/tesistas/claudia_morales.jpg"
     },
     {
       "name": "Carlos Pérez Retamales",
