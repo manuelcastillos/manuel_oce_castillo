@@ -1,42 +1,37 @@
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Both types of containers (if we use it on home or separate page)
     const postgradoContainer = document.getElementById('tesistas-postgrado');
     const pregradoContainer = document.getElementById('tesistas-pregrado');
 
-    fetch('./data/tesistas.json')
-        .then(response => response.json())
-        .then(data => {
-            renderTesistas(data.postgrado, postgradoContainer);
-            renderTesistas(data.pregrado, pregradoContainer);
-        })
-        .catch(error => console.error('Error loading tesistas:', error));
-
-    function renderTesistas(tesistas, container) {
+    const renderTesistas = (tesistas, container) => {
         if (!container) return;
         container.innerHTML = '';
 
         tesistas.forEach(t => {
-            const card = document.createElement('div');
-            card.className = 'tesista-card';
+            const item = document.createElement('div');
+            item.className = 'tesista-item animate-text';
             
-            let imageHtml = '';
-            if (t.image) {
-                // If there's an image link (e.g. instagram), we could show a placeholder or try to embed
-                // For now, let's use a nice icon/placeholder if no direct image URL is provided
-                imageHtml = `<div class="tesista-image-placeholder"><i class="fa-solid fa-user-graduate"></i></div>`;
-            } else {
-                imageHtml = `<div class="tesista-image-placeholder"><i class="fa-solid fa-user-graduate"></i></div>`;
-            }
-
-            card.innerHTML = `
-                <div class="tesista-info">
-                    <span class="tesista-year">${t.year}</span>
+            item.innerHTML = `
+                <div class="tesista-year-tag">${t.year}</div>
+                <div class="tesista-main-info">
+                    <div class="tesista-degree">${t.degree}</div>
                     <h3 class="tesista-name">${t.name}</h3>
-                    <p class="tesista-degree">${t.degree}</p>
                     <p class="tesista-title">"${t.title}"</p>
                 </div>
             `;
-            container.appendChild(card);
+            container.appendChild(item);
         });
-    }
+    };
+
+    fetch('./data/tesistas.json')
+        .then(response => response.json())
+        .then(data => {
+            if (postgradoContainer) renderTesistas(data.postgrado, postgradoContainer);
+            if (pregradoContainer) renderTesistas(data.pregrado, pregradoContainer);
+        })
+        .catch(error => {
+            console.error('Error loading tesistas:', error);
+            if (postgradoContainer) postgradoContainer.innerHTML = '<p>Error al cargar los datos.</p>';
+        });
 });
