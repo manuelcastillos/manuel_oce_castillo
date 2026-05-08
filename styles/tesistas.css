@@ -1,0 +1,94 @@
+
+/* Tesistas LOFISAT Section */
+.tesistas-section {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 100px 0;
+}
+
+.tesistas-category-title {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin: 40px 0 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(2, 136, 209, 0.2);
+    display: inline-block;
+}
+
+.tesistas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.tesista-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 25px;
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+.tesista-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-primary);
+}
+
+.tesista-year {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    background: rgba(2, 136, 209, 0.1);
+    padding: 4px 12px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.tesista-name {
+    font-size: 1.4rem;
+    color: var(--color-text-heading);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.tesista-degree {
+    font-size: 0.95rem;
+    color: var(--color-secondary);
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tesista-title {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+}
+
+.tesista-title::before {
+    content: '“';
+    position: absolute;
+    left: 0;
+    top: -5px;
+    font-size: 2rem;
+    color: var(--color-primary);
+    opacity: 0.3;
+}
+
+.spacer-40 { height: 40px; }
+
+@media (max-width: 768px) {
+    .tesistas-grid {
+        grid-template-columns: 1fr;
+    }
+}
