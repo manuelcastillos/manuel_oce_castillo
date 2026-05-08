@@ -2,8 +2,12 @@ name: Sync Outlook Calendar
 
 on:
   schedule:
-    - cron: '0 10-21 * * *'   # Every hour between 7:00 and 18:00 (UTC-3)
-  workflow_dispatch:          # Allow manual trigger from GitHub UI
+    - cron: '0 12 * * *'       # Specific run at 09:00 CLT
+    - cron: '0 13-21 * * *'    # Every hour after until 18:00 CLT
+  workflow_dispatch:          # Allow manual trigger
+
+permissions:
+  contents: write
 
 jobs:
   sync:
@@ -24,9 +28,36 @@ jobs:
         run: python scripts/fetch_calendar.py
 
       - name: Commit and push if changed
+        id: commit_step
         run: |
           git config --global user.name  'GitHub Action'
           git config --global user.email 'action@github.com'
           git add data/calendar_events.json
-          git diff --cached --quiet || git commit -m "chore: auto-sync outlook calendar events"
-          git push
+          if git diff --cached --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            git commit -m "chore: auto-sync outlook calendar events"
+            git push
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Send notification email
+        if: steps.commit_step.outputs.changed == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.MAIL_SERVER }}
+          server_port: ${{ secrets.MAIL_PORT }}
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "Actualización de Calendario Académico - Manuel Castillo"
+          to: manuel.castillo@uv.cl
+          from: GitHub Actions Sync
+          body: |
+            Hola Manuel,
+            
+            Se han detectado cambios en tu calendario de Outlook y el sitio web ha sido actualizado automáticamente.
+            
+            Puedes revisar los cambios en: https://manuelcastillos.github.io/manuel_oce_castillo/calendar/
+            
+            Saludos,
+            Tu Asistente de Sincronización

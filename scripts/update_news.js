@@ -145,7 +145,15 @@ async function syncInstagramApify() {
         console.log(`Successfully saved ${formattedPosts.length} posts to data/instagram_news.json`);
 
     } catch (error) {
-        console.error('Error during Apify sync:', error.message);
+        console.error('CRITICAL ERROR during Apify sync:');
+        console.error('Message:', error.message);
+        if (error.response) {
+            console.error('Status:', error.response.status);
+            console.error('Data:', JSON.stringify(error.response.data, null, 2));
+        }
+        if (error.config) {
+            console.error('Failed URL:', error.config.url);
+        }
         process.exit(1);
     }
 }

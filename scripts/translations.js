@@ -8,6 +8,7 @@ const translations = {
             projects: "Proyectos",
             outreach: "Divulgación",
             field: "Terreno",
+            students: "Tesistas",
             contact: "Contacto"
         },
         hero: {
@@ -135,6 +136,13 @@ const translations = {
             title: "Noticias LOFISAT",
             subtitle: "Actividades y novedades del LOFISAT-UV",
             insta_btn: "Seguir @lofi_sat"
+        },
+        students: {
+            title: "Tesistas LOFISAT",
+            subtitle: "Compromiso con la formación de capital humano avanzado en Ciencias del Mar.",
+            intro: "En el Laboratorio de Oceanografía Física y Satelital (LOFISAT-UV), fomentamos la excelencia académica y la investigación rigurosa, guiando a la próxima generación de científicos marinos en el estudio de la dinámica oceánica.",
+            postgraduate: "Postgrado (Magíster en Oceanografía)",
+            undergraduate: "Pregrado (Biología Marina)"
         }
     },
     en: {
@@ -146,6 +154,7 @@ const translations = {
             projects: "Projects",
             outreach: "Outreach",
             field: "Fieldwork",
+            students: "Students",
             contact: "Contact"
         },
         hero: {
@@ -270,9 +279,16 @@ const translations = {
             loading: "Loading full list..."
         },
         news: {
-            title: "Noticias LOFISAT",
+            title: "LOFISAT News",
             subtitle: "Activities and updates from LOFISAT-UV",
             insta_btn: "Follow @lofi_sat"
+        },
+        students: {
+            title: "LOFISAT Students",
+            subtitle: "Commitment to the formation of advanced human capital in Marine Sciences.",
+            intro: "At the Physical and Satellite Oceanography Laboratory (LOFISAT-UV), we foster academic excellence and rigorous research, guiding the next generation of marine scientists in the study of ocean dynamics.",
+            postgraduate: "Postgraduate (Master in Oceanography)",
+            undergraduate: "Undergraduate (Marine Biology)"
         }
     }
 };

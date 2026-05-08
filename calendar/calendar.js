@@ -25,9 +25,26 @@ async function loadEvents() {
         const events = await res.json();
         eventsByDate = {};
         events.forEach(ev => {
-            const key = ev.start.slice(0, 10);
-            if (!eventsByDate[key]) eventsByDate[key] = [];
-            eventsByDate[key].push(ev);
+            const start = new Date(ev.start);
+            const end = ev.end ? new Date(ev.end) : start;
+            
+            // Loop through each day from start to end
+            let iter = new Date(start);
+            // Set time to 00:00:00 to avoid issues with DST or day boundaries
+            iter.setHours(0, 0, 0, 0);
+            const endLimit = new Date(end);
+            endLimit.setHours(0, 0, 0, 0);
+
+            // Safety break to avoid infinite loops if dates are malformed
+            let count = 0;
+            while (iter <= endLimit && count < 365) {
+                const key = toDateStr(iter);
+                if (!eventsByDate[key]) eventsByDate[key] = [];
+                eventsByDate[key].push(ev);
+                
+                iter.setDate(iter.getDate() + 1);
+                count++;
+            }
         });
         console.log(`Loaded ${events.length} events`);
     } catch (e) {

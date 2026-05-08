@@ -17,25 +17,45 @@ OUT = Path(__file__).parent.parent / "data" / "calendar_events.json"
 
 def main():
     print(f"Fetching: {ICS_URL}")
-    req = urllib.request.Request(ICS_URL, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        ics_data = r.read()
+    try:
+        req = urllib.request.Request(ICS_URL, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            ics_data = r.read()
+    except Exception as e:
+        print(f"ERROR fetching ICS: {e}")
+        return
 
     # Parse ICS
-    cal = icalendar.Calendar.from_ical(ics_data)
+    try:
+        cal = icalendar.Calendar.from_ical(ics_data)
+    except Exception as e:
+        print(f"ERROR parsing ICS: {e}")
+        return
 
-    # We want events from 2 months ago to 1 year in the future
+    # We want to look back further to catch the start of recurring series
+    # and look forward enough for the academic year.
     now = datetime.now()
-    start_date = now - timedelta(days=60)
-    end_date = now + timedelta(days=365)
+    start_date = now - timedelta(days=365) # 1 year back
+    end_date = now + timedelta(days=730)   # 2 years forward
+    
+    print(f"Expanding events from {start_date.date()} to {end_date.date()}...")
 
     # recurring_ical_events expands all RRULEs in that window
-    events_expanded = recurring_ical_events.of(cal).between(start_date, end_date)
+    try:
+        events_expanded = recurring_ical_events.of(cal).between(start_date, end_date)
+    except Exception as e:
+        print(f"ERROR expanding events: {e}")
+        return
+
+    print(f"Found {len(events_expanded)} occurrences in total.")
 
     out_events = []
     for ev in events_expanded:
         summary = str(ev.get('SUMMARY', ''))
         location = str(ev.get('LOCATION', ''))
+        
+        # Check if it's a recurring instance
+        is_recurring = 'RECURRENCE-ID' in ev
         
         desc_prop = ev.get('DESCRIPTION')
         desc = str(desc_prop) if desc_prop else ""
@@ -54,7 +74,6 @@ def main():
         if hasattr(start_val, 'isoformat'):
             start_str = start_val.isoformat()
         else:
-            # datetime.date
             start_str = start_val.strftime("%Y-%m-%d")
 
         if end_val:
@@ -70,7 +89,8 @@ def main():
             "start": start_str,
             "end": end_str,
             "location": location,
-            "description": desc
+            "description": desc,
+            "recurring": is_recurring
         })
 
     # Sort
@@ -82,6 +102,14 @@ def main():
         json.dump(out_events, f, indent=2, ensure_ascii=False)
         
     print(f"Saved {len(out_events)} events -> {OUT}")
+    
+    # Print a few recurring examples to verify
+    rec_count = sum(1 for e in out_events if e.get('recurring'))
+    print(f"  - Total recurring instances: {rec_count}")
+    if rec_count > 0:
+        print("  - Examples of recurring events found:")
+        for e in [x for x in out_events if x.get('recurring')][:3]:
+            print(f"    * {e['summary']} on {e['start'][:10]}")
 
 if __name__ == "__main__":
     main()
