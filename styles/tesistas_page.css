@@ -243,3 +243,47 @@
         justify-content: flex-start;
     }
 }
+
+.tesista-title-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.tesista-title-link:hover .tesista-name-bold {
+    color: var(--color-primary);
+}
+
+.tesista-title-link:hover .tesista-title-normal {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+.external-icon {
+    font-size: 0.8rem;
+    opacity: 0;
+    transform: translateY(2px);
+    transition: all 0.3s ease;
+    color: var(--color-primary);
+}
+
+.tesista-title-link:hover .external-icon {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.pdf-only-link {
+    background: transparent;
+    color: #e74c3c;
+    border: none;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.pdf-only-link:hover {
+    color: #c0392b;
+    background: transparent;
+    transform: scale(1.2);
+}

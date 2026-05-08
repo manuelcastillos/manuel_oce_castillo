@@ -6,6 +6,7 @@ const tesistasData = {
       "year": "2026",
       "title": "When the fjords take a breath: Influence of wind forcing and Ekman dynamics on Deep ventilation in North Patagonian fjords",
       "degree": "Magíster en Oceanografía, PUCV-UV",
+      "doi": "10.5194/egusphere-2026-2329",
       "image": "images/tesistas/camila_sola.jpg",
       "pdf": "https://repositorio.uv.cl/handle/123456789/123"
     },
@@ -169,9 +170,8 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
 
             grouped[year].forEach(t => {
-                const links = [];
-                if (t.pdf) links.push(`<a href="${t.pdf}" target="_blank" class="tesista-link pdf-link" title="Descargar Tesis PDF"><i class="fa-solid fa-file-pdf"></i> PDF</a>`);
-                if (t.doi) links.push(`<a href="https://doi.org/${t.doi}" target="_blank" class="tesista-link doi-link" title="Ver Publicación"><i class="fa-solid fa-link"></i> DOI</a>`);
+                // Determine the primary link (DOI preferred, then PDF)
+                const primaryLink = t.doi ? `https://doi.org/${t.doi}` : (t.pdf ? t.pdf : null);
                 
                 const hasImage = t.image && t.image.trim() !== "";
                 const imageHtml = hasImage 
@@ -183,12 +183,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         ${imageHtml}
                         <div class="tesista-main-info">
                             <div class="tesista-degree">${t.degree}</div>
+                            ${primaryLink ? `<a href="${primaryLink}" target="_blank" class="tesista-title-link">` : ''}
                             <h3 class="tesista-name-title">
                                 <span class="tesista-name-bold">${t.name}.</span> 
                                 <span class="tesista-title-normal">${t.title}</span>
+                                ${primaryLink ? ' <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>' : ''}
                             </h3>
+                            ${primaryLink ? `</a>` : ''}
                         </div>
-                        ${links.length > 0 ? `<div class="tesista-links">${links.join('')}</div>` : ''}
+                        ${t.pdf && t.doi ? `<div class="tesista-links"><a href="${t.pdf}" target="_blank" class="tesista-link pdf-only-link" title="Ver PDF"><i class="fa-solid fa-file-pdf"></i></a></div>` : ''}
                     </div>
                 `;
             });
