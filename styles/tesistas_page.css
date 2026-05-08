@@ -115,8 +115,18 @@
     font-size: 1.3rem;
     color: var(--color-text-heading);
     margin-bottom: 5px;
-    font-weight: 700;
     line-height: 1.4;
+    font-weight: normal; /* Container itself not bold */
+}
+
+.tesista-name-bold {
+    font-weight: 700;
+}
+
+.tesista-title-normal {
+    font-weight: 400;
+    color: var(--color-text-muted);
+    font-style: italic;
 }
 
 .tesista-degree {

@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="tesista-year-tag">${t.year}</div>
                 <div class="tesista-main-info">
                     <div class="tesista-degree">${t.degree}</div>
-                    <h3 class="tesista-name-title">${t.name}. ${t.title.toUpperCase()}</h3>
+                    <h3 class="tesista-name-title"><span class="tesista-name-bold">${t.name}.</span> <span class="tesista-title-normal">${t.title}</span></h3>
                 </div>
             `;
             container.appendChild(item);
