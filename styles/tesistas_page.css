@@ -73,38 +73,85 @@
     background: var(--color-primary);
 }
 
+.year-group {
+    margin-bottom: 60px;
+}
+
+.year-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.year-title {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+}
+
+.year-line {
+    flex-grow: 1;
+    height: 2px;
+    background: linear-gradient(to right, var(--color-primary), transparent);
+}
+
 .tesistas-list-full {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 15px;
 }
 
 .tesista-item {
     background: white;
     border: 1px solid var(--card-border);
-    padding: 30px;
-    border-radius: 12px;
+    padding: 20px 30px;
+    border-radius: 15px;
     transition: var(--transition-smooth);
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
+    box-shadow: var(--shadow-sm);
 }
 
 .tesista-item:hover {
-    transform: translateX(10px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transform: translateY(-5px) translateX(5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
     border-color: var(--color-primary);
 }
 
-.tesista-year-tag {
-    background: var(--color-primary);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 1.2rem;
-    min-width: 80px;
-    text-align: center;
+/* Photo Styling */
+.tesista-photo-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 3px solid #f0f2f5;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tesista-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.tesista-item:hover .tesista-photo {
+    transform: scale(1.1);
+}
+
+.placeholder-photo {
+    background: linear-gradient(135deg, #e0e4e8, #f0f2f5);
+    color: #b0b8c1;
+    font-size: 1.5rem;
 }
 
 .tesista-main-info {
@@ -112,11 +159,11 @@
 }
 
 .tesista-name-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--color-text-heading);
     margin-bottom: 5px;
-    line-height: 1.4;
-    font-weight: normal; /* Container itself not bold */
+    line-height: 1.5;
+    font-weight: normal;
 }
 
 .tesista-name-bold {
@@ -133,13 +180,50 @@
     color: var(--color-secondary);
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     letter-spacing: 1px;
     margin-bottom: 5px;
 }
 
-.spacer-80 {
-    height: 80px;
+/* Links (PDF/DOI) */
+.tesista-links {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.tesista-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.pdf-link {
+    background: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+    border: 1px solid rgba(231, 76, 60, 0.2);
+}
+
+.pdf-link:hover {
+    background: #e74c3c;
+    color: white;
+}
+
+.doi-link {
+    background: rgba(52, 152, 219, 0.1);
+    color: #3498db;
+    border: 1px solid rgba(52, 152, 219, 0.2);
+}
+
+.doi-link:hover {
+    background: #3498db;
+    color: white;
 }
 
 @media (max-width: 768px) {
@@ -147,9 +231,15 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
+        padding: 20px;
     }
     
-    .page-header h1 {
-        font-size: 2.5rem;
+    .year-title {
+        font-size: 2rem;
+    }
+    
+    .tesista-links {
+        width: 100%;
+        justify-content: flex-start;
     }
 }

@@ -5,19 +5,24 @@
       "year": "2026",
       "title": "When the fjords take a breath: Influence of wind forcing and Ekman dynamics on Deep ventilation in North Patagonian fjords",
       "degree": "Magíster en Oceanografía, PUCV-UV",
-      "image": "https://www.instagram.com/p/DXcX-7kFIst/"
+      "image": "https://www.instagram.com/p/DXcX-7kFIst/",
+      "pdf": "https://repositorio.uv.cl/handle/123456789/123"
     },
     {
       "name": "Marcela Rojas",
       "year": "2025",
       "title": "Turbulent Mixing in Patagonian Fjords and Channels",
-      "degree": "Magíster en Oceanografía, PUCV-UV"
+      "degree": "Magíster en Oceanografía, PUCV-UV",
+      "doi": "10.1016/j.dsr.2025.104250",
+      "image": "./images/tesistas/Marcela_Rojas.jpg"
     },
     {
       "name": "Claudia Morales",
       "year": "2024",
       "title": "Ajuste espacio-temporal forzado por el viento de la hidrografía costera de la Bahía Fildes, Islas Shetland del Sur, Antártica",
-      "degree": "Magíster en Oceanografía, PUCV-UV"
+      "degree": "Magíster en Oceanografía, PUCV-UV",
+      "pdf": "https://repositorio.uv.cl/handle/123456789/456",
+      "image": "./images/tesistas/Claudia_Morales.jpeg"
     },
     {
       "name": "Mónica Alvarado-Niño",
@@ -29,7 +34,8 @@
       "name": "Elías Pinilla Matamala",
       "year": "2019",
       "title": "Water age variability in a deep Patagonian fjord (44.5°S, 73°W) using a validated three-dimensional hydrodynamic model",
-      "degree": "Magíster en Oceanografía, PUCV-UV"
+      "degree": "Magíster en Oceanografía, PUCV-UV",
+      "doi": "10.1016/j.jmarsys.2019.103254"
     },
     {
       "name": "Mario Cáceres",
@@ -49,7 +55,8 @@
       "name": "Constanza Escobedo",
       "year": "2025",
       "title": "Influencia del sistema de la corriente del Cabo de Hornos en la hidrografía del mar interior de tierra del fuego",
-      "degree": "Biología Marina UV"
+      "degree": "Biología Marina UV",
+      "image": "./images/tesistas/Cosntanza_Escobedo.jpg"
     },
     {
       "name": "Catalina Ayala",
@@ -61,7 +68,8 @@
       "name": "Marcela Rojas",
       "year": "2024",
       "title": "Variabilidad del esfuerzo del viento y su influencia en la temperatura y oxígeno disuelto en los sistemas de bahías de Coquimbo",
-      "degree": "Biología Marina UV"
+      "degree": "Biología Marina UV",
+      "image": "./images/tesistas/Marcela_Rojas.jpg"
     },
     {
       "name": "Angela Rodríguez",
@@ -73,7 +81,8 @@
       "name": "Claudia Morales",
       "year": "2022",
       "title": "Variabilidad temporal de la señal de retrodispersión y de la columna de agua, un proxy de la abundancia del zooplancton en Bahía Fildes, Antártica",
-      "degree": "Biología Marina UV"
+      "degree": "Biología Marina UV",
+      "image": "./images/tesistas/Claudia_Morales.jpeg"
     },
     {
       "name": "Carlos Pérez Retamales",
@@ -108,7 +117,7 @@
     {
       "name": "Valeria Morales Vásquez",
       "year": "2018",
-      "title": "Variabilidad de las corrientes de mareas internas semidiurnas en los canales interiores y fiordos de la Patagonia sur",
+      "title": "Variabilidad de las corrientes de mareas internas semidiurnas en los canales interiores and fiordos de la Patagonia sur",
       "degree": "Oceanografía PUCV"
     },
     {
@@ -125,3 +134,4 @@
     }
   ]
 }
+
