@@ -1,4 +1,141 @@
 
+const tesistasData = {
+  "postgrado": [
+    {
+      "name": "Camila Sola",
+      "year": "2026",
+      "title": "When the fjords take a breath: Influence of wind forcing and Ekman dynamics on Deep ventilation in North Patagonian fjords",
+      "degree": "Magíster en Oceanografía, PUCV-UV",
+      "image": "images/tesistas/camila_sola.jpg",
+      "pdf": "https://repositorio.uv.cl/handle/123456789/123"
+    },
+    {
+      "name": "Marcela Rojas",
+      "year": "2025",
+      "title": "Turbulent Mixing in Patagonian Fjords and Channels",
+      "degree": "Magíster en Oceanografía, PUCV-UV",
+      "doi": "10.5194/egusphere-2025-5846",
+      "image": "images/tesistas/Marcela_Rojas.jpg"
+    },
+    {
+      "name": "Claudia Morales",
+      "year": "2024",
+      "title": "Ajuste espacio-temporal forzado por el viento de la hidrografía costera de la Bahía Fildes, Islas Shetland del Sur, Antártica",
+      "degree": "Magíster en Oceanografía, PUCV-UV",
+      "pdf": "https://repositorio.uv.cl/handle/123456789/456",
+      "image": "images/tesistas/Claudia_Morales.jpg"
+    },
+    {
+      "name": "Mónica Alvarado-Niño",
+      "year": "2022",
+      "title": "Circulación profunda en fiordos y canales de la Patagonia norte de Chile",
+      "degree": "Magíster en Oceanografía, PUCV-UV"
+    },
+    {
+      "name": "Elías Pinilla Matamala",
+      "year": "2019",
+      "title": "Water age variability in a deep Patagonian fjord (44.5°S, 73°W) using a validated three-dimensional hydrodynamic model",
+      "degree": "Magíster en Oceanografía, PUCV-UV",
+      "doi": "10.1016/j.jmarsys.2019.103254"
+    },
+    {
+      "name": "Mario Cáceres",
+      "year": "2019",
+      "title": "Comparison of QuikSCAT, WRF and buoy ocean surface wind data off Valparaiso Bay, Chile",
+      "degree": "Magíster en Oceanografía, PUCV-UV"
+    }
+  ],
+  "pregrado": [
+    {
+      "name": "Debbie Aceituno",
+      "year": "2026",
+      "title": "Patrones espaciales y temporales de los vientos máximos de la Patagonia chilena",
+      "degree": "Biología Marina UV"
+    },
+    {
+      "name": "Constanza Escobedo",
+      "year": "2025",
+      "title": "Influencia del sistema de la corriente del Cabo de Hornos en la hidrografía del mar interior de tierra del fuego",
+      "degree": "Biología Marina UV",
+      "image": "images/tesistas/Cosntanza_Escobedo.jpg"
+    },
+    {
+      "name": "Catalina Ayala",
+      "year": "2025",
+      "title": "Modificación de las corrientes mareales en un fiordo profundo: Caso fiordo Reloncaví",
+      "degree": "Biología Marina UV"
+    },
+    {
+      "name": "Marcela Rojas",
+      "year": "2024",
+      "title": "Variabilidad del esfuerzo del viento y su influencia en la temperatura y oxígeno disuelto en los sistemas de bahías de Coquimbo",
+      "degree": "Biología Marina UV",
+      "image": "images/tesistas/Marcela_Rojas.jpg"
+    },
+    {
+      "name": "Angela Rodríguez",
+      "year": "2023",
+      "title": "Variabilidad de las condiciones oceanográficas de verano en bahía Sur, isla Doumer (64º52’24’’S; 63º36’00’’W) Antártica durante el verano austral de 2022",
+      "degree": "Biología Marina UV"
+    },
+    {
+      "name": "Claudia Morales",
+      "year": "2022",
+      "title": "Variabilidad temporal de la señal de retrodispersión y de la columna de agua, un proxy de la abundancia del zooplancton en Bahía Fildes, Antártica",
+      "degree": "Biología Marina UV",
+      "image": "images/tesistas/Claudia_Morales.jpg"
+    },
+    {
+      "name": "Carlos Pérez Retamales",
+      "year": "2021",
+      "title": "Forzantes estacionales de la circulación y la hidrografía costera en la bahía de Valparaíso, Chile",
+      "degree": "Biología Marina UV"
+    },
+    {
+      "name": "Camila Schwerter Lillo",
+      "year": "2021",
+      "title": "Régimen de circulación y su relación con el viento y las mareas en el Canal Tenglo, Patagonia norte",
+      "degree": "Biología Marina UV (Co-Director)"
+    },
+    {
+      "name": "Francesca Search Toloza",
+      "year": "2020",
+      "title": "Circulación e intercambio mareal en el Mar Interior de Chiloé",
+      "degree": "Biología Marina UV"
+    },
+    {
+      "name": "Sasha Alquinta Calderón",
+      "year": "2020",
+      "title": "Efecto del viento sobre la circulación residual del fiordo Puyuhuapi",
+      "degree": "Biología Marina UV"
+    },
+    {
+      "name": "Pablo Vilches",
+      "year": "2018",
+      "title": "Modificación de la corriente de marea semidiurna a lo largo del Fiordo de Reloncaví",
+      "degree": "Oceanografía PUCV"
+    },
+    {
+      "name": "Valeria Morales Vásquez",
+      "year": "2018",
+      "title": "Variabilidad de las corrientes de mareas internas semidiurnas en los canales interiores and fiordos de la Patagonia sur",
+      "degree": "Oceanografía PUCV"
+    },
+    {
+      "name": "Vania Carrera de la Barra",
+      "year": "2017",
+      "title": "Efecto del viento en la variabilidad de la columna de agua durante el periodo estival, frente a Montemar, Chile central",
+      "degree": "Biología Marina UV"
+    },
+    {
+      "name": "Naity Rodríguez",
+      "year": "2016",
+      "title": "Influencia del viento sobre la circulación residual en el fiordo Aysén",
+      "degree": "Oceanografía PUCV"
+    }
+  ]
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     const mainContainer = document.getElementById('tesistas-main-container');
 
@@ -62,13 +199,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    fetch('./data/tesistas.json')
-        .then(response => response.json())
-        .then(data => {
-            renderTesistasGrouped(data);
-        })
-        .catch(error => {
-            console.error('Error loading tesistas:', error);
-            if (mainContainer) mainContainer.innerHTML = '<p>Error al cargar los datos.</p>';
-        });
+    // Use the embedded data instead of fetch
+    renderTesistasGrouped(tesistasData);
+    
+    // Listen for language changes if needed (though current data is mostly static text)
+    document.addEventListener('languageChanged', () => {
+        renderTesistasGrouped(tesistasData);
+    });
 });
