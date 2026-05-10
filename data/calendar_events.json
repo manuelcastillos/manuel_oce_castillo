@@ -1,13 +1,5 @@
 [
   {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-05-09T09:00:00-04:00",
-    "end": "2025-05-09T10:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/86724253053",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Fjords in a Changing Climate: Break-out group 2 meeting",
     "start": "2025-05-15T08:00:00-07:00",
     "end": "2025-05-15T09:00:00-07:00",
@@ -1340,6 +1332,14 @@
     "start": "2026-05-13T14:30:00-04:00",
     "end": "2026-05-13T17:45:00-04:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunión SMART Cables (online, opcional)",
+    "start": "2026-05-14T08:30:00-04:00",
+    "end": "2026-05-14T10:00:00-04:00",
+    "location": "https://reuna.zoom.us/j/82948331117?pwd=nxYZRxaGvp8EFvKaZdw3lWPPPbvqWn.1&from=addon",
     "description": "",
     "recurring": true
   },
