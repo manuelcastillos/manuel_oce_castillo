@@ -7,7 +7,7 @@ const tesistasData = {
       "title": "When the fjords take a breath: Influence of wind forcing and Ekman dynamics on Deep ventilation in North Patagonian fjords",
       "degree": "Magíster en Oceanografía, PUCV-UV",
       "doi": "10.5194/egusphere-2026-2329",
-      "image": "./images/tesistas/camila_sola.jpg",
+      "image": "images/tesistas/camila_sola.jpg",
       "pdf": "https://repositorio.uv.cl/handle/123456789/123"
     },
     {
@@ -16,7 +16,7 @@ const tesistasData = {
       "title": "Turbulent Mixing in Patagonian Fjords and Channels",
       "degree": "Magíster en Oceanografía, PUCV-UV",
       "doi": "10.5194/egusphere-2025-5846",
-      "image": "./images/tesistas/marcela_rojas.jpg"
+      "image": "images/tesistas/marcela_rojas.jpg"
     },
     {
       "name": "Claudia Morales",
@@ -24,7 +24,7 @@ const tesistasData = {
       "title": "Ajuste espacio-temporal forzado por el viento de la hidrografía costera de la Bahía Fildes, Islas Shetland del Sur, Antártica",
       "degree": "Magíster en Oceanografía, PUCV-UV",
       "pdf": "https://repositorio.uv.cl/handle/123456789/456",
-      "image": "./images/tesistas/claudia_morales.jpg"
+      "image": "images/tesistas/claudia_morales.jpg"
     },
     {
       "name": "Mónica Alvarado-Niño",
@@ -58,7 +58,7 @@ const tesistasData = {
       "year": "2025",
       "title": "Influencia del sistema de la corriente del Cabo de Hornos en la hidrografía del mar interior de tierra del fuego",
       "degree": "Biología Marina UV",
-      "image": "./images/tesistas/constanza_escobedo.jpg"
+      "image": "images/tesistas/constanza_escobedo.jpg"
     },
     {
       "name": "Catalina Ayala",
@@ -71,7 +71,7 @@ const tesistasData = {
       "year": "2024",
       "title": "Variabilidad del esfuerzo del viento y su influencia en la temperatura y oxígeno disuelto en los sistemas de bahías de Coquimbo",
       "degree": "Biología Marina UV",
-      "image": "./images/tesistas/marcela_rojas.jpg"
+      "image": "images/tesistas/marcela_rojas.jpg"
     },
     {
       "name": "Angela Rodríguez",
@@ -84,7 +84,7 @@ const tesistasData = {
       "year": "2022",
       "title": "Variabilidad temporal de la señal de retrodispersión y de la columna de agua, un proxy de la abundancia del zooplancton en Bahía Fildes, Antártica",
       "degree": "Biología Marina UV",
-      "image": "./images/tesistas/claudia_morales.jpg"
+      "image": "images/tesistas/claudia_morales.jpg"
     },
     {
       "name": "Carlos Pérez Retamales",
@@ -180,8 +180,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const primaryLink = t.doi ? `https://doi.org/${t.doi}` : (t.pdf ? t.pdf : null);
                 
                 const hasImage = t.image && t.image.trim() !== "";
+                const imageSrc = hasImage ? `${t.image}?v=${new Date().getTime()}` : '';
+                
                 const imageHtml = hasImage 
-                    ? `<div class="tesista-photo-container"><img src="${t.image}" alt="${t.name}" class="tesista-photo" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fa-solid fa-user-graduate\'></i>'; this.parentElement.classList.add('placeholder-photo');"></div>`
+                    ? `<div class="tesista-photo-container"><img src="${imageSrc}" alt="${t.name}" class="tesista-photo" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fa-solid fa-user-graduate\'></i>'; this.parentElement.classList.add('placeholder-photo');"></div>`
                     : `<div class="tesista-photo-container placeholder-photo"><i class="fa-solid fa-user-graduate"></i></div>`;
 
                 html += `
