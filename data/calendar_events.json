@@ -768,18 +768,18 @@
     "recurring": true
   },
   {
-    "summary": "Defensa TFG Marcela Rojas",
-    "start": "2025-12-19T09:30:00-03:00",
-    "end": "2025-12-19T12:30:00-03:00",
-    "location": "https://reuna.zoom.us/j/86379344919?pwd=fHCVPtijTCcNCDoHt2eZCXe5awPxpE.1",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "defensa tesis Magister - Marcela Rojas",
     "start": "2025-12-19T09:30:00-03:00",
     "end": "2025-12-19T11:00:00-03:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Defensa TFG Marcela Rojas",
+    "start": "2025-12-19T09:30:00-03:00",
+    "end": "2025-12-19T12:30:00-03:00",
+    "location": "https://reuna.zoom.us/j/86379344919?pwd=fHCVPtijTCcNCDoHt2eZCXe5awPxpE.1",
     "description": "",
     "recurring": true
   },
@@ -1128,7 +1128,7 @@
     "recurring": true
   },
   {
-    "summary": "Reunión",
+    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -1136,7 +1136,7 @@
     "recurring": true
   },
   {
-    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
+    "summary": "Reunión",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
