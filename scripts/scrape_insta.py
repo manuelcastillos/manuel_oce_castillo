@@ -191,6 +191,23 @@ def get_posts(session: requests.Session, user_id: str, count: int) -> list:
     return posts
 
 
+def download_image(url: str, filename: str) -> bool:
+    """Descarga una imagen de Instagram a la carpeta local."""
+    save_path = Path(__file__).parent.parent / "images" / "news" / filename
+    save_path.parent.mkdir(parents=True, exist_ok=True)
+    
+    if save_path.exists():
+        return True # Ya la tenemos
+
+    try:
+        resp = requests.get(url, timeout=15)
+        if resp.status_code == 200:
+            save_path.write_bytes(resp.content)
+            return True
+    except Exception as e:
+        print(f"      Error descargando imagen: {e}")
+    return False
+
 def scrape_lofisat_news() -> bool:
     print("=" * 55)
     print(f"  Scraping Instagram @{TARGET_PROFILE}")
@@ -216,6 +233,20 @@ def scrape_lofisat_news() -> bool:
         print("ERROR: No se pudieron extraer posts.")
         return False
 
+    # --- DESCARGAR IMÁGENES LOCALMENTE ---
+    print("   Descargando imágenes a images/news/...")
+    for p in posts:
+        # Crear un nombre único basado en el permalink
+        img_id = hashlib.md5(p['permalink'].encode()).hexdigest()
+        filename = f"ig_{img_id}.jpg"
+        
+        if download_image(p['thumbnail'], filename):
+            # Cambiamos la URL remota por la ruta local
+            p['thumbnail'] = f"images/news/{filename}"
+        else:
+            # Fallback al logo si falla la descarga
+            p['thumbnail'] = "images/logo_lofisat.jpg"
+
     # Ordenar por fecha descendente
     posts.sort(key=lambda x: x["timestamp"], reverse=True)
 
@@ -224,7 +255,7 @@ def scrape_lofisat_news() -> bool:
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(posts, f, ensure_ascii=False, indent=2)
 
-    # --- NUEVO: Actualizar Field Work (Trabajo de Terreno) ---
+    # --- Actualizar Field Work ---
     field_file = OUTPUT_FILE.parent / "field_posts.json"
     include_keywords = [
         'terreno', 'campaña', 'antártica', 'oceanografía', 'muestreo',
@@ -232,13 +263,11 @@ def scrape_lofisat_news() -> bool:
         'instrumento', 'malla', 'estación', 'fiordos', 'patagonia',
         'seals', 'falkor', 'lofisat', 'costar', 'ciencia'
     ]
-    exclude_keywords = ['familia', 'cumpleaños', 'vacaciones', 'descanso']
-
+    
     field_posts = []
     for p in posts:
         text = p['caption'].lower()
-        if any(kw in text for kw in include_keywords) and not any(kw in text for kw in exclude_keywords):
-            # Simplificar para el formato de field.js
+        if any(kw in text for kw in include_keywords):
             field_posts.append({
                 "id": hashlib.md5(p['permalink'].encode()).hexdigest(),
                 "thumbnail": p['thumbnail'],
@@ -250,10 +279,7 @@ def scrape_lofisat_news() -> bool:
         json.dump(field_posts[:5], f, ensure_ascii=False, indent=2)
 
     print()
-    print(f"OK! Se actualizaron Noticias ({len(posts)}) y Field Work ({len(field_posts[:5])})")
-    for i, p in enumerate(posts[:3], 1):
-        cap_preview = (p['caption'][:60] + "...") if len(p['caption']) > 60 else p['caption']
-        print(f"  {i}. {p['timestamp'][:10]}  {cap_preview}")
+    print(f"OK! Se actualizaron Noticias ({len(posts)}) e imágenes locales.")
     return True
 
 
