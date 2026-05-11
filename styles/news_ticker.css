@@ -38,7 +38,7 @@
 .news-ticker-track {
     display: flex;
     white-space: nowrap;
-    animation: ticker 40s linear infinite;
+    animation: ticker 36s linear infinite;
 }
 
 .news-ticker-track:hover {
