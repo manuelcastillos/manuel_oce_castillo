@@ -135,7 +135,8 @@ const translations = {
         news: {
             title: "Noticias LOFISAT",
             subtitle: "Actividades y novedades del LOFISAT-UV",
-            insta_btn: "Seguir @lofi_sat"
+            insta_btn: "Seguir @lofi_sat",
+            ticker_label: "Ciencia al Día"
         },
         students: {
             title: "Tesistas LOFISAT",
@@ -281,7 +282,8 @@ const translations = {
         news: {
             title: "LOFISAT News",
             subtitle: "Activities and updates from LOFISAT-UV",
-            insta_btn: "Follow @lofi_sat"
+            insta_btn: "Follow @lofi_sat",
+            ticker_label: "Latest Science"
         },
         students: {
             title: "LOFISAT Students",

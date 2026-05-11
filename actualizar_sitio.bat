@@ -3,7 +3,10 @@ echo ===========================================
 echo   Generador de Paquete de Actualizacion
 echo ===========================================
 echo.
-echo Comprimiendo archivos de web_personal...
+echo [1/2] Actualizando noticias desde ScienceDaily...
+python scripts/update_news.py
+echo.
+echo [2/2] Comprimiendo archivos de web_personal...
 echo.
 
 set ZIP_NAME=web_actualizada.zip

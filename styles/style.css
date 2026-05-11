@@ -5,6 +5,7 @@
 @import url('./apa_style.css');
 @import url('./pages.css');
 @import url('./links.css');
+@import url('./news_ticker.css');
 
 :root {
     --color-bg: #9DC4D1;
