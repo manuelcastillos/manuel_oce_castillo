@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!response.ok) throw new Error('No se pudo cargar el archivo de noticias.');
         
         const newsData = await response.json();
+        const displayNews = newsData.slice(0, 6); // Mostrar las 6 más recientes
 
         // Crear los elementos de la cinta
         const renderNews = (items) => {
@@ -19,12 +20,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <a href="${item.url}" target="_blank" class="news-ticker-item">
                     ${item.title}
                 </a>
-            `).join(' • '); // Separador entre noticias
+            `).join(''); 
         };
 
         // Duplicamos el contenido para que el scroll sea infinito y fluido
-        const content = renderNews(newsData);
-        track.innerHTML = content + ' • ' + content;
+        const content = renderNews(displayNews);
+        track.innerHTML = content + content;
 
     } catch (error) {
         console.error('Error al cargar las noticias:', error);
