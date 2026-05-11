@@ -38,6 +38,7 @@
 .news-ticker-track {
     display: flex;
     white-space: nowrap;
+    width: max-content;
     animation: ticker 15s linear infinite;
 }
 

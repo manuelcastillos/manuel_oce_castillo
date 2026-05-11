@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const renderNews = (items) => {
             return items.map(item => `
                 <a href="${item.url}" target="_blank" class="news-ticker-item">
+                    <i class="fa-solid fa-circle-dot" style="font-size: 0.5rem; vertical-align: middle; margin-right: 15px; opacity: 0.5;"></i>
                     ${item.title}
                 </a>
             `).join(''); 
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // Duplicamos el contenido para que el scroll sea infinito y fluido
         const content = renderNews(displayNews);
-        track.innerHTML = content + content;
+        track.innerHTML = content + content; // Copia exacta para el loop seamless
 
     } catch (error) {
         console.error('Error al cargar las noticias:', error);
