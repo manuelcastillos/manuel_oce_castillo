@@ -1120,7 +1120,7 @@
     "recurring": true
   },
   {
-    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
+    "summary": "Reunión",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -1128,7 +1128,7 @@
     "recurring": true
   },
   {
-    "summary": "Reunión",
+    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -1340,6 +1340,14 @@
     "start": "2026-05-14T12:00:00-04:00",
     "end": "2026-05-14T13:00:00-04:00",
     "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "reuión con Comité Científico OFMC",
+    "start": "2026-05-15T15:00:00-04:00",
+    "end": "2026-05-15T16:00:00-04:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
