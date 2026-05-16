@@ -1,21 +1,5 @@
 [
   {
-    "summary": " Reunión Team Oceanografía",
-    "start": "2025-05-16T09:00:00-04:00",
-    "end": "2025-05-16T10:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/85642304198",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-05-16T09:00:00-04:00",
-    "end": "2025-05-16T10:00:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Defensa Oral Tesis MOCE Javier Valdes",
     "start": "2025-05-26T11:00:00-04:00",
     "end": "2025-05-26T12:00:00-04:00",
@@ -136,18 +120,18 @@
     "recurring": true
   },
   {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-06-19T11:00:00-04:00",
-    "end": "2025-06-19T12:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/83860569655",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Factores climáticos Seno Almirantazgo - Manuel Castillo-WCS",
     "start": "2025-06-19T11:00:00-04:00",
     "end": "2025-06-19T12:00:00-04:00",
     "location": "https://zoom.us/j/94863381579?pwd=sfVIf1jG7dR4QH1Di5rj8IcOTjZ36b.1&from=addon",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunión Team Oceanografía",
+    "start": "2025-06-19T11:00:00-04:00",
+    "end": "2025-06-19T12:00:00-04:00",
+    "location": "https://reuna.zoom.us/j/83860569655",
     "description": "",
     "recurring": true
   },
