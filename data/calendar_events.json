@@ -120,18 +120,18 @@
     "recurring": true
   },
   {
-    "summary": "Factores climáticos Seno Almirantazgo - Manuel Castillo-WCS",
-    "start": "2025-06-19T11:00:00-04:00",
-    "end": "2025-06-19T12:00:00-04:00",
-    "location": "https://zoom.us/j/94863381579?pwd=sfVIf1jG7dR4QH1Di5rj8IcOTjZ36b.1&from=addon",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Reunión Team Oceanografía",
     "start": "2025-06-19T11:00:00-04:00",
     "end": "2025-06-19T12:00:00-04:00",
     "location": "https://reuna.zoom.us/j/83860569655",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Factores climáticos Seno Almirantazgo - Manuel Castillo-WCS",
+    "start": "2025-06-19T11:00:00-04:00",
+    "end": "2025-06-19T12:00:00-04:00",
+    "location": "https://zoom.us/j/94863381579?pwd=sfVIf1jG7dR4QH1Di5rj8IcOTjZ36b.1&from=addon",
     "description": "",
     "recurring": true
   },
@@ -280,18 +280,18 @@
     "recurring": true
   },
   {
-    "summary": "reunion con Darly Alarcon",
-    "start": "2025-07-23T12:00:00-04:00",
-    "end": "2025-07-23T12:30:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "reunión Manuel",
     "start": "2025-07-23T12:00:00-04:00",
     "end": "2025-07-23T13:00:00-04:00",
     "location": "Reunión de Microsoft Teams",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "reunion con Darly Alarcon",
+    "start": "2025-07-23T12:00:00-04:00",
+    "end": "2025-07-23T12:30:00-04:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
@@ -712,18 +712,18 @@
     "recurring": true
   },
   {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-12-18T09:00:00-03:00",
-    "end": "2025-12-18T10:00:00-03:00",
-    "location": "https://reuna.zoom.us/j/87988492529",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Presentacion de Trabajo Final de Grado nº2  -  Claudia Rozas",
     "start": "2025-12-18T09:00:00-03:00",
     "end": "2025-12-18T10:30:00-03:00",
     "location": "Reunión de Microsoft Teams",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunión Team Oceanografía",
+    "start": "2025-12-18T09:00:00-03:00",
+    "end": "2025-12-18T10:00:00-03:00",
+    "location": "https://reuna.zoom.us/j/87988492529",
     "description": "",
     "recurring": true
   },
@@ -1016,18 +1016,18 @@
     "recurring": true
   },
   {
-    "summary": "Presentacion Proyecto Magíster - UdeC",
-    "start": "2026-03-31T08:45:00-03:00",
-    "end": "2026-03-31T10:30:00-03:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Defensa Proyecto Daniel O.",
     "start": "2026-03-31T08:45:00-03:00",
     "end": "2026-03-31T11:00:00-03:00",
     "location": "Reunión de Microsoft Teams",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentacion Proyecto Magíster - UdeC",
+    "start": "2026-03-31T08:45:00-03:00",
+    "end": "2026-03-31T10:30:00-03:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
@@ -1356,6 +1356,14 @@
     "start": "2026-05-19T14:45:00-04:00",
     "end": "2026-05-19T17:45:00-04:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Taller Fondecyt Regular DIUV ",
+    "start": "2026-05-19T15:30:00-04:00",
+    "end": "2026-05-19T16:30:00-04:00",
+    "location": "Reunión de Microsoft Teams",
     "description": "",
     "recurring": true
   },
