@@ -1000,18 +1000,18 @@
     "recurring": true
   },
   {
-    "summary": "Defensa Proyecto Daniel O.",
-    "start": "2026-03-31T08:45:00-03:00",
-    "end": "2026-03-31T11:00:00-03:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Presentacion Proyecto Magíster - UdeC",
     "start": "2026-03-31T08:45:00-03:00",
     "end": "2026-03-31T10:30:00-03:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Defensa Proyecto Daniel O.",
+    "start": "2026-03-31T08:45:00-03:00",
+    "end": "2026-03-31T11:00:00-03:00",
+    "location": "Reunión de Microsoft Teams",
     "description": "",
     "recurring": true
   },
@@ -1388,6 +1388,14 @@
     "start": "2026-05-28T12:00:00-04:00",
     "end": "2026-05-28T13:00:00-04:00",
     "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "reunion con Laura Banucci",
+    "start": "2026-05-28T14:00:00-04:00",
+    "end": "2026-05-28T15:30:00-04:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
