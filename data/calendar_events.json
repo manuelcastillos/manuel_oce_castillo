@@ -256,18 +256,18 @@
     "recurring": true
   },
   {
-    "summary": "reunión Manuel",
-    "start": "2025-07-23T12:00:00-04:00",
-    "end": "2025-07-23T13:00:00-04:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "reunion con Darly Alarcon",
     "start": "2025-07-23T12:00:00-04:00",
     "end": "2025-07-23T12:30:00-04:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "reunión Manuel",
+    "start": "2025-07-23T12:00:00-04:00",
+    "end": "2025-07-23T13:00:00-04:00",
+    "location": "Reunión de Microsoft Teams",
     "description": "",
     "recurring": true
   },
