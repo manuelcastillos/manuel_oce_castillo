@@ -56,18 +56,18 @@
     "recurring": true
   },
   {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-06-12T09:00:00-04:00",
-    "end": "2025-06-12T10:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/85323456845",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Invitación Reunión Coordinación embarque ANID",
     "start": "2025-06-12T09:00:00-04:00",
     "end": "2025-06-12T10:00:00-04:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunión Team Oceanografía",
+    "start": "2025-06-12T09:00:00-04:00",
+    "end": "2025-06-12T10:00:00-04:00",
+    "location": "https://reuna.zoom.us/j/85323456845",
     "description": "",
     "recurring": true
   },
