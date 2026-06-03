@@ -696,18 +696,18 @@
     "recurring": true
   },
   {
-    "summary": "Defensa TFG Marcela Rojas",
-    "start": "2025-12-19T09:30:00-03:00",
-    "end": "2025-12-19T12:30:00-03:00",
-    "location": "https://reuna.zoom.us/j/86379344919?pwd=fHCVPtijTCcNCDoHt2eZCXe5awPxpE.1",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "defensa tesis Magister - Marcela Rojas",
     "start": "2025-12-19T09:30:00-03:00",
     "end": "2025-12-19T11:00:00-03:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Defensa TFG Marcela Rojas",
+    "start": "2025-12-19T09:30:00-03:00",
+    "end": "2025-12-19T12:30:00-03:00",
+    "location": "https://reuna.zoom.us/j/86379344919?pwd=fHCVPtijTCcNCDoHt2eZCXe5awPxpE.1",
     "description": "",
     "recurring": true
   },
@@ -1404,6 +1404,14 @@
     "start": "2026-06-04",
     "end": "2026-06-05",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunión actividades Laguna Verde",
+    "start": "2026-06-08T12:30:00-04:00",
+    "end": "2026-06-08T14:00:00-04:00",
+    "location": "https://meet.google.com/rzg-daky-oza",
     "description": "",
     "recurring": true
   },
