@@ -1,14 +1,6 @@
 [
   {
     "summary": "Cita privada",
-    "start": "2025-06-07T20:20:00+02:00",
-    "end": "2025-06-07T21:50:00+02:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Cita privada",
     "start": "2025-06-07T23:20:00+02:00",
     "end": "2025-06-08T13:55:00+02:00",
     "location": "",
