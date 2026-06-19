@@ -1,21 +1,5 @@
 [
   {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-06-19T11:00:00-04:00",
-    "end": "2025-06-19T12:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/83860569655",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Factores climáticos Seno Almirantazgo - Manuel Castillo-WCS",
-    "start": "2025-06-19T11:00:00-04:00",
-    "end": "2025-06-19T12:00:00-04:00",
-    "location": "https://zoom.us/j/94863381579?pwd=sfVIf1jG7dR4QH1Di5rj8IcOTjZ36b.1&from=addon",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "reunion manuscrito Eulogio",
     "start": "2025-06-25T10:00:00-04:00",
     "end": "2025-06-25T10:30:00-04:00",
@@ -896,18 +880,18 @@
     "recurring": true
   },
   {
-    "summary": "Defensa Proyecto Daniel O.",
-    "start": "2026-03-31T08:45:00-03:00",
-    "end": "2026-03-31T11:00:00-03:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Presentacion Proyecto Magíster - UdeC",
     "start": "2026-03-31T08:45:00-03:00",
     "end": "2026-03-31T10:30:00-03:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Defensa Proyecto Daniel O.",
+    "start": "2026-03-31T08:45:00-03:00",
+    "end": "2026-03-31T11:00:00-03:00",
+    "location": "Reunión de Microsoft Teams",
     "description": "",
     "recurring": true
   },
@@ -984,7 +968,7 @@
     "recurring": true
   },
   {
-    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
+    "summary": "Reunión",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -992,7 +976,7 @@
     "recurring": true
   },
   {
-    "summary": "Reunión",
+    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -1448,6 +1432,14 @@
     "recurring": true
   },
   {
+    "summary": "Taller difusión de resultados “Estudio del desempeño ambiental de la acuicultura en Chile y su efecto en los ecosistemas de emplazamiento etapa 2025- 2026”. ",
+    "start": "2026-06-26T09:15:00-04:00",
+    "end": "2026-06-26T13:00:00-04:00",
+    "location": "Reunión de Microsoft Teams",
+    "description": "",
+    "recurring": true
+  },
+  {
     "summary": "Termo y Ondas",
     "start": "2026-06-29T14:45:00-04:00",
     "end": "2026-06-29T17:45:00-04:00",
@@ -1476,6 +1468,14 @@
     "start": "2026-07-06T10:00:00-04:00",
     "end": "2026-07-06T11:30:00-04:00",
     "location": "https://meet.google.com/jsn-woen-auu",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentación TFG3 Claudia Rozas",
+    "start": "2026-07-06T13:15:00-04:00",
+    "end": "2026-07-06T14:15:00-04:00",
+    "location": "https://meet.google.com/ayp-wxpv-ozc",
     "description": "",
     "recurring": true
   },
