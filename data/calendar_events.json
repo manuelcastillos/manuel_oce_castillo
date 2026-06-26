@@ -1,21 +1,5 @@
 [
   {
-    "summary": "Reunión_Manuscrito Nati",
-    "start": "2025-06-26T09:00:00-04:00",
-    "end": "2025-06-26T10:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/88193664451",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Presentación TFG-3 Higueras",
-    "start": "2025-06-26T10:30:00-04:00",
-    "end": "2025-06-26T11:30:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "TFG3 Camila Sola",
     "start": "2025-06-27T14:00:00-04:00",
     "end": "2025-06-27T15:00:00-04:00",
@@ -960,7 +944,7 @@
     "recurring": true
   },
   {
-    "summary": "Reunión",
+    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -968,7 +952,7 @@
     "recurring": true
   },
   {
-    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
+    "summary": "Reunión",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -1464,10 +1448,10 @@
     "recurring": true
   },
   {
-    "summary": "Presentacion TFG1 (Ignacio Bravo)",
+    "summary": "Evento cancelado con nota: Presentacion TFG1 (Ignacio Bravo) lun 6 de jul de 2026 10:00 - 11:00 (CLT) (manuel.castillo@uv.cl)",
     "start": "2026-07-06T10:00:00-04:00",
     "end": "2026-07-06T11:00:00-04:00",
-    "location": "https://meet.google.com/rgr-xoua-hey",
+    "location": "",
     "description": "",
     "recurring": true
   },
