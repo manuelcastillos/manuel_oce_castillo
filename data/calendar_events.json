@@ -120,18 +120,18 @@
     "recurring": true
   },
   {
-    "summary": "reunion con Darly Alarcon",
-    "start": "2025-07-23T12:00:00-04:00",
-    "end": "2025-07-23T12:30:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "reunión Manuel",
     "start": "2025-07-23T12:00:00-04:00",
     "end": "2025-07-23T13:00:00-04:00",
     "location": "Reunión de Microsoft Teams",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "reunion con Darly Alarcon",
+    "start": "2025-07-23T12:00:00-04:00",
+    "end": "2025-07-23T12:30:00-04:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
@@ -944,7 +944,7 @@
     "recurring": true
   },
   {
-    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
+    "summary": "Reunión",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -952,7 +952,7 @@
     "recurring": true
   },
   {
-    "summary": "Reunión",
+    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
