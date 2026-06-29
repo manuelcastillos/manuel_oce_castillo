@@ -312,6 +312,14 @@
     "recurring": true
   },
   {
+    "summary": "Manuel Rodrigo Chaiten",
+    "start": "2025-09-12T19:00:00+01:00",
+    "end": "2025-09-12T20:00:00+01:00",
+    "location": "https://bham-ac-uk.zoom.us/j/85373292319",
+    "description": "",
+    "recurring": true
+  },
+  {
     "summary": "Reu paper Nati",
     "start": "2025-09-16T09:00:00-03:00",
     "end": "2025-09-16T10:00:00-03:00",
@@ -364,6 +372,14 @@
     "start": "2025-10-21T16:00:00-03:00",
     "end": "2025-10-21T17:00:00-03:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Fkt240902 update",
+    "start": "2025-10-21T20:00:00+01:00",
+    "end": "2025-10-21T21:00:00+01:00",
+    "location": "https://bham-ac-uk.zoom.us/j/81014292207",
     "description": "",
     "recurring": true
   },
@@ -544,18 +560,18 @@
     "recurring": true
   },
   {
-    "summary": "Presentacion de Trabajo Final de Grado nº2  -  Claudia Rozas",
-    "start": "2025-12-18T09:00:00-03:00",
-    "end": "2025-12-18T10:30:00-03:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Reunión Team Oceanografía",
     "start": "2025-12-18T09:00:00-03:00",
     "end": "2025-12-18T10:00:00-03:00",
     "location": "https://reuna.zoom.us/j/87988492529",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentacion de Trabajo Final de Grado nº2  -  Claudia Rozas",
+    "start": "2025-12-18T09:00:00-03:00",
+    "end": "2025-12-18T10:30:00-03:00",
+    "location": "Reunión de Microsoft Teams",
     "description": "",
     "recurring": true
   },
@@ -848,18 +864,18 @@
     "recurring": true
   },
   {
-    "summary": "Defensa Proyecto Daniel O.",
-    "start": "2026-03-31T08:45:00-03:00",
-    "end": "2026-03-31T11:00:00-03:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Presentacion Proyecto Magíster - UdeC",
     "start": "2026-03-31T08:45:00-03:00",
     "end": "2026-03-31T10:30:00-03:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Defensa Proyecto Daniel O.",
+    "start": "2026-03-31T08:45:00-03:00",
+    "end": "2026-03-31T11:00:00-03:00",
+    "location": "Reunión de Microsoft Teams",
     "description": "",
     "recurring": true
   },
@@ -936,7 +952,7 @@
     "recurring": true
   },
   {
-    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
+    "summary": "Reunión",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -944,7 +960,7 @@
     "recurring": true
   },
   {
-    "summary": "Reunión",
+    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -1432,18 +1448,18 @@
     "recurring": true
   },
   {
-    "summary": "Evento cancelado con nota: Presentacion TFG1 (Ignacio Bravo) lun 6 de jul de 2026 10:00 - 11:00 (CLT) (manuel.castillo@uv.cl)",
-    "start": "2026-07-06T10:00:00-04:00",
-    "end": "2026-07-06T11:00:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Presentación TFG3  Claudia Rozas",
     "start": "2026-07-06T10:00:00-04:00",
     "end": "2026-07-06T11:30:00-04:00",
     "location": "https://meet.google.com/jsn-woen-auu",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Evento cancelado con nota: Presentacion TFG1 (Ignacio Bravo) lun 6 de jul de 2026 10:00 - 11:00 (CLT) (manuel.castillo@uv.cl)",
+    "start": "2026-07-06T10:00:00-04:00",
+    "end": "2026-07-06T11:00:00-04:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
