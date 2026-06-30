@@ -208,18 +208,18 @@
     "recurring": true
   },
   {
-    "summary": "PRESENTACION TFG3 PABLO MEJIAS",
-    "start": "2025-08-07T10:00:00-04:00",
-    "end": "2025-08-07T11:00:00-04:00",
-    "location": "https://pucv-cl.zoom.us/j/93681733895?pwd=UYrjY6r4x0awM9r4qtfkTmtzu0EiBW.1",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Taller de Proyectos VRII 4 [En persona]",
     "start": "2025-08-07T10:00:00-04:00",
     "end": "2025-08-07T12:00:00-04:00",
     "location": "Campus Facultad de Medicina Reñaca",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "PRESENTACION TFG3 PABLO MEJIAS",
+    "start": "2025-08-07T10:00:00-04:00",
+    "end": "2025-08-07T11:00:00-04:00",
+    "location": "https://pucv-cl.zoom.us/j/93681733895?pwd=UYrjY6r4x0awM9r4qtfkTmtzu0EiBW.1",
     "description": "",
     "recurring": true
   },
@@ -560,18 +560,18 @@
     "recurring": true
   },
   {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-12-18T09:00:00-03:00",
-    "end": "2025-12-18T10:00:00-03:00",
-    "location": "https://reuna.zoom.us/j/87988492529",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Presentacion de Trabajo Final de Grado nº2  -  Claudia Rozas",
     "start": "2025-12-18T09:00:00-03:00",
     "end": "2025-12-18T10:30:00-03:00",
     "location": "Reunión de Microsoft Teams",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunión Team Oceanografía",
+    "start": "2025-12-18T09:00:00-03:00",
+    "end": "2025-12-18T10:00:00-03:00",
+    "location": "https://reuna.zoom.us/j/87988492529",
     "description": "",
     "recurring": true
   },
@@ -952,7 +952,7 @@
     "recurring": true
   },
   {
-    "summary": "Reunión",
+    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -960,7 +960,7 @@
     "recurring": true
   },
   {
-    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
+    "summary": "Reunión",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -1512,10 +1512,26 @@
     "recurring": true
   },
   {
+    "summary": "Josefa's oral defense TFG1",
+    "start": "2026-07-07T14:00:00-04:00",
+    "end": "2026-07-07T15:00:00-04:00",
+    "location": "https://meet.google.com/bty-nzkf-qkk",
+    "description": "",
+    "recurring": true
+  },
+  {
     "summary": "Termo y Ondas",
     "start": "2026-07-07T14:45:00-04:00",
     "end": "2026-07-07T17:45:00-04:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Defenda Oral TG1 Ignacio Bravo",
+    "start": "2026-07-08T10:00:00-04:00",
+    "end": "2026-07-08T11:00:00-04:00",
+    "location": "https://meet.google.com/owd-ynkd-dqf",
     "description": "",
     "recurring": true
   },
