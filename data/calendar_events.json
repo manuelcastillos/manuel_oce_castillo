@@ -1,13 +1,5 @@
 [
   {
-    "summary": "REUNION COORDINACION DOCA 2026",
-    "start": "2025-07-08T11:00:00-04:00",
-    "end": "2025-07-08T11:30:00-04:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "prueba",
     "start": "2025-07-09T11:00:00-04:00",
     "end": "2025-07-09T11:30:00-04:00",
