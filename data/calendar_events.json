@@ -1,37 +1,5 @@
 [
   {
-    "summary": "TFG 3 Mauricio Diaz ",
-    "start": "2025-07-23T10:00:00-04:00",
-    "end": "2025-07-23T11:00:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "avances TFG Mauricio Diaz",
-    "start": "2025-07-23T10:30:00-04:00",
-    "end": "2025-07-23T11:30:00-04:00",
-    "location": "https://reuna.zoom.us/j/83405955181?pwd=v5GPn7BDa7yyEfk2UpMXBItaBM9Aa6.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "reunion con Darly Alarcon",
-    "start": "2025-07-23T12:00:00-04:00",
-    "end": "2025-07-23T12:30:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "reunión Manuel",
-    "start": "2025-07-23T12:00:00-04:00",
-    "end": "2025-07-23T13:00:00-04:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Reunión Team Oceanografía",
     "start": "2025-07-24T09:00:00-04:00",
     "end": "2025-07-24T10:00:00-04:00",
@@ -1352,18 +1320,18 @@
     "recurring": true
   },
   {
-    "summary": "Presentación TFG3  Claudia Rozas",
-    "start": "2026-07-06T10:00:00-04:00",
-    "end": "2026-07-06T11:30:00-04:00",
-    "location": "https://meet.google.com/jsn-woen-auu",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Evento cancelado con nota: Presentacion TFG1 (Ignacio Bravo) lun 6 de jul de 2026 10:00 - 11:00 (CLT) (manuel.castillo@uv.cl)",
     "start": "2026-07-06T10:00:00-04:00",
     "end": "2026-07-06T11:00:00-04:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentación TFG3  Claudia Rozas",
+    "start": "2026-07-06T10:00:00-04:00",
+    "end": "2026-07-06T11:30:00-04:00",
+    "location": "https://meet.google.com/jsn-woen-auu",
     "description": "",
     "recurring": true
   },
@@ -1528,6 +1496,14 @@
     "recurring": true
   },
   {
+    "summary": "WorkShop - Oceanografía en un clima Cambiante , UBB, Concepción",
+    "start": "2026-08-05",
+    "end": "2026-08-09",
+    "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
     "summary": "Reunión de Coordinación Congreso OFMC 2026",
     "start": "2026-08-06T12:00:00-04:00",
     "end": "2026-08-06T13:00:00-04:00",
@@ -1548,14 +1524,6 @@
     "start": "2026-09-03T12:00:00-04:00",
     "end": "2026-09-03T13:00:00-04:00",
     "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "DEFENSA DE TESIS DE SIBILLE AMESTICA (MAGISTER EN OCEANOGRAFIA)",
-    "start": "2026-09-10T09:00:00-03:00",
-    "end": "2026-09-10T11:00:00-03:00",
-    "location": "https://pucv-cl.zoom.us/j/95287369044?pwd=PdE88cMrkIviGCNxNzYWXwtYnPRCsZ.1",
     "description": "",
     "recurring": true
   },
@@ -1596,6 +1564,14 @@
     "start": "2026-11-12T12:00:00-03:00",
     "end": "2026-11-12T13:00:00-03:00",
     "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Congreso 8º CONGRESO OFMC - ",
+    "start": "2026-11-24",
+    "end": "2026-11-28",
+    "location": "",
     "description": "",
     "recurring": true
   }
