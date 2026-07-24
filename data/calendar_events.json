@@ -1,13 +1,5 @@
 [
   {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-07-24T09:00:00-04:00",
-    "end": "2025-07-24T10:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/86363985570",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "reunion con Joan Higueras TFG3",
     "start": "2025-07-24T15:00:00-04:00",
     "end": "2025-07-24T15:30:00-04:00",
@@ -736,18 +728,18 @@
     "recurring": true
   },
   {
-    "summary": "Presentacion Proyecto Magíster - UdeC",
-    "start": "2026-03-31T08:45:00-03:00",
-    "end": "2026-03-31T10:30:00-03:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Defensa Proyecto Daniel O.",
     "start": "2026-03-31T08:45:00-03:00",
     "end": "2026-03-31T11:00:00-03:00",
     "location": "Reunión de Microsoft Teams",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentacion Proyecto Magíster - UdeC",
+    "start": "2026-03-31T08:45:00-03:00",
+    "end": "2026-03-31T10:30:00-03:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
