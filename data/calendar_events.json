@@ -720,18 +720,18 @@
     "recurring": true
   },
   {
-    "summary": "Defensa Proyecto Daniel O.",
-    "start": "2026-03-31T08:45:00-03:00",
-    "end": "2026-03-31T11:00:00-03:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Presentacion Proyecto Magíster - UdeC",
     "start": "2026-03-31T08:45:00-03:00",
     "end": "2026-03-31T10:30:00-03:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Defensa Proyecto Daniel O.",
+    "start": "2026-03-31T08:45:00-03:00",
+    "end": "2026-03-31T11:00:00-03:00",
+    "location": "Reunión de Microsoft Teams",
     "description": "",
     "recurring": true
   },
@@ -808,7 +808,7 @@
     "recurring": true
   },
   {
-    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
+    "summary": "Reunión",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -816,7 +816,7 @@
     "recurring": true
   },
   {
-    "summary": "Reunión",
+    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
