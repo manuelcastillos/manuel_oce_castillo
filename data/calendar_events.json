@@ -1,13 +1,5 @@
 [
   {
-    "summary": "Presentación figuras",
-    "start": "2025-08-01T10:00:00-04:00",
-    "end": "2025-08-01T11:45:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Defensa TFG Álvaro Jorquera",
     "start": "2025-08-04T10:00:00-04:00",
     "end": "2025-08-04T11:30:00-04:00",
@@ -800,7 +792,7 @@
     "recurring": true
   },
   {
-    "summary": "Reunión",
+    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -808,7 +800,7 @@
     "recurring": true
   },
   {
-    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
+    "summary": "Reunión",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
