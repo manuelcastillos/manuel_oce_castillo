@@ -1,29 +1,5 @@
 [
   {
-    "summary": "Seminario “Sinergia Cuántica 2025: Encuentro academia–industria para innovar en tecnología, IA y supercómputo” [En persona]",
-    "start": "2025-08-05T09:30:00-04:00",
-    "end": "2025-08-05T12:45:00-04:00",
-    "location": "Salón T del Edificio T, Campus Casa Central de la USM (Av. España 1680, Valparaíso)",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "REUNION COORDINACION  ANID EMBARCAIONES  - interna",
-    "start": "2025-08-05T11:00:00-04:00",
-    "end": "2025-08-05T13:00:00-04:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reu minibat",
-    "start": "2025-08-05T11:30:00-04:00",
-    "end": "2025-08-05T12:30:00-04:00",
-    "location": "Nueva lofi-ofi",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Reunión Team Oceanografía",
     "start": "2025-08-07T09:00:00-04:00",
     "end": "2025-08-07T10:00:00-04:00",
@@ -1272,18 +1248,18 @@
     "recurring": true
   },
   {
-    "summary": "Evento cancelado con nota: Presentacion TFG1 (Ignacio Bravo) lun 6 de jul de 2026 10:00 - 11:00 (CLT) (manuel.castillo@uv.cl)",
-    "start": "2026-07-06T10:00:00-04:00",
-    "end": "2026-07-06T11:00:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Presentación TFG3  Claudia Rozas",
     "start": "2026-07-06T10:00:00-04:00",
     "end": "2026-07-06T11:30:00-04:00",
     "location": "https://meet.google.com/jsn-woen-auu",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Evento cancelado con nota: Presentacion TFG1 (Ignacio Bravo) lun 6 de jul de 2026 10:00 - 11:00 (CLT) (manuel.castillo@uv.cl)",
+    "start": "2026-07-06T10:00:00-04:00",
+    "end": "2026-07-06T11:00:00-04:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
