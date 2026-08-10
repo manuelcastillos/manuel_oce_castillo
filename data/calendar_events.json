@@ -352,18 +352,18 @@
     "recurring": true
   },
   {
-    "summary": "defensa tesis Magister - Marcela Rojas",
-    "start": "2025-12-19T09:30:00-03:00",
-    "end": "2025-12-19T11:00:00-03:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Defensa TFG Marcela Rojas",
     "start": "2025-12-19T09:30:00-03:00",
     "end": "2025-12-19T12:30:00-03:00",
     "location": "https://reuna.zoom.us/j/86379344919?pwd=fHCVPtijTCcNCDoHt2eZCXe5awPxpE.1",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "defensa tesis Magister - Marcela Rojas",
+    "start": "2025-12-19T09:30:00-03:00",
+    "end": "2025-12-19T11:00:00-03:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
@@ -1396,6 +1396,14 @@
     "start": "2026-08-06T12:00:00-04:00",
     "end": "2026-08-06T13:00:00-04:00",
     "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunión CCP Ecología ",
+    "start": "2026-08-11T10:00:00-04:00",
+    "end": "2026-08-11T11:00:00-04:00",
+    "location": "Sala reuniones Fisiología",
     "description": "",
     "recurring": true
   },
