@@ -608,18 +608,18 @@
     "recurring": true
   },
   {
-    "summary": "Presentacion Proyecto Magíster - UdeC",
-    "start": "2026-03-31T08:45:00-03:00",
-    "end": "2026-03-31T10:30:00-03:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Defensa Proyecto Daniel O.",
     "start": "2026-03-31T08:45:00-03:00",
     "end": "2026-03-31T11:00:00-03:00",
     "location": "Reunión de Microsoft Teams",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentacion Proyecto Magíster - UdeC",
+    "start": "2026-03-31T08:45:00-03:00",
+    "end": "2026-03-31T10:30:00-03:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
@@ -1192,18 +1192,18 @@
     "recurring": true
   },
   {
-    "summary": "Evento cancelado con nota: Presentacion TFG1 (Ignacio Bravo) lun 6 de jul de 2026 10:00 - 11:00 (CLT) (manuel.castillo@uv.cl)",
-    "start": "2026-07-06T10:00:00-04:00",
-    "end": "2026-07-06T11:00:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Presentación TFG3  Claudia Rozas",
     "start": "2026-07-06T10:00:00-04:00",
     "end": "2026-07-06T11:30:00-04:00",
     "location": "https://meet.google.com/jsn-woen-auu",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Evento cancelado con nota: Presentacion TFG1 (Ignacio Bravo) lun 6 de jul de 2026 10:00 - 11:00 (CLT) (manuel.castillo@uv.cl)",
+    "start": "2026-07-06T10:00:00-04:00",
+    "end": "2026-07-06T11:00:00-04:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
@@ -1388,6 +1388,14 @@
     "start": "2026-08-11T10:00:00-04:00",
     "end": "2026-08-11T11:00:00-04:00",
     "location": "Sala reuniones Fisiología",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "reunion",
+    "start": "2026-08-17T12:00:00-04:00",
+    "end": "2026-08-17T12:30:00-04:00",
+    "location": "Microsoft Teams Meeting",
     "description": "",
     "recurring": true
   },
