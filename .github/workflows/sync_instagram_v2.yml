@@ -35,5 +35,5 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add data/instagram_news.json
+        git add data/instagram_news.json images/news/
         git diff --quiet && git diff --staged --quiet || (git commit -m "auto: update instagram news data [12h sync]" && git push)
