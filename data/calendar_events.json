@@ -1,477 +1,5 @@
 [
   {
-    "summary": "Fjords in a Changing Climate: Break-out group 2 meeting",
-    "start": "2025-05-15T08:00:00-07:00",
-    "end": "2025-05-15T09:00:00-07:00",
-    "location": "Microsoft Teams Meeting",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": " Reunión Team Oceanografía",
-    "start": "2025-05-16T09:00:00-04:00",
-    "end": "2025-05-16T10:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/85642304198",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-05-16T09:00:00-04:00",
-    "end": "2025-05-16T10:00:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Defensa Oral Tesis MOCE Javier Valdes",
-    "start": "2025-05-26T11:00:00-04:00",
-    "end": "2025-05-26T12:00:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-05-27T09:30:00-04:00",
-    "end": "2025-05-27T10:30:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Evento cancelado: Asamblea mar abierto mar 27 de may de 2025 18:00 - 20:15 (CLT) (Manuel Castillo)",
-    "start": "2025-05-27T18:00:00-04:00",
-    "end": "2025-05-27T20:15:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-05-29T09:30:00-04:00",
-    "end": "2025-05-29T10:30:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Cita privada",
-    "start": "2025-05-31T10:00:00-04:00",
-    "end": "2025-05-31T23:45:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Cita privada",
-    "start": "2025-06-01T09:25:00+02:00",
-    "end": "2025-06-01T11:35:00+02:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Simposio congreso Valdivia",
-    "start": "2025-06-04T14:00:00-04:00",
-    "end": "2025-06-04T15:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/82751054852?pwd=HUs0aEeZBW4bObX7211LrbbGD1MS1F.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Cita privada",
-    "start": "2025-06-07T17:45:00+02:00",
-    "end": "2025-06-07T19:25:00+02:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Cita privada",
-    "start": "2025-06-07T20:20:00+02:00",
-    "end": "2025-06-07T21:50:00+02:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Cita privada",
-    "start": "2025-06-07T23:20:00+02:00",
-    "end": "2025-06-08T13:55:00+02:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión Oceanografía_Manu. Nati ",
-    "start": "2025-06-09T08:00:00-04:00",
-    "end": "2025-06-09T09:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/88952014138",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Invitación Reunión Coordinación embarque ANID",
-    "start": "2025-06-12T09:00:00-04:00",
-    "end": "2025-06-12T10:00:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-06-12T09:00:00-04:00",
-    "end": "2025-06-12T10:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/85323456845",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Evaluación TFG III",
-    "start": "2025-06-16T14:30:00-04:00",
-    "end": "2025-06-16T15:30:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión Oceanografía_Manu Nati",
-    "start": "2025-06-17T08:00:00-04:00",
-    "end": "2025-06-17T09:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/87156783092",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-06-19T11:00:00-04:00",
-    "end": "2025-06-19T12:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/83860569655",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Factores climáticos Seno Almirantazgo - Manuel Castillo-WCS",
-    "start": "2025-06-19T11:00:00-04:00",
-    "end": "2025-06-19T12:00:00-04:00",
-    "location": "https://zoom.us/j/94863381579?pwd=sfVIf1jG7dR4QH1Di5rj8IcOTjZ36b.1&from=addon",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "reunion manuscrito Eulogio",
-    "start": "2025-06-25T10:00:00-04:00",
-    "end": "2025-06-25T10:30:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión_Manuscrito Nati",
-    "start": "2025-06-26T09:00:00-04:00",
-    "end": "2025-06-26T10:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/88193664451",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Presentación TFG-3 Higueras",
-    "start": "2025-06-26T10:30:00-04:00",
-    "end": "2025-06-26T11:30:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "TFG3 Camila Sola",
-    "start": "2025-06-27T14:00:00-04:00",
-    "end": "2025-06-27T15:00:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión colaboración: perfiles de CTD en aguas interiores de Chile",
-    "start": "2025-07-03T12:00:00-04:00",
-    "end": "2025-07-03T13:00:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "REUNION COORDINACION DOCA 2026",
-    "start": "2025-07-08T11:00:00-04:00",
-    "end": "2025-07-08T11:30:00-04:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "prueba",
-    "start": "2025-07-09T11:00:00-04:00",
-    "end": "2025-07-09T11:30:00-04:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-07-10T09:00:00-04:00",
-    "end": "2025-07-10T10:00:00-04:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "TFG1 Claudia Rozas Perez",
-    "start": "2025-07-10T15:00:00-04:00",
-    "end": "2025-07-10T16:00:00-04:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Presentación TFG M.Amenabar",
-    "start": "2025-07-11T09:15:00-04:00",
-    "end": "2025-07-11T10:15:00-04:00",
-    "location": "https://pucv-cl.zoom.us/j/97346807937?pwd=QBWjF7AK7ZUxigCgf27SiKoNKbIybP.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Presentación TFG1 Constanza Santana",
-    "start": "2025-07-11T15:00:00-04:00",
-    "end": "2025-07-11T16:00:00-04:00",
-    "location": "https://pucv-cl.zoom.us/j/96106452585?pwd=NwalJbFPTiMPholeFuX3j1Cyh83Q2t.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Presentación de avance TFG Simón Reyes",
-    "start": "2025-07-14T08:00:00-04:00",
-    "end": "2025-07-14T09:00:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reu pre-congreso",
-    "start": "2025-07-14T12:00:00-04:00",
-    "end": "2025-07-14T13:00:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión con José Agreda",
-    "start": "2025-07-16T15:00:00-04:00",
-    "end": "2025-07-16T16:00:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-07-17T10:00:00-04:00",
-    "end": "2025-07-17T11:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/83561515124",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "PRESENTACIÓN EN WORKSHOP mesopelagic fishes",
-    "start": "2025-07-18T09:00:00-04:00",
-    "end": "2025-07-18T13:00:00-04:00",
-    "location": "CIAE",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "TFG 3 Mauricio Diaz ",
-    "start": "2025-07-23T10:00:00-04:00",
-    "end": "2025-07-23T11:00:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "avances TFG Mauricio Diaz",
-    "start": "2025-07-23T10:30:00-04:00",
-    "end": "2025-07-23T11:30:00-04:00",
-    "location": "https://reuna.zoom.us/j/83405955181?pwd=v5GPn7BDa7yyEfk2UpMXBItaBM9Aa6.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "reunion con Darly Alarcon",
-    "start": "2025-07-23T12:00:00-04:00",
-    "end": "2025-07-23T12:30:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "reunión Manuel",
-    "start": "2025-07-23T12:00:00-04:00",
-    "end": "2025-07-23T13:00:00-04:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-07-24T09:00:00-04:00",
-    "end": "2025-07-24T10:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/86363985570",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "reunion con Joan Higueras TFG3",
-    "start": "2025-07-24T15:00:00-04:00",
-    "end": "2025-07-24T15:30:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Universidad Valparaíso 2026",
-    "start": "2025-07-31T14:00:00-04:00",
-    "end": "2025-07-31T15:00:00-04:00",
-    "location": "https://econgressvenue.zoom.us/j/89824111147?pwd=YJM91uQBmZvyAJmyTzH5nHZycf0VWO.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Presentación figuras",
-    "start": "2025-08-01T10:00:00-04:00",
-    "end": "2025-08-01T11:45:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Defensa TFG Álvaro Jorquera",
-    "start": "2025-08-04T10:00:00-04:00",
-    "end": "2025-08-04T11:30:00-04:00",
-    "location": "https://pucv-cl.zoom.us/j/96773490800?pwd=LU5TUQ326ihMzKDViEvSeqo1fwEA1d.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "REUNION COSTAR - Sala Reunion Piso 9, Facultad de Ciencias",
-    "start": "2025-08-04T15:30:00-04:00",
-    "end": "2025-08-04T18:00:00-04:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Seminario “Sinergia Cuántica 2025: Encuentro academia–industria para innovar en tecnología, IA y supercómputo” [En persona]",
-    "start": "2025-08-05T09:30:00-04:00",
-    "end": "2025-08-05T12:45:00-04:00",
-    "location": "Salón T del Edificio T, Campus Casa Central de la USM (Av. España 1680, Valparaíso)",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "REUNION COORDINACION  ANID EMBARCAIONES  - interna",
-    "start": "2025-08-05T11:00:00-04:00",
-    "end": "2025-08-05T13:00:00-04:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reu minibat",
-    "start": "2025-08-05T11:30:00-04:00",
-    "end": "2025-08-05T12:30:00-04:00",
-    "location": "Nueva lofi-ofi",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-08-07T09:00:00-04:00",
-    "end": "2025-08-07T10:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/89681460115",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "PRESENTACION TFG3 PABLO MEJIAS",
-    "start": "2025-08-07T10:00:00-04:00",
-    "end": "2025-08-07T11:00:00-04:00",
-    "location": "https://pucv-cl.zoom.us/j/93681733895?pwd=UYrjY6r4x0awM9r4qtfkTmtzu0EiBW.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Taller de Proyectos VRII 4 [En persona]",
-    "start": "2025-08-07T10:00:00-04:00",
-    "end": "2025-08-07T12:00:00-04:00",
-    "location": "Campus Facultad de Medicina Reñaca",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Coordinación FONDECYT SUBGEI",
-    "start": "2025-08-07T14:00:00-04:00",
-    "end": "2025-08-07T14:45:00-04:00",
-    "location": "https://pucv-cl.zoom.us/j/92518482536?pwd=biIfqM05w0U1RxRwg8TTh02HaKQxUk.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión en Curauma con Marcela Cornejo",
-    "start": "2025-08-07T14:30:00-04:00",
-    "end": "2025-08-07T17:00:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-08-14T09:00:00-04:00",
-    "end": "2025-08-14T10:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/85272565867",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Invitation: \"MEEFISTO\": Ecología y oceanografía de peces mesopelágico... @ Fri Aug 15, 2025 2pm - 3pm (GMT-4) (mauricio.landaeta@uv.cl)",
-    "start": "2025-08-15T15:00:00-03:00",
-    "end": "2025-08-15T16:00:00-03:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Mefisto Meeting ",
-    "start": "2025-08-20T16:30:00-03:00",
-    "end": "2025-08-20T17:00:00-03:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": " Reunión Team Oceanografía",
-    "start": "2025-08-21T09:00:00-04:00",
-    "end": "2025-08-21T10:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/87919645400",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-08-28T09:00:00-04:00",
-    "end": "2025-08-28T10:00:00-04:00",
-    "location": "https://reuna.zoom.us/j/87223255216",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "reunion con Alejandro Dinamarca",
     "start": "2025-09-03T15:00:00-04:00",
     "end": "2025-09-03T16:00:00-04:00",
@@ -500,6 +28,14 @@
     "start": "2025-09-11T09:00:00-03:00",
     "end": "2025-09-11T10:00:00-03:00",
     "location": "https://reuna.zoom.us/j/84839836941",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Manuel Rodrigo Chaiten",
+    "start": "2025-09-12T19:00:00+01:00",
+    "end": "2025-09-12T20:00:00+01:00",
+    "location": "https://bham-ac-uk.zoom.us/j/85373292319",
     "description": "",
     "recurring": true
   },
@@ -556,6 +92,14 @@
     "start": "2025-10-21T16:00:00-03:00",
     "end": "2025-10-21T17:00:00-03:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Fkt240902 update",
+    "start": "2025-10-21T20:00:00+01:00",
+    "end": "2025-10-21T21:00:00+01:00",
+    "location": "https://bham-ac-uk.zoom.us/j/81014292207",
     "description": "",
     "recurring": true
   },
@@ -1040,18 +584,18 @@
     "recurring": true
   },
   {
-    "summary": "Presentacion Proyecto Magíster - UdeC",
-    "start": "2026-03-31T08:45:00-03:00",
-    "end": "2026-03-31T10:30:00-03:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Defensa Proyecto Daniel O.",
     "start": "2026-03-31T08:45:00-03:00",
     "end": "2026-03-31T11:00:00-03:00",
     "location": "Reunión de Microsoft Teams",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentacion Proyecto Magíster - UdeC",
+    "start": "2026-03-31T08:45:00-03:00",
+    "end": "2026-03-31T10:30:00-03:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
@@ -1160,14 +704,6 @@
     "recurring": true
   },
   {
-    "summary": "Reunión de Coordinación Congreso OFMC 2026",
-    "start": "2026-04-16T12:00:00-04:00",
-    "end": "2026-04-16T13:00:00-04:00",
-    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "reu",
     "start": "2026-04-17T09:30:00-04:00",
     "end": "2026-04-17T10:00:00-04:00",
@@ -1264,14 +800,6 @@
     "recurring": true
   },
   {
-    "summary": "Reunión de Coordinación Congreso OFMC 2026",
-    "start": "2026-04-30T12:00:00-04:00",
-    "end": "2026-04-30T13:00:00-04:00",
-    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "defensa tesis Magister Mauricio Diaz",
     "start": "2026-04-30T14:30:00-04:00",
     "end": "2026-04-30T16:00:00-04:00",
@@ -1344,10 +872,10 @@
     "recurring": true
   },
   {
-    "summary": "Reunión de Coordinación Congreso OFMC 2026",
-    "start": "2026-05-14T12:00:00-04:00",
-    "end": "2026-05-14T13:00:00-04:00",
-    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
+    "summary": "reuión con Comité Científico OFMC",
+    "start": "2026-05-15T15:00:00-04:00",
+    "end": "2026-05-15T16:00:00-04:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
@@ -1360,10 +888,26 @@
     "recurring": true
   },
   {
+    "summary": "Cancelado: Taller de difusión de resultados \"“Estudio del desempeño ambiental de la acuicultura en Chile y su efecto en los ecosistemas de emplazamiento etapa 2025-2026”",
+    "start": "2026-05-19T09:15:00-04:00",
+    "end": "2026-05-19T13:00:00-04:00",
+    "location": "Reunión de Microsoft Teams",
+    "description": "",
+    "recurring": true
+  },
+  {
     "summary": "Termo y Ondas",
     "start": "2026-05-19T14:45:00-04:00",
     "end": "2026-05-19T17:45:00-04:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Taller Fondecyt Regular DIUV ",
+    "start": "2026-05-19T15:30:00-04:00",
+    "end": "2026-05-19T16:30:00-04:00",
+    "location": "Reunión de Microsoft Teams",
     "description": "",
     "recurring": true
   },
@@ -1400,10 +944,10 @@
     "recurring": true
   },
   {
-    "summary": "Reunión de Coordinación Congreso OFMC 2026",
-    "start": "2026-05-28T12:00:00-04:00",
-    "end": "2026-05-28T13:00:00-04:00",
-    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
+    "summary": "reunion con Laura Banucci",
+    "start": "2026-05-28T14:00:00-04:00",
+    "end": "2026-05-28T15:30:00-04:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
@@ -1432,6 +976,30 @@
     "recurring": true
   },
   {
+    "summary": "Clases MIMAR Sistemas costeros (MGIM-102)",
+    "start": "2026-06-03T18:30:00-04:00",
+    "end": "2026-06-03T21:00:00-04:00",
+    "location": "Reunión de Microsoft Teams",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentacion colegio Champagnat: experiencia",
+    "start": "2026-06-04T09:30:00-04:00",
+    "end": "2026-06-04T11:15:00-04:00",
+    "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunión actividades Laguna Verde",
+    "start": "2026-06-08T12:30:00-04:00",
+    "end": "2026-06-08T14:00:00-04:00",
+    "location": "https://meet.google.com/rzg-daky-oza",
+    "description": "",
+    "recurring": true
+  },
+  {
     "summary": "Termo y Ondas",
     "start": "2026-06-08T14:45:00-04:00",
     "end": "2026-06-08T17:45:00-04:00",
@@ -1456,25 +1024,9 @@
     "recurring": true
   },
   {
-    "summary": "Reunión de Coordinación Congreso OFMC 2026",
-    "start": "2026-06-11T12:00:00-04:00",
-    "end": "2026-06-11T13:00:00-04:00",
-    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Termo y Ondas",
     "start": "2026-06-15T14:45:00-04:00",
     "end": "2026-06-15T17:45:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Entrega 2 seminario TFG3 (MOCE)",
-    "start": "2026-06-15T22:30:00-04:00",
-    "end": "2026-06-15T23:30:00-04:00",
     "location": "",
     "description": "",
     "recurring": true
@@ -1484,6 +1036,14 @@
     "start": "2026-06-16T14:45:00-04:00",
     "end": "2026-06-16T17:45:00-04:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunion coordinacion terreno INACH",
+    "start": "2026-06-17T14:00:00-04:00",
+    "end": "2026-06-17T15:00:00-04:00",
+    "location": "https://reuna.zoom.us/j/87981889555?pwd=Hj7APHJtGbBXR1ebg6IzLEQKbVOj0u.1",
     "description": "",
     "recurring": true
   },
@@ -1499,6 +1059,14 @@
     "summary": "Termo y Ondas",
     "start": "2026-06-22T14:45:00-04:00",
     "end": "2026-06-22T17:45:00-04:00",
+    "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Entrega 2 seminario TFG3 (MOCE)",
+    "start": "2026-06-22T22:30:00-04:00",
+    "end": "2026-06-22T23:30:00-04:00",
     "location": "",
     "description": "",
     "recurring": true
@@ -1520,10 +1088,10 @@
     "recurring": true
   },
   {
-    "summary": "Reunión de Coordinación Congreso OFMC 2026",
-    "start": "2026-06-25T12:00:00-04:00",
-    "end": "2026-06-25T13:00:00-04:00",
-    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
+    "summary": "Taller difusión de resultados “Estudio del desempeño ambiental de la acuicultura en Chile y su efecto en los ecosistemas de emplazamiento etapa 2025- 2026”. ",
+    "start": "2026-06-26T09:15:00-04:00",
+    "end": "2026-06-26T13:45:00-04:00",
+    "location": "Reunión de Microsoft Teams",
     "description": "",
     "recurring": true
   },
@@ -1552,6 +1120,38 @@
     "recurring": true
   },
   {
+    "summary": "Evento cancelado con nota: Presentacion TFG1 (Ignacio Bravo) lun 6 de jul de 2026 10:00 - 11:00 (CLT) (manuel.castillo@uv.cl)",
+    "start": "2026-07-06T10:00:00-04:00",
+    "end": "2026-07-06T11:00:00-04:00",
+    "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentación TFG3  Claudia Rozas",
+    "start": "2026-07-06T10:00:00-04:00",
+    "end": "2026-07-06T11:30:00-04:00",
+    "location": "https://meet.google.com/jsn-woen-auu",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentación TFG1 Sofía Mondaca ",
+    "start": "2026-07-06T10:30:00-04:00",
+    "end": "2026-07-06T12:00:00-04:00",
+    "location": "https://meet.google.com/cxx-kzyq-ueb",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentación TFG3 Claudia Rozas",
+    "start": "2026-07-06T13:15:00-04:00",
+    "end": "2026-07-06T14:15:00-04:00",
+    "location": "https://meet.google.com/ayp-wxpv-ozc",
+    "description": "",
+    "recurring": true
+  },
+  {
     "summary": "Termo y Ondas",
     "start": "2026-07-06T14:45:00-04:00",
     "end": "2026-07-06T17:45:00-04:00",
@@ -1560,9 +1160,65 @@
     "recurring": true
   },
   {
+    "summary": "Defensa avance tesis Magíster oceanografía Ana",
+    "start": "2026-07-06T16:00:00+02:00",
+    "end": "2026-07-06T17:00:00+02:00",
+    "location": "https://meet.google.com/yks-uayh-xvb",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentación TFG 1 Michelle Amaro",
+    "start": "2026-07-07T09:00:00-04:00",
+    "end": "2026-07-07T11:00:00-04:00",
+    "location": "https://meet.google.com/xoy-svxp-zsc",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Evento cancelado: DEFENSA TFG4  PABLO MEJIAS mar 7 de jul de 2026 10:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
+    "start": "2026-07-07T10:00:00-04:00",
+    "end": "2026-07-07T12:00:00-04:00",
+    "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentación Constanza Santana",
+    "start": "2026-07-07T11:00:00-04:00",
+    "end": "2026-07-07T12:30:00-04:00",
+    "location": "https://meet.google.com/gvs-hwme-yre",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Josefa's oral defense TFG1",
+    "start": "2026-07-07T14:00:00-04:00",
+    "end": "2026-07-07T15:00:00-04:00",
+    "location": "https://meet.google.com/bty-nzkf-qkk",
+    "description": "",
+    "recurring": true
+  },
+  {
     "summary": "Termo y Ondas",
     "start": "2026-07-07T14:45:00-04:00",
     "end": "2026-07-07T17:45:00-04:00",
+    "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Defenda Oral TG1 Ignacio Bravo",
+    "start": "2026-07-08T09:00:00-04:00",
+    "end": "2026-07-08T10:00:00-04:00",
+    "location": "https://meet.google.com/owd-ynkd-dqf",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Defensa de tesis BRANDON SCOTT MALDONADO URRA",
+    "start": "2026-07-08T10:00:00-04:00",
+    "end": "2026-07-08T11:30:00-04:00",
     "location": "",
     "description": "",
     "recurring": true
@@ -1576,10 +1232,34 @@
     "recurring": true
   },
   {
-    "summary": "Reunión de Coordinación Congreso OFMC 2026",
-    "start": "2026-07-09T12:00:00-04:00",
-    "end": "2026-07-09T13:00:00-04:00",
-    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
+    "summary": "TFG 3: cONSTANZA ",
+    "start": "2026-07-09T08:00:00-04:00",
+    "end": "2026-07-09T09:00:00-04:00",
+    "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentación TFG3 Simón Reyes",
+    "start": "2026-07-09T09:00:00-04:00",
+    "end": "2026-07-09T10:00:00-04:00",
+    "location": "https://meet.google.com/zqb-hiww-jkm",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "tfg1 fran search",
+    "start": "2026-07-09T14:00:00-04:00",
+    "end": "2026-07-09T15:00:00-04:00",
+    "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentación Sebastián TFG 1",
+    "start": "2026-07-10T13:30:00-04:00",
+    "end": "2026-07-10T15:00:00-04:00",
+    "location": "https://meet.google.com/shf-zcdn-ptn",
     "description": "",
     "recurring": true
   },
@@ -1592,130 +1272,114 @@
     "recurring": true
   },
   {
-    "summary": "Termo y Ondas",
-    "start": "2026-07-14T14:45:00-04:00",
-    "end": "2026-07-14T17:45:00-04:00",
+    "summary": "DEFENSA TFG 4 Pablo Mejías",
+    "start": "2026-07-20T10:00:00-04:00",
+    "end": "2026-07-20T13:00:00-04:00",
+    "location": "https://meet.google.com/jng-eoah-vgx",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "WorkShop - Oceanografía en un clima Cambiante , UBB, Concepción",
+    "start": "2026-08-05",
+    "end": "2026-08-09",
     "location": "",
     "description": "",
     "recurring": true
   },
   {
-    "summary": "IOA: meteorología",
-    "start": "2026-07-15T14:30:00-04:00",
-    "end": "2026-07-15T17:45:00-04:00",
+    "summary": "Reunión CCP Ecología ",
+    "start": "2026-08-11T10:00:00-04:00",
+    "end": "2026-08-11T11:00:00-04:00",
+    "location": "Sala reuniones Fisiología",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "reunion",
+    "start": "2026-08-17T12:00:00-04:00",
+    "end": "2026-08-17T12:30:00-04:00",
+    "location": "Microsoft Teams Meeting",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunión Laguna Verde",
+    "start": "2026-08-17T15:00:00-04:00",
+    "end": "2026-08-17T16:00:00-04:00",
+    "location": "https://meet.google.com/duj-mmth-gnt",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunión de Coordinación Congreso OFMC 2026",
+    "start": "2026-08-27T12:30:00-04:00",
+    "end": "2026-08-27T13:30:00-04:00",
+    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Chile chat",
+    "start": "2026-09-08T12:00:00-07:00",
+    "end": "2026-09-08T13:00:00-07:00",
+    "location": "Microsoft Teams Meeting",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunión de Coordinación Congreso OFMC 2026",
+    "start": "2026-09-10T12:30:00-03:00",
+    "end": "2026-09-10T13:30:00-03:00",
+    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "DEADLINE POSTULAR APOYO A LAS PUBLICACIONES",
+    "start": "2026-09-11",
+    "end": "2026-09-12",
     "location": "",
     "description": "",
     "recurring": true
   },
   {
-    "summary": "Termo y Ondas",
-    "start": "2026-07-20T14:45:00-04:00",
-    "end": "2026-07-20T17:45:00-04:00",
+    "summary": "Reunión de Coordinación Congreso OFMC 2026",
+    "start": "2026-09-24T12:30:00-03:00",
+    "end": "2026-09-24T13:30:00-03:00",
+    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunión de Coordinación Congreso OFMC 2026",
+    "start": "2026-10-08T12:30:00-03:00",
+    "end": "2026-10-08T13:30:00-03:00",
+    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunión de Coordinación Congreso OFMC 2026",
+    "start": "2026-10-22T12:30:00-03:00",
+    "end": "2026-10-22T13:30:00-03:00",
+    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunión de Coordinación Congreso OFMC 2026",
+    "start": "2026-11-05T12:30:00-03:00",
+    "end": "2026-11-05T13:30:00-03:00",
+    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Congreso 8º CONGRESO OFMC - ",
+    "start": "2026-11-24",
+    "end": "2026-11-28",
     "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Termo y Ondas",
-    "start": "2026-07-21T14:45:00-04:00",
-    "end": "2026-07-21T17:45:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión de Coordinación Congreso OFMC 2026",
-    "start": "2026-07-23T12:00:00-04:00",
-    "end": "2026-07-23T13:00:00-04:00",
-    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Termo y Ondas",
-    "start": "2026-07-27T14:45:00-04:00",
-    "end": "2026-07-27T17:45:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Termo y Ondas",
-    "start": "2026-07-28T14:45:00-04:00",
-    "end": "2026-07-28T17:45:00-04:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión de Coordinación Congreso OFMC 2026",
-    "start": "2026-08-06T12:00:00-04:00",
-    "end": "2026-08-06T13:00:00-04:00",
-    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión de Coordinación Congreso OFMC 2026",
-    "start": "2026-08-20T12:00:00-04:00",
-    "end": "2026-08-20T13:00:00-04:00",
-    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión de Coordinación Congreso OFMC 2026",
-    "start": "2026-09-03T12:00:00-04:00",
-    "end": "2026-09-03T13:00:00-04:00",
-    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "DEFENSA DE TESIS DE SIBILLE AMESTICA (MAGISTER EN OCEANOGRAFIA)",
-    "start": "2026-09-10T09:00:00-03:00",
-    "end": "2026-09-10T11:00:00-03:00",
-    "location": "https://pucv-cl.zoom.us/j/95287369044?pwd=PdE88cMrkIviGCNxNzYWXwtYnPRCsZ.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión de Coordinación Congreso OFMC 2026",
-    "start": "2026-09-17T12:00:00-03:00",
-    "end": "2026-09-17T13:00:00-03:00",
-    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión de Coordinación Congreso OFMC 2026",
-    "start": "2026-10-01T12:00:00-03:00",
-    "end": "2026-10-01T13:00:00-03:00",
-    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión de Coordinación Congreso OFMC 2026",
-    "start": "2026-10-15T12:00:00-03:00",
-    "end": "2026-10-15T13:00:00-03:00",
-    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión de Coordinación Congreso OFMC 2026",
-    "start": "2026-10-29T12:00:00-03:00",
-    "end": "2026-10-29T13:00:00-03:00",
-    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión de Coordinación Congreso OFMC 2026",
-    "start": "2026-11-12T12:00:00-03:00",
-    "end": "2026-11-12T13:00:00-03:00",
-    "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
     "description": "",
     "recurring": true
   }
