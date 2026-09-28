@@ -528,18 +528,18 @@
     "recurring": true
   },
   {
-    "summary": "Defensa Proyecto Daniel O.",
-    "start": "2026-03-31T08:45:00-03:00",
-    "end": "2026-03-31T11:00:00-03:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Presentacion Proyecto Magíster - UdeC",
     "start": "2026-03-31T08:45:00-03:00",
     "end": "2026-03-31T10:30:00-03:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Defensa Proyecto Daniel O.",
+    "start": "2026-03-31T08:45:00-03:00",
+    "end": "2026-03-31T11:00:00-03:00",
+    "location": "Reunión de Microsoft Teams",
     "description": "",
     "recurring": true
   },
@@ -1300,6 +1300,14 @@
     "start": "2026-09-24T15:00:00-03:00",
     "end": "2026-09-24T16:00:00-03:00",
     "location": "https://meet.google.com/juo-zksa-pui",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Jornada de difusión Hoja de Ruta del Nodo Océano Centro Norte [En persona]",
+    "start": "2026-09-29T14:00:00-03:00",
+    "end": "2026-09-29T16:00:00-03:00",
+    "location": "Sala 402 del Edificio CIAE, calle Blanco 1931, Valparaíso.",
     "description": "",
     "recurring": true
   },
