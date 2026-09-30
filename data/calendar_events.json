@@ -616,7 +616,7 @@
     "recurring": true
   },
   {
-    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
+    "summary": "Reunión",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -624,7 +624,7 @@
     "recurring": true
   },
   {
-    "summary": "Reunión",
+    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -1064,18 +1064,18 @@
     "recurring": true
   },
   {
-    "summary": "Presentación TFG3  Claudia Rozas",
-    "start": "2026-07-06T10:00:00-04:00",
-    "end": "2026-07-06T11:30:00-04:00",
-    "location": "https://meet.google.com/jsn-woen-auu",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Evento cancelado con nota: Presentacion TFG1 (Ignacio Bravo) lun 6 de jul de 2026 10:00 - 11:00 (CLT) (manuel.castillo@uv.cl)",
     "start": "2026-07-06T10:00:00-04:00",
     "end": "2026-07-06T11:00:00-04:00",
     "location": "",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentación TFG3  Claudia Rozas",
+    "start": "2026-07-06T10:00:00-04:00",
+    "end": "2026-07-06T11:30:00-04:00",
+    "location": "https://meet.google.com/jsn-woen-auu",
     "description": "",
     "recurring": true
   },
@@ -1308,6 +1308,14 @@
     "start": "2026-09-29T14:00:00-03:00",
     "end": "2026-09-29T16:00:00-03:00",
     "location": "Sala 402 del Edificio CIAE, calle Blanco 1931, Valparaíso.",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Ocean Encounters: El Niño 2026: The global implications of a “super” warm ocean in the eastern tropical Pacific",
+    "start": "2026-10-07T19:30:00-04:00",
+    "end": "2026-10-07T20:30:00-04:00",
+    "location": "https://whoi-edu.zoom.us/w/98778233338?tk=fbdkQdmsWgy30YLgDMUmTs6cp3Vp9YI1ZOpXByZt_do.DQkAAAAW_6Q5-hY3Mldad3kxNlFIYWI0ejlxaUhXY2p3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=RnfKFEgIi0K1bFaPaJ4Kh1bpfQE5G5.1&uuid=WN_X_bDYFBxRoy3Aph8QqZBWg",
     "description": "",
     "recurring": true
   },
