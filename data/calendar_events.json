@@ -520,18 +520,18 @@
     "recurring": true
   },
   {
-    "summary": "Presentacion Proyecto Magíster - UdeC",
-    "start": "2026-03-31T08:45:00-03:00",
-    "end": "2026-03-31T10:30:00-03:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Defensa Proyecto Daniel O.",
     "start": "2026-03-31T08:45:00-03:00",
     "end": "2026-03-31T11:00:00-03:00",
     "location": "Reunión de Microsoft Teams",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentacion Proyecto Magíster - UdeC",
+    "start": "2026-03-31T08:45:00-03:00",
+    "end": "2026-03-31T10:30:00-03:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
@@ -1300,6 +1300,14 @@
     "start": "2026-09-29T14:00:00-03:00",
     "end": "2026-09-29T16:00:00-03:00",
     "location": "Sala 402 del Edificio CIAE, calle Blanco 1931, Valparaíso.",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunión Simón Reyes",
+    "start": "2026-10-06T14:00:00-03:00",
+    "end": "2026-10-06T15:00:00-03:00",
+    "location": "https://meet.google.com/kgv-aiom-uub",
     "description": "",
     "recurring": true
   },
