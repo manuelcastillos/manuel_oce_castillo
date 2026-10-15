@@ -232,18 +232,18 @@
     "recurring": true
   },
   {
-    "summary": "defensa tesis Magister - Marcela Rojas",
-    "start": "2025-12-19T09:30:00-03:00",
-    "end": "2025-12-19T11:00:00-03:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Defensa TFG Marcela Rojas",
     "start": "2025-12-19T09:30:00-03:00",
     "end": "2025-12-19T12:30:00-03:00",
     "location": "https://reuna.zoom.us/j/86379344919?pwd=fHCVPtijTCcNCDoHt2eZCXe5awPxpE.1",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "defensa tesis Magister - Marcela Rojas",
+    "start": "2025-12-19T09:30:00-03:00",
+    "end": "2025-12-19T11:00:00-03:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
@@ -592,7 +592,7 @@
     "recurring": true
   },
   {
-    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
+    "summary": "Reunión",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -600,7 +600,7 @@
     "recurring": true
   },
   {
-    "summary": "Reunión",
+    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -1304,6 +1304,14 @@
     "recurring": true
   },
   {
+    "summary": "Primer claustro carrera de Ecología UV",
+    "start": "2026-10-16T08:30:00-03:00",
+    "end": "2026-10-16T11:00:00-03:00",
+    "location": "Museo de Historia Natural de Valparaíso",
+    "description": "",
+    "recurring": true
+  },
+  {
     "summary": "Reunión de Coordinación Congreso OFMC 2026",
     "start": "2026-10-22T12:30:00-03:00",
     "end": "2026-10-22T13:30:00-03:00",
@@ -1332,6 +1340,14 @@
     "start": "2026-11-12T12:30:00-03:00",
     "end": "2026-11-12T13:30:00-03:00",
     "location": "https://econgressvenue.zoom.us/j/81801812947?pwd=RK7f75LnH3lXfJ32M9ManjJBxpvvKu.1",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Conversatorio en la ECM sobre la vida profesional",
+    "start": "2026-11-13T09:00:00-03:00",
+    "end": "2026-11-13T12:00:00-03:00",
+    "location": "Campus Curauma aulario B sala 2-2 PUCV",
     "description": "",
     "recurring": true
   },
