@@ -1,13 +1,5 @@
 [
   {
-    "summary": "Visita NORTEK - UV Facultad Ciencias del Mar y Recursos Naturales",
-    "start": "2025-10-21T15:00:00-03:00",
-    "end": "2025-10-21T16:00:00-03:00",
-    "location": "Av. Borgoño 16344 Reñaca, Viña del Mar",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "falkor meeting",
     "start": "2025-10-21T16:00:00-03:00",
     "end": "2025-10-21T17:00:00-03:00",
@@ -1308,6 +1300,14 @@
     "start": "2026-10-16T08:30:00-03:00",
     "end": "2026-10-16T11:00:00-03:00",
     "location": "Museo de Historia Natural de Valparaíso",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Reunion Chile-Mexico",
+    "start": "2026-10-21T08:15:00-03:00",
+    "end": "2026-10-21T09:15:00-03:00",
+    "location": "https://cuaed-unam-mx.zoom.us/j/86297787904",
     "description": "",
     "recurring": true
   },
