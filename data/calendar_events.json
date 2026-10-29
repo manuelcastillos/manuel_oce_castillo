@@ -1342,5 +1342,13 @@
     "location": "",
     "description": "",
     "recurring": true
+  },
+  {
+    "summary": "Defensa avance 2 TFM Ana",
+    "start": "2026-12-01T11:00:00-03:00",
+    "end": "2026-12-01T12:00:00-03:00",
+    "location": "https://meet.google.com/wic-zjwe-rjs",
+    "description": "",
+    "recurring": true
   }
 ]
