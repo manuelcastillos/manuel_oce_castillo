@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ofmc2026-v2';
+const CACHE_NAME = 'ofmc2026-v3';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -10,7 +10,9 @@ const ASSETS_TO_CACHE = [
   './assets/qr_app_congreso.png',
   './assets/qr_programa_pdf.png',
   './icons/icon-192.png',
+  './icons/icon-300.png',
   './icons/icon-512.png',
+  './icons/icon-512-maskable.png',
   './icons/apple-touch-icon.png',
   './icons/favicon.png',
   './logos/logo_ofmc.png',

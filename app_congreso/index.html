@@ -134,6 +134,12 @@
     <button id="btnDismissPreAlert" class="pre-alert-dismiss">&times;</button>
   </div>
 
+    <!-- Instant Heart / Alarm Feedback Toast -->
+  <div id="favFeedbackToast" class="fav-feedback-toast" style="display: none;">
+    <i id="favFeedbackIcon" class="fa-solid fa-heart text-rose"></i>
+    <span id="favFeedbackMsg">Ponencia guardada · Alarma activa (10 min)</span>
+  </div>
+
   <!-- Main Views Container -->
   <main class="app-main">
 
@@ -237,6 +243,12 @@
       </div>
 
       <!-- Timeline List -->
+            <!-- Quick Alarm Helper Hint -->
+      <div class="program-alarm-hint">
+        <i class="fa-solid fa-heart text-rose"></i>
+        <span>Toca el <strong>corazón</strong> en cualquier charla o actividad para programar su <strong>alarma interna (vibrará 10 min antes)</strong>.</span>
+      </div>
+
       <div class="timeline-container" id="programTimelineList">
         <!-- Program cards injected by JS -->
       </div>

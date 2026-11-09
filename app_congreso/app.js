@@ -299,31 +299,69 @@
   }
 
   // =========================================================================
-  // 6. FAVORITES / HIGHLIGHTS (LOCAL STORAGE)
+  // 6. FAVORITES / HIGHLIGHTS & 1-TAP ALARM SELECTION (LOCAL STORAGE)
   // =========================================================================
+  let favToastTimeout = null;
+
+  function showFavToast(isAdded, itemId, itemTitle) {
+    const toast = document.getElementById('favFeedbackToast');
+    const icon = document.getElementById('favFeedbackIcon');
+    const msg = document.getElementById('favFeedbackMsg');
+    if (!toast || !icon || !msg) return;
+
+    if (isAdded) {
+      icon.className = 'fa-solid fa-heart text-rose';
+      const cleanTitle = itemTitle ? (itemTitle.length > 40 ? itemTitle.slice(0, 38) + '...' : itemTitle) : itemId;
+      msg.innerHTML = `<strong>${itemId}</strong> guardada · Alarma activa (vibrará 10 min antes)`;
+      toast.style.borderColor = 'rgba(244, 63, 94, 0.6)';
+      if ('vibrate' in navigator) {
+        try { navigator.vibrate(50); } catch (e) {}
+      }
+    } else {
+      icon.className = 'fa-regular fa-heart';
+      icon.style.color = '#94A3B8';
+      msg.innerHTML = `<strong>${itemId}</strong> removida de tus alarmas`;
+      toast.style.borderColor = 'rgba(148, 163, 184, 0.35)';
+    }
+
+    toast.style.display = 'flex';
+    if (favToastTimeout) clearTimeout(favToastTimeout);
+    favToastTimeout = setTimeout(() => {
+      toast.style.display = 'none';
+    }, 2400);
+  }
+
   function isFavorite(id) {
     return state.favorites.includes(id);
   }
 
   function toggleFavorite(id) {
     const idx = state.favorites.indexOf(id);
-    if (idx > -1) {
-      state.favorites.splice(idx, 1);
-    } else {
+    const isAdding = (idx === -1);
+    if (isAdding) {
       state.favorites.push(id);
+    } else {
+      state.favorites.splice(idx, 1);
     }
     localStorage.setItem('ofmc2026_favorites', JSON.stringify(state.favorites));
     updateFavoritesBadge();
 
+    const item = data.orales.find(o => o.id === id) ||
+                 data.posters.find(p => p.id === id) ||
+                 data.eventos_especiales.find(e => e.id === id);
+    const itemTitle = item ? (item.titulo || item.id) : id;
+
+    showFavToast(isAdding, id, itemTitle);
+
     // Update all fav buttons currently in DOM
     document.querySelectorAll(`[data-favid="${id}"]`).forEach(btn => {
-      btn.classList.toggle('active', isFavorite(id));
-      btn.innerHTML = isFavorite(id) ? '<i class="fa-solid fa-heart"></i>' : '<i class="fa-regular fa-heart"></i>';
+      btn.classList.toggle('active', isAdding);
+      btn.innerHTML = isAdding ? '<i class="fa-solid fa-heart" style="color: #F43F5E;"></i>' : '<i class="fa-regular fa-heart"></i>';
     });
 
     // Update card visual highlight classes
     document.querySelectorAll(`[data-cardid="${id}"]`).forEach(card => {
-      card.classList.toggle('is-favorite', isFavorite(id));
+      card.classList.toggle('is-favorite', isAdding);
     });
 
     if (state.activeView === 'view-agenda') {
@@ -828,17 +866,18 @@
         roomClass = 'room-event'; tagClass = 'tag-ocean'; roomIcon = 'fa-mug-hot';
       }
 
+      const canFav = Boolean(item.id && !isPostSum);
       const favActive = isFav ? 'active' : '';
-      const favIcon = isFav ? '<i class="fa-solid fa-heart"></i>' : '<i class="fa-regular fa-heart"></i>';
+      const favIcon = isFav ? '<i class="fa-solid fa-heart" style="color: #F43F5E;"></i>' : '<i class="fa-regular fa-heart"></i>';
 
       html += `
         <div class="talk-card ${roomClass} ${isFav ? 'is-favorite' : ''}" data-cardid="${item.id}" onclick="window.OFMC_APP.handleProgramCardClick('${item.id}')">
           <div class="talk-card-top">
             <span class="room-tag ${tagClass}"><i class="fa-solid ${roomIcon}"></i> ${item.sala}</span>
             <div style="display: flex; align-items: center; gap: 8px;">
-              ${isFav ? `<span class="fav-badge-ribbon"><i class="fa-solid fa-star"></i> Marcada</span>` : ''}
+              ${isFav ? `<span class="fav-badge-ribbon"><i class="fa-solid fa-bell"></i> Alarma 10 min</span>` : ''}
               <span class="time-badge">${item.horario}</span>
-              ${isOral ? `<button class="btn-fav ${favActive}" data-favid="${item.id}" onclick="event.stopPropagation(); window.OFMC_APP.toggleFav('${item.id}')" title="Marcar">${favIcon}</button>` : ''}
+              ${canFav ? `<button class="btn-fav ${favActive}" data-favid="${item.id}" onclick="event.stopPropagation(); window.OFMC_APP.toggleFav('${item.id}')" title="Toca el corazón para activar alarma de 10 min">${favIcon}</button>` : ''}
             </div>
           </div>
           <div class="talk-card-title">
@@ -1138,7 +1177,7 @@
     else roomBadge.style.background = 'var(--gold-accent)';
 
     const isFav = isFavorite(item.id);
-    const favText = isFav ? 'Quitar de Mi Agenda' : 'Agregar a Mi Agenda (Aviso 10 min)';
+    const favText = isFav ? 'Quitar Alarma de 10 min' : 'Activar Alarma de 10 min en mi teléfono';
     const favIcon = isFav ? '<i class="fa-solid fa-heart" style="color: #F43F5E;"></i>' : '<i class="fa-regular fa-heart"></i>';
 
     let modHtml = '';
@@ -1201,7 +1240,7 @@
 
       <div class="detail-actions-row">
         <button class="btn-primary-action" onclick="window.OFMC_APP.toggleFav('${item.id}'); window.OFMC_APP.showDetail('${item.id}');">
-          ${favIcon} <span>${favText}</span>
+          ${isFav ? '<i class="fa-solid fa-heart-crack"></i>' : '<i class="fa-solid fa-heart" style="color: #F43F5E;"></i>'} <span>${favText}</span>
         </button>
       </div>
     `;
