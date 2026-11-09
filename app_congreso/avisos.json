@@ -1,0 +1,26 @@
+{
+  "version": "2026.11.09.1",
+  "ultima_actualizacion": "2026-11-09T10:30:00-03:00",
+  "avisos": [
+    {
+      "id": "aviso-001",
+      "fecha": "09 Nov 2026",
+      "hora": "10:30",
+      "tipo": "importante",
+      "titulo": "Actualización de Programa: Nueva Ponencia y Conferencia Inaugural",
+      "mensaje": "Se ha integrado al programa oral la presentación O-048 'Un Radar Móvil para Fenómenos Meteorológicos Extremos y Clima' (Dr. Jorge Arévalo et al., Miércoles 25 a las 11:50 en Sala 3.7). Asimismo, se confirma la Conferencia Magistral Inaugural de la Dra. Paola Salio (CIMA / CONICET-UBA, Martes 24 a las 10:00 hrs en Auditorio FACSO).",
+      "activo": true,
+      "urgente": true
+    },
+    {
+      "id": "aviso-002",
+      "fecha": "09 Nov 2026",
+      "hora": "10:00",
+      "tipo": "informativo",
+      "titulo": "Sede Oficial del Congreso: Hontaneda 2653, Valparaíso",
+      "mensaje": "Las actividades del VIII Congreso OFMC 2026 se realizarán en el Edificio Aulas y Auditorio FACSO de la Universidad de Valparaíso, ubicado en Hontaneda 2653, Almendral. Usa la pestaña 'Sedes' para ver el mapa y recibir indicaciones de GPS directo en tu celular.",
+      "activo": true,
+      "urgente": false
+    }
+  ]
+}

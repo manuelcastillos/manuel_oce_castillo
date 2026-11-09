@@ -38,6 +38,13 @@
       </div>
     </div>
     <div class="header-actions">
+      <button id="btnOpenAvisos" class="icon-btn badge-icon-btn" aria-label="Avisos Oficiales y Cambios" title="Avisos de la Organización">
+        <i class="fa-solid fa-bell"></i>
+        <span id="unreadAvisosBadge" class="header-badge-count" style="display: none;">0</span>
+      </button>
+      <button id="btnOpenQrModal" class="icon-btn" aria-label="Códigos QR del Congreso" title="Códigos QR (App y Programa PDF)">
+        <i class="fa-solid fa-qrcode"></i>
+      </button>
       <button id="btnOpenSearch" class="icon-btn" aria-label="Buscar presentaciones">
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>
@@ -98,6 +105,33 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Floating Urgent Announcement Banner (Real-time updates) -->
+  <div id="urgentAvisoBanner" class="urgent-aviso-banner" style="display: none;">
+    <i class="fa-solid fa-triangle-exclamation urgent-aviso-icon"></i>
+    <div class="urgent-aviso-content">
+      <span class="urgent-aviso-tag" id="urgentAvisoTag">Aviso Oficial</span>
+      <div class="urgent-aviso-title" id="urgentAvisoTitle">Título del Aviso</div>
+      <div class="urgent-aviso-text" id="urgentAvisoText">Mensaje del aviso de la organización...</div>
+    </div>
+    <button id="btnDismissUrgentAviso" class="urgent-aviso-close" title="Marcar como entendido">&times;</button>
+  </div>
+
+  <!-- In-App Pre-Alert Notification Toast (10 min before favorite talk) -->
+  <div id="preAlertToast" class="pre-alert-toast" style="display: none;">
+    <div class="pre-alert-bell">
+      <i class="fa-solid fa-bell"></i>
+    </div>
+    <div class="pre-alert-body">
+      <span class="pre-alert-badge">⏰ Recordatorio en 10 Minutos</span>
+      <strong id="preAlertTitle">O-048 · Sala 3.7</strong>
+      <p id="preAlertDesc">Jorge Arévalo — Un Radar Móvil para Fenómenos Meteorológicos...</p>
+      <button id="btnPreAlertAction" class="pre-alert-btn">
+        <i class="fa-solid fa-arrow-right"></i> Ver Charla
+      </button>
+    </div>
+    <button id="btnDismissPreAlert" class="pre-alert-dismiss">&times;</button>
   </div>
 
   <!-- Main Views Container -->
@@ -250,10 +284,26 @@
             <h2 class="view-title">Mi Agenda Personal</h2>
             <div class="agenda-subtitle" id="agendaCountSubtitle">0 charlas guardadas</div>
           </div>
-          <button id="btnShareAgenda" class="action-pill-btn" title="Compartir mi agenda">
-            <i class="fa-solid fa-share-nodes"></i> Compartir
-          </button>
+          <div class="agenda-actions-row" style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <button id="btnExportAgendaIcs" class="action-pill-btn" title="Exportar todas al Calendario con aviso 10 min" style="background: var(--ocean);">
+              <i class="fa-solid fa-calendar-plus"></i> Calendario (.ics)
+            </button>
+            <button id="btnShareAgenda" class="action-pill-btn" title="Compartir mi agenda">
+              <i class="fa-solid fa-share-nodes"></i> Compartir
+            </button>
+          </div>
         </div>
+      </div>
+
+      <!-- 10-Minute Alert Status Card in Agenda -->
+      <div class="agenda-alerts-bar" style="margin: 8px 14px 10px 14px; padding: 10px 14px; background: rgba(200, 150, 62, 0.12); border: 1px solid rgba(200, 150, 62, 0.35); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; gap: 10px;">
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 0.78rem; color: #FFFFFF;">
+          <i class="fa-solid fa-bell text-gold" style="font-size: 1rem;"></i>
+          <span><strong>Alerta de 10 minutos activa:</strong> La app te avisará con anticipación antes de cada ponencia marcada.</span>
+        </div>
+        <button id="btnTestChime" class="action-pill-btn" style="padding: 4px 8px; font-size: 0.70rem; white-space: nowrap;" title="Probar sonido de alerta">
+          <i class="fa-solid fa-volume-high"></i> Probar
+        </button>
       </div>
 
       <!-- Conflicts Alert Bar -->
@@ -310,40 +360,109 @@
       <!-- Info Cards -->
       <div class="info-content-cards">
         
+        <!-- Sede Oficial & Mapa GPS Card -->
+        <div class="info-card venue-map-card">
+          <div class="info-card-header">
+            <i class="fa-solid fa-location-dot text-gold"></i>
+            <h3>Sede Oficial del Congreso & Navegación GPS</h3>
+          </div>
+          <div class="map-iframe-wrapper">
+            <iframe 
+              title="Ubicación Sede Congreso OFMC 2026"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-71.6140%2C-33.0570%2C-71.6010%2C-33.0475&layer=mapnik&marker=-33.05224%2C-71.60774"
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="map-address-banner">
+            <div class="map-address-info">
+              <strong>Universidad de Valparaíso (Edificio Aulas y Auditorio FACSO)</strong>
+              <span>📍 Hontaneda 2653, Almendral, Valparaíso, Chile</span>
+            </div>
+            <button id="btnCopyAddress" class="btn-copy-address" title="Copiar dirección exacta">
+              <i class="fa-solid fa-copy"></i> Copiar
+            </button>
+          </div>
+          <div class="gps-nav-grid">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=-33.05224,-71.60774" target="_blank" rel="noopener" class="gps-btn gps-btn-gmaps">
+              <i class="fa-brands fa-google"></i>
+              <span>Google Maps</span>
+            </a>
+            <a href="https://maps.apple.com/?daddr=-33.05224,-71.60774&q=Hontaneda+2653+Valparaiso" target="_blank" rel="noopener" class="gps-btn gps-btn-apple">
+              <i class="fa-brands fa-apple"></i>
+              <span>Apple Maps</span>
+            </a>
+            <a href="https://waze.com/ul?ll=-33.05224,-71.60774&navigate=yes" target="_blank" rel="noopener" class="gps-btn gps-btn-waze">
+              <i class="fa-brands fa-waze"></i>
+              <span>Waze</span>
+            </a>
+          </div>
+        </div>
+
         <!-- Sedes y Salas Card -->
         <div class="info-card">
           <div class="info-card-header">
             <i class="fa-solid fa-map-location-dot text-ocean"></i>
-            <h3>Salas Oficiales y Ubicación</h3>
+            <h3>Distribución de Salas en el Edificio</h3>
           </div>
           <div class="venue-list">
             <div class="venue-item">
               <div class="venue-icon tag-gold"><i class="fa-solid fa-landmark"></i></div>
               <div class="venue-details">
-                <strong>Auditorio FACSO</strong>
-                <p>Planta Baja Central, Edificio FACSO, UV. Acto Inaugural y Conferencias Magistrales Plenarias.</p>
+                <strong>Auditorio FACSO (Planta Baja Central)</strong>
+                <p>Acto Inaugural, Conferencias Magistrales Plenarias y Cóctel de Bienvenida.</p>
               </div>
             </div>
             <div class="venue-item">
               <div class="venue-icon tag-ocean"><i class="fa-solid fa-water"></i></div>
               <div class="venue-details">
                 <strong>Sala 2.5 (Piso 2)</strong>
-                <p>Edificio Aulas UV. Sesiones orales de Procesos Oceanográficos, Asamblea DOCA y Ceremonia de Clausura.</p>
+                <p>Sesiones orales de Procesos Oceanográficos, Asamblea General GT DOCA y Ceremonia de Clausura.</p>
               </div>
             </div>
             <div class="venue-item">
               <div class="venue-icon tag-meteo"><i class="fa-solid fa-wind"></i></div>
               <div class="venue-details">
                 <strong>Sala 3.7 (Piso 3)</strong>
-                <p>Edificio Aulas UV. Sesiones orales de Meteorología, Clima y Ciencias de la Atmósfera.</p>
+                <p>Sesiones orales de Meteorología, Clima, Radares, Modelación y Ciencias Atmosféricas.</p>
               </div>
             </div>
             <div class="venue-item">
               <div class="venue-icon tag-purple"><i class="fa-solid fa-images"></i></div>
               <div class="venue-details">
                 <strong>Sectores Comunes Pisos 2 y 3</strong>
-                <p>Espacios conectores y halls junto a Salas 2.5 y 3.7. Coffee Breaks (20 min) y Exhibición de Paneles Póster (P-001 a P-101).</p>
+                <p>Pasillos y halls conectores entre Salas 2.5 y 3.7: Coffee Breaks oficiales (20 min) y Exposición de Paneles Póster (P-001 a P-101).</p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Códigos QR Card -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <i class="fa-solid fa-qrcode text-ocean"></i>
+            <h3>Códigos QR Escaneables</h3>
+          </div>
+          <p class="view-intro" style="margin-bottom: 12px;">Escanea con tu celular o comparte con otros participantes:</p>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; text-align: center;">
+            <div style="background: rgba(15, 23, 42, 0.5); padding: 12px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+              <div class="qr-image-frame" style="margin-bottom: 8px;">
+                <img src="assets/raw_qr_app_congreso.png" alt="QR App Móvil" style="width: 120px; height: 120px; display: block; margin: 0 auto;" onerror="this.src='assets/qr_app_congreso.png'">
+              </div>
+              <strong style="display: block; font-size: 0.82rem; color: #FFFFFF;">App del Congreso</strong>
+              <span style="display: block; font-size: 0.70rem; color: var(--slate-muted); margin-bottom: 8px;">Aplicación web PWA</span>
+              <button class="action-pill-btn" onclick="navigator.clipboard.writeText('https://manuelcastillos.github.io/manuel_oce_castillo/app_congreso/'); alert('¡Enlace de la app copiado!');" style="font-size: 0.70rem; padding: 5px 8px; width: 100%;">
+                <i class="fa-solid fa-link"></i> Copiar Link
+              </button>
+            </div>
+            <div style="background: rgba(15, 23, 42, 0.5); padding: 12px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+              <div class="qr-image-frame" style="margin-bottom: 8px;">
+                <img src="assets/raw_qr_programa_pdf.png" alt="QR Programa PDF" style="width: 120px; height: 120px; display: block; margin: 0 auto;" onerror="this.src='assets/qr_programa_pdf.png'">
+              </div>
+              <strong style="display: block; font-size: 0.82rem; color: #FFFFFF;">Programa Oficial PDF</strong>
+              <span style="display: block; font-size: 0.70rem; color: var(--slate-muted); margin-bottom: 8px;">Documento 46 págs</span>
+              <a href="Programa_Detallado_OFMC2026.pdf" download class="action-pill-btn" style="font-size: 0.70rem; padding: 5px 8px; width: 100%; text-decoration: none; display: inline-block;">
+                <i class="fa-solid fa-download"></i> Descargar
+              </a>
             </div>
           </div>
         </div>
@@ -488,6 +607,93 @@
     <div class="install-toast-actions">
       <button id="btnInstallPwa" class="btn-install-accept">Instalar</button>
       <button id="btnDismissInstall" class="btn-install-dismiss">&times;</button>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       MODAL DE AVISOS OFICIALES Y CAMBIOS DE PROGRAMA
+       =================================================================== -->
+  <div id="avisosModal" class="modal-overlay">
+    <div class="modal-container detail-modal-container">
+      <div class="modal-grabber"></div>
+      <div class="detail-modal-header">
+        <span class="detail-room-badge" style="background: var(--gold); color: var(--navy-dark);">
+          <i class="fa-solid fa-bell"></i> Avisos Oficiales
+        </span>
+        <button id="btnCloseAvisosModal" class="modal-close-btn">&times;</button>
+      </div>
+      <div style="padding: 10px 16px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+          <h3 style="font-size: 1rem; font-weight: 800; color: #FFFFFF; margin: 0;">Comunicados y Cambios</h3>
+          <button id="btnCheckUpdatesNow" class="action-pill-btn" style="font-size: 0.70rem; padding: 4px 8px;">
+            <i class="fa-solid fa-arrows-rotate"></i> Actualizar
+          </button>
+        </div>
+        <div class="avisos-list-container" id="avisosModalList">
+          <!-- Injected dynamically from avisos.json -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       MODAL DE CÓDIGOS QR
+       =================================================================== -->
+  <div id="qrModal" class="modal-overlay">
+    <div class="modal-container qr-modal-container">
+      <div class="modal-grabber"></div>
+      <div class="detail-modal-header">
+        <span class="detail-room-badge" style="background: var(--ocean); color: #FFFFFF;">
+          <i class="fa-solid fa-qrcode"></i> Códigos QR Oficiales
+        </span>
+        <button id="btnCloseQrModal" class="modal-close-btn">&times;</button>
+      </div>
+      <div style="padding: 12px 16px;">
+        <div class="qr-tabs-nav">
+          <button class="qr-tab-btn active" data-qrtab="app">📱 Aplicación Móvil</button>
+          <button class="qr-tab-btn" data-qrtab="pdf">📄 Programa en PDF</button>
+        </div>
+        
+        <!-- QR Tab 1: App Móvil -->
+        <div id="qrTabApp" class="qr-tab-pane">
+          <div class="qr-display-card">
+            <div class="qr-image-frame">
+              <img src="assets/raw_qr_app_congreso.png" alt="QR App Móvil" onerror="this.src='assets/qr_app_congreso.png'">
+            </div>
+            <div class="qr-card-title">Aplicación del Congreso OFMC 2026</div>
+            <div class="qr-card-desc">Escanea con la cámara de tu celular para abrir e instalar la app directamente.</div>
+            <div class="qr-card-url-box">https://manuelcastillos.github.io/manuel_oce_castillo/app_congreso/</div>
+            <div class="qr-card-actions">
+              <button class="qr-action-btn qr-btn-primary" onclick="navigator.clipboard.writeText('https://manuelcastillos.github.io/manuel_oce_castillo/app_congreso/'); alert('¡Enlace de la aplicación copiado al portapapeles!');">
+                <i class="fa-solid fa-copy"></i> Copiar Enlace
+              </button>
+              <a href="assets/qr_app_congreso.png" download="QR_App_OFMC2026.png" class="qr-action-btn qr-btn-secondary">
+                <i class="fa-solid fa-download"></i> Guardar Imagen
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- QR Tab 2: PDF Oficial -->
+        <div id="qrTabPdf" class="qr-tab-pane" style="display: none;">
+          <div class="qr-display-card">
+            <div class="qr-image-frame">
+              <img src="assets/raw_qr_programa_pdf.png" alt="QR Programa PDF" onerror="this.src='assets/qr_programa_pdf.png'">
+            </div>
+            <div class="qr-card-title">Programa Oficial Completo (PDF)</div>
+            <div class="qr-card-desc">Escanea para descargar el documento oficial de 46 páginas con resúmenes e índice de autores.</div>
+            <div class="qr-card-url-box">https://manuelcastillos.github.io/manuel_oce_castillo/app_congreso/Programa_Detallado_OFMC2026.pdf</div>
+            <div class="qr-card-actions">
+              <a href="Programa_Detallado_OFMC2026.pdf" download class="qr-action-btn qr-btn-primary">
+                <i class="fa-solid fa-download"></i> Descargar PDF
+              </a>
+              <a href="assets/qr_programa_pdf.png" download="QR_Programa_OFMC2026.png" class="qr-action-btn qr-btn-secondary">
+                <i class="fa-solid fa-image"></i> Guardar Imagen
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

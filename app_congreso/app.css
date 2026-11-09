@@ -1670,3 +1670,528 @@ body {
   font-weight: 600;
   letter-spacing: 0.2px;
 }
+
+
+/* ==========================================================================
+   NUEVAS FUNCIONALIDADES: AVISOS, CALENDARIOS, ALERTAS 10 MIN, MAPA Y QR
+   ========================================================================== */
+
+/* Badge en botones del Header */
+.badge-icon-btn {
+  position: relative;
+}
+.header-badge-count {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  background: #EF4444;
+  color: #FFFFFF;
+  font-size: 0.60rem;
+  font-weight: 800;
+  min-width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--navy-dark);
+  box-shadow: 0 0 6px rgba(239, 68, 68, 0.6);
+  padding: 0 3px;
+}
+
+/* Banner Flotante de Aviso Urgente en Tiempo Real */
+.urgent-aviso-banner {
+  margin: 10px 14px 4px 14px;
+  padding: 12px 14px;
+  background: linear-gradient(135deg, rgba(200, 150, 62, 0.18), rgba(27, 54, 93, 0.85));
+  border: 1px solid var(--gold);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  box-shadow: 0 4px 16px rgba(200, 150, 62, 0.2);
+  backdrop-filter: blur(8px);
+  animation: slideDown 0.35s ease-out;
+}
+.urgent-aviso-icon {
+  font-size: 1.3rem;
+  color: var(--gold);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+.urgent-aviso-content {
+  flex: 1;
+}
+.urgent-aviso-tag {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy-dark);
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 4px;
+  letter-spacing: 0.4px;
+}
+.urgent-aviso-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 3px;
+}
+.urgent-aviso-text {
+  font-size: 0.78rem;
+  color: var(--slate-light);
+  line-height: 1.35;
+}
+.urgent-aviso-close {
+  background: none;
+  border: none;
+  color: var(--slate-muted);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+}
+.urgent-aviso-close:hover {
+  color: #FFFFFF;
+}
+
+/* Toast de Alerta 10 Minutos antes de Charla Favorita */
+.pre-alert-toast {
+  position: fixed;
+  top: 70px;
+  left: 14px;
+  right: 14px;
+  max-width: 480px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #1B365D, #0F172A);
+  border: 2px solid var(--gold);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(200, 150, 62, 0.4);
+  z-index: 9999;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  animation: bounceIn 0.4s ease-out;
+  backdrop-filter: blur(12px);
+}
+@keyframes bounceIn {
+  0% { transform: translateY(-50px) scale(0.9); opacity: 0; }
+  60% { transform: translateY(6px) scale(1.02); opacity: 1; }
+  100% { transform: translateY(0) scale(1); }
+}
+.pre-alert-bell {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(200, 150, 62, 0.2);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  animation: ringBell 2s infinite ease-in-out;
+}
+@keyframes ringBell {
+  0%, 100% { transform: rotate(0); }
+  10%, 30% { transform: rotate(14deg); }
+  20%, 40% { transform: rotate(-14deg); }
+  50% { transform: rotate(0); }
+}
+.pre-alert-body {
+  flex: 1;
+}
+.pre-alert-badge {
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.pre-alert-body strong {
+  display: block;
+  font-size: 0.88rem;
+  color: #FFFFFF;
+  margin: 2px 0;
+}
+.pre-alert-body p {
+  font-size: 0.78rem;
+  color: var(--slate-light);
+  line-height: 1.25;
+}
+.pre-alert-btn {
+  background: var(--gold);
+  color: var(--navy-dark);
+  border: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  margin-top: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.pre-alert-dismiss {
+  background: none;
+  border: none;
+  color: var(--slate-muted);
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 0 4px;
+  align-self: flex-start;
+}
+
+/* Tarjeta Destacada / Highlight en Cronograma y Listas */
+.item-card.is-favorite,
+.program-card.is-favorite,
+.poster-card.is-favorite {
+  border-color: rgba(200, 150, 62, 0.7) !important;
+  background: linear-gradient(135deg, rgba(200, 150, 62, 0.08), rgba(27, 54, 93, 0.65)) !important;
+  box-shadow: 0 0 14px rgba(200, 150, 62, 0.22) !important;
+  position: relative;
+}
+.favorite-corner-ribbon {
+  position: absolute;
+  top: 8px;
+  right: 42px;
+  background: var(--gold);
+  color: var(--navy-dark);
+  font-size: 0.62rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Botones de Calendario */
+.btn-calendar-add {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #0077B6, #023E8A);
+  color: #FFFFFF;
+  font-size: 0.80rem;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-calendar-add:hover {
+  background: linear-gradient(135deg, #0096C7, #0077B6);
+  transform: translateY(-1px);
+}
+.btn-calendar-add i {
+  color: var(--gold);
+}
+
+.calendar-action-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 10px;
+}
+.cal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 12px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+  transition: all 0.18s ease;
+  text-decoration: none;
+}
+.cal-btn-ics {
+  background: rgba(27, 54, 93, 0.8);
+  color: #FFFFFF;
+}
+.cal-btn-ics:hover {
+  background: rgba(0, 119, 182, 0.8);
+}
+.cal-btn-gcal {
+  background: rgba(234, 67, 53, 0.18);
+  color: #F87171;
+  border-color: rgba(234, 67, 53, 0.35);
+}
+.cal-btn-gcal:hover {
+  background: rgba(234, 67, 53, 0.3);
+}
+
+/* Mapa Interactivo y Navegación GPS */
+.venue-map-card {
+  overflow: hidden;
+}
+.map-iframe-wrapper {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  margin-bottom: 12px;
+  background: var(--navy-dark);
+}
+.map-iframe-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.map-address-banner {
+  background: rgba(27, 54, 93, 0.5);
+  border: 1px solid rgba(0, 119, 182, 0.3);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.map-address-info strong {
+  display: block;
+  font-size: 0.88rem;
+  color: #FFFFFF;
+}
+.map-address-info span {
+  font-size: 0.78rem;
+  color: var(--ocean-light);
+}
+.btn-copy-address {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-copy-address:hover {
+  background: var(--ocean);
+}
+.gps-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.gps-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 10px 6px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-size: 0.72rem;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.2s ease;
+  text-align: center;
+}
+.gps-btn-gmaps {
+  background: linear-gradient(135deg, rgba(66, 133, 244, 0.2), rgba(52, 168, 83, 0.2));
+  color: #93C5FD;
+  border-color: rgba(66, 133, 244, 0.35);
+}
+.gps-btn-gmaps:hover {
+  background: linear-gradient(135deg, rgba(66, 133, 244, 0.35), rgba(52, 168, 83, 0.35));
+}
+.gps-btn-apple {
+  background: rgba(255, 255, 255, 0.08);
+  color: #E2E8F0;
+}
+.gps-btn-apple:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+.gps-btn-waze {
+  background: rgba(51, 204, 255, 0.18);
+  color: #67E8F9;
+  border-color: rgba(51, 204, 255, 0.35);
+}
+.gps-btn-waze:hover {
+  background: rgba(51, 204, 255, 0.3);
+}
+.gps-btn i {
+  font-size: 1.25rem;
+  margin-bottom: 2px;
+}
+
+/* Modal y Tarjetas de Códigos QR */
+.qr-modal-container {
+  max-width: 520px;
+}
+.qr-tabs-nav {
+  display: flex;
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: var(--radius-md);
+  padding: 3px;
+  margin-bottom: 16px;
+  border: 1px solid var(--border-color);
+}
+.qr-tab-btn {
+  flex: 1;
+  background: none;
+  border: none;
+  color: var(--slate-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 8px 6px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.qr-tab-btn.active {
+  background: var(--navy);
+  color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.qr-display-card {
+  text-align: center;
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 20px 16px;
+  margin-bottom: 14px;
+}
+.qr-image-frame {
+  display: inline-block;
+  background: #FFFFFF;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  margin-bottom: 12px;
+}
+.qr-image-frame img {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+.qr-card-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+.qr-card-desc {
+  font-size: 0.80rem;
+  color: var(--slate-muted);
+  margin-bottom: 14px;
+}
+.qr-card-url-box {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  font-size: 0.75rem;
+  font-family: monospace;
+  color: var(--ocean-light);
+  word-break: break-all;
+  margin-bottom: 12px;
+}
+.qr-card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.qr-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: var(--radius-md);
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.qr-btn-primary {
+  background: var(--ocean);
+  color: #FFFFFF;
+}
+.qr-btn-primary:hover {
+  background: var(--ocean-light);
+  color: var(--navy-dark);
+}
+.qr-btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: #E2E8F0;
+}
+.qr-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* Modal de Avisos Oficiales */
+.avisos-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 460px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.aviso-item-card {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+.aviso-item-card.is-urgente {
+  border-left: 4px solid #EF4444;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(15, 23, 42, 0.7));
+}
+.aviso-item-card.is-importante {
+  border-left: 4px solid var(--gold);
+  background: linear-gradient(135deg, rgba(200, 150, 62, 0.08), rgba(15, 23, 42, 0.7));
+}
+.aviso-item-card.is-informativo {
+  border-left: 4px solid var(--ocean);
+}
+.aviso-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.aviso-meta-badge {
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+}
+.badge-urgente { background: #EF4444; color: #FFFFFF; }
+.badge-importante { background: var(--gold); color: var(--navy-dark); }
+.badge-informativo { background: var(--ocean); color: #FFFFFF; }
+.aviso-date {
+  font-size: 0.72rem;
+  color: var(--slate-muted);
+}
+.aviso-item-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+.aviso-item-text {
+  font-size: 0.78rem;
+  color: var(--slate-light);
+  line-height: 1.35;
+}
