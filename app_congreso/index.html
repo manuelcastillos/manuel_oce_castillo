@@ -121,10 +121,10 @@
   <!-- In-App Pre-Alert Notification Toast (10 min before favorite talk) -->
   <div id="preAlertToast" class="pre-alert-toast" style="display: none;">
     <div class="pre-alert-bell">
-      <i class="fa-solid fa-bell"></i>
+      <i class="fa-solid fa-mobile-screen-button"></i>
     </div>
     <div class="pre-alert-body">
-      <span class="pre-alert-badge">⏰ Recordatorio en 10 Minutos</span>
+      <span class="pre-alert-badge">📳 Alerta Silenciosa (Vibración 10 min)</span>
       <strong id="preAlertTitle">O-048 · Sala 3.7</strong>
       <p id="preAlertDesc">Jorge Arévalo — Un Radar Móvil para Fenómenos Meteorológicos...</p>
       <button id="btnPreAlertAction" class="pre-alert-btn">
@@ -298,11 +298,11 @@
       <!-- 10-Minute Alert Status Card in Agenda -->
       <div class="agenda-alerts-bar" style="margin: 8px 14px 10px 14px; padding: 10px 14px; background: rgba(200, 150, 62, 0.12); border: 1px solid rgba(200, 150, 62, 0.35); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; gap: 10px;">
         <div style="display: flex; align-items: center; gap: 8px; font-size: 0.78rem; color: #FFFFFF;">
-          <i class="fa-solid fa-bell text-gold" style="font-size: 1rem;"></i>
-          <span><strong>Alerta de 10 minutos activa:</strong> La app te avisará con anticipación antes de cada ponencia marcada.</span>
+          <i class="fa-solid fa-bell-slash text-gold" style="font-size: 1.1rem;"></i>
+          <span><strong>Modo Sala Silencioso:</strong> La app te avisará 10 minutos antes mediante <strong>vibración táctil discreta</strong> y aviso visual en pantalla, sin emitir ningún sonido para no interrumpir las ponencias.</span>
         </div>
-        <button id="btnTestChime" class="action-pill-btn" style="padding: 4px 8px; font-size: 0.70rem; white-space: nowrap;" title="Probar sonido de alerta">
-          <i class="fa-solid fa-volume-high"></i> Probar
+        <button id="btnTestVibration" class="action-pill-btn" style="padding: 5px 10px; font-size: 0.72rem; white-space: nowrap;" title="Probar vibración táctil">
+          <i class="fa-solid fa-mobile-screen-button"></i> Probar Vibración
         </button>
       </div>
 

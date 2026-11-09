@@ -92,52 +92,17 @@
   }
 
   // =========================================================================
-  // 4. WEB AUDIO SYNTH CHIME & 10-MIN PRE-ALERTS
+  // 4. HAPTIC VIBRATION & 10-MIN SILENT PRE-ALERTS (CONFERENCE ROOM SAFE)
   // =========================================================================
-  function playAlertChime() {
-    try {
-      const AudioCtx = window.AudioContext || window.webkitAudioContext;
-      if (!AudioCtx) return;
-      const ctx = new AudioCtx();
-      if (ctx.state === 'suspended') {
-        ctx.resume();
+  function triggerHapticAlert() {
+    // 100% silent - purely haptic feedback via browser Vibration API
+    if ('vibrate' in navigator) {
+      try {
+        // Subtle double buzz pattern: 250ms vibrate, 100ms pause, 250ms vibrate
+        navigator.vibrate([250, 100, 250]);
+      } catch (e) {
+        console.warn('Vibration API no disponible o bloqueada:', e);
       }
-      const now = ctx.currentTime;
-
-      // Harmonic bell chime: C5 (523.25 Hz) + G5 (783.99 Hz)
-      const osc1 = ctx.createOscillator();
-      const osc2 = ctx.createOscillator();
-      const gain1 = ctx.createGain();
-      const gain2 = ctx.createGain();
-
-      osc1.type = 'sine';
-      osc1.frequency.setValueAtTime(523.25, now);
-      osc1.frequency.exponentialRampToValueAtTime(1046.5, now + 0.35);
-
-      osc2.type = 'triangle';
-      osc2.frequency.setValueAtTime(783.99, now);
-
-      // Smooth decaying envelope
-      gain1.gain.setValueAtTime(0.01, now);
-      gain1.gain.linearRampToValueAtTime(0.3, now + 0.05);
-      gain1.gain.exponentialRampToValueAtTime(0.001, now + 0.9);
-
-      gain2.gain.setValueAtTime(0.01, now);
-      gain2.gain.linearRampToValueAtTime(0.2, now + 0.08);
-      gain2.gain.exponentialRampToValueAtTime(0.001, now + 1.1);
-
-      osc1.connect(gain1);
-      gain1.connect(ctx.destination);
-
-      osc2.connect(gain2);
-      gain2.connect(ctx.destination);
-
-      osc1.start(now);
-      osc2.start(now + 0.04);
-      osc1.stop(now + 0.95);
-      osc2.stop(now + 1.15);
-    } catch (e) {
-      console.warn('Audio chime no disponible o silenciado:', e);
     }
   }
 
@@ -164,7 +129,7 @@
   }
 
   function triggerPreAlert(item, minsLeft) {
-    playAlertChime();
+    triggerHapticAlert();
 
     const toast = document.getElementById('preAlertToast');
     const title = document.getElementById('preAlertTitle');
@@ -1547,18 +1512,18 @@
       });
     }
 
-    // Test Sound Chime Button
-    const btnChime = document.getElementById('btnTestChime');
-    if (btnChime) {
-      btnChime.addEventListener('click', () => {
-        playAlertChime();
+    // Test Haptic Vibration Button (Discreet conference mode)
+    const btnVib = document.getElementById('btnTestVibration') || document.getElementById('btnTestChime');
+    if (btnVib) {
+      btnVib.addEventListener('click', () => {
+        triggerHapticAlert();
         const toast = document.getElementById('preAlertToast');
         const title = document.getElementById('preAlertTitle');
         const desc = document.getElementById('preAlertDesc');
         const btnAction = document.getElementById('btnPreAlertAction');
         if (toast && title && desc) {
-          title.textContent = 'Alerta de Prueba (10 min)';
-          desc.textContent = 'El sonido y aviso visual funcionarán automáticamente antes de tus ponencias guardadas.';
+          title.textContent = 'Alerta Silenciosa de Prueba (Vibración 10 min)';
+          desc.textContent = 'El celular vibrará discretamente y mostrará este aviso en pantalla antes de tus ponencias guardadas, sin emitir ningún sonido.';
           toast.style.display = 'flex';
           if (btnAction) {
             btnAction.onclick = () => { toast.style.display = 'none'; };
@@ -1726,7 +1691,8 @@
     closeQrModal: closeQrModal,
     openAvisosModal: openAvisosModal,
     closeAvisosModal: closeAvisosModal,
-    playAlertChime: playAlertChime
+    triggerHapticAlert: triggerHapticAlert,
+    playAlertChime: triggerHapticAlert
   };
 
   // =========================================================================
