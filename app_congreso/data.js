@@ -115,10 +115,10 @@ window.CONGRESO_DATA = {
       "end_time": "10:00",
       "horario": "09:00 - 10:00",
       "sala": "Auditorio FACSO",
-      "titulo": "Conferencia Magistral 1: Importance of regional integration of severe weather reports and their impacts in South America",
-      "descripcion": "Ponencia magistral de apertura dictada por la Dra. Paola Salio (CIMA / CONICET-UBA). Título: \"Importance of regional integration of severe weather reports and their impacts in South America\". Aborda la integración regional de reportes de tiempo severo, dinámica de tormentas convectivas y eventos meteorológicos de alto impacto social en el cono sur de Sudamérica.",
-      "tipo": "Evento",
-      "categoria": "Ceremonia"
+      "titulo": "Acto Solemne de Inauguración del Congreso OFMC 2026",
+      "descripcion": "Discursos inaugurales de Rectoría UV, Decanaturas de las Facultades Organizadoras, Presidencia GT DOCA y Comité Organizador.",
+      "tipo": "Ceremonia",
+      "categoria": "Plenaria"
     },
     {
       "id": "CM-01",
@@ -131,9 +131,10 @@ window.CONGRESO_DATA = {
       "titulo": "Conferencia Magistral 1: Importance of regional integration of severe weather reports and their impacts in South America",
       "autor": "Dra. Paola Salio",
       "inst": "Centro de Investigaciones del Mar y la Atmósfera (CIMA / CONICET-UBA) · DCAO, Universidad de Buenos Aires, ARGENTINA",
-      "descripcion": "Ponencia magistral de apertura dictada por la Dra. Paola Salio (CIMA / CONICET-UBA). Título: \"Importance of regional integration of severe weather reports and their impacts in South America\". Aborda la integración regional de reportes de tiempo severo, dinámica de tormentas convectivas y eventos meteorológicos de alto impacto social en el cono sur de Sudamérica.",
+      "descripcion": "Ponencia magistral inaugural dictada por la Dra. Paola Salio (CIMA / CONICET-UBA). Título: \"Importance of regional integration of severe weather reports and their impacts in South America\". Aborda la integración regional de reportes de tiempo severo, dinámica de tormentas convectivas y eventos meteorológicos de alto impacto social en el cono sur de Sudamérica.",
       "tipo": "Magistral",
-      "categoria": "Plenaria"
+      "categoria": "Plenaria",
+      "conferencista": "Dra. Paola Salio"
     },
     {
       "id": "EV-03",
@@ -6507,6 +6508,21 @@ window.CONGRESO_DATA = {
       ]
     },
     {
+      "nombre": "Dr. Jennifer M. Jackson",
+      "inst": "Fisheries and Oceans Canada, Institute of Ocean Sciences, Sidney BC, CANADA",
+      "email": "jennifer.jackson@dfo-mpo.gc.ca",
+      "trabajos": [
+        {
+          "id": "CM-02",
+          "tipo": "Magistral",
+          "dia": "Día 2",
+          "horario": "09:00 - 10:00",
+          "sala": "Auditorio FACSO",
+          "titulo": "Climate Change in the Salish Sea, British Columbia from 1930 to present"
+        }
+      ]
+    },
+    {
       "nombre": "Martín Jacques-Coper",
       "inst": "Departamento de Geofísica / CR2 / COPAS Coastal, Universidad de Concepción, Concepción, Chile",
       "email": "martinjacques@udec.cl",
@@ -7765,6 +7781,21 @@ window.CONGRESO_DATA = {
           "horario": "15:35 - 15:50",
           "sala": "Sala 3.7",
           "titulo": "Late-spring frosts in South America since 1400 CE: links to hemispheric-scale climate, volcanism and solar activity"
+        }
+      ]
+    },
+    {
+      "nombre": "Dra. Paola Salio",
+      "inst": "Centro de Investigaciones del Mar y la Atmósfera (CIMA / CONICET-UBA) · DCAO, Universidad de Buenos Aires, ARGENTINA",
+      "email": "salio@cima.fcen.uba.ar",
+      "trabajos": [
+        {
+          "id": "CM-01",
+          "tipo": "Magistral",
+          "dia": "Día 1",
+          "horario": "10:00 - 11:00",
+          "sala": "Auditorio FACSO",
+          "titulo": "Importance of regional integration of severe weather reports and their impacts in South America"
         }
       ]
     },
