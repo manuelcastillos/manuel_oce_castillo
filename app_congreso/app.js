@@ -863,7 +863,14 @@
       } else if (isPostSum || (item.sala && item.sala.includes('Pisos 2 y 3') && item.tipo !== 'Pausa')) {
         roomClass = 'room-poster'; tagClass = 'tag-purple'; roomIcon = 'fa-images';
       } else if (item.tipo === 'Pausa') {
-        roomClass = 'room-event'; tagClass = 'tag-ocean'; roomIcon = 'fa-mug-hot';
+        roomClass = 'room-event';
+        if (item.categoria === 'Almuerzo' || item.es_almuerzo) {
+          tagClass = 'tag-gold';
+          roomIcon = 'fa-utensils';
+        } else {
+          tagClass = 'tag-ocean';
+          roomIcon = 'fa-mug-hot';
+        }
       }
 
       const canFav = Boolean(item.id && !isPostSum);
@@ -890,6 +897,7 @@
           </div>
           <div class="talk-card-bottom">
             <span class="talk-session-label">${item.sesion || item.descripcion || ''}</span>
+            ${(item.categoria === 'Almuerzo' || item.es_almuerzo) ? `<span style="color: var(--gold-accent); font-weight: 700; font-size: 0.76rem;"><i class="fa-solid fa-utensils"></i> Guía Gastronómica Plaza O'Higgins <i class="fa-solid fa-chevron-right"></i></span>` : ''}
             ${isPostSum ? `<span style="color: var(--purple-poster); font-weight: 700; font-size: 0.75rem;">Ver lista de pósters <i class="fa-solid fa-chevron-right"></i></span>` : ''}
           </div>
         </div>
@@ -1175,6 +1183,88 @@
     else if (item.sala.includes('3.7')) roomBadge.style.background = 'var(--meteo-cyan)';
     else if (item.tipo === 'Póster') roomBadge.style.background = 'var(--purple-poster)';
     else roomBadge.style.background = 'var(--gold-accent)';
+
+    // Vista especializada para Recesos de Almuerzo y Guía Gastronómica
+    if (item.categoria === 'Almuerzo' || item.es_almuerzo) {
+      const guia = data.guia_gastronomica || {};
+      const locales = guia.locales || [];
+      const gcalUrl = getGoogleCalendarUrl(item.id);
+      const isFav = isFavorite(item.id);
+      const favText = isFav ? 'Quitar Recordatorio' : 'Recordarme volver a la sesión (Alarma 10 min)';
+
+      let localesHtml = locales.map(loc => `
+        <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 10px; margin-bottom: 8px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+            <div>
+              <strong style="color: #F8FAFC; font-size: 0.92rem;"><i class="fa-solid ${loc.icono || 'fa-utensils'}" style="color: var(--gold-accent); margin-right: 6px;"></i>${loc.nombre}</strong>
+              <div style="font-size: 0.76rem; color: var(--ocean-light); margin-top: 1px;">${loc.tipo}</div>
+            </div>
+            <span style="font-size: 0.72rem; background: rgba(56, 189, 248, 0.15); color: #38BDF8; padding: 2px 7px; border-radius: 999px; white-space: nowrap; font-weight: 600;">
+              <i class="fa-solid fa-person-walking"></i> ${loc.distancia}
+            </span>
+          </div>
+          <p style="font-size: 0.78rem; color: #CBD5E1; margin: 6px 0 8px 0; line-height: 1.35;">${loc.descripcion}</p>
+          <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.74rem; color: #94A3B8;">
+            <span><i class="fa-solid fa-location-dot"></i> ${loc.direccion}</span>
+            <a href="${loc.maps}" target="_blank" rel="noopener" class="action-pill-btn" style="text-decoration: none; padding: 3px 9px; font-size: 0.72rem;">
+              <i class="fa-solid fa-map-location-dot"></i> Ver en Maps
+            </a>
+          </div>
+        </div>
+      `).join('');
+
+      content.innerHTML = `
+        <div class="detail-code-row">
+          <span class="detail-id" style="background: var(--gold-accent); color: #000; font-weight: 700;">${item.id}</span>
+          <span class="detail-time">${item.dia_label || ('Día ' + item.dia_num)} · ${item.horario}</span>
+        </div>
+        <div class="detail-title" style="color: #F8FAFC;">${item.titulo}</div>
+
+        <div class="detail-section-block" style="background: rgba(245, 158, 11, 0.12); border-left: 3px solid var(--gold-accent); padding: 10px; border-radius: 6px; margin-bottom: 12px;">
+          <div style="font-weight: 700; color: var(--gold-accent); font-size: 0.85rem; margin-bottom: 4px;">
+            <i class="fa-solid fa-utensils"></i> Polo Gastronómico: Plaza O'Higgins y Barrio El Almendral
+          </div>
+          <div style="font-size: 0.78rem; color: #E2E8F0; line-height: 1.4;">
+            La sede del Congreso (Hontaneda 2653) está en el corazón de <strong>El Almendral</strong>, a solo 5 a 8 minutos a pie de Plaza O'Higgins, Calle Victoria, Av. Pedro Montt y Mercado Cardonal.
+          </div>
+        </div>
+
+        <div style="margin-bottom: 14px;">
+          <a href="https://www.google.com/maps/search/?api=1&query=restaurantes+cerca+de+Plaza+O'Higgins+Valparaiso" target="_blank" rel="noopener" class="btn-primary-action" style="text-decoration: none; display: flex; justify-content: center; align-items: center; gap: 8px; background: linear-gradient(135deg, #0284c7, #0369a1); color: #FFF; font-weight: 700; font-size: 0.85rem; padding: 10px 14px; border-radius: 8px; margin-bottom: 12px;">
+            <i class="fa-solid fa-compass"></i> <span>Explorar Restaurantes en Plaza O'Higgins (Google Maps)</span>
+          </a>
+          
+          <div style="font-weight: 700; color: #CBD5E1; font-size: 0.82rem; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">
+            <i class="fa-solid fa-star" style="color: var(--gold-accent);"></i> Locales Recomendados:
+          </div>
+          ${localesHtml}
+        </div>
+
+        <div class="detail-section-block" style="background: rgba(14, 165, 233, 0.08); border-radius: 8px; padding: 10px;">
+          <div class="detail-label" style="color: var(--ocean-light);"><i class="fa-solid fa-bell"></i> Recordatorio para volver a las sesiones</div>
+          <div style="font-size: 0.78rem; color: #E2E8F0; margin-bottom: 8px;">
+            Configura una alarma en tu calendario para volver a tiempo a las presentaciones de la tarde (reinicio: ${item.end_time} hrs):
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <button class="action-pill-btn" onclick="window.OFMC_APP.downloadSingleIcs('${item.id}')">
+              <i class="fa-solid fa-bell"></i> Descargar .ics (Alarma 10 min)
+            </button>
+            <a href="${gcalUrl}" target="_blank" rel="noopener" class="action-pill-btn" style="text-decoration: none;">
+              <i class="fa-brands fa-google"></i> Google Calendar
+            </a>
+          </div>
+        </div>
+
+        <div class="detail-actions-row">
+          <button class="btn-primary-action" onclick="window.OFMC_APP.toggleFav('${item.id}'); window.OFMC_APP.showDetail('${item.id}');">
+            ${isFav ? '<i class="fa-solid fa-heart-crack"></i>' : '<i class="fa-solid fa-heart" style="color: #F43F5E;"></i>'} <span>${favText}</span>
+          </button>
+        </div>
+      `;
+
+      modal.classList.add('open');
+      return;
+    }
 
     const isFav = isFavorite(item.id);
     const favText = isFav ? 'Quitar Alarma de 10 min' : 'Activar Alarma de 10 min en mi teléfono';

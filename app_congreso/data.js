@@ -156,11 +156,12 @@ window.CONGRESO_DATA = {
       "start_time": "13:05",
       "end_time": "14:20",
       "horario": "13:05 - 14:20",
-      "sala": "Sector Playa Ancha / Gastronómico",
+      "sala": "Sector Gastronómico Plaza O'Higgins / Barrio El Almendral",
       "titulo": "Receso para Almuerzo Libre (75 min)",
-      "descripcion": "Pausa de mediodía para almuerzo.",
+      "descripcion": "Pausa para almuerzo. Se sugiere el circuito gastronómico en torno a Plaza O'Higgins y Barrio El Almendral (Restaurant O'Higgins, Pizzería El Almendral, Café Bernal, Café Las Flores y cocinerías del Mercado Cardonal, a 5-8 min a pie).",
       "tipo": "Pausa",
-      "categoria": "Almuerzo"
+      "categoria": "Almuerzo",
+      "es_almuerzo": true
     },
     {
       "id": "EV-05",
@@ -249,11 +250,12 @@ window.CONGRESO_DATA = {
       "start_time": "12:50",
       "end_time": "14:15",
       "horario": "12:50 - 14:15",
-      "sala": "Sector Playa Ancha / Gastronómico",
+      "sala": "Sector Gastronómico Plaza O'Higgins / Barrio El Almendral",
       "titulo": "Receso para Almuerzo Libre (85 min)",
-      "descripcion": "Pausa de mediodía para almuerzo.",
+      "descripcion": "Pausa para almuerzo. Se sugiere el circuito gastronómico en torno a Plaza O'Higgins y Barrio El Almendral (Restaurant O'Higgins, Pizzería El Almendral, Café Bernal, Café Las Flores y cocinerías del Mercado Cardonal, a 5-8 min a pie).",
       "tipo": "Pausa",
-      "categoria": "Almuerzo"
+      "categoria": "Almuerzo",
+      "es_almuerzo": true
     },
     {
       "id": "EV-11",
@@ -329,11 +331,12 @@ window.CONGRESO_DATA = {
       "start_time": "12:50",
       "end_time": "14:15",
       "horario": "12:50 - 14:15",
-      "sala": "Sector Playa Ancha / Gastronómico",
+      "sala": "Sector Gastronómico Plaza O'Higgins / Barrio El Almendral",
       "titulo": "Receso para Almuerzo Libre (85 min)",
-      "descripcion": "Pausa para almuerzo.",
+      "descripcion": "Pausa para almuerzo. Se sugiere el circuito gastronómico en torno a Plaza O'Higgins y Barrio El Almendral (Restaurant O'Higgins, Pizzería El Almendral, Café Bernal, Café Las Flores y cocinerías del Mercado Cardonal, a 5-8 min a pie).",
       "tipo": "Pausa",
-      "categoria": "Almuerzo"
+      "categoria": "Almuerzo",
+      "es_almuerzo": true
     },
     {
       "id": "EV-16",
@@ -407,11 +410,12 @@ window.CONGRESO_DATA = {
       "start_time": "12:05",
       "end_time": "13:30",
       "horario": "12:05 - 13:30",
-      "sala": "Sector Gastronómico",
+      "sala": "Sector Gastronómico Plaza O'Higgins / Barrio El Almendral",
       "titulo": "Receso para Almuerzo Libre (85 min)",
-      "descripcion": "Almuerzo previo a la sesión final de pósters.",
+      "descripcion": "Pausa para almuerzo. Se sugiere el circuito gastronómico en torno a Plaza O'Higgins y Barrio El Almendral (Restaurant O'Higgins, Pizzería El Almendral, Café Bernal, Café Las Flores y cocinerías del Mercado Cardonal, a 5-8 min a pie).",
       "tipo": "Pausa",
-      "categoria": "Almuerzo"
+      "categoria": "Almuerzo",
+      "es_almuerzo": true
     },
     {
       "id": "EV-22",
@@ -8482,5 +8486,63 @@ window.CONGRESO_DATA = {
     "trabajos_totales": 211,
     "autores_unicos": 200,
     "dias": 4
+  },
+  "guia_gastronomica": {
+    "sector": "Plaza O'Higgins y Barrio El Almendral",
+    "sede_origen": "Universidad de Valparaíso (Edificio FACSO, Hontaneda 2653)",
+    "distancia_sede": "400 - 650 metros (5 a 8 minutos a pie desde la sede)",
+    "maps_general": "https://www.google.com/maps/search/?api=1&query=restaurantes+cerca+de+Plaza+O'Higgins+Valparaiso",
+    "locales": [
+      {
+        "id": "rest-ohiggins",
+        "nombre": "Restaurant O'Higgins",
+        "tipo": "Comida Tradicional Porteña & Menú Ejecutivo",
+        "direccion": "Plaza O'Higgins / Rawson, Almendral",
+        "distancia": "5 min a pie (450 m)",
+        "descripcion": "Clásico restaurante porteño con menú diario completo, pescados frescos, mariscos, cazuelas y platos tradicionales chilenos frente a Plaza O'Higgins.",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Restaurante+OHiggins+Valparaiso",
+        "icono": "fa-utensils"
+      },
+      {
+        "id": "pizz-almendral",
+        "nombre": "Pizzería El Almendral",
+        "tipo": "Pizzas a la Piedra, Pastas y Sándwiches",
+        "direccion": "Calle Victoria / Barrio El Almendral",
+        "distancia": "6 min a pie (500 m)",
+        "descripcion": "Emblemática pizzería tradicional del barrio El Almendral. Pizzas artesanales a la piedra, pastas caseras, empanadas y opciones rápidas de almuerzo.",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Pizzeria+El+Almendral+Valparaiso",
+        "icono": "fa-pizza-slice"
+      },
+      {
+        "id": "cafe-bernal",
+        "nombre": "Café Bernal",
+        "tipo": "Cafetería Tradicional, Almuerzos y Pastelería",
+        "direccion": "Entorno Plaza O'Higgins / Av. Pedro Montt",
+        "distancia": "6 min a pie (500 m)",
+        "descripcion": "Cafetería histórica de encuentro porteño. Menús de almuerzo ejecutivo, sándwiches en pan de masa madre, café de grano y pastelería tradicional.",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Cafe+Bernal+Valparaiso",
+        "icono": "fa-mug-hot"
+      },
+      {
+        "id": "cafe-flores",
+        "nombre": "Café Las Flores",
+        "tipo": "Cafetería, Pastelería Fina y Almuerzos Ligeros",
+        "direccion": "Av. Pedro Montt / Plaza O'Higgins",
+        "distancia": "7 min a pie (550 m)",
+        "descripcion": "Tradicional salón de té y cafetería porteña. Ofrece platos ligeros de mediodía, quiches, ensaladas frescas, bollería fina y selecto café.",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Cafe+Las+Flores+Valparaiso",
+        "icono": "fa-cake-candles"
+      },
+      {
+        "id": "mercado-cardonal",
+        "nombre": "Mercado Cardonal (Cocinerías 2º Piso)",
+        "tipo": "Pescados Frescos, Mariscos y Pailas Marinas",
+        "direccion": "Av. Brasil esq. Calle Uruguay",
+        "distancia": "8 min a pie (650 m)",
+        "descripcion": "Auténtica gastronomía marina porteña en el segundo piso del patrimonial Mercado Cardonal: pailas marinas, caldillo de congrio, reineta, merluza frita y mariscos.",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Mercado+Cardonal+Valparaiso",
+        "icono": "fa-fish"
+      }
+    ]
   }
 };
