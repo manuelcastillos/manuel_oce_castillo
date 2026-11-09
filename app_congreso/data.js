@@ -115,8 +115,8 @@ window.CONGRESO_DATA = {
       "end_time": "10:00",
       "horario": "09:00 - 10:00",
       "sala": "Auditorio FACSO",
-      "titulo": "Acto Solemne de Inauguración del Congreso OFMC 2026",
-      "descripcion": "Discursos inaugurales de Rectoría UV, Decanaturas de las Facultades Organizadoras, Presidencia GT DOCA y Comité Organizador.",
+      "titulo": "Conferencia Magistral 1: Importance of regional integration of severe weather reports and their impacts in South America",
+      "descripcion": "Ponencia magistral de apertura dictada por la Dra. Paola Salio (CIMA / CONICET-UBA). Título: \"Importance of regional integration of severe weather reports and their impacts in South America\". Aborda la integración regional de reportes de tiempo severo, dinámica de tormentas convectivas y eventos meteorológicos de alto impacto social en el cono sur de Sudamérica.",
       "tipo": "Evento",
       "categoria": "Ceremonia"
     },
@@ -128,10 +128,10 @@ window.CONGRESO_DATA = {
       "end_time": "11:00",
       "horario": "10:00 - 11:00",
       "sala": "Auditorio FACSO",
-      "titulo": "Conferencia Magistral 1: Dra. Paola Salio",
+      "titulo": "Conferencia Magistral 1: Importance of regional integration of severe weather reports and their impacts in South America",
       "autor": "Dra. Paola Salio",
       "inst": "Centro de Investigaciones del Mar y la Atmósfera (CIMA / CONICET-UBA) · DCAO, Universidad de Buenos Aires, ARGENTINA",
-      "descripcion": "Conferencia Magistral Inaugural (Título por confirmar). Ponencia de apertura sobre dinámica de tormentas severas, convección profunda y eventos meteorológicos de alto impacto social en el cono sur de Sudamérica.",
+      "descripcion": "Ponencia magistral de apertura dictada por la Dra. Paola Salio (CIMA / CONICET-UBA). Título: \"Importance of regional integration of severe weather reports and their impacts in South America\". Aborda la integración regional de reportes de tiempo severo, dinámica de tormentas convectivas y eventos meteorológicos de alto impacto social en el cono sur de Sudamérica.",
       "tipo": "Magistral",
       "categoria": "Plenaria"
     },
@@ -5751,7 +5751,7 @@ window.CONGRESO_DATA = {
       "trabajos": [
         {
           "id": "O-001",
-          "tipo": "Oral (Coautor/a)",
+          "tipo": "Oral",
           "dia": "Día 1",
           "horario": "11:20 - 11:35",
           "sala": "Sala 2.5",
@@ -5759,7 +5759,7 @@ window.CONGRESO_DATA = {
         },
         {
           "id": "O-056",
-          "tipo": "Oral (Coautor/a)",
+          "tipo": "Oral",
           "dia": "Día 2",
           "horario": "14:45 - 15:00",
           "sala": "Sala 2.5",
@@ -5767,7 +5767,7 @@ window.CONGRESO_DATA = {
         },
         {
           "id": "O-078",
-          "tipo": "Oral (Coautor/a)",
+          "tipo": "Oral",
           "dia": "Día 3",
           "horario": "11:50 - 12:05",
           "sala": "Sala 2.5",
@@ -5775,7 +5775,7 @@ window.CONGRESO_DATA = {
         },
         {
           "id": "P-036",
-          "tipo": "Póster (Coautor/a)",
+          "tipo": "Póster",
           "dia": "Día 3",
           "horario": "17:00 - 19:00",
           "sala": "Sectores Comunes Pisos 2 y 3",
@@ -5783,7 +5783,7 @@ window.CONGRESO_DATA = {
         },
         {
           "id": "P-044",
-          "tipo": "Póster (Coautor/a)",
+          "tipo": "Póster",
           "dia": "Día 3",
           "horario": "17:00 - 19:00",
           "sala": "Sectores Comunes Pisos 2 y 3",
@@ -5791,7 +5791,7 @@ window.CONGRESO_DATA = {
         },
         {
           "id": "P-048",
-          "tipo": "Póster (Coautor/a)",
+          "tipo": "Póster",
           "dia": "Día 3",
           "horario": "17:00 - 19:00",
           "sala": "Sectores Comunes Pisos 2 y 3",
@@ -5799,7 +5799,7 @@ window.CONGRESO_DATA = {
         },
         {
           "id": "P-071",
-          "tipo": "Póster (Coautor/a)",
+          "tipo": "Póster",
           "dia": "Día 4",
           "horario": "13:30 - 15:00",
           "sala": "Sectores Comunes Pisos 2 y 3",
@@ -5807,7 +5807,7 @@ window.CONGRESO_DATA = {
         },
         {
           "id": "P-089",
-          "tipo": "Póster (Coautor/a)",
+          "tipo": "Póster",
           "dia": "Día 4",
           "horario": "13:30 - 15:00",
           "sala": "Sectores Comunes Pisos 2 y 3",
@@ -5815,7 +5815,7 @@ window.CONGRESO_DATA = {
         },
         {
           "id": "P-098",
-          "tipo": "Póster (Coautor/a)",
+          "tipo": "Póster",
           "dia": "Día 4",
           "horario": "13:30 - 15:00",
           "sala": "Sectores Comunes Pisos 2 y 3",
