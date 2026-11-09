@@ -5278,953 +5278,6 @@ window.CONGRESO_DATA = {
   ],
   "autores": [
     {
-      "nombre": "ANDRÉS ALBERTO VARAS GÓMEZ",
-      "inst": "Instituto Fomento Pesquero",
-      "email": "andres.varas.g@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-052",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "14:15 - 14:30",
-          "sala": "Sala 2.5",
-          "titulo": "Portal SIOM: Sistema de Integración de Observaciones Marinas, Instituto Fomento Pesquero"
-        },
-        {
-          "id": "P-001",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Del océano al dato: monitoreo y acceso abierto mediante SIOM-IFOP (Sistema Integrado de Observación Marina)"
-        }
-      ]
-    },
-    {
-      "nombre": "Abdón Benjamín Olguín Núñez",
-      "inst": "Pontificia Universidad Católica de Valparaíso (PUCV)",
-      "email": "abdon.olguin.n@mail.pucv.cl",
-      "trabajos": [
-        {
-          "id": "P-033",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Comparación de la estructura vertical biogeoquímica entre remolinos ciclónicos y anticiclónicos en el Pacífico Sur oriental durante el crucero CIMAR 28, primavera de 2023"
-        }
-      ]
-    },
-    {
-      "nombre": "Adán Godoy Matus",
-      "inst": "Universidad Adventista de Chile",
-      "email": "adan.godoy@unach.cl",
-      "trabajos": [
-        {
-          "id": "P-002",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Evaluación de emplazamiento y caracterización local del Campo Eléctrico Atmosférico en condiciones de Buen Tiempo"
-        }
-      ]
-    },
-    {
-      "nombre": "Adrián Bustamante Maino",
-      "inst": "Instituto de Fomento Pesquero (IFOP)",
-      "email": "adrian.bustamante@ifop.cl",
-      "trabajos": [
-        {
-          "id": "O-066",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "10:00 - 10:15",
-          "sala": "Sala 2.5",
-          "titulo": "Distribución de masas de agua y circulación geostrófica en el Pacífico Sur Oriental: dominios verticales y su relación con la dinámica regional"
-        }
-      ]
-    },
-    {
-      "nombre": "Alan Ricardo Drebes Dorneles",
-      "inst": "Universidade Federal do Rio Grande - FURG",
-      "email": "alanricardo.97@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-003",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Estructura Temporal de la Precipitación: de la Serie Horaria a los Eventos Agregados"
-        }
-      ]
-    },
-    {
-      "nombre": "Alfonso Javier Pinto Morales",
-      "inst": "Universidad Adolfo Ibáñez",
-      "email": "alfopinto@alumnos.uai.cl",
-      "trabajos": [
-        {
-          "id": "P-034",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Cambio proyectado en olas de calor y Killing Degree Days agronómicos"
-        }
-      ]
-    },
-    {
-      "nombre": "Allison Caitlin Espinoza Gómez",
-      "inst": "Universidad Andrés Bello",
-      "email": "allison.espinoza@pucv.cl",
-      "trabajos": [
-        {
-          "id": "O-047",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "12:05 - 12:20",
-          "sala": "Sala 2.5",
-          "titulo": "Evidencia estratigráfica y paleoecológica de subsidencia cosísmica asociada a los terremotos de 1960 y 1575"
-        }
-      ]
-    },
-    {
-      "nombre": "Almendra Pedrini",
-      "inst": "Universidad de Valparaíso",
-      "email": "diana.pozo@uv.cl",
-      "trabajos": [
-        {
-          "id": "P-004",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Estudio de las condiciones sinópticas asociadas a eventos de tornados en Chile centro-sur"
-        }
-      ]
-    },
-    {
-      "nombre": "Amairani Leyva",
-      "inst": "Facultad de Ciencias Físicas y Matemáticas (FCFM), y Centro de Ciencia del Clima y la Resiliencia (CR2) - Universidad de Chile",
-      "email": "amairani.leyva@ug.uchile.cl",
-      "trabajos": [
-        {
-          "id": "O-002",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "11:20 - 11:35",
-          "sala": "Sala 3.7",
-          "titulo": "Transición extratropical del ciclón Pam mediante el diagrama de fases de Hart"
-        }
-      ]
-    },
-    {
-      "nombre": "Amin Kadim Ali Cordero",
-      "inst": "Departamento de Física, Facultad de Ciencias. Universidad de Bío-Bío.",
-      "email": "aali2018@udec.cl",
-      "trabajos": [
-        {
-          "id": "O-111",
-          "tipo": "Oral",
-          "dia": "Día 4",
-          "horario": "11:50 - 12:05",
-          "sala": "Sala 3.7",
-          "titulo": "Respuesta de la circulación de Bahía Concepción a eventos de viento del norte y ríos atmosféricos"
-        }
-      ]
-    },
-    {
-      "nombre": "Ana Maria Cordova Leal",
-      "inst": "Departamento de Meteorologia, Universidad de Valparaíso",
-      "email": "anamaria.cordova@meteo.uv.cl",
-      "trabajos": [
-        {
-          "id": "O-105",
-          "tipo": "Oral",
-          "dia": "Día 4",
-          "horario": "10:45 - 11:00",
-          "sala": "Sala 3.7",
-          "titulo": "HidroCL ante eventos extremos: anticipar para gestionar"
-        }
-      ]
-    },
-    {
-      "nombre": "Andrea Piñones",
-      "inst": "1 Instituto de Ciencias Marinas y Limnológicas, Universidad Austral de Chile. 2 Centro COPAS Coastal, Concepción, Chile. 3 Instituto Milenio BASE, Santiago, Chile",
-      "email": "andrea.pinones@uach.cl",
-      "trabajos": [
-        {
-          "id": "O-109",
-          "tipo": "Oral",
-          "dia": "Día 4",
-          "horario": "11:35 - 11:50",
-          "sala": "Sala 3.7",
-          "titulo": "Balance atmósfera-océano durante olas de calor marinas nunca antes registradas en la Península Antártica"
-        }
-      ]
-    },
-    {
-      "nombre": "Angel Domínguez Chovert",
-      "inst": "Universidad Federal de Goiás",
-      "email": "angel.chovert@ufg.br",
-      "trabajos": [
-        {
-          "id": "P-005",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Implementación de sistema integrado de modelación atmosférica y monitoreo ambiental para la gestión de la calidad del aire en Goiás Brasil"
-        }
-      ]
-    },
-    {
-      "nombre": "Angela Andrea Bahamondes Domínguez",
-      "inst": "Instituto Milenio BASE; Instituto de Ciencias Marinas y Limnológicas, Facultad de Ciencias, Universidad Austral de Chile",
-      "email": "a.bahamondes.d@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-092",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "15:35 - 15:50",
-          "sala": "Sala 2.5",
-          "titulo": "Conectividad física interanual del krill antártico entre zonas de desove"
-        }
-      ]
-    },
-    {
-      "nombre": "Antonia Ricci Frías",
-      "inst": "Universidad Austral de Chile",
-      "email": "antonia.ricci@alumnos.uach.cl",
-      "trabajos": [
-        {
-          "id": "P-068",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "{Simulación numérica del transporte de nutrientes en la corriente de Humboldt mediante Navier-Stokes y advección-difusión"
-        }
-      ]
-    },
-    {
-      "nombre": "Álvaro Esteban Constanzo Gatica",
-      "inst": "Chile  Dirección Meteorológica de Chile, Chile. Departamento de Geofísica, Universidad de Chile, Chile. Centro de Ciencia del Clima y la Resiliencia (CR)2.",
-      "email": "alvaro.constanzo@dgac.gob.cl",
-      "trabajos": [
-        {
-          "id": "P-069",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "El Niño 2026: Experiencias y verificación del sistema Nextgen-Chile para precipitación en Chile central"
-        }
-      ]
-    },
-    {
-      "nombre": "Álvaro González-Reyes",
-      "inst": "Instituto de Ciencias de la Tierra & Laboratorio de Dendrocronología y Cambio Global, Universidad Austral de Chile",
-      "email": "alvaro.gonzalez@uach.cl",
-      "trabajos": [
-        {
-          "id": "O-022",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "15:05 - 15:20",
-          "sala": "Sala 3.7",
-          "titulo": "Cambios en la intensidad del Anticiclón Subtropical del Pacífico y su vínculo con la relación humedad del suelo-incendios forestales desde 1960"
-        }
-      ]
-    },
-    {
-      "nombre": "Álvaro Ossandón",
-      "inst": "Universidad Técnica Federico Santa María",
-      "email": "alvaro.ossandon@usm.cl",
-      "trabajos": [
-        {
-          "id": "O-095",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "15:50 - 16:05",
-          "sala": "Sala 3.7",
-          "titulo": "Reconstrucción de la temperatura superficial del mar en el Pacífico ecuatorial a partir de datos indirectos escasos mediante un enfoque jerárquico bayesiano"
-        }
-      ]
-    },
-    {
-      "nombre": "Ángel Rodríguez Santana",
-      "inst": "Universidad de Las Palmas de Gran Canaria",
-      "email": "angel.santana@ulpgc.es",
-      "trabajos": [
-        {
-          "id": "O-096",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "16:05 - 16:20",
-          "sala": "Sala 2.5",
-          "titulo": "VARIABILIDAD Y CARACTERIZACIÓN AMBIENTAL EN EL ENTORNO MARINO DE GRANJAS ACUÍCOLAS COSTERAS (PROYECTOS SIRENA Y SIRENA 2)"
-        }
-      ]
-    },
-    {
-      "nombre": "BRUNO IVÁN VARGAS CRESPO",
-      "inst": "DIRECCIÓN METEOROLÓGICA DE CHILE",
-      "email": "bruno.vargas@dgac.gob.cl",
-      "trabajos": [
-        {
-          "id": "P-006",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "CARACTERIZACIÓN DE PATRONES ESPACIALES DE PRECIPITACIÓN  EN LA CUENCA DE SANTIAGO"
-        }
-      ]
-    },
-    {
-      "nombre": "Benjamín Ignacio Cornejo Ávila",
-      "inst": "PUCV",
-      "email": "benjamin.cornejo.av@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-070",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Variabilidad de la capa de mezcla y turbulencia microescalar asociada a un remolino anticiclónico"
-        }
-      ]
-    },
-    {
-      "nombre": "Boris Barja",
-      "inst": "Universidad de Magallanes",
-      "email": "bbarja@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-006",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "11:50 - 12:05",
-          "sala": "Sala 3.7",
-          "titulo": "Comportamiento de la radiación solar en Punta Arenas durante el periodo 2019 al 2021."
-        }
-      ]
-    },
-    {
-      "nombre": "Bruno Benjamín Varela Molina",
-      "inst": "Instituto de Física, Pontificia Universidad Católica de Chile, Santiago, Chile",
-      "email": "bruno.varela@uc.cl",
-      "trabajos": [
-        {
-          "id": "P-007",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Metodología y uso de la Toolbox Global-Krigger en Paleo±Dust"
-        }
-      ]
-    },
-    {
-      "nombre": "CONSTANZA YISSELL HERNANDEZ URBANO",
-      "inst": "Pontificia Universidad Católica de Valparaíso y Núcleo Milenio DEOXS",
-      "email": "constanza.hernandez@pucv.cl",
-      "trabajos": [
-        {
-          "id": "P-035",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Forzantes físicos y biogeoquímicos que influyen en la variabilidad temporal del óxido nitroso en la capa superficial frente a Valparaíso."
-        }
-      ]
-    },
-    {
-      "nombre": "Cameron Wunderlin",
-      "inst": "University of Nebraska-Lincoln",
-      "email": "cameron.wunderlin@noaa.gov",
-      "trabajos": [
-        {
-          "id": "O-014",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "12:50 - 13:05",
-          "sala": "Sala 3.7",
-          "titulo": "Southeastern Pacific Subtropical Cyclones"
-        }
-      ]
-    },
-    {
-      "nombre": "Camila Alejandra Tapia Tapia",
-      "inst": "Universidad Técnica Federico Santa María, Advanced Mining Technology Center (AMTC)",
-      "email": "camila.tapiat@usm.cl",
-      "trabajos": [
-        {
-          "id": "O-073",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "10:45 - 11:00",
-          "sala": "Sala 3.7",
-          "titulo": "EVALUACIÓN DE PRECIPITACIONES EXTREMAS Y PROYECCIONES BAJO CONDICIONES DE CAMBIO CLIMÁTICO EN CHILE CONTINENTAL UTILIZANDO SIMULACIONES CLIMÁTICAS DEL WRF-SAAG"
-        }
-      ]
-    },
-    {
-      "nombre": "Camila Elizabeth Quijada Meza",
-      "inst": "Proterm",
-      "email": "camila.quijada.meza@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-008",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "12:05 - 12:20",
-          "sala": "Sala 3.7",
-          "titulo": "Caracterización de patrones meteorológicos locales asociados a concentraciones de gases odorantes mediante observaciones de alta frecuencia"
-        }
-      ]
-    },
-    {
-      "nombre": "Camila Paz Sola",
-      "inst": "Universidad de Valparaíso y Pontificia Universidad Católica",
-      "email": "cp.solahidalgo@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-001",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "11:20 - 11:35",
-          "sala": "Sala 2.5",
-          "titulo": "When the fjords take a breath: Influence of wind forcing and Ekman dynamics on deep ventilation in the North Patagonian fjords"
-        }
-      ]
-    },
-    {
-      "nombre": "Camila Valentina Camposano Sanhueza",
-      "inst": "LOFISAT, Universidad de Valparaíso",
-      "email": "camila.camposano@estudiantes.uv.cl",
-      "trabajos": [
-        {
-          "id": "O-078",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "11:50 - 12:05",
-          "sala": "Sala 2.5",
-          "titulo": "Variabilidad intraestacional del nivel del mar y de la temperatura superficial del mar a lo largo de la costa de Chile entre 2000 y 2026"
-        }
-      ]
-    },
-    {
-      "nombre": "Carlos Buriticá",
-      "inst": "Universidad de Valparaíso",
-      "email": "carlos.buritica@postgrado.uv.cl",
-      "trabajos": [
-        {
-          "id": "O-023",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "15:20 - 15:35",
-          "sala": "Sala 2.5",
-          "titulo": "DINÁMICA ESPACIOTEMPORAL DE LA LÍNEA DE COSTA DE LA CONCEPCIÓN, COLOMBIA (1986-2025)."
-        }
-      ]
-    },
-    {
-      "nombre": "Catalina Consuelo Alzola Salas",
-      "inst": "Universidad de Chile",
-      "email": "catalina.alzola@ug.uchile.cl",
-      "trabajos": [
-        {
-          "id": "P-008",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Evaluación de Metodologías de Estimación de Flujo de Calor Sensible"
-        }
-      ]
-    },
-    {
-      "nombre": "Catalina Rodríguez Jiménez",
-      "inst": "Departamento de Obras Civiles, Universidad Técnica Federico Santa María",
-      "email": "catalina.rodriguezj@usm.cl",
-      "trabajos": [
-        {
-          "id": "O-075",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "11:00 - 11:15",
-          "sala": "Sala 3.7",
-          "titulo": "Intercomparaciòn de proyecciones para modelos climáticos, desde simulaciones globales hasta simulaciones con resolución de convección, para Chile continental bajo diferentes escenarios."
-        }
-      ]
-    },
-    {
-      "nombre": "Cesar Alejandro Araya Cornejo",
-      "inst": "Escuela de Ciencias del Mar, PUCV/ Instituto Milenio de Oceanografía (IMO)",
-      "email": "cesar.araya.cornejo@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-035",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "10:00 - 10:15",
-          "sala": "Sala 2.5",
-          "titulo": "Evaluación de la amenaza de tsunamis transoceánicos en la costa de Chile a partir de registros históricos."
-        }
-      ]
-    },
-    {
-      "nombre": "Charlie Eduardo Opazo Collao",
-      "inst": "Departamento de Geofísica, Universidad de Chile, Centro de Ciencia del Clima y la Resiliencia (CR2)",
-      "email": "charlie.opazo@ug.uchile.cl",
-      "trabajos": [
-        {
-          "id": "P-009",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Transporte atmosférico y fuentes de humedad asociados a aluviones estivales en Chile central"
-        }
-      ]
-    },
-    {
-      "nombre": "Claudia Rozas-Perez",
-      "inst": "Universidad de Valparaíso",
-      "email": "clau.rozas@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-071",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Efecto de la transición primavera-otoño (2025-2026) sobre el oxígeno disuelto en la bahía de Laguna Verde (33.1° S), Valparaíso"
-        }
-      ]
-    },
-    {
-      "nombre": "Claudia Silvana Pizarro Silva",
-      "inst": "Universidad de Valparaíso",
-      "email": "claudia.pizarro.silva@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-010",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Pronóstico costero de oleaje y alerta temprana de marejadas en Arica, Pichilemu, Constitución, Corral y Puerto Saavedra"
-        }
-      ]
-    },
-    {
-      "nombre": "Constanza Noemí Escobedo Zúñiga",
-      "inst": "LOFISAT, Universidad de Valparaíso",
-      "email": "constanzaezuniga@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-036",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Efectos del forzamiento del viento y la descarga de agua dulce sobre la hidrografía y estabilidad termohalina de un fiordo subantártico."
-        }
-      ]
-    },
-    {
-      "nombre": "Cristian Adolfo Ortiz Villavicencio",
-      "inst": "Doctorado Conjunto en Ciencias Mención Física, Universidad de Valparaíso",
-      "email": "cristian.ortizvi@postgrado.uv.cl",
-      "trabajos": [
-        {
-          "id": "P-037",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Variabilidad del chorro polar y su relación con los bloqueos atmosféricos en latitudes medias y altas del hemisferio sur"
-        }
-      ]
-    },
-    {
-      "nombre": "Cristian Andrés Salas Dominguez",
-      "inst": "Instituto de Investigación Pesquera",
-      "email": "csalas@inpesca.cl",
-      "trabajos": [
-        {
-          "id": "O-049",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "12:20 - 12:35",
-          "sala": "Sala 2.5",
-          "titulo": "Descomposición del balance de calor durante olas de calor marinas frente a Chile centro-sur mediante diagnósticos en línea de un modelo hidrodinámico regional."
-        }
-      ]
-    },
-    {
-      "nombre": "Cristian Martinez-Villalobos",
-      "inst": "¹ Facultad de Ingeniería y Ciencias, Universidad Adolfo Ibáñez, Chile ² Data Observatory Foundation, Chile",
-      "email": "cristian.martinez.v@uai.cl",
-      "trabajos": [
-        {
-          "id": "O-053",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "14:15 - 14:30",
-          "sala": "Sala 3.7",
-          "titulo": "Deterministic Nonlinearity and State-Dependent Noise in El Niño Southern Oscillation Asymmetry"
-        }
-      ]
-    },
-    {
-      "nombre": "Cristián Escauriaza",
-      "inst": "Pontificia Universidad Católica de Chile",
-      "email": "cescauri@uc.cl",
-      "trabajos": [
-        {
-          "id": "O-011",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "12:35 - 12:50",
-          "sala": "Sala 2.5",
-          "titulo": "Dinámica, Mezcla, y Transporte de Sedimentos en Plumas de Agua Dulce"
-        }
-      ]
-    },
-    {
-      "nombre": "Cristina Belén Verdugo Palma",
-      "inst": "Universidad de Valparaíso",
-      "email": "cristina.verdugop@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-038",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "10:15 - 10:30",
-          "sala": "Sala 3.7",
-          "titulo": "Análisis de la evolución de ambientes tornádicos en el centro-sur de Chile bajo un escenario de calentamiento global para finales del siglo XXI"
-        }
-      ]
-    },
-    {
-      "nombre": "Cristine Michelle Gaultier López",
-      "inst": "Universidad de Valparaíso",
-      "email": "cristine.lopez.gaul@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-038",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Patrones espaciales en la comunidad zooplanctónica a lo largo del gradiente meridional de agua dulce en el mar exterior de la Patagonia"
-        },
-        {
-          "id": "P-039",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Patrones biogeográficos del ensamble de eufáusidos en el mar exterior de la Patagonia chilena en respuesta a las condiciones oceanográficas"
-        }
-      ]
-    },
-    {
-      "nombre": "Daniel Andrés Olivares Norambuena",
-      "inst": "Magister en Ciencias Mención Oceanografía, Universidad de Concepción, Concepción, Chile",
-      "email": "danielolivares1999@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-072",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Caracterización de la circulación forzada por viento y boyantez en un sistema de fiordos y canales subantárticos"
-        }
-      ]
-    },
-    {
-      "nombre": "Daniel Antonio Espinoza Manriquez",
-      "inst": "Escuela de Ingeniería, Pontificia Universidad Católica de Chile",
-      "email": "daniel.espinoza@uc.cl",
-      "trabajos": [
-        {
-          "id": "P-011",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Caracterización del fenómeno de la poza fría en el Salar del Huasco, Región de Tarapacá, Chile"
-        }
-      ]
-    },
-    {
-      "nombre": "Daniela Belén Tapia Marzán",
-      "inst": "Universidad de Valparaíso",
-      "email": "daniela.t.marzan@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-040",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Enfriamiento costero: homogeneización de una serie histórica y análisis de sus tendencias."
-        }
-      ]
-    },
-    {
-      "nombre": "Daniela Ignacia Flores Fuenzalida",
-      "inst": "Pontificia Universidad Católica de Valparaíso",
-      "email": "daniela.flores.f@mail.pucv.cl",
-      "trabajos": [
-        {
-          "id": "P-012",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Producción primaria y respiración de la materia orgánica en la bahía de Valparaíso durante dos períodos consecutivos de primavera – verano."
-        }
-      ]
-    },
-    {
-      "nombre": "Daniela Rojas Rojas",
-      "inst": "Universidad de Chile",
-      "email": "magdavasquezramos@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-041",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "El fitoplancton en respuesta a eventos de marejadas extremas: Análisis oceanográfico utilizando WaveWatch III y Color Oceánico Satelital."
-        }
-      ]
-    },
-    {
-      "nombre": "David Donoso",
-      "inst": "Universidad de Chile e Instituto Milenio BASE",
-      "email": "jose.donoso.q@ug.uchile.cl",
-      "trabajos": [
-        {
-          "id": "P-013",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Contribución de mecanismos foehn a un episodio extremo de calentamiento superficial frente a la Península Jason, Antártica"
-        }
-      ]
-    },
-    {
-      "nombre": "David Michael Aguilera Riquelme",
-      "inst": "GraupelTec Ambiental, Santiago, Chile; Red Meteorológica Aficionada de Chile",
-      "email": "redmeteoaficionadachile@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-014",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "RedMeteo: El caso de una red densa de observaciones meteorológicas ciudadanas en tiempo real para Chile"
-        }
-      ]
-    },
-    {
-      "nombre": "Deniz Bozkurt",
-      "inst": "Universidad de Valparaíso, CR2, COPAS Coastal",
-      "email": "deniz.bozkurt@uv.cl",
-      "trabajos": [
-        {
-          "id": "P-015",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Bloqueos atmosféricos en el hemisferio sur: una nueva base de datos multimétodo desde latitudes medias hasta la Antártica (1979–2024)"
-        }
-      ]
-    },
-    {
-      "nombre": "Diego Eduardo Duhalde Venegas",
-      "inst": "Universidad Adolfo Ibáñez",
-      "email": "dduhalde@alumnos.uai.cl",
-      "trabajos": [
-        {
-          "id": "O-083",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "12:20 - 12:35",
-          "sala": "Sala 3.7",
-          "titulo": "Persistencia y aprendizaje automático en la predicción de precipitación a corto plazo: aporte del vapor de agua precipitable obtenido mediante sistemas globales de navegación satelital"
-        }
-      ]
-    },
-    {
-      "nombre": "Diego Ignacio Fernández Olivares",
-      "inst": "Universidad Adolfo Ibáñez",
-      "email": "diegoifernandez@alumnos.uai.cl",
-      "trabajos": [
-        {
-          "id": "P-042",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Timescale dependence of projected changes in extreme precipitation under climate change"
-        }
-      ]
-    },
-    {
-      "nombre": "Diego Narváez",
-      "inst": "Copas coastal, Departamento de Oceanografía, Universidad de Concepción",
-      "email": "dnarvaez@oceanografia.udec.cl",
-      "trabajos": [
-        {
-          "id": "O-072",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "10:45 - 11:00",
-          "sala": "Sala 2.5",
-          "titulo": "Variabilidad de alta frecuencia y sinóptica durante un evento de surgencia costera en la zona central de Chile"
-        },
-        {
-          "id": "P-073",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Sistemas móviles de observación del océano:  Implementación de sensores oceanográficos en redes de pesca"
-        }
-      ]
-    },
-    {
-      "nombre": "Dipjyoti Mudiar",
-      "inst": "University of Chile, Santiago",
-      "email": "d.mudiar@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-016",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Synergistic Coupling of Heat and Moisture Transport in Zonal Atmospheric Rivers over the Extratropical Andes"
-        }
-      ]
-    },
-    {
-      "nombre": "Eduardo Alberto Flores Barraza",
-      "inst": "Centro de Estudios Avanzados en Zonas Áridas (CEAZA), Coquimbo, Chile",
-      "email": "eduardo.flores@ceaza.cl",
-      "trabajos": [
-        {
-          "id": "P-074",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Estructuras Lagrangianas Coherentes Adheridas a la Costa en el Sistema de Bahías de Coquimbo"
-        }
-      ]
-    },
-    {
-      "nombre": "Emerson Mariano da Silva",
-      "inst": "State University of Ceará – UECE",
-      "email": "emerson.mariano@uece.br",
-      "trabajos": [
-        {
-          "id": "P-075",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Temporal Variability of Thermal Conditions in the Tropical Atlantic Ocean: A Case Study for the Period from 1990 to 2020"
-        }
-      ]
-    },
-    {
-      "nombre": "Emilio Callejas, Deniz Bozkurt",
-      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
-      "email": "emilio.callejas@uv.cl",
-      "trabajos": [
-        {
-          "id": "P-043",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Extremos de calor en Chile central y bloqueo atmosférico: circulación hemisférica y posibles impactos en regiones distantes"
-        }
-      ]
-    },
-    {
-      "nombre": "Ernesto Eduardo Gonzalez Pinilla",
-      "inst": "Departamento de Geofísica, Universidad de Concepción, Chile; Centro de Ciencia del Clima y la Resiliencia (CR)2, Universidad de Concepción, Chile",
-      "email": "ergonzalez2019@udec.cl",
-      "trabajos": [
-        {
-          "id": "P-017",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Evolución y Características Sinópticas de Ríos Atmosféricos que no producen precipitación"
-        },
-        {
-          "id": "P-018",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Características hidrometeorológicas de distintas distribuciones espaciales de precipitación asociadas a Ríos Atmosféricos"
-        }
-      ]
-    },
-    {
-      "nombre": "FELIPE ANTONIO SANCHEZ GONZALEZ",
-      "inst": "UNIVERSIDAD DE VALPARAÍSO",
-      "email": "felipe.sanchezg@postgrado.uv.cl",
-      "trabajos": [
-        {
-          "id": "O-079",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "11:50 - 12:05",
-          "sala": "Sala 3.7",
-          "titulo": "Diferenciación de cardúmenes juveniles y adultos de anchoveta a partir de variables ambientales mediante modelos estadísticos y de aprendizaje automático en distintas fases de El Niño-Oscilación del Sur"
-        }
-      ]
-    },
-    {
-      "nombre": "Fabian Enrique Salgado Oporto",
-      "inst": "Universidad de Los Lagos",
-      "email": "fabianenrique.salgado@alumnos.ulagos.cl",
-      "trabajos": [
-        {
-          "id": "P-019",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Cuantificación de las condiciones de hipoxia y sus forzantes en el Fiordo Puyuhuapi."
-        }
-      ]
-    },
-    {
       "nombre": "Fabricio Acevedo",
       "inst": "Universidad de Costa Rica, Costa Rica.",
       "email": "fabricio.acevedo@ucr.ac.cr",
@@ -6236,644 +5289,6 @@ window.CONGRESO_DATA = {
           "horario": "17:00 - 19:00",
           "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Influencia de la circulación profunda en la advección horizontal de aguas hipóxicas en la Patagonia norte."
-        }
-      ]
-    },
-    {
-      "nombre": "Felipe Alberto González Vidal",
-      "inst": "Universidad de Chile",
-      "email": "felipe.gonzalez.8@ug.uchile.cl",
-      "trabajos": [
-        {
-          "id": "P-021",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Cambios en isopreno y ozono derivados de la megasequía (2010-2019) en Chile central"
-        }
-      ]
-    },
-    {
-      "nombre": "Felipe Andrés Silva Guevara",
-      "inst": "Universidad de Santiago de Chile",
-      "email": "felipe.silva.g@usach.cl",
-      "trabajos": [
-        {
-          "id": "P-076",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Caracterización espacio-temporal de anomalías térmicas asociadas a eventos El Niño intensos mediante funciones ortogonales empíricas (EOF) y su versión extendida (Extended EOF)"
-        }
-      ]
-    },
-    {
-      "nombre": "Felipe Ríos-Silva",
-      "inst": "1. Centro UC Desierto de Atacama, PUC. 2. Instituto de Geografía, Facultad de historia, Geografía y Ciencia Política, Pontificia Universidad Católica de Chile",
-      "email": "fsrios@uc.cl",
-      "trabajos": [
-        {
-          "id": "O-097",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "16:05 - 16:20",
-          "sala": "Sala 3.7",
-          "titulo": "Entendiendo las dinámicas espaciotemporales de la niebla, rocío y lluvia en un gradiente de aridez en Chile"
-        }
-      ]
-    },
-    {
-      "nombre": "Fernanda Véliz C.",
-      "inst": "Universidad Técnica Federico Santa María",
-      "email": "fernanda.veliz@usm.cl",
-      "trabajos": [
-        {
-          "id": "O-089",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "14:30 - 14:45",
-          "sala": "Sala 3.7",
-          "titulo": "Catálogo integrado para la caracterización de eventos hidrometeorológicos extremos entre las cuencas de los ríos Choapa y Tirúa"
-        }
-      ]
-    },
-    {
-      "nombre": "Félix Marcial Carrasco Galleguillos",
-      "inst": "Consultor externo del Centro Regional del Clima para el Sur de América del Sur",
-      "email": "felix.marcial@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-099",
-          "tipo": "Oral",
-          "dia": "Día 4",
-          "horario": "10:00 - 10:15",
-          "sala": "Sala 3.7",
-          "titulo": "Pronóstico subestacional calibrado para el Centro Regional sobre el clima para el Sur de América del Sur (CRC-SAS): Implementación y verificación."
-        }
-      ]
-    },
-    {
-      "nombre": "Francesca V. Search",
-      "inst": "LOFISAT, Universidad de Valparaíso",
-      "email": "fran.search.t@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-044",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Subtidal circulation and mixing in a regional inland sea, Northern Patagonia"
-        }
-      ]
-    },
-    {
-      "nombre": "Francisca Chirino",
-      "inst": "Departamento de Geofísica, Universidad de Concepción",
-      "email": "fchirino2020@udec.cl",
-      "trabajos": [
-        {
-          "id": "O-098",
-          "tipo": "Oral",
-          "dia": "Día 4",
-          "horario": "10:00 - 10:15",
-          "sala": "Sala 2.5",
-          "titulo": "Mecanismos de formación de intrusiones termohalinas en la zona de mínimo oxígeno: evidencia mediante planeadores submarinos"
-        }
-      ]
-    },
-    {
-      "nombre": "Francisca Covarrubias Mondaca",
-      "inst": "Pontificia Universidad Católica de Chile",
-      "email": "fcovarrubias@uc.cl",
-      "trabajos": [
-        {
-          "id": "P-045",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Variabilidad espacio-temporal de una pluma de río y su relación con forzantes oceanográficos y atmosféricos"
-        }
-      ]
-    },
-    {
-      "nombre": "Francisca Esperanza Mendoza Arcos",
-      "inst": "Universidad de Chile",
-      "email": "francishope05@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-046",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Relación de la intensidad de la precipitación a escala subdiaria con la temperatura y vapor de agua en Chile central"
-        }
-      ]
-    },
-    {
-      "nombre": "Francisca Verónica Jofré Meneses",
-      "inst": "Universidad de Chile, Centro de Ciencia del Clima y la Resiliencia",
-      "email": "fran.jofre.meneses@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-047",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Sensibilidad del modelo WRF en la representación de la circulación atmosférica regional del norte de Chile"
-        }
-      ]
-    },
-    {
-      "nombre": "Francisca Victoria del Carmen Quijada Mateluna",
-      "inst": "servicio hidrográfico y oceanográfico de la armada shoa",
-      "email": "francisca.quijada.mateluna@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-080",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "12:05 - 12:20",
-          "sala": "Sala 2.5",
-          "titulo": "Zonificación mareal para la representación espacial del nivel del mar en la nueva generación de productos hidrográficos digitales."
-        }
-      ]
-    },
-    {
-      "nombre": "Freddy Pinochet Erazo",
-      "inst": "Université du Québec à Montréal (UQAM)",
-      "email": "freddy.pinocheterazo@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-022",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Evaluation and Physics Sensitivity of Convection-Permitting Ensemble  Simulations of the 2024 Rio Grande do Sul Extreme Precipitation Event"
-        }
-      ]
-    },
-    {
-      "nombre": "Gabriel Francisco Correa Muñoz",
-      "inst": "LOFISAT, Universidad de Valparaíso",
-      "email": "gcorreamunoz03@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-048",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Patrón de circulación del mar interior de Chiloé (MIC) y su relación con el estrés del viento y la marea en septiembre de 2024."
-        }
-      ]
-    },
-    {
-      "nombre": "Giovanna Paola Amaya Peña",
-      "inst": "Escuela de ciencias agroalimentarias, animales y ambientales, niversidad de O'Higgins",
-      "email": "giovanna.amaya@uoh.cl",
-      "trabajos": [
-        {
-          "id": "O-061",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "15:35 - 15:50",
-          "sala": "Sala 3.7",
-          "titulo": "Identificación de patrones atmosféricos invernales mediante FAUM, K-means y un enfoque híbrido de clasificación"
-        }
-      ]
-    },
-    {
-      "nombre": "Gonzalo Huidobro Marín",
-      "inst": "Centro de Investigación Interdisciplinaria en Riesgo, Resiliencia y Recuperación ante Desastres (CIGIDEN R+)",
-      "email": "ghuidobro@cigiden.cl",
-      "trabajos": [
-        {
-          "id": "P-049",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Evaluation of combined climate adaptation scenarios for future climate and urbanization in the Chicago Metro Area using WRF"
-        }
-      ]
-    },
-    {
-      "nombre": "Gonzalo Mansilla",
-      "inst": "Universidad de Magallanes",
-      "email": "bbarja@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-050",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Análisis de la circulación atmosférica y el transporte local de masas de aire entre mayo y noviembre 2019 en Monte Fenton, Punta Arenas."
-        }
-      ]
-    },
-    {
-      "nombre": "Gonzalo Sebastián Saldías Yau",
-      "inst": "Departamento de Física, Facultad de Ciencias, Universidad del Bío-Bío, Chile",
-      "email": "gsaldias@ubiobio.cl",
-      "trabajos": [
-        {
-          "id": "O-013",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "12:50 - 13:05",
-          "sala": "Sala 2.5",
-          "titulo": "Energetic pathways of upwelling-front instabilities over a submarine canyon"
-        }
-      ]
-    },
-    {
-      "nombre": "Gustavo Alfredo Rohde Medina",
-      "inst": "LOFISAT, Universidad de Valparaíso",
-      "email": "gustavo.rohde@estudiantes.uv.cl",
-      "trabajos": [
-        {
-          "id": "O-056",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "14:45 - 15:00",
-          "sala": "Sala 2.5",
-          "titulo": "Circulación e hidrografía del Estrecho de Bransfield (62.8ºS, 57.5ºW) durante verano de 2026."
-        }
-      ]
-    },
-    {
-      "nombre": "Henry Edisson Jamanca Espinoza",
-      "inst": "Universidad de Chile",
-      "email": "henry.jamanca@ug.uchile.cl",
-      "trabajos": [
-        {
-          "id": "P-077",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Evolución de las concentraciones de material particulado fino hacia la década de 2040 frente al cambio climático y trayectorias de mitigación de emisiones."
-        }
-      ]
-    },
-    {
-      "nombre": "Ian Andersej Trobok Pacheco",
-      "inst": "Dirección Meteorológica de Chile",
-      "email": "ian.trobok@dgac.gob.cl",
-      "trabajos": [
-        {
-          "id": "P-051",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Patrones meteorológicos de escala sinóptica asociados a eventos de tornados en la zona centro - sur de Chile."
-        }
-      ]
-    },
-    {
-      "nombre": "Ignacio Andrés Pérez Vergara",
-      "inst": "Escuela de Ingeniería Informática, Facultad de Ingeniería, Universidad de Valparaíso, Chile.",
-      "email": "ignacio.perezve@postgrado.uv.cl",
-      "trabajos": [
-        {
-          "id": "P-052",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Automatización de la Observación de Nubosidad en Octas mediante Visión por Computadora y Deep Learning: Una Alternativa a la Medición Manual en Aeródromos Chilenos"
-        }
-      ]
-    },
-    {
-      "nombre": "Ignacio Nicolás Romagnoli Soriano",
-      "inst": "Departamento de Obras Civiles, Universidad Técnica Federico Santa María",
-      "email": "ignacio.romagnoli@usm.cl",
-      "trabajos": [
-        {
-          "id": "O-077",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "11:15 - 11:30",
-          "sala": "Sala 3.7",
-          "titulo": "Análisis de sensibilidad del evento de junio de 2023 ante proyecciones de cambio climático."
-        }
-      ]
-    },
-    {
-      "nombre": "Ignacio Nicolás Ryks Alvarado",
-      "inst": "Universidad Técnica Federico Santa María",
-      "email": "ignacio.ryks@usm.cl",
-      "trabajos": [
-        {
-          "id": "O-025",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "15:35 - 15:50",
-          "sala": "Sala 2.5",
-          "titulo": "DISTRIBUCIÓN LONGITUDINAL DE SALINIDAD EN LA ZONA DE ROMPIENTE DE UNA DESEMBOCADURA DE PEQUEÑA ESCALA"
-        }
-      ]
-    },
-    {
-      "nombre": "Ivan Almendra",
-      "inst": "CEAZA",
-      "email": "ialmendra.a.g@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-090",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "14:45 - 15:00",
-          "sala": "Sala 2.5",
-          "titulo": "Energy potential of intraseasonal coastal-trapped waves along the Peru–Chile coast"
-        }
-      ]
-    },
-    {
-      "nombre": "Iván Pérez Santos",
-      "inst": "Centro i-mar de la Universidad de Los Lagos, Puerto Montt, Chile.",
-      "email": "ivan.perez@ulagos.cl",
-      "trabajos": [
-        {
-          "id": "O-003",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "11:35 - 11:50",
-          "sala": "Sala 2.5",
-          "titulo": "Vertical Fluxes of Dissolved Oxygen Driven by Turbulence and Eddy Diffusivity in Patagonian Fjords"
-        }
-      ]
-    },
-    {
-      "nombre": "Javier Alfredo Aguirre Gaete",
-      "inst": "Universidad de Valparaíso",
-      "email": "javier.aguirregaete@hotmail.com",
-      "trabajos": [
-        {
-          "id": "O-045",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "11:50 - 12:05",
-          "sala": "Sala 2.5",
-          "titulo": "Olas del Futuro: Análisis estadístico de proyecciones climáticas del oleaje en aguas profundas chilenas"
-        }
-      ]
-    },
-    {
-      "nombre": "Javier Ignacio Campos Núñez",
-      "inst": "Departamento de Geofísica, Universidad de Concepción, Chile; Center for Climate and Resilience Research (CR2), Chile",
-      "email": "jcampos2020@udec.cl",
-      "trabajos": [
-        {
-          "id": "O-040",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "10:30 - 10:45",
-          "sala": "Sala 3.7",
-          "titulo": "Efecto del flujo horizontal de humedad sobre ambientes potencialmente tornádicos en Chile centro-sur"
-        }
-      ]
-    },
-    {
-      "nombre": "Javiera Antonia Sainz Reyes",
-      "inst": "PUCV",
-      "email": "javiera.sainz@pucv.cl",
-      "trabajos": [
-        {
-          "id": "P-023",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Simulación regional del Pacífico Sur Oriental (1994-2025): Tendencias de oxígeno disuelto, validación observacional y el rol de corrientes subsuperficiales"
-        },
-        {
-          "id": "P-078",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Regionalización oceanográfica del Pacifico Sur Oriental mediante técnicas de machine learning"
-        }
-      ]
-    },
-    {
-      "nombre": "Jeferson Prietsch Machado",
-      "inst": "Universidade Federal do Rio Grande (FURG) - Brazil",
-      "email": "jefpmac@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-024",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Analysis of a High-Energy Wave Event Using the Coupled COAWST Model"
-        }
-      ]
-    },
-    {
-      "nombre": "Jennifer Villarroel-Nenen",
-      "inst": "Laboratorio de Procesos Acoplados Biofísicos (LaPAB)",
-      "email": "jennifervillarroelnenen@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-084",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "12:35 - 12:50",
-          "sala": "Sala 2.5",
-          "titulo": "Exploración de potenciales zonas de generación y propagación de mareas internas semidiurnas"
-        }
-      ]
-    },
-    {
-      "nombre": "Jhon Ignacio Contreras Ibáñez",
-      "inst": "Universidad de Concepción",
-      "email": "jh.contrerasibanez@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-010",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "12:20 - 12:35",
-          "sala": "Sala 3.7",
-          "titulo": "Diferencias en la Representación del Ciclo Diurno de Temperatura del Aire en ERA5-Land, WRF-SAAG y Observaciones."
-        }
-      ]
-    },
-    {
-      "nombre": "Joaquín Rodrigo Valenzuela Garrido",
-      "inst": "Universidad de Concepción",
-      "email": "joaquin.valenzuelaga@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-053",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Clasificación de nubes de convección celular mesoescalar de celda abierta, cerrada y desorganizada mediante red neuronal convolucional a partir de observaciones satelitales."
-        }
-      ]
-    },
-    {
-      "nombre": "Jonathan Oberreuter",
-      "inst": "Universidad Austral de Chile",
-      "email": "jonysatie@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-050",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "12:20 - 12:35",
-          "sala": "Sala 3.7",
-          "titulo": "Climatología de ríos atmosféricos sobre la plataforma de hielo Larsen C, Península Antártica (1960-2024)"
-        }
-      ]
-    },
-    {
-      "nombre": "Jorge Arévalo",
-      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
-      "email": "jab@meteo.uv.cl",
-      "trabajos": [
-        {
-          "id": "O-046",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "11:50 - 12:05",
-          "sala": "Sala 3.7",
-          "titulo": "Un Radar Móvil para Fenómenos Meteorológicos Extremos y Clima: Fortaleciendo la Investigación y la Resiliencia en Chile"
-        }
-      ]
-    },
-    {
-      "nombre": "Jorge Arévalo B.",
-      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
-      "email": "jab@meteo.uv.cl",
-      "trabajos": [
-        {
-          "id": "P-054",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Caracterización de la variabilidad del manto nival en los Andes del Sur mediante un nuevo producto de SWE."
-        }
-      ]
-    },
-    {
-      "nombre": "Jorge Herrera Bórquez",
-      "inst": "Instituto de Geografía, Pontificia Universidad Católica de Chile",
-      "email": "jherreb@uc.cl",
-      "trabajos": [
-        {
-          "id": "O-012",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "12:35 - 12:50",
-          "sala": "Sala 3.7",
-          "titulo": "Water codependency of the Chilean mediterranean climate-type coastal forest on marine fog"
-        }
-      ]
-    },
-    {
-      "nombre": "Jorge Petit-Laurent Sáez",
-      "inst": "Universidad Adolfo Ibañez",
-      "email": "jpetitlaurent@alumnos.uai.cl",
-      "trabajos": [
-        {
-          "id": "O-024",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "15:20 - 15:35",
-          "sala": "Sala 3.7",
-          "titulo": "Respuesta no lineal de las olas de calor al calentamiento global en simulaciones climáticas regionales"
-        }
-      ]
-    },
-    {
-      "nombre": "José Maria Brabo Alves",
-      "inst": "State University of Ceará – UECE",
-      "email": "braboalves@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-079",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Variability of a Thermal Comfort Index in Subtropical South America: Past Years and the Era of Climate Change"
-        }
-      ]
-    },
-    {
-      "nombre": "José Miguel Olivares Muñoz",
-      "inst": "Proterm S.A",
-      "email": "jmolivares00@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-004",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "11:35 - 11:50",
-          "sala": "Sala 3.7",
-          "titulo": "Sistema integrado de pronóstico meteorológico y modelación de dispersión para  apoyo a la gestión ambiental"
-        }
-      ]
-    },
-    {
-      "nombre": "Juan Alejandro Rojas Castro",
-      "inst": "Universidad de Concepción",
-      "email": "jrojas2019@udec.cl",
-      "trabajos": [
-        {
-          "id": "P-080",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Caracterización espaciotemporal de remolinos de mesoescala mediante un nuevo método de identificación"
-        }
-      ]
-    },
-    {
-      "nombre": "Juan González",
-      "inst": "Escuela de Ciencias de la Tierra, Universidad Andrés Bello",
-      "email": "juan.gonzalez.c@unab.cl",
-      "trabajos": [
-        {
-          "id": "P-025",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Multi-hazard assessment for Iquique, northern Chile, under climate variability: megathrust, tsunami, crustal fault and rainfall-triggered mass movement scenarios"
-        }
-      ]
-    },
-    {
-      "nombre": "Juan Pablo Salazar Ceciliano",
-      "inst": "Universidad Nacional",
-      "email": "juan.salazar.ceciliano@una.cr",
-      "trabajos": [
-        {
-          "id": "P-055",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Variabilidad de temperatura y oxígeno disuelto en una Bahía tropical  de Costa Rica asociada a un forzamiento atmosférico"
         }
       ]
     },
@@ -6893,1140 +5308,6 @@ window.CONGRESO_DATA = {
       ]
     },
     {
-      "nombre": "Kennedy Richard Gomez Tunque",
-      "inst": "Doctoral Program in Water Resources Engineering, Universidad Nacional Agraria La Molina, Lima, Peru  School of Civil Engineering, Faculty of Engineering Sciences, Universidad Nacional de Huancavelica, Huancavelica, Peru",
-      "email": "ingkenri@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-055",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "14:30 - 14:45",
-          "sala": "Sala 3.7",
-          "titulo": "Predictibilidad espacio-temporal de ENOS en el Pacífico tropical: evaluación mediante ConvLSTM en las regiones Niño 3.4 y Niño 1+2"
-        }
-      ]
-    },
-    {
-      "nombre": "Larissa de Paula Miranda",
-      "inst": "Universidade Federal do Rio Grande",
-      "email": "larissagodapaulamiranda@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-026",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Performance of the WaveWatch III model in the study of wind-generated waves during extreme events."
-        }
-      ]
-    },
-    {
-      "nombre": "Laura Gallardo",
-      "inst": "Universidad de Chile, Centro de Ciencia del Clima y la Resiliencia, Departamento de Geofísica",
-      "email": "lgallard@u.uchile.cl",
-      "trabajos": [
-        {
-          "id": "O-063",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "15:50 - 16:05",
-          "sala": "Sala 3.7",
-          "titulo": "Cambios en ozono en Chile Central: identificando precursores"
-        }
-      ]
-    },
-    {
-      "nombre": "Laura Sabina Vásquez López",
-      "inst": "Departamento de Geofísica, Universidad de Concepción, Chile ; Center for Climate and Resilience Research (CR2), Chile",
-      "email": "lavasquez2021@udec.cl",
-      "trabajos": [
-        {
-          "id": "P-056",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Estudio del rol de eventos Puelche en el desarrollo de incendios forestales"
-        }
-      ]
-    },
-    {
-      "nombre": "Leandra Grisel Loyola Giahette",
-      "inst": "Universidad Adolfo Ibañez",
-      "email": "leloyola@alumnos.uai.cl",
-      "trabajos": [
-        {
-          "id": "O-057",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "14:45 - 15:00",
-          "sala": "Sala 3.7",
-          "titulo": "Coastal El Niño and La Niña Events in a Changing Climate: Insights from the CESM2 Large Ensemble"
-        }
-      ]
-    },
-    {
-      "nombre": "Leandro Suarez Atias",
-      "inst": "Watermind",
-      "email": "leandro@watermind.space",
-      "trabajos": [
-        {
-          "id": "O-009",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "12:20 - 12:35",
-          "sala": "Sala 2.5",
-          "titulo": "Del viento al oleaje: forzamiento atmosférico de alta resolución en la modelación hidrodinámica en zonas costeras con fjordos"
-        }
-      ]
-    },
-    {
-      "nombre": "Lenna Oriana Ortiz Castillo",
-      "inst": "Centro de Investigación en Ecosistemas de la Patagonia (CIEP)",
-      "email": "lenna.ortiz@ciep.cl",
-      "trabajos": [
-        {
-          "id": "O-104",
-          "tipo": "Oral",
-          "dia": "Día 4",
-          "horario": "10:45 - 11:00",
-          "sala": "Sala 2.5",
-          "titulo": "Lagrangian deformation shapes oxygen redistribution and biogeochemical processes within Southeast Pacific poleward undercurrent eddies"
-        }
-      ]
-    },
-    {
-      "nombre": "Leonor Gabriela Valdés Calderón",
-      "inst": "Departamento de Geofísica, Universidad de Chile (DGF-UCh)",
-      "email": "leonor.valdes@ug.uchile.cl",
-      "trabajos": [
-        {
-          "id": "P-081",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Recuperación del espesor óptico de aerosoles en el ex-observatorio astronómico solar Montezuma"
-        }
-      ]
-    },
-    {
-      "nombre": "Leonora Pereira Zapata",
-      "inst": "Universidad Técnica Federico Santa María",
-      "email": "leonora.pereira@usm.cl",
-      "trabajos": [
-        {
-          "id": "O-029",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "16:25 - 16:40",
-          "sala": "Sala 2.5",
-          "titulo": "Modelación de la dinámica de plumas en la zona de rompiente mediante modelo no hidrostático SWASH"
-        }
-      ]
-    },
-    {
-      "nombre": "Luca Benito Matías Toloza Martínez",
-      "inst": "Universidad de Chile",
-      "email": "luca.toloza.m@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-030",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "16:25 - 16:40",
-          "sala": "Sala 3.7",
-          "titulo": "Caracterización del calentamiento en altura durante la transición matutina en el valle de Santiago para el periodo frío mediante modelación de alta resolución"
-        }
-      ]
-    },
-    {
-      "nombre": "Lucía Scaff",
-      "inst": "Departamento de Geofísica, Universidad de Concepción & CR2",
-      "email": "mscaff@udec.cl",
-      "trabajos": [
-        {
-          "id": "O-042",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "10:45 - 11:00",
-          "sala": "Sala 3.7",
-          "titulo": "Contribución de la convección al total de precipitación invernal y sus cambios en un futuro más cálido"
-        }
-      ]
-    },
-    {
-      "nombre": "Luis Andrés Bravo Gómez",
-      "inst": "Universidad Católica del Norte",
-      "email": "luis.bravo@ucn.cl",
-      "trabajos": [
-        {
-          "id": "O-031",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "16:40 - 16:55",
-          "sala": "Sala 2.5",
-          "titulo": "Respuesta oceánica al rotor del esfuerzo del viento y su importancia en el sistema costero en la zona centro-norte de Chile (30° S)"
-        }
-      ]
-    },
-    {
-      "nombre": "Luis P. Valencia",
-      "inst": "Instituto Universitario de Investigación en Acuicultura Sostenible y Ecosistemas Marinos, Universidad de Las Palmas de Gran Canaria, Las Palmas de Gran Canaria, Las Palmas, España.",
-      "email": "luis.valencia102@alu.ulpgc.es",
-      "trabajos": [
-        {
-          "id": "O-086",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "14:15 - 14:30",
-          "sala": "Sala 2.5",
-          "titulo": "Modulación del campo de ondas internas por un remolino intratermoclina: el caso de Bentayga"
-        }
-      ]
-    },
-    {
-      "nombre": "Luis Patricio Riquelme Merino",
-      "inst": "Instituto de Estadística, Facultad de Ciencias, Universidad de Valparaíso",
-      "email": "l.patricio.riquelme25@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-085",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "12:35 - 12:50",
-          "sala": "Sala 3.7",
-          "titulo": "Inferencia Estocástica y Calibración en Modelos de Ensamble Meteorológico: Un Enfoque Asimétrico fundamentado en la Teoría de la Información"
-        }
-      ]
-    },
-    {
-      "nombre": "Luke Carberry",
-      "inst": "University of California Santa Barbara",
-      "email": "lcarberry@ucsb.edu",
-      "trabajos": [
-        {
-          "id": "O-108",
-          "tipo": "Oral",
-          "dia": "Día 4",
-          "horario": "11:35 - 11:50",
-          "sala": "Sala 2.5",
-          "titulo": "Nitracline depth modulates inner-shelf phytoplankton responses to wind-driven upwelling in the Santa Barbara Channel, USA"
-        },
-        {
-          "id": "P-057",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Oceanographic forcing of alongshore covariability in Macrocystis pyrifera biomass in Chile"
-        }
-      ]
-    },
-    {
-      "nombre": "Macarena Isadora Pérez Cuevas",
-      "inst": "Universidad Austral de Chile",
-      "email": "maca.pprz@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-026",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "15:35 - 15:50",
-          "sala": "Sala 3.7",
-          "titulo": "Climatología de olas de calor sobre un glaciar templado andino y su impacto en el derretimiento"
-        }
-      ]
-    },
-    {
-      "nombre": "Manuel Suazo Álvarez",
-      "inst": "Laboratorio de Dendrocronología y Cambio Global, Universidad Austral de Chile, Valdivia, Chile; Centro de Ciencia del Clima y la Resiliencia CR2",
-      "email": "manu.suazo@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-016",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "14:20 - 14:35",
-          "sala": "Sala 3.7",
-          "titulo": "Señales intraestacionales precursoras de incendios forestales extremos en Chile centro-sur"
-        },
-        {
-          "id": "P-027",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Cambios en la circulación de la atmósfera y del clima regional están alterando procesos biológicos en los bosques subantárticos de Sudamérica"
-        }
-      ]
-    },
-    {
-      "nombre": "Marcel Ramos Quezada",
-      "inst": "Universidad Católica del Norte",
-      "email": "marcel.ramos.q780@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-070",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "10:30 - 10:45",
-          "sala": "Sala 2.5",
-          "titulo": "Contribución relativa del transporte geostrófico y de Ekman a la circulación en la zona centro norte de Chile (28.5°S – 30.5°S)"
-        }
-      ]
-    },
-    {
-      "nombre": "Marcelo Madariaga-Burgos",
-      "inst": "Departamento de Geofísica, Universidad de Chile; Centro de Acción Climática, Pontificia Universidad Católica de Valparaíso",
-      "email": "marcelo.madariaga@pucv.cl",
-      "trabajos": [
-        {
-          "id": "P-082",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Cambios futuros proyectados en el límite lluvia-nieve en cuencas andinas de Chile central y sus impacto hidrológico"
-        }
-      ]
-    },
-    {
-      "nombre": "Marcus Sobarzo",
-      "inst": "Departamento de Oceanografía, COPAS COASTAL, Universidad de Concepción",
-      "email": "msobarz@udec.cl",
-      "trabajos": [
-        {
-          "id": "O-068",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "10:15 - 10:30",
-          "sala": "Sala 2.5",
-          "titulo": "Surgencia costera en Chile Centro Sur: Estado del conocimiento y tendencias en el enfriamiento superficial de los últimos 80 años"
-        }
-      ]
-    },
-    {
-      "nombre": "Mariana Hidalgo",
-      "inst": "Universidad Técnica Federico Santa María y AMTC",
-      "email": "miguel.lagos@usm.cl",
-      "trabajos": [
-        {
-          "id": "O-081",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "12:05 - 12:20",
-          "sala": "Sala 3.7",
-          "titulo": "Evaluación del valor agregado de modelos climáticos regionales en la representación de índices de precipitación extrema en Chile continental"
-        }
-      ]
-    },
-    {
-      "nombre": "Maricarmen Guerra Paris",
-      "inst": "Departamento Ingeniería Civil, Universidad de Concepción; COPAS Coastal",
-      "email": "marguerra@udec.cl",
-      "trabajos": [
-        {
-          "id": "O-037",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "10:15 - 10:30",
-          "sala": "Sala 2.5",
-          "titulo": "Variaciones del nivel del mar total durante eventos meteorológicos y de oleaje extremos en la región del Biobío"
-        }
-      ]
-    },
-    {
-      "nombre": "Marina Hernández",
-      "inst": "CopernicusLAC Chile",
-      "email": "marina.hernandez@uchile.cl",
-      "trabajos": [
-        {
-          "id": "P-083",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Representación regional de la temperatura superficial del mar en Latinoamérica y el Caribe mediante integración multisensor y reconstrucción espacial"
-        }
-      ]
-    },
-    {
-      "nombre": "Mario Andrés Cáceres Soto",
-      "inst": "UNAB - IMO",
-      "email": "mario.caceres.soto@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-084",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Evaluación de Deep Learning para reducir el sesgo de TSM en modelos oceánicos en el norte de Chile"
-        }
-      ]
-    },
-    {
-      "nombre": "Mario Cáceres Muñoz",
-      "inst": "Universidad de Valparaíso",
-      "email": "mario.caceres@uv.cl",
-      "trabajos": [
-        {
-          "id": "O-033",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "16:55 - 17:10",
-          "sala": "Sala 2.5",
-          "titulo": "CONTRACORRIENTE COSTERA EN UNA BAHÍA DE BORDE ORIENTAL ABIERTA HACIA EL ECUADOR"
-        }
-      ]
-    },
-    {
-      "nombre": "María Fabiola Monsálvez Opazo",
-      "inst": "Programa de Magíster en Ciencias con mención en Oceanografía, Universidad de Concepción; Centro de Investigación Oceanográfica COPAS Coastal, Universidad de Concepción; Departamento de Oceanografía, Facultad de Ciencias Naturales y Oceanográficas, Universidad de Concepción.",
-      "email": "marmonsalvez@udec.cl",
-      "trabajos": [
-        {
-          "id": "O-094",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "15:50 - 16:05",
-          "sala": "Sala 2.5",
-          "titulo": "Variabilidad oceanográfica interanual  en un sistema de surgencia de borde oriental"
-        }
-      ]
-    },
-    {
-      "nombre": "María Fernanda Ruedlinger",
-      "inst": "Departamento de Geofísica, Universidad de Chile",
-      "email": "amanda.magnere@ug.uchile.cl",
-      "trabajos": [
-        {
-          "id": "P-085",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Influencia de los incendios forestales en el derretimiento glaciar: cambios en el albedo de los glaciares de la cuenca alta del río Olivares tras el incendio de “Las Máquinas” debido a la deposición de partículas absorbentes de luz"
-        }
-      ]
-    },
-    {
-      "nombre": "María Paz Almendra Riquelme",
-      "inst": "Unversidad Austral  de Chile",
-      "email": "maria.almendra@alumnos.uach.cl",
-      "trabajos": [
-        {
-          "id": "O-062",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "15:50 - 16:05",
-          "sala": "Sala 2.5",
-          "titulo": "Cañones submarinos como motores de surgimiento de Agua Circumpolar Profunda a la plataforma continental en las Islas Shetland del Sur, Península Antártica"
-        }
-      ]
-    },
-    {
-      "nombre": "María Victoria Moya",
-      "inst": "Pontificia Universidad Católica de Chile",
-      "email": "moyav.victoria@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-086",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Identificación y clasificación de mecanismos generadores de olas de calor en Chile central"
-        }
-      ]
-    },
-    {
-      "nombre": "María de los Ángeles Marrero Díaz",
-      "inst": "Instituto Universitario de Investigación en Acuicultura Sostenible y Ecosistemas Marinos (ECOAQUA), Universidad de Las Palmas de Gran Canaria (ULPGC). España.",
-      "email": "angeles.marrero@ulpgc.es",
-      "trabajos": [
-        {
-          "id": "O-058",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "15:00 - 15:15",
-          "sala": "Sala 2.5",
-          "titulo": "Transformación y mezcla de masas de agua en el Estrecho de Bransfield (Antártida) a partir de series históricas de datos hidrográficos"
-        }
-      ]
-    },
-    {
-      "nombre": "Martina Raquel Monasterio Sandoval",
-      "inst": "Universidad Técnica Federico Santa Maria",
-      "email": "martina.monasterio@sansano.usm.cl",
-      "trabajos": [
-        {
-          "id": "O-082",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "12:20 - 12:35",
-          "sala": "Sala 2.5",
-          "titulo": "Propagación de la marea barotrópica por un estrecho interoceánico."
-        }
-      ]
-    },
-    {
-      "nombre": "Martín Jacques-Coper",
-      "inst": "Departamento de Geofísica / CR2 / COPAS Coastal, Universidad de Concepción, Concepción, Chile",
-      "email": "martinjacques@udec.cl",
-      "trabajos": [
-        {
-          "id": "O-020",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "14:50 - 15:05",
-          "sala": "Sala 3.7",
-          "titulo": "Wildfires and Weather Variability in South-Central Chile: Meteorology for Risk Reduction"
-        }
-      ]
-    },
-    {
-      "nombre": "Matias Pizarro-Koch",
-      "inst": "Instituto Milenio de Oceanografía (IMO)",
-      "email": "matias.pizarrok@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-087",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Variabilidad temporal de la presión de fondo en la Fosa de Atacama: observaciones, estructura vertical e implicancias para la dinámica del océano profundo"
-        }
-      ]
-    },
-    {
-      "nombre": "Matías Andrés Briceño Yañez",
-      "inst": "Universidad de Chile",
-      "email": "mabricenoyanez@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-088",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "CONTRIBUCIÓN RELATIVA DEL FORZAMIENTO ANTROPOGÉNICO A LA MANCHA CÁLIDA DEL SUR Y EL DIPOLO DE PRESIÓN MEDIANTE ENSAMBLES  CMIP6"
-        }
-      ]
-    },
-    {
-      "nombre": "Matías Arias Ortega",
-      "inst": "Universidad de Costa Rica",
-      "email": "matiasarias97@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-067",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "10:00 - 10:15",
-          "sala": "Sala 3.7",
-          "titulo": "Patrones de teleconexión entre la Oscilación Antártica y las corrientes en chorro de bajo nivel del CHOCÓ y del Caribe"
-        }
-      ]
-    },
-    {
-      "nombre": "Matías Guzmán Muñoz",
-      "inst": "Universidad Austral de Chile",
-      "email": "mguzman.geof@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-087",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "14:15 - 14:30",
-          "sala": "Sala 3.7",
-          "titulo": "Productos de alta resolución para mejorar la comprensión de la variabilidad y de la predictibilidad hidroclimática para Chile Centro-Sur"
-        }
-      ]
-    },
-    {
-      "nombre": "Matías Nicolás Martínez Fernández",
-      "inst": "Universidad de Chile",
-      "email": "matiasm815@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-058",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Evaluación del desempeño del modelo WRF en la representación del efecto Föhn asociado a un Río Atmosférico en la Península Antártica (Febrero 2022)"
-        }
-      ]
-    },
-    {
-      "nombre": "Matías Pizarro-Koch",
-      "inst": "Instituto Milenio de Oceanografía",
-      "email": "matias.pizarrok@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-102",
-          "tipo": "Oral",
-          "dia": "Día 4",
-          "horario": "10:30 - 10:45",
-          "sala": "Sala 2.5",
-          "titulo": "Intensificación de los flujos de oxígeno asociados a remolinos de mesoescala durante eventos extremos de El Niño frente a Chile central: un enfoque numérico"
-        }
-      ]
-    },
-    {
-      "nombre": "Matías Troncoso-Villar",
-      "inst": "Departamento de Ingeniería Hidráulica y Ambiental, Pontificia Universidad Católica de Chile",
-      "email": "mtroncosov8@estudiante.uc.cl",
-      "trabajos": [
-        {
-          "id": "P-059",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Entre \"postimpresionismo\" y \"vanguardia\", variabilidad acústica y dinámica física bajo la influencia de una pluma fluvial en un fiordo chileno"
-        }
-      ]
-    },
-    {
-      "nombre": "Mauro Pinto-Juica",
-      "inst": "University of Gothenburg",
-      "email": "mauro.pinto.j@gu.se",
-      "trabajos": [
-        {
-          "id": "O-110",
-          "tipo": "Oral",
-          "dia": "Día 4",
-          "horario": "11:50 - 12:05",
-          "sala": "Sala 2.5",
-          "titulo": "Mauro Pinto"
-        }
-      ]
-    },
-    {
-      "nombre": "Maximiliano Viale",
-      "inst": "IANIGLA, CONICET, Mendoza, Argentina",
-      "email": "maxiviale@mendoza-conicet.gob.ar",
-      "trabajos": [
-        {
-          "id": "O-028",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "16:10 - 16:25",
-          "sala": "Sala 3.7",
-          "titulo": "Condiciones Meteorológicas Extremas en la Cima del Aconcagua (6940m)"
-        }
-      ]
-    },
-    {
-      "nombre": "Mayra Antonia Espinoza Ponce",
-      "inst": "Pontificia Universidad Católica de Valparaíso (PUCV)",
-      "email": "mayraespinoza.p212@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-060",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Recuperación estacional y erosión de largo plazo en una playa de bolsillo: análisis morfodinámico con perfiles topográficos e imágenes satelitales."
-        }
-      ]
-    },
-    {
-      "nombre": "Megan Williams",
-      "inst": "Pontificia Universidad Católica de Chile",
-      "email": "megan.williams@uc.cl",
-      "trabajos": [
-        {
-          "id": "O-021",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "15:05 - 15:20",
-          "sala": "Sala 2.5",
-          "titulo": "Hydrologic connectivity in semi-arid coastal lagoons: contrasting roles of oceanic and groundwater exchange"
-        }
-      ]
-    },
-    {
-      "nombre": "Mónica Carolina Alvarado Niño",
-      "inst": "Shoa",
-      "email": "m.alvarado.nino@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-089",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Actualización de climatología de Nivel del mar y Temperatura Superficial del Mar"
-        }
-      ]
-    },
-    {
-      "nombre": "Natalia Elena Ruiz Zenteno",
-      "inst": "Departamento de Geofísica, Universidad de Concepción & Centro de Ciencia del Clima y la Resiliencia",
-      "email": "naruiz2019@udec.cl",
-      "trabajos": [
-        {
-          "id": "O-018",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "14:35 - 14:50",
-          "sala": "Sala 3.7",
-          "titulo": "Umbrales meteorológicos críticos para el desarrollo de incendios forestales en subregiones de Chile centro-sur"
-        }
-      ]
-    },
-    {
-      "nombre": "Nataly Alejandra Antipil Huenchumán",
-      "inst": "Universidad de Concepción",
-      "email": "nantipil2020@udec.cl",
-      "trabajos": [
-        {
-          "id": "O-059",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "15:00 - 15:15",
-          "sala": "Sala 3.7",
-          "titulo": "Rutas Oceánicas y Atmosféricas que Modulan el Balance de Calor en el Pacífico Suroriental durante diversos eventos ENOS"
-        }
-      ]
-    },
-    {
-      "nombre": "Nelson Quispe Gutiérrez",
-      "inst": "SENAMHI - Perú",
-      "email": "nelsonqg@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-043",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "11:00 - 11:15",
-          "sala": "Sala 3.7",
-          "titulo": "Patrones de circulación asociados a una tormenta de polvo y arena en la costa central del Perú"
-        }
-      ]
-    },
-    {
-      "nombre": "Nicolás Andrés Donoso Castro",
-      "inst": "INNOVEX",
-      "email": "nicolas.donoso@innovex.cl",
-      "trabajos": [
-        {
-          "id": "O-054",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "14:30 - 14:45",
-          "sala": "Sala 2.5",
-          "titulo": "FANtracker: plataforma autónoma de perfilado oceanográfico continuo, validación técnica y aplicación en salmonicultura."
-        }
-      ]
-    },
-    {
-      "nombre": "Nicolás Carrasco-Ilabaca",
-      "inst": "Laboratorio de Dendrocronología y Cambio Global, Facultad de Ciencias Forestales y Recursos Naturales, Universidad Austral de Chile",
-      "email": "nicolas.carrasco01@uach.cl",
-      "trabajos": [
-        {
-          "id": "P-090",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Mecanismos climáticos, radiativos y ontogénicos del daño por helada primaveral en Austrocedrus chilensis"
-        }
-      ]
-    },
-    {
-      "nombre": "Nicolás Huneeus",
-      "inst": "Universidad de Chile",
-      "email": "nhuneeus@uchile.cl",
-      "trabajos": [
-        {
-          "id": "O-065",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "16:05 - 16:20",
-          "sala": "Sala 3.7",
-          "titulo": "IMPACTO DEL CAMBIO CLIMÁTICO Y LA MITIGACIÓN DE EMISIONES RESIDENCIALES SOBRE LA CALIDAD DEL AIRE FUTURA EN EL CENTRO-SUR DE CHILE"
-        }
-      ]
-    },
-    {
-      "nombre": "Nicolás Leonardo Mora Carrera",
-      "inst": "Universidad de Valparaiso",
-      "email": "nicolas.mora@estudiantes.uv.cl",
-      "trabajos": [
-        {
-          "id": "P-091",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Estimation of dew production using an analytical model and CORDEX regional climate models"
-        }
-      ]
-    },
-    {
-      "nombre": "Nicole Alejandra Zárate Morales",
-      "inst": "Departamento de Geofísica, Universidad de Chile",
-      "email": "nicole.zarate@ug.uchile.cl",
-      "trabajos": [
-        {
-          "id": "P-028",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Caracterización de compuestos orgánicos volátiles mediante PTR-TOF-MS: validación instrumental y análisis de dispersión en la zona urbana-industrial de Concón."
-        }
-      ]
-    },
-    {
-      "nombre": "Noelia Vejar Ulloa",
-      "inst": "(1)Departamento de Geofísica, Facultad de Ciencias Físicas y Matemáticas, Universidad de Concepción, Concepción, Chile. (2) Programa de Magister en Geofísica, Departamento de Geofísica, Facultad de Ciencias Físicas y Matemáticas, Universidad de Concepción, Concepción, Chile.",
-      "email": "nvejar2019@udec.cl",
-      "trabajos": [
-        {
-          "id": "O-071",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "10:30 - 10:45",
-          "sala": "Sala 3.7",
-          "titulo": "Impacto del cambio climático en la actividad de remolinos de mesoescala y su transporte de calor en el Pacífico suroriental"
-        }
-      ]
-    },
-    {
-      "nombre": "Noémie Schifano",
-      "inst": "IMO",
-      "email": "noemie.schifano@imo-chile.cl",
-      "trabajos": [
-        {
-          "id": "P-092",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Numerical Mixing and Deep-Ocean Dynamics in the Atacama Trench"
-        }
-      ]
-    },
-    {
-      "nombre": "Odette Alejandra Vergara Soto",
-      "inst": "Simulación y Pronóstico Marino, SpA",
-      "email": "oddyale@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-061",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Desarrollo de un modelo físico-biogeoquímico en la Patagonia norte de Chile"
-        }
-      ]
-    },
-    {
-      "nombre": "Oscar pizarro",
-      "inst": "Departamento de Geofísica (DGEO), Instituto Milenio de Oceanografía (IMO) y Centro de Instrumentación Oceanográfica (CIO), Universidad de Concepción (UdeC)",
-      "email": "opizarro@udec.cl",
-      "trabajos": [
-        {
-          "id": "O-074",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "11:00 - 11:15",
-          "sala": "Sala 2.5",
-          "titulo": "Circulación profunda y mezcla en la Fosa de Atacama"
-        }
-      ]
-    },
-    {
-      "nombre": "Osvaldo Enrique Artal Arrieta",
-      "inst": "Universidad de La Frontera",
-      "email": "osvaldo.artal@ufrontera.cl",
-      "trabajos": [
-        {
-          "id": "O-019",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "14:50 - 15:05",
-          "sala": "Sala 2.5",
-          "titulo": "Hydrostatic versus nonhydrostatic modeling of internal hydraulic transitions and lee waves in a stratified tidal channel"
-        }
-      ]
-    },
-    {
-      "nombre": "Ovidio Llompart",
-      "inst": "Universidad de Concepción",
-      "email": "ollompart@udec.cl",
-      "trabajos": [
-        {
-          "id": "O-107",
-          "tipo": "Oral",
-          "dia": "Día 4",
-          "horario": "11:20 - 11:35",
-          "sala": "Sala 3.7",
-          "titulo": "Evaluación de los moduladores climáticos de la variabilidad del viento en América del Sur y sus efectos sobre la generación eólica futura"
-        }
-      ]
-    },
-    {
-      "nombre": "Pablo Antonio Herrera Klarian",
-      "inst": "Universidad de Valparaíso",
-      "email": "herreraklarian@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-062",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Pablo Herrera Klarian"
-        }
-      ]
-    },
-    {
-      "nombre": "Pablo Córdova Montecinos",
-      "inst": "Pontificia Universidad Católica de Chile / Red Ocean",
-      "email": "pablo.cordova.m@mail.pucv.cl",
-      "trabajos": [
-        {
-          "id": "O-027",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "16:10 - 16:25",
-          "sala": "Sala 2.5",
-          "titulo": "Detección de patrones turbulentos a partir de la distribución de burbujas en la zona de rompiente: experimentos mediante simulación LES en 2D"
-        }
-      ]
-    },
-    {
-      "nombre": "Pablo Ignacio Hernández Tapia",
-      "inst": "Universidad Técnica Federico Santa María",
-      "email": "pablo.hernandezt@usm.cl",
-      "trabajos": [
-        {
-          "id": "O-015",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "14:20 - 14:35",
-          "sala": "Sala 2.5",
-          "titulo": "Dinámica de Estuarios de Pequeña Escala Bajo la Influencia de Onda de Infragravedad"
-        }
-      ]
-    },
-    {
-      "nombre": "Pablo Sandoval Matamala",
-      "inst": "Universidad de Concepción",
-      "email": "pasandoval2021@udec.cl",
-      "trabajos": [
-        {
-          "id": "P-093",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Influencia de la Oscilación Madden-Julian sobre la intensidad y posición de la Alta de Bolivia"
-        }
-      ]
-    },
-    {
-      "nombre": "Paula Virginia Barbosa-Peñaloza",
-      "inst": "Escuela de Ciencias del Mar y Núcleo Milenio para el Estudio de la Desoxigenación en el Océano Pacífico Sur oriental (DEOXS), Pontificia Universidad Católica de Valparaíso, Chile.",
-      "email": "paula.barbosa.p@mail.pucv.cl",
-      "trabajos": [
-        {
-          "id": "P-063",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Dinámica biogeoquímica en la bahía de Valparaíso: Serie temporal frente a Montemar (2023 - 2025)"
-        }
-      ]
-    },
-    {
-      "nombre": "Poliana Teresa Leiva Garay",
-      "inst": "Universidad de Concepción, Chile",
-      "email": "poliana.lega@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-088",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "14:30 - 14:45",
-          "sala": "Sala 2.5",
-          "titulo": "Variabilidad de Submesoescala de la Temperatura Superficial del Mar a partir de un Índice de Heterogeneidad"
-        }
-      ]
-    },
-    {
-      "nombre": "Raúl Flores Audibert",
-      "inst": "Universidad Técnica Federico Santa María",
-      "email": "raul.flores@usm.cl",
-      "trabajos": [
-        {
-          "id": "O-017",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "14:35 - 14:50",
-          "sala": "Sala 2.5",
-          "titulo": "Control morfológico de la propagación mareal en un estuario de barra: caso del Río Maipo, Chile central"
-        }
-      ]
-    },
-    {
-      "nombre": "Raúl Valenzuela",
-      "inst": "Instituto de Cs. de la Ingeniería, Universidad de O’Higgins, Rancagua y Centro de Cs. del Clima y la Resiliencia (CR2), Universidad de Chile, Santiago",
-      "email": "raul.valenzuela@uoh.cl",
-      "trabajos": [
-        {
-          "id": "O-048",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "12:05 - 12:20",
-          "sala": "Sala 3.7",
-          "titulo": "Atmospheric River Detection And Tracking Tool (AR-DATT): una herramienta para el estudio regional de Ríos Atmosféricos"
-        },
-        {
-          "id": "P-064",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Consistencia en la Representación Microfísica de ERA5: un caso de estudio en Rancagua"
-        }
-      ]
-    },
-    {
-      "nombre": "René Garreaud",
-      "inst": "Departamento de Geofísica, Universidad de Chile",
-      "email": "rgarreau@uchile.cl",
-      "trabajos": [
-        {
-          "id": "O-032",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "16:40 - 16:55",
-          "sala": "Sala 3.7",
-          "titulo": "Entendiendo el gradiente orográfico de precipitación en Chile central"
-        }
-      ]
-    },
-    {
-      "nombre": "Ricardo Muñoz",
-      "inst": "Departamento de Geofísica, Universidad de Chile",
-      "email": "rmunoz@dgf.uchile.cl",
-      "trabajos": [
-        {
-          "id": "O-034",
-          "tipo": "Oral",
-          "dia": "Día 1",
-          "horario": "16:55 - 17:10",
-          "sala": "Sala 3.7",
-          "titulo": "La piscina de aire frío sobre el Salar del Huasco"
-        }
-      ]
-    },
-    {
-      "nombre": "Ricardo Muñoz Magnino",
-      "inst": "Departamento de Geofísica, U. de Chile",
-      "email": "rmunoz@dgf.uchile.cl",
-      "trabajos": [
-        {
-          "id": "P-065",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Viento en altura sobre Santiago: comparación de distintas bases de datos"
-        }
-      ]
-    },
-    {
-      "nombre": "Roberto Francisco Rondanelli Rojas",
-      "inst": "Departamento de Geofísica, Universidad de Chile",
-      "email": "roberto.rondanelli@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-094",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Una base de datos de precipitación con control de calidad y corrección por viento acotada y modulada por intensidad en Cerro Tres Puntas (3700 m), Chile central"
-        }
-      ]
-    },
-    {
-      "nombre": "Roberto Rondanelli Rojas",
-      "inst": "DGF-Uchile, CR2-Uchile",
-      "email": "roberto.rondanelli@gmail.com",
-      "trabajos": [
-        {
-          "id": "O-044",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "11:15 - 11:30",
-          "sala": "Sala 3.7",
-          "titulo": "Radar satelital revela precipitación orográfica asociada a flujo bloqueado sobre la Península Antártica"
-        }
-      ]
-    },
-    {
-      "nombre": "Rodolfo Adrián Gómez Sepúlveda",
-      "inst": "Pontificia Universidad Católica de Chile",
-      "email": "rodogomez@estudiante.uc.cl",
-      "trabajos": [
-        {
-          "id": "P-095",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Modulación morfológica en desembocadura costera frente a procesos oceanográficos a partir de percepción remota de alta resolución"
-        }
-      ]
-    },
-    {
-      "nombre": "Rodrigo Castillo Rodríguez",
-      "inst": "Universidad de Costa Rica",
-      "email": "rodrigo.castillorodriguez@ucr.ac.cr",
-      "trabajos": [
-        {
-          "id": "O-069",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "10:15 - 10:30",
-          "sala": "Sala 3.7",
-          "titulo": "Oscilación Antártica: su influencia en la variabilidad interanual de la precipitación en Costa Rica"
-        }
-      ]
-    },
-    {
-      "nombre": "Romain Bailly",
-      "inst": "Facultad de Ciencias Físicas y Matématicas - Universidad de Chile",
-      "email": "romain.bailly@ug.uchile.cl",
-      "trabajos": [
-        {
-          "id": "P-096",
-          "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Atenuación de la radiación ultravioleta y visible superficial por una pluma volcánica fresca: un estudio de transferencia radiativa espacialmente distribuido y sus implicancias para la generación de energía solar"
-        }
-      ]
-    },
-    {
       "nombre": "Rosa Carolina Zamora Aguirre",
       "inst": "Pontificia Universidad Católica de Valparaíso",
       "email": "rosa.zamora@pucv.cl",
@@ -8042,17 +5323,47 @@ window.CONGRESO_DATA = {
       ]
     },
     {
-      "nombre": "Salma Juliette Espinoza Rivera",
-      "inst": "Universidad de Concepción",
-      "email": "saespinoza2019@udec.cl",
+      "nombre": "Ivan Almendra",
+      "inst": "CEAZA",
+      "email": "ialmendra.a.g@gmail.com",
       "trabajos": [
         {
-          "id": "O-100",
+          "id": "O-090",
           "tipo": "Oral",
-          "dia": "Día 4",
-          "horario": "10:15 - 10:30",
+          "dia": "Día 3",
+          "horario": "14:45 - 15:00",
           "sala": "Sala 2.5",
-          "titulo": "Nuevos hallazgos sobre los procesos de mezcla diapícnica en la Zona de Mínimo Oxígeno frente al Norte de Chile"
+          "titulo": "Energy potential of intraseasonal coastal-trapped waves along the Peru–Chile coast"
+        }
+      ]
+    },
+    {
+      "nombre": "Ignacio Nicolás Ryks Alvarado",
+      "inst": "Universidad Técnica Federico Santa María",
+      "email": "ignacio.ryks@usm.cl",
+      "trabajos": [
+        {
+          "id": "O-025",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "15:35 - 15:50",
+          "sala": "Sala 2.5",
+          "titulo": "DISTRIBUCIÓN LONGITUDINAL DE SALINIDAD EN LA ZONA DE ROMPIENTE DE UNA DESEMBOCADURA DE PEQUEÑA ESCALA"
+        }
+      ]
+    },
+    {
+      "nombre": "José Maria Brabo Alves",
+      "inst": "State University of Ceará – UECE",
+      "email": "braboalves@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-079",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Variability of a Thermal Comfort Index in Subtropical South America: Past Years and the Era of Climate Change"
         }
       ]
     },
@@ -8088,107 +5399,242 @@ window.CONGRESO_DATA = {
       ]
     },
     {
-      "nombre": "Sebastián Andrés Díaz Ceballos",
-      "inst": "Universidad del Bío-bio",
-      "email": "sebastian.diaz2502@alumnos.ubiobio.cl",
+      "nombre": "Francisca Esperanza Mendoza Arcos",
+      "inst": "Universidad de Chile",
+      "email": "francishope05@gmail.com",
       "trabajos": [
         {
-          "id": "O-064",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "16:05 - 16:20",
-          "sala": "Sala 2.5",
-          "titulo": "Upwelling circulation and cross-shore exchanges around a long submarine canyon: A modelling study"
-        }
-      ]
-    },
-    {
-      "nombre": "Sebastián Andrés García Loyola",
-      "inst": "COPAS-Coastal (Universidad de Concepción)",
-      "email": "sebastianloyola@oceanografia.udec.cl",
-      "trabajos": [
-        {
-          "id": "P-031",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Air-Sea-Wave Interactions During the 2023/2024 Extreme Atmospheric Rivers in Biobío: Preliminary Coupled Modeling Results"
-        }
-      ]
-    },
-    {
-      "nombre": "Sebastián Orlando Durán Torres",
-      "inst": "Pontificia Universidad Católica de Valparaiso (PUCV) - Fundación San Ignacio del Huinay (FSIH)",
-      "email": "sebastian.duran.torres@gmail.com",
-      "trabajos": [
-        {
-          "id": "P-066",
+          "id": "P-046",
           "tipo": "Póster",
           "dia": "Día 3",
           "horario": "17:00 - 19:00",
           "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Variabilidad espacio-temporal de las propiedades físico-químicas del sistema oceanográfico del fiordo Comau"
+          "titulo": "Relación de la intensidad de la precipitación a escala subdiaria con la temperatura y vapor de agua en Chile central"
         }
       ]
     },
     {
-      "nombre": "Sergio A. Rosales",
-      "inst": "Innovación Ambiental Consultores SpA",
-      "email": "srosales@iacspa.cl",
+      "nombre": "Osvaldo Enrique Artal Arrieta",
+      "inst": "Universidad de La Frontera",
+      "email": "osvaldo.artal@ufrontera.cl",
       "trabajos": [
         {
-          "id": "O-005",
+          "id": "O-019",
           "tipo": "Oral",
           "dia": "Día 1",
+          "horario": "14:50 - 15:05",
+          "sala": "Sala 2.5",
+          "titulo": "Hydrostatic versus nonhydrostatic modeling of internal hydraulic transitions and lee waves in a stratified tidal channel"
+        }
+      ]
+    },
+    {
+      "nombre": "Jorge Arévalo",
+      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
+      "email": "jab@meteo.uv.cl",
+      "trabajos": [
+        {
+          "id": "O-046",
+          "tipo": "Oral",
+          "dia": "Día 2",
           "horario": "11:50 - 12:05",
-          "sala": "Sala 2.5",
-          "titulo": "Caracterización oceanográfica y modelación hidrodinámica tridimensional multianual del Estrecho de Magallanes y Seno Skyring"
+          "sala": "Sala 3.7",
+          "titulo": "Un Radar Móvil para Fenómenos Meteorológicos Extremos y Clima: Fortaleciendo la Investigación y la Resiliencia en Chile"
         }
       ]
     },
     {
-      "nombre": "Sergio Andrés Bahamóndez Palza",
-      "inst": "Universidad de Concepción",
-      "email": "sbahamondez@udec.cl",
+      "nombre": "Leandro Suarez Atias",
+      "inst": "Watermind",
+      "email": "leandro@watermind.space",
       "trabajos": [
         {
-          "id": "O-007",
+          "id": "O-009",
           "tipo": "Oral",
           "dia": "Día 1",
-          "horario": "12:05 - 12:20",
+          "horario": "12:20 - 12:35",
           "sala": "Sala 2.5",
-          "titulo": "Dinámica de los seiches internos en el Fiordo Reloncaví: un estudio numérico CROCO-WRF"
+          "titulo": "Del viento al oleaje: forzamiento atmosférico de alta resolución en la modelación hidrodinámica en zonas costeras con fjordos"
         }
       ]
     },
     {
-      "nombre": "Simón Ismael Reyes Valentin",
-      "inst": "LOFISAT, Universidad de Valparaíso",
-      "email": "monreyes10@gmail.com",
+      "nombre": "Raúl Flores Audibert",
+      "inst": "Universidad Técnica Federico Santa María",
+      "email": "raul.flores@usm.cl",
       "trabajos": [
         {
-          "id": "P-098",
+          "id": "O-017",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "14:35 - 14:50",
+          "sala": "Sala 2.5",
+          "titulo": "Control morfológico de la propagación mareal en un estuario de barra: caso del Río Maipo, Chile central"
+        }
+      ]
+    },
+    {
+      "nombre": "Jorge Arévalo B.",
+      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
+      "email": "jab@meteo.uv.cl",
+      "trabajos": [
+        {
+          "id": "P-054",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Caracterización de la variabilidad del manto nival en los Andes del Sur mediante un nuevo producto de SWE."
+        }
+      ]
+    },
+    {
+      "nombre": "Romain Bailly",
+      "inst": "Facultad de Ciencias Físicas y Matématicas - Universidad de Chile",
+      "email": "romain.bailly@ug.uchile.cl",
+      "trabajos": [
+        {
+          "id": "P-096",
           "tipo": "Póster",
           "dia": "Día 4",
           "horario": "13:30 - 15:00",
           "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Variabilidad submareal de la circulación profunda y su influencia sobre el oxígeno disuelto en un fiordo patagónico de cuatro capas"
+          "titulo": "Atenuación de la radiación ultravioleta y visible superficial por una pluma volcánica fresca: un estudio de transferencia radiativa espacialmente distribuido y sus implicancias para la generación de energía solar"
         }
       ]
     },
     {
-      "nombre": "Sofía Palacios Riveros",
-      "inst": "Universidad de Concepción y Centro de Investigación Oceanográfica COPAS Coastal UdeC.",
-      "email": "spalacios2019@udec.cl",
+      "nombre": "Paula Virginia Barbosa-Peñaloza",
+      "inst": "Escuela de Ciencias del Mar y Núcleo Milenio para el Estudio de la Desoxigenación en el Océano Pacífico Sur oriental (DEOXS), Pontificia Universidad Católica de Valparaíso, Chile.",
+      "email": "paula.barbosa.p@mail.pucv.cl",
       "trabajos": [
         {
-          "id": "O-060",
+          "id": "P-063",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Dinámica biogeoquímica en la bahía de Valparaíso: Serie temporal frente a Montemar (2023 - 2025)"
+        }
+      ]
+    },
+    {
+      "nombre": "Boris Barja",
+      "inst": "Universidad de Magallanes",
+      "email": "bbarja@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-006",
           "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 3.7",
+          "titulo": "Comportamiento de la radiación solar en Punta Arenas durante el periodo 2019 al 2021."
+        }
+      ]
+    },
+    {
+      "nombre": "Eduardo Alberto Flores Barraza",
+      "inst": "Centro de Estudios Avanzados en Zonas Áridas (CEAZA), Coquimbo, Chile",
+      "email": "eduardo.flores@ceaza.cl",
+      "trabajos": [
+        {
+          "id": "P-074",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Estructuras Lagrangianas Coherentes Adheridas a la Costa en el Sistema de Bahías de Coquimbo"
+        }
+      ]
+    },
+    {
+      "nombre": "Deniz Bozkurt",
+      "inst": "Universidad de Valparaíso, CR2, COPAS Coastal",
+      "email": "deniz.bozkurt@uv.cl",
+      "trabajos": [
+        {
+          "id": "P-015",
+          "tipo": "Póster",
           "dia": "Día 2",
-          "horario": "15:35 - 15:50",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Bloqueos atmosféricos en el hemisferio sur: una nueva base de datos multimétodo desde latitudes medias hasta la Antártica (1979–2024)"
+        }
+      ]
+    },
+    {
+      "nombre": "Emilio Callejas, Deniz Bozkurt",
+      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
+      "email": "emilio.callejas@uv.cl",
+      "trabajos": [
+        {
+          "id": "P-043",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Extremos de calor en Chile central y bloqueo atmosférico: circulación hemisférica y posibles impactos en regiones distantes"
+        }
+      ]
+    },
+    {
+      "nombre": "Carlos Buriticá",
+      "inst": "Universidad de Valparaíso",
+      "email": "carlos.buritica@postgrado.uv.cl",
+      "trabajos": [
+        {
+          "id": "O-023",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "15:20 - 15:35",
           "sala": "Sala 2.5",
-          "titulo": "Influence of the Margarita Canyon on Upper Circumpolar Deep Water Intrusion onto the West Antarctic Peninsula Shelf"
+          "titulo": "DINÁMICA ESPACIOTEMPORAL DE LA LÍNEA DE COSTA DE LA CONCEPCIÓN, COLOMBIA (1986-2025)."
+        }
+      ]
+    },
+    {
+      "nombre": "Jorge Herrera Bórquez",
+      "inst": "Instituto de Geografía, Pontificia Universidad Católica de Chile",
+      "email": "jherreb@uc.cl",
+      "trabajos": [
+        {
+          "id": "O-012",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "12:35 - 12:50",
+          "sala": "Sala 3.7",
+          "titulo": "Water codependency of the Chilean mediterranean climate-type coastal forest on marine fog"
+        }
+      ]
+    },
+    {
+      "nombre": "Fernanda Véliz C.",
+      "inst": "Universidad Técnica Federico Santa María",
+      "email": "fernanda.veliz@usm.cl",
+      "trabajos": [
+        {
+          "id": "O-089",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "14:30 - 14:45",
+          "sala": "Sala 3.7",
+          "titulo": "Catálogo integrado para la caracterización de eventos hidrometeorológicos extremos entre las cuencas de los ríos Choapa y Tirúa"
+        }
+      ]
+    },
+    {
+      "nombre": "BRUNO IVÁN VARGAS CRESPO",
+      "inst": "DIRECCIÓN METEOROLÓGICA DE CHILE",
+      "email": "bruno.vargas@dgac.gob.cl",
+      "trabajos": [
+        {
+          "id": "P-006",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "CARACTERIZACIÓN DE PATRONES ESPACIALES DE PRECIPITACIÓN  EN LA CUENCA DE SANTIAGO"
         }
       ]
     },
@@ -8216,47 +5662,539 @@ window.CONGRESO_DATA = {
       ]
     },
     {
-      "nombre": "Tomás Roberto Muñoz Salazar",
-      "inst": "Laboratorio de Dendrocronología y Cambio Global, Instituto de Conservación Biodiversidad y Territorio, Universidad Austral de Chile, Valdivia, Chile",
-      "email": "tomasmusa@gmail.com",
+      "nombre": "Leonor Gabriela Valdés Calderón",
+      "inst": "Departamento de Geofísica, Universidad de Chile (DGF-UCh)",
+      "email": "leonor.valdes@ug.uchile.cl",
       "trabajos": [
         {
-          "id": "O-093",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "15:35 - 15:50",
-          "sala": "Sala 3.7",
-          "titulo": "Late-spring frosts in South America since 1400 CE: links to hemispheric-scale climate, volcanism and solar activity"
+          "id": "P-081",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Recuperación del espesor óptico de aerosoles en el ex-observatorio astronómico solar Montezuma"
         }
       ]
     },
     {
-      "nombre": "Uriel Francisco Aguayo Guardera",
-      "inst": "Dirección Meteorológica de Chile",
-      "email": "urielaguayo19@gmail.com",
+      "nombre": "Luke Carberry",
+      "inst": "University of California Santa Barbara",
+      "email": "lcarberry@ucsb.edu",
       "trabajos": [
         {
-          "id": "O-103",
+          "id": "O-108",
           "tipo": "Oral",
           "dia": "Día 4",
-          "horario": "10:30 - 10:45",
-          "sala": "Sala 3.7",
-          "titulo": "Determinación de umbrales termodinámicos y estructuración predictiva para eventos de nieve"
-        }
-      ]
-    },
-    {
-      "nombre": "Valentina Iturra",
-      "inst": "1.\tCentro i~mar, Universidad de Los Lagos, Puerto Montt, Chile. 2.\tCentro Interdisciplinario para la Investigación Acuícola - Investigación Aplicada (INCAR2), Universidad de Concepción, Concepción, Chile",
-      "email": "vaiturra2021@udec.cl",
-      "trabajos": [
+          "horario": "11:35 - 11:50",
+          "sala": "Sala 2.5",
+          "titulo": "Nitracline depth modulates inner-shelf phytoplankton responses to wind-driven upwelling in the Santa Barbara Channel, USA"
+        },
         {
-          "id": "P-067",
+          "id": "P-057",
           "tipo": "Póster",
           "dia": "Día 3",
           "horario": "17:00 - 19:00",
           "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Capas finas de fitoplancton tóxico en fiordos Patagónicos: Más allá de los métodos tradicionales de detección"
+          "titulo": "Oceanographic forcing of alongshore covariability in Macrocystis pyrifera biomass in Chile"
+        }
+      ]
+    },
+    {
+      "nombre": "Nicolás Carrasco-Ilabaca",
+      "inst": "Laboratorio de Dendrocronología y Cambio Global, Facultad de Ciencias Forestales y Recursos Naturales, Universidad Austral de Chile",
+      "email": "nicolas.carrasco01@uach.cl",
+      "trabajos": [
+        {
+          "id": "P-090",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Mecanismos climáticos, radiativos y ontogénicos del daño por helada primaveral en Austrocedrus chilensis"
+        }
+      ]
+    },
+    {
+      "nombre": "Nicolás Leonardo Mora Carrera",
+      "inst": "Universidad de Valparaiso",
+      "email": "nicolas.mora@estudiantes.uv.cl",
+      "trabajos": [
+        {
+          "id": "P-091",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Estimation of dew production using an analytical model and CORDEX regional climate models"
+        }
+      ]
+    },
+    {
+      "nombre": "Lenna Oriana Ortiz Castillo",
+      "inst": "Centro de Investigación en Ecosistemas de la Patagonia (CIEP)",
+      "email": "lenna.ortiz@ciep.cl",
+      "trabajos": [
+        {
+          "id": "O-104",
+          "tipo": "Oral",
+          "dia": "Día 4",
+          "horario": "10:45 - 11:00",
+          "sala": "Sala 2.5",
+          "titulo": "Lagrangian deformation shapes oxygen redistribution and biogeochemical processes within Southeast Pacific poleward undercurrent eddies"
+        }
+      ]
+    },
+    {
+      "nombre": "Manuel I. Castillo",
+      "inst": "Laboratorio de Oceanografía Física y Satelital (LOFISAT), Universidad de Valparaíso",
+      "email": "manuel.castillo@uv.cl",
+      "trabajos": [
+        {
+          "id": "O-001",
+          "tipo": "Oral (Coautor/a)",
+          "dia": "Día 1",
+          "horario": "11:20 - 11:35",
+          "sala": "Sala 2.5",
+          "titulo": "When the fjords take a breath: Influence of wind forcing and Ekman dynamics on deep ventilation in the North Patagonian fjords"
+        },
+        {
+          "id": "O-056",
+          "tipo": "Oral (Coautor/a)",
+          "dia": "Día 2",
+          "horario": "14:45 - 15:00",
+          "sala": "Sala 2.5",
+          "titulo": "Circulación e hidrografía del Estrecho de Bransfield (62.8ºS, 57.5ºW) durante verano de 2026"
+        },
+        {
+          "id": "O-078",
+          "tipo": "Oral (Coautor/a)",
+          "dia": "Día 3",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 2.5",
+          "titulo": "Variabilidad intraestacional del nivel del mar y de la temperatura superficial del mar a lo largo de la costa de Chile entre 2000 y 2026"
+        },
+        {
+          "id": "P-036",
+          "tipo": "Póster (Coautor/a)",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Efectos del forzamiento del viento y la descarga de agua dulce sobre la hidrografía y estabilidad termohalina de un fiordo subantártico"
+        },
+        {
+          "id": "P-044",
+          "tipo": "Póster (Coautor/a)",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Subtidal circulation and mixing in a regional inland sea, Northern Patagonia"
+        },
+        {
+          "id": "P-048",
+          "tipo": "Póster (Coautor/a)",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Patrón de circulación del mar interior de Chiloé (MIC) y su relación con el estrés del viento y la marea en septiembre de 2024"
+        },
+        {
+          "id": "P-071",
+          "tipo": "Póster (Coautor/a)",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Efecto de la transición primavera-otoño (2025-2026) sobre el oxígeno disuelto en la bahía de Laguna Verde (33.1° S), Valparaíso"
+        },
+        {
+          "id": "P-089",
+          "tipo": "Póster (Coautor/a)",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Actualización de climatología de Nivel del mar y Temperatura Superficial del Mar"
+        },
+        {
+          "id": "P-098",
+          "tipo": "Póster (Coautor/a)",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Variabilidad submareal de la circulación profunda y su influencia sobre el oxígeno disuelto en un fiordo patagónico de cuatro capas"
+        }
+      ]
+    },
+    {
+      "nombre": "Juan Alejandro Rojas Castro",
+      "inst": "Universidad de Concepción",
+      "email": "jrojas2019@udec.cl",
+      "trabajos": [
+        {
+          "id": "P-080",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Caracterización espaciotemporal de remolinos de mesoescala mediante un nuevo método de identificación"
+        }
+      ]
+    },
+    {
+      "nombre": "Nicolás Andrés Donoso Castro",
+      "inst": "INNOVEX",
+      "email": "nicolas.donoso@innovex.cl",
+      "trabajos": [
+        {
+          "id": "O-054",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "14:30 - 14:45",
+          "sala": "Sala 2.5",
+          "titulo": "FANtracker: plataforma autónoma de perfilado oceanográfico continuo, validación técnica y aplicación en salmonicultura."
+        }
+      ]
+    },
+    {
+      "nombre": "Sebastián Andrés Díaz Ceballos",
+      "inst": "Universidad del Bío-bio",
+      "email": "sebastian.diaz2502@alumnos.ubiobio.cl",
+      "trabajos": [
+        {
+          "id": "O-064",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "16:05 - 16:20",
+          "sala": "Sala 2.5",
+          "titulo": "Upwelling circulation and cross-shore exchanges around a long submarine canyon: A modelling study"
+        }
+      ]
+    },
+    {
+      "nombre": "Juan Pablo Salazar Ceciliano",
+      "inst": "Universidad Nacional",
+      "email": "juan.salazar.ceciliano@una.cr",
+      "trabajos": [
+        {
+          "id": "P-055",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Variabilidad de temperatura y oxígeno disuelto en una Bahía tropical  de Costa Rica asociada a un forzamiento atmosférico"
+        }
+      ]
+    },
+    {
+      "nombre": "Francisca Chirino",
+      "inst": "Departamento de Geofísica, Universidad de Concepción",
+      "email": "fchirino2020@udec.cl",
+      "trabajos": [
+        {
+          "id": "O-098",
+          "tipo": "Oral",
+          "dia": "Día 4",
+          "horario": "10:00 - 10:15",
+          "sala": "Sala 2.5",
+          "titulo": "Mecanismos de formación de intrusiones termohalinas en la zona de mínimo oxígeno: evidencia mediante planeadores submarinos"
+        }
+      ]
+    },
+    {
+      "nombre": "Angel Domínguez Chovert",
+      "inst": "Universidad Federal de Goiás",
+      "email": "angel.chovert@ufg.br",
+      "trabajos": [
+        {
+          "id": "P-005",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Implementación de sistema integrado de modelación atmosférica y monitoreo ambiental para la gestión de la calidad del aire en Goiás Brasil"
+        }
+      ]
+    },
+    {
+      "nombre": "Charlie Eduardo Opazo Collao",
+      "inst": "Departamento de Geofísica, Universidad de Chile, Centro de Ciencia del Clima y la Resiliencia (CR2)",
+      "email": "charlie.opazo@ug.uchile.cl",
+      "trabajos": [
+        {
+          "id": "P-009",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Transporte atmosférico y fuentes de humedad asociados a aluviones estivales en Chile central"
+        }
+      ]
+    },
+    {
+      "nombre": "Amin Kadim Ali Cordero",
+      "inst": "Departamento de Física, Facultad de Ciencias. Universidad de Bío-Bío.",
+      "email": "aali2018@udec.cl",
+      "trabajos": [
+        {
+          "id": "O-111",
+          "tipo": "Oral",
+          "dia": "Día 4",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 3.7",
+          "titulo": "Respuesta de la circulación de Bahía Concepción a eventos de viento del norte y ríos atmosféricos"
+        }
+      ]
+    },
+    {
+      "nombre": "Cesar Alejandro Araya Cornejo",
+      "inst": "Escuela de Ciencias del Mar, PUCV/ Instituto Milenio de Oceanografía (IMO)",
+      "email": "cesar.araya.cornejo@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-035",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "10:00 - 10:15",
+          "sala": "Sala 2.5",
+          "titulo": "Evaluación de la amenaza de tsunamis transoceánicos en la costa de Chile a partir de registros históricos."
+        }
+      ]
+    },
+    {
+      "nombre": "Macarena Isadora Pérez Cuevas",
+      "inst": "Universidad Austral de Chile",
+      "email": "maca.pprz@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-026",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "15:35 - 15:50",
+          "sala": "Sala 3.7",
+          "titulo": "Climatología de olas de calor sobre un glaciar templado andino y su impacto en el derretimiento"
+        }
+      ]
+    },
+    {
+      "nombre": "Cristian Andrés Salas Dominguez",
+      "inst": "Instituto de Investigación Pesquera",
+      "email": "csalas@inpesca.cl",
+      "trabajos": [
+        {
+          "id": "O-049",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "12:20 - 12:35",
+          "sala": "Sala 2.5",
+          "titulo": "Descomposición del balance de calor durante olas de calor marinas frente a Chile centro-sur mediante diagnósticos en línea de un modelo hidrodinámico regional."
+        }
+      ]
+    },
+    {
+      "nombre": "Angela Andrea Bahamondes Domínguez",
+      "inst": "Instituto Milenio BASE; Instituto de Ciencias Marinas y Limnológicas, Facultad de Ciencias, Universidad Austral de Chile",
+      "email": "a.bahamondes.d@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-092",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "15:35 - 15:50",
+          "sala": "Sala 2.5",
+          "titulo": "Conectividad física interanual del krill antártico entre zonas de desove"
+        }
+      ]
+    },
+    {
+      "nombre": "David Donoso",
+      "inst": "Universidad de Chile e Instituto Milenio BASE",
+      "email": "jose.donoso.q@ug.uchile.cl",
+      "trabajos": [
+        {
+          "id": "P-013",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Contribución de mecanismos foehn a un episodio extremo de calentamiento superficial frente a la Península Jason, Antártica"
+        }
+      ]
+    },
+    {
+      "nombre": "Alan Ricardo Drebes Dorneles",
+      "inst": "Universidade Federal do Rio Grande - FURG",
+      "email": "alanricardo.97@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-003",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Estructura Temporal de la Precipitación: de la Serie Horaria a los Eventos Agregados"
+        }
+      ]
+    },
+    {
+      "nombre": "María de los Ángeles Marrero Díaz",
+      "inst": "Instituto Universitario de Investigación en Acuicultura Sostenible y Ecosistemas Marinos (ECOAQUA), Universidad de Las Palmas de Gran Canaria (ULPGC). España.",
+      "email": "angeles.marrero@ulpgc.es",
+      "trabajos": [
+        {
+          "id": "O-058",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "15:00 - 15:15",
+          "sala": "Sala 2.5",
+          "titulo": "Transformación y mezcla de masas de agua en el Estrecho de Bransfield (Antártida) a partir de series históricas de datos hidrográficos"
+        }
+      ]
+    },
+    {
+      "nombre": "Freddy Pinochet Erazo",
+      "inst": "Université du Québec à Montréal (UQAM)",
+      "email": "freddy.pinocheterazo@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-022",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Evaluation and Physics Sensitivity of Convection-Permitting Ensemble  Simulations of the 2024 Rio Grande do Sul Extreme Precipitation Event"
+        }
+      ]
+    },
+    {
+      "nombre": "Cristián Escauriaza",
+      "inst": "Pontificia Universidad Católica de Chile",
+      "email": "cescauri@uc.cl",
+      "trabajos": [
+        {
+          "id": "O-011",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "12:35 - 12:50",
+          "sala": "Sala 2.5",
+          "titulo": "Dinámica, Mezcla, y Transporte de Sedimentos en Plumas de Agua Dulce"
+        }
+      ]
+    },
+    {
+      "nombre": "Henry Edisson Jamanca Espinoza",
+      "inst": "Universidad de Chile",
+      "email": "henry.jamanca@ug.uchile.cl",
+      "trabajos": [
+        {
+          "id": "P-077",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Evolución de las concentraciones de material particulado fino hacia la década de 2040 frente al cambio climático y trayectorias de mitigación de emisiones."
+        }
+      ]
+    },
+    {
+      "nombre": "Matías Nicolás Martínez Fernández",
+      "inst": "Universidad de Chile",
+      "email": "matiasm815@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-058",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Evaluación del desempeño del modelo WRF en la representación del efecto Föhn asociado a un Río Atmosférico en la Península Antártica (Febrero 2022)"
+        }
+      ]
+    },
+    {
+      "nombre": "Antonia Ricci Frías",
+      "inst": "Universidad Austral de Chile",
+      "email": "antonia.ricci@alumnos.uach.cl",
+      "trabajos": [
+        {
+          "id": "P-068",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "{Simulación numérica del transporte de nutrientes en la corriente de Humboldt mediante Navier-Stokes y advección-difusión"
+        }
+      ]
+    },
+    {
+      "nombre": "Daniela Ignacia Flores Fuenzalida",
+      "inst": "Pontificia Universidad Católica de Valparaíso",
+      "email": "daniela.flores.f@mail.pucv.cl",
+      "trabajos": [
+        {
+          "id": "P-012",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Producción primaria y respiración de la materia orgánica en la bahía de Valparaíso durante dos períodos consecutivos de primavera – verano."
+        }
+      ]
+    },
+    {
+      "nombre": "FELIPE ANTONIO SANCHEZ GONZALEZ",
+      "inst": "UNIVERSIDAD DE VALPARAÍSO",
+      "email": "felipe.sanchezg@postgrado.uv.cl",
+      "trabajos": [
+        {
+          "id": "O-079",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 3.7",
+          "titulo": "Diferenciación de cardúmenes juveniles y adultos de anchoveta a partir de variables ambientales mediante modelos estadísticos y de aprendizaje automático en distintas fases de El Niño-Oscilación del Sur"
+        }
+      ]
+    },
+    {
+      "nombre": "Javier Alfredo Aguirre Gaete",
+      "inst": "Universidad de Valparaíso",
+      "email": "javier.aguirregaete@hotmail.com",
+      "trabajos": [
+        {
+          "id": "O-045",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 2.5",
+          "titulo": "Olas del Futuro: Análisis estadístico de proyecciones climáticas del oleaje en aguas profundas chilenas"
+        }
+      ]
+    },
+    {
+      "nombre": "Laura Gallardo",
+      "inst": "Universidad de Chile, Centro de Ciencia del Clima y la Resiliencia, Departamento de Geofísica",
+      "email": "lgallard@u.uchile.cl",
+      "trabajos": [
+        {
+          "id": "O-063",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "15:50 - 16:05",
+          "sala": "Sala 3.7",
+          "titulo": "Cambios en ozono en Chile Central: identificando precursores"
+        }
+      ]
+    },
+    {
+      "nombre": "Félix Marcial Carrasco Galleguillos",
+      "inst": "Consultor externo del Centro Regional del Clima para el Sur de América del Sur",
+      "email": "felix.marcial@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-099",
+          "tipo": "Oral",
+          "dia": "Día 4",
+          "horario": "10:00 - 10:15",
+          "sala": "Sala 3.7",
+          "titulo": "Pronóstico subestacional calibrado para el Centro Regional sobre el clima para el Sur de América del Sur (CRC-SAS): Implementación y verificación."
         }
       ]
     },
@@ -8276,47 +6214,310 @@ window.CONGRESO_DATA = {
       ]
     },
     {
-      "nombre": "Valeska Alanis Sandoval Tapia",
-      "inst": "Pontificia Universidad Católica de Valparaíso",
-      "email": "valeska.sandoval.t@mail.pucv.cl",
+      "nombre": "Poliana Teresa Leiva Garay",
+      "inst": "Universidad de Concepción, Chile",
+      "email": "poliana.lega@gmail.com",
       "trabajos": [
         {
-          "id": "O-041",
+          "id": "O-088",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "14:30 - 14:45",
+          "sala": "Sala 2.5",
+          "titulo": "Variabilidad de Submesoescala de la Temperatura Superficial del Mar a partir de un Índice de Heterogeneidad"
+        }
+      ]
+    },
+    {
+      "nombre": "René Garreaud",
+      "inst": "Departamento de Geofísica, Universidad de Chile",
+      "email": "rgarreau@uchile.cl",
+      "trabajos": [
+        {
+          "id": "O-032",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "16:40 - 16:55",
+          "sala": "Sala 3.7",
+          "titulo": "Entendiendo el gradiente orográfico de precipitación en Chile central"
+        }
+      ]
+    },
+    {
+      "nombre": "Joaquín Rodrigo Valenzuela Garrido",
+      "inst": "Universidad de Concepción",
+      "email": "joaquin.valenzuelaga@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-053",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Clasificación de nubes de convección celular mesoescalar de celda abierta, cerrada y desorganizada mediante red neuronal convolucional a partir de observaciones satelitales."
+        }
+      ]
+    },
+    {
+      "nombre": "Álvaro Esteban Constanzo Gatica",
+      "inst": "Chile  Dirección Meteorológica de Chile, Chile. Departamento de Geofísica, Universidad de Chile, Chile. Centro de Ciencia del Clima y la Resiliencia (CR)2.",
+      "email": "alvaro.constanzo@dgac.gob.cl",
+      "trabajos": [
+        {
+          "id": "P-069",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "El Niño 2026: Experiencias y verificación del sistema Nextgen-Chile para precipitación en Chile central"
+        }
+      ]
+    },
+    {
+      "nombre": "Leandra Grisel Loyola Giahette",
+      "inst": "Universidad Adolfo Ibañez",
+      "email": "leloyola@alumnos.uai.cl",
+      "trabajos": [
+        {
+          "id": "O-057",
           "tipo": "Oral",
           "dia": "Día 2",
-          "horario": "10:45 - 11:00",
-          "sala": "Sala 2.5",
-          "titulo": "Análisis experimental de la influencia de la forma de bloques rocosos en su transporte inducido por eventos de inundación costera"
+          "horario": "14:45 - 15:00",
+          "sala": "Sala 3.7",
+          "titulo": "Coastal El Niño and La Niña Events in a Changing Climate: Insights from the CESM2 Large Ensemble"
         }
       ]
     },
     {
-      "nombre": "Vanessa Alejandra Carril Pardo",
-      "inst": "Universidad del Bío-Bío",
-      "email": "vcarrilpardo@gmail.com",
+      "nombre": "Juan González",
+      "inst": "Escuela de Ciencias de la Tierra, Universidad Andrés Bello",
+      "email": "juan.gonzalez.c@unab.cl",
       "trabajos": [
         {
-          "id": "O-091",
+          "id": "P-025",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Multi-hazard assessment for Iquique, northern Chile, under climate variability: megathrust, tsunami, crustal fault and rainfall-triggered mass movement scenarios"
+        }
+      ]
+    },
+    {
+      "nombre": "Álvaro González-Reyes",
+      "inst": "Instituto de Ciencias de la Tierra & Laboratorio de Dendrocronología y Cambio Global, Universidad Austral de Chile",
+      "email": "alvaro.gonzalez@uach.cl",
+      "trabajos": [
+        {
+          "id": "O-022",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "15:05 - 15:20",
+          "sala": "Sala 3.7",
+          "titulo": "Cambios en la intensidad del Anticiclón Subtropical del Pacífico y su vínculo con la relación humedad del suelo-incendios forestales desde 1960"
+        }
+      ]
+    },
+    {
+      "nombre": "Uriel Francisco Aguayo Guardera",
+      "inst": "Dirección Meteorológica de Chile",
+      "email": "urielaguayo19@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-103",
+          "tipo": "Oral",
+          "dia": "Día 4",
+          "horario": "10:30 - 10:45",
+          "sala": "Sala 3.7",
+          "titulo": "Determinación de umbrales termodinámicos y estructuración predictiva para eventos de nieve"
+        }
+      ]
+    },
+    {
+      "nombre": "Felipe Andrés Silva Guevara",
+      "inst": "Universidad de Santiago de Chile",
+      "email": "felipe.silva.g@usach.cl",
+      "trabajos": [
+        {
+          "id": "P-076",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Caracterización espacio-temporal de anomalías térmicas asociadas a eventos El Niño intensos mediante funciones ortogonales empíricas (EOF) y su versión extendida (Extended EOF)"
+        }
+      ]
+    },
+    {
+      "nombre": "Nelson Quispe Gutiérrez",
+      "inst": "SENAMHI - Perú",
+      "email": "nelsonqg@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-043",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "11:00 - 11:15",
+          "sala": "Sala 3.7",
+          "titulo": "Patrones de circulación asociados a una tormenta de polvo y arena en la costa central del Perú"
+        }
+      ]
+    },
+    {
+      "nombre": "ANDRÉS ALBERTO VARAS GÓMEZ",
+      "inst": "Instituto Fomento Pesquero",
+      "email": "andres.varas.g@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-052",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "14:15 - 14:30",
+          "sala": "Sala 2.5",
+          "titulo": "Portal SIOM: Sistema de Integración de Observaciones Marinas, Instituto Fomento Pesquero"
+        },
+        {
+          "id": "P-001",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Del océano al dato: monitoreo y acceso abierto mediante SIOM-IFOP (Sistema Integrado de Observación Marina)"
+        }
+      ]
+    },
+    {
+      "nombre": "Allison Caitlin Espinoza Gómez",
+      "inst": "Universidad Andrés Bello",
+      "email": "allison.espinoza@pucv.cl",
+      "trabajos": [
+        {
+          "id": "O-047",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "12:05 - 12:20",
+          "sala": "Sala 2.5",
+          "titulo": "Evidencia estratigráfica y paleoecológica de subsidencia cosísmica asociada a los terremotos de 1960 y 1575"
+        }
+      ]
+    },
+    {
+      "nombre": "Luis Andrés Bravo Gómez",
+      "inst": "Universidad Católica del Norte",
+      "email": "luis.bravo@ucn.cl",
+      "trabajos": [
+        {
+          "id": "O-031",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "16:40 - 16:55",
+          "sala": "Sala 2.5",
+          "titulo": "Respuesta oceánica al rotor del esfuerzo del viento y su importancia en el sistema costero en la zona centro-norte de Chile (30° S)"
+        }
+      ]
+    },
+    {
+      "nombre": "Marina Hernández",
+      "inst": "CopernicusLAC Chile",
+      "email": "marina.hernandez@uchile.cl",
+      "trabajos": [
+        {
+          "id": "P-083",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Representación regional de la temperatura superficial del mar en Latinoamérica y el Caribe mediante integración multisensor y reconstrucción espacial"
+        }
+      ]
+    },
+    {
+      "nombre": "Mariana Hidalgo",
+      "inst": "Universidad Técnica Federico Santa María y AMTC",
+      "email": "miguel.lagos@usm.cl",
+      "trabajos": [
+        {
+          "id": "O-081",
           "tipo": "Oral",
           "dia": "Día 3",
+          "horario": "12:05 - 12:20",
+          "sala": "Sala 3.7",
+          "titulo": "Evaluación del valor agregado de modelos climáticos regionales en la representación de índices de precipitación extrema en Chile continental"
+        }
+      ]
+    },
+    {
+      "nombre": "Nataly Alejandra Antipil Huenchumán",
+      "inst": "Universidad de Concepción",
+      "email": "nantipil2020@udec.cl",
+      "trabajos": [
+        {
+          "id": "O-059",
+          "tipo": "Oral",
+          "dia": "Día 2",
           "horario": "15:00 - 15:15",
-          "sala": "Sala 2.5",
-          "titulo": "Interactive effects of a submarine canyon and wind stress curl on coastal upwelling circulation"
+          "sala": "Sala 3.7",
+          "titulo": "Rutas Oceánicas y Atmosféricas que Modulan el Balance de Calor en el Pacífico Suroriental durante diversos eventos ENOS"
         }
       ]
     },
     {
-      "nombre": "Vera Oerder",
-      "inst": "Departamento de Oceanografia e Instituto Milenio de Oceanografia, Facultad de Ciencias Naturales y oceanografica, Universidad de Concepcion",
-      "email": "vera.oerder@imo-chile.cl",
+      "nombre": "Nicolás Huneeus",
+      "inst": "Universidad de Chile",
+      "email": "nhuneeus@uchile.cl",
       "trabajos": [
         {
-          "id": "O-076",
+          "id": "O-065",
           "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "16:05 - 16:20",
+          "sala": "Sala 3.7",
+          "titulo": "IMPACTO DEL CAMBIO CLIMÁTICO Y LA MITIGACIÓN DE EMISIONES RESIDENCIALES SOBRE LA CALIDAD DEL AIRE FUTURA EN EL CENTRO-SUR DE CHILE"
+        }
+      ]
+    },
+    {
+      "nombre": "Jhon Ignacio Contreras Ibáñez",
+      "inst": "Universidad de Concepción",
+      "email": "jh.contrerasibanez@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-010",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "12:20 - 12:35",
+          "sala": "Sala 3.7",
+          "titulo": "Diferencias en la Representación del Ciclo Diurno de Temperatura del Aire en ERA5-Land, WRF-SAAG y Observaciones."
+        }
+      ]
+    },
+    {
+      "nombre": "Valentina Iturra",
+      "inst": "1.\tCentro i~mar, Universidad de Los Lagos, Puerto Montt, Chile. 2.\tCentro Interdisciplinario para la Investigación Acuícola - Investigación Aplicada (INCAR2), Universidad de Concepción, Concepción, Chile",
+      "email": "vaiturra2021@udec.cl",
+      "trabajos": [
+        {
+          "id": "P-067",
+          "tipo": "Póster",
           "dia": "Día 3",
-          "horario": "11:15 - 11:30",
-          "sala": "Sala 2.5",
-          "titulo": "Circulación profunda del Pacífico Sur Oriental: desafíos para su caracterización mediante observaciones y modelación numérica"
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Capas finas de fitoplancton tóxico en fiordos Patagónicos: Más allá de los métodos tradicionales de detección"
+        }
+      ]
+    },
+    {
+      "nombre": "Martín Jacques-Coper",
+      "inst": "Departamento de Geofísica / CR2 / COPAS Coastal, Universidad de Concepción, Concepción, Chile",
+      "email": "martinjacques@udec.cl",
+      "trabajos": [
+        {
+          "id": "O-020",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "14:50 - 15:05",
+          "sala": "Sala 3.7",
+          "titulo": "Wildfires and Weather Variability in South-Central Chile: Meteorology for Risk Reduction"
         }
       ]
     },
@@ -8336,17 +6537,783 @@ window.CONGRESO_DATA = {
       ]
     },
     {
-      "nombre": "Yosvany Garcia Santos",
-      "inst": "Centro de Investigación Oceanográfica COPAS Coastal, Universidad de Concepción, Concepción, Chile",
-      "email": "ygarcia0218@gmail.com",
+      "nombre": "Catalina Rodríguez Jiménez",
+      "inst": "Departamento de Obras Civiles, Universidad Técnica Federico Santa María",
+      "email": "catalina.rodriguezj@usm.cl",
       "trabajos": [
         {
-          "id": "O-051",
+          "id": "O-075",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "11:00 - 11:15",
+          "sala": "Sala 3.7",
+          "titulo": "Intercomparaciòn de proyecciones para modelos climáticos, desde simulaciones globales hasta simulaciones con resolución de convección, para Chile continental bajo diferentes escenarios."
+        }
+      ]
+    },
+    {
+      "nombre": "Pablo Antonio Herrera Klarian",
+      "inst": "Universidad de Valparaíso",
+      "email": "herreraklarian@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-062",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Pablo Herrera Klarian"
+        }
+      ]
+    },
+    {
+      "nombre": "Ana Maria Cordova Leal",
+      "inst": "Departamento de Meteorologia, Universidad de Valparaíso",
+      "email": "anamaria.cordova@meteo.uv.cl",
+      "trabajos": [
+        {
+          "id": "O-105",
+          "tipo": "Oral",
+          "dia": "Día 4",
+          "horario": "10:45 - 11:00",
+          "sala": "Sala 3.7",
+          "titulo": "HidroCL ante eventos extremos: anticipar para gestionar"
+        }
+      ]
+    },
+    {
+      "nombre": "Amairani Leyva",
+      "inst": "Facultad de Ciencias Físicas y Matemáticas (FCFM), y Centro de Ciencia del Clima y la Resiliencia (CR2) - Universidad de Chile",
+      "email": "amairani.leyva@ug.uchile.cl",
+      "trabajos": [
+        {
+          "id": "O-002",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "11:20 - 11:35",
+          "sala": "Sala 3.7",
+          "titulo": "Transición extratropical del ciclón Pam mediante el diagrama de fases de Hart"
+        }
+      ]
+    },
+    {
+      "nombre": "Ovidio Llompart",
+      "inst": "Universidad de Concepción",
+      "email": "ollompart@udec.cl",
+      "trabajos": [
+        {
+          "id": "O-107",
+          "tipo": "Oral",
+          "dia": "Día 4",
+          "horario": "11:20 - 11:35",
+          "sala": "Sala 3.7",
+          "titulo": "Evaluación de los moduladores climáticos de la variabilidad del viento en América del Sur y sus efectos sobre la generación eólica futura"
+        }
+      ]
+    },
+    {
+      "nombre": "Sebastián Andrés García Loyola",
+      "inst": "COPAS-Coastal (Universidad de Concepción)",
+      "email": "sebastianloyola@oceanografia.udec.cl",
+      "trabajos": [
+        {
+          "id": "P-031",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Air-Sea-Wave Interactions During the 2023/2024 Extreme Atmospheric Rivers in Biobío: Preliminary Coupled Modeling Results"
+        }
+      ]
+    },
+    {
+      "nombre": "Cristine Michelle Gaultier López",
+      "inst": "Universidad de Valparaíso",
+      "email": "cristine.lopez.gaul@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-038",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Patrones espaciales en la comunidad zooplanctónica a lo largo del gradiente meridional de agua dulce en el mar exterior de la Patagonia"
+        },
+        {
+          "id": "P-039",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Patrones biogeográficos del ensamble de eufáusidos en el mar exterior de la Patagonia chilena en respuesta a las condiciones oceanográficas"
+        }
+      ]
+    },
+    {
+      "nombre": "Laura Sabina Vásquez López",
+      "inst": "Departamento de Geofísica, Universidad de Concepción, Chile ; Center for Climate and Resilience Research (CR2), Chile",
+      "email": "lavasquez2021@udec.cl",
+      "trabajos": [
+        {
+          "id": "P-056",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Estudio del rol de eventos Puelche en el desarrollo de incendios forestales"
+        }
+      ]
+    },
+    {
+      "nombre": "Jeferson Prietsch Machado",
+      "inst": "Universidade Federal do Rio Grande (FURG) - Brazil",
+      "email": "jefpmac@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-024",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Analysis of a High-Energy Wave Event Using the Coupled COAWST Model"
+        }
+      ]
+    },
+    {
+      "nombre": "Marcelo Madariaga-Burgos",
+      "inst": "Departamento de Geofísica, Universidad de Chile; Centro de Acción Climática, Pontificia Universidad Católica de Valparaíso",
+      "email": "marcelo.madariaga@pucv.cl",
+      "trabajos": [
+        {
+          "id": "P-082",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Cambios futuros proyectados en el límite lluvia-nieve en cuencas andinas de Chile central y sus impacto hidrológico"
+        }
+      ]
+    },
+    {
+      "nombre": "Ricardo Muñoz Magnino",
+      "inst": "Departamento de Geofísica, U. de Chile",
+      "email": "rmunoz@dgf.uchile.cl",
+      "trabajos": [
+        {
+          "id": "P-065",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Viento en altura sobre Santiago: comparación de distintas bases de datos"
+        }
+      ]
+    },
+    {
+      "nombre": "Adrián Bustamante Maino",
+      "inst": "Instituto de Fomento Pesquero (IFOP)",
+      "email": "adrian.bustamante@ifop.cl",
+      "trabajos": [
+        {
+          "id": "O-066",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "10:00 - 10:15",
+          "sala": "Sala 2.5",
+          "titulo": "Distribución de masas de agua y circulación geostrófica en el Pacífico Sur Oriental: dominios verticales y su relación con la dinámica regional"
+        }
+      ]
+    },
+    {
+      "nombre": "Daniel Antonio Espinoza Manriquez",
+      "inst": "Escuela de Ingeniería, Pontificia Universidad Católica de Chile",
+      "email": "daniel.espinoza@uc.cl",
+      "trabajos": [
+        {
+          "id": "P-011",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Caracterización del fenómeno de la poza fría en el Salar del Huasco, Región de Tarapacá, Chile"
+        }
+      ]
+    },
+    {
+      "nombre": "Gonzalo Mansilla",
+      "inst": "Universidad de Magallanes",
+      "email": "bbarja@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-050",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Análisis de la circulación atmosférica y el transporte local de masas de aire entre mayo y noviembre 2019 en Monte Fenton, Punta Arenas."
+        }
+      ]
+    },
+    {
+      "nombre": "Cristian Martinez-Villalobos",
+      "inst": "¹ Facultad de Ingeniería y Ciencias, Universidad Adolfo Ibáñez, Chile ² Data Observatory Foundation, Chile",
+      "email": "cristian.martinez.v@uai.cl",
+      "trabajos": [
+        {
+          "id": "O-053",
           "tipo": "Oral",
           "dia": "Día 2",
+          "horario": "14:15 - 14:30",
+          "sala": "Sala 3.7",
+          "titulo": "Deterministic Nonlinearity and State-Dependent Noise in El Niño Southern Oscillation Asymmetry"
+        }
+      ]
+    },
+    {
+      "nombre": "Luca Benito Matías Toloza Martínez",
+      "inst": "Universidad de Chile",
+      "email": "luca.toloza.m@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-030",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "16:25 - 16:40",
+          "sala": "Sala 3.7",
+          "titulo": "Caracterización del calentamiento en altura durante la transición matutina en el valle de Santiago para el periodo frío mediante modelación de alta resolución"
+        }
+      ]
+    },
+    {
+      "nombre": "Daniela Belén Tapia Marzán",
+      "inst": "Universidad de Valparaíso",
+      "email": "daniela.t.marzan@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-040",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Enfriamiento costero: homogeneización de una serie histórica y análisis de sus tendencias."
+        }
+      ]
+    },
+    {
+      "nombre": "Gonzalo Huidobro Marín",
+      "inst": "Centro de Investigación Interdisciplinaria en Riesgo, Resiliencia y Recuperación ante Desastres (CIGIDEN R+)",
+      "email": "ghuidobro@cigiden.cl",
+      "trabajos": [
+        {
+          "id": "P-049",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Evaluation of combined climate adaptation scenarios for future climate and urbanization in the Chicago Metro Area using WRF"
+        }
+      ]
+    },
+    {
+      "nombre": "Pablo Sandoval Matamala",
+      "inst": "Universidad de Concepción",
+      "email": "pasandoval2021@udec.cl",
+      "trabajos": [
+        {
+          "id": "P-093",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Influencia de la Oscilación Madden-Julian sobre la intensidad y posición de la Alta de Bolivia"
+        }
+      ]
+    },
+    {
+      "nombre": "Francisca Victoria del Carmen Quijada Mateluna",
+      "inst": "servicio hidrográfico y oceanográfico de la armada shoa",
+      "email": "francisca.quijada.mateluna@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-080",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "12:05 - 12:20",
+          "sala": "Sala 2.5",
+          "titulo": "Zonificación mareal para la representación espacial del nivel del mar en la nueva generación de productos hidrográficos digitales."
+        }
+      ]
+    },
+    {
+      "nombre": "Adán Godoy Matus",
+      "inst": "Universidad Adventista de Chile",
+      "email": "adan.godoy@unach.cl",
+      "trabajos": [
+        {
+          "id": "P-002",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Evaluación de emplazamiento y caracterización local del Campo Eléctrico Atmosférico en condiciones de Buen Tiempo"
+        }
+      ]
+    },
+    {
+      "nombre": "Gustavo Alfredo Rohde Medina",
+      "inst": "LOFISAT, Universidad de Valparaíso",
+      "email": "gustavo.rohde@estudiantes.uv.cl",
+      "trabajos": [
+        {
+          "id": "O-056",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "14:45 - 15:00",
+          "sala": "Sala 2.5",
+          "titulo": "Circulación e hidrografía del Estrecho de Bransfield (62.8ºS, 57.5ºW) durante verano de 2026."
+        }
+      ]
+    },
+    {
+      "nombre": "Francisca Verónica Jofré Meneses",
+      "inst": "Universidad de Chile, Centro de Ciencia del Clima y la Resiliencia",
+      "email": "fran.jofre.meneses@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-047",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Sensibilidad del modelo WRF en la representación de la circulación atmosférica regional del norte de Chile"
+        }
+      ]
+    },
+    {
+      "nombre": "Luis Patricio Riquelme Merino",
+      "inst": "Instituto de Estadística, Facultad de Ciencias, Universidad de Valparaíso",
+      "email": "l.patricio.riquelme25@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-085",
+          "tipo": "Oral",
+          "dia": "Día 3",
           "horario": "12:35 - 12:50",
           "sala": "Sala 3.7",
-          "titulo": "Compound Extremes: Co-occurrence of Atmospheric Rivers with Atmospheric and Marine Heatwaves in the Southeast Pacific"
+          "titulo": "Inferencia Estocástica y Calibración en Modelos de Ensamble Meteorológico: Un Enfoque Asimétrico fundamentado en la Teoría de la Información"
+        }
+      ]
+    },
+    {
+      "nombre": "Camila Elizabeth Quijada Meza",
+      "inst": "Proterm",
+      "email": "camila.quijada.meza@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-008",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "12:05 - 12:20",
+          "sala": "Sala 3.7",
+          "titulo": "Caracterización de patrones meteorológicos locales asociados a concentraciones de gases odorantes mediante observaciones de alta frecuencia"
+        }
+      ]
+    },
+    {
+      "nombre": "Larissa de Paula Miranda",
+      "inst": "Universidade Federal do Rio Grande",
+      "email": "larissagodapaulamiranda@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-026",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Performance of the WaveWatch III model in the study of wind-generated waves during extreme events."
+        }
+      ]
+    },
+    {
+      "nombre": "Bruno Benjamín Varela Molina",
+      "inst": "Instituto de Física, Pontificia Universidad Católica de Chile, Santiago, Chile",
+      "email": "bruno.varela@uc.cl",
+      "trabajos": [
+        {
+          "id": "P-007",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Metodología y uso de la Toolbox Global-Krigger en Paleo±Dust"
+        }
+      ]
+    },
+    {
+      "nombre": "Francisca Covarrubias Mondaca",
+      "inst": "Pontificia Universidad Católica de Chile",
+      "email": "fcovarrubias@uc.cl",
+      "trabajos": [
+        {
+          "id": "P-045",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Variabilidad espacio-temporal de una pluma de río y su relación con forzantes oceanográficos y atmosféricos"
+        }
+      ]
+    },
+    {
+      "nombre": "Pablo Córdova Montecinos",
+      "inst": "Pontificia Universidad Católica de Chile / Red Ocean",
+      "email": "pablo.cordova.m@mail.pucv.cl",
+      "trabajos": [
+        {
+          "id": "O-027",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "16:10 - 16:25",
+          "sala": "Sala 2.5",
+          "titulo": "Detección de patrones turbulentos a partir de la distribución de burbujas en la zona de rompiente: experimentos mediante simulación LES en 2D"
+        }
+      ]
+    },
+    {
+      "nombre": "Alfonso Javier Pinto Morales",
+      "inst": "Universidad Adolfo Ibáñez",
+      "email": "alfopinto@alumnos.uai.cl",
+      "trabajos": [
+        {
+          "id": "P-034",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Cambio proyectado en olas de calor y Killing Degree Days agronómicos"
+        }
+      ]
+    },
+    {
+      "nombre": "Nicole Alejandra Zárate Morales",
+      "inst": "Departamento de Geofísica, Universidad de Chile",
+      "email": "nicole.zarate@ug.uchile.cl",
+      "trabajos": [
+        {
+          "id": "P-028",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Caracterización de compuestos orgánicos volátiles mediante PTR-TOF-MS: validación instrumental y análisis de dispersión en la zona urbana-industrial de Concón."
+        }
+      ]
+    },
+    {
+      "nombre": "María Victoria Moya",
+      "inst": "Pontificia Universidad Católica de Chile",
+      "email": "moyav.victoria@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-086",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Identificación y clasificación de mecanismos generadores de olas de calor en Chile central"
+        }
+      ]
+    },
+    {
+      "nombre": "Dipjyoti Mudiar",
+      "inst": "University of Chile, Santiago",
+      "email": "d.mudiar@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-016",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Synergistic Coupling of Heat and Moisture Transport in Zonal Atmospheric Rivers over the Extratropical Andes"
+        }
+      ]
+    },
+    {
+      "nombre": "Gabriel Francisco Correa Muñoz",
+      "inst": "LOFISAT, Universidad de Valparaíso",
+      "email": "gcorreamunoz03@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-048",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Patrón de circulación del mar interior de Chiloé (MIC) y su relación con el estrés del viento y la marea en septiembre de 2024."
+        }
+      ]
+    },
+    {
+      "nombre": "José Miguel Olivares Muñoz",
+      "inst": "Proterm S.A",
+      "email": "jmolivares00@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-004",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "11:35 - 11:50",
+          "sala": "Sala 3.7",
+          "titulo": "Sistema integrado de pronóstico meteorológico y modelación de dispersión para  apoyo a la gestión ambiental"
+        }
+      ]
+    },
+    {
+      "nombre": "Mario Cáceres Muñoz",
+      "inst": "Universidad de Valparaíso",
+      "email": "mario.caceres@uv.cl",
+      "trabajos": [
+        {
+          "id": "O-033",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "16:55 - 17:10",
+          "sala": "Sala 2.5",
+          "titulo": "CONTRACORRIENTE COSTERA EN UNA BAHÍA DE BORDE ORIENTAL ABIERTA HACIA EL ECUADOR"
+        }
+      ]
+    },
+    {
+      "nombre": "Matías Guzmán Muñoz",
+      "inst": "Universidad Austral de Chile",
+      "email": "mguzman.geof@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-087",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "14:15 - 14:30",
+          "sala": "Sala 3.7",
+          "titulo": "Productos de alta resolución para mejorar la comprensión de la variabilidad y de la predictibilidad hidroclimática para Chile Centro-Sur"
+        }
+      ]
+    },
+    {
+      "nombre": "Ricardo Muñoz",
+      "inst": "Departamento de Geofísica, Universidad de Chile",
+      "email": "rmunoz@dgf.uchile.cl",
+      "trabajos": [
+        {
+          "id": "O-034",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "16:55 - 17:10",
+          "sala": "Sala 3.7",
+          "titulo": "La piscina de aire frío sobre el Salar del Huasco"
+        }
+      ]
+    },
+    {
+      "nombre": "Diego Narváez",
+      "inst": "Copas coastal, Departamento de Oceanografía, Universidad de Concepción",
+      "email": "dnarvaez@oceanografia.udec.cl",
+      "trabajos": [
+        {
+          "id": "O-072",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "10:45 - 11:00",
+          "sala": "Sala 2.5",
+          "titulo": "Variabilidad de alta frecuencia y sinóptica durante un evento de surgencia costera en la zona central de Chile"
+        },
+        {
+          "id": "P-073",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Sistemas móviles de observación del océano:  Implementación de sensores oceanográficos en redes de pesca"
+        }
+      ]
+    },
+    {
+      "nombre": "Mónica Carolina Alvarado Niño",
+      "inst": "Shoa",
+      "email": "m.alvarado.nino@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-089",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Actualización de climatología de Nivel del mar y Temperatura Superficial del Mar"
+        }
+      ]
+    },
+    {
+      "nombre": "Daniel Andrés Olivares Norambuena",
+      "inst": "Magister en Ciencias Mención Oceanografía, Universidad de Concepción, Concepción, Chile",
+      "email": "danielolivares1999@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-072",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Caracterización de la circulación forzada por viento y boyantez en un sistema de fiordos y canales subantárticos"
+        }
+      ]
+    },
+    {
+      "nombre": "Abdón Benjamín Olguín Núñez",
+      "inst": "Pontificia Universidad Católica de Valparaíso (PUCV)",
+      "email": "abdon.olguin.n@mail.pucv.cl",
+      "trabajos": [
+        {
+          "id": "P-033",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Comparación de la estructura vertical biogeoquímica entre remolinos ciclónicos y anticiclónicos en el Pacífico Sur oriental durante el crucero CIMAR 28, primavera de 2023"
+        }
+      ]
+    },
+    {
+      "nombre": "Javier Ignacio Campos Núñez",
+      "inst": "Departamento de Geofísica, Universidad de Concepción, Chile; Center for Climate and Resilience Research (CR2), Chile",
+      "email": "jcampos2020@udec.cl",
+      "trabajos": [
+        {
+          "id": "O-040",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "10:30 - 10:45",
+          "sala": "Sala 3.7",
+          "titulo": "Efecto del flujo horizontal de humedad sobre ambientes potencialmente tornádicos en Chile centro-sur"
+        }
+      ]
+    },
+    {
+      "nombre": "Jonathan Oberreuter",
+      "inst": "Universidad Austral de Chile",
+      "email": "jonysatie@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-050",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "12:20 - 12:35",
+          "sala": "Sala 3.7",
+          "titulo": "Climatología de ríos atmosféricos sobre la plataforma de hielo Larsen C, Península Antártica (1960-2024)"
+        }
+      ]
+    },
+    {
+      "nombre": "Vera Oerder",
+      "inst": "Departamento de Oceanografia e Instituto Milenio de Oceanografia, Facultad de Ciencias Naturales y oceanografica, Universidad de Concepcion",
+      "email": "vera.oerder@imo-chile.cl",
+      "trabajos": [
+        {
+          "id": "O-076",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "11:15 - 11:30",
+          "sala": "Sala 2.5",
+          "titulo": "Circulación profunda del Pacífico Sur Oriental: desafíos para su caracterización mediante observaciones y modelación numérica"
+        }
+      ]
+    },
+    {
+      "nombre": "Diego Ignacio Fernández Olivares",
+      "inst": "Universidad Adolfo Ibáñez",
+      "email": "diegoifernandez@alumnos.uai.cl",
+      "trabajos": [
+        {
+          "id": "P-042",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Timescale dependence of projected changes in extreme precipitation under climate change"
+        }
+      ]
+    },
+    {
+      "nombre": "María Fabiola Monsálvez Opazo",
+      "inst": "Programa de Magíster en Ciencias con mención en Oceanografía, Universidad de Concepción; Centro de Investigación Oceanográfica COPAS Coastal, Universidad de Concepción; Departamento de Oceanografía, Facultad de Ciencias Naturales y Oceanográficas, Universidad de Concepción.",
+      "email": "marmonsalvez@udec.cl",
+      "trabajos": [
+        {
+          "id": "O-094",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "15:50 - 16:05",
+          "sala": "Sala 2.5",
+          "titulo": "Variabilidad oceanográfica interanual  en un sistema de surgencia de borde oriental"
+        }
+      ]
+    },
+    {
+      "nombre": "Fabian Enrique Salgado Oporto",
+      "inst": "Universidad de Los Lagos",
+      "email": "fabianenrique.salgado@alumnos.ulagos.cl",
+      "trabajos": [
+        {
+          "id": "P-019",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Cuantificación de las condiciones de hipoxia y sus forzantes en el Fiordo Puyuhuapi."
+        }
+      ]
+    },
+    {
+      "nombre": "Matías Arias Ortega",
+      "inst": "Universidad de Costa Rica",
+      "email": "matiasarias97@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-067",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "10:00 - 10:15",
+          "sala": "Sala 3.7",
+          "titulo": "Patrones de teleconexión entre la Oscilación Antártica y las corrientes en chorro de bajo nivel del CHOCÓ y del Caribe"
+        }
+      ]
+    },
+    {
+      "nombre": "Álvaro Ossandón",
+      "inst": "Universidad Técnica Federico Santa María",
+      "email": "alvaro.ossandon@usm.cl",
+      "trabajos": [
+        {
+          "id": "O-095",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "15:50 - 16:05",
+          "sala": "Sala 3.7",
+          "titulo": "Reconstrucción de la temperatura superficial del mar en el Pacífico ecuatorial a partir de datos indirectos escasos mediante un enfoque jerárquico bayesiano"
+        }
+      ]
+    },
+    {
+      "nombre": "Ian Andersej Trobok Pacheco",
+      "inst": "Dirección Meteorológica de Chile",
+      "email": "ian.trobok@dgac.gob.cl",
+      "trabajos": [
+        {
+          "id": "P-051",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Patrones meteorológicos de escala sinóptica asociados a eventos de tornados en la zona centro - sur de Chile."
         }
       ]
     },
@@ -8362,6 +7329,1118 @@ window.CONGRESO_DATA = {
           "horario": "13:30 - 15:00",
           "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Using Linear Inverse Model Climate Realizations to Assess Precipitation Teleconnections and Multiyear Drought Risk"
+        }
+      ]
+    },
+    {
+      "nombre": "Cristina Belén Verdugo Palma",
+      "inst": "Universidad de Valparaíso",
+      "email": "cristina.verdugop@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-038",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "10:15 - 10:30",
+          "sala": "Sala 3.7",
+          "titulo": "Análisis de la evolución de ambientes tornádicos en el centro-sur de Chile bajo un escenario de calentamiento global para finales del siglo XXI"
+        }
+      ]
+    },
+    {
+      "nombre": "Sergio Andrés Bahamóndez Palza",
+      "inst": "Universidad de Concepción",
+      "email": "sbahamondez@udec.cl",
+      "trabajos": [
+        {
+          "id": "O-007",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "12:05 - 12:20",
+          "sala": "Sala 2.5",
+          "titulo": "Dinámica de los seiches internos en el Fiordo Reloncaví: un estudio numérico CROCO-WRF"
+        }
+      ]
+    },
+    {
+      "nombre": "Vanessa Alejandra Carril Pardo",
+      "inst": "Universidad del Bío-Bío",
+      "email": "vcarrilpardo@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-091",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "15:00 - 15:15",
+          "sala": "Sala 2.5",
+          "titulo": "Interactive effects of a submarine canyon and wind stress curl on coastal upwelling circulation"
+        }
+      ]
+    },
+    {
+      "nombre": "Maricarmen Guerra Paris",
+      "inst": "Departamento Ingeniería Civil, Universidad de Concepción; COPAS Coastal",
+      "email": "marguerra@udec.cl",
+      "trabajos": [
+        {
+          "id": "O-037",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "10:15 - 10:30",
+          "sala": "Sala 2.5",
+          "titulo": "Variaciones del nivel del mar total durante eventos meteorológicos y de oleaje extremos en la región del Biobío"
+        }
+      ]
+    },
+    {
+      "nombre": "Almendra Pedrini",
+      "inst": "Universidad de Valparaíso",
+      "email": "diana.pozo@uv.cl",
+      "trabajos": [
+        {
+          "id": "P-004",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Estudio de las condiciones sinópticas asociadas a eventos de tornados en Chile centro-sur"
+        }
+      ]
+    },
+    {
+      "nombre": "Giovanna Paola Amaya Peña",
+      "inst": "Escuela de ciencias agroalimentarias, animales y ambientales, niversidad de O'Higgins",
+      "email": "giovanna.amaya@uoh.cl",
+      "trabajos": [
+        {
+          "id": "O-061",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "15:35 - 15:50",
+          "sala": "Sala 3.7",
+          "titulo": "Identificación de patrones atmosféricos invernales mediante FAUM, K-means y un enfoque híbrido de clasificación"
+        }
+      ]
+    },
+    {
+      "nombre": "Ernesto Eduardo Gonzalez Pinilla",
+      "inst": "Departamento de Geofísica, Universidad de Concepción, Chile; Centro de Ciencia del Clima y la Resiliencia (CR)2, Universidad de Concepción, Chile",
+      "email": "ergonzalez2019@udec.cl",
+      "trabajos": [
+        {
+          "id": "P-017",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Evolución y Características Sinópticas de Ríos Atmosféricos que no producen precipitación"
+        },
+        {
+          "id": "P-018",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Características hidrometeorológicas de distintas distribuciones espaciales de precipitación asociadas a Ríos Atmosféricos"
+        }
+      ]
+    },
+    {
+      "nombre": "Mauro Pinto-Juica",
+      "inst": "University of Gothenburg",
+      "email": "mauro.pinto.j@gu.se",
+      "trabajos": [
+        {
+          "id": "O-110",
+          "tipo": "Oral",
+          "dia": "Día 4",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 2.5",
+          "titulo": "Mauro Pinto"
+        }
+      ]
+    },
+    {
+      "nombre": "Matias Pizarro-Koch",
+      "inst": "Instituto Milenio de Oceanografía (IMO)",
+      "email": "matias.pizarrok@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-087",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Variabilidad temporal de la presión de fondo en la Fosa de Atacama: observaciones, estructura vertical e implicancias para la dinámica del océano profundo"
+        }
+      ]
+    },
+    {
+      "nombre": "Matías Pizarro-Koch",
+      "inst": "Instituto Milenio de Oceanografía",
+      "email": "matias.pizarrok@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-102",
+          "tipo": "Oral",
+          "dia": "Día 4",
+          "horario": "10:30 - 10:45",
+          "sala": "Sala 2.5",
+          "titulo": "Intensificación de los flujos de oxígeno asociados a remolinos de mesoescala durante eventos extremos de El Niño frente a Chile central: un enfoque numérico"
+        }
+      ]
+    },
+    {
+      "nombre": "Andrea Piñones",
+      "inst": "1 Instituto de Ciencias Marinas y Limnológicas, Universidad Austral de Chile. 2 Centro COPAS Coastal, Concepción, Chile. 3 Instituto Milenio BASE, Santiago, Chile",
+      "email": "andrea.pinones@uach.cl",
+      "trabajos": [
+        {
+          "id": "O-109",
+          "tipo": "Oral",
+          "dia": "Día 4",
+          "horario": "11:35 - 11:50",
+          "sala": "Sala 3.7",
+          "titulo": "Balance atmósfera-océano durante olas de calor marinas nunca antes registradas en la Península Antártica"
+        }
+      ]
+    },
+    {
+      "nombre": "Mayra Antonia Espinoza Ponce",
+      "inst": "Pontificia Universidad Católica de Valparaíso (PUCV)",
+      "email": "mayraespinoza.p212@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-060",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Recuperación estacional y erosión de largo plazo en una playa de bolsillo: análisis morfodinámico con perfiles topográficos e imágenes satelitales."
+        }
+      ]
+    },
+    {
+      "nombre": "Marcel Ramos Quezada",
+      "inst": "Universidad Católica del Norte",
+      "email": "marcel.ramos.q780@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-070",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "10:30 - 10:45",
+          "sala": "Sala 2.5",
+          "titulo": "Contribución relativa del transporte geostrófico y de Ekman a la circulación en la zona centro norte de Chile (28.5°S – 30.5°S)"
+        }
+      ]
+    },
+    {
+      "nombre": "Javiera Antonia Sainz Reyes",
+      "inst": "PUCV",
+      "email": "javiera.sainz@pucv.cl",
+      "trabajos": [
+        {
+          "id": "P-023",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Simulación regional del Pacífico Sur Oriental (1994-2025): Tendencias de oxígeno disuelto, validación observacional y el rol de corrientes subsuperficiales"
+        },
+        {
+          "id": "P-078",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Regionalización oceanográfica del Pacifico Sur Oriental mediante técnicas de machine learning"
+        }
+      ]
+    },
+    {
+      "nombre": "David Michael Aguilera Riquelme",
+      "inst": "GraupelTec Ambiental, Santiago, Chile; Red Meteorológica Aficionada de Chile",
+      "email": "redmeteoaficionadachile@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-014",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "RedMeteo: El caso de una red densa de observaciones meteorológicas ciudadanas en tiempo real para Chile"
+        }
+      ]
+    },
+    {
+      "nombre": "María Paz Almendra Riquelme",
+      "inst": "Unversidad Austral  de Chile",
+      "email": "maria.almendra@alumnos.uach.cl",
+      "trabajos": [
+        {
+          "id": "O-062",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "15:50 - 16:05",
+          "sala": "Sala 2.5",
+          "titulo": "Cañones submarinos como motores de surgimiento de Agua Circumpolar Profunda a la plataforma continental en las Islas Shetland del Sur, Península Antártica"
+        }
+      ]
+    },
+    {
+      "nombre": "Salma Juliette Espinoza Rivera",
+      "inst": "Universidad de Concepción",
+      "email": "saespinoza2019@udec.cl",
+      "trabajos": [
+        {
+          "id": "O-100",
+          "tipo": "Oral",
+          "dia": "Día 4",
+          "horario": "10:15 - 10:30",
+          "sala": "Sala 2.5",
+          "titulo": "Nuevos hallazgos sobre los procesos de mezcla diapícnica en la Zona de Mínimo Oxígeno frente al Norte de Chile"
+        }
+      ]
+    },
+    {
+      "nombre": "Sofía Palacios Riveros",
+      "inst": "Universidad de Concepción y Centro de Investigación Oceanográfica COPAS Coastal UdeC.",
+      "email": "spalacios2019@udec.cl",
+      "trabajos": [
+        {
+          "id": "O-060",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "15:35 - 15:50",
+          "sala": "Sala 2.5",
+          "titulo": "Influence of the Margarita Canyon on Upper Circumpolar Deep Water Intrusion onto the West Antarctic Peninsula Shelf"
+        }
+      ]
+    },
+    {
+      "nombre": "Rodrigo Castillo Rodríguez",
+      "inst": "Universidad de Costa Rica",
+      "email": "rodrigo.castillorodriguez@ucr.ac.cr",
+      "trabajos": [
+        {
+          "id": "O-069",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "10:15 - 10:30",
+          "sala": "Sala 3.7",
+          "titulo": "Oscilación Antártica: su influencia en la variabilidad interanual de la precipitación en Costa Rica"
+        }
+      ]
+    },
+    {
+      "nombre": "Daniela Rojas Rojas",
+      "inst": "Universidad de Chile",
+      "email": "magdavasquezramos@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-041",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "El fitoplancton en respuesta a eventos de marejadas extremas: Análisis oceanográfico utilizando WaveWatch III y Color Oceánico Satelital."
+        }
+      ]
+    },
+    {
+      "nombre": "Roberto Francisco Rondanelli Rojas",
+      "inst": "Departamento de Geofísica, Universidad de Chile",
+      "email": "roberto.rondanelli@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-094",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Una base de datos de precipitación con control de calidad y corrección por viento acotada y modulada por intensidad en Cerro Tres Puntas (3700 m), Chile central"
+        }
+      ]
+    },
+    {
+      "nombre": "Roberto Rondanelli Rojas",
+      "inst": "DGF-Uchile, CR2-Uchile",
+      "email": "roberto.rondanelli@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-044",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "11:15 - 11:30",
+          "sala": "Sala 3.7",
+          "titulo": "Radar satelital revela precipitación orográfica asociada a flujo bloqueado sobre la Península Antártica"
+        }
+      ]
+    },
+    {
+      "nombre": "Sergio A. Rosales",
+      "inst": "Innovación Ambiental Consultores SpA",
+      "email": "srosales@iacspa.cl",
+      "trabajos": [
+        {
+          "id": "O-005",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 2.5",
+          "titulo": "Caracterización oceanográfica y modelación hidrodinámica tridimensional multianual del Estrecho de Magallanes y Seno Skyring"
+        }
+      ]
+    },
+    {
+      "nombre": "Claudia Rozas-Perez",
+      "inst": "Universidad de Valparaíso",
+      "email": "clau.rozas@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-071",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Efecto de la transición primavera-otoño (2025-2026) sobre el oxígeno disuelto en la bahía de Laguna Verde (33.1° S), Valparaíso"
+        }
+      ]
+    },
+    {
+      "nombre": "María Fernanda Ruedlinger",
+      "inst": "Departamento de Geofísica, Universidad de Chile",
+      "email": "amanda.magnere@ug.uchile.cl",
+      "trabajos": [
+        {
+          "id": "P-085",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Influencia de los incendios forestales en el derretimiento glaciar: cambios en el albedo de los glaciares de la cuenca alta del río Olivares tras el incendio de “Las Máquinas” debido a la deposición de partículas absorbentes de luz"
+        }
+      ]
+    },
+    {
+      "nombre": "Felipe Ríos-Silva",
+      "inst": "1. Centro UC Desierto de Atacama, PUC. 2. Instituto de Geografía, Facultad de historia, Geografía y Ciencia Política, Pontificia Universidad Católica de Chile",
+      "email": "fsrios@uc.cl",
+      "trabajos": [
+        {
+          "id": "O-097",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "16:05 - 16:20",
+          "sala": "Sala 3.7",
+          "titulo": "Entendiendo las dinámicas espaciotemporales de la niebla, rocío y lluvia en un gradiente de aridez en Chile"
+        }
+      ]
+    },
+    {
+      "nombre": "Catalina Consuelo Alzola Salas",
+      "inst": "Universidad de Chile",
+      "email": "catalina.alzola@ug.uchile.cl",
+      "trabajos": [
+        {
+          "id": "P-008",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Evaluación de Metodologías de Estimación de Flujo de Calor Sensible"
+        }
+      ]
+    },
+    {
+      "nombre": "Tomás Roberto Muñoz Salazar",
+      "inst": "Laboratorio de Dendrocronología y Cambio Global, Instituto de Conservación Biodiversidad y Territorio, Universidad Austral de Chile, Valdivia, Chile",
+      "email": "tomasmusa@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-093",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "15:35 - 15:50",
+          "sala": "Sala 3.7",
+          "titulo": "Late-spring frosts in South America since 1400 CE: links to hemispheric-scale climate, volcanism and solar activity"
+        }
+      ]
+    },
+    {
+      "nombre": "Martina Raquel Monasterio Sandoval",
+      "inst": "Universidad Técnica Federico Santa Maria",
+      "email": "martina.monasterio@sansano.usm.cl",
+      "trabajos": [
+        {
+          "id": "O-082",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "12:20 - 12:35",
+          "sala": "Sala 2.5",
+          "titulo": "Propagación de la marea barotrópica por un estrecho interoceánico."
+        }
+      ]
+    },
+    {
+      "nombre": "Camila Valentina Camposano Sanhueza",
+      "inst": "LOFISAT, Universidad de Valparaíso",
+      "email": "camila.camposano@estudiantes.uv.cl",
+      "trabajos": [
+        {
+          "id": "O-078",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 2.5",
+          "titulo": "Variabilidad intraestacional del nivel del mar y de la temperatura superficial del mar a lo largo de la costa de Chile entre 2000 y 2026"
+        }
+      ]
+    },
+    {
+      "nombre": "Ángel Rodríguez Santana",
+      "inst": "Universidad de Las Palmas de Gran Canaria",
+      "email": "angel.santana@ulpgc.es",
+      "trabajos": [
+        {
+          "id": "O-096",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "16:05 - 16:20",
+          "sala": "Sala 2.5",
+          "titulo": "VARIABILIDAD Y CARACTERIZACIÓN AMBIENTAL EN EL ENTORNO MARINO DE GRANJAS ACUÍCOLAS COSTERAS (PROYECTOS SIRENA Y SIRENA 2)"
+        }
+      ]
+    },
+    {
+      "nombre": "Iván Pérez Santos",
+      "inst": "Centro i-mar de la Universidad de Los Lagos, Puerto Montt, Chile.",
+      "email": "ivan.perez@ulagos.cl",
+      "trabajos": [
+        {
+          "id": "O-003",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "11:35 - 11:50",
+          "sala": "Sala 2.5",
+          "titulo": "Vertical Fluxes of Dissolved Oxygen Driven by Turbulence and Eddy Diffusivity in Patagonian Fjords"
+        }
+      ]
+    },
+    {
+      "nombre": "Yosvany Garcia Santos",
+      "inst": "Centro de Investigación Oceanográfica COPAS Coastal, Universidad de Concepción, Concepción, Chile",
+      "email": "ygarcia0218@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-051",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "12:35 - 12:50",
+          "sala": "Sala 3.7",
+          "titulo": "Compound Extremes: Co-occurrence of Atmospheric Rivers with Atmospheric and Marine Heatwaves in the Southeast Pacific"
+        }
+      ]
+    },
+    {
+      "nombre": "Lucía Scaff",
+      "inst": "Departamento de Geofísica, Universidad de Concepción & CR2",
+      "email": "mscaff@udec.cl",
+      "trabajos": [
+        {
+          "id": "O-042",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "10:45 - 11:00",
+          "sala": "Sala 3.7",
+          "titulo": "Contribución de la convección al total de precipitación invernal y sus cambios en un futuro más cálido"
+        }
+      ]
+    },
+    {
+      "nombre": "Noémie Schifano",
+      "inst": "IMO",
+      "email": "noemie.schifano@imo-chile.cl",
+      "trabajos": [
+        {
+          "id": "P-092",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Numerical Mixing and Deep-Ocean Dynamics in the Atacama Trench"
+        }
+      ]
+    },
+    {
+      "nombre": "Francesca V. Search",
+      "inst": "LOFISAT, Universidad de Valparaíso",
+      "email": "fran.search.t@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-044",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Subtidal circulation and mixing in a regional inland sea, Northern Patagonia"
+        }
+      ]
+    },
+    {
+      "nombre": "Rodolfo Adrián Gómez Sepúlveda",
+      "inst": "Pontificia Universidad Católica de Chile",
+      "email": "rodogomez@estudiante.uc.cl",
+      "trabajos": [
+        {
+          "id": "P-095",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Modulación morfológica en desembocadura costera frente a procesos oceanográficos a partir de percepción remota de alta resolución"
+        }
+      ]
+    },
+    {
+      "nombre": "Claudia Silvana Pizarro Silva",
+      "inst": "Universidad de Valparaíso",
+      "email": "claudia.pizarro.silva@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-010",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Pronóstico costero de oleaje y alerta temprana de marejadas en Arica, Pichilemu, Constitución, Corral y Puerto Saavedra"
+        }
+      ]
+    },
+    {
+      "nombre": "Emerson Mariano da Silva",
+      "inst": "State University of Ceará – UECE",
+      "email": "emerson.mariano@uece.br",
+      "trabajos": [
+        {
+          "id": "P-075",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Temporal Variability of Thermal Conditions in the Tropical Atlantic Ocean: A Case Study for the Period from 1990 to 2020"
+        }
+      ]
+    },
+    {
+      "nombre": "Marcus Sobarzo",
+      "inst": "Departamento de Oceanografía, COPAS COASTAL, Universidad de Concepción",
+      "email": "msobarz@udec.cl",
+      "trabajos": [
+        {
+          "id": "O-068",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "10:15 - 10:30",
+          "sala": "Sala 2.5",
+          "titulo": "Surgencia costera en Chile Centro Sur: Estado del conocimiento y tendencias en el enfriamiento superficial de los últimos 80 años"
+        }
+      ]
+    },
+    {
+      "nombre": "Camila Paz Sola",
+      "inst": "Universidad de Valparaíso y Pontificia Universidad Católica",
+      "email": "cp.solahidalgo@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-001",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "11:20 - 11:35",
+          "sala": "Sala 2.5",
+          "titulo": "When the fjords take a breath: Influence of wind forcing and Ekman dynamics on deep ventilation in the North Patagonian fjords"
+        }
+      ]
+    },
+    {
+      "nombre": "Ignacio Nicolás Romagnoli Soriano",
+      "inst": "Departamento de Obras Civiles, Universidad Técnica Federico Santa María",
+      "email": "ignacio.romagnoli@usm.cl",
+      "trabajos": [
+        {
+          "id": "O-077",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "11:15 - 11:30",
+          "sala": "Sala 3.7",
+          "titulo": "Análisis de sensibilidad del evento de junio de 2023 ante proyecciones de cambio climático."
+        }
+      ]
+    },
+    {
+      "nombre": "Mario Andrés Cáceres Soto",
+      "inst": "UNAB - IMO",
+      "email": "mario.caceres.soto@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-084",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Evaluación de Deep Learning para reducir el sesgo de TSM en modelos oceánicos en el norte de Chile"
+        }
+      ]
+    },
+    {
+      "nombre": "Odette Alejandra Vergara Soto",
+      "inst": "Simulación y Pronóstico Marino, SpA",
+      "email": "oddyale@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-061",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Desarrollo de un modelo físico-biogeoquímico en la Patagonia norte de Chile"
+        }
+      ]
+    },
+    {
+      "nombre": "Jorge Petit-Laurent Sáez",
+      "inst": "Universidad Adolfo Ibañez",
+      "email": "jpetitlaurent@alumnos.uai.cl",
+      "trabajos": [
+        {
+          "id": "O-024",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "15:20 - 15:35",
+          "sala": "Sala 3.7",
+          "titulo": "Respuesta no lineal de las olas de calor al calentamiento global en simulaciones climáticas regionales"
+        }
+      ]
+    },
+    {
+      "nombre": "Camila Alejandra Tapia Tapia",
+      "inst": "Universidad Técnica Federico Santa María, Advanced Mining Technology Center (AMTC)",
+      "email": "camila.tapiat@usm.cl",
+      "trabajos": [
+        {
+          "id": "O-073",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "10:45 - 11:00",
+          "sala": "Sala 3.7",
+          "titulo": "EVALUACIÓN DE PRECIPITACIONES EXTREMAS Y PROYECCIONES BAJO CONDICIONES DE CAMBIO CLIMÁTICO EN CHILE CONTINENTAL UTILIZANDO SIMULACIONES CLIMÁTICAS DEL WRF-SAAG"
+        }
+      ]
+    },
+    {
+      "nombre": "Pablo Ignacio Hernández Tapia",
+      "inst": "Universidad Técnica Federico Santa María",
+      "email": "pablo.hernandezt@usm.cl",
+      "trabajos": [
+        {
+          "id": "O-015",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "14:20 - 14:35",
+          "sala": "Sala 2.5",
+          "titulo": "Dinámica de Estuarios de Pequeña Escala Bajo la Influencia de Onda de Infragravedad"
+        }
+      ]
+    },
+    {
+      "nombre": "Valeska Alanis Sandoval Tapia",
+      "inst": "Pontificia Universidad Católica de Valparaíso",
+      "email": "valeska.sandoval.t@mail.pucv.cl",
+      "trabajos": [
+        {
+          "id": "O-041",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "10:45 - 11:00",
+          "sala": "Sala 2.5",
+          "titulo": "Análisis experimental de la influencia de la forma de bloques rocosos en su transporte inducido por eventos de inundación costera"
+        }
+      ]
+    },
+    {
+      "nombre": "Sebastián Orlando Durán Torres",
+      "inst": "Pontificia Universidad Católica de Valparaiso (PUCV) - Fundación San Ignacio del Huinay (FSIH)",
+      "email": "sebastian.duran.torres@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-066",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Variabilidad espacio-temporal de las propiedades físico-químicas del sistema oceanográfico del fiordo Comau"
+        }
+      ]
+    },
+    {
+      "nombre": "Matías Troncoso-Villar",
+      "inst": "Departamento de Ingeniería Hidráulica y Ambiental, Pontificia Universidad Católica de Chile",
+      "email": "mtroncosov8@estudiante.uc.cl",
+      "trabajos": [
+        {
+          "id": "P-059",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Entre \"postimpresionismo\" y \"vanguardia\", variabilidad acústica y dinámica física bajo la influencia de una pluma fluvial en un fiordo chileno"
+        }
+      ]
+    },
+    {
+      "nombre": "Kennedy Richard Gomez Tunque",
+      "inst": "Doctoral Program in Water Resources Engineering, Universidad Nacional Agraria La Molina, Lima, Peru  School of Civil Engineering, Faculty of Engineering Sciences, Universidad Nacional de Huancavelica, Huancavelica, Peru",
+      "email": "ingkenri@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-055",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "14:30 - 14:45",
+          "sala": "Sala 3.7",
+          "titulo": "Predictibilidad espacio-temporal de ENOS en el Pacífico tropical: evaluación mediante ConvLSTM en las regiones Niño 3.4 y Niño 1+2"
+        }
+      ]
+    },
+    {
+      "nombre": "CONSTANZA YISSELL HERNANDEZ URBANO",
+      "inst": "Pontificia Universidad Católica de Valparaíso y Núcleo Milenio DEOXS",
+      "email": "constanza.hernandez@pucv.cl",
+      "trabajos": [
+        {
+          "id": "P-035",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Forzantes físicos y biogeoquímicos que influyen en la variabilidad temporal del óxido nitroso en la capa superficial frente a Valparaíso."
+        }
+      ]
+    },
+    {
+      "nombre": "Noelia Vejar Ulloa",
+      "inst": "(1)Departamento de Geofísica, Facultad de Ciencias Físicas y Matemáticas, Universidad de Concepción, Concepción, Chile. (2) Programa de Magister en Geofísica, Departamento de Geofísica, Facultad de Ciencias Físicas y Matemáticas, Universidad de Concepción, Concepción, Chile.",
+      "email": "nvejar2019@udec.cl",
+      "trabajos": [
+        {
+          "id": "O-071",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "10:30 - 10:45",
+          "sala": "Sala 3.7",
+          "titulo": "Impacto del cambio climático en la actividad de remolinos de mesoescala y su transporte de calor en el Pacífico suroriental"
+        }
+      ]
+    },
+    {
+      "nombre": "Luis P. Valencia",
+      "inst": "Instituto Universitario de Investigación en Acuicultura Sostenible y Ecosistemas Marinos, Universidad de Las Palmas de Gran Canaria, Las Palmas de Gran Canaria, Las Palmas, España.",
+      "email": "luis.valencia102@alu.ulpgc.es",
+      "trabajos": [
+        {
+          "id": "O-086",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "14:15 - 14:30",
+          "sala": "Sala 2.5",
+          "titulo": "Modulación del campo de ondas internas por un remolino intratermoclina: el caso de Bentayga"
+        }
+      ]
+    },
+    {
+      "nombre": "Simón Ismael Reyes Valentin",
+      "inst": "LOFISAT, Universidad de Valparaíso",
+      "email": "monreyes10@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-098",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Variabilidad submareal de la circulación profunda y su influencia sobre el oxígeno disuelto en un fiordo patagónico de cuatro capas"
+        }
+      ]
+    },
+    {
+      "nombre": "Raúl Valenzuela",
+      "inst": "Instituto de Cs. de la Ingeniería, Universidad de O’Higgins, Rancagua y Centro de Cs. del Clima y la Resiliencia (CR2), Universidad de Chile, Santiago",
+      "email": "raul.valenzuela@uoh.cl",
+      "trabajos": [
+        {
+          "id": "O-048",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "12:05 - 12:20",
+          "sala": "Sala 3.7",
+          "titulo": "Atmospheric River Detection And Tracking Tool (AR-DATT): una herramienta para el estudio regional de Ríos Atmosféricos"
+        },
+        {
+          "id": "P-064",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Consistencia en la Representación Microfísica de ERA5: un caso de estudio en Rancagua"
+        }
+      ]
+    },
+    {
+      "nombre": "Diego Eduardo Duhalde Venegas",
+      "inst": "Universidad Adolfo Ibáñez",
+      "email": "dduhalde@alumnos.uai.cl",
+      "trabajos": [
+        {
+          "id": "O-083",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "12:20 - 12:35",
+          "sala": "Sala 3.7",
+          "titulo": "Persistencia y aprendizaje automático en la predicción de precipitación a corto plazo: aporte del vapor de agua precipitable obtenido mediante sistemas globales de navegación satelital"
+        }
+      ]
+    },
+    {
+      "nombre": "Ignacio Andrés Pérez Vergara",
+      "inst": "Escuela de Ingeniería Informática, Facultad de Ingeniería, Universidad de Valparaíso, Chile.",
+      "email": "ignacio.perezve@postgrado.uv.cl",
+      "trabajos": [
+        {
+          "id": "P-052",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Automatización de la Observación de Nubosidad en Octas mediante Visión por Computadora y Deep Learning: Una Alternativa a la Medición Manual en Aeródromos Chilenos"
+        }
+      ]
+    },
+    {
+      "nombre": "Maximiliano Viale",
+      "inst": "IANIGLA, CONICET, Mendoza, Argentina",
+      "email": "maxiviale@mendoza-conicet.gob.ar",
+      "trabajos": [
+        {
+          "id": "O-028",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "16:10 - 16:25",
+          "sala": "Sala 3.7",
+          "titulo": "Condiciones Meteorológicas Extremas en la Cima del Aconcagua (6940m)"
+        }
+      ]
+    },
+    {
+      "nombre": "Felipe Alberto González Vidal",
+      "inst": "Universidad de Chile",
+      "email": "felipe.gonzalez.8@ug.uchile.cl",
+      "trabajos": [
+        {
+          "id": "P-021",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Cambios en isopreno y ozono derivados de la megasequía (2010-2019) en Chile central"
+        }
+      ]
+    },
+    {
+      "nombre": "Jennifer Villarroel-Nenen",
+      "inst": "Laboratorio de Procesos Acoplados Biofísicos (LaPAB)",
+      "email": "jennifervillarroelnenen@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-084",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "12:35 - 12:50",
+          "sala": "Sala 2.5",
+          "titulo": "Exploración de potenciales zonas de generación y propagación de mareas internas semidiurnas"
+        }
+      ]
+    },
+    {
+      "nombre": "Cristian Adolfo Ortiz Villavicencio",
+      "inst": "Doctorado Conjunto en Ciencias Mención Física, Universidad de Valparaíso",
+      "email": "cristian.ortizvi@postgrado.uv.cl",
+      "trabajos": [
+        {
+          "id": "P-037",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Variabilidad del chorro polar y su relación con los bloqueos atmosféricos en latitudes medias y altas del hemisferio sur"
+        }
+      ]
+    },
+    {
+      "nombre": "Megan Williams",
+      "inst": "Pontificia Universidad Católica de Chile",
+      "email": "megan.williams@uc.cl",
+      "trabajos": [
+        {
+          "id": "O-021",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "15:05 - 15:20",
+          "sala": "Sala 2.5",
+          "titulo": "Hydrologic connectivity in semi-arid coastal lagoons: contrasting roles of oceanic and groundwater exchange"
+        }
+      ]
+    },
+    {
+      "nombre": "Cameron Wunderlin",
+      "inst": "University of Nebraska-Lincoln",
+      "email": "cameron.wunderlin@noaa.gov",
+      "trabajos": [
+        {
+          "id": "O-014",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "12:50 - 13:05",
+          "sala": "Sala 3.7",
+          "titulo": "Southeastern Pacific Subtropical Cyclones"
+        }
+      ]
+    },
+    {
+      "nombre": "Gonzalo Sebastián Saldías Yau",
+      "inst": "Departamento de Física, Facultad de Ciencias, Universidad del Bío-Bío, Chile",
+      "email": "gsaldias@ubiobio.cl",
+      "trabajos": [
+        {
+          "id": "O-013",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "12:50 - 13:05",
+          "sala": "Sala 2.5",
+          "titulo": "Energetic pathways of upwelling-front instabilities over a submarine canyon"
+        }
+      ]
+    },
+    {
+      "nombre": "Matías Andrés Briceño Yañez",
+      "inst": "Universidad de Chile",
+      "email": "mabricenoyanez@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-088",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "CONTRIBUCIÓN RELATIVA DEL FORZAMIENTO ANTROPOGÉNICO A LA MANCHA CÁLIDA DEL SUR Y EL DIPOLO DE PRESIÓN MEDIANTE ENSAMBLES  CMIP6"
+        }
+      ]
+    },
+    {
+      "nombre": "Leonora Pereira Zapata",
+      "inst": "Universidad Técnica Federico Santa María",
+      "email": "leonora.pereira@usm.cl",
+      "trabajos": [
+        {
+          "id": "O-029",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "16:25 - 16:40",
+          "sala": "Sala 2.5",
+          "titulo": "Modelación de la dinámica de plumas en la zona de rompiente mediante modelo no hidrostático SWASH"
+        }
+      ]
+    },
+    {
+      "nombre": "Natalia Elena Ruiz Zenteno",
+      "inst": "Departamento de Geofísica, Universidad de Concepción & Centro de Ciencia del Clima y la Resiliencia",
+      "email": "naruiz2019@udec.cl",
+      "trabajos": [
+        {
+          "id": "O-018",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "14:35 - 14:50",
+          "sala": "Sala 3.7",
+          "titulo": "Umbrales meteorológicos críticos para el desarrollo de incendios forestales en subregiones de Chile centro-sur"
+        }
+      ]
+    },
+    {
+      "nombre": "Constanza Noemí Escobedo Zúñiga",
+      "inst": "LOFISAT, Universidad de Valparaíso",
+      "email": "constanzaezuniga@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-036",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Efectos del forzamiento del viento y la descarga de agua dulce sobre la hidrografía y estabilidad termohalina de un fiordo subantártico."
+        }
+      ]
+    },
+    {
+      "nombre": "Oscar pizarro",
+      "inst": "Departamento de Geofísica (DGEO), Instituto Milenio de Oceanografía (IMO) y Centro de Instrumentación Oceanográfica (CIO), Universidad de Concepción (UdeC)",
+      "email": "opizarro@udec.cl",
+      "trabajos": [
+        {
+          "id": "O-074",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "11:00 - 11:15",
+          "sala": "Sala 2.5",
+          "titulo": "Circulación profunda y mezcla en la Fosa de Atacama"
+        }
+      ]
+    },
+    {
+      "nombre": "Manuel Suazo Álvarez",
+      "inst": "Laboratorio de Dendrocronología y Cambio Global, Universidad Austral de Chile, Valdivia, Chile; Centro de Ciencia del Clima y la Resiliencia CR2",
+      "email": "manu.suazo@gmail.com",
+      "trabajos": [
+        {
+          "id": "O-016",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "14:20 - 14:35",
+          "sala": "Sala 3.7",
+          "titulo": "Señales intraestacionales precursoras de incendios forestales extremos en Chile centro-sur"
+        },
+        {
+          "id": "P-027",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Cambios en la circulación de la atmósfera y del clima regional están alterando procesos biológicos en los bosques subantárticos de Sudamérica"
+        }
+      ]
+    },
+    {
+      "nombre": "Benjamín Ignacio Cornejo Ávila",
+      "inst": "PUCV",
+      "email": "benjamin.cornejo.av@gmail.com",
+      "trabajos": [
+        {
+          "id": "P-070",
+          "tipo": "Póster",
+          "dia": "Día 4",
+          "horario": "13:30 - 15:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Variabilidad de la capa de mezcla y turbulencia microescalar asociada a un remolino anticiclónico"
         }
       ]
     }
