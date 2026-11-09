@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>OFMC 2026 - App Oficial del Congreso</title>
+  
+  <!-- PWA & Mobile Meta Tags -->
+  <meta name="theme-color" content="#1B365D">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="OFMC 2026">
+  <meta name="description" content="Aplicación Oficial del VIII Congreso de Oceanografía Física, Meteorología y Clima (OFMC 2026). Programa en vivo, salas paralelas, horarios, pósters y agenda personalizada.">
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="icons/favicon.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-left">
+      <img src="logos/logo_ofmc.png" alt="OFMC 2026" class="header-logo" onerror="this.src='icons/icon-192.png'">
+      <div class="header-titles">
+        <span class="header-badge">CONGRESO OFICIAL</span>
+        <h1 class="header-title">OFMC 2026</h1>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button id="btnOpenSearch" class="icon-btn" aria-label="Buscar presentaciones">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <button id="btnToggleSim" class="sim-toggle-btn" title="Simular Horario">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        <span class="sim-status-dot"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Live Time Banner / Simulator Drawer -->
+  <div id="simDrawer" class="sim-drawer">
+    <div class="sim-header">
+      <div class="sim-title">
+        <i class="fa-solid fa-bolt text-gold"></i>
+        <span>Simulador de Tiempo y Horario</span>
+      </div>
+      <button id="btnCloseSim" class="sim-close-btn">&times;</button>
+    </div>
+    <p class="sim-desc">
+      El congreso se realizará del 24 al 27 de Noviembre de 2026. Selecciona cualquier día y hora para ver qué charlas y actividades ocurren en ese momento exacto:
+    </p>
+    
+    <!-- Quick Simulation Chips -->
+    <div class="sim-chips">
+      <button class="sim-chip" data-day="1" data-time="09:30">D1 · 09:30 Inauguración</button>
+      <button class="sim-chip active" data-day="1" data-time="11:35">D1 · 11:35 Paralelas O-002</button>
+      <button class="sim-chip" data-day="1" data-time="17:45">D1 · 17:45 Cóctel Bienvenida</button>
+      <button class="sim-chip" data-day="2" data-time="09:15">D2 · 09:15 Keynote Dr. Jackson</button>
+      <button class="sim-chip" data-day="2" data-time="11:50">D2 · 11:50 Paralelas O-045</button>
+      <button class="sim-chip" data-day="2" data-time="17:30">D2 · 17:30 Pósters P-001..34</button>
+      <button class="sim-chip" data-day="3" data-time="16:15">D3 · 16:15 Plenaria GT DOCA</button>
+      <button class="sim-chip" data-day="4" data-time="13:45">D4 · 13:45 Pósters P-069..101</button>
+      <button class="sim-chip" data-day="4" data-time="15:30">D4 · 15:30 Clausura y Premios</button>
+      <button class="sim-chip chip-now" data-now="true">🟢 Tiempo Real (Hoy)</button>
+    </div>
+
+    <!-- Manual Time Slider / Controls -->
+    <div class="sim-manual">
+      <div class="sim-day-selector">
+        <button class="sim-day-btn active" data-d="1">Día 1 (Mar 24)</button>
+        <button class="sim-day-btn" data-d="2">Día 2 (Mié 25)</button>
+        <button class="sim-day-btn" data-d="3">Día 3 (Jue 26)</button>
+        <button class="sim-day-btn" data-d="4">Día 4 (Vie 27)</button>
+      </div>
+      <div class="sim-slider-row">
+        <label for="timeSlider" class="sim-slider-label">
+          <span>Horario simulado:</span>
+          <strong id="simTimeDisplay">11:35</strong>
+        </label>
+        <input type="range" id="timeSlider" min="510" max="1200" step="5" value="695" class="time-range-slider">
+        <div class="slider-marks">
+          <span>08:30</span>
+          <span>11:30</span>
+          <span>14:00</span>
+          <span>17:00</span>
+          <span>20:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Views Container -->
+  <main class="app-main">
+
+    <!-- ===================================================================
+         VIEW 1: EN VIVO / AHORA
+         =================================================================== -->
+    <section id="view-ahora" class="app-view active">
+      <div class="view-header-bar">
+        <div class="live-status-indicator">
+          <span class="pulsing-radar"></span>
+          <div>
+            <h2 class="view-title">Ocurriendo en este momento</h2>
+            <div id="liveTimeLabel" class="live-subtitle">Día 1 (Mar 24 Nov) · 11:35 hrs</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Current Activities Container -->
+      <div class="live-cards-container">
+        <!-- Room 2.5 Card -->
+        <div id="liveCardRoom25" class="room-live-card card-ocean">
+          <div class="room-card-header">
+            <span class="room-tag tag-ocean">
+              <i class="fa-solid fa-water"></i> Sala 2.5 · Procesos Oceanográficos
+            </span>
+            <span class="time-badge" id="timeBadge25">11:35 - 11:50</span>
+          </div>
+          <div class="room-card-body" id="cardBody25">
+            <!-- Injected by JS -->
+          </div>
+          <div class="room-progress-bar">
+            <div class="progress-fill fill-ocean" id="progress25" style="width: 50%;"></div>
+          </div>
+        </div>
+
+        <!-- Room 3.7 Card -->
+        <div id="liveCardRoom37" class="room-live-card card-meteo">
+          <div class="room-card-header">
+            <span class="room-tag tag-meteo">
+              <i class="fa-solid fa-cloud-sun"></i> Sala 3.7 · Meteorología y Clima
+            </span>
+            <span class="time-badge" id="timeBadge37">11:35 - 11:50</span>
+          </div>
+          <div class="room-card-body" id="cardBody37">
+            <!-- Injected by JS -->
+          </div>
+          <div class="room-progress-bar">
+            <div class="progress-fill fill-meteo" id="progress37" style="width: 50%;"></div>
+          </div>
+        </div>
+
+        <!-- Single Plenary / Event / Coffee Card (Conditional) -->
+        <div id="liveCardEvent" class="room-live-card card-event" style="display: none;">
+          <div class="room-card-header">
+            <span class="room-tag tag-gold" id="eventRoomTag">
+              <i class="fa-solid fa-star"></i> Evento Plenario
+            </span>
+            <span class="time-badge" id="eventTimeBadge">--:-- - --:--</span>
+          </div>
+          <div class="room-card-body" id="cardBodyEvent">
+            <!-- Injected by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Upcoming Talks Section -->
+      <div class="section-divider">
+        <div class="divider-line"></div>
+        <span class="divider-text"><i class="fa-solid fa-forward-step"></i> A continuación (Próximo Bloque)</span>
+        <div class="divider-line"></div>
+      </div>
+
+      <div class="next-cards-grid" id="nextCardsContainer">
+        <!-- Next items injected by JS -->
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         VIEW 2: PROGRAMA COMPLETO DÍA POR DÍA
+         =================================================================== -->
+    <section id="view-programa" class="app-view">
+      <div class="view-header-bar sticky-bar">
+        <h2 class="view-title">Programa Oficial Día por Día</h2>
+        
+        <!-- Day Selector Pills -->
+        <div class="pills-scroll-row" id="programDayPills">
+          <button class="pill-btn active" data-day="1">Día 1 · Mar 24</button>
+          <button class="pill-btn" data-day="2">Día 2 · Mié 25</button>
+          <button class="pill-btn" data-day="3">Día 3 · Jue 26</button>
+          <button class="pill-btn" data-day="4">Día 4 · Vie 27</button>
+        </div>
+
+        <!-- Filter Chips -->
+        <div class="pills-scroll-row filter-row" id="programTrackFilters">
+          <button class="filter-chip active" data-track="all">Todas las salas</button>
+          <button class="filter-chip" data-track="2.5"><span class="dot-ocean"></span>Sala 2.5 (Océano)</button>
+          <button class="filter-chip" data-track="3.7"><span class="dot-meteo"></span>Sala 3.7 (Meteo)</button>
+          <button class="filter-chip" data-track="posters"><span class="dot-purple"></span>Pósters</button>
+          <button class="filter-chip" data-track="events"><span class="dot-gold"></span>Plenarias / Eventos</button>
+        </div>
+      </div>
+
+      <!-- Timeline List -->
+      <div class="timeline-container" id="programTimelineList">
+        <!-- Program cards injected by JS -->
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         VIEW 3: PÓSTERS
+         =================================================================== -->
+    <section id="view-posters" class="app-view">
+      <div class="view-header-bar sticky-bar">
+        <div class="posters-title-row">
+          <h2 class="view-title">Paneles Póster Oficiales</h2>
+          <span class="count-badge" id="postersCountBadge">101 paneles</span>
+        </div>
+        <p class="view-intro">Ubicación: Sectores Comunes Pisos 2 y 3 (Halls y pasillos conectores entre Salas 2.5 y 3.7).</p>
+
+        <!-- Poster Day Pills -->
+        <div class="pills-scroll-row" id="posterDayPills">
+          <button class="pill-btn active" data-pday="all">Todos (101)</button>
+          <button class="pill-btn" data-pday="2">Día 2 (P-001..34)</button>
+          <button class="pill-btn" data-pday="3">Día 3 (P-035..68)</button>
+          <button class="pill-btn" data-pday="4">Día 4 (P-069..101)</button>
+        </div>
+
+        <!-- Poster Search Input -->
+        <div class="search-input-wrapper">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="posterSearchInput" class="app-search-input" placeholder="Buscar por autor, panel (P-001) o título...">
+          <button id="btnClearPosterSearch" class="search-clear-btn" style="display: none;">&times;</button>
+        </div>
+      </div>
+
+      <div class="posters-grid" id="postersGridContainer">
+        <!-- Posters injected by JS -->
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         VIEW 4: MI AGENDA
+         =================================================================== -->
+    <section id="view-agenda" class="app-view">
+      <div class="view-header-bar">
+        <div class="agenda-title-row">
+          <div>
+            <h2 class="view-title">Mi Agenda Personal</h2>
+            <div class="agenda-subtitle" id="agendaCountSubtitle">0 charlas guardadas</div>
+          </div>
+          <button id="btnShareAgenda" class="action-pill-btn" title="Compartir mi agenda">
+            <i class="fa-solid fa-share-nodes"></i> Compartir
+          </button>
+        </div>
+      </div>
+
+      <!-- Conflicts Alert Bar -->
+      <div id="agendaConflictAlert" class="conflict-alert-card" style="display: none;">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <div class="conflict-alert-text">
+          <strong>Atención: Conflicto de horario</strong>
+          <span>Tienes charlas guardadas que ocurren al mismo tiempo en salas distintas.</span>
+        </div>
+      </div>
+
+      <!-- Agenda Cards Container -->
+      <div class="agenda-timeline" id="agendaListContainer">
+        <!-- Empty state or saved cards injected by JS -->
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         VIEW 5: AUTORES
+         =================================================================== -->
+    <section id="view-autores" class="app-view">
+      <div class="view-header-bar sticky-bar">
+        <div class="author-title-row">
+          <h2 class="view-title">Índice de Autores/as</h2>
+          <span class="count-badge" id="authorsCountBadge">199 autores</span>
+        </div>
+
+        <div class="search-input-wrapper">
+          <i class="fa-solid fa-user search-icon"></i>
+          <input type="text" id="authorSearchInput" class="app-search-input" placeholder="Buscar por apellido o nombre...">
+          <button id="btnClearAuthorSearch" class="search-clear-btn" style="display: none;">&times;</button>
+        </div>
+
+        <!-- Quick Alphabet Bar -->
+        <div class="alpha-quick-bar" id="alphaQuickBar">
+          <!-- A-Z letters injected by JS -->
+        </div>
+      </div>
+
+      <div class="authors-list" id="authorsListContainer">
+        <!-- Authors injected by JS -->
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         VIEW 6: SEDES, SALAS E INFORMACIÓN
+         =================================================================== -->
+    <section id="view-info" class="app-view">
+      <div class="view-header-bar">
+        <h2 class="view-title">Guía de Sedes e Información</h2>
+        <p class="view-intro">VIII Congreso de Oceanografía Física, Meteorología y Clima (OFMC 2026)</p>
+      </div>
+
+      <!-- Info Cards -->
+      <div class="info-content-cards">
+        
+        <!-- Sedes y Salas Card -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <i class="fa-solid fa-map-location-dot text-ocean"></i>
+            <h3>Salas Oficiales y Ubicación</h3>
+          </div>
+          <div class="venue-list">
+            <div class="venue-item">
+              <div class="venue-icon tag-gold"><i class="fa-solid fa-landmark"></i></div>
+              <div class="venue-details">
+                <strong>Auditorio FACSO</strong>
+                <p>Planta Baja Central, Edificio FACSO, UV. Acto Inaugural y Conferencias Magistrales Plenarias.</p>
+              </div>
+            </div>
+            <div class="venue-item">
+              <div class="venue-icon tag-ocean"><i class="fa-solid fa-water"></i></div>
+              <div class="venue-details">
+                <strong>Sala 2.5 (Piso 2)</strong>
+                <p>Edificio Aulas UV. Sesiones orales de Procesos Oceanográficos, Asamblea DOCA y Ceremonia de Clausura.</p>
+              </div>
+            </div>
+            <div class="venue-item">
+              <div class="venue-icon tag-meteo"><i class="fa-solid fa-wind"></i></div>
+              <div class="venue-details">
+                <strong>Sala 3.7 (Piso 3)</strong>
+                <p>Edificio Aulas UV. Sesiones orales de Meteorología, Clima y Ciencias de la Atmósfera.</p>
+              </div>
+            </div>
+            <div class="venue-item">
+              <div class="venue-icon tag-purple"><i class="fa-solid fa-images"></i></div>
+              <div class="venue-details">
+                <strong>Sectores Comunes Pisos 2 y 3</strong>
+                <p>Espacios conectores y halls junto a Salas 2.5 y 3.7. Coffee Breaks (20 min) y Exhibición de Paneles Póster (P-001 a P-101).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Normas Técnicas Card -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <i class="fa-solid fa-stopwatch text-gold"></i>
+            <h3>Normas Técnicas de Sesiones</h3>
+          </div>
+          <ul class="info-bullet-list">
+            <li><strong>Ponencias Orales:</strong> 15 minutos exactos por presentación (12 min exposición + 3 min preguntas). Cargar presentaciones 15 min antes del inicio del bloque.</li>
+            <li><strong>Paneles Póster:</strong> Formato vertical 90 cm de ancho × 120 cm de alto. Presencia obligatoria del expositor junto a su panel en la sesión asignada.</li>
+            <li><strong>Coffee Breaks:</strong> 20 minutos oficiales en sectores comunes de los pisos 2 y 3.</li>
+            <li><strong>Moderación Oficial:</strong> Cada bloque cuenta con Presidente/a, Secretario/a (control estricto de tiempos: avisos a los 10 y 12 min) y Suplente.</li>
+          </ul>
+        </div>
+
+        <!-- Descargar Programa PDF -->
+        <div class="info-card download-card">
+          <div class="download-card-body">
+            <div class="download-icon"><i class="fa-solid fa-file-pdf"></i></div>
+            <div class="download-text">
+              <strong>Programa Oficial Completo (PDF)</strong>
+              <span>Documento detallado de 45 páginas con índice de autores y resúmenes.</span>
+            </div>
+            <a href="Programa_Detallado_OFMC2026.pdf" download class="btn-download" target="_blank">
+              <i class="fa-solid fa-download"></i> Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Organización Card -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <i class="fa-solid fa-building-columns text-navy"></i>
+            <h3>Institución Organizadora</h3>
+          </div>
+          <div class="org-details">
+            <strong>Universidad de Valparaíso</strong>
+            <p>• Facultad de Ciencias del Mar y de Recursos Naturales<br>• Facultad de Ciencias<br>• Facultad de Ingeniería</p>
+            <p class="org-colab">En estrecha colaboración con la División de Oceanografía y Meteorología Física de Chile (<strong>GT DOCA</strong>).</p>
+            <div class="comite-names">
+              <strong>Comité Organizador:</strong>
+              <p>Dr. Manuel Castillo · Dra. Catalina Aguirre · Dr. Julio Marín Aguado</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Auspiciadores Card -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <i class="fa-solid fa-handshake-angle text-ocean"></i>
+            <h3>Auspiciadores y Patrocinadores</h3>
+          </div>
+          <div class="sponsors-grid">
+            <div class="sponsor-item">COPAS Coastal</div>
+            <div class="sponsor-item">CR2</div>
+            <div class="sponsor-item">INVAP</div>
+            <div class="sponsor-item">ASL</div>
+            <div class="sponsor-item">NORTEK</div>
+            <div class="sponsor-item">CIO</div>
+            <div class="sponsor-item">UCN</div>
+            <div class="sponsor-item">Casco Antiguo</div>
+          </div>
+        </div>
+
+        <!-- Contacto Oficial -->
+        <div class="info-card contact-card">
+          <div class="contact-row">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <span>Correo Oficial:</span>
+              <a href="mailto:ofmc2026@gmail.com">ofmc2026@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <i class="fa-solid fa-globe"></i>
+            <div>
+              <span>Sitio Web Oficial:</span>
+              <a href="https://www.doca2026.cl" target="_blank">www.doca2026.cl</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================
+       UNIVERSAL SEARCH MODAL
+       =================================================================== -->
+  <div id="searchModal" class="modal-overlay">
+    <div class="modal-container search-modal-container">
+      <div class="search-modal-header">
+        <i class="fa-solid fa-magnifying-glass search-modal-icon"></i>
+        <input type="text" id="globalSearchInput" class="search-modal-input" placeholder="Buscar autor, título, código (O-001, P-015)..." autofocus>
+        <button id="btnCloseSearchModal" class="modal-close-btn">&times;</button>
+      </div>
+      <div class="search-results-container" id="globalSearchResults">
+        <div class="search-hint">Escribe al menos 2 letras para buscar entre las 212 presentaciones...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       PRESENTATION DETAIL MODAL / BOTTOM SHEET
+       =================================================================== -->
+  <div id="detailModal" class="modal-overlay">
+    <div class="modal-container detail-modal-container">
+      <div class="modal-grabber"></div>
+      <div class="detail-modal-header">
+        <span class="detail-room-badge" id="detailRoomBadge">Sala 2.5</span>
+        <button id="btnCloseDetailModal" class="modal-close-btn">&times;</button>
+      </div>
+      <div class="detail-modal-content" id="detailModalContent">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       PWA INSTALL PROMPT TOAST
+       =================================================================== -->
+  <div id="installToast" class="install-toast" style="display: none;">
+    <div class="install-toast-icon">
+      <img src="icons/icon-192.png" alt="OFMC 2026">
+    </div>
+    <div class="install-toast-text">
+      <strong>Instalar App OFMC 2026</strong>
+      <span>Accede rápido y sin conexión desde la pantalla de inicio de tu celular.</span>
+    </div>
+    <div class="install-toast-actions">
+      <button id="btnInstallPwa" class="btn-install-accept">Instalar</button>
+      <button id="btnDismissInstall" class="btn-install-dismiss">&times;</button>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       BOTTOM NAVIGATION BAR (Mobile First)
+       =================================================================== -->
+  <nav class="bottom-nav">
+    <button class="nav-item active" data-view="view-ahora">
+      <div class="nav-icon-wrapper">
+        <i class="fa-solid fa-bolt"></i>
+        <span class="nav-live-dot"></span>
+      </div>
+      <span class="nav-label">En Vivo</span>
+    </button>
+    <button class="nav-item" data-view="view-programa">
+      <div class="nav-icon-wrapper">
+        <i class="fa-solid fa-calendar-days"></i>
+      </div>
+      <span class="nav-label">Programa</span>
+    </button>
+    <button class="nav-item" data-view="view-posters">
+      <div class="nav-icon-wrapper">
+        <i class="fa-solid fa-images"></i>
+      </div>
+      <span class="nav-label">Pósters</span>
+    </button>
+    <button class="nav-item" data-view="view-agenda">
+      <div class="nav-icon-wrapper">
+        <i class="fa-solid fa-star"></i>
+        <span class="nav-agenda-badge" id="navAgendaBadge" style="display: none;">0</span>
+      </div>
+      <span class="nav-label">Mi Agenda</span>
+    </button>
+    <button class="nav-item" data-view="view-autores">
+      <div class="nav-icon-wrapper">
+        <i class="fa-solid fa-users"></i>
+      </div>
+      <span class="nav-label">Autores</span>
+    </button>
+    <button class="nav-item" data-view="view-info">
+      <div class="nav-icon-wrapper">
+        <i class="fa-solid fa-circle-info"></i>
+      </div>
+      <span class="nav-label">Sedes</span>
+    </button>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
