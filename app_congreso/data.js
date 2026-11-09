@@ -34,9 +34,13 @@ window.CONGRESO_DATA = {
       "UCN",
       "Casco Antiguo"
     ],
-    "total_orales": 111,
+    "patrocinadores": [
+      "CEACC",
+      "COSTAR"
+    ],
+    "total_orales": 112,
     "total_posters": 101,
-    "total_autores": 199
+    "total_autores": 203
   },
   "dias": [
     {
@@ -96,8 +100,8 @@ window.CONGRESO_DATA = {
       "dia_num": 1,
       "fecha": "2026-11-24",
       "start_time": "08:30",
-      "end_time": "09:30",
-      "horario": "08:30 - 09:30",
+      "end_time": "09:00",
+      "horario": "08:30 - 09:00",
       "sala": "Hall Central FACSO",
       "titulo": "Acreditación y Entrega de Credenciales Oficiales",
       "descripcion": "Recepción de delegaciones nacionales e internacionales, entrega de carpetas, credenciales y material oficial del congreso.",
@@ -108,12 +112,12 @@ window.CONGRESO_DATA = {
       "id": "EV-02",
       "dia_num": 1,
       "fecha": "2026-11-24",
-      "start_time": "09:30",
+      "start_time": "09:00",
       "end_time": "10:00",
-      "horario": "09:30 - 10:00",
+      "horario": "09:00 - 10:00",
       "sala": "Auditorio FACSO",
-      "titulo": "Ceremonia Oficial de Inauguración y Palabras de Bienvenida",
-      "descripcion": "Apertura formal con autoridades de la Universidad de Valparaíso (Decanos y Directores de Facultades organizadoras), Representantes de GT DOCA y Comité Organizador.",
+      "titulo": "Acto Solemne de Inauguración del Congreso OFMC 2026",
+      "descripcion": "Discursos inaugurales de Rectoría UV, Decanaturas de las Facultades Organizadoras, Presidencia GT DOCA y Comité Organizador.",
       "tipo": "Evento",
       "categoria": "Ceremonia"
     },
@@ -125,10 +129,10 @@ window.CONGRESO_DATA = {
       "end_time": "11:00",
       "horario": "10:00 - 11:00",
       "sala": "Auditorio FACSO",
-      "titulo": "Conferencia Magistral Plenaria de Apertura OFMC 2026",
-      "autor": "Conferencista Invitada Internacional",
-      "inst": "Invitada Internacional",
-      "descripcion": "Conferencia plenaria inaugural sobre avances de frontera en dinámica océano-atmósfera y cambio climático en el Pacífico Sur.",
+      "titulo": "Conferencia Magistral 1: Dra. Paola Salio",
+      "autor": "Dra. Paola Salio",
+      "inst": "Centro de Investigaciones del Mar y la Atmósfera (CIMA / CONICET-UBA) · DCAO, Universidad de Buenos Aires, ARGENTINA",
+      "descripcion": "Conferencia Magistral Inaugural (Título por confirmar). Ponencia de apertura sobre dinámica de tormentas severas, convección profunda y eventos meteorológicos de alto impacto social en el cono sur de Sudamérica.",
       "tipo": "Magistral",
       "categoria": "Plenaria"
     },
@@ -140,7 +144,7 @@ window.CONGRESO_DATA = {
       "end_time": "11:20",
       "horario": "11:00 - 11:20",
       "sala": "Sectores Comunes Pisos 2 y 3",
-      "titulo": "Coffee Break Institucional de la Mañana (20 min)",
+      "titulo": "Coffee Break de Bienvenida (20 min)",
       "descripcion": "Café, infusiones y networking entre Salas 2.5 y 3.7.",
       "tipo": "Pausa",
       "categoria": "Coffee Break"
@@ -150,10 +154,10 @@ window.CONGRESO_DATA = {
       "dia_num": 1,
       "fecha": "2026-11-24",
       "start_time": "13:05",
-      "end_time": "14:30",
-      "horario": "13:05 - 14:30",
+      "end_time": "14:20",
+      "horario": "13:05 - 14:20",
       "sala": "Sector Playa Ancha / Gastronómico",
-      "titulo": "Receso para Almuerzo Libre (85 min)",
+      "titulo": "Receso para Almuerzo Libre (75 min)",
       "descripcion": "Pausa de mediodía para almuerzo.",
       "tipo": "Pausa",
       "categoria": "Almuerzo"
@@ -162,11 +166,11 @@ window.CONGRESO_DATA = {
       "id": "EV-05",
       "dia_num": 1,
       "fecha": "2026-11-24",
-      "start_time": "15:45",
-      "end_time": "16:05",
-      "horario": "15:45 - 16:05",
+      "start_time": "15:50",
+      "end_time": "16:10",
+      "horario": "15:50 - 16:10",
       "sala": "Sectores Comunes Pisos 2 y 3",
-      "titulo": "Coffee Break Institucional de la Tarde (20 min)",
+      "titulo": "Coffee Break Oficial de la Tarde (20 min)",
       "descripcion": "Café, infusiones y refrigerio en sectores comunes.",
       "tipo": "Pausa",
       "categoria": "Coffee Break"
@@ -175,14 +179,40 @@ window.CONGRESO_DATA = {
       "id": "EV-06",
       "dia_num": 1,
       "fecha": "2026-11-24",
+      "start_time": "17:10",
+      "end_time": "17:30",
+      "horario": "17:10 - 17:30",
+      "sala": "Campus Central",
+      "titulo": "Pausa y Traslado al Cóctel Inaugural (20 min)",
+      "descripcion": "Receso breve y traslado al Salón de Honor / Auditorio FACSO.",
+      "tipo": "Pausa",
+      "categoria": "Traslado"
+    },
+    {
+      "id": "EV-07",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
       "start_time": "17:30",
       "end_time": "19:30",
       "horario": "17:30 - 19:30",
-      "sala": "Patio Central / Hall FACSO",
-      "titulo": "Cóctel Oficial de Bienvenida y Recepción de Delegaciones",
-      "descripcion": "Recepción oficial ofrecida por la Universidad de Valparaíso y el Comité Organizador a todos los expositores e invitados.",
+      "sala": "Salón de Honor / Auditorio FACSO",
+      "titulo": "CÓCTEL INAUGURAL OFICIAL DE BIENVENIDA (Término máx. 19:30 hrs)",
+      "descripcion": "Brindis oficial de bienvenida ofrecido por la Universidad de Valparaíso y GT DOCA.",
       "tipo": "Evento",
       "categoria": "Social"
+    },
+    {
+      "id": "EV-08",
+      "dia_num": 2,
+      "fecha": "2026-11-25",
+      "start_time": "08:30",
+      "end_time": "09:00",
+      "horario": "08:30 - 09:00",
+      "sala": "Hall Central FACSO",
+      "titulo": "Acreditación Permanente",
+      "descripcion": "Registro de asistentes y entrega de material.",
+      "tipo": "Evento",
+      "categoria": "Acreditación"
     },
     {
       "id": "CM-02",
@@ -200,41 +230,15 @@ window.CONGRESO_DATA = {
       "categoria": "Plenaria"
     },
     {
-      "id": "EV-07",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "start_time": "10:00",
-      "end_time": "10:20",
-      "horario": "10:00 - 10:20",
-      "sala": "Sectores Comunes Pisos 2 y 3",
-      "titulo": "Coffee Break de la Mañana (20 min)",
-      "descripcion": "Café y networking en sectores comunes de los pisos 2 y 3.",
-      "tipo": "Pausa",
-      "categoria": "Coffee Break"
-    },
-    {
-      "id": "EV-08",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "start_time": "13:00",
-      "end_time": "14:30",
-      "horario": "13:00 - 14:30",
-      "sala": "Sector Playa Ancha / Gastronómico",
-      "titulo": "Receso para Almuerzo Libre (90 min)",
-      "descripcion": "Pausa para almuerzo.",
-      "tipo": "Pausa",
-      "categoria": "Almuerzo"
-    },
-    {
       "id": "EV-09",
       "dia_num": 2,
       "fecha": "2026-11-25",
-      "start_time": "15:45",
-      "end_time": "16:05",
-      "horario": "15:45 - 16:05",
+      "start_time": "11:30",
+      "end_time": "11:50",
+      "horario": "11:30 - 11:50",
       "sala": "Sectores Comunes Pisos 2 y 3",
-      "titulo": "Coffee Break de la Tarde (20 min)",
-      "descripcion": "Café en sectores comunes antes de las presentaciones especiales.",
+      "titulo": "Coffee Break de la Mañana (20 min)",
+      "descripcion": "Café y refrigerio en sectores comunes de pisos 2 y 3.",
       "tipo": "Pausa",
       "categoria": "Coffee Break"
     },
@@ -242,14 +246,53 @@ window.CONGRESO_DATA = {
       "id": "EV-10",
       "dia_num": 2,
       "fecha": "2026-11-25",
-      "start_time": "16:05",
+      "start_time": "12:50",
+      "end_time": "14:15",
+      "horario": "12:50 - 14:15",
+      "sala": "Sector Playa Ancha / Gastronómico",
+      "titulo": "Receso para Almuerzo Libre (85 min)",
+      "descripcion": "Pausa de mediodía para almuerzo.",
+      "tipo": "Pausa",
+      "categoria": "Almuerzo"
+    },
+    {
+      "id": "EV-11",
+      "dia_num": 2,
+      "fecha": "2026-11-25",
+      "start_time": "15:15",
+      "end_time": "15:35",
+      "horario": "15:15 - 15:35",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "titulo": "Coffee Break de la Tarde (20 min)",
+      "descripcion": "Café y networking en sectores comunes de pisos 2 y 3.",
+      "tipo": "Pausa",
+      "categoria": "Coffee Break"
+    },
+    {
+      "id": "EV-12",
+      "dia_num": 2,
+      "fecha": "2026-11-25",
+      "start_time": "16:20",
       "end_time": "17:00",
-      "horario": "16:05 - 17:00",
-      "sala": "Auditorio FACSO / Sala 2.5",
-      "titulo": "Presentaciones Especiales y Lanzamiento de Publicaciones Científicas",
-      "descripcion": "Sesión institucional de presentación de libros, manuales y plataformas de datos marinos y atmosféricos.",
+      "horario": "16:20 - 17:00",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "titulo": "Pausa Breve y Montaje de Paneles Póster Día 2",
+      "descripcion": "Preparación de expositores frente a sus paneles póster.",
+      "tipo": "Pausa",
+      "categoria": "Montaje"
+    },
+    {
+      "id": "EV-13",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "start_time": "08:30",
+      "end_time": "09:00",
+      "horario": "08:30 - 09:00",
+      "sala": "Hall Central FACSO",
+      "titulo": "Acreditación Permanente",
+      "descripcion": "Registro de asistentes y entrega de material.",
       "tipo": "Evento",
-      "categoria": "Especial"
+      "categoria": "Acreditación"
     },
     {
       "id": "CM-03",
@@ -259,20 +302,20 @@ window.CONGRESO_DATA = {
       "end_time": "10:00",
       "horario": "09:00 - 10:00",
       "sala": "Auditorio FACSO",
-      "titulo": "Conferencia Magistral Plenaria Día 3",
-      "autor": "Conferencista Invitado/a Internacional",
-      "inst": "Invitada Internacional",
-      "descripcion": "Avances en modelación de alta resolución acoplada y eventos climáticos extremos en el cono sur.",
+      "titulo": "Conferencia Magistral 3: Por Confirmar",
+      "autor": "Conferencista Internacional (Por confirmar)",
+      "inst": "Invitado/a Internacional (Por confirmar)",
+      "descripcion": "Tercera conferencia plenaria internacional de especialista invitado en dinámica y modelación atmosférico-oceánica de gran escala.",
       "tipo": "Magistral",
       "categoria": "Plenaria"
     },
     {
-      "id": "EV-11",
+      "id": "EV-14",
       "dia_num": 3,
       "fecha": "2026-11-26",
-      "start_time": "10:00",
-      "end_time": "10:20",
-      "horario": "10:00 - 10:20",
+      "start_time": "11:30",
+      "end_time": "11:50",
+      "horario": "11:30 - 11:50",
       "sala": "Sectores Comunes Pisos 2 y 3",
       "titulo": "Coffee Break de la Mañana (20 min)",
       "descripcion": "Café y refrigerio en sectores comunes de pisos 2 y 3.",
@@ -280,85 +323,111 @@ window.CONGRESO_DATA = {
       "categoria": "Coffee Break"
     },
     {
-      "id": "EV-12",
+      "id": "EV-15",
       "dia_num": 3,
       "fecha": "2026-11-26",
-      "start_time": "13:00",
-      "end_time": "14:30",
-      "horario": "13:00 - 14:30",
+      "start_time": "12:50",
+      "end_time": "14:15",
+      "horario": "12:50 - 14:15",
       "sala": "Sector Playa Ancha / Gastronómico",
-      "titulo": "Receso para Almuerzo Libre (90 min)",
+      "titulo": "Receso para Almuerzo Libre (85 min)",
       "descripcion": "Pausa para almuerzo.",
       "tipo": "Pausa",
       "categoria": "Almuerzo"
     },
     {
-      "id": "EV-13",
+      "id": "EV-16",
       "dia_num": 3,
       "fecha": "2026-11-26",
-      "start_time": "15:45",
-      "end_time": "16:05",
-      "horario": "15:45 - 16:05",
+      "start_time": "15:15",
+      "end_time": "15:35",
+      "horario": "15:15 - 15:35",
       "sala": "Sectores Comunes Pisos 2 y 3",
       "titulo": "Coffee Break de la Tarde (20 min)",
-      "descripcion": "Café antes de la asamblea plenaria GT DOCA.",
+      "descripcion": "Café antes del montaje de paneles.",
       "tipo": "Pausa",
       "categoria": "Coffee Break"
     },
     {
-      "id": "EV-14",
+      "id": "EV-17",
       "dia_num": 3,
       "fecha": "2026-11-26",
-      "start_time": "16:05",
+      "start_time": "16:20",
       "end_time": "17:00",
-      "horario": "16:05 - 17:00",
-      "sala": "Sala 2.5",
-      "titulo": "Reunión Plenaria Ordinaria del Grupo de Trabajo en Dinámica Océano-Atmósfera (GT DOCA)",
-      "descripcion": "Asamblea abierta de la comunidad de oceanografía física y meteorología de Chile: balance, grupos de trabajo y directrices.",
-      "tipo": "Evento",
-      "categoria": "DOCA"
+      "horario": "16:20 - 17:00",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "titulo": "Pausa Breve y Montaje de Paneles Póster Día 3",
+      "descripcion": "Instalación de paneles en sectores comunes.",
+      "tipo": "Pausa",
+      "categoria": "Montaje"
     },
     {
-      "id": "EV-15",
+      "id": "EV-18",
       "dia_num": 4,
       "fecha": "2026-11-27",
-      "start_time": "10:15",
-      "end_time": "10:35",
-      "horario": "10:15 - 10:35",
+      "start_time": "08:30",
+      "end_time": "09:00",
+      "horario": "08:30 - 09:00",
+      "sala": "Hall Central FACSO",
+      "titulo": "Acreditación y Registro Final",
+      "descripcion": "Última jornada del congreso.",
+      "tipo": "Evento",
+      "categoria": "Acreditación"
+    },
+    {
+      "id": "EV-19",
+      "dia_num": 4,
+      "fecha": "2026-11-27",
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "horario": "09:00 - 10:00",
+      "sala": "Sala 2.5",
+      "titulo": "Reunión Plenaria del Grupo DOCA (Asamblea General de Socios)",
+      "descripcion": "Asamblea general de socias y socios de la División de Oceanografía y Meteorología Física de Chile (GT DOCA).",
+      "tipo": "Evento",
+      "categoria": "Asamblea"
+    },
+    {
+      "id": "EV-20",
+      "dia_num": 4,
+      "fecha": "2026-11-27",
+      "start_time": "11:00",
+      "end_time": "11:20",
+      "horario": "11:00 - 11:20",
       "sala": "Sectores Comunes Pisos 2 y 3",
-      "titulo": "Coffee Break Institucional de la Mañana (20 min)",
-      "descripcion": "Último café oficial en sectores comunes.",
+      "titulo": "Coffee Break de la Mañana (20 min)",
+      "descripcion": "Café y pausa de media mañana.",
       "tipo": "Pausa",
       "categoria": "Coffee Break"
     },
     {
-      "id": "EV-16",
+      "id": "EV-21",
       "dia_num": 4,
       "fecha": "2026-11-27",
       "start_time": "12:05",
       "end_time": "13:30",
       "horario": "12:05 - 13:30",
-      "sala": "Sector Playa Ancha / Gastronómico",
+      "sala": "Sector Gastronómico",
       "titulo": "Receso para Almuerzo Libre (85 min)",
-      "descripcion": "Pausa para almuerzo previo a la sesión de pósters de cierre.",
+      "descripcion": "Almuerzo previo a la sesión final de pósters.",
       "tipo": "Pausa",
       "categoria": "Almuerzo"
     },
     {
-      "id": "EV-17",
+      "id": "EV-22",
       "dia_num": 4,
       "fecha": "2026-11-27",
       "start_time": "15:00",
       "end_time": "16:30",
       "horario": "15:00 - 16:30",
-      "sala": "Sala 2.5",
+      "sala": "Auditorio FACSO / Sala 2.5",
       "titulo": "Ceremonia Oficial de Clausura, Premiación y Elección Sede OFMC 2028",
       "descripcion": "Entrega de distinciones a mejores exposiciones orales y paneles póster (estudiantes pre y postgrado), balance oficial de la organización y votación de la sede para el IX Congreso OFMC 2028.",
       "tipo": "Evento",
       "categoria": "Clausura"
     },
     {
-      "id": "EV-18",
+      "id": "EV-23",
       "dia_num": 4,
       "fecha": "2026-11-27",
       "start_time": "16:30",
@@ -374,9 +443,9 @@ window.CONGRESO_DATA = {
   "orales": [
     {
       "id": "O-001",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "11:20 - 11:35",
       "start_time": "11:20",
       "end_time": "11:35",
@@ -395,9 +464,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-002",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "11:35 - 11:50",
       "start_time": "11:35",
       "end_time": "11:50",
@@ -416,9 +485,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-003",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "11:50 - 12:05",
       "start_time": "11:50",
       "end_time": "12:05",
@@ -437,9 +506,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-004",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "12:05 - 12:20",
       "start_time": "12:05",
       "end_time": "12:20",
@@ -458,9 +527,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-005",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "12:20 - 12:35",
       "start_time": "12:20",
       "end_time": "12:35",
@@ -479,9 +548,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-006",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "12:35 - 12:50",
       "start_time": "12:35",
       "end_time": "12:50",
@@ -500,9 +569,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-007",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "12:50 - 13:05",
       "start_time": "12:50",
       "end_time": "13:05",
@@ -521,9 +590,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-008",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "11:20 - 11:35",
       "start_time": "11:20",
       "end_time": "11:35",
@@ -542,9 +611,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-009",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "11:35 - 11:50",
       "start_time": "11:35",
       "end_time": "11:50",
@@ -563,9 +632,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-010",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "11:50 - 12:05",
       "start_time": "11:50",
       "end_time": "12:05",
@@ -584,9 +653,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-011",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "12:05 - 12:20",
       "start_time": "12:05",
       "end_time": "12:20",
@@ -605,9 +674,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-012",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "12:20 - 12:35",
       "start_time": "12:20",
       "end_time": "12:35",
@@ -626,9 +695,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-013",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "12:35 - 12:50",
       "start_time": "12:35",
       "end_time": "12:50",
@@ -647,9 +716,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-014",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "12:50 - 13:05",
       "start_time": "12:50",
       "end_time": "13:05",
@@ -668,9 +737,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-015",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "14:20 - 14:35",
       "start_time": "14:20",
       "end_time": "14:35",
@@ -689,9 +758,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-016",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "14:35 - 14:50",
       "start_time": "14:35",
       "end_time": "14:50",
@@ -710,9 +779,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-017",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "14:50 - 15:05",
       "start_time": "14:50",
       "end_time": "15:05",
@@ -731,9 +800,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-018",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "15:05 - 15:20",
       "start_time": "15:05",
       "end_time": "15:20",
@@ -752,9 +821,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-019",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "15:20 - 15:35",
       "start_time": "15:20",
       "end_time": "15:35",
@@ -773,9 +842,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-020",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "15:35 - 15:50",
       "start_time": "15:35",
       "end_time": "15:50",
@@ -794,9 +863,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-021",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "14:20 - 14:35",
       "start_time": "14:20",
       "end_time": "14:35",
@@ -815,9 +884,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-022",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "14:35 - 14:50",
       "start_time": "14:35",
       "end_time": "14:50",
@@ -836,9 +905,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-023",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "14:50 - 15:05",
       "start_time": "14:50",
       "end_time": "15:05",
@@ -857,9 +926,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-024",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "15:05 - 15:20",
       "start_time": "15:05",
       "end_time": "15:20",
@@ -878,9 +947,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-025",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "15:20 - 15:35",
       "start_time": "15:20",
       "end_time": "15:35",
@@ -899,9 +968,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-026",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "15:35 - 15:50",
       "start_time": "15:35",
       "end_time": "15:50",
@@ -920,9 +989,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-027",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "16:10 - 16:25",
       "start_time": "16:10",
       "end_time": "16:25",
@@ -941,9 +1010,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-028",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "16:25 - 16:40",
       "start_time": "16:25",
       "end_time": "16:40",
@@ -962,9 +1031,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-029",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "16:40 - 16:55",
       "start_time": "16:40",
       "end_time": "16:55",
@@ -983,9 +1052,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-030",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "16:55 - 17:10",
       "start_time": "16:55",
       "end_time": "17:10",
@@ -1004,9 +1073,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-031",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "16:10 - 16:25",
       "start_time": "16:10",
       "end_time": "16:25",
@@ -1025,9 +1094,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-032",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "16:25 - 16:40",
       "start_time": "16:25",
       "end_time": "16:40",
@@ -1046,9 +1115,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-033",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "16:40 - 16:55",
       "start_time": "16:40",
       "end_time": "16:55",
@@ -1067,9 +1136,9 @@ window.CONGRESO_DATA = {
     },
     {
       "id": "O-034",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_num": 1,
+      "fecha": "2026-11-24",
+      "dia_label": "Día 1",
       "horario": "16:55 - 17:10",
       "start_time": "16:55",
       "end_time": "17:10",
@@ -1368,13 +1437,13 @@ window.CONGRESO_DATA = {
       "start_time": "11:50",
       "end_time": "12:05",
       "sala": "Sala 3.7",
-      "sesion": "Bloque 10: Meteorología Regional (Subtema: Ríos Atmosféricos y Eventos Extremos de Precipitación)",
+      "sesion": "Bloque 10: Meteorología Regional (Subtema: Radares, Instrumentación, Ríos Atmosféricos y Eventos Extremos de Precipitación)",
       "eje": "Meteorología Regional",
-      "autor": "Raúl Valenzuela",
-      "autor_display": "Valenzuela, Raúl",
-      "inst": "Instituto de Cs. de la Ingeniería, Universidad de O’Higgins, Rancagua y Centro de Cs. del Clima y la Resiliencia (CR2), Universidad de Chile, Santiago",
-      "titulo": "Atmospheric River Detection And Tracking Tool (AR-DATT): una herramienta para el estudio regional de Ríos Atmosféricos",
-      "email": "raul.valenzuela@uoh.cl",
+      "autor": "Jorge Arévalo",
+      "autor_display": "Arévalo, Jorge",
+      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
+      "titulo": "Un Radar Móvil para Fenómenos Meteorológicos Extremos y Clima: Fortaleciendo la Investigación y la Resiliencia en Chile",
+      "email": "jab@meteo.uv.cl",
       "pres": "Dr. Raúl Valenzuela",
       "sec": "Jonathan Oberreuter",
       "sup": "Sebastián Andrés García Loyola (Universidad de Concepción)",
@@ -1389,13 +1458,13 @@ window.CONGRESO_DATA = {
       "start_time": "12:05",
       "end_time": "12:20",
       "sala": "Sala 3.7",
-      "sesion": "Bloque 10: Meteorología Regional (Subtema: Ríos Atmosféricos y Eventos Extremos de Precipitación)",
-      "eje": "Variabilidad Climática",
-      "autor": "Jonathan Oberreuter",
-      "autor_display": "Oberreuter, Jonathan",
-      "inst": "Universidad Austral de Chile",
-      "titulo": "Climatología de ríos atmosféricos sobre la plataforma de hielo Larsen C, Península Antártica (1960-2024)",
-      "email": "jonysatie@gmail.com",
+      "sesion": "Bloque 10: Meteorología Regional (Subtema: Radares, Instrumentación, Ríos Atmosféricos y Eventos Extremos de Precipitación)",
+      "eje": "Meteorología Regional",
+      "autor": "Raúl Valenzuela",
+      "autor_display": "Valenzuela, Raúl",
+      "inst": "Instituto de Cs. de la Ingeniería, Universidad de O’Higgins, Rancagua y Centro de Cs. del Clima y la Resiliencia (CR2), Universidad de Chile, Santiago",
+      "titulo": "Atmospheric River Detection And Tracking Tool (AR-DATT): una herramienta para el estudio regional de Ríos Atmosféricos",
+      "email": "raul.valenzuela@uoh.cl",
       "pres": "Dr. Raúl Valenzuela",
       "sec": "Jonathan Oberreuter",
       "sup": "Sebastián Andrés García Loyola (Universidad de Concepción)",
@@ -1410,7 +1479,28 @@ window.CONGRESO_DATA = {
       "start_time": "12:20",
       "end_time": "12:35",
       "sala": "Sala 3.7",
-      "sesion": "Bloque 10: Meteorología Regional (Subtema: Ríos Atmosféricos y Eventos Extremos de Precipitación)",
+      "sesion": "Bloque 10: Meteorología Regional (Subtema: Radares, Instrumentación, Ríos Atmosféricos y Eventos Extremos de Precipitación)",
+      "eje": "Variabilidad Climática",
+      "autor": "Jonathan Oberreuter",
+      "autor_display": "Oberreuter, Jonathan",
+      "inst": "Universidad Austral de Chile",
+      "titulo": "Climatología de ríos atmosféricos sobre la plataforma de hielo Larsen C, Península Antártica (1960-2024)",
+      "email": "jonysatie@gmail.com",
+      "pres": "Dr. Raúl Valenzuela",
+      "sec": "Jonathan Oberreuter",
+      "sup": "Sebastián Andrés García Loyola (Universidad de Concepción)",
+      "tipo": "Oral"
+    },
+    {
+      "id": "O-051",
+      "dia_num": 2,
+      "fecha": "2026-11-25",
+      "dia_label": "Día 2",
+      "horario": "12:35 - 12:50",
+      "start_time": "12:35",
+      "end_time": "12:50",
+      "sala": "Sala 3.7",
+      "sesion": "Bloque 10: Meteorología Regional (Subtema: Radares, Instrumentación, Ríos Atmosféricos y Eventos Extremos de Precipitación)",
       "eje": "Interacción Océano-Atmósfera",
       "autor": "Yosvany Garcia Santos",
       "autor_display": "Garcia Santos, Yosvany",
@@ -1423,7 +1513,7 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-051",
+      "id": "O-052",
       "dia_num": 2,
       "fecha": "2026-11-25",
       "dia_label": "Día 2",
@@ -1444,7 +1534,7 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-052",
+      "id": "O-053",
       "dia_num": 2,
       "fecha": "2026-11-25",
       "dia_label": "Día 2",
@@ -1465,7 +1555,7 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-053",
+      "id": "O-054",
       "dia_num": 2,
       "fecha": "2026-11-25",
       "dia_label": "Día 2",
@@ -1486,7 +1576,7 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-054",
+      "id": "O-055",
       "dia_num": 2,
       "fecha": "2026-11-25",
       "dia_label": "Día 2",
@@ -1507,7 +1597,7 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-055",
+      "id": "O-056",
       "dia_num": 2,
       "fecha": "2026-11-25",
       "dia_label": "Día 2",
@@ -1528,7 +1618,7 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-056",
+      "id": "O-057",
       "dia_num": 2,
       "fecha": "2026-11-25",
       "dia_label": "Día 2",
@@ -1549,7 +1639,7 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-057",
+      "id": "O-058",
       "dia_num": 2,
       "fecha": "2026-11-25",
       "dia_label": "Día 2",
@@ -1570,7 +1660,7 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-058",
+      "id": "O-059",
       "dia_num": 2,
       "fecha": "2026-11-25",
       "dia_label": "Día 2",
@@ -1591,7 +1681,7 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-059",
+      "id": "O-060",
       "dia_num": 2,
       "fecha": "2026-11-25",
       "dia_label": "Día 2",
@@ -1612,7 +1702,7 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-060",
+      "id": "O-061",
       "dia_num": 2,
       "fecha": "2026-11-25",
       "dia_label": "Día 2",
@@ -1633,7 +1723,7 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-061",
+      "id": "O-062",
       "dia_num": 2,
       "fecha": "2026-11-25",
       "dia_label": "Día 2",
@@ -1654,7 +1744,7 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-062",
+      "id": "O-063",
       "dia_num": 2,
       "fecha": "2026-11-25",
       "dia_label": "Día 2",
@@ -1675,7 +1765,7 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-063",
+      "id": "O-064",
       "dia_num": 2,
       "fecha": "2026-11-25",
       "dia_label": "Día 2",
@@ -1696,7 +1786,7 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-064",
+      "id": "O-065",
       "dia_num": 2,
       "fecha": "2026-11-25",
       "dia_label": "Día 2",
@@ -1717,10 +1807,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-065",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-066",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "10:00 - 10:15",
       "start_time": "10:00",
       "end_time": "10:15",
@@ -1738,10 +1828,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-066",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-067",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "10:15 - 10:30",
       "start_time": "10:15",
       "end_time": "10:30",
@@ -1759,10 +1849,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-067",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-068",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "10:30 - 10:45",
       "start_time": "10:30",
       "end_time": "10:45",
@@ -1780,10 +1870,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-068",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-069",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "10:45 - 11:00",
       "start_time": "10:45",
       "end_time": "11:00",
@@ -1801,10 +1891,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-069",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-070",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "11:00 - 11:15",
       "start_time": "11:00",
       "end_time": "11:15",
@@ -1822,10 +1912,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-070",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-071",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "11:15 - 11:30",
       "start_time": "11:15",
       "end_time": "11:30",
@@ -1843,10 +1933,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-071",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-072",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "10:00 - 10:15",
       "start_time": "10:00",
       "end_time": "10:15",
@@ -1864,10 +1954,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-072",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-073",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "10:15 - 10:30",
       "start_time": "10:15",
       "end_time": "10:30",
@@ -1885,10 +1975,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-073",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-074",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "10:30 - 10:45",
       "start_time": "10:30",
       "end_time": "10:45",
@@ -1906,10 +1996,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-074",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-075",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "10:45 - 11:00",
       "start_time": "10:45",
       "end_time": "11:00",
@@ -1927,10 +2017,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-075",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-076",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "11:00 - 11:15",
       "start_time": "11:00",
       "end_time": "11:15",
@@ -1948,10 +2038,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-076",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-077",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "11:15 - 11:30",
       "start_time": "11:15",
       "end_time": "11:30",
@@ -1969,10 +2059,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-077",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-078",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "11:50 - 12:05",
       "start_time": "11:50",
       "end_time": "12:05",
@@ -1990,10 +2080,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-078",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-079",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "12:05 - 12:20",
       "start_time": "12:05",
       "end_time": "12:20",
@@ -2011,10 +2101,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-079",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-080",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "12:20 - 12:35",
       "start_time": "12:20",
       "end_time": "12:35",
@@ -2032,10 +2122,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-080",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-081",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "12:35 - 12:50",
       "start_time": "12:35",
       "end_time": "12:50",
@@ -2053,10 +2143,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-081",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-082",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "11:50 - 12:05",
       "start_time": "11:50",
       "end_time": "12:05",
@@ -2074,10 +2164,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-082",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-083",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "12:05 - 12:20",
       "start_time": "12:05",
       "end_time": "12:20",
@@ -2095,10 +2185,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-083",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-084",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "12:20 - 12:35",
       "start_time": "12:20",
       "end_time": "12:35",
@@ -2116,10 +2206,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-084",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-085",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "12:35 - 12:50",
       "start_time": "12:35",
       "end_time": "12:50",
@@ -2137,10 +2227,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-085",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-086",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "14:15 - 14:30",
       "start_time": "14:15",
       "end_time": "14:30",
@@ -2158,10 +2248,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-086",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-087",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "14:30 - 14:45",
       "start_time": "14:30",
       "end_time": "14:45",
@@ -2179,10 +2269,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-087",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-088",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "14:45 - 15:00",
       "start_time": "14:45",
       "end_time": "15:00",
@@ -2200,10 +2290,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-088",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-089",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "15:00 - 15:15",
       "start_time": "15:00",
       "end_time": "15:15",
@@ -2221,10 +2311,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-089",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-090",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "14:15 - 14:30",
       "start_time": "14:15",
       "end_time": "14:30",
@@ -2242,10 +2332,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-090",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-091",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "14:30 - 14:45",
       "start_time": "14:30",
       "end_time": "14:45",
@@ -2263,10 +2353,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-091",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-092",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "14:45 - 15:00",
       "start_time": "14:45",
       "end_time": "15:00",
@@ -2284,10 +2374,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-092",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-093",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "15:35 - 15:50",
       "start_time": "15:35",
       "end_time": "15:50",
@@ -2305,10 +2395,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-093",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-094",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "15:50 - 16:05",
       "start_time": "15:50",
       "end_time": "16:05",
@@ -2326,10 +2416,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-094",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-095",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "16:05 - 16:20",
       "start_time": "16:05",
       "end_time": "16:20",
@@ -2347,10 +2437,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-095",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-096",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "15:35 - 15:50",
       "start_time": "15:35",
       "end_time": "15:50",
@@ -2368,10 +2458,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-096",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-097",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "15:50 - 16:05",
       "start_time": "15:50",
       "end_time": "16:05",
@@ -2389,10 +2479,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-097",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-098",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
       "horario": "16:05 - 16:20",
       "start_time": "16:05",
       "end_time": "16:20",
@@ -2410,10 +2500,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-098",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-099",
+      "dia_num": 4,
+      "fecha": "2026-11-27",
+      "dia_label": "Día 4",
       "horario": "10:00 - 10:15",
       "start_time": "10:00",
       "end_time": "10:15",
@@ -2431,10 +2521,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-099",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-100",
+      "dia_num": 4,
+      "fecha": "2026-11-27",
+      "dia_label": "Día 4",
       "horario": "10:15 - 10:30",
       "start_time": "10:15",
       "end_time": "10:30",
@@ -2452,10 +2542,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-100",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-101",
+      "dia_num": 4,
+      "fecha": "2026-11-27",
+      "dia_label": "Día 4",
       "horario": "10:30 - 10:45",
       "start_time": "10:30",
       "end_time": "10:45",
@@ -2473,10 +2563,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-101",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-102",
+      "dia_num": 4,
+      "fecha": "2026-11-27",
+      "dia_label": "Día 4",
       "horario": "10:45 - 11:00",
       "start_time": "10:45",
       "end_time": "11:00",
@@ -2494,10 +2584,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-102",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-103",
+      "dia_num": 4,
+      "fecha": "2026-11-27",
+      "dia_label": "Día 4",
       "horario": "10:00 - 10:15",
       "start_time": "10:00",
       "end_time": "10:15",
@@ -2515,10 +2605,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-103",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-104",
+      "dia_num": 4,
+      "fecha": "2026-11-27",
+      "dia_label": "Día 4",
       "horario": "10:15 - 10:30",
       "start_time": "10:15",
       "end_time": "10:30",
@@ -2536,10 +2626,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-104",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-105",
+      "dia_num": 4,
+      "fecha": "2026-11-27",
+      "dia_label": "Día 4",
       "horario": "10:30 - 10:45",
       "start_time": "10:30",
       "end_time": "10:45",
@@ -2557,10 +2647,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-105",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-106",
+      "dia_num": 4,
+      "fecha": "2026-11-27",
+      "dia_label": "Día 4",
       "horario": "10:45 - 11:00",
       "start_time": "10:45",
       "end_time": "11:00",
@@ -2578,10 +2668,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-106",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-107",
+      "dia_num": 4,
+      "fecha": "2026-11-27",
+      "dia_label": "Día 4",
       "horario": "11:20 - 11:35",
       "start_time": "11:20",
       "end_time": "11:35",
@@ -2599,10 +2689,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-107",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-108",
+      "dia_num": 4,
+      "fecha": "2026-11-27",
+      "dia_label": "Día 4",
       "horario": "11:35 - 11:50",
       "start_time": "11:35",
       "end_time": "11:50",
@@ -2620,10 +2710,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-108",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-109",
+      "dia_num": 4,
+      "fecha": "2026-11-27",
+      "dia_label": "Día 4",
       "horario": "11:50 - 12:05",
       "start_time": "11:50",
       "end_time": "12:05",
@@ -2641,10 +2731,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-109",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-110",
+      "dia_num": 4,
+      "fecha": "2026-11-27",
+      "dia_label": "Día 4",
       "horario": "11:20 - 11:35",
       "start_time": "11:20",
       "end_time": "11:35",
@@ -2662,10 +2752,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-110",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-111",
+      "dia_num": 4,
+      "fecha": "2026-11-27",
+      "dia_label": "Día 4",
       "horario": "11:35 - 11:50",
       "start_time": "11:35",
       "end_time": "11:50",
@@ -2683,10 +2773,10 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-111",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "id": "O-112",
+      "dia_num": 4,
+      "fecha": "2026-11-27",
+      "dia_label": "Día 4",
       "horario": "11:50 - 12:05",
       "start_time": "11:50",
       "end_time": "12:05",
@@ -2713,8 +2803,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Contaminación y Química atmosférica",
       "autor": "Angel Domínguez Chovert",
       "autor_display": "Domínguez Chovert, Angel",
@@ -2734,8 +2824,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Contaminación y Química atmosférica",
       "autor": "Felipe Alberto González Vidal",
       "autor_display": "González Vidal, Felipe Alberto",
@@ -2755,8 +2845,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Contaminación y Química atmosférica",
       "autor": "Nicole Alejandra Zárate Morales",
       "autor_display": "Zárate Morales, Nicole Alejandra",
@@ -2776,8 +2866,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Paleoclima",
       "autor": "Bruno Benjamín Varela Molina",
       "autor_display": "Varela Molina, Bruno Benjamín",
@@ -2797,8 +2887,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Paleoclima",
       "autor": "Manuel Suazo Álvarez",
       "autor_display": "Suazo Álvarez, Manuel",
@@ -2818,8 +2908,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Meteorología Regional",
       "autor": "Adán Godoy Matus",
       "autor_display": "Godoy Matus, Adán",
@@ -2839,8 +2929,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Meteorología Regional",
       "autor": "Alan Ricardo Drebes Dorneles",
       "autor_display": "Drebes Dorneles, Alan Ricardo",
@@ -2860,8 +2950,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Meteorología Regional",
       "autor": "Almendra Pedrini",
       "autor_display": "Pedrini, Almendra",
@@ -2881,8 +2971,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Meteorología Regional",
       "autor": "BRUNO IVÁN VARGAS CRESPO",
       "autor_display": "Vargas Crespo, Bruno Iván",
@@ -2902,8 +2992,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Meteorología Regional",
       "autor": "Catalina Consuelo Alzola Salas",
       "autor_display": "Alzola Salas, Catalina Consuelo",
@@ -2923,8 +3013,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Meteorología Regional",
       "autor": "Charlie Eduardo Opazo Collao",
       "autor_display": "Opazo Collao, Charlie Eduardo",
@@ -2944,8 +3034,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Meteorología Regional",
       "autor": "Daniel Antonio Espinoza Manriquez",
       "autor_display": "Espinoza Manriquez, Daniel Antonio",
@@ -2965,8 +3055,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Meteorología Regional",
       "autor": "David Donoso",
       "autor_display": "Donoso, David",
@@ -2986,8 +3076,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Meteorología Regional",
       "autor": "David Michael Aguilera Riquelme",
       "autor_display": "Aguilera Riquelme, David Michael",
@@ -3007,8 +3097,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Meteorología Regional",
       "autor": "Deniz Bozkurt",
       "autor_display": "Bozkurt, Deniz",
@@ -3028,8 +3118,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Meteorología Regional",
       "autor": "Ernesto Eduardo Gonzalez Pinilla",
       "autor_display": "Gonzalez Pinilla, Ernesto Eduardo",
@@ -3049,8 +3139,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Meteorología Regional",
       "autor": "Ernesto Eduardo Gonzalez Pinilla",
       "autor_display": "Gonzalez Pinilla, Ernesto Eduardo",
@@ -3070,8 +3160,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Olas y Tsunamis",
       "autor": "Sebastian Omar Correa Araya",
       "autor_display": "Correa Araya, Sebastian Omar",
@@ -3091,8 +3181,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Olas y Tsunamis",
       "autor": "Sebastian Omar Correa Araya",
       "autor_display": "Correa Araya, Sebastian Omar",
@@ -3112,8 +3202,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Olas y Tsunamis",
       "autor": "Javier Alfredo Aguirre Gaete",
       "autor_display": "Aguirre Gaete, Javier Alfredo",
@@ -3133,8 +3223,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Olas y Tsunamis",
       "autor": "Claudia Silvana Pizarro Silva",
       "autor_display": "Pizarro Silva, Claudia Silvana",
@@ -3154,8 +3244,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Olas y Tsunamis",
       "autor": "Juan González",
       "autor_display": "González, Juan",
@@ -3175,8 +3265,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Interacción Océano-Atmósfera",
       "autor": "Sebastián Andrés García Loyola",
       "autor_display": "García Loyola, Sebastián Andrés",
@@ -3196,8 +3286,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Interacción Océano-Atmósfera",
       "autor": "ANDRÉS ALBERTO VARAS GÓMEZ",
       "autor_display": "Varas Gómez, Andrés Alberto",
@@ -3217,8 +3307,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Interacción Océano-Atmósfera",
       "autor": "Dipjyoti Mudiar",
       "autor_display": "Mudiar, Dipjyoti",
@@ -3238,8 +3328,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Interacción Océano-Atmósfera",
       "autor": "Freddy Pinochet Erazo",
       "autor_display": "Pinochet Erazo, Freddy",
@@ -3259,8 +3349,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Interacción Océano-Atmósfera",
       "autor": "Jeferson Prietsch Machado",
       "autor_display": "Prietsch Machado, Jeferson",
@@ -3280,8 +3370,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Interacción Océano-Atmósfera",
       "autor": "Larissa de Paula Miranda",
       "autor_display": "Paula Miranda, Larissa de",
@@ -3301,8 +3391,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Interacción Océano-Atmósfera",
       "autor": "Vicente Jara",
       "autor_display": "Jara, Vicente",
@@ -3322,8 +3412,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Desoxigenación e hipoxia",
       "autor": "Daniela Ignacia Flores Fuenzalida",
       "autor_display": "Flores Fuenzalida, Daniela Ignacia",
@@ -3343,8 +3433,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Desoxigenación e hipoxia",
       "autor": "Fabian Enrique Salgado Oporto",
       "autor_display": "Salgado Oporto, Fabian Enrique",
@@ -3364,8 +3454,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Desoxigenación e hipoxia",
       "autor": "Fabian Enrique Salgado Oporto",
       "autor_display": "Salgado Oporto, Fabian Enrique",
@@ -3385,8 +3475,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Desoxigenación e hipoxia",
       "autor": "Fabricio Acevedo",
       "autor_display": "Acevedo, Fabricio",
@@ -3406,8 +3496,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 2",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Desoxigenación e hipoxia",
       "autor": "Javiera Antonia Sainz Reyes",
       "autor_display": "Sainz Reyes, Javiera Antonia",
@@ -3427,8 +3517,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Meteorología Regional",
       "autor": "Francisca Verónica Jofré Meneses",
       "autor_display": "Jofré Meneses, Francisca Verónica",
@@ -3448,8 +3538,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Meteorología Regional",
       "autor": "Gonzalo Huidobro Marín",
       "autor_display": "Huidobro Marín, Gonzalo",
@@ -3469,8 +3559,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Meteorología Regional",
       "autor": "Gonzalo Mansilla",
       "autor_display": "Mansilla, Gonzalo",
@@ -3490,8 +3580,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Meteorología Regional",
       "autor": "Ian Andersej Trobok Pacheco",
       "autor_display": "Trobok Pacheco, Ian Andersej",
@@ -3511,8 +3601,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Meteorología Regional",
       "autor": "Ignacio Andrés Pérez Vergara",
       "autor_display": "Pérez Vergara, Ignacio Andrés",
@@ -3532,8 +3622,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Meteorología Regional",
       "autor": "Joaquín Rodrigo Valenzuela Garrido",
       "autor_display": "Valenzuela Garrido, Joaquín Rodrigo",
@@ -3553,8 +3643,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Meteorología Regional",
       "autor": "Laura Sabina Vásquez López",
       "autor_display": "Vásquez López, Laura Sabina",
@@ -3574,8 +3664,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Meteorología Regional",
       "autor": "Matías Nicolás Martínez Fernández",
       "autor_display": "Martínez Fernández, Matías Nicolás",
@@ -3595,8 +3685,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Meteorología Regional",
       "autor": "Raúl Valenzuela",
       "autor_display": "Valenzuela, Raúl",
@@ -3616,8 +3706,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Meteorología Regional",
       "autor": "Ricardo Muñoz Magnino",
       "autor_display": "Muñoz Magnino, Ricardo",
@@ -3637,8 +3727,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Meteorología Regional",
       "autor": "Emilio Callejas, Deniz Bozkurt",
       "autor_display": "Deniz Bozkurt, Emilio Callejas,",
@@ -3658,8 +3748,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Variabilidad Climática",
       "autor": "Alfonso Javier Pinto Morales",
       "autor_display": "Pinto Morales, Alfonso Javier",
@@ -3679,8 +3769,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Variabilidad Climática",
       "autor": "Cristian Adolfo Ortiz Villavicencio",
       "autor_display": "Ortiz Villavicencio, Cristian Adolfo",
@@ -3700,8 +3790,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Variabilidad Climática",
       "autor": "Daniela Belén Tapia Marzán",
       "autor_display": "Tapia Marzán, Daniela Belén",
@@ -3721,8 +3811,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Variabilidad Climática",
       "autor": "Diego Ignacio Fernández Olivares",
       "autor_display": "Fernández Olivares, Diego Ignacio",
@@ -3742,8 +3832,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Variabilidad Climática",
       "autor": "Francisca Esperanza Mendoza Arcos",
       "autor_display": "Mendoza Arcos, Francisca Esperanza",
@@ -3763,8 +3853,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Desoxigenación e hipoxia",
       "autor": "Pablo Antonio Herrera Klarian",
       "autor_display": "Herrera Klarian, Pablo Antonio",
@@ -3784,8 +3874,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Desoxigenación e hipoxia",
       "autor": "Paula Virginia Barbosa-Peñaloza",
       "autor_display": "Barbosa-Peñaloza, Paula Virginia",
@@ -3805,8 +3895,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Acoplamiento físico-biogeoquímico",
       "autor": "Abdón Benjamín Olguín Núñez",
       "autor_display": "Olguín Núñez, Abdón Benjamín",
@@ -3826,8 +3916,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Acoplamiento físico-biogeoquímico",
       "autor": "CONSTANZA YISSELL HERNANDEZ URBANO",
       "autor_display": "Hernandez Urbano, Constanza Yissell",
@@ -3847,8 +3937,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Acoplamiento físico-biogeoquímico",
       "autor": "Cristine Michelle Gaultier López",
       "autor_display": "Gaultier López, Cristine Michelle",
@@ -3868,8 +3958,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Acoplamiento físico-biogeoquímico",
       "autor": "Daniela Rojas Rojas",
       "autor_display": "Rojas Rojas, Daniela",
@@ -3889,8 +3979,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Acoplamiento físico-biogeoquímico",
       "autor": "Odette Alejandra Vergara Soto",
       "autor_display": "Vergara Soto, Odette Alejandra",
@@ -3910,8 +4000,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Acoplamiento físico-biogeoquímico",
       "autor": "Sebastián Orlando Durán Torres",
       "autor_display": "Durán Torres, Sebastián Orlando",
@@ -3931,8 +4021,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Acoplamiento físico-biogeoquímico",
       "autor": "Valentina Iturra",
       "autor_display": "Iturra, Valentina",
@@ -3952,8 +4042,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Acoplamiento físico-biogeoquímico",
       "autor": "Cristine Michelle Gaultier López",
       "autor_display": "Gaultier López, Cristine Michelle",
@@ -3973,8 +4063,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Oceanografía de Estuarios y Zonas Costeras",
       "autor": "Constanza Noemí Escobedo Zúñiga",
       "autor_display": "Escobedo Zúñiga, Constanza Noemí",
@@ -3994,8 +4084,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Oceanografía de Estuarios y Zonas Costeras",
       "autor": "Francesca V. Search",
       "autor_display": "Search, Francesca V.",
@@ -4015,8 +4105,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Oceanografía de Estuarios y Zonas Costeras",
       "autor": "Francisca Covarrubias Mondaca",
       "autor_display": "Covarrubias Mondaca, Francisca",
@@ -4036,8 +4126,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Oceanografía de Estuarios y Zonas Costeras",
       "autor": "Gabriel Francisco Correa Muñoz",
       "autor_display": "Correa Muñoz, Gabriel Francisco",
@@ -4057,8 +4147,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Oceanografía de Estuarios y Zonas Costeras",
       "autor": "Juan Pablo Salazar Ceciliano",
       "autor_display": "Salazar Ceciliano, Juan Pablo",
@@ -4078,8 +4168,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Oceanografía de Estuarios y Zonas Costeras",
       "autor": "Luke Carberry",
       "autor_display": "Carberry, Luke",
@@ -4099,8 +4189,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Oceanografía de Estuarios y Zonas Costeras",
       "autor": "Matías Troncoso-Villar",
       "autor_display": "Troncoso-Villar, Matías",
@@ -4120,8 +4210,8 @@ window.CONGRESO_DATA = {
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 3",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
       "eje": "Oceanografía de Estuarios y Zonas Costeras",
       "autor": "Mayra Antonia Espinoza Ponce",
       "autor_display": "Espinoza Ponce, Mayra Antonia",
@@ -4141,8 +4231,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Variabilidad Climática",
       "autor": "Henry Edisson Jamanca Espinoza",
       "autor_display": "Jamanca Espinoza, Henry Edisson",
@@ -4162,8 +4252,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Variabilidad Climática",
       "autor": "José Maria Brabo Alves",
       "autor_display": "Brabo Alves, José Maria",
@@ -4183,8 +4273,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Variabilidad Climática",
       "autor": "Leonor Gabriela Valdés Calderón",
       "autor_display": "Valdés Calderón, Leonor Gabriela",
@@ -4204,8 +4294,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Variabilidad Climática",
       "autor": "Marcelo Madariaga-Burgos",
       "autor_display": "Madariaga-Burgos, Marcelo",
@@ -4225,8 +4315,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Variabilidad Climática",
       "autor": "María Fernanda Ruedlinger",
       "autor_display": "Ruedlinger, María Fernanda",
@@ -4246,8 +4336,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Variabilidad Climática",
       "autor": "María Victoria Moya",
       "autor_display": "Moya, María Victoria",
@@ -4267,8 +4357,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Variabilidad Climática",
       "autor": "Matías Andrés Briceño Yañez",
       "autor_display": "Briceño Yañez, Matías Andrés",
@@ -4288,8 +4378,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Variabilidad Climática",
       "autor": "Mónica Carolina Alvarado Niño",
       "autor_display": "Alvarado Niño, Mónica Carolina",
@@ -4309,8 +4399,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Variabilidad Climática",
       "autor": "Nicolás Carrasco-Ilabaca",
       "autor_display": "Carrasco-Ilabaca, Nicolás",
@@ -4330,8 +4420,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Variabilidad Climática",
       "autor": "Nicolás Leonardo Mora Carrera",
       "autor_display": "Mora Carrera, Nicolás Leonardo",
@@ -4351,8 +4441,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Variabilidad Climática",
       "autor": "Pablo Sandoval Matamala",
       "autor_display": "Sandoval Matamala, Pablo",
@@ -4372,8 +4462,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Variabilidad Climática",
       "autor": "Rosa Carolina Zamora Aguirre",
       "autor_display": "Zamora Aguirre, Rosa Carolina",
@@ -4393,8 +4483,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Variabilidad Climática",
       "autor": "Tomás Caballero",
       "autor_display": "Caballero, Tomás",
@@ -4414,8 +4504,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Variabilidad Climática",
       "autor": "Yulissa Carolina Espitia Paez",
       "autor_display": "Espitia Paez, Yulissa Carolina",
@@ -4435,8 +4525,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Variabilidad Climática",
       "autor": "Álvaro Esteban Constanzo Gatica",
       "autor_display": "Constanzo Gatica, Álvaro Esteban",
@@ -4456,8 +4546,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Variabilidad Climática",
       "autor": "Roberto Francisco Rondanelli Rojas",
       "autor_display": "Rondanelli Rojas, Roberto Francisco",
@@ -4477,8 +4567,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Oceanografía de Estuarios y Zonas Costeras",
       "autor": "Rodolfo Adrián Gómez Sepúlveda",
       "autor_display": "Gómez Sepúlveda, Rodolfo Adrián",
@@ -4498,8 +4588,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Oceanografía de Estuarios y Zonas Costeras",
       "autor": "Simón Ismael Reyes Valentin",
       "autor_display": "Reyes Valentin, Simón Ismael",
@@ -4519,8 +4609,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Oceanografía Física Regional",
       "autor": "Antonia Ricci Frías",
       "autor_display": "Ricci Frías, Antonia",
@@ -4540,8 +4630,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Oceanografía Física Regional",
       "autor": "Benjamín Ignacio Cornejo Ávila",
       "autor_display": "Cornejo Ávila, Benjamín Ignacio",
@@ -4561,8 +4651,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Oceanografía Física Regional",
       "autor": "Claudia Rozas-Perez",
       "autor_display": "Rozas-Perez, Claudia",
@@ -4582,8 +4672,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Oceanografía Física Regional",
       "autor": "Daniel Andrés Olivares Norambuena",
       "autor_display": "Olivares Norambuena, Daniel Andrés",
@@ -4603,8 +4693,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Oceanografía Física Regional",
       "autor": "Diego Narváez",
       "autor_display": "Narváez, Diego",
@@ -4624,8 +4714,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Oceanografía Física Regional",
       "autor": "Eduardo Alberto Flores Barraza",
       "autor_display": "Flores Barraza, Eduardo Alberto",
@@ -4645,8 +4735,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Oceanografía Física Regional",
       "autor": "Emerson Mariano da Silva",
       "autor_display": "da Silva, Emerson Mariano",
@@ -4666,8 +4756,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Oceanografía Física Regional",
       "autor": "Felipe Andrés Silva Guevara",
       "autor_display": "Silva Guevara, Felipe Andrés",
@@ -4687,8 +4777,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Oceanografía Física Regional",
       "autor": "Javiera Antonia Sainz Reyes",
       "autor_display": "Sainz Reyes, Javiera Antonia",
@@ -4708,8 +4798,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Oceanografía Física Regional",
       "autor": "Juan Alejandro Rojas Castro",
       "autor_display": "Rojas Castro, Juan Alejandro",
@@ -4729,8 +4819,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Oceanografía Física Regional",
       "autor": "Marina Hernández",
       "autor_display": "Hernández, Marina",
@@ -4750,8 +4840,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Oceanografía Física Regional",
       "autor": "Mario Andrés Cáceres Soto",
       "autor_display": "Cáceres Soto, Mario Andrés",
@@ -4771,8 +4861,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Oceanografía Física Regional",
       "autor": "Matias Pizarro-Koch",
       "autor_display": "Pizarro-Koch, Matias",
@@ -4792,8 +4882,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Oceanografía Física Regional",
       "autor": "Noémie Schifano",
       "autor_display": "Schifano, Noémie",
@@ -4813,8 +4903,8 @@ window.CONGRESO_DATA = {
       "horario": "13:30 - 15:00",
       "start_time": "13:30",
       "end_time": "15:00",
-      "sala": "Pisos 2 y 3 (Hall)",
-      "sesion": "Sesión de Paneles Póster Día 4",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 4",
       "eje": "Energías Renovables no convencionales",
       "autor": "Romain Bailly",
       "autor_display": "Bailly, Romain",
@@ -4960,8 +5050,8 @@ window.CONGRESO_DATA = {
       "dia": "Día 2",
       "horario": "11:50 a 12:50 hrs",
       "sala": "Sala 3.7",
-      "sesion": "Meteorología Regional — Subtema: Ríos Atmosféricos y Eventos Extremos de Precipitación",
-      "codigos": "O-048 a O-050 (3 ponencias)",
+      "sesion": "Meteorología Regional — Subtema: Radares, Instrumentación, Ríos Atmosféricos y Eventos Extremos de Precipitación",
+      "codigos": "O-048 a O-051 (4 ponencias)",
       "pres": "Dr. Raúl Valenzuela",
       "inst_pres": "Instituto de Cs. de la Ingeniería, Universidad de O'Higgins / CR2",
       "sec": "Jonathan Oberreuter",
@@ -4975,7 +5065,7 @@ window.CONGRESO_DATA = {
       "horario": "14:15 a 15:15 hrs",
       "sala": "Sala 2.5",
       "sesion": "Oceanografía Física Regional — Subtema: Sistemas de Observación Marina, Plataformas Autónomas y Aguas Polares",
-      "codigos": "O-051 a O-054 (4 ponencias)",
+      "codigos": "O-052 a O-055 (4 ponencias)",
       "pres": "Dra. María de los Ángeles Marrero Díaz",
       "inst_pres": "Instituto Universitario ECOAQUA, Universidad de Las Palmas de Gran Canaria, España",
       "sec": "ANDRÉS ALBERTO VARAS GÓMEZ",
@@ -4989,7 +5079,7 @@ window.CONGRESO_DATA = {
       "horario": "14:15 a 15:15 hrs",
       "sala": "Sala 3.7",
       "sesion": "Interacción Océano-Atmósfera — Subtema: Dinámica del ENOS y Acoplamiento de Gran Escala",
-      "codigos": "O-055 a O-058 (4 ponencias)",
+      "codigos": "O-056 a O-059 (4 ponencias)",
       "pres": "Leandra Grisel Loyola Giahette",
       "inst_pres": "Universidad Adolfo Ibáñez",
       "sec": "Dr. Cristian Martinez-Villalobos",
@@ -5003,7 +5093,7 @@ window.CONGRESO_DATA = {
       "horario": "15:35 a 16:20 hrs",
       "sala": "Sala 2.5",
       "sesion": "Oceanografía Física Regional — Subtema: Cañones Submarinos y Surgencia de Agua Profunda",
-      "codigos": "O-059 a O-061 (3 ponencias)",
+      "codigos": "O-060 a O-062 (3 ponencias)",
       "pres": "Sofía Palacios Riveros",
       "inst_pres": "Universidad de Concepción y Centro COPAS Coastal",
       "sec": "María Paz Almendra Riquelme",
@@ -5017,7 +5107,7 @@ window.CONGRESO_DATA = {
       "horario": "15:35 a 16:20 hrs",
       "sala": "Sala 3.7",
       "sesion": "Contaminación y Química Atmosférica — Subtema: Calidad del Aire, Ozono y Dispersión Urbana",
-      "codigos": "O-062 a O-064 (3 ponencias)",
+      "codigos": "O-063 a O-065 (3 ponencias)",
       "pres": "Dra. Laura Gallardo",
       "inst_pres": "Universidad de Chile, Centro de Ciencia del Clima y la Resiliencia (CR2), DGF",
       "sec": "Giovanna Paola Amaya Peña",
@@ -5031,7 +5121,7 @@ window.CONGRESO_DATA = {
       "horario": "10:00 a 11:30 hrs",
       "sala": "Sala 2.5",
       "sesion": "Oceanografía Física Regional — Subtema: Masas de Agua y Sistema de Corrientes",
-      "codigos": "O-065 a O-070 (6 ponencias)",
+      "codigos": "O-066 a O-071 (6 ponencias)",
       "pres": "Dra. Vera Oerder",
       "inst_pres": "Universidad de Concepción / IMO / Núcleo Milenio DEOXs",
       "sec": "Dr. Marcus Sobarzo",
@@ -5045,7 +5135,7 @@ window.CONGRESO_DATA = {
       "horario": "10:00 a 11:30 hrs",
       "sala": "Sala 3.7",
       "sesion": "Variabilidad Climática — Subtema: Teleconexiones y Circulación Hemisférica",
-      "codigos": "O-071 a O-076 (6 ponencias)",
+      "codigos": "O-072 a O-077 (6 ponencias)",
       "pres": "Noelia Vejar Ulloa",
       "inst_pres": "Departamento de Geofísica, Universidad de Concepción & CR2",
       "sec": "Matías Arias Ortega",
@@ -5059,7 +5149,7 @@ window.CONGRESO_DATA = {
       "horario": "11:50 a 12:50 hrs",
       "sala": "Sala 2.5",
       "sesion": "Oceanografía Física Regional — Subtema: Mareas, Ondas Internas y Nivel del Mar",
-      "codigos": "O-077 a O-080 (4 ponencias)",
+      "codigos": "O-078 a O-081 (4 ponencias)",
       "pres": "Camila Valentina Camposano Sanhueza",
       "inst_pres": "LOFISAT, Universidad de Valparaíso",
       "sec": "Francisca Victoria del Carmen Quijada Mateluna",
@@ -5073,7 +5163,7 @@ window.CONGRESO_DATA = {
       "horario": "11:50 a 12:50 hrs",
       "sala": "Sala 3.7",
       "sesion": "Variabilidad Climática — Subtema: Modelación Climática Regional y Downscaling",
-      "codigos": "O-081 a O-084 (4 ponencias)",
+      "codigos": "O-082 a O-085 (4 ponencias)",
       "pres": "Mariana Hidalgo",
       "inst_pres": "Universidad Técnica Federico Santa María y AMTC",
       "sec": "Felipe Antonio Sánchez González",
@@ -5087,7 +5177,7 @@ window.CONGRESO_DATA = {
       "horario": "14:15 a 15:15 hrs",
       "sala": "Sala 2.5",
       "sesion": "Oceanografía Física Regional — Subtema: Remolinos de Mesoescala, Submesoescala y Ondas Atrapadas",
-      "codigos": "O-085 a O-088 (4 ponencias)",
+      "codigos": "O-086 a O-089 (4 ponencias)",
       "pres": "Poliana Teresa Leiva Garay",
       "inst_pres": "Universidad de Concepción",
       "sec": "Luis P. Valencia",
@@ -5101,7 +5191,7 @@ window.CONGRESO_DATA = {
       "horario": "14:15 a 15:15 hrs",
       "sala": "Sala 3.7",
       "sesion": "Variabilidad Climática — Subtema: Variabilidad Hidroclimática, Nieve y Recursos Hídricos",
-      "codigos": "O-089 a O-091 (3 ponencias)",
+      "codigos": "O-090 a O-092 (3 ponencias)",
       "pres": "Fernanda Véliz C.",
       "inst_pres": "Universidad Técnica Federico Santa María",
       "sec": "Dr. Jorge Arévalo B.",
@@ -5115,7 +5205,7 @@ window.CONGRESO_DATA = {
       "horario": "15:35 a 16:20 hrs",
       "sala": "Sala 2.5",
       "sesion": "Acoplamiento Físico-Biogeoquímico — Subtema: Conectividad Marina y Procesos Biofísicos",
-      "codigos": "O-092 a O-094 (3 ponencias)",
+      "codigos": "O-093 a O-095 (3 ponencias)",
       "pres": "Angela Andrea Bahamondes Domínguez",
       "inst_pres": "Instituto Milenio BASE / Instituto de Ciencias Marinas y Limnológicas, UACh",
       "sec": "María Fabiola Monsálvez Opazo",
@@ -5129,7 +5219,7 @@ window.CONGRESO_DATA = {
       "horario": "15:35 a 16:20 hrs",
       "sala": "Sala 3.7",
       "sesion": "Paleoclima — Subtema: Variabilidad y Cambios Climáticos Históricos",
-      "codigos": "O-095 a O-097 (3 ponencias)",
+      "codigos": "O-096 a O-098 (3 ponencias)",
       "pres": "Tomás Roberto Muñoz Salazar",
       "inst_pres": "Laboratorio de Dendrocronología y Cambio Global, Universidad Austral de Chile",
       "sec": "Álvaro Ossandón",
@@ -5143,7 +5233,7 @@ window.CONGRESO_DATA = {
       "horario": "10:00 a 11:00 hrs",
       "sala": "Sala 2.5",
       "sesion": "Desoxigenación e Hipoxia — Subtema: Zona de Mínimo Oxígeno, Hipoxia y Nutrientes",
-      "codigos": "O-098 a O-101 (4 ponencias)",
+      "codigos": "O-099 a O-102 (4 ponencias)",
       "pres": "Francisca Chirino",
       "inst_pres": "Departamento de Geofísica, Universidad de Concepción",
       "sec": "Salma Juliette Espinoza Rivera",
@@ -5157,7 +5247,7 @@ window.CONGRESO_DATA = {
       "horario": "10:00 a 11:00 hrs",
       "sala": "Sala 3.7",
       "sesion": "Meteorología Regional — Subtema: Pronóstico Subestacional, Predictibilidad y Eventos Extremos",
-      "codigos": "O-102 a O-105 (4 ponencias)",
+      "codigos": "O-103 a O-106 (4 ponencias)",
       "pres": "Dra. Ana María Córdova Leal",
       "inst_pres": "Directora Departamento de Meteorología, Universidad de Valparaíso",
       "sec": "Félix Marcial Carrasco Galleguillos",
@@ -5171,7 +5261,7 @@ window.CONGRESO_DATA = {
       "horario": "11:20 a 12:05 hrs",
       "sala": "Sala 2.5",
       "sesion": "Acoplamiento Físico-Biogeoquímico — Subtema: Remolinos Subsuperficiales, Productividad Marina y Oxígeno",
-      "codigos": "O-106 a O-108 (3 ponencias)",
+      "codigos": "O-107 a O-109 (3 ponencias)",
       "pres": "Valerie Alejandra Villegas Gamboa",
       "inst_pres": "Escuela de Ciencias del Mar, PUCV / Instituto Milenio de Oceanografía (IMO)",
       "sec": "Luke Carberry",
@@ -5185,7 +5275,7 @@ window.CONGRESO_DATA = {
       "horario": "11:20 a 12:05 hrs",
       "sala": "Sala 3.7",
       "sesion": "Energías Renovables no Convencionales — Subtema: Recurso Eólico, Oleaje y Clima Futuro",
-      "codigos": "O-109 a O-111 (3 ponencias)",
+      "codigos": "O-110 a O-112 (3 ponencias)",
       "pres": "Dra. Andrea Piñones",
       "inst_pres": "Universidad Austral de Chile / COPAS Coastal / Instituto Milenio BASE",
       "sec": "Ovidio Llompart",
@@ -5247,7 +5337,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Influencia de la circulación profunda en la advección horizontal de aguas hipóxicas en la Patagonia norte."
         }
       ]
@@ -5258,10 +5348,10 @@ window.CONGRESO_DATA = {
       "inst": "Dirección Meteorológica de Chile",
       "trabajos": [
         {
-          "id": "O-104",
+          "id": "O-105",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 4",
+          "fecha": "2026-11-27",
           "horario": "10:30 - 10:45",
           "sala": "Sala 3.7",
           "titulo": "Determinación de umbrales termodinámicos y estructuración predictiva para eventos de nieve"
@@ -5279,7 +5369,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "RedMeteo: El caso de una red densa de observaciones meteorológicas ciudadanas en tiempo real para Chile"
         }
       ]
@@ -5304,7 +5394,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Olas del Futuro: Proyecciones y cambios estadísticos del clima de oleaje en aguas profundas de Chile"
         }
       ]
@@ -5315,10 +5405,10 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Física, Facultad de Ciencias. Universidad de Bío-Bío.",
       "trabajos": [
         {
-          "id": "O-111",
+          "id": "O-112",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 4",
+          "fecha": "2026-11-27",
           "horario": "11:50 - 12:05",
           "sala": "Sala 3.7",
           "titulo": "Respuesta de la circulación de Bahía Concepción a eventos de viento del norte y ríos atmosféricos"
@@ -5331,7 +5421,7 @@ window.CONGRESO_DATA = {
       "inst": "Unversidad Austral  de Chile",
       "trabajos": [
         {
-          "id": "O-060",
+          "id": "O-061",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
@@ -5347,10 +5437,10 @@ window.CONGRESO_DATA = {
       "inst": "CEAZA",
       "trabajos": [
         {
-          "id": "O-087",
+          "id": "O-088",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "14:45 - 15:00",
           "sala": "Sala 2.5",
           "titulo": "Energy potential of intraseasonal coastal-trapped waves along the Peru–Chile coast"
@@ -5368,8 +5458,24 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Actualización de climatología de Nivel del mar y Temperatura Superficial del Mar"
+        }
+      ]
+    },
+    {
+      "nombre": "Álvarez, Pablo",
+      "nombre_original": "Jorge Arévalo",
+      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
+      "trabajos": [
+        {
+          "id": "O-048",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "fecha": "2026-11-25",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 3.7",
+          "titulo": "Un Radar Móvil para Fenómenos Meteorológicos Extremos y Clima: Fortaleciendo la Investigación y la Resiliencia en Chile"
         }
       ]
     },
@@ -5384,7 +5490,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Evaluación de Metodologías de Estimación de Flujo de Calor Sensible"
         }
       ]
@@ -5395,7 +5501,7 @@ window.CONGRESO_DATA = {
       "inst": "Escuela de ciencias agroalimentarias, animales y ambientales, niversidad de O'Higgins",
       "trabajos": [
         {
-          "id": "O-062",
+          "id": "O-063",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
@@ -5411,7 +5517,7 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Concepción",
       "trabajos": [
         {
-          "id": "O-058",
+          "id": "O-059",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
@@ -5443,13 +5549,29 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Meteorología, Universidad de Valparaíso",
       "trabajos": [
         {
-          "id": "O-089",
+          "id": "O-090",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "14:15 - 14:30",
           "sala": "Sala 3.7",
           "titulo": "Caracterización de la variabilidad del manto nival en los Andes del Sur mediante un nuevo producto de SWE."
+        }
+      ]
+    },
+    {
+      "nombre": "Arévalo, Jorge",
+      "nombre_original": "Jorge Arévalo",
+      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
+      "trabajos": [
+        {
+          "id": "O-048",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "fecha": "2026-11-25",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 3.7",
+          "titulo": "Un Radar Móvil para Fenómenos Meteorológicos Extremos y Clima: Fortaleciendo la Investigación y la Resiliencia en Chile"
         }
       ]
     },
@@ -5459,10 +5581,10 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Costa Rica",
       "trabajos": [
         {
-          "id": "O-071",
+          "id": "O-072",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "10:00 - 10:15",
           "sala": "Sala 3.7",
           "titulo": "Patrones de teleconexión entre la Oscilación Antártica y las corrientes en chorro de bajo nivel del CHOCÓ y del Caribe"
@@ -5477,8 +5599,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-017",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "14:50 - 15:05",
           "sala": "Sala 2.5",
           "titulo": "Hydrostatic versus nonhydrostatic modeling of internal hydraulic transitions and lee waves in a stratified tidal channel"
@@ -5491,10 +5613,10 @@ window.CONGRESO_DATA = {
       "inst": "Instituto Milenio BASE; Instituto de Ciencias Marinas y Limnológicas, Facultad de Ciencias, Universidad Austral de Chile",
       "trabajos": [
         {
-          "id": "O-092",
+          "id": "O-093",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "15:35 - 15:50",
           "sala": "Sala 2.5",
           "titulo": "Conectividad física interanual del krill antártico entre zonas de desove"
@@ -5509,8 +5631,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-004",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "12:05 - 12:20",
           "sala": "Sala 2.5",
           "titulo": "Dinámica de los seiches internos en el Fiordo Reloncaví: un estudio numérico CROCO-WRF"
@@ -5528,7 +5650,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Atenuación de la radiación ultravioleta y visible superficial por una pluma volcánica fresca: un estudio de transferencia radiativa espacialmente distribuido y sus implicancias para la generación de energía solar"
         }
       ]
@@ -5544,7 +5666,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Dinámica biogeoquímica en la bahía de Valparaíso: Serie temporal frente a Montemar (2023 - 2025)"
         }
       ]
@@ -5557,8 +5679,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-010",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "11:50 - 12:05",
           "sala": "Sala 3.7",
           "titulo": "Comportamiento de la radiación solar en Punta Arenas durante el periodo 2019 al 2021."
@@ -5576,7 +5698,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Bloqueos atmosféricos en el hemisferio sur: una nueva base de datos multimétodo desde latitudes medias hasta la Antártica (1979–2024)"
         },
         {
@@ -5585,7 +5707,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Extremos de calor en Chile central y bloqueo atmosférico: circulación hemisférica y posibles impactos en regiones distantes"
         }
       ]
@@ -5601,7 +5723,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Variability of a Thermal Comfort Index in Subtropical South America: Past Years and the Era of Climate Change"
         }
       ]
@@ -5614,8 +5736,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-029",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "16:40 - 16:55",
           "sala": "Sala 2.5",
           "titulo": "Respuesta oceánica al rotor del esfuerzo del viento y su importancia en el sistema costero en la zona centro-norte de Chile (30° S)"
@@ -5633,7 +5755,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "CONTRIBUCIÓN RELATIVA DEL FORZAMIENTO ANTROPOGÉNICO A LA MANCHA CÁLIDA DEL SUR Y EL DIPOLO DE PRESIÓN MEDIANTE ENSAMBLES  CMIP6"
         }
       ]
@@ -5646,8 +5768,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-019",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "15:20 - 15:35",
           "sala": "Sala 2.5",
           "titulo": "DINÁMICA ESPACIOTEMPORAL DE LA LÍNEA DE COSTA DE LA CONCEPCIÓN, COLOMBIA (1986-2025)."
@@ -5660,10 +5782,10 @@ window.CONGRESO_DATA = {
       "inst": "Instituto de Fomento Pesquero (IFOP)",
       "trabajos": [
         {
-          "id": "O-065",
+          "id": "O-066",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "10:00 - 10:15",
           "sala": "Sala 2.5",
           "titulo": "Distribución de masas de agua y circulación geostrófica en el Pacífico Sur Oriental: dominios verticales y su relación con la dinámica regional"
@@ -5676,10 +5798,10 @@ window.CONGRESO_DATA = {
       "inst": "CEAZA",
       "trabajos": [
         {
-          "id": "O-103",
+          "id": "O-104",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 4",
+          "fecha": "2026-11-27",
           "horario": "10:15 - 10:30",
           "sala": "Sala 3.7",
           "titulo": "Caracterización integrada de un evento extremo de precipitación en zona semiárida e impactos hidroclimáticos asociados"
@@ -5690,7 +5812,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Evaluación del desempeño de un emulador de un modelo climático regional basado en una red neuronal convolucional para representar la precipitación en una región semiárida de Chile"
         }
       ]
@@ -5703,8 +5825,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-030",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "16:55 - 17:10",
           "sala": "Sala 2.5",
           "titulo": "CONTRACORRIENTE COSTERA EN UNA BAHÍA DE BORDE ORIENTAL ABIERTA HACIA EL ECUADOR"
@@ -5722,7 +5844,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Evaluación de Deep Learning para reducir el sesgo de TSM en modelos oceánicos en el norte de Chile"
         }
       ]
@@ -5738,7 +5860,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Extremos de calor en Chile central y bloqueo atmosférico: circulación hemisférica y posibles impactos en regiones distantes"
         }
       ]
@@ -5765,10 +5887,10 @@ window.CONGRESO_DATA = {
       "inst": "LOFISAT, Universidad de Valparaíso",
       "trabajos": [
         {
-          "id": "O-077",
+          "id": "O-078",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "11:50 - 12:05",
           "sala": "Sala 2.5",
           "titulo": "Variabilidad intraestacional del nivel del mar y de la temperatura superficial del mar a lo largo de la costa de Chile entre 2000 y 2026"
@@ -5781,10 +5903,10 @@ window.CONGRESO_DATA = {
       "inst": "University of California Santa Barbara",
       "trabajos": [
         {
-          "id": "O-107",
+          "id": "O-108",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 4",
+          "fecha": "2026-11-27",
           "horario": "11:35 - 11:50",
           "sala": "Sala 2.5",
           "titulo": "Nitracline depth modulates inner-shelf phytoplankton responses to wind-driven upwelling in the Santa Barbara Channel, USA"
@@ -5795,7 +5917,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Oceanographic forcing of alongshore covariability in Macrocystis pyrifera biomass in Chile"
         }
       ]
@@ -5806,10 +5928,10 @@ window.CONGRESO_DATA = {
       "inst": "Consultor externo del Centro Regional del Clima para el Sur de América del Sur",
       "trabajos": [
         {
-          "id": "O-102",
+          "id": "O-103",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 4",
+          "fecha": "2026-11-27",
           "horario": "10:00 - 10:15",
           "sala": "Sala 3.7",
           "titulo": "Pronóstico subestacional calibrado para el Centro Regional sobre el clima para el Sur de América del Sur (CRC-SAS): Implementación y verificación."
@@ -5827,7 +5949,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Mecanismos climáticos, radiativos y ontogénicos del daño por helada primaveral en Austrocedrus chilensis"
         }
       ]
@@ -5838,10 +5960,10 @@ window.CONGRESO_DATA = {
       "inst": "Universidad del Bío-Bío",
       "trabajos": [
         {
-          "id": "O-088",
+          "id": "O-089",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "15:00 - 15:15",
           "sala": "Sala 2.5",
           "titulo": "Interactive effects of a submarine canyon and wind stress curl on coastal upwelling circulation"
@@ -5854,10 +5976,10 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Costa Rica",
       "trabajos": [
         {
-          "id": "O-072",
+          "id": "O-073",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "10:15 - 10:30",
           "sala": "Sala 3.7",
           "titulo": "Oscilación Antártica: su influencia en la variabilidad interanual de la precipitación en Costa Rica"
@@ -5870,10 +5992,10 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Geofísica, Universidad de Concepción",
       "trabajos": [
         {
-          "id": "O-098",
+          "id": "O-099",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 4",
+          "fecha": "2026-11-27",
           "horario": "10:00 - 10:15",
           "sala": "Sala 2.5",
           "titulo": "Mecanismos de formación de intrusiones termohalinas en la zona de mínimo oxígeno: evidencia mediante planeadores submarinos"
@@ -5891,7 +6013,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "El Niño 2026: Experiencias y verificación del sistema Nextgen-Chile para precipitación en Chile central"
         }
       ]
@@ -5904,8 +6026,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-012",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "12:20 - 12:35",
           "sala": "Sala 3.7",
           "titulo": "Diferencias en la Representación del Ciclo Diurno de Temperatura del Aire en ERA5-Land, WRF-SAAG y Observaciones."
@@ -5914,14 +6036,23 @@ window.CONGRESO_DATA = {
     },
     {
       "nombre": "Córdova Leal, Ana María",
-      "nombre_original": "Ana Maria Cordova Leal",
-      "inst": "Departamento de Meteorologia, Universidad de Valparaíso",
+      "nombre_original": "Jorge Arévalo",
+      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
       "trabajos": [
         {
-          "id": "O-105",
+          "id": "O-048",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 3.7",
+          "titulo": "Un Radar Móvil para Fenómenos Meteorológicos Extremos y Clima: Fortaleciendo la Investigación y la Resiliencia en Chile"
+        },
+        {
+          "id": "O-106",
+          "tipo": "Oral",
+          "dia": "Día 4",
+          "fecha": "2026-11-27",
           "horario": "10:45 - 11:00",
           "sala": "Sala 3.7",
           "titulo": "HidroCL ante eventos extremos: anticipar para gestionar"
@@ -5936,8 +6067,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-027",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "16:10 - 16:25",
           "sala": "Sala 2.5",
           "titulo": "Detección de patrones turbulentos a partir de la distribución de burbujas en la zona de rompiente: experimentos mediante simulación LES en 2D"
@@ -5955,7 +6086,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Variabilidad de la capa de mezcla y turbulencia microescalar asociada a un remolino anticiclónico"
         }
       ]
@@ -5980,7 +6111,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Herramientas de Machine Learning como complemento para el downscaling del oleaje en la costa chilena"
         },
         {
@@ -5989,7 +6120,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Escala de intensidad de oleaje extremo basada en impactos para el pronóstico costero de alta resolución"
         }
       ]
@@ -6005,7 +6136,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Patrón de circulación del mar interior de Chiloé (MIC) y su relación con el estrés del viento y la marea en septiembre de 2024."
         }
       ]
@@ -6021,7 +6152,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Variabilidad espacio-temporal de una pluma de río y su relación con forzantes oceanográficos y atmosféricos"
         }
       ]
@@ -6037,7 +6168,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Temporal Variability of Thermal Conditions in the Tropical Atlantic Ocean: A Case Study for the Period from 1990 to 2020"
         }
       ]
@@ -6048,7 +6179,7 @@ window.CONGRESO_DATA = {
       "inst": "Universidad del Bío-bio",
       "trabajos": [
         {
-          "id": "O-061",
+          "id": "O-062",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
@@ -6069,7 +6200,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Implementación de sistema integrado de modelación atmosférica y monitoreo ambiental para la gestión de la calidad del aire en Goiás Brasil"
         }
       ]
@@ -6080,7 +6211,7 @@ window.CONGRESO_DATA = {
       "inst": "INNOVEX",
       "trabajos": [
         {
-          "id": "O-052",
+          "id": "O-053",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
@@ -6101,7 +6232,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Contribución de mecanismos foehn a un episodio extremo de calentamiento superficial frente a la Península Jason, Antártica"
         }
       ]
@@ -6117,7 +6248,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Estructura Temporal de la Precipitación: de la Serie Horaria a los Eventos Agregados"
         }
       ]
@@ -6128,10 +6259,10 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Adolfo Ibáñez",
       "trabajos": [
         {
-          "id": "O-083",
+          "id": "O-084",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "12:20 - 12:35",
           "sala": "Sala 3.7",
           "titulo": "Persistencia y aprendizaje automático en la predicción de precipitación a corto plazo: aporte del vapor de agua precipitable obtenido mediante sistemas globales de navegación satelital"
@@ -6149,7 +6280,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Variabilidad espacio-temporal de las propiedades físico-químicas del sistema oceanográfico del fiordo Comau"
         }
       ]
@@ -6162,8 +6293,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-006",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "12:35 - 12:50",
           "sala": "Sala 2.5",
           "titulo": "Dinámica, Mezcla, y Transporte de Sedimentos en Plumas de Agua Dulce"
@@ -6181,7 +6312,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Efectos del forzamiento del viento y la descarga de agua dulce sobre la hidrografía y estabilidad termohalina de un fiordo subantártico."
         }
       ]
@@ -6213,7 +6344,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Caracterización del fenómeno de la poza fría en el Salar del Huasco, Región de Tarapacá, Chile"
         }
       ]
@@ -6229,7 +6360,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Recuperación estacional y erosión de largo plazo en una playa de bolsillo: análisis morfodinámico con perfiles topográficos e imágenes satelitales."
         }
       ]
@@ -6240,10 +6371,10 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Concepción",
       "trabajos": [
         {
-          "id": "O-099",
+          "id": "O-100",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 4",
+          "fecha": "2026-11-27",
           "horario": "10:15 - 10:30",
           "sala": "Sala 2.5",
           "titulo": "Nuevos hallazgos sobre los procesos de mezcla diapícnica en la Zona de Mínimo Oxígeno frente al Norte de Chile"
@@ -6261,7 +6392,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Using Linear Inverse Model Climate Realizations to Assess Precipitation Teleconnections and Multiyear Drought Risk"
         }
       ]
@@ -6277,7 +6408,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Timescale dependence of projected changes in extreme precipitation under climate change"
         }
       ]
@@ -6290,8 +6421,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-016",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "14:35 - 14:50",
           "sala": "Sala 2.5",
           "titulo": "Control morfológico de la propagación mareal en un estuario de barra: caso del Río Maipo, Chile central"
@@ -6309,7 +6440,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Estructuras Lagrangianas Coherentes Adheridas a la Costa en el Sistema de Bahías de Coquimbo"
         }
       ]
@@ -6325,7 +6456,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Producción primaria y respiración de la materia orgánica en la bahía de Valparaíso durante dos períodos consecutivos de primavera – verano."
         }
       ]
@@ -6336,7 +6467,7 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Chile, Centro de Ciencia del Clima y la Resiliencia, Departamento de Geofísica",
       "trabajos": [
         {
-          "id": "O-063",
+          "id": "O-064",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
@@ -6357,7 +6488,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Air-Sea-Wave Interactions During the 2023/2024 Extreme Atmospheric Rivers in Biobío: Preliminary Coupled Modeling Results"
         }
       ]
@@ -6368,11 +6499,11 @@ window.CONGRESO_DATA = {
       "inst": "Centro de Investigación Oceanográfica COPAS Coastal, Universidad de Concepción, Concepción, Chile",
       "trabajos": [
         {
-          "id": "O-050",
+          "id": "O-051",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
-          "horario": "12:20 - 12:35",
+          "horario": "12:35 - 12:50",
           "sala": "Sala 3.7",
           "titulo": "Compound Extremes: Co-occurrence of Atmospheric Rivers with Atmospheric and Marine Heatwaves in the Southeast Pacific"
         }
@@ -6386,8 +6517,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-033",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "16:40 - 16:55",
           "sala": "Sala 3.7",
           "titulo": "Entendiendo el gradiente orográfico de precipitación en Chile central"
@@ -6405,7 +6536,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Patrones espaciales en la comunidad zooplanctónica a lo largo del gradiente meridional de agua dulce en el mar exterior de la Patagonia"
         },
         {
@@ -6414,7 +6545,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Patrones biogeográficos del ensamble de eufáusidos en el mar exterior de la Patagonia chilena en respuesta a las condiciones oceanográficas"
         }
       ]
@@ -6430,7 +6561,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Evaluación de emplazamiento y caracterización local del Campo Eléctrico Atmosférico en condiciones de Buen Tiempo"
         }
       ]
@@ -6446,7 +6577,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Modulación morfológica en desembocadura costera frente a procesos oceanográficos a partir de percepción remota de alta resolución"
         }
       ]
@@ -6457,7 +6588,7 @@ window.CONGRESO_DATA = {
       "inst": "Doctoral Program in Water Resources Engineering, Universidad Nacional Agraria La Molina, Lima, Peru  School of Civil Engineering, Faculty of Engineering Sciences, Universidad Nacional de Huancavelica, Huancavelica, Peru",
       "trabajos": [
         {
-          "id": "O-056",
+          "id": "O-057",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
@@ -6478,7 +6609,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Evolución y Características Sinópticas de Ríos Atmosféricos que no producen precipitación"
         },
         {
@@ -6487,7 +6618,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Características hidrometeorológicas de distintas distribuciones espaciales de precipitación asociadas a Ríos Atmosféricos"
         }
       ]
@@ -6503,7 +6634,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Cambios en isopreno y ozono derivados de la megasequía (2010-2019) en Chile central"
         }
       ]
@@ -6519,7 +6650,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Multi-hazard assessment for Iquique, northern Chile, under climate variability: megathrust, tsunami, crustal fault and rainfall-triggered mass movement scenarios"
         }
       ]
@@ -6532,8 +6663,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-024",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "15:05 - 15:20",
           "sala": "Sala 3.7",
           "titulo": "Cambios en la intensidad del Anticiclón Subtropical del Pacífico y su vínculo con la relación humedad del suelo-incendios forestales desde 1960"
@@ -6562,10 +6693,10 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Austral de Chile",
       "trabajos": [
         {
-          "id": "O-090",
+          "id": "O-091",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "14:30 - 14:45",
           "sala": "Sala 3.7",
           "titulo": "Productos de alta resolución para mejorar la comprensión de la variabilidad y de la predictibilidad hidroclimática para Chile Centro-Sur"
@@ -6580,8 +6711,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-015",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "14:20 - 14:35",
           "sala": "Sala 2.5",
           "titulo": "Dinámica de Estuarios de Pequeña Escala Bajo la Influencia de Onda de Infragravedad"
@@ -6599,7 +6730,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Forzantes físicos y biogeoquímicos que influyen en la variabilidad temporal del óxido nitroso en la capa superficial frente a Valparaíso."
         }
       ]
@@ -6615,7 +6746,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Representación regional de la temperatura superficial del mar en Latinoamérica y el Caribe mediante integración multisensor y reconstrucción espacial"
         }
       ]
@@ -6628,8 +6759,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-013",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "12:35 - 12:50",
           "sala": "Sala 3.7",
           "titulo": "Water codependency of the Chilean mediterranean climate-type coastal forest on marine fog"
@@ -6647,7 +6778,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Pablo Herrera Klarian"
         }
       ]
@@ -6658,10 +6789,10 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Técnica Federico Santa María y AMTC",
       "trabajos": [
         {
-          "id": "O-082",
+          "id": "O-083",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "12:05 - 12:20",
           "sala": "Sala 3.7",
           "titulo": "Evaluación del valor agregado de modelos climáticos regionales en la representación de índices de precipitación extrema en Chile continental"
@@ -6679,7 +6810,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Evaluation of combined climate adaptation scenarios for future climate and urbanization in the Chicago Metro Area using WRF"
         }
       ]
@@ -6690,7 +6821,7 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Chile",
       "trabajos": [
         {
-          "id": "O-064",
+          "id": "O-065",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
@@ -6711,8 +6842,24 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Capas finas de fitoplancton tóxico en fiordos Patagónicos: Más allá de los métodos tradicionales de detección"
+        }
+      ]
+    },
+    {
+      "nombre": "Jacques Coper, Martín",
+      "nombre_original": "Jorge Arévalo",
+      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
+      "trabajos": [
+        {
+          "id": "O-048",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "fecha": "2026-11-25",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 3.7",
+          "titulo": "Un Radar Móvil para Fenómenos Meteorológicos Extremos y Clima: Fortaleciendo la Investigación y la Resiliencia en Chile"
         }
       ]
     },
@@ -6724,8 +6871,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-023",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "14:50 - 15:05",
           "sala": "Sala 3.7",
           "titulo": "Wildfires and Weather Variability in South-Central Chile: Meteorology for Risk Reduction"
@@ -6743,7 +6890,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Evolución de las concentraciones de material particulado fino hacia la década de 2040 frente al cambio climático y trayectorias de mitigación de emisiones."
         }
       ]
@@ -6759,7 +6906,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Flujo de calor sensible como proxy de surgencia costera en el centro y norte de Chile"
         }
       ]
@@ -6775,7 +6922,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Sensibilidad del modelo WRF en la representación de la circulación atmosférica regional del norte de Chile"
         }
       ]
@@ -6786,10 +6933,10 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Concepción, Chile",
       "trabajos": [
         {
-          "id": "O-086",
+          "id": "O-087",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "14:30 - 14:45",
           "sala": "Sala 2.5",
           "titulo": "Variabilidad de Submesoescala de la Temperatura Superficial del Mar a partir de un Índice de Heterogeneidad"
@@ -6804,8 +6951,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-008",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "11:20 - 11:35",
           "sala": "Sala 3.7",
           "titulo": "Transición extratropical del ciclón Pam mediante el diagrama de fases de Hart"
@@ -6818,10 +6965,10 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Concepción",
       "trabajos": [
         {
-          "id": "O-109",
+          "id": "O-110",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 4",
+          "fecha": "2026-11-27",
           "horario": "11:20 - 11:35",
           "sala": "Sala 3.7",
           "titulo": "Evaluación de los moduladores climáticos de la variabilidad del viento en América del Sur y sus efectos sobre la generación eólica futura"
@@ -6834,7 +6981,7 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Adolfo Ibañez",
       "trabajos": [
         {
-          "id": "O-057",
+          "id": "O-058",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
@@ -6855,7 +7002,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Cambios futuros proyectados en el límite lluvia-nieve en cuencas andinas de Chile central y sus impacto hidrológico"
         }
       ]
@@ -6871,7 +7018,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Análisis de la circulación atmosférica y el transporte local de masas de aire entre mayo y noviembre 2019 en Monte Fenton, Punta Arenas."
         }
       ]
@@ -6889,6 +7036,15 @@ window.CONGRESO_DATA = {
           "horario": "10:00 - 10:15",
           "sala": "Sala 3.7",
           "titulo": "Condiciones tornadogénicas y ENSO en Chile"
+        },
+        {
+          "id": "O-048",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "fecha": "2026-11-25",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 3.7",
+          "titulo": "Un Radar Móvil para Fenómenos Meteorológicos Extremos y Clima: Fortaleciendo la Investigación y la Resiliencia en Chile"
         }
       ]
     },
@@ -6898,7 +7054,7 @@ window.CONGRESO_DATA = {
       "inst": "Instituto Universitario de Investigación en Acuicultura Sostenible y Ecosistemas Marinos (ECOAQUA), Universidad de Las Palmas de Gran Canaria (ULPGC). España.",
       "trabajos": [
         {
-          "id": "O-054",
+          "id": "O-055",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
@@ -6919,7 +7075,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Evaluación del desempeño del modelo WRF en la representación del efecto Föhn asociado a un Río Atmosférico en la Península Antártica (Febrero 2022)"
         }
       ]
@@ -6930,7 +7086,7 @@ window.CONGRESO_DATA = {
       "inst": "¹ Facultad de Ingeniería y Ciencias, Universidad Adolfo Ibáñez, Chile ² Data Observatory Foundation, Chile",
       "trabajos": [
         {
-          "id": "O-055",
+          "id": "O-056",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
@@ -6951,7 +7107,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Relación de la intensidad de la precipitación a escala subdiaria con la temperatura y vapor de agua en Chile central"
         }
       ]
@@ -6962,10 +7118,10 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Técnica Federico Santa Maria",
       "trabajos": [
         {
-          "id": "O-079",
+          "id": "O-080",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "12:20 - 12:35",
           "sala": "Sala 2.5",
           "titulo": "Propagación de la marea barotrópica por un estrecho interoceánico."
@@ -6978,10 +7134,10 @@ window.CONGRESO_DATA = {
       "inst": "Programa de Magíster en Ciencias con mención en Oceanografía, Universidad de Concepción; Centro de Investigación Oceanográfica COPAS Coastal, Universidad de Concepción; Departamento de Oceanografía, Facultad de Ciencias Naturales y Oceanográficas, Universidad de Concepción.",
       "trabajos": [
         {
-          "id": "O-093",
+          "id": "O-094",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "15:50 - 16:05",
           "sala": "Sala 2.5",
           "titulo": "Variabilidad oceanográfica interanual  en un sistema de surgencia de borde oriental"
@@ -6999,7 +7155,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Estimation of dew production using an analytical model and CORDEX regional climate models"
         }
       ]
@@ -7015,7 +7171,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Identificación y clasificación de mecanismos generadores de olas de calor en Chile central"
         }
       ]
@@ -7031,7 +7187,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Synergistic Coupling of Heat and Moisture Transport in Zonal Atmospheric Rivers over the Extratropical Andes"
         }
       ]
@@ -7047,7 +7203,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Viento en altura sobre Santiago: comparación de distintas bases de datos"
         }
       ]
@@ -7058,13 +7214,29 @@ window.CONGRESO_DATA = {
       "inst": "Laboratorio de Dendrocronología y Cambio Global, Instituto de Conservación Biodiversidad y Territorio, Universidad Austral de Chile, Valdivia, Chile",
       "trabajos": [
         {
-          "id": "O-095",
+          "id": "O-096",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "15:35 - 15:50",
           "sala": "Sala 3.7",
           "titulo": "Late-spring frosts in South America since 1400 CE: links to hemispheric-scale climate, volcanism and solar activity"
+        }
+      ]
+    },
+    {
+      "nombre": "Muñoz, Cristian",
+      "nombre_original": "Jorge Arévalo",
+      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
+      "trabajos": [
+        {
+          "id": "O-048",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "fecha": "2026-11-25",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 3.7",
+          "titulo": "Un Radar Móvil para Fenómenos Meteorológicos Extremos y Clima: Fortaleciendo la Investigación y la Resiliencia en Chile"
         }
       ]
     },
@@ -7076,8 +7248,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-034",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "16:55 - 17:10",
           "sala": "Sala 3.7",
           "titulo": "La piscina de aire frío sobre el Salar del Huasco"
@@ -7090,10 +7262,10 @@ window.CONGRESO_DATA = {
       "inst": "Copas coastal, Departamento de Oceanografía, Universidad de Concepción",
       "trabajos": [
         {
-          "id": "O-068",
+          "id": "O-069",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "10:45 - 11:00",
           "sala": "Sala 2.5",
           "titulo": "Variabilidad de alta frecuencia y sinóptica durante un evento de surgencia costera en la zona central de Chile"
@@ -7104,7 +7276,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Sistemas móviles de observación del océano:  Implementación de sensores oceanográficos en redes de pesca"
         }
       ]
@@ -7115,11 +7287,11 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Austral de Chile",
       "trabajos": [
         {
-          "id": "O-049",
+          "id": "O-050",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
-          "horario": "12:05 - 12:20",
+          "horario": "12:20 - 12:35",
           "sala": "Sala 3.7",
           "titulo": "Climatología de ríos atmosféricos sobre la plataforma de hielo Larsen C, Península Antártica (1960-2024)"
         }
@@ -7131,10 +7303,10 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Oceanografia e Instituto Milenio de Oceanografia, Facultad de Ciencias Naturales y oceanografica, Universidad de Concepcion",
       "trabajos": [
         {
-          "id": "O-070",
+          "id": "O-071",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "11:15 - 11:30",
           "sala": "Sala 2.5",
           "titulo": "Circulación profunda del Pacífico Sur Oriental: desafíos para su caracterización mediante observaciones y modelación numérica"
@@ -7152,7 +7324,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Comparación de la estructura vertical biogeoquímica entre remolinos ciclónicos y anticiclónicos en el Pacífico Sur oriental durante el crucero CIMAR 28, primavera de 2023"
         }
       ]
@@ -7165,8 +7337,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-014",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "12:50 - 13:05",
           "sala": "Sala 3.7",
           "titulo": "Sistema integrado de pronóstico meteorológico y modelación de dispersión para  apoyo a la gestión ambiental"
@@ -7184,7 +7356,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Caracterización de la circulación forzada por viento y boyantez en un sistema de fiordos y canales subantárticos"
         }
       ]
@@ -7200,7 +7372,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Transporte atmosférico y fuentes de humedad asociados a aluviones estivales en Chile central"
         }
       ]
@@ -7211,10 +7383,10 @@ window.CONGRESO_DATA = {
       "inst": "Centro de Investigación en Ecosistemas de la Patagonia (CIEP)",
       "trabajos": [
         {
-          "id": "O-101",
+          "id": "O-102",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 4",
+          "fecha": "2026-11-27",
           "horario": "10:45 - 11:00",
           "sala": "Sala 2.5",
           "titulo": "Lagrangian deformation shapes oxygen redistribution and biogeochemical processes within Southeast Pacific poleward undercurrent eddies"
@@ -7232,7 +7404,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Variabilidad del chorro polar y su relación con los bloqueos atmosféricos en latitudes medias y altas del hemisferio sur"
         }
       ]
@@ -7243,10 +7415,10 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Técnica Federico Santa María",
       "trabajos": [
         {
-          "id": "O-096",
+          "id": "O-097",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "15:50 - 16:05",
           "sala": "Sala 3.7",
           "titulo": "Reconstrucción de la temperatura superficial del mar en el Pacífico ecuatorial a partir de datos indirectos escasos mediante un enfoque jerárquico bayesiano"
@@ -7259,7 +7431,7 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Concepción y Centro de Investigación Oceanográfica COPAS Coastal UdeC.",
       "trabajos": [
         {
-          "id": "O-059",
+          "id": "O-060",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
@@ -7280,7 +7452,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Performance of the WaveWatch III model in the study of wind-generated waves during extreme events."
         }
       ]
@@ -7293,8 +7465,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-001",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "11:20 - 11:35",
           "sala": "Sala 2.5",
           "titulo": "When the fjords take a breath: Influence of wind forcing and Ekman dynamics on deep ventilation in the North Patagonian fjords"
@@ -7312,7 +7484,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Estudio de las condiciones sinópticas asociadas a eventos de tornados en Chile centro-sur"
         }
       ]
@@ -7325,8 +7497,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-028",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "16:25 - 16:40",
           "sala": "Sala 2.5",
           "titulo": "Modelación de la dinámica de plumas en la zona de rompiente mediante modelo no hidrostático SWASH"
@@ -7341,8 +7513,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-026",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "15:35 - 15:50",
           "sala": "Sala 3.7",
           "titulo": "Climatología de olas de calor sobre un glaciar templado andino y su impacto en el derretimiento"
@@ -7357,8 +7529,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-002",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "11:35 - 11:50",
           "sala": "Sala 2.5",
           "titulo": "Vertical Fluxes of Dissolved Oxygen Driven by Turbulence and Eddy Diffusivity in Patagonian Fjords"
@@ -7376,7 +7548,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Automatización de la Observación de Nubosidad en Octas mediante Visión por Computadora y Deep Learning: Una Alternativa a la Medición Manual en Aeródromos Chilenos"
         }
       ]
@@ -7389,8 +7561,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-025",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "15:20 - 15:35",
           "sala": "Sala 3.7",
           "titulo": "Respuesta no lineal de las olas de calor al calentamiento global en simulaciones climáticas regionales"
@@ -7408,7 +7580,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Evaluation and Physics Sensitivity of Convection-Permitting Ensemble  Simulations of the 2024 Rio Grande do Sul Extreme Precipitation Event"
         }
       ]
@@ -7419,10 +7591,10 @@ window.CONGRESO_DATA = {
       "inst": "1 Instituto de Ciencias Marinas y Limnológicas, Universidad Austral de Chile. 2 Centro COPAS Coastal, Concepción, Chile. 3 Instituto Milenio BASE, Santiago, Chile",
       "trabajos": [
         {
-          "id": "O-110",
+          "id": "O-111",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 4",
+          "fecha": "2026-11-27",
           "horario": "11:35 - 11:50",
           "sala": "Sala 3.7",
           "titulo": "Balance atmósfera-océano durante olas de calor marinas nunca antes registradas en la Península Antártica"
@@ -7440,7 +7612,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Cambio proyectado en olas de calor y Killing Degree Days agronómicos"
         }
       ]
@@ -7451,10 +7623,10 @@ window.CONGRESO_DATA = {
       "inst": "University of Gothenburg",
       "trabajos": [
         {
-          "id": "O-108",
+          "id": "O-109",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 4",
+          "fecha": "2026-11-27",
           "horario": "11:50 - 12:05",
           "sala": "Sala 2.5",
           "titulo": "Mauro Pinto"
@@ -7472,7 +7644,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Pronóstico costero de oleaje y alerta temprana de marejadas en Arica, Pichilemu, Constitución, Corral y Puerto Saavedra"
         }
       ]
@@ -7483,10 +7655,10 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Geofísica (DGEO), Instituto Milenio de Oceanografía (IMO) y Centro de Instrumentación Oceanográfica (CIO), Universidad de Concepción (UdeC)",
       "trabajos": [
         {
-          "id": "O-069",
+          "id": "O-070",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "11:00 - 11:15",
           "sala": "Sala 2.5",
           "titulo": "Circulación profunda y mezcla en la Fosa de Atacama"
@@ -7499,10 +7671,10 @@ window.CONGRESO_DATA = {
       "inst": "Instituto Milenio de Oceanografía",
       "trabajos": [
         {
-          "id": "O-100",
+          "id": "O-101",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 4",
+          "fecha": "2026-11-27",
           "horario": "10:30 - 10:45",
           "sala": "Sala 2.5",
           "titulo": "Intensificación de los flujos de oxígeno asociados a remolinos de mesoescala durante eventos extremos de El Niño frente a Chile central: un enfoque numérico"
@@ -7520,7 +7692,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Variabilidad temporal de la presión de fondo en la Fosa de Atacama: observaciones, estructura vertical e implicancias para la dinámica del océano profundo"
         }
       ]
@@ -7536,7 +7708,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Analysis of a High-Energy Wave Event Using the Coupled COAWST Model"
         }
       ]
@@ -7547,10 +7719,10 @@ window.CONGRESO_DATA = {
       "inst": "servicio hidrográfico y oceanográfico de la armada shoa",
       "trabajos": [
         {
-          "id": "O-078",
+          "id": "O-079",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "12:05 - 12:20",
           "sala": "Sala 2.5",
           "titulo": "Zonificación mareal para la representación espacial del nivel del mar en la nueva generación de productos hidrográficos digitales."
@@ -7565,8 +7737,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-011",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "12:05 - 12:20",
           "sala": "Sala 3.7",
           "titulo": "Caracterización de patrones meteorológicos locales asociados a concentraciones de gases odorantes mediante observaciones de alta frecuencia"
@@ -7595,10 +7767,10 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Católica del Norte",
       "trabajos": [
         {
-          "id": "O-067",
+          "id": "O-068",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "10:30 - 10:45",
           "sala": "Sala 2.5",
           "titulo": "Contribución relativa del transporte geostrófico y de Ekman a la circulación en la zona centro norte de Chile (28.5°S – 30.5°S)"
@@ -7616,7 +7788,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Variabilidad submareal de la circulación profunda y su influencia sobre el oxígeno disuelto en un fiordo patagónico de cuatro capas"
         }
       ]
@@ -7632,7 +7804,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "{Simulación numérica del transporte de nutrientes en la corriente de Humboldt mediante Navier-Stokes y advección-difusión"
         }
       ]
@@ -7643,10 +7815,10 @@ window.CONGRESO_DATA = {
       "inst": "1. Centro UC Desierto de Atacama, PUC. 2. Instituto de Geografía, Facultad de historia, Geografía y Ciencia Política, Pontificia Universidad Católica de Chile",
       "trabajos": [
         {
-          "id": "O-097",
+          "id": "O-098",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "16:05 - 16:20",
           "sala": "Sala 3.7",
           "titulo": "Entendiendo las dinámicas espaciotemporales de la niebla, rocío y lluvia en un gradiente de aridez en Chile"
@@ -7659,10 +7831,10 @@ window.CONGRESO_DATA = {
       "inst": "Instituto de Estadística, Facultad de Ciencias, Universidad de Valparaíso",
       "trabajos": [
         {
-          "id": "O-084",
+          "id": "O-085",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "12:35 - 12:50",
           "sala": "Sala 3.7",
           "titulo": "Inferencia Estocástica y Calibración en Modelos de Ensamble Meteorológico: Un Enfoque Asimétrico fundamentado en la Teoría de la Información"
@@ -7675,10 +7847,10 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Obras Civiles, Universidad Técnica Federico Santa María",
       "trabajos": [
         {
-          "id": "O-075",
+          "id": "O-076",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "11:00 - 11:15",
           "sala": "Sala 3.7",
           "titulo": "Intercomparaciòn de proyecciones para modelos climáticos, desde simulaciones globales hasta simulaciones con resolución de convección, para Chile continental bajo diferentes escenarios."
@@ -7691,10 +7863,10 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Las Palmas de Gran Canaria",
       "trabajos": [
         {
-          "id": "O-094",
+          "id": "O-095",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "16:05 - 16:20",
           "sala": "Sala 2.5",
           "titulo": "VARIABILIDAD Y CARACTERIZACIÓN AMBIENTAL EN EL ENTORNO MARINO DE GRANJAS ACUÍCOLAS COSTERAS (PROYECTOS SIRENA Y SIRENA 2)"
@@ -7707,7 +7879,7 @@ window.CONGRESO_DATA = {
       "inst": "LOFISAT, Universidad de Valparaíso",
       "trabajos": [
         {
-          "id": "O-053",
+          "id": "O-054",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
@@ -7728,7 +7900,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Caracterización espaciotemporal de remolinos de mesoescala mediante un nuevo método de identificación"
         }
       ]
@@ -7744,7 +7916,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "El fitoplancton en respuesta a eventos de marejadas extremas: Análisis oceanográfico utilizando WaveWatch III y Color Oceánico Satelital."
         }
       ]
@@ -7755,10 +7927,10 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Obras Civiles, Universidad Técnica Federico Santa María",
       "trabajos": [
         {
-          "id": "O-076",
+          "id": "O-077",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "11:15 - 11:30",
           "sala": "Sala 3.7",
           "titulo": "Análisis de sensibilidad del evento de junio de 2023 ante proyecciones de cambio climático."
@@ -7778,6 +7950,15 @@ window.CONGRESO_DATA = {
           "horario": "11:15 - 11:30",
           "sala": "Sala 3.7",
           "titulo": "Radar satelital revela precipitación orográfica asociada a flujo bloqueado sobre la Península Antártica"
+        },
+        {
+          "id": "O-048",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "fecha": "2026-11-25",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 3.7",
+          "titulo": "Un Radar Móvil para Fenómenos Meteorológicos Extremos y Clima: Fortaleciendo la Investigación y la Resiliencia en Chile"
         }
       ]
     },
@@ -7792,7 +7973,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Una base de datos de precipitación con control de calidad y corrección por viento acotada y modulada por intensidad en Cerro Tres Puntas (3700 m), Chile central"
         }
       ]
@@ -7805,8 +7986,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-003",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "11:50 - 12:05",
           "sala": "Sala 2.5",
           "titulo": "Caracterización oceanográfica y modelación hidrodinámica tridimensional multianual del Estrecho de Magallanes y Seno Skyring"
@@ -7824,7 +8005,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Efecto de la transición primavera-otoño (2025-2026) sobre el oxígeno disuelto en la bahía de Laguna Verde (33.1° S), Valparaíso"
         }
       ]
@@ -7840,7 +8021,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Influencia de los incendios forestales en el derretimiento glaciar: cambios en el albedo de los glaciares de la cuenca alta del río Olivares tras el incendio de “Las Máquinas” debido a la deposición de partículas absorbentes de luz"
         }
       ]
@@ -7853,8 +8034,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-022",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "14:35 - 14:50",
           "sala": "Sala 3.7",
           "titulo": "Umbrales meteorológicos críticos para el desarrollo de incendios forestales en subregiones de Chile centro-sur"
@@ -7869,8 +8050,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-020",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "15:35 - 15:50",
           "sala": "Sala 2.5",
           "titulo": "DISTRIBUCIÓN LONGITUDINAL DE SALINIDAD EN LA ZONA DE ROMPIENTE DE UNA DESEMBOCADURA DE PEQUEÑA ESCALA"
@@ -7888,7 +8069,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Simulación regional del Pacífico Sur Oriental (1994-2025): Tendencias de oxígeno disuelto, validación observacional y el rol de corrientes subsuperficiales"
         },
         {
@@ -7897,7 +8078,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Regionalización oceanográfica del Pacifico Sur Oriental mediante técnicas de machine learning"
         }
       ]
@@ -7929,7 +8110,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Variabilidad de temperatura y oxígeno disuelto en una Bahía tropical  de Costa Rica asociada a un forzamiento atmosférico"
         }
       ]
@@ -7942,8 +8123,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-007",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "12:50 - 13:05",
           "sala": "Sala 2.5",
           "titulo": "Energetic pathways of upwelling-front instabilities over a submarine canyon"
@@ -7961,7 +8142,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Cuantificación de las condiciones de hipoxia y sus forzantes en el Fiordo Puyuhuapi."
         },
         {
@@ -7970,7 +8151,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Cuantificación de las condiciones de hipoxia y sus forzantes en el Fiordo Puyuhuapi."
         }
       ]
@@ -7981,10 +8162,10 @@ window.CONGRESO_DATA = {
       "inst": "UNIVERSIDAD DE VALPARAÍSO",
       "trabajos": [
         {
-          "id": "O-081",
+          "id": "O-082",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "11:50 - 12:05",
           "sala": "Sala 3.7",
           "titulo": "Diferenciación de cardúmenes juveniles y adultos de anchoveta a partir de variables ambientales mediante modelos estadísticos y de aprendizaje automático en distintas fases de El Niño-Oscilación del Sur"
@@ -8002,7 +8183,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Influencia de la Oscilación Madden-Julian sobre la intensidad y posición de la Alta de Bolivia"
         }
       ]
@@ -8050,7 +8231,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Numerical Mixing and Deep-Ocean Dynamics in the Atacama Trench"
         }
       ]
@@ -8066,7 +8247,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Subtidal circulation and mixing in a regional inland sea, Northern Patagonia"
         }
       ]
@@ -8082,7 +8263,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Caracterización espacio-temporal de anomalías térmicas asociadas a eventos El Niño intensos mediante funciones ortogonales empíricas (EOF) y su versión extendida (Extended EOF)"
         }
       ]
@@ -8093,10 +8274,10 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Oceanografía, COPAS COASTAL, Universidad de Concepción",
       "trabajos": [
         {
-          "id": "O-066",
+          "id": "O-067",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "10:15 - 10:30",
           "sala": "Sala 2.5",
           "titulo": "Surgencia costera en Chile Centro Sur: Estado del conocimiento y tendencias en el enfriamiento superficial de los últimos 80 años"
@@ -8111,8 +8292,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-005",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "12:20 - 12:35",
           "sala": "Sala 2.5",
           "titulo": "Del viento al oleaje: forzamiento atmosférico de alta resolución en la modelación hidrodinámica en zonas costeras con fjordos"
@@ -8127,8 +8308,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-021",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "14:20 - 14:35",
           "sala": "Sala 3.7",
           "titulo": "Señales intraestacionales precursoras de incendios forestales extremos en Chile centro-sur"
@@ -8139,7 +8320,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Cambios en la circulación de la atmósfera y del clima regional están alterando procesos biológicos en los bosques subantárticos de Sudamérica"
         }
       ]
@@ -8155,7 +8336,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Enfriamiento costero: homogeneización de una serie histórica y análisis de sus tendencias."
         }
       ]
@@ -8166,10 +8347,10 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Técnica Federico Santa María, Advanced Mining Technology Center (AMTC)",
       "trabajos": [
         {
-          "id": "O-074",
+          "id": "O-075",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "10:45 - 11:00",
           "sala": "Sala 3.7",
           "titulo": "EVALUACIÓN DE PRECIPITACIONES EXTREMAS Y PROYECCIONES BAJO CONDICIONES DE CAMBIO CLIMÁTICO EN CHILE CONTINENTAL UTILIZANDO SIMULACIONES CLIMÁTICAS DEL WRF-SAAG"
@@ -8184,8 +8365,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-032",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "16:25 - 16:40",
           "sala": "Sala 3.7",
           "titulo": "Caracterización del calentamiento en altura durante la transición matutina en el valle de Santiago para el periodo frío mediante modelación de alta resolución"
@@ -8203,7 +8384,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Patrones meteorológicos de escala sinóptica asociados a eventos de tornados en la zona centro - sur de Chile."
         }
       ]
@@ -8219,7 +8400,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Entre \"postimpresionismo\" y \"vanguardia\", variabilidad acústica y dinámica física bajo la influencia de una pluma fluvial en un fiordo chileno"
         }
       ]
@@ -8235,7 +8416,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Recuperación del espesor óptico de aerosoles en el ex-observatorio astronómico solar Montezuma"
         }
       ]
@@ -8246,10 +8427,10 @@ window.CONGRESO_DATA = {
       "inst": "Instituto Universitario de Investigación en Acuicultura Sostenible y Ecosistemas Marinos, Universidad de Las Palmas de Gran Canaria, Las Palmas de Gran Canaria, Las Palmas, España.",
       "trabajos": [
         {
-          "id": "O-085",
+          "id": "O-086",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "14:15 - 14:30",
           "sala": "Sala 2.5",
           "titulo": "Modulación del campo de ondas internas por un remolino intratermoclina: el caso de Bentayga"
@@ -8267,15 +8448,15 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Clasificación de nubes de convección celular mesoescalar de celda abierta, cerrada y desorganizada mediante red neuronal convolucional a partir de observaciones satelitales."
         }
       ]
     },
     {
       "nombre": "Valenzuela, Raúl",
-      "nombre_original": "Raúl Valenzuela",
-      "inst": "Instituto de Cs. de la Ingeniería, Universidad de O’Higgins, Rancagua y Centro de Cs. del Clima y la Resiliencia (CR2), Universidad de Chile, Santiago",
+      "nombre_original": "Jorge Arévalo",
+      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
       "trabajos": [
         {
           "id": "O-048",
@@ -8283,6 +8464,15 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "11:50 - 12:05",
+          "sala": "Sala 3.7",
+          "titulo": "Un Radar Móvil para Fenómenos Meteorológicos Extremos y Clima: Fortaleciendo la Investigación y la Resiliencia en Chile"
+        },
+        {
+          "id": "O-049",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "fecha": "2026-11-25",
+          "horario": "12:05 - 12:20",
           "sala": "Sala 3.7",
           "titulo": "Atmospheric River Detection And Tracking Tool (AR-DATT): una herramienta para el estudio regional de Ríos Atmosféricos"
         },
@@ -8292,7 +8482,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Consistencia en la Representación Microfísica de ERA5: un caso de estudio en Rancagua"
         }
       ]
@@ -8303,7 +8493,7 @@ window.CONGRESO_DATA = {
       "inst": "Instituto Fomento Pesquero",
       "trabajos": [
         {
-          "id": "O-051",
+          "id": "O-052",
           "tipo": "Oral",
           "dia": "Día 2",
           "fecha": "2026-11-25",
@@ -8317,7 +8507,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Del océano al dato: monitoreo y acceso abierto mediante SIOM-IFOP (Sistema Integrado de Observación Marina)"
         }
       ]
@@ -8333,7 +8523,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Metodología y uso de la Toolbox Global-Krigger en Paleo±Dust"
         }
       ]
@@ -8349,7 +8539,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "CARACTERIZACIÓN DE PATRONES ESPACIALES DE PRECIPITACIÓN  EN LA CUENCA DE SANTIAGO"
         }
       ]
@@ -8365,7 +8555,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Estudio del rol de eventos Puelche en el desarrollo de incendios forestales"
         }
       ]
@@ -8376,10 +8566,10 @@ window.CONGRESO_DATA = {
       "inst": "(1)Departamento de Geofísica, Facultad de Ciencias Físicas y Matemáticas, Universidad de Concepción, Concepción, Chile. (2) Programa de Magister en Geofísica, Departamento de Geofísica, Facultad de Ciencias Físicas y Matemáticas, Universidad de Concepción, Concepción, Chile.",
       "trabajos": [
         {
-          "id": "O-073",
+          "id": "O-074",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "10:30 - 10:45",
           "sala": "Sala 3.7",
           "titulo": "Impacto del cambio climático en la actividad de remolinos de mesoescala y su transporte de calor en el Pacífico suroriental"
@@ -8392,10 +8582,10 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Técnica Federico Santa María",
       "trabajos": [
         {
-          "id": "O-091",
+          "id": "O-092",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "14:45 - 15:00",
           "sala": "Sala 3.7",
           "titulo": "Catálogo integrado para la caracterización de eventos hidrometeorológicos extremos entre las cuencas de los ríos Choapa y Tirúa"
@@ -8429,7 +8619,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 3",
           "fecha": "2026-11-26",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Desarrollo de un modelo físico-biogeoquímico en la Patagonia norte de Chile"
         }
       ]
@@ -8442,8 +8632,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-031",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "16:10 - 16:25",
           "sala": "Sala 3.7",
           "titulo": "Condiciones Meteorológicas Extremas en la Cima del Aconcagua (6940m)"
@@ -8456,10 +8646,10 @@ window.CONGRESO_DATA = {
       "inst": "Laboratorio de Procesos Acoplados Biofísicos (LaPAB)",
       "trabajos": [
         {
-          "id": "O-080",
+          "id": "O-081",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 3",
+          "fecha": "2026-11-26",
           "horario": "12:35 - 12:50",
           "sala": "Sala 2.5",
           "titulo": "Exploración de potenciales zonas de generación y propagación de mareas internas semidiurnas"
@@ -8472,10 +8662,10 @@ window.CONGRESO_DATA = {
       "inst": "1. Escuela de Ciencias del Mar, Pontificia Universidad Católica de Valparaíso 2. Instituto Milenio de Oceanografía, Universidad de Concepción",
       "trabajos": [
         {
-          "id": "O-106",
+          "id": "O-107",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 4",
+          "fecha": "2026-11-27",
           "horario": "11:20 - 11:35",
           "sala": "Sala 2.5",
           "titulo": "Remolinos de mesoescala y su efecto en la biogeoquímica: desde escala regional a un remolino subsuperficial en formación"
@@ -8490,8 +8680,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-018",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "15:05 - 15:20",
           "sala": "Sala 2.5",
           "titulo": "Hydrologic connectivity in semi-arid coastal lagoons: contrasting roles of oceanic and groundwater exchange"
@@ -8506,8 +8696,8 @@ window.CONGRESO_DATA = {
         {
           "id": "O-009",
           "tipo": "Oral",
-          "dia": "Día 2",
-          "fecha": "2026-11-25",
+          "dia": "Día 1",
+          "fecha": "2026-11-24",
           "horario": "11:35 - 11:50",
           "sala": "Sala 3.7",
           "titulo": "Southeastern Pacific Subtropical Cyclones"
@@ -8525,7 +8715,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 4",
           "fecha": "2026-11-27",
           "horario": "13:30 - 15:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "La distribución intra-anual de la precipitación y su modulación de la biomasa de pastizales semiáridos a lo largo de un gradiente pluviométrico"
         }
       ]
@@ -8541,7 +8731,7 @@ window.CONGRESO_DATA = {
           "dia": "Día 2",
           "fecha": "2026-11-25",
           "horario": "17:00 - 19:00",
-          "sala": "Pisos 2 y 3 (Hall)",
+          "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Caracterización de compuestos orgánicos volátiles mediante PTR-TOF-MS: validación instrumental y análisis de dispersión en la zona urbana-industrial de Concón."
         }
       ]
