@@ -1,7 +1,18 @@
 {
   "version": "2026.11.09.1",
-  "ultima_actualizacion": "2026-11-09T10:30:00-03:00",
+  "ultima_actualizacion": "2026-11-09T14:46:05.015233",
   "avisos": [
+    {
+      "id": "aviso-1794246365",
+      "fecha": "09 Nov 2026",
+      "hora": "14:46",
+      "tipo": "importante",
+      "titulo": "Actualización Oficial de Horarios e Índice",
+      "mensaje": "Se intercambiaron los horarios de Cameron Wunderlin (ahora 12:50 hrs) y José Olivares (ahora 11:35 hrs) en Sala 3.7 (Día 1). Además, se depuraron las ponencias dobles y pósters duplicados.",
+      "detalle": "El programa cuenta ahora con 111 charlas orales únicas y 100 paneles póster balanceados. El PDF oficial y el índice de autores han sido actualizados con paginación exacta.",
+      "activo": true,
+      "urgente": false
+    },
     {
       "id": "aviso-001",
       "fecha": "09 Nov 2026",
