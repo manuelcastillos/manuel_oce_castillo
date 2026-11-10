@@ -1,7 +1,7 @@
 {
   "name": "VIII Congreso OFMC 2026 - Valparaíso",
   "short_name": "OFMC 2026",
-  "description": "App Oficial del VIII Congreso de Oceanografía Física, Meteorología y Clima (OFMC 2026). Programa, salas paralelas y agenda en vivo.",
+  "description": "App Oficial desarrollada por el Comité Organizador OFMC2026 para el VIII Congreso de Oceanografía Física, Meteorología y Clima. Programa, salas paralelas y agenda en vivo.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

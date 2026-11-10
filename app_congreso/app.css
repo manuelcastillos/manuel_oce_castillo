@@ -2321,3 +2321,89 @@ body {
   gap: 5px;
   white-space: nowrap;
 }
+
+/* ==========================================================================
+   DEVELOPER ATTRIBUTION & FOOTER
+   ========================================================================== */
+.standby-dev-tag {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.standby-dev-tag strong {
+  color: var(--cyan-accent);
+}
+
+.app-dev-card-callout {
+  margin-top: 16px;
+  background: rgba(0, 229, 255, 0.07);
+  border: 1px solid rgba(0, 229, 255, 0.25);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  text-align: left;
+}
+
+.app-dev-card-callout i {
+  font-size: 1.15rem;
+  color: var(--cyan-accent);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.app-dev-card-callout strong {
+  display: block;
+  font-size: 0.85rem;
+  color: #FFFFFF;
+  margin-bottom: 3px;
+}
+
+.app-dev-card-callout p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.app-dev-card-callout p strong {
+  display: inline;
+  color: var(--cyan-accent);
+}
+
+.app-global-footer {
+  text-align: center;
+  padding: 24px 12px 30px 12px;
+  border-top: 1px solid var(--border-subtle);
+  margin-top: 24px;
+}
+
+.footer-credit {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.footer-credit strong {
+  color: var(--cyan-accent);
+  font-weight: 700;
+}
+
+.footer-subtext {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  margin-top: 5px;
+  letter-spacing: 0.3px;
+}
