@@ -48,62 +48,8 @@
       <button id="btnOpenSearch" class="icon-btn" aria-label="Buscar presentaciones">
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>
-      <button id="btnToggleSim" class="sim-toggle-btn" title="Simular Horario">
-        <i class="fa-solid fa-clock-rotate-left"></i>
-        <span class="sim-status-dot"></span>
-      </button>
     </div>
   </header>
-
-  <!-- Live Time Banner / Simulator Drawer -->
-  <div id="simDrawer" class="sim-drawer">
-    <div class="sim-header">
-      <div class="sim-title">
-        <i class="fa-solid fa-bolt text-gold"></i>
-        <span>Simulador de Tiempo y Horario</span>
-      </div>
-      <button id="btnCloseSim" class="sim-close-btn">&times;</button>
-    </div>
-    <p class="sim-desc">
-      El congreso se realizará del 24 al 27 de Noviembre de 2026. Selecciona cualquier día y hora para ver qué charlas y actividades ocurren en ese momento exacto:
-    </p>
-    
-    <!-- Quick Simulation Chips -->
-    <div class="sim-chips">
-      <button class="sim-chip" data-day="1" data-time="09:30">D1 · 09:30 Inauguración</button>
-      <button class="sim-chip active" data-day="1" data-time="11:35">D1 · 11:35 Paralelas O-002</button>
-      <button class="sim-chip" data-day="1" data-time="17:45">D1 · 17:45 Cóctel Bienvenida</button>
-      <button class="sim-chip" data-day="2" data-time="09:15">D2 · 09:15 Keynote Dr. Jackson</button>
-      <button class="sim-chip" data-day="2" data-time="11:50">D2 · 11:50 Paralelas O-045</button>
-      <button class="sim-chip" data-day="2" data-time="17:30">D2 · 17:30 Pósters P-001..34</button>
-      <button class="sim-chip" data-day="3" data-time="16:15">D3 · 16:15 Plenaria GT DOCA</button>
-      <button class="sim-chip" data-day="4" data-time="13:45">D4 · 13:45 Pósters P-069..101</button>
-      <button class="sim-chip" data-day="4" data-time="15:30">D4 · 15:30 Clausura y Premios</button>
-      <button class="sim-chip chip-now" data-now="true">🟢 Tiempo Real (Hoy)</button>
-    </div>
-
-    <!-- Manual Time Slider / Controls -->
-    <div class="sim-manual">
-      <div class="sim-day-selector">
-        <button class="sim-day-btn active" data-d="1">Día 1 (Mar 24)</button>
-        <button class="sim-day-btn" data-d="2">Día 2 (Mié 25)</button>
-        <button class="sim-day-btn" data-d="3">Día 3 (Jue 26)</button>
-        <button class="sim-day-btn" data-d="4">Día 4 (Vie 27)</button>
-      </div>
-      <div class="sim-slider-row">
-        <label for="timeSlider" class="sim-slider-label">
-          <span>Horario simulado:</span>
-          <strong id="simTimeDisplay">11:35</strong>
-        </label>
-        <input type="range" id="timeSlider" min="510" max="1200" step="5" value="695" class="time-range-slider">
-        <div class="slider-marks">
-          <span>08:30</span>
-          <span>11:30</span>
-          <span>14:00</span>
-          <span>17:00</span>
-          <span>20:00</span>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -146,7 +92,60 @@
     <!-- ===================================================================
          VIEW 1: EN VIVO / AHORA
          =================================================================== -->
-    <section id="view-ahora" class="app-view active">
+    <section id="view-ahora" class="app-view">
+
+      <!-- Pre-Congress Standby & Countdown Card (Active before Nov 24, 2026) -->
+      <div id="preCongressStandby" class="pre-congress-standby">
+        <div class="standby-card">
+          <div class="standby-badge">
+            <span class="pulsing-radar"></span>
+            <span>Modo Oficial Pre-Congreso</span>
+          </div>
+          <h2 class="standby-title">Cuenta Regresiva Oficial</h2>
+          <p class="standby-subtitle">
+            El <strong>Congreso Nacional de Ciencias del Mar y Meteorología (OFMC 2026)</strong> iniciará formalmente el <strong>martes 24 de noviembre de 2026 a las 08:30 hrs</strong> en Valparaíso.
+          </p>
+          
+          <div class="countdown-grid" id="congressCountdown">
+            <div class="countdown-item">
+              <span class="countdown-num" id="cdDays">--</span>
+              <span class="countdown-label">Días</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-num" id="cdHours">--</span>
+              <span class="countdown-label">Horas</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-num" id="cdMinutes">--</span>
+              <span class="countdown-label">Minutos</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-num" id="cdSeconds">--</span>
+              <span class="countdown-label">Segundos</span>
+            </div>
+          </div>
+
+          <div class="standby-notice">
+            <i class="fa-solid fa-circle-info text-cyan"></i>
+            <div>
+              <strong>Activación Automática en Vivo:</strong>
+              <p>Durante los 4 días del Congreso (24 al 27 de noviembre), esta pestaña "En Vivo" se activará sola con las ponencias en curso en Sala 2.5 y Sala 3.7, barras de progreso y tus alertas de 10 min.</p>
+            </div>
+          </div>
+
+          <div class="standby-actions">
+            <button class="btn-standby-primary" onclick="window.OFMC_APP.switchView('view-programa')">
+              <i class="fa-solid fa-calendar-days"></i> Ver Programa Día por Día
+            </button>
+            <button class="btn-standby-secondary" onclick="window.OFMC_APP.switchView('view-autores')">
+              <i class="fa-solid fa-users"></i> Buscar Autores y Ponencias
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Content Wrapper (Active during congress days Nov 24-27, 2026) -->
+      <div id="liveContentWrapper" style="display: none;">
       <div class="view-header-bar">
         <div class="live-status-indicator">
           <span class="pulsing-radar"></span>
@@ -215,12 +214,14 @@
       <div class="next-cards-grid" id="nextCardsContainer">
         <!-- Next items injected by JS -->
       </div>
+
+      </div>
     </section>
 
     <!-- ===================================================================
          VIEW 2: PROGRAMA COMPLETO DÍA POR DÍA
          =================================================================== -->
-    <section id="view-programa" class="app-view">
+    <section id="view-programa" class="app-view active">
       <div class="view-header-bar sticky-bar">
         <h2 class="view-title">Programa Oficial Día por Día</h2>
         
@@ -818,14 +819,14 @@
        BOTTOM NAVIGATION BAR (Mobile First)
        =================================================================== -->
   <nav class="bottom-nav">
-    <button class="nav-item active" data-view="view-ahora">
+    <button class="nav-item" data-view="view-ahora">
       <div class="nav-icon-wrapper">
         <i class="fa-solid fa-bolt"></i>
         <span class="nav-live-dot"></span>
       </div>
       <span class="nav-label">En Vivo</span>
     </button>
-    <button class="nav-item" data-view="view-programa">
+    <button class="nav-item active" data-view="view-programa">
       <div class="nav-icon-wrapper">
         <i class="fa-solid fa-calendar-days"></i>
       </div>

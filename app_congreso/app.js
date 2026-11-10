@@ -16,13 +16,30 @@
   }
 
   // =========================================================================
-  // 2. STATE
+  // 2. CONGRESS BOUNDARIES & STATE (OFFICIAL PRODUCTION ENGINE)
   // =========================================================================
+  // Congreso OFMC 2026: 24 al 27 de Noviembre de 2026 (Valparaíso, Chile)
+  // Hora local de Chile en Noviembre: CLST (UTC-3)
+  const CONGRESS_START_DATE = new Date('2026-11-24T08:30:00-03:00');
+  const CONGRESS_END_DATE = new Date('2026-11-27T18:30:00-03:00');
+
+  function isDuringCongress(now = new Date()) {
+    const year = now.getFullYear();
+    const month = now.getMonth() + 1;
+    const date = now.getDate();
+    return year === 2026 && month === 11 && date >= 24 && date <= 27;
+  }
+
+  function isBeforeCongress(now = new Date()) {
+    return now.getTime() < CONGRESS_START_DATE.getTime();
+  }
+
+  function isAfterCongress(now = new Date()) {
+    return now.getTime() > CONGRESS_END_DATE.getTime();
+  }
+
   const state = {
-    activeView: 'view-ahora',
-    simDay: 1, // 1 to 4
-    simMinutes: 695, // 11:35 in minutes from midnight (11*60 + 35)
-    isRealTime: false,
+    activeView: isDuringCongress() ? 'view-ahora' : 'view-programa',
     favorites: JSON.parse(localStorage.getItem('ofmc2026_favorites') || '[]'),
     programDay: 1,
     programTrack: 'all',
@@ -59,35 +76,28 @@
   }
 
   function getCurrentConferenceTime() {
-    if (!state.isRealTime) {
-      return {
-        dayNum: state.simDay,
-        minutes: state.simMinutes,
-        timeStr: minutesToTimeString(state.simMinutes),
-        isSimulated: true
-      };
-    }
-
     const now = new Date();
     const year = now.getFullYear();
     const month = now.getMonth() + 1; // 1-12
     const date = now.getDate();
     const curMins = now.getHours() * 60 + now.getMinutes();
 
-    // Check if within Nov 24-27, 2026
     let dayNum = 1;
+    let inCongress = false;
     if (year === 2026 && month === 11) {
-      if (date === 24) dayNum = 1;
-      else if (date === 25) dayNum = 2;
-      else if (date === 26) dayNum = 3;
-      else if (date === 27) dayNum = 4;
+      if (date === 24) { dayNum = 1; inCongress = true; }
+      else if (date === 25) { dayNum = 2; inCongress = true; }
+      else if (date === 26) { dayNum = 3; inCongress = true; }
+      else if (date === 27) { dayNum = 4; inCongress = true; }
     }
 
     return {
       dayNum: dayNum,
       minutes: curMins,
       timeStr: minutesToTimeString(curMins),
-      isSimulated: false
+      inCongress: inCongress,
+      isBefore: isBeforeCongress(now),
+      isAfter: isAfterCongress(now)
     };
   }
 
@@ -557,17 +567,89 @@
   }
 
   // =========================================================================
-  // 10. REAL-TIME ENGINE ("EN VIVO / AHORA")
+  // 10. REAL-TIME ENGINE ("EN VIVO / AHORA" Y STANDBY PRE-CONGRESO)
   // =========================================================================
+  function updateCongressCountdown() {
+    const now = new Date();
+    const diff = CONGRESS_START_DATE.getTime() - now.getTime();
+
+    const cdDays = document.getElementById('cdDays');
+    const cdHours = document.getElementById('cdHours');
+    const cdMinutes = document.getElementById('cdMinutes');
+    const cdSeconds = document.getElementById('cdSeconds');
+
+    if (diff <= 0) {
+      if (cdDays) cdDays.textContent = '00';
+      if (cdHours) cdHours.textContent = '00';
+      if (cdMinutes) cdMinutes.textContent = '00';
+      if (cdSeconds) cdSeconds.textContent = '00';
+      renderLiveView();
+      return;
+    }
+
+    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const m = Math.floor((diff / (1000 * 60)) % 60);
+    const s = Math.floor((diff / 1000) % 60);
+
+    const pad = n => String(n).padStart(2, '0');
+
+    if (cdDays) cdDays.textContent = pad(d);
+    if (cdHours) cdHours.textContent = pad(h);
+    if (cdMinutes) cdMinutes.textContent = pad(m);
+    if (cdSeconds) cdSeconds.textContent = pad(s);
+  }
+
   function renderLiveView() {
     const timeInfo = getCurrentConferenceTime();
+    const preStandby = document.getElementById('preCongressStandby');
+    const liveContent = document.getElementById('liveContentWrapper');
+
+    if (timeInfo.isBefore) {
+      if (preStandby) preStandby.style.display = 'block';
+      if (liveContent) liveContent.style.display = 'none';
+      updateCongressCountdown();
+      return;
+    }
+
+    if (timeInfo.isAfter) {
+      if (preStandby) {
+        preStandby.style.display = 'block';
+        preStandby.innerHTML = `
+          <div class="standby-card">
+            <div class="standby-badge" style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.3); color: #6EE7B7;">
+              <i class="fa-solid fa-flag-checkered"></i>
+              <span>Congreso Finalizado</span>
+            </div>
+            <h2 class="standby-title">¡Gracias por participar en OFMC 2026!</h2>
+            <p class="standby-subtitle">
+              El Congreso Nacional de Ciencias del Mar y Meteorología ha concluido sus sesiones. Puedes seguir consultando el programa oficial, resúmenes y catálogo de autores.
+            </p>
+            <div class="standby-actions">
+              <button class="btn-standby-primary" onclick="window.OFMC_APP.switchView('view-programa')">
+                <i class="fa-solid fa-calendar-days"></i> Ver Programa Completo
+              </button>
+              <button class="btn-standby-secondary" onclick="window.OFMC_APP.openQrModal()">
+                <i class="fa-solid fa-file-pdf"></i> Descargar Programa PDF
+              </button>
+            </div>
+          </div>
+        `;
+      }
+      if (liveContent) liveContent.style.display = 'none';
+      return;
+    }
+
+    // En vivo durante el congreso:
+    if (preStandby) preStandby.style.display = 'none';
+    if (liveContent) liveContent.style.display = 'block';
+
     const dayData = data.dias.find(d => d.dia_num === timeInfo.dayNum) || data.dias[0];
 
     // Header label
     const timeLabel = document.getElementById('liveTimeLabel');
     if (timeLabel) {
-      const modeStr = timeInfo.isSimulated ? ' · Modo Simulado' : ' · Tiempo Real';
-      timeLabel.textContent = `${dayData.fecha_larga} · ${timeInfo.timeStr} hrs${modeStr}`;
+      timeLabel.textContent = `${dayData.fecha_larga} · ${timeInfo.timeStr} hrs`;
     }
 
     const curMins = timeInfo.minutes;
@@ -1406,73 +1488,6 @@
       });
     });
 
-    // Simulator Toggle
-    const simDrawer = document.getElementById('simDrawer');
-    const btnToggleSim = document.getElementById('btnToggleSim');
-    const btnCloseSim = document.getElementById('btnCloseSim');
-
-    if (btnToggleSim) {
-      btnToggleSim.addEventListener('click', () => {
-        simDrawer.classList.toggle('open');
-      });
-    }
-    if (btnCloseSim) {
-      btnCloseSim.addEventListener('click', () => {
-        simDrawer.classList.remove('open');
-      });
-    }
-
-    // Quick Simulation Chips
-    document.querySelectorAll('.sim-chip').forEach(chip => {
-      chip.addEventListener('click', () => {
-        document.querySelectorAll('.sim-chip').forEach(c => c.classList.remove('active'));
-        chip.classList.add('active');
-
-        if (chip.dataset.now === 'true') {
-          state.isRealTime = true;
-        } else {
-          state.isRealTime = false;
-          state.simDay = parseInt(chip.dataset.day, 10);
-          state.simMinutes = timeStringToMinutes(chip.dataset.time);
-
-          const slider = document.getElementById('timeSlider');
-          if (slider) slider.value = state.simMinutes;
-          const timeDisp = document.getElementById('simTimeDisplay');
-          if (timeDisp) timeDisp.textContent = chip.dataset.time;
-          document.querySelectorAll('.sim-day-btn').forEach(b => {
-            b.classList.toggle('active', parseInt(b.dataset.d, 10) === state.simDay);
-          });
-        }
-        renderLiveView();
-      });
-    });
-
-    // Simulator Manual Day Buttons
-    document.querySelectorAll('.sim-day-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.sim-day-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        state.isRealTime = false;
-        state.simDay = parseInt(btn.dataset.d, 10);
-        document.querySelectorAll('.sim-chip').forEach(c => c.classList.remove('active'));
-        renderLiveView();
-      });
-    });
-
-    // Simulator Slider
-    const timeSlider = document.getElementById('timeSlider');
-    const simTimeDisp = document.getElementById('simTimeDisplay');
-    if (timeSlider) {
-      timeSlider.addEventListener('input', (e) => {
-        state.isRealTime = false;
-        state.simMinutes = parseInt(e.target.value, 10);
-        const tStr = minutesToTimeString(state.simMinutes);
-        if (simTimeDisp) simTimeDisp.textContent = tStr;
-        document.querySelectorAll('.sim-chip').forEach(c => c.classList.remove('active'));
-        renderLiveView();
-      });
-    }
-
     // Program Day Pills
     document.querySelectorAll('#programDayPills .pill-btn').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -1718,12 +1733,14 @@
       fetchAvisosAndUpdates();
     });
 
-    // Periodic live view refresh & alert checker (every 20s)
+    // Periodic live view refresh & alert checker (every 20s durante el congreso)
     setInterval(() => {
-      if (state.activeView === 'view-ahora') {
-        renderLiveView();
-      } else {
-        check10MinuteAlerts();
+      if (isDuringCongress()) {
+        if (state.activeView === 'view-ahora') {
+          renderLiveView();
+        } else {
+          check10MinuteAlerts();
+        }
       }
     }, 20000);
   }
@@ -1804,6 +1821,7 @@
   // 17. GLOBAL EXPORTS
   // =========================================================================
   window.OFMC_APP = {
+    switchView: switchView,
     toggleFav: toggleFavorite,
     showDetail: showDetail,
     closeDetailModal: closeDetailModal,
@@ -1830,10 +1848,23 @@
   document.addEventListener('DOMContentLoaded', () => {
     initEvents();
     updateFavoritesBadge();
-    renderLiveView();
+    
+    // Activa vista inicial (view-programa en pre-congreso, view-ahora durante el congreso)
+    switchView(state.activeView);
+    
+    // Ticker en vivo para la cuenta regresiva oficial
+    if (isBeforeCongress()) {
+      updateCongressCountdown();
+      setInterval(() => {
+        if (isBeforeCongress()) {
+          updateCongressCountdown();
+        }
+      }, 1000);
+    }
+
     initPWA();
     fetchAvisosAndUpdates();
-    console.log('OFMC 2026 Mobile App inicializada exitosamente con soporte para alertas de 10 min y sincronización en vivo.');
+    console.log('OFMC 2026 Mobile App inicializada formalmente (Producción pre-congreso / tiempo real).');
   });
 
 })();
