@@ -1,0 +1,590 @@
+[
+  {
+    "email": "miguel.lagos@usm.cl",
+    "name": "Mariana Hidalgo"
+  },
+  {
+    "email": "fernanda.veliz@usm.cl",
+    "name": "Fernanda Véliz C."
+  },
+  {
+    "email": "camila.tapiat@usm.cl",
+    "name": "Camila Alejandra Tapia Tapia"
+  },
+  {
+    "email": "ignacio.romagnoli@usm.cl",
+    "name": "Ignacio Nicolás Romagnoli Soriano"
+  },
+  {
+    "email": "urielaguayo19@gmail.com",
+    "name": "Uriel Francisco Aguayo Guardera"
+  },
+  {
+    "email": "adan.godoy@unach.cl",
+    "name": "Adán Godoy Matus"
+  },
+  {
+    "email": "ignacio.perezve@postgrado.uv.cl",
+    "name": "Ignacio Andrés Pérez Vergara"
+  },
+  {
+    "email": "javier.aguirregaete@hotmail.com",
+    "name": "Javier Alfredo Aguirre Gaete"
+  },
+  {
+    "email": "rmunoz@dgf.uchile.cl",
+    "name": "Ricardo Muñoz Magnino"
+  },
+  {
+    "email": "luis.valencia102@alu.ulpgc.es",
+    "name": "Luis P. Valencia"
+  },
+  {
+    "email": "francisca.quijada.mateluna@gmail.com",
+    "name": "Francisca Victoria del Carmen Quijada Mateluna"
+  },
+  {
+    "email": "saespinoza2019@udec.cl",
+    "name": "Salma Juliette Espinoza Rivera"
+  },
+  {
+    "email": "adrian.bustamante@ifop.cl",
+    "name": "Adrián Bustamante Maino"
+  },
+  {
+    "email": "rodogomez@estudiante.uc.cl",
+    "name": "Rodolfo Adrián Gómez Sepúlveda"
+  },
+  {
+    "email": "sbahamondez@udec.cl",
+    "name": "Sergio Andrés Bahamóndez Palza"
+  },
+  {
+    "email": "sebastianloyola@oceanografia.udec.cl",
+    "name": "Sebastián Andrés García Loyola"
+  },
+  {
+    "email": "mguzman.geof@gmail.com",
+    "name": "Matías Guzmán Muñoz"
+  },
+  {
+    "email": "sebastian.duran.torres@gmail.com",
+    "name": "Sebastián Orlando Durán Torres"
+  },
+  {
+    "email": "constanzaezuniga@gmail.com",
+    "name": "Constanza Noemí Escobedo Zúñiga"
+  },
+  {
+    "email": "constanza.hernandez@pucv.cl",
+    "name": "CONSTANZA YISSELL HERNANDEZ URBANO"
+  },
+  {
+    "email": "leloyola@alumnos.uai.cl",
+    "name": "Leandra Grisel Loyola Giahette"
+  },
+  {
+    "email": "larissagodapaulamiranda@gmail.com",
+    "name": "Larissa de Paula Miranda"
+  },
+  {
+    "email": "alanricardo.97@gmail.com",
+    "name": "Alan Ricardo Drebes Dorneles"
+  },
+  {
+    "email": "giovanna.amaya@uoh.cl",
+    "name": "Giovanna Paola Amaya Peña"
+  },
+  {
+    "email": "freddy.pinocheterazo@gmail.com",
+    "name": "Freddy Pinochet Erazo"
+  },
+  {
+    "email": "catalina.rodriguezj@usm.cl",
+    "name": "Catalina Rodríguez Jiménez"
+  },
+  {
+    "email": "nicole.zarate@ug.uchile.cl",
+    "name": "Nicole Alejandra Zárate Morales"
+  },
+  {
+    "email": "antonia.ricci@alumnos.uach.cl",
+    "name": "Antonia Ricci Frías"
+  },
+  {
+    "email": "noemie.schifano@imo-chile.cl",
+    "name": "Noémie Schifano"
+  },
+  {
+    "email": "claudia.pizarro.silva@gmail.com",
+    "name": "Claudia Silvana Pizarro Silva"
+  },
+  {
+    "email": "angeles.marrero@ulpgc.es",
+    "name": "María de los Ángeles Marrero Díaz"
+  },
+  {
+    "email": "nvejar2019@udec.cl",
+    "name": "Noelia Vejar Ulloa"
+  },
+  {
+    "email": "sebastian.correa@uv.cl",
+    "name": "Sebastian Omar Correa Araya"
+  },
+  {
+    "email": "emerson.mariano@uece.br",
+    "name": "Emerson Mariano da Silva"
+  },
+  {
+    "email": "braboalves@gmail.com",
+    "name": "José Maria Brabo Alves"
+  },
+  {
+    "email": "ergonzalez2019@udec.cl",
+    "name": "Ernesto Eduardo Gonzalez Pinilla"
+  },
+  {
+    "email": "alfopinto@alumnos.uai.cl",
+    "name": "Alfonso Javier Pinto Morales"
+  },
+  {
+    "email": "deniz.bozkurt@uv.cl",
+    "name": "Deniz Bozkurt"
+  },
+  {
+    "email": "sebastian.correaar@gmail.com",
+    "name": "Sebastian Omar Correa Araya"
+  },
+  {
+    "email": "jpetitlaurent@alumnos.uai.cl",
+    "name": "Jorge Petit-Laurent Sáez"
+  },
+  {
+    "email": "amairani.leyva@ug.uchile.cl",
+    "name": "Amairani Leyva"
+  },
+  {
+    "email": "mtroncosov8@estudiante.uc.cl",
+    "name": "Matías Troncoso-Villar"
+  },
+  {
+    "email": "nantipil2020@udec.cl",
+    "name": "Nataly Alejandra Antipil Huenchumán"
+  },
+  {
+    "email": "ingkenri@gmail.com",
+    "name": "Kennedy Richard Gomez Tunque"
+  },
+  {
+    "email": "angel.chovert@ufg.br",
+    "name": "Angel Domínguez Chovert"
+  },
+  {
+    "email": "jab@meteo.uv.cl",
+    "name": "Jorge Arévalo B."
+  },
+  {
+    "email": "alvaro.constanzo@dgac.gob.cl",
+    "name": "Álvaro Esteban Constanzo Gatica"
+  },
+  {
+    "email": "ivan.perez@ulagos.cl",
+    "name": "Iván Pérez Santos"
+  },
+  {
+    "email": "cp.solahidalgo@gmail.com",
+    "name": "Camila Paz Sola"
+  },
+  {
+    "email": "vaiturra2021@udec.cl",
+    "name": "Valentina Iturra"
+  },
+  {
+    "email": "fabricio.acevedo@ucr.ac.cr",
+    "name": "Fabricio Acevedo"
+  },
+  {
+    "email": "aali2018@udec.cl",
+    "name": "Amin Kadim Ali Cordero"
+  },
+  {
+    "email": "herreraklarian@gmail.com",
+    "name": "Pablo Antonio Herrera Klarian"
+  },
+  {
+    "email": "cristina.verdugop@gmail.com",
+    "name": "Cristina Belén Verdugo Palma"
+  },
+  {
+    "email": "fabianenrique.salgado@alumnos.ulagos.cl",
+    "name": "Fabian Enrique Salgado Oporto"
+  },
+  {
+    "email": "allison.espinoza@pucv.cl",
+    "name": "Allison Caitlin Espinoza Gómez"
+  },
+  {
+    "email": "redmeteoaficionadachile@gmail.com",
+    "name": "David Michael Aguilera Riquelme"
+  },
+  {
+    "email": "monreyes10@gmail.com",
+    "name": "Simón Ismael Reyes Valentin"
+  },
+  {
+    "email": "lavasquez2021@udec.cl",
+    "name": "Laura Sabina Vásquez López"
+  },
+  {
+    "email": "mario.caceres@uv.cl",
+    "name": "Mario Cáceres Muñoz"
+  },
+  {
+    "email": "manu.suazo@gmail.com",
+    "name": "Manuel Suazo Álvarez"
+  },
+  {
+    "email": "rodrigo.castillorodriguez@ucr.ac.cr",
+    "name": "Rodrigo Castillo Rodríguez"
+  },
+  {
+    "email": "leonora.pereira@usm.cl",
+    "name": "Leonora Pereira Zapata"
+  },
+  {
+    "email": "matiasarias97@gmail.com",
+    "name": "Matías Arias Ortega"
+  },
+  {
+    "email": "alvaro.gonzalez@uach.cl",
+    "name": "Álvaro González-Reyes"
+  },
+  {
+    "email": "martinjacques@udec.cl",
+    "name": "Martín Jacques-Coper"
+  },
+  {
+    "email": "matias.pizarrok@gmail.com",
+    "name": "Matías Pizarro-Koch"
+  },
+  {
+    "email": "marina.hernandez@uchile.cl",
+    "name": "Marina Hernández"
+  },
+  {
+    "email": "raul.flores@usm.cl",
+    "name": "Raúl Flores Audibert"
+  },
+  {
+    "email": "spalacios2019@udec.cl",
+    "name": "Sofía Palacios Riveros"
+  },
+  {
+    "email": "jherreb@uc.cl",
+    "name": "Jorge Herrera Bórquez"
+  },
+  {
+    "email": "lcarberry@ucsb.edu",
+    "name": "Luke Carberry"
+  },
+  {
+    "email": "nelsonqg@gmail.com",
+    "name": "Nelson Quispe Gutiérrez"
+  },
+  {
+    "email": "lenna.ortiz@ciep.cl",
+    "name": "Lenna Oriana Ortiz Castillo"
+  },
+  {
+    "email": "pablo.hernandezt@usm.cl",
+    "name": "Pablo Ignacio Hernández Tapia"
+  },
+  {
+    "email": "osvaldo.artal@ufrontera.cl",
+    "name": "Osvaldo Enrique Artal Arrieta"
+  },
+  {
+    "email": "nicolas.carrasco01@uach.cl",
+    "name": "Nicolás Carrasco-Ilabaca"
+  },
+  {
+    "email": "cescauri@uc.cl",
+    "name": "Cristián Escauriaza"
+  },
+  {
+    "email": "valerie.villegas.g@mail.pucv.cl",
+    "name": "Valerie Alejandra Villegas Gamboa"
+  },
+  {
+    "email": "rosa.zamora@pucv.cl",
+    "name": "Rosa Carolina Zamora Aguirre"
+  },
+  {
+    "email": "fchirino2020@udec.cl",
+    "name": "Francisca Chirino"
+  },
+  {
+    "email": "l.patricio.riquelme25@gmail.com",
+    "name": "Luis Patricio Riquelme Merino"
+  },
+  {
+    "email": "fran.jofre.meneses@gmail.com",
+    "name": "Francisca Verónica Jofré Meneses"
+  },
+  {
+    "email": "gsaldias@ubiobio.cl",
+    "name": "Gonzalo Sebastián Saldías Yau"
+  },
+  {
+    "email": "nicolas.mora@estudiantes.uv.cl",
+    "name": "Nicolás Leonardo Mora Carrera"
+  },
+  {
+    "email": "clau.rozas@gmail.com",
+    "name": "Claudia Rozas-Perez"
+  },
+  {
+    "email": "gustavo.rohde@estudiantes.uv.cl",
+    "name": "Gustavo Alfredo Rohde Medina"
+  },
+  {
+    "email": "mario.caceres.soto@gmail.com",
+    "name": "Mario Andrés Cáceres Soto"
+  },
+  {
+    "email": "poliana.lega@gmail.com",
+    "name": "Poliana Teresa Leiva Garay"
+  },
+  {
+    "email": "abdon.olguin.n@mail.pucv.cl",
+    "name": "Abdón Benjamín Olguín Núñez"
+  },
+  {
+    "email": "valeska.sandoval.t@mail.pucv.cl",
+    "name": "Valeska Alanis Sandoval Tapia"
+  },
+  {
+    "email": "fran.search.t@gmail.com",
+    "name": "Francesca V. Search"
+  },
+  {
+    "email": "luca.toloza.m@gmail.com",
+    "name": "Luca Benito Matías Toloza Martínez"
+  },
+  {
+    "email": "valentina.besoain@gmail.com",
+    "name": "Valentina Besoain"
+  },
+  {
+    "email": "felipe.silva.g@usach.cl",
+    "name": "Felipe Andrés Silva Guevara"
+  },
+  {
+    "email": "jh.contrerasibanez@gmail.com",
+    "name": "Jhon Ignacio Contreras Ibáñez"
+  },
+  {
+    "email": "romain.bailly@ug.uchile.cl",
+    "name": "Romain Bailly"
+  },
+  {
+    "email": "fcovarrubias@uc.cl",
+    "name": "Francisca Covarrubias Mondaca"
+  },
+  {
+    "email": "lgallard@u.uchile.cl",
+    "name": "Laura Gallardo"
+  },
+  {
+    "email": "ialmendra.a.g@gmail.com",
+    "name": "Energy potential of intraseasonal coastal-trapped waves along the Peru–Chile coast"
+  },
+  {
+    "email": "megan.williams@uc.cl",
+    "name": "Megan Williams"
+  },
+  {
+    "email": "eduardo.flores@ceaza.cl",
+    "name": "Eduardo Alberto Flores Barraza"
+  },
+  {
+    "email": "diana.pozo@uv.cl",
+    "name": "Almendra Pedrini"
+  },
+  {
+    "email": "tomasmusa@gmail.com",
+    "name": "Tomás Roberto Muñoz Salazar"
+  },
+  {
+    "email": "marmonsalvez@udec.cl",
+    "name": "María Fabiola Monsálvez Opazo"
+  },
+  {
+    "email": "pasandoval2021@udec.cl",
+    "name": "Pablo Sandoval Matamala"
+  },
+  {
+    "email": "nicolas.donoso@innovex.cl",
+    "name": "Nicolás Andrés Donoso Castro"
+  },
+  {
+    "email": "paula.barbosa.p@mail.pucv.cl",
+    "name": "Paula Virginia Barbosa-Peñaloza"
+  },
+  {
+    "email": "felix.marcial@gmail.com",
+    "name": "Félix Marcial Carrasco Galleguillos"
+  },
+  {
+    "email": "cameron.wunderlin@noaa.gov",
+    "name": "Cameron Wunderlin"
+  },
+  {
+    "email": "roberto.rondanelli@gmail.com",
+    "name": "Roberto Francisco Rondanelli Rojas"
+  },
+  {
+    "email": "marcelo.madariaga@pucv.cl",
+    "name": "Marcelo Madariaga-Burgos"
+  },
+  {
+    "email": "julio.marin@meteo.uv.cl",
+    "name": "Julio C. Marín Aguado"
+  },
+  {
+    "email": "marguerra@udec.cl",
+    "name": "Maricarmen Guerra Paris"
+  },
+  {
+    "email": "dnarvaez@oceanografia.udec.cl",
+    "name": "Diego Narváez"
+  },
+  {
+    "email": "oddyale@gmail.com",
+    "name": "Odette Alejandra Vergara Soto"
+  },
+  {
+    "email": "luis.bravo@ucn.cl",
+    "name": "Luis Andrés Bravo Gómez"
+  },
+  {
+    "email": "marcel.ramos.q780@gmail.com",
+    "name": "Marcel Ramos Quezada"
+  },
+  {
+    "email": "fsrios@uc.cl",
+    "name": "Felipe Ríos-Silva"
+  },
+  {
+    "email": "nhuneeus@uchile.cl",
+    "name": "Nicolás Huneeus"
+  },
+  {
+    "email": "martina.monasterio@sansano.usm.cl",
+    "name": "Martina Raquel Monasterio Sandoval"
+  },
+  {
+    "email": "daniela.flores.f@mail.pucv.cl",
+    "name": "Daniela Ignacia Flores Fuenzalida"
+  },
+  {
+    "email": "jose.donoso.q@ug.uchile.cl",
+    "name": "David Donoso"
+  },
+  {
+    "email": "naruiz2019@udec.cl",
+    "name": "Natalia Elena Ruiz Zenteno"
+  },
+  {
+    "email": "jonysatie@gmail.com",
+    "name": "Jonathan Oberreuter"
+  },
+  {
+    "email": "charlie.opazo@ug.uchile.cl",
+    "name": "Charlie Eduardo Opazo Collao"
+  },
+  {
+    "email": "danielolivares1999@gmail.com",
+    "name": "Daniel Andrés Olivares Norambuena"
+  },
+  {
+    "email": "m.alvarado.nino@gmail.com",
+    "name": "Mónica Carolina Alvarado Niño"
+  },
+  {
+    "email": "gcorreamunoz03@gmail.com",
+    "name": "Gabriel Francisco Correa Muñoz"
+  },
+  {
+    "email": "henry.jamanca@ug.uchile.cl",
+    "name": "Henry Edisson Jamanca Espinoza"
+  },
+  {
+    "email": "andrea.pinones@uach.cl",
+    "name": "Andrea Piñones"
+  },
+  {
+    "email": "jennifervillarroelnenen@gmail.com",
+    "name": "Jennifer Villarroel-Nenen"
+  },
+  {
+    "email": "camila.camposano@estudiantes.uv.cl",
+    "name": "Camila Valentina Camposano Sanhueza"
+  },
+  {
+    "email": "bbarja@gmail.com",
+    "name": "Gonzalo Mansilla"
+  },
+  {
+    "email": "anamaria.cordova@meteo.uv.cl",
+    "name": "Ana Maria Cordova Leal"
+  },
+  {
+    "email": "vicente.jara01@alumnos.uach.cl",
+    "name": "Vicente Jara"
+  },
+  {
+    "email": "benjamin.cornejo.av@gmail.com",
+    "name": "Benjamín Ignacio Cornejo Ávila"
+  },
+  {
+    "email": "leonor.valdes@ug.uchile.cl",
+    "name": "Leonor Gabriela Valdés Calderón"
+  },
+  {
+    "email": "juan.gonzalez.c@unab.cl",
+    "name": "Juan González"
+  },
+  {
+    "email": "moyav.victoria@gmail.com",
+    "name": "María Victoria Moya"
+  },
+  {
+    "email": "leandro@watermind.space",
+    "name": "Leandro Suarez Atias"
+  },
+  {
+    "email": "magdavasquezramos@gmail.com",
+    "name": "Daniela Rojas Rojas"
+  },
+  {
+    "email": "maria.almendra@alumnos.uach.cl",
+    "name": "María Paz Almendra Riquelme"
+  },
+  {
+    "email": "amanda.magnere@ug.uchile.cl",
+    "name": "María Fernanda Ruedlinger"
+  },
+  {
+    "email": "ignacio.ryks@usm.cl",
+    "name": "Ignacio Nicolás Ryks Alvarado"
+  },
+  {
+    "email": "vcarrilpardo@gmail.com",
+    "name": "Vanessa Alejandra Carril Pardo"
+  },
+  {
+    "email": "carlos.buritica@postgrado.uv.cl",
+    "name": "Carlos Buriticá"
+  }
+]
