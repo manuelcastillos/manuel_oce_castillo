@@ -147,6 +147,32 @@
       color: var(--text-main);
     }
 
+    .nav-doca-link {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 4px;
+      text-decoration: none;
+    }
+
+    .nav-doca-logo {
+      height: 38px;
+      width: 38px;
+      object-fit: contain;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      background: #ffffff;
+      padding: 1px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+      display: block;
+    }
+
+    .nav-doca-link:hover .nav-doca-logo {
+      transform: scale(1.08);
+      border-color: #cbd5e1;
+      box-shadow: var(--shadow-md);
+    }
+
     /* Hero Section */
     .hero-section {
       background: #ffffff;
@@ -667,6 +693,10 @@
         overflow-x: auto;
         padding-top: 6px;
       }
+      .nav-doca-logo {
+        height: 32px;
+        width: 32px;
+      }
     }
   </style>
 </head>
@@ -690,7 +720,10 @@
         <a href="buscador.html" class="nav-btn nav-btn-active">🔍 Buscador</a>
         <a href="estadisticas.html" class="nav-btn nav-btn-ghost">📊 Estadísticas</a>
         <a href="app_congreso/index.html" class="nav-btn nav-btn-ghost">📱 App Móvil</a>
-        <a href="app_congreso/Programa_Detallado_OFMC2026.pdf" target="_blank" class="nav-btn nav-btn-ghost">📥 PDF</a>
+        <a href="app_congreso/Programa_Detallado_OFMC2026.pdf" target="_blank" class="nav-btn nav-btn-ghost" title="Descargar Programa Oficial Completo (PDF)">📥 PDF</a>
+        <a href="https://www.doca2026.cl" target="_blank" rel="noopener" class="nav-doca-link" title="Grupo de Trabajo en Dinámica del Océano y Clima (DOCA)">
+          <img src="app_congreso/logos/LOGO-CONGRESO-DOCA-300x300.jpg" alt="DOCA" class="nav-doca-logo">
+        </a>
       </nav>
     </div>
   </header>
@@ -783,7 +816,7 @@
       <div class="logos-section-title">Instituciones Organizadoras, Patrocinadores y Auspiciadores Oficiales</div>
       <div class="logos-grid">
         <img src="app_congreso/logos/uv_logo_alta_rgb_azul.jpg" alt="Universidad de Valparaíso" class="logo-item" title="Universidad de Valparaíso (Sede Oficial)">
-        <img src="app_congreso/logos/auspiciadores/logo_doca.png" alt="DOCA" class="logo-item" title="Departamento de Oceanografía - DOCA">
+        <img src="app_congreso/logos/LOGO-CONGRESO-DOCA-300x300.jpg" alt="DOCA" class="logo-item" title="Grupo de Trabajo en Dinámica del Océano y Clima (DOCA)">
         <img src="app_congreso/logos/logo_lofisat.png" alt="LOFISAT" class="logo-item" title="LOFISAT">
         <img src="app_congreso/logos/auspiciadores/logo_ing_oceanica_uv.png" alt="Ingeniería Oceánica UV" class="logo-item" title="Ingeniería Oceánica UV">
         <img src="app_congreso/logos/auspiciadores/logo_copas_coastal.png" alt="COPAS Coastal" class="logo-item" title="COPAS Coastal">
