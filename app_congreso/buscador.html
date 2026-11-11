@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de Ponencias - VIII Congreso OFMC 2026 Valparaíso</title>
+  <meta name="description" content="Buscador rápido de ponencias, horarios, salas y autores del VIII Congreso de Oceanografía Física, Meteorología y Clima 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-subtle: #f1f5f9;
+      --bg-hover: #e2e8f0;
+      --border-color: #e2e8f0;
+      --border-subtle: #f1f5f9;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --text-secondary: #334155;
+      --accent-dark: #0f172a;
+      --accent-charcoal: #1e293b;
+      --oral-bg: #f8fafc;
+      --oral-text: #0f172a;
+      --oral-border: #cbd5e1;
+      --oral-dot: #10b981;
+      --poster-bg: #f8fafc;
+      --poster-text: #0f172a;
+      --poster-border: #cbd5e1;
+      --poster-dot: #f59e0b;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Top Institutional Header */
+    .top-bar {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .top-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand-logo-main {
+      height: 44px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .brand-logos-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-logo-partner {
+      height: 32px;
+      width: auto;
+      object-fit: contain;
+      opacity: 0.9;
+    }
+
+    .brand-text h1 {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.3px;
+    }
+
+    .brand-text p {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .top-nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .nav-btn-active {
+      background-color: var(--accent-dark);
+      color: #ffffff;
+    }
+
+    .nav-btn-ghost {
+      background-color: transparent;
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+    }
+
+    .nav-btn-ghost:hover {
+      background-color: var(--bg-subtle);
+      color: var(--text-main);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border-color);
+      padding: 40px 0 32px 0;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--bg-subtle);
+      color: var(--text-secondary);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      margin-bottom: 14px;
+      border: 1px solid var(--border-color);
+    }
+
+    .hero-badge-dot {
+      width: 7px;
+      height: 7px;
+      background-color: #10b981;
+      border-radius: 50%;
+    }
+
+    .hero-title {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.8px;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .hero-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin-bottom: 24px;
+    }
+
+    /* Search Box & Controls */
+    .search-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .search-input-wrapper {
+      position: relative;
+      margin-bottom: 16px;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 18px;
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 14px 44px 14px 46px;
+      font-size: 16px;
+      font-family: inherit;
+      color: var(--text-main);
+      background-color: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .search-input:focus {
+      background-color: #ffffff;
+      border-color: var(--accent-charcoal);
+      box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.08);
+    }
+
+    .clear-search-btn {
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: none;
+      padding: 4px;
+    }
+
+    .clear-search-btn:hover {
+      color: var(--text-main);
+    }
+
+    /* Filter Row */
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .filter-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-right: 4px;
+    }
+
+    .filter-group {
+      display: inline-flex;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 2px;
+    }
+
+    .chip-btn {
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      background: transparent;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .chip-btn:hover {
+      color: var(--text-main);
+    }
+
+    .chip-btn.active {
+      background: #ffffff;
+      color: var(--text-main);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .select-filter {
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      background-color: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      outline: none;
+      cursor: pointer;
+      max-width: 260px;
+    }
+
+    .select-filter:focus {
+      border-color: var(--accent-charcoal);
+    }
+
+    /* Main Content Area */
+    .main-body {
+      padding: 32px 0 60px 0;
+    }
+
+    .results-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .results-count {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    .results-count span {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 16px;
+    }
+
+    /* Presentation Card */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .card:hover {
+      border-color: #cbd5e1;
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .badge-code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 3px 8px;
+      border-radius: 6px;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-type {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-subtle);
+      color: var(--text-secondary);
+    }
+
+    .badge-type.oral .dot {
+      background-color: var(--oral-dot);
+    }
+
+    .badge-type.poster .dot {
+      background-color: var(--poster-dot);
+    }
+
+    .badge-type .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+
+    .card-time-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-main);
+      background-color: var(--bg-subtle);
+      padding: 3px 8px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+    }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+
+    .card-author-block {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .author-avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .author-info {
+      flex: 1;
+    }
+
+    .author-name {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .author-inst {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.3;
+    }
+
+    /* Card Footer / Details */
+    .card-meta-box {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 12px;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .meta-icon {
+      font-size: 13px;
+      opacity: 0.8;
+      width: 16px;
+      text-align: center;
+    }
+
+    .meta-item strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .card-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-action {
+      flex: 1;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      background: #ffffff;
+      color: var(--text-secondary);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      transition: all 0.15s ease;
+    }
+
+    .btn-action:hover {
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      border-color: #cbd5e1;
+    }
+
+    /* Empty state */
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      background: #ffffff;
+      border: 1px dashed var(--border-color);
+      border-radius: 12px;
+      grid-column: 1 / -1;
+    }
+
+    .empty-state-icon {
+      font-size: 40px;
+      margin-bottom: 12px;
+      opacity: 0.6;
+    }
+
+    .empty-state h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .empty-state p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Institutional Logos Section */
+    .logos-section {
+      background: #ffffff;
+      border-top: 1px solid var(--border-color);
+      padding: 40px 0;
+      margin-top: 40px;
+    }
+
+    .logos-section-title {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .logos-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+    }
+
+    .logo-item {
+      height: 40px;
+      max-width: 140px;
+      object-fit: contain;
+      filter: grayscale(80%);
+      opacity: 0.85;
+      transition: all 0.2s ease;
+    }
+
+    .logo-item:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    .site-footer {
+      background: var(--bg-subtle);
+      border-top: 1px solid var(--border-color);
+      padding: 24px 0;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .site-footer a {
+      color: var(--text-secondary);
+      text-decoration: underline;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      box-shadow: var(--shadow-lg);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 24px;
+      }
+      .results-grid {
+        grid-template-columns: 1fr;
+      }
+      .brand-logos-row {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header class="top-bar">
+    <div class="container top-bar-inner">
+      <a href="index.html" class="brand-group">
+        <img src="logos/logo_ofmc_2026_valparaiso_transparente_2k.png" alt="OFMC 2026" class="brand-logo-main">
+        <div class="brand-text">
+          <h1>OFMC 2026</h1>
+          <p>Valparaíso, Chile</p>
+        </div>
+      </a>
+
+      <!-- Institutional Logos inline -->
+      <div class="brand-logos-row">
+        <img src="logos/logo_uv.png" alt="Universidad de Valparaíso" class="brand-logo-partner" title="Universidad de Valparaíso">
+        <img src="logos/auspiciadores/logo_doca.png" alt="DOCA" class="brand-logo-partner" title="Departamento de Oceanografía - DOCA">
+        <img src="logos/auspiciadores/logo_ecm_pucv.png" alt="PUCV" class="brand-logo-partner" title="Pontificia Universidad Católica de Valparaíso">
+        <img src="logos/logo_lofisat.png" alt="LOFISAT" class="brand-logo-partner" title="LOFISAT">
+      </div>
+
+      <!-- Navigation buttons -->
+      <nav class="top-nav">
+        <a href="buscador.html" class="nav-btn nav-btn-active">🔍 Buscador</a>
+        <a href="estadisticas.html" class="nav-btn nav-btn-ghost">📊 Estadísticas</a>
+        <a href="index.html" class="nav-btn nav-btn-ghost">📱 App Móvil</a>
+        <a href="Programa_Detallado_OFMC2026.pdf" target="_blank" class="nav-btn nav-btn-ghost">📥 PDF</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Programa Oficial Confirmado • 211 Ponencias Científicas
+      </div>
+      <h2 class="hero-title">Buscador Rápido de Ponencias</h2>
+      <p class="hero-desc">
+        Encuentre al instante <strong>cuándo, a qué hora y en qué sala</strong> expone cada autor o investigación en el VIII Congreso OFMC 2026.
+      </p>
+
+      <!-- Search & Filters Box -->
+      <div class="search-panel">
+        <div class="search-input-wrapper">
+          <span class="search-icon">🔍</span>
+          <input 
+            type="text" 
+            id="searchInput" 
+            class="search-input" 
+            placeholder="Buscar por apellido, nombre, código (ej. O-056, P-039), título de investigación o universidad..."
+            autocomplete="off"
+            autofocus
+          >
+          <button id="clearSearchBtn" class="clear-search-btn" title="Limpiar búsqueda">✕</button>
+        </div>
+
+        <div class="filter-row">
+          <span class="filter-label">Filtros:</span>
+          
+          <!-- Modalidad -->
+          <div class="filter-group" id="tipoFilterGroup">
+            <button class="chip-btn active" data-type="all">Todos (211)</button>
+            <button class="chip-btn" data-type="Oral">🎙️ Orales (112)</button>
+            <button class="chip-btn" data-type="Póster">📌 Pósters (99)</button>
+          </div>
+
+          <!-- Día -->
+          <div class="filter-group" id="diaFilterGroup">
+            <button class="chip-btn active" data-day="all">Todos los días</button>
+            <button class="chip-btn" data-day="1">Mar 24</button>
+            <button class="chip-btn" data-day="2">Mié 25</button>
+            <button class="chip-btn" data-day="3">Jue 26</button>
+            <button class="chip-btn" data-day="4">Vie 27</button>
+          </div>
+
+          <!-- Sala -->
+          <select id="salaSelect" class="select-filter">
+            <option value="all">Todas las salas / espacios</option>
+            <option value="Sala 2.5">Sala 2.5 (Piso 2 Hucke)</option>
+            <option value="Sala 3.7">Sala 3.7 (Piso 3)</option>
+            <option value="Sectores Comunes">Sectores Comunes Pisos 2 y 3 (Pósters)</option>
+          </select>
+
+          <!-- Eje Temático -->
+          <select id="ejeSelect" class="select-filter">
+            <option value="all">Todos los ejes temáticos</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Results Body -->
+  <main class="main-body">
+    <div class="container">
+      <div class="results-header">
+        <div class="results-count" id="resultsCount">
+          Mostrando <span>211</span> ponencias
+        </div>
+        <div style="font-size: 12px; color: var(--text-muted);">
+          ⚡ Búsqueda instantánea en tiempo real
+        </div>
+      </div>
+
+      <!-- Grid of Cards -->
+      <div class="results-grid" id="resultsGrid">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Institutional Logos Section -->
+  <section class="logos-section">
+    <div class="container">
+      <div class="logos-section-title">Instituciones Organizadoras, Patrocinadores y Auspiciadores Oficiales</div>
+      <div class="logos-grid">
+        <img src="logos/logo_uv.png" alt="Universidad de Valparaíso" class="logo-item" title="Universidad de Valparaíso">
+        <img src="logos/auspiciadores/logo_doca.png" alt="DOCA" class="logo-item" title="Departamento de Oceanografía - DOCA">
+        <img src="logos/auspiciadores/logo_ecm_pucv.png" alt="PUCV" class="logo-item" title="Pontificia Universidad Católica de Valparaíso">
+        <img src="logos/logo_lofisat.png" alt="LOFISAT" class="logo-item" title="LOFISAT">
+        <img src="logos/auspiciadores/logo_ing_oceanica_uv.png" alt="Ingeniería Oceánica UV" class="logo-item" title="Ingeniería Oceánica UV">
+        <img src="logos/auspiciadores/logo_copas_coastal.png" alt="COPAS Coastal" class="logo-item" title="COPAS Coastal">
+        <img src="logos/auspiciadores/logo_cr2.png" alt="CR2" class="logo-item" title="Centro de Ciencia del Clima y la Resiliencia (CR2)">
+        <img src="logos/auspiciadores/logo_anid_minciencia.jpg" alt="ANID MinCiencia" class="logo-item" title="ANID - Ministerio de Ciencia">
+        <img src="logos/auspiciadores/logo_ucn.png" alt="UCN" class="logo-item" title="Universidad Católica del Norte">
+        <img src="logos/auspiciadores/CIO.png" alt="CIO" class="logo-item" title="Centro de Investigación Oceanográfica">
+        <img src="logos/auspiciadores/NORTEK.png" alt="NORTEK" class="logo-item" title="NORTEK">
+        <img src="logos/auspiciadores/logo_asl.png" alt="ASL" class="logo-item" title="ASL Environmental Sciences">
+        <img src="logos/auspiciadores/logo_invap.png" alt="INVAP" class="logo-item" title="INVAP">
+        <img src="logos/auspiciadores/logo_servimet.png" alt="SERVIMET" class="logo-item" title="Servimet">
+        <img src="logos/auspiciadores/logo_acera.png" alt="ACERA" class="logo-item" title="ACERA">
+        <img src="logos/auspiciadores/CascoAntiguo.jpg" alt="Casco Antiguo" class="logo-item" title="Casco Antiguo">
+        <img src="logos/auspiciadores/logo_snp.png" alt="SNP" class="logo-item" title="Sociedad Nacional de Pesca (SNP)">
+        <img src="logos/CEACC.jpeg" alt="CEACC" class="logo-item" title="Centro de Estudios Avanzados en Cuencas Costeras (CEACC)">
+        <img src="logos/costar_GRANDE.jpg" alt="COSTAR" class="logo-item" title="COSTAR">
+        <img src="logos/logo_omare.png" alt="OMARE" class="logo-item" title="OMARE">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>VIII Congreso de Oceanografía Física, Meteorología y Clima (OFMC 2026)</p>
+      <p style="margin-top: 4px;">24 al 27 de Noviembre de 2026 • Universidad de Valparaíso, Chile • Contacto: <a href="mailto:ofmc2026@gmail.com">ofmc2026@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" class="toast">
+    <span>✅</span>
+    <span id="toastMessage">Ficha copiada al portapapeles</span>
+  </div>
+
+  <!-- Load Congress Data -->
+  <script src="data.js"></script>
+
+  <script>
+    (function() {
+      // 1. Data Prep
+      const data = window.CONGRESO_DATA;
+      if (!data) {
+        document.getElementById('resultsGrid').innerHTML = '<div class="empty-state"><h3>Error al cargar los datos</h3><p>No se pudo cargar la base de datos del congreso.</p></div>';
+        return;
+      }
+
+      const allItems = [...(data.orales || []), ...(data.posters || [])];
+      
+      // Populate Ejes
+      const ejesSet = new Set();
+      allItems.forEach(item => {
+        if (item.eje) ejesSet.add(item.eje);
+      });
+      const ejeSelect = document.getElementById('ejeSelect');
+      Array.from(ejesSet).sort().forEach(eje => {
+        const opt = document.createElement('option');
+        opt.value = eje;
+        opt.textContent = eje;
+        ejeSelect.appendChild(opt);
+      });
+
+      // Filter State
+      let filterState = {
+        query: '',
+        type: 'all',
+        day: 'all',
+        sala: 'all',
+        eje: 'all'
+      };
+
+      // Elements
+      const searchInput = document.getElementById('searchInput');
+      const clearSearchBtn = document.getElementById('clearSearchBtn');
+      const resultsGrid = document.getElementById('resultsGrid');
+      const resultsCount = document.getElementById('resultsCount');
+      const toast = document.getElementById('toast');
+      const toastMessage = document.getElementById('toastMessage');
+
+      function showToast(msg) {
+        toastMessage.textContent = msg;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 3000);
+      }
+
+      // Render Cards
+      function renderCards(items) {
+        resultsCount.innerHTML = `Mostrando <span>${items.length}</span> ponencias`;
+
+        if (items.length === 0) {
+          resultsGrid.innerHTML = `
+            <div class="empty-state">
+              <div class="empty-state-icon">🔎</div>
+              <h3>No se encontraron coincidencias</h3>
+              <p>Intente con otro apellido, término o retire algunos filtros.</p>
+            </div>
+          `;
+          return;
+        }
+
+        const html = items.map(p => {
+          const isOral = p.tipo === 'Oral';
+          const typeClass = isOral ? 'oral' : 'poster';
+          const typeLabel = isOral ? 'Oral' : 'Póster';
+          const dayPretty = p.dia_label ? p.dia_label.replace(/\s*\(.*?\)/, '') : `Día ${p.dia_num}`;
+
+          return `
+            <div class="card" id="card-${p.id}">
+              <div>
+                <div class="card-top">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <span class="badge-code">${p.id}</span>
+                    <span class="badge-type ${typeClass}">
+                      <span class="dot"></span>
+                      ${typeLabel}
+                    </span>
+                  </div>
+                  <span class="card-time-badge">⏰ ${p.horario || ''}</span>
+                </div>
+
+                <h3 class="card-title">${escapeHtml(p.titulo || 'Sin título')}</h3>
+
+                <div class="card-author-block">
+                  <div class="author-avatar">👤</div>
+                  <div class="author-info">
+                    <div class="author-name">${escapeHtml(p.autor || 'Autor no especificado')}</div>
+                    <div class="author-inst">${escapeHtml(p.inst || 'Institución no indicada')}</div>
+                  </div>
+                </div>
+
+                <div class="card-meta-box">
+                  <div class="meta-item">
+                    <span class="meta-icon">📅</span>
+                    <div><strong>${dayPretty}:</strong> ${p.fecha || ''}</div>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-icon">📍</span>
+                    <div><strong>Ubicación:</strong> ${escapeHtml(p.sala || '')}</div>
+                  </div>
+                  ${p.sesion ? `
+                    <div class="meta-item" style="margin-top: 2px;">
+                      <span class="meta-icon">📑</span>
+                      <div style="font-size: 11px; line-height: 1.3;">${escapeHtml(p.sesion)}</div>
+                    </div>
+                  ` : ''}
+                </div>
+              </div>
+
+              <div class="card-actions">
+                <button class="btn-action" onclick="copyCardData('${p.id}')" title="Copiar resumen al portapapeles">
+                  📋 Copiar Ficha
+                </button>
+                <a href="index.html" class="btn-action" style="text-decoration: none;" title="Abrir en la aplicación móvil">
+                  📱 Ver en App
+                </a>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        resultsGrid.innerHTML = html;
+      }
+
+      function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/[&<>'"]/g, 
+          tag => ({
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            "'": '&#39;',
+            '"': '&quot;'
+          }[tag] || tag)
+        );
+      }
+
+      // Filter Logic
+      function applyFilters() {
+        const q = filterState.query.trim().toLowerCase();
+
+        const filtered = allItems.filter(p => {
+          // Type filter
+          if (filterState.type !== 'all' && p.tipo !== filterState.type) {
+            return false;
+          }
+
+          // Day filter
+          if (filterState.day !== 'all' && String(p.dia_num) !== String(filterState.day)) {
+            return false;
+          }
+
+          // Sala filter
+          if (filterState.sala !== 'all') {
+            if (!p.sala || !p.sala.toLowerCase().includes(filterState.sala.toLowerCase())) {
+              return false;
+            }
+          }
+
+          // Eje filter
+          if (filterState.eje !== 'all' && p.eje !== filterState.eje) {
+            return false;
+          }
+
+          // Text query
+          if (q) {
+            const haystack = [
+              p.id || '',
+              p.autor || '',
+              p.titulo || '',
+              p.inst || '',
+              p.sala || '',
+              p.sesion || '',
+              p.eje || ''
+            ].join(' ').toLowerCase();
+
+            if (!haystack.includes(q)) {
+              return false;
+            }
+          }
+
+          return true;
+        });
+
+        renderCards(filtered);
+      }
+
+      // Event Listeners
+      searchInput.addEventListener('input', (e) => {
+        filterState.query = e.target.value;
+        clearSearchBtn.style.display = filterState.query ? 'block' : 'none';
+        applyFilters();
+      });
+
+      clearSearchBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        filterState.query = '';
+        clearSearchBtn.style.display = 'none';
+        searchInput.focus();
+        applyFilters();
+      });
+
+      // Type Buttons
+      document.getElementById('tipoFilterGroup').addEventListener('click', (e) => {
+        const btn = e.target.closest('.chip-btn');
+        if (!btn) return;
+        document.querySelectorAll('#tipoFilterGroup .chip-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterState.type = btn.dataset.type;
+        applyFilters();
+      });
+
+      // Day Buttons
+      document.getElementById('diaFilterGroup').addEventListener('click', (e) => {
+        const btn = e.target.closest('.chip-btn');
+        if (!btn) return;
+        document.querySelectorAll('#diaFilterGroup .chip-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterState.day = btn.dataset.day;
+        applyFilters();
+      });
+
+      // Sala Select
+      document.getElementById('salaSelect').addEventListener('change', (e) => {
+        filterState.sala = e.target.value;
+        applyFilters();
+      });
+
+      // Eje Select
+      document.getElementById('ejeSelect').addEventListener('change', (e) => {
+        filterState.eje = e.target.value;
+        applyFilters();
+      });
+
+      // Global copy helper
+      window.copyCardData = function(id) {
+        const p = allItems.find(x => x.id === id);
+        if (!p) return;
+        const textToCopy = `[OFMC 2026] Ponencia ${p.id} (${p.tipo})
+Autor: ${p.autor} (${p.inst || ''})
+Título: "${p.titulo}"
+Cuándo: ${p.dia_label || 'Día ' + p.dia_num} | Horario: ${p.horario}
+Dónde: ${p.sala}
+Sesión: ${p.sesion || 'OFMC 2026 Valparaíso'}
+Enlace directo: https://is.gd/ofmc2026`;
+
+        navigator.clipboard.writeText(textToCopy).then(() => {
+          showToast(`¡Ficha de ${p.id} copiada al portapapeles!`);
+        }).catch(() => {
+          showToast(`Copiado: ${p.id}`);
+        });
+      };
+
+      // Check URL parameters for direct query (e.g. ?q=Riquelme)
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlQ = urlParams.get('q');
+      if (urlQ) {
+        searchInput.value = urlQ;
+        filterState.query = urlQ;
+        clearSearchBtn.style.display = 'block';
+      }
+
+      // Initial Render
+      applyFilters();
+    })();
+  </script>
+</body>
+</html>

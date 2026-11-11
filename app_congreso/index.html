@@ -38,6 +38,12 @@
       </div>
     </div>
     <div class="header-actions">
+      <a href="buscador.html" class="icon-btn" aria-label="Buscador Rápido Web" title="Buscador Rápido de Ponencias (Dónde y Cuándo)">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+      <a href="estadisticas.html" class="icon-btn" aria-label="Estadísticas Oficiales" title="Dashboard de Estadísticas y Métricas">
+        <i class="fa-solid fa-chart-column"></i>
+      </a>
       <button id="btnOpenAvisos" class="icon-btn badge-icon-btn" aria-label="Avisos Oficiales y Cambios" title="Avisos de la Organización">
         <i class="fa-solid fa-bell"></i>
         <span id="unreadAvisosBadge" class="header-badge-count" style="display: none;">0</span>
@@ -45,8 +51,8 @@
       <button id="btnOpenQrModal" class="icon-btn" aria-label="Códigos QR del Congreso" title="Códigos QR (App y Programa PDF)">
         <i class="fa-solid fa-qrcode"></i>
       </button>
-      <button id="btnOpenSearch" class="icon-btn" aria-label="Buscar presentaciones">
-        <i class="fa-solid fa-magnifying-glass"></i>
+      <button id="btnOpenSearch" class="icon-btn" aria-label="Buscar presentaciones en la app">
+        <i class="fa-solid fa-sliders"></i>
       </button>
     </div>
   </header>
@@ -134,11 +140,17 @@
           </div>
 
           <div class="standby-actions">
-            <button class="btn-standby-primary" onclick="window.OFMC_APP.switchView('view-programa')">
+            <a href="buscador.html" class="btn-standby-primary" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px;">
+              <i class="fa-solid fa-magnifying-glass"></i> Buscador Rápido de Ponencias
+            </a>
+            <a href="estadisticas.html" class="btn-standby-secondary" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px;">
+              <i class="fa-solid fa-chart-column"></i> Estadísticas y Métricas
+            </a>
+            <button class="btn-standby-secondary" onclick="window.OFMC_APP.switchView('view-programa')">
               <i class="fa-solid fa-calendar-days"></i> Ver Programa Día por Día
             </button>
             <button class="btn-standby-secondary" onclick="window.OFMC_APP.switchView('view-autores')">
-              <i class="fa-solid fa-users"></i> Buscar Autores y Ponencias
+              <i class="fa-solid fa-users"></i> Índice de Autores
             </button>
           </div>
           <div class="standby-dev-tag">
@@ -601,6 +613,30 @@
             <li><strong>Coffee Breaks:</strong> 20 minutos oficiales en sectores comunes de los pisos 2 y 3.</li>
             <li><strong>Moderación Oficial:</strong> Cada bloque cuenta con Presidente/a, Secretario/a (control estricto de tiempos: avisos a los 10 y 12 min) y Suplente.</li>
           </ul>
+        </div>
+
+        <!-- Accesos Directos Web -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <i class="fa-solid fa-compass text-ocean"></i>
+            <h3>Herramientas Web de Consulta Oficial</h3>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+            <a href="buscador.html" class="btn-download" style="display: flex; align-items: center; justify-content: space-between; text-decoration: none; padding: 10px 14px; border-radius: 8px;">
+              <div style="text-align: left;">
+                <strong style="display: block; font-size: 0.95rem;">🔍 Buscador Rápido de Ponencias</strong>
+                <span style="font-size: 0.8rem; opacity: 0.85;">Encuentre dónde y cuándo expone cada autor o investigación</span>
+              </div>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="estadisticas.html" class="btn-download" style="display: flex; align-items: center; justify-content: space-between; text-decoration: none; padding: 10px 14px; border-radius: 8px; background: #0f172a;">
+              <div style="text-align: left;">
+                <strong style="display: block; font-size: 0.95rem;">📊 Métricas y Estadísticas Oficiales</strong>
+                <span style="font-size: 0.8rem; opacity: 0.85;">211 ponencias, 232 autores y 38+ instituciones</span>
+              </div>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
 
         <!-- Descargar Programa PDF -->
