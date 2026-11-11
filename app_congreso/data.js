@@ -5308,11 +5308,11 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Valparaíso, CR2, COPAS Coastal",
       "trabajos": [
         {
-          "id": "P-015",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
+          "id": "O-069",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "10:15 - 10:30",
+          "sala": "Sala 3.7",
           "titulo": "Bloqueos atmosféricos en el hemisferio sur: una nueva base de datos multimétodo desde latitudes medias hasta la Antártica (1979–2024)",
           "es_principal": true
         }
@@ -5926,11 +5926,11 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Meteorología, Universidad de Valparaíso",
       "trabajos": [
         {
-          "id": "P-043",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
+          "id": "O-026",
+          "tipo": "Oral",
+          "dia": "Día 1",
+          "horario": "15:35 - 15:50",
+          "sala": "Sala 3.7",
           "titulo": "Extremos de calor en Chile central y bloqueo atmosférico: circulación hemisférica y posibles impactos en regiones distantes",
           "es_principal": true
         }
@@ -7812,21 +7812,6 @@ window.CONGRESO_DATA = {
           "horario": "15:35 - 15:50",
           "sala": "Sala 2.5",
           "titulo": "Influence of the Margarita Canyon on Upper Circumpolar Deep Water Intrusion onto the West Antarctic Peninsula Shelf",
-          "es_principal": true
-        }
-      ]
-    },
-    {
-      "nombre": "Rodríguez, Rodrigo Castillo",
-      "inst": "Universidad de Costa Rica",
-      "trabajos": [
-        {
-          "id": "O-069",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "10:15 - 10:30",
-          "sala": "Sala 3.7",
-          "titulo": "Oscilación Antártica: su influencia en la variabilidad interanual de la precipitación en Costa Rica",
           "es_principal": true
         }
       ]
