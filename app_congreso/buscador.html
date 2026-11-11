@@ -60,7 +60,7 @@
     .top-bar {
       background: #ffffff;
       border-bottom: 1px solid var(--border-color);
-      padding: 12px 0;
+      padding: 14px 0;
       position: sticky;
       top: 0;
       z-index: 50;
@@ -70,50 +70,46 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
+      gap: 20px;
       flex-wrap: wrap;
     }
 
     .brand-group {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 18px;
       text-decoration: none;
-      color: inherit;
     }
 
     .brand-logo-main {
-      height: 44px;
+      height: 72px;
       width: auto;
       object-fit: contain;
+      display: block;
+      transition: transform 0.2s ease;
     }
 
-    .brand-logos-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    .brand-logo-main:hover {
+      transform: scale(1.02);
     }
 
-    .brand-logo-partner {
-      height: 32px;
+    .brand-divider {
+      width: 1px;
+      height: 48px;
+      background-color: var(--border-color);
+    }
+
+    .brand-logo-uv {
+      height: 64px;
       width: auto;
       object-fit: contain;
-      opacity: 0.9;
+      display: block;
+      border-radius: 4px;
+      transition: transform 0.2s ease;
     }
 
-    .brand-text h1 {
-      font-size: 15px;
-      font-weight: 800;
-      color: var(--text-main);
-      letter-spacing: -0.3px;
-    }
-
-    .brand-text p {
-      font-size: 11px;
-      color: var(--text-muted);
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+    .brand-logo-uv:hover {
+      transform: scale(1.02);
     }
 
     .top-nav {
@@ -656,8 +652,20 @@
       .results-grid {
         grid-template-columns: 1fr;
       }
-      .brand-logos-row {
-        display: none;
+      .brand-logo-main {
+        height: 52px;
+      }
+      .brand-logo-uv {
+        height: 46px;
+      }
+      .brand-divider {
+        height: 36px;
+      }
+      .top-nav {
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-top: 6px;
       }
     }
   </style>
@@ -667,20 +675,14 @@
   <!-- Top Bar -->
   <header class="top-bar">
     <div class="container top-bar-inner">
-      <a href="index.html" class="brand-group">
-        <img src="logos/logo_ofmc_2026_valparaiso_transparente_2k.png" alt="OFMC 2026" class="brand-logo-main">
-        <div class="brand-text">
-          <h1>OFMC 2026</h1>
-          <p>Valparaíso, Chile</p>
-        </div>
-      </a>
-
-      <!-- Institutional Logos inline -->
-      <div class="brand-logos-row">
-        <img src="logos/logo_uv.png" alt="Universidad de Valparaíso" class="brand-logo-partner" title="Universidad de Valparaíso">
-        <img src="logos/auspiciadores/logo_doca.png" alt="DOCA" class="brand-logo-partner" title="Departamento de Oceanografía - DOCA">
-        <img src="logos/auspiciadores/logo_ecm_pucv.png" alt="PUCV" class="brand-logo-partner" title="Pontificia Universidad Católica de Valparaíso">
-        <img src="logos/logo_lofisat.png" alt="LOFISAT" class="brand-logo-partner" title="LOFISAT">
+      <div class="brand-group">
+        <a href="index.html" title="OFMC 2026 - Ir a la App">
+          <img src="logos/logo_ofmc_2026_valparaiso_transparente_2k.png" alt="OFMC 2026 Valparaíso" class="brand-logo-main">
+        </a>
+        <div class="brand-divider"></div>
+        <a href="https://www.uv.cl" target="_blank" rel="noopener" title="Universidad de Valparaíso - Sede y Organización Oficial">
+          <img src="logos/uv_logo_alta_rgb_azul.jpg" alt="Universidad de Valparaíso" class="brand-logo-uv">
+        </a>
       </div>
 
       <!-- Navigation buttons -->
@@ -780,9 +782,8 @@
     <div class="container">
       <div class="logos-section-title">Instituciones Organizadoras, Patrocinadores y Auspiciadores Oficiales</div>
       <div class="logos-grid">
-        <img src="logos/logo_uv.png" alt="Universidad de Valparaíso" class="logo-item" title="Universidad de Valparaíso">
+        <img src="logos/uv_logo_alta_rgb_azul.jpg" alt="Universidad de Valparaíso" class="logo-item" title="Universidad de Valparaíso (Sede Oficial)">
         <img src="logos/auspiciadores/logo_doca.png" alt="DOCA" class="logo-item" title="Departamento de Oceanografía - DOCA">
-        <img src="logos/auspiciadores/logo_ecm_pucv.png" alt="PUCV" class="logo-item" title="Pontificia Universidad Católica de Valparaíso">
         <img src="logos/logo_lofisat.png" alt="LOFISAT" class="logo-item" title="LOFISAT">
         <img src="logos/auspiciadores/logo_ing_oceanica_uv.png" alt="Ingeniería Oceánica UV" class="logo-item" title="Ingeniería Oceánica UV">
         <img src="logos/auspiciadores/logo_copas_coastal.png" alt="COPAS Coastal" class="logo-item" title="COPAS Coastal">
@@ -799,7 +800,7 @@
         <img src="logos/auspiciadores/logo_snp.png" alt="SNP" class="logo-item" title="Sociedad Nacional de Pesca (SNP)">
         <img src="logos/CEACC.jpeg" alt="CEACC" class="logo-item" title="Centro de Estudios Avanzados en Cuencas Costeras (CEACC)">
         <img src="logos/costar_GRANDE.jpg" alt="COSTAR" class="logo-item" title="COSTAR">
-        <img src="logos/logo_omare.png" alt="OMARE" class="logo-item" title="OMARE">
+        <img src="logos/omare.png" alt="OMARE" class="logo-item" title="OMARE">
       </div>
     </div>
   </section>
