@@ -760,9 +760,10 @@
           
           <!-- Modalidad -->
           <div class="filter-group" id="tipoFilterGroup">
-            <button class="chip-btn active" data-type="all">Todos (211)</button>
-            <button class="chip-btn" data-type="Oral">🎙️ Orales (112)</button>
-            <button class="chip-btn" data-type="Póster">📌 Pósters (99)</button>
+            <button class="chip-btn active" data-type="all">Todas (<span id="count-all">211</span>)</button>
+        <button class="chip-btn" data-type="Magistral">⭐ Magistrales (<span id="count-mag">3</span>)</button>
+        <button class="chip-btn" data-type="Oral">🎙️ Orales (<span id="count-oral">109</span>)</button>
+        <button class="chip-btn" data-type="Póster">📌 Pósters (<span id="count-post">99</span>)</button>
           </div>
 
           <!-- Día -->
@@ -864,7 +865,17 @@
         return;
       }
 
-      const allItems = [...(data.orales || []), ...(data.posters || [])];
+      const magistrales = (data.eventos_especiales || []).filter(e => e.tipo === 'Magistral');
+      const allItems = [...magistrales, ...(data.orales || []), ...(data.posters || [])];
+      
+      const cAll = document.getElementById('count-all');
+      const cMag = document.getElementById('count-mag');
+      const cOral = document.getElementById('count-oral');
+      const cPost = document.getElementById('count-post');
+      if (cAll) cAll.textContent = allItems.length;
+      if (cMag) cMag.textContent = magistrales.length;
+      if (cOral) cOral.textContent = (data.orales || []).length;
+      if (cPost) cPost.textContent = (data.posters || []).length;
       
       // Populate Ejes
       const ejesSet = new Set();
@@ -918,9 +929,10 @@
         }
 
         const html = items.map(p => {
+          const isMag = p.tipo === 'Magistral';
           const isOral = p.tipo === 'Oral';
-          const typeClass = isOral ? 'oral' : 'poster';
-          const typeLabel = isOral ? 'Oral' : 'Póster';
+          const typeClass = isMag ? 'magistral' : (isOral ? 'oral' : 'poster');
+          const typeLabel = isMag ? 'Conferencia Magistral' : (isOral ? 'Oral' : 'Póster');
           const dayPretty = p.dia_label ? p.dia_label.replace(/\s*\(.*?\)/, '') : `Día ${p.dia_num}`;
 
           return `

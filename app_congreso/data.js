@@ -304,12 +304,15 @@ window.CONGRESO_DATA = {
       "end_time": "10:00",
       "horario": "09:00 - 10:00",
       "sala": "Auditorio FACSO",
-      "titulo": "Conferencia Magistral 3: Por Confirmar",
-      "autor": "Conferencista Internacional (Por confirmar)",
-      "inst": "Invitado/a Internacional (Por confirmar)",
-      "descripcion": "Tercera conferencia plenaria internacional de especialista invitado en dinámica y modelación atmosférico-oceánica de gran escala.",
+      "titulo": "Circulación profunda y mezcla en la Fosa de Atacama",
+      "autor": "Dr. Oscar Pizarro Arriagada",
+      "inst": "Departamento de Geofísica (DGEO), Instituto Milenio de Oceanografía (IMO) y Centro de Instrumentación Oceanográfica (CIO), Universidad de Concepción",
+      "descripcion": "Conferencia Magistral Plenaria 3 dictada por el Dr. Oscar Pizarro Arriagada (DGEO / IMO / CIO, Universidad de Concepción). Aborda la dinámica física de aguas profundas y hadales, variabilidad de la circulación, presión de fondo y procesos de mezcla topográficamente inducida en la Fosa de Atacama a partir de mediciones del Sistema Integrado de Observación del Océano Profundo (IDOOS). Coautores: O. Ulloa, M. Moreno, N. Ramírez.",
       "tipo": "Magistral",
-      "categoria": "Plenaria"
+      "categoria": "Plenaria",
+      "conferencista": "Dr. Oscar Pizarro Arriagada (con O. Ulloa, M. Moreno, N. Ramírez)",
+      "abstract": "La Fosa de Atacama constituye un ambiente hadal excepcional del Pacífico Suroriental, donde la dinámica física de las aguas profundas y hadales permanece escasamente documentada. En este trabajo se analiza la variabilidad de la circulación profunda, la presión de fondo y su posible relación con procesos de mezcla topográficamente inducida, utilizando observaciones del Sistema Integrado de Observación del Océano Profundo (IDOOS). Las mediciones incluyen corrientes registradas en un anclaje instalado sobre aproximadamente 7770 m de profundidad, con correntómetros a ~4620, 6440 y 7580 m, junto con sensores de presión de fondo FetchAZA distribuidos entre el talud continental, el eje de la fosa y la placa oceánica. Las corrientes muestran un flujo medio aproximadamente alineado con el eje de la fosa y dirigido hacia el norte, sobre el cual se superponen fluctuaciones subinerciales intensas con periodos de ~10–90 días. Los espectros rotatorios revelan picos diurnos y semidiurnos, además de una razón de polarización consistente con dinámica de ondas internas, tanto a profundidades abisales como hadales. Las series de presión de fondo presentan una señal altamente coherente entre sensores; tras remover las mareas, se observa un primer modo EOF que explica el 90%. Los residuos y gradientes de presión transversales sugieren variabilidad local/baroclínica y corrientes geostróficas parcialmente coherentes con las observaciones. Estos resultados indican que la Fosa de Atacama es un sistema dinámicamente activo, donde mareas, ondas internas, gradientes hadales de presión y topografía contribuyen a modular la circulación profunda y la mezcla local.",
+      "eje": "Conferencia Magistral Plenaria"
     },
     {
       "id": "EV-14",
@@ -1476,7 +1479,7 @@ window.CONGRESO_DATA = {
       "sala": "Sala 2.5",
       "sesion": "Bloque 11: Oceanografía Física Regional (Subtema: Sistemas de Observación Marina, Plataformas Autónomas y Aguas Polares)",
       "eje": "Interacción Océano-Atmósfera",
-      "autor": "ANDRÉS ALBERTO VARAS GÓMEZ",
+      "autor": "Andrés Alberto Varas Gómez",
       "inst": "Instituto Fomento Pesquero",
       "titulo": "Portal SIOM: Sistema de Integración de Observaciones Marinas, Instituto Fomento Pesquero",
       "email": "andres.varas.g@gmail.com",
@@ -1906,26 +1909,6 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-074",
-      "dia_num": 3,
-      "fecha": "2026-11-26",
-      "dia_label": "Día 3",
-      "horario": "11:00 - 11:15",
-      "start_time": "11:00",
-      "end_time": "11:15",
-      "sala": "Sala 2.5",
-      "sesion": "Bloque 15: Oceanografía Física Regional (Subtema: Masas de Agua y Sistema de Corrientes)",
-      "eje": "Oceanografía Física Regional",
-      "autor": "Oscar pizarro",
-      "inst": "Departamento de Geofísica (DGEO), Instituto Milenio de Oceanografía (IMO) y Centro de Instrumentación Oceanográfica (CIO), Universidad de Concepción (UdeC)",
-      "titulo": "Circulación profunda y mezcla en la Fosa de Atacama",
-      "email": "opizarro@udec.cl",
-      "pres": "Dra. Vera Oerder",
-      "sec": "Dr. Marcus Sobarzo",
-      "sup": "Dr. Oscar Pizarro",
-      "tipo": "Oral"
-    },
-    {
       "id": "O-075",
       "dia_num": 3,
       "fecha": "2026-11-26",
@@ -1946,13 +1929,13 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-076",
+      "id": "O-074",
       "dia_num": 3,
       "fecha": "2026-11-26",
       "dia_label": "Día 3",
-      "horario": "11:15 - 11:30",
-      "start_time": "11:15",
-      "end_time": "11:30",
+      "horario": "11:00 - 11:15",
+      "start_time": "11:00",
+      "end_time": "11:15",
       "sala": "Sala 2.5",
       "sesion": "Bloque 15: Oceanografía Física Regional (Subtema: Masas de Agua y Sistema de Corrientes)",
       "eje": "Oceanografía Física Regional",
@@ -2016,7 +1999,7 @@ window.CONGRESO_DATA = {
       "sala": "Sala 3.7",
       "sesion": "Bloque 18: Variabilidad Climática (Subtema: Modelación Climática Regional y Downscaling)",
       "eje": "Variabilidad Climática",
-      "autor": "FELIPE ANTONIO SANCHEZ GONZALEZ",
+      "autor": "Felipe Antonio Sánchez González",
       "inst": "UNIVERSIDAD DE VALPARAÍSO",
       "titulo": "Diferenciación de cardúmenes juveniles y adultos de anchoveta a partir de variables ambientales mediante modelos estadísticos y de aprendizaje automático en distintas fases de El Niño-Oscilación del Sur",
       "email": "felipe.sanchezg@postgrado.uv.cl",
@@ -2698,7 +2681,7 @@ window.CONGRESO_DATA = {
       "sala": "Sectores Comunes Pisos 2 y 3",
       "sesion": "Sesión de Pósters Día 2",
       "eje": "Interacción Océano-Atmósfera",
-      "autor": "ANDRÉS ALBERTO VARAS GÓMEZ",
+      "autor": "Andrés Alberto Varas Gómez",
       "inst": "Instituto Fomento Pesquero",
       "titulo": "Del océano al dato: monitoreo y acceso abierto mediante SIOM-IFOP (Sistema Integrado de Observación Marina)",
       "email": "andres.varas.g@gmail.com",
@@ -2798,7 +2781,7 @@ window.CONGRESO_DATA = {
       "sala": "Sectores Comunes Pisos 2 y 3",
       "sesion": "Sesión de Pósters Día 2",
       "eje": "Meteorología Regional",
-      "autor": "BRUNO IVÁN VARGAS CRESPO",
+      "autor": "Bruno Iván Vargas Crespo",
       "inst": "DIRECCIÓN METEOROLÓGICA DE CHILE",
       "titulo": "CARACTERIZACIÓN DE PATRONES ESPACIALES DE PRECIPITACIÓN  EN LA CUENCA DE SANTIAGO",
       "email": "bruno.vargas@dgac.gob.cl",
@@ -3338,7 +3321,7 @@ window.CONGRESO_DATA = {
       "sala": "Sectores Comunes Pisos 2 y 3",
       "sesion": "Sesión de Pósters Día 3",
       "eje": "Acoplamiento físico-biogeoquímico",
-      "autor": "CONSTANZA YISSELL HERNANDEZ URBANO",
+      "autor": "Constanza Yissell Hernández Urbano",
       "inst": "Pontificia Universidad Católica de Valparaíso y Núcleo Milenio DEOXS",
       "titulo": "Forzantes físicos y biogeoquímicos que influyen en la variabilidad temporal del óxido nitroso en la capa superficial frente a Valparaíso.",
       "email": "constanza.hernandez@pucv.cl",
@@ -4792,7 +4775,7 @@ window.CONGRESO_DATA = {
       "horario": "10:00 a 11:30 hrs",
       "sala": "Sala 2.5",
       "sesion": "Oceanografía Física Regional — Subtema: Masas de Agua y Sistema de Corrientes",
-      "codigos": "O-066 a O-071 (6 ponencias)",
+      "codigos": "O-066 a O-074 (5 ponencias)",
       "pres": "Dra. Vera Oerder",
       "inst_pres": "",
       "sec": "Dr. Marcus Sobarzo",
@@ -5364,6 +5347,21 @@ window.CONGRESO_DATA = {
       ]
     },
     {
+      "nombre": "CRESPO, BRUNO IVÁN VARGAS",
+      "inst": "DIRECCIÓN METEOROLÓGICA DE CHILE",
+      "trabajos": [
+        {
+          "id": "P-006",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "CARACTERIZACIÓN DE PATRONES ESPACIALES DE PRECIPITACIÓN  EN LA CUENCA DE SANTIAGO",
+          "es_principal": true
+        }
+      ]
+    },
+    {
       "nombre": "Caballero, Tomás",
       "inst": "CEAZA",
       "trabajos": [
@@ -5757,21 +5755,6 @@ window.CONGRESO_DATA = {
       ]
     },
     {
-      "nombre": "CRESPO, BRUNO IVÁN VARGAS",
-      "inst": "DIRECCIÓN METEOROLÓGICA DE CHILE",
-      "trabajos": [
-        {
-          "id": "P-006",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "CARACTERIZACIÓN DE PATRONES ESPACIALES DE PRECIPITACIÓN  EN LA CUENCA DE SANTIAGO",
-          "es_principal": true
-        }
-      ]
-    },
-    {
       "nombre": "Cuevas, Macarena Isadora Pérez",
       "inst": "Universidad Austral de Chile",
       "trabajos": [
@@ -6042,6 +6025,21 @@ window.CONGRESO_DATA = {
       ]
     },
     {
+      "nombre": "GONZALEZ, FELIPE ANTONIO SANCHEZ",
+      "inst": "UNIVERSIDAD DE VALPARAÍSO",
+      "trabajos": [
+        {
+          "id": "O-079",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 3.7",
+          "titulo": "Diferenciación de cardúmenes juveniles y adultos de anchoveta a partir de variables ambientales mediante modelos estadísticos y de aprendizaje automático en distintas fases de El Niño-Oscilación del Sur",
+          "es_principal": true
+        }
+      ]
+    },
+    {
       "nombre": "Gaete, Javier Alfredo Aguirre",
       "inst": "Universidad de Valparaíso",
       "trabajos": [
@@ -6177,21 +6175,6 @@ window.CONGRESO_DATA = {
       ]
     },
     {
-      "nombre": "GONZALEZ, FELIPE ANTONIO SANCHEZ",
-      "inst": "UNIVERSIDAD DE VALPARAÍSO",
-      "trabajos": [
-        {
-          "id": "O-079",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "11:50 - 12:05",
-          "sala": "Sala 3.7",
-          "titulo": "Diferenciación de cardúmenes juveniles y adultos de anchoveta a partir de variables ambientales mediante modelos estadísticos y de aprendizaje automático en distintas fases de El Niño-Oscilación del Sur",
-          "es_principal": true
-        }
-      ]
-    },
-    {
       "nombre": "González Reyes, Álvaro",
       "inst": "Universidad Austral de Chile",
       "trabajos": [
@@ -6282,21 +6265,6 @@ window.CONGRESO_DATA = {
       ]
     },
     {
-      "nombre": "Gómez, Allison Caitlin Espinoza",
-      "inst": "Universidad Andrés Bello",
-      "trabajos": [
-        {
-          "id": "O-047",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "12:05 - 12:20",
-          "sala": "Sala 2.5",
-          "titulo": "Evidencia estratigráfica y paleoecológica de subsidencia cosísmica asociada a los terremotos de 1960 y 1575",
-          "es_principal": true
-        }
-      ]
-    },
-    {
       "nombre": "GÓMEZ, ANDRÉS ALBERTO VARAS",
       "inst": "Instituto Fomento Pesquero",
       "trabajos": [
@@ -6316,6 +6284,21 @@ window.CONGRESO_DATA = {
           "horario": "17:00 - 19:00",
           "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Del océano al dato: monitoreo y acceso abierto mediante SIOM-IFOP (Sistema Integrado de Observación Marina)",
+          "es_principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Gómez, Allison Caitlin Espinoza",
+      "inst": "Universidad Andrés Bello",
+      "trabajos": [
+        {
+          "id": "O-047",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "12:05 - 12:20",
+          "sala": "Sala 2.5",
+          "titulo": "Evidencia estratigráfica y paleoecológica de subsidencia cosísmica asociada a los terremotos de 1960 y 1575",
           "es_principal": true
         }
       ]
@@ -7340,6 +7323,9 @@ window.CONGRESO_DATA = {
           "titulo": "Circulación profunda del Pacífico Sur Oriental: desafíos para su caracterización mediante observaciones y modelación numérica",
           "es_principal": true
         }
+      ],
+      "codigos": [
+        "O-074"
       ]
     },
     {
@@ -7577,8 +7563,8 @@ window.CONGRESO_DATA = {
       ]
     },
     {
-      "nombre": "pizarro, Oscar",
-      "inst": "Departamento de Geofísica (DGEO), Instituto Milenio de Oceanografía (IMO) y Centro de Instrumentación Oceanográfica (CIO), Universidad de Concepción (UdeC)",
+      "nombre": "Pizarro Arriagada, Oscar",
+      "inst": "Departamento de Geofísica (DGEO), Instituto Milenio de Oceanografía (IMO) y Centro de Instrumentación Oceanográfica (CIO), Universidad de Concepción",
       "trabajos": [
         {
           "id": "O-074",
@@ -7589,6 +7575,13 @@ window.CONGRESO_DATA = {
           "titulo": "Circulación profunda y mezcla en la Fosa de Atacama",
           "es_principal": true
         }
+      ],
+      "tipo": "Magistral",
+      "codigos": [
+        "CM-03"
+      ],
+      "titulos": [
+        "Circulación profunda y mezcla en la Fosa de Atacama"
       ]
     },
     {
@@ -8407,21 +8400,6 @@ window.CONGRESO_DATA = {
       ]
     },
     {
-      "nombre": "Ulloa, Noelia Vejar",
-      "inst": "(1)Departamento de Geofísica, Facultad de Ciencias Físicas y Matemáticas, Universidad de Concepción, Concepción, Chile. (2) Programa de Magister en Geofísica, Departamento de Geofísica, Facultad de Ciencias Físicas y Matemáticas, Universidad de Concepción, Concepción, Chile.",
-      "trabajos": [
-        {
-          "id": "O-071",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "10:30 - 10:45",
-          "sala": "Sala 3.7",
-          "titulo": "Impacto del cambio climático en la actividad de remolinos de mesoescala y su transporte de calor en el Pacífico suroriental",
-          "es_principal": true
-        }
-      ]
-    },
-    {
       "nombre": "URBANO, CONSTANZA YISSELL HERNANDEZ",
       "inst": "Pontificia Universidad Católica de Valparaíso y Núcleo Milenio DEOXS",
       "trabajos": [
@@ -8432,6 +8410,21 @@ window.CONGRESO_DATA = {
           "horario": "17:00 - 19:00",
           "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Forzantes físicos y biogeoquímicos que influyen en la variabilidad temporal del óxido nitroso en la capa superficial frente a Valparaíso.",
+          "es_principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "Ulloa, Noelia Vejar",
+      "inst": "(1)Departamento de Geofísica, Facultad de Ciencias Físicas y Matemáticas, Universidad de Concepción, Concepción, Chile. (2) Programa de Magister en Geofísica, Departamento de Geofísica, Facultad de Ciencias Físicas y Matemáticas, Universidad de Concepción, Concepción, Chile.",
+      "trabajos": [
+        {
+          "id": "O-071",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "10:30 - 10:45",
+          "sala": "Sala 3.7",
+          "titulo": "Impacto del cambio climático en la actividad de remolinos de mesoescala y su transporte de calor en el Pacífico suroriental",
           "es_principal": true
         }
       ]
@@ -8774,12 +8767,11 @@ window.CONGRESO_DATA = {
     }
   ],
   "totales": {
-    "orales": 112,
+    "orales": 111,
     "posters": 95,
-    "trabajos_totales": 211,
-    "autores_unicos": 232,
-    "dias": 4,
-    "total": 207
+    "magistrales": 3,
+    "total_ponencias": 209,
+    "autores_unicos": 231
   },
   "guia_gastronomica": {
     "sector": "Plaza O'Higgins y Barrio El Almendral",

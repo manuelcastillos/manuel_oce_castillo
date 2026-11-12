@@ -834,7 +834,17 @@
       const data = window.CONGRESO_DATA;
       if (!data) return;
 
-      const allItems = [...(data.orales || []), ...(data.posters || [])];
+      const magistrales = (data.eventos_especiales || []).filter(e => e.tipo === 'Magistral');
+      const allItems = [...magistrales, ...(data.orales || []), ...(data.posters || [])];
+      
+      const elTot = document.getElementById('kpiTotal');
+      const elOral = document.getElementById('kpiOrales');
+      const elPost = document.getElementById('kpiPosters');
+      const elAut = document.getElementById('kpiAutores');
+      if (elTot) elTot.textContent = allItems.length;
+      if (elOral) elOral.textContent = (data.orales || []).length;
+      if (elPost) elPost.textContent = (data.posters || []).length;
+      if (elAut) elAut.textContent = (data.autores || []).length;
       const total = allItems.length;
 
       // 1. Ejes Breakdown
