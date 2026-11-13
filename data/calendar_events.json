@@ -424,18 +424,18 @@
     "recurring": true
   },
   {
-    "summary": "Presentacion Proyecto Magíster - UdeC",
-    "start": "2026-03-31T08:45:00-03:00",
-    "end": "2026-03-31T10:30:00-03:00",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Defensa Proyecto Daniel O.",
     "start": "2026-03-31T08:45:00-03:00",
     "end": "2026-03-31T11:00:00-03:00",
     "location": "Reunión de Microsoft Teams",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentacion Proyecto Magíster - UdeC",
+    "start": "2026-03-31T08:45:00-03:00",
+    "end": "2026-03-31T10:30:00-03:00",
+    "location": "",
     "description": "",
     "recurring": true
   },
@@ -1324,6 +1324,14 @@
     "start": "2026-12-01T11:00:00-03:00",
     "end": "2026-12-01T12:00:00-03:00",
     "location": "https://meet.google.com/wic-zjwe-rjs",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Jornada FONDECYT SUBGEI",
+    "start": "2027-01-18T09:30:00-03:00",
+    "end": "2027-01-18T16:30:00-03:00",
+    "location": "",
     "description": "",
     "recurring": true
   }
