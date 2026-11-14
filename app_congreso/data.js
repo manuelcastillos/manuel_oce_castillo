@@ -699,10 +699,10 @@ window.CONGRESO_DATA = {
       "sala": "Sala 2.5",
       "sesion": "Bloque 01: Oceanografía de Estuarios y Zonas Costeras (Subtema: Fiordos, Canales y Patagonia)",
       "eje": "Oceanografía de Estuarios y Zonas Costeras",
-      "autor": "Gonzalo Sebastián Saldías Yau",
-      "inst": "Departamento de Física, Facultad de Ciencias, Universidad del Bío-Bío, Chile",
-      "titulo": "Energetic pathways of upwelling-front instabilities over a submarine canyon",
-      "email": "gsaldias@ubiobio.cl",
+      "autor": "Dr. Marcus Sobarzo",
+      "inst": "Departamento de Oceanografía, COPAS COASTAL, Universidad de Concepción",
+      "titulo": "Surgencia costera en Chile Centro Sur: Estado del conocimiento y tendencias en el enfriamiento superficial de los últimos 80 años",
+      "email": "msobarz@udec.cl",
       "pres": "Camila Paz Sola",
       "sec": "Dr. Iván Pérez-Santos",
       "sup": "Sergio A. Rosales",
@@ -1799,13 +1799,13 @@ window.CONGRESO_DATA = {
       "sala": "Sala 2.5",
       "sesion": "Bloque 15: Oceanografía Física Regional (Subtema: Masas de Agua y Sistema de Corrientes)",
       "eje": "Oceanografía Física Regional",
-      "autor": "Marcus Sobarzo",
-      "inst": "Departamento de Oceanografía, COPAS COASTAL, Universidad de Concepción",
-      "titulo": "Surgencia costera en Chile Centro Sur: Estado del conocimiento y tendencias en el enfriamiento superficial de los últimos 80 años",
-      "email": "msobarz@udec.cl",
+      "autor": "Dr. Gonzalo Sebastián Saldías Yau",
+      "inst": "Departamento de Física, Facultad de Ciencias, Universidad del Bío-Bío, Chile",
+      "titulo": "Energetic pathways of upwelling-front instabilities over a submarine canyon",
+      "email": "gsaldias@ubiobio.cl",
       "pres": "Dra. Vera Oerder",
-      "sec": "Dr. Marcus Sobarzo",
-      "sup": "Dr. Oscar Pizarro",
+      "sec": "Dr. Gonzalo Saldías",
+      "sup": "Dr. Oscar Pizarro Arriagada",
       "tipo": "Oral"
     },
     {
@@ -1909,6 +1909,26 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
+      "id": "O-074",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
+      "horario": "11:00 - 11:15",
+      "start_time": "11:00",
+      "end_time": "11:15",
+      "sala": "Sala 2.5",
+      "sesion": "Bloque 15: Oceanografía Física Regional (Subtema: Masas de Agua y Sistema de Corrientes)",
+      "eje": "Oceanografía Física Regional",
+      "autor": "Vera Oerder",
+      "inst": "Departamento de Oceanografia e Instituto Milenio de Oceanografia, Facultad de Ciencias Naturales y oceanografica, Universidad de Concepcion",
+      "titulo": "Circulación profunda del Pacífico Sur Oriental: desafíos para su caracterización mediante observaciones y modelación numérica",
+      "email": "vera.oerder@imo-chile.cl",
+      "pres": "Dra. Vera Oerder",
+      "sec": "Dr. Marcus Sobarzo",
+      "sup": "Dr. Oscar Pizarro",
+      "tipo": "Oral"
+    },
+    {
       "id": "O-075",
       "dia_num": 3,
       "fecha": "2026-11-26",
@@ -1929,23 +1949,23 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
-      "id": "O-074",
+      "id": "O-076",
       "dia_num": 3,
       "fecha": "2026-11-26",
       "dia_label": "Día 3",
-      "horario": "11:00 - 11:15",
-      "start_time": "11:00",
-      "end_time": "11:15",
+      "horario": "11:15 - 11:30",
+      "start_time": "11:15",
+      "end_time": "11:30",
       "sala": "Sala 2.5",
       "sesion": "Bloque 15: Oceanografía Física Regional (Subtema: Masas de Agua y Sistema de Corrientes)",
       "eje": "Oceanografía Física Regional",
-      "autor": "Vera Oerder",
-      "inst": "Departamento de Oceanografia e Instituto Milenio de Oceanografia, Facultad de Ciencias Naturales y oceanografica, Universidad de Concepcion",
-      "titulo": "Circulación profunda del Pacífico Sur Oriental: desafíos para su caracterización mediante observaciones y modelación numérica",
-      "email": "vera.oerder@imo-chile.cl",
+      "autor": "Andrea Piñones",
+      "inst": "1 Instituto de Ciencias Marinas y Limnológicas, Universidad Austral de Chile. 2 Centro COPAS Coastal, Concepción, Chile. 3 Instituto Milenio BASE, Santiago, Chile",
+      "titulo": "Balance atmósfera-océano durante olas de calor marinas nunca antes registradas en la Península Antártica",
+      "email": "andrea.pinones@uach.cl",
       "pres": "Dra. Vera Oerder",
-      "sec": "Dr. Marcus Sobarzo",
-      "sup": "Dr. Oscar Pizarro",
+      "sec": "Dr. Gonzalo Saldías",
+      "sup": "Dr. Oscar Pizarro Arriagada",
       "tipo": "Oral"
     },
     {
@@ -2606,26 +2626,6 @@ window.CONGRESO_DATA = {
       "pres": "Valerie Alejandra Villegas Gamboa",
       "sec": "Luke Carberry",
       "sup": "Mauro Pinto-Juica",
-      "tipo": "Oral"
-    },
-    {
-      "id": "O-110",
-      "dia_num": 4,
-      "fecha": "2026-11-27",
-      "dia_label": "Día 4",
-      "horario": "11:35 - 11:50",
-      "start_time": "11:35",
-      "end_time": "11:50",
-      "sala": "Sala 3.7",
-      "sesion": "Bloque 26: Energías Renovables no Convencionales (Subtema: Recurso Eólico, Oleaje y Clima Futuro)",
-      "eje": "Interacción Océano-Atmósfera",
-      "autor": "Andrea Piñones",
-      "inst": "1 Instituto de Ciencias Marinas y Limnológicas, Universidad Austral de Chile. 2 Centro COPAS Coastal, Concepción, Chile. 3 Instituto Milenio BASE, Santiago, Chile",
-      "titulo": "Balance atmósfera-océano durante olas de calor marinas nunca antes registradas en la Península Antártica",
-      "email": "andrea.pinones@uach.cl",
-      "pres": "Dra. Andrea Piñones",
-      "sec": "Ovidio Llompart",
-      "sup": "Amin Kadim Ali Cordero",
       "tipo": "Oral"
     },
     {
@@ -4775,10 +4775,10 @@ window.CONGRESO_DATA = {
       "horario": "10:00 a 11:30 hrs",
       "sala": "Sala 2.5",
       "sesion": "Oceanografía Física Regional — Subtema: Masas de Agua y Sistema de Corrientes",
-      "codigos": "O-066 a O-074 (5 ponencias)",
+      "codigos": "O-066 a O-076 (6 ponencias)",
       "pres": "Dra. Vera Oerder",
       "inst_pres": "",
-      "sec": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Gonzalo Saldías",
       "inst_sec": "",
       "sup": "Dr. Oscar Pizarro"
     },
@@ -4929,8 +4929,8 @@ window.CONGRESO_DATA = {
       "horario": "11:20 a 12:05 hrs",
       "sala": "Sala 3.7",
       "sesion": "Energías Renovables no Convencionales — Subtema: Recurso Eólico, Oleaje y Clima Futuro",
-      "codigos": "O-110 a O-112 (3 ponencias)",
-      "pres": "Dra. Andrea Piñones",
+      "codigos": "O-108 a O-112 (2 ponencias)",
+      "pres": "Dr. Ovidio Llompart",
       "inst_pres": "",
       "sec": "Ovidio Llompart",
       "inst_sec": "",
@@ -7636,6 +7636,9 @@ window.CONGRESO_DATA = {
           "titulo": "Efectos del forzamiento del viento y la descarga de agua dulce sobre la hidrografía y estabilidad termohalina de un fiordo subantártico.",
           "es_principal": false
         }
+      ],
+      "codigos": [
+        "O-076"
       ]
     },
     {
@@ -8217,6 +8220,9 @@ window.CONGRESO_DATA = {
           "titulo": "Surgencia costera en Chile Centro Sur: Estado del conocimiento y tendencias en el enfriamiento superficial de los últimos 80 años",
           "es_principal": true
         }
+      ],
+      "codigos": [
+        "O-013"
       ]
     },
     {
@@ -8625,6 +8631,9 @@ window.CONGRESO_DATA = {
           "titulo": "Energetic pathways of upwelling-front instabilities over a submarine canyon",
           "es_principal": true
         }
+      ],
+      "codigos": [
+        "O-068"
       ]
     },
     {
