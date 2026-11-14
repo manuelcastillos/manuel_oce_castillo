@@ -38,8 +38,8 @@ window.CONGRESO_DATA = {
       "COSTAR"
     ],
     "total_orales": 112,
-    "total_posters": 101,
-    "total_autores": 203
+    "total_posters": 95,
+    "total_autores": 232
   },
   "dias": [
     {
@@ -2289,6 +2289,30 @@ window.CONGRESO_DATA = {
       "tipo": "Oral"
     },
     {
+      "id": "O-091B",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3",
+      "horario": "15:00 - 15:15",
+      "start_time": "15:00",
+      "end_time": "15:15",
+      "sala": "Sala 3.7",
+      "sesion": "Bloque 20: Variabilidad Climática (Subtema: Variabilidad Hidroclimática, Nieve y Recursos Hídricos)",
+      "eje": "Meteorología Regional",
+      "autor": "Álvaro Marco Figueroa López",
+      "inst": "Universidad de Valparaíso",
+      "titulo": "Caracterización de condiciones asociadas a errores extremos en el pronóstico de caudales",
+      "email": "alvaro.figueroal@postgrado.uv.cl",
+      "autores": [
+        "Álvaro Marco Figueroa López",
+        "Jorge Arévalo"
+      ],
+      "autores_texto": "Álvaro Marco Figueroa López, Jorge Arévalo",
+      "pres": "Fernanda Véliz C.",
+      "sec": "Dr. Jorge Arévalo B.",
+      "sup": "Dr. Roberto Francisco Rondanelli Rojas (Director CR2 / DGF Universidad de Chile)"
+    },
+    {
       "id": "O-093",
       "dia_num": 3,
       "fecha": "2026-11-26",
@@ -3271,6 +3295,26 @@ window.CONGRESO_DATA = {
       "tipo": "Póster"
     },
     {
+      "id": "P-080",
+      "dia_num": 2,
+      "fecha": "2026-11-25",
+      "dia_label": "Día 2",
+      "horario": "17:00 - 19:00",
+      "start_time": "17:00",
+      "end_time": "19:00",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters — Día 2",
+      "eje": "Variabilidad Climática",
+      "autor": "Leonor Gabriela Valdés Calderón",
+      "inst": "Departamento de Geofísica, Universidad de Chile (DGF-UCh)",
+      "titulo": "Recuperación del espesor óptico de aerosoles en el ex-observatorio astronómico solar Montezuma",
+      "email": "leonor.valdes@ug.uchile.cl",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
+      "tipo": "Póster"
+    },
+    {
       "id": "P-033",
       "dia_num": 3,
       "fecha": "2026-11-26",
@@ -3522,7 +3566,7 @@ window.CONGRESO_DATA = {
       "sesion": "Sesión de Pósters Día 3",
       "eje": "Variabilidad Climática",
       "autor": "Francisca Esperanza Mendoza Arcos",
-      "inst": "Universidad de Chile",
+      "inst": "Universidad de Chile / Dirección Meteorológica de Chile",
       "titulo": "Relación de la intensidad de la precipitación a escala subdiaria con la temperatura y vapor de agua en Chile central",
       "email": "francishope05@gmail.com",
       "pres": "Dra. Laura Farías",
@@ -4165,26 +4209,6 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Concepción",
       "titulo": "Caracterización espaciotemporal de remolinos de mesoescala mediante un nuevo método de identificación",
       "email": "jrojas2019@udec.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
-      "sup": "Matías Pavez",
-      "tipo": "Póster"
-    },
-    {
-      "id": "P-080",
-      "dia_num": 4,
-      "fecha": "2026-11-27",
-      "dia_label": "Día 4 (Viernes 27 Noviembre)",
-      "horario": "13:30 - 15:00",
-      "start_time": "13:30",
-      "end_time": "15:00",
-      "sala": "Sectores Comunes Pisos 2 y 3",
-      "sesion": "Sesión de Pósters Día 4",
-      "eje": "Variabilidad Climática",
-      "autor": "Leonor Gabriela Valdés Calderón",
-      "inst": "Departamento de Geofísica, Universidad de Chile (DGF-UCh)",
-      "titulo": "Recuperación del espesor óptico de aerosoles en el ex-observatorio astronómico solar Montezuma",
-      "email": "leonor.valdes@ug.uchile.cl",
       "pres": "Dr. Boris Dewitte",
       "sec": "",
       "sup": "Matías Pavez",
@@ -4845,7 +4869,7 @@ window.CONGRESO_DATA = {
       "horario": "14:15 a 15:15 hrs",
       "sala": "Sala 3.7",
       "sesion": "Variabilidad Climática — Subtema: Variabilidad Hidroclimática, Nieve y Recursos Hídricos",
-      "codigos": "O-090 a O-092 (3 ponencias)",
+      "codigos": "O-087 a O-091B (4 ponencias)",
       "pres": "Fernanda Véliz C.",
       "inst_pres": "",
       "sec": "Dr. Jorge Arévalo B.",
@@ -4943,7 +4967,7 @@ window.CONGRESO_DATA = {
       "horario": "17:00 a 19:00 hrs",
       "sala": "Sectores Comunes Pisos 2 y 3",
       "sesion": "Meteorología y Clima / Procesos Oceanográficos — Subtema: Convección, Calidad del Aire, Clima de Oleaje y ZMO",
-      "codigos": "P-001 a P-034 (34 pósters)",
+      "codigos": "P-001 a P-032 y P-080 (33 pósters)",
       "pres": "Dra. Catalina Aguirre",
       "inst_pres": "",
       "sec": "Dr. Deniz Bozkurt",
@@ -4971,7 +4995,7 @@ window.CONGRESO_DATA = {
       "horario": "13:30 a 15:00 hrs",
       "sala": "Sectores Comunes Pisos 2 y 3",
       "sesion": "Meteorología y Clima / Procesos Oceanográficos — Subtema: Nieve Andina, Circulación Profunda, Fosa de Atacama y Energía Marina",
-      "codigos": "P-069 a P-101 (33 pósters)",
+      "codigos": "P-067 a P-099 (32 pósters)",
       "pres": "Dra. Carolina Parada",
       "inst_pres": "",
       "sec": "Dr. Diego Narváez",
@@ -5178,6 +5202,15 @@ window.CONGRESO_DATA = {
           "sala": "Sala 3.7",
           "titulo": "HidroCL ante eventos extremos: anticipar para gestionar",
           "es_principal": false
+        },
+        {
+          "id": "O-091B",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "15:00 - 15:15",
+          "sala": "Sala 3.7",
+          "titulo": "Caracterización de condiciones asociadas a errores extremos en el pronóstico de caudales",
+          "es_principal": false
         }
       ]
     },
@@ -5347,21 +5380,6 @@ window.CONGRESO_DATA = {
       ]
     },
     {
-      "nombre": "CRESPO, BRUNO IVÁN VARGAS",
-      "inst": "DIRECCIÓN METEOROLÓGICA DE CHILE",
-      "trabajos": [
-        {
-          "id": "P-006",
-          "tipo": "Póster",
-          "dia": "Día 2",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "CARACTERIZACIÓN DE PATRONES ESPACIALES DE PRECIPITACIÓN  EN LA CUENCA DE SANTIAGO",
-          "es_principal": true
-        }
-      ]
-    },
-    {
       "nombre": "Caballero, Tomás",
       "inst": "CEAZA",
       "trabajos": [
@@ -5392,8 +5410,8 @@ window.CONGRESO_DATA = {
         {
           "id": "P-080",
           "tipo": "Póster",
-          "dia": "Día 4",
-          "horario": "13:30 - 15:00",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
           "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Recuperación del espesor óptico de aerosoles en el ex-observatorio astronómico solar Montezuma",
           "es_principal": true
@@ -5755,6 +5773,21 @@ window.CONGRESO_DATA = {
       ]
     },
     {
+      "nombre": "CRESPO, BRUNO IVÁN VARGAS",
+      "inst": "DIRECCIÓN METEOROLÓGICA DE CHILE",
+      "trabajos": [
+        {
+          "id": "P-006",
+          "tipo": "Póster",
+          "dia": "Día 2",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "CARACTERIZACIÓN DE PATRONES ESPACIALES DE PRECIPITACIÓN  EN LA CUENCA DE SANTIAGO",
+          "es_principal": true
+        }
+      ]
+    },
+    {
       "nombre": "Cuevas, Macarena Isadora Pérez",
       "inst": "Universidad Austral de Chile",
       "trabajos": [
@@ -5995,6 +6028,24 @@ window.CONGRESO_DATA = {
       ]
     },
     {
+      "nombre": "Figueroa López, Álvaro Marco",
+      "inst": "Universidad de Valparaíso",
+      "codigos": [
+        "O-091B"
+      ],
+      "trabajos": [
+        {
+          "id": "O-091B",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "15:00 - 15:15",
+          "sala": "Sala 3.7",
+          "titulo": "Caracterización de condiciones asociadas a errores extremos en el pronóstico de caudales",
+          "es_principal": true
+        }
+      ]
+    },
+    {
       "nombre": "Frías, Antonia Ricci",
       "inst": "Universidad Austral de Chile",
       "trabajos": [
@@ -6020,21 +6071,6 @@ window.CONGRESO_DATA = {
           "horario": "17:00 - 19:00",
           "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Producción primaria y respiración de la materia orgánica en la bahía de Valparaíso durante dos períodos consecutivos de primavera – verano.",
-          "es_principal": true
-        }
-      ]
-    },
-    {
-      "nombre": "GONZALEZ, FELIPE ANTONIO SANCHEZ",
-      "inst": "UNIVERSIDAD DE VALPARAÍSO",
-      "trabajos": [
-        {
-          "id": "O-079",
-          "tipo": "Oral",
-          "dia": "Día 3",
-          "horario": "11:50 - 12:05",
-          "sala": "Sala 3.7",
-          "titulo": "Diferenciación de cardúmenes juveniles y adultos de anchoveta a partir de variables ambientales mediante modelos estadísticos y de aprendizaje automático en distintas fases de El Niño-Oscilación del Sur",
           "es_principal": true
         }
       ]
@@ -6175,6 +6211,21 @@ window.CONGRESO_DATA = {
       ]
     },
     {
+      "nombre": "GONZALEZ, FELIPE ANTONIO SANCHEZ",
+      "inst": "UNIVERSIDAD DE VALPARAÍSO",
+      "trabajos": [
+        {
+          "id": "O-079",
+          "tipo": "Oral",
+          "dia": "Día 3",
+          "horario": "11:50 - 12:05",
+          "sala": "Sala 3.7",
+          "titulo": "Diferenciación de cardúmenes juveniles y adultos de anchoveta a partir de variables ambientales mediante modelos estadísticos y de aprendizaje automático en distintas fases de El Niño-Oscilación del Sur",
+          "es_principal": true
+        }
+      ]
+    },
+    {
       "nombre": "González Reyes, Álvaro",
       "inst": "Universidad Austral de Chile",
       "trabajos": [
@@ -6265,6 +6316,21 @@ window.CONGRESO_DATA = {
       ]
     },
     {
+      "nombre": "Gómez, Allison Caitlin Espinoza",
+      "inst": "Universidad Andrés Bello",
+      "trabajos": [
+        {
+          "id": "O-047",
+          "tipo": "Oral",
+          "dia": "Día 2",
+          "horario": "12:05 - 12:20",
+          "sala": "Sala 2.5",
+          "titulo": "Evidencia estratigráfica y paleoecológica de subsidencia cosísmica asociada a los terremotos de 1960 y 1575",
+          "es_principal": true
+        }
+      ]
+    },
+    {
       "nombre": "GÓMEZ, ANDRÉS ALBERTO VARAS",
       "inst": "Instituto Fomento Pesquero",
       "trabajos": [
@@ -6284,21 +6350,6 @@ window.CONGRESO_DATA = {
           "horario": "17:00 - 19:00",
           "sala": "Sectores Comunes Pisos 2 y 3",
           "titulo": "Del océano al dato: monitoreo y acceso abierto mediante SIOM-IFOP (Sistema Integrado de Observación Marina)",
-          "es_principal": true
-        }
-      ]
-    },
-    {
-      "nombre": "Gómez, Allison Caitlin Espinoza",
-      "inst": "Universidad Andrés Bello",
-      "trabajos": [
-        {
-          "id": "O-047",
-          "tipo": "Oral",
-          "dia": "Día 2",
-          "horario": "12:05 - 12:20",
-          "sala": "Sala 2.5",
-          "titulo": "Evidencia estratigráfica y paleoecológica de subsidencia cosísmica asociada a los terremotos de 1960 y 1575",
           "es_principal": true
         }
       ]
@@ -8406,21 +8457,6 @@ window.CONGRESO_DATA = {
       ]
     },
     {
-      "nombre": "URBANO, CONSTANZA YISSELL HERNANDEZ",
-      "inst": "Pontificia Universidad Católica de Valparaíso y Núcleo Milenio DEOXS",
-      "trabajos": [
-        {
-          "id": "P-035",
-          "tipo": "Póster",
-          "dia": "Día 3",
-          "horario": "17:00 - 19:00",
-          "sala": "Sectores Comunes Pisos 2 y 3",
-          "titulo": "Forzantes físicos y biogeoquímicos que influyen en la variabilidad temporal del óxido nitroso en la capa superficial frente a Valparaíso.",
-          "es_principal": true
-        }
-      ]
-    },
-    {
       "nombre": "Ulloa, Noelia Vejar",
       "inst": "(1)Departamento de Geofísica, Facultad de Ciencias Físicas y Matemáticas, Universidad de Concepción, Concepción, Chile. (2) Programa de Magister en Geofísica, Departamento de Geofísica, Facultad de Ciencias Físicas y Matemáticas, Universidad de Concepción, Concepción, Chile.",
       "trabajos": [
@@ -8431,6 +8467,21 @@ window.CONGRESO_DATA = {
           "horario": "10:30 - 10:45",
           "sala": "Sala 3.7",
           "titulo": "Impacto del cambio climático en la actividad de remolinos de mesoescala y su transporte de calor en el Pacífico suroriental",
+          "es_principal": true
+        }
+      ]
+    },
+    {
+      "nombre": "URBANO, CONSTANZA YISSELL HERNANDEZ",
+      "inst": "Pontificia Universidad Católica de Valparaíso y Núcleo Milenio DEOXS",
+      "trabajos": [
+        {
+          "id": "P-035",
+          "tipo": "Póster",
+          "dia": "Día 3",
+          "horario": "17:00 - 19:00",
+          "sala": "Sectores Comunes Pisos 2 y 3",
+          "titulo": "Forzantes físicos y biogeoquímicos que influyen en la variabilidad temporal del óxido nitroso en la capa superficial frente a Valparaíso.",
           "es_principal": true
         }
       ]
@@ -8776,11 +8827,11 @@ window.CONGRESO_DATA = {
     }
   ],
   "totales": {
-    "orales": 111,
+    "orales": 112,
     "posters": 95,
     "magistrales": 3,
-    "total_ponencias": 209,
-    "autores_unicos": 231
+    "total_ponencias": 210,
+    "autores_unicos": 232
   },
   "guia_gastronomica": {
     "sector": "Plaza O'Higgins y Barrio El Almendral",
