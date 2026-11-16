@@ -1,0 +1,44 @@
+name: Monitoreo Bandeja OFMC 2026 (Cada 3 Horas)
+
+on:
+  schedule:
+    # Ejecuta cada 3 horas (00:00, 03:00, 06:00, 09:00, 12:00, 15:00, 18:00, 21:00 UTC)
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  monitor_inbox:
+    name: Verificar Consultas de Autores y Enviar Reporte
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del Repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Ejecutar Monitoreo de Bandeja y Despacho de Reporte
+        env:
+          GMAIL_USER: "ofmc2026@gmail.com"
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          REPORT_RECIPIENT: "manuel.castillo@uv.cl"
+          CC_RECIPIENT: "ofmc2026@gmail.com"
+        run: |
+          python scripts/monitor_inbox.py --force-report
+
+      - name: Guardar estado de monitoreo si hubo cambios
+        run: |
+          git config --global user.name 'GitHub Actions - OFMC Monitor'
+          git config --global user.email 'ofmc2026-monitor@github.com'
+          git add scripts/monitor_state.json || true
+          if git diff --cached --quiet; then
+            echo "Sin cambios en estado de monitoreo."
+          else
+            git commit -m "chore: actualizar estado de monitoreo de bandeja [skip ci]"
+            git push
+          fi
