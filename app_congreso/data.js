@@ -958,11 +958,11 @@ window.CONGRESO_DATA = {
       "end_time": "15:50",
       "sala": "Sala 3.7",
       "sesion": "Bloque 04: Meteorología Regional y Variabilidad Climática (Subtema: Extremos: Olas de Calor e Incendios Forestales)",
-      "eje": "Meteorología Regional",
-      "autor": "Emilio Callejas, Deniz Bozkurt",
-      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
-      "titulo": "Extremos de calor en Chile central y bloqueo atmosférico: circulación hemisférica y posibles impactos en regiones distantes",
-      "email": "deniz.bozkurt@uv.cl",
+      "eje": "Variabilidad Climática",
+      "autor": "María Victoria Moya",
+      "inst": "Pontificia Universidad Católica de Chile",
+      "titulo": "Identificación y clasificación de mecanismos generadores de olas de calor en Chile central",
+      "email": "moyav.victoria@gmail.com",
       "pres": "Natalia Elena Ruiz Zenteno",
       "sec": "Dr. Martín Jacques-Coper",
       "sup": "Manuel Suazo Álvarez (Universidad Austral de Chile / CR2)",
@@ -3511,6 +3511,26 @@ window.CONGRESO_DATA = {
       "tipo": "Póster"
     },
     {
+      "id": "P-043",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3 (Jueves 26 Noviembre)",
+      "horario": "17:00 - 19:00",
+      "start_time": "17:00",
+      "end_time": "19:00",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
+      "eje": "Meteorología Regional",
+      "autor": "Emilio Callejas, Dr. Deniz Bozkurt",
+      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
+      "titulo": "Extremos de calor en Chile central y bloqueo atmosférico: circulación hemisférica y posibles impactos en regiones distantes",
+      "email": "deniz.bozkurt@uv.cl",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
+      "sup": "Gabriel Correa",
+      "tipo": "Póster"
+    },
+    {
       "id": "P-044",
       "dia_num": 3,
       "fecha": "2026-11-26",
@@ -4305,26 +4325,6 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Geofísica, Universidad de Chile",
       "titulo": "Influencia de los incendios forestales en el derretimiento glaciar: cambios en el albedo de los glaciares de la cuenca alta del río Olivares tras el incendio de “Las Máquinas” debido a la deposición de partículas absorbentes de luz",
       "email": "amanda.magnere@ug.uchile.cl",
-      "pres": "Dr. Marcus Sobarzo",
-      "sec": "Dr. Boris Dewitte",
-      "sup": "Matías Pavez",
-      "tipo": "Póster"
-    },
-    {
-      "id": "P-085",
-      "dia_num": 4,
-      "fecha": "2026-11-27",
-      "dia_label": "Día 4 (Viernes 27 Noviembre)",
-      "horario": "13:30 - 15:00",
-      "start_time": "13:30",
-      "end_time": "15:00",
-      "sala": "Sectores Comunes Pisos 2 y 3",
-      "sesion": "Sesión de Pósters Día 4",
-      "eje": "Variabilidad Climática",
-      "autor": "María Victoria Moya",
-      "inst": "Pontificia Universidad Católica de Chile",
-      "titulo": "Identificación y clasificación de mecanismos generadores de olas de calor en Chile central",
-      "email": "moyav.victoria@gmail.com",
       "pres": "Dr. Marcus Sobarzo",
       "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
@@ -5567,17 +5567,17 @@ window.CONGRESO_DATA = {
     },
     {
       "nombre": "Deniz Bozkurt",
-      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
+      "inst": "Universidad de Valparaíso, CR2, COPAS Coastal",
       "trabajos": [
-        {
-          "codigo": "O-026",
-          "tipo": "Oral",
-          "titulo": "Extremos de calor en Chile central y bloqueo atmosférico: circulación hemisférica y posibles impactos en regiones distantes"
-        },
         {
           "codigo": "O-069",
           "tipo": "Oral",
           "titulo": "Bloqueos atmosféricos en el hemisferio sur: una nueva base de datos multimétodo desde latitudes medias hasta la Antártica (1979–2024)"
+        },
+        {
+          "codigo": "P-043",
+          "tipo": "Póster",
+          "titulo": "Extremos de calor en Chile central y bloqueo atmosférico: circulación hemisférica y posibles impactos en regiones distantes"
         }
       ]
     },
@@ -5657,8 +5657,8 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Meteorología, Universidad de Valparaíso",
       "trabajos": [
         {
-          "codigo": "O-026",
-          "tipo": "Oral",
+          "codigo": "P-043",
+          "tipo": "Póster",
           "titulo": "Extremos de calor en Chile central y bloqueo atmosférico: circulación hemisférica y posibles impactos en regiones distantes"
         }
       ]
@@ -6513,8 +6513,8 @@ window.CONGRESO_DATA = {
       "inst": "Pontificia Universidad Católica de Chile",
       "trabajos": [
         {
-          "codigo": "P-085",
-          "tipo": "Póster",
+          "codigo": "O-026",
+          "tipo": "Oral",
           "titulo": "Identificación y clasificación de mecanismos generadores de olas de calor en Chile central"
         }
       ]
