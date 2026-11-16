@@ -465,7 +465,7 @@ window.CONGRESO_DATA = {
       "email": "cp.solahidalgo@gmail.com",
       "pres": "Camila Paz Sola",
       "sec": "Dr. Iván Pérez-Santos",
-      "sup": "Sergio A. Rosales",
+      "sup": "Sergio A. Rosales (Universidad Austral de Chile)",
       "tipo": "Oral"
     },
     {
@@ -485,7 +485,7 @@ window.CONGRESO_DATA = {
       "email": "amairani.leyva@ug.uchile.cl",
       "pres": "Amairani Leyva",
       "sec": "Cameron Wunderlin",
-      "sup": "Dr. Boris Barja",
+      "sup": "Dr. Boris Barja (Universidad de Magallanes)",
       "tipo": "Oral"
     },
     {
@@ -505,7 +505,7 @@ window.CONGRESO_DATA = {
       "email": "ivan.perez@ulagos.cl",
       "pres": "Camila Paz Sola",
       "sec": "Dr. Iván Pérez-Santos",
-      "sup": "Sergio A. Rosales",
+      "sup": "Sergio A. Rosales (Universidad Austral de Chile)",
       "tipo": "Oral"
     },
     {
@@ -525,7 +525,7 @@ window.CONGRESO_DATA = {
       "email": "jmolivares00@gmail.com",
       "pres": "Amairani Leyva",
       "sec": "Cameron Wunderlin",
-      "sup": "Dr. Boris Barja",
+      "sup": "Dr. Boris Barja (Universidad de Magallanes)",
       "tipo": "Oral"
     },
     {
@@ -545,7 +545,7 @@ window.CONGRESO_DATA = {
       "email": "srosales@iacspa.cl",
       "pres": "Camila Paz Sola",
       "sec": "Dr. Iván Pérez-Santos",
-      "sup": "Sergio A. Rosales",
+      "sup": "Sergio A. Rosales (Universidad Austral de Chile)",
       "tipo": "Oral"
     },
     {
@@ -565,7 +565,7 @@ window.CONGRESO_DATA = {
       "email": "bbarja@gmail.com",
       "pres": "Amairani Leyva",
       "sec": "Cameron Wunderlin",
-      "sup": "Dr. Boris Barja",
+      "sup": "Dr. Boris Barja (Universidad de Magallanes)",
       "tipo": "Oral"
     },
     {
@@ -585,7 +585,7 @@ window.CONGRESO_DATA = {
       "email": "sbahamondez@udec.cl",
       "pres": "Camila Paz Sola",
       "sec": "Dr. Iván Pérez-Santos",
-      "sup": "Sergio A. Rosales",
+      "sup": "Sergio A. Rosales (Universidad Austral de Chile)",
       "tipo": "Oral"
     },
     {
@@ -605,7 +605,7 @@ window.CONGRESO_DATA = {
       "email": "camila.quijada.meza@gmail.com",
       "pres": "Amairani Leyva",
       "sec": "Cameron Wunderlin",
-      "sup": "Dr. Boris Barja",
+      "sup": "Dr. Boris Barja (Universidad de Magallanes)",
       "tipo": "Oral"
     },
     {
@@ -625,7 +625,7 @@ window.CONGRESO_DATA = {
       "email": "leandro@watermind.space",
       "pres": "Camila Paz Sola",
       "sec": "Dr. Iván Pérez-Santos",
-      "sup": "Sergio A. Rosales",
+      "sup": "Sergio A. Rosales (Universidad Austral de Chile)",
       "tipo": "Oral"
     },
     {
@@ -645,7 +645,7 @@ window.CONGRESO_DATA = {
       "email": "jh.contrerasibanez@gmail.com",
       "pres": "Amairani Leyva",
       "sec": "Cameron Wunderlin",
-      "sup": "Dr. Boris Barja",
+      "sup": "Dr. Boris Barja (Universidad de Magallanes)",
       "tipo": "Oral"
     },
     {
@@ -665,7 +665,7 @@ window.CONGRESO_DATA = {
       "email": "cescauri@uc.cl",
       "pres": "Camila Paz Sola",
       "sec": "Dr. Iván Pérez-Santos",
-      "sup": "Sergio A. Rosales",
+      "sup": "Sergio A. Rosales (Universidad Austral de Chile)",
       "tipo": "Oral"
     },
     {
@@ -685,7 +685,7 @@ window.CONGRESO_DATA = {
       "email": "jherreb@uc.cl",
       "pres": "Amairani Leyva",
       "sec": "Cameron Wunderlin",
-      "sup": "Dr. Boris Barja",
+      "sup": "Dr. Boris Barja (Universidad de Magallanes)",
       "tipo": "Oral"
     },
     {
@@ -705,7 +705,7 @@ window.CONGRESO_DATA = {
       "email": "msobarz@udec.cl",
       "pres": "Camila Paz Sola",
       "sec": "Dr. Iván Pérez-Santos",
-      "sup": "Sergio A. Rosales",
+      "sup": "Sergio A. Rosales (Universidad Austral de Chile)",
       "tipo": "Oral"
     },
     {
@@ -725,7 +725,7 @@ window.CONGRESO_DATA = {
       "email": "cameron.wunderlin@noaa.gov",
       "pres": "Amairani Leyva",
       "sec": "Cameron Wunderlin",
-      "sup": "Dr. Boris Barja",
+      "sup": "Dr. Boris Barja (Universidad de Magallanes)",
       "tipo": "Oral"
     },
     {
@@ -745,7 +745,7 @@ window.CONGRESO_DATA = {
       "email": "pablo.hernandezt@usm.cl",
       "pres": "Dra. Megan Williams",
       "sec": "Pablo Ignacio Hernández Tapia",
-      "sup": "Raúl Flores Audibert",
+      "sup": "Raúl Flores Audibert (Universidad Técnica Federico Santa María)",
       "tipo": "Oral"
     },
     {
@@ -760,12 +760,12 @@ window.CONGRESO_DATA = {
       "sesion": "Bloque 04: Meteorología Regional y Variabilidad Climática (Subtema: Extremos: Olas de Calor e Incendios Forestales)",
       "eje": "Meteorología Regional",
       "autor": "Manuel Suazo Álvarez",
-      "inst": "Laboratorio de Dendrocronología y Cambio Global, Universidad Austral de Chile, Valdivia, Chile; Centro de Ciencia del Clima y la Resiliencia CR2",
-      "titulo": "Señales intraestacionales precursoras de incendios forestales extremos en Chile centro-sur",
-      "email": "manu.suazo@gmail.com",
+      "inst": "Departamento de Geofísica, Universidad de Concepción, Chile",
+      "titulo": "Señales intraestacionales precursoras de incendios forestales extremos en Chile central",
+      "email": "manuelsuazo@udec.cl",
       "pres": "Natalia Elena Ruiz Zenteno",
       "sec": "Dr. Martín Jacques-Coper",
-      "sup": "Manuel Suazo Álvarez",
+      "sup": "Manuel Suazo Álvarez (Universidad Austral de Chile / CR2)",
       "tipo": "Oral"
     },
     {
@@ -785,7 +785,7 @@ window.CONGRESO_DATA = {
       "email": "raul.flores@usm.cl",
       "pres": "Dra. Megan Williams",
       "sec": "Pablo Ignacio Hernández Tapia",
-      "sup": "Raúl Flores Audibert",
+      "sup": "Raúl Flores Audibert (Universidad Técnica Federico Santa María)",
       "tipo": "Oral"
     },
     {
@@ -805,7 +805,7 @@ window.CONGRESO_DATA = {
       "email": "naruiz2019@udec.cl",
       "pres": "Natalia Elena Ruiz Zenteno",
       "sec": "Dr. Martín Jacques-Coper",
-      "sup": "Manuel Suazo Álvarez",
+      "sup": "Manuel Suazo Álvarez (Universidad Austral de Chile / CR2)",
       "tipo": "Oral"
     },
     {
@@ -825,7 +825,7 @@ window.CONGRESO_DATA = {
       "email": "osvaldo.artal@ufrontera.cl",
       "pres": "Dra. Megan Williams",
       "sec": "Pablo Ignacio Hernández Tapia",
-      "sup": "Raúl Flores Audibert",
+      "sup": "Raúl Flores Audibert (Universidad Técnica Federico Santa María)",
       "tipo": "Oral"
     },
     {
@@ -845,7 +845,7 @@ window.CONGRESO_DATA = {
       "email": "martinjacques@udec.cl",
       "pres": "Natalia Elena Ruiz Zenteno",
       "sec": "Dr. Martín Jacques-Coper",
-      "sup": "Manuel Suazo Álvarez",
+      "sup": "Manuel Suazo Álvarez (Universidad Austral de Chile / CR2)",
       "tipo": "Oral"
     },
     {
@@ -865,7 +865,7 @@ window.CONGRESO_DATA = {
       "email": "megan.williams@uc.cl",
       "pres": "Dra. Megan Williams",
       "sec": "Pablo Ignacio Hernández Tapia",
-      "sup": "Raúl Flores Audibert",
+      "sup": "Raúl Flores Audibert (Universidad Técnica Federico Santa María)",
       "tipo": "Oral"
     },
     {
@@ -885,7 +885,7 @@ window.CONGRESO_DATA = {
       "email": "alvaro.gonzalez@uach.cl",
       "pres": "Natalia Elena Ruiz Zenteno",
       "sec": "Dr. Martín Jacques-Coper",
-      "sup": "Manuel Suazo Álvarez",
+      "sup": "Manuel Suazo Álvarez (Universidad Austral de Chile / CR2)",
       "tipo": "Oral"
     },
     {
@@ -905,7 +905,7 @@ window.CONGRESO_DATA = {
       "email": "carlos.buritica@postgrado.uv.cl",
       "pres": "Dra. Megan Williams",
       "sec": "Pablo Ignacio Hernández Tapia",
-      "sup": "Raúl Flores Audibert",
+      "sup": "Raúl Flores Audibert (Universidad Técnica Federico Santa María)",
       "tipo": "Oral"
     },
     {
@@ -925,7 +925,7 @@ window.CONGRESO_DATA = {
       "email": "jpetitlaurent@alumnos.uai.cl",
       "pres": "Natalia Elena Ruiz Zenteno",
       "sec": "Dr. Martín Jacques-Coper",
-      "sup": "Manuel Suazo Álvarez",
+      "sup": "Manuel Suazo Álvarez (Universidad Austral de Chile / CR2)",
       "tipo": "Oral"
     },
     {
@@ -945,7 +945,7 @@ window.CONGRESO_DATA = {
       "email": "ignacio.ryks@usm.cl",
       "pres": "Dra. Megan Williams",
       "sec": "Pablo Ignacio Hernández Tapia",
-      "sup": "Raúl Flores Audibert",
+      "sup": "Raúl Flores Audibert (Universidad Técnica Federico Santa María)",
       "tipo": "Oral"
     },
     {
@@ -959,13 +959,13 @@ window.CONGRESO_DATA = {
       "sala": "Sala 3.7",
       "sesion": "Bloque 04: Meteorología Regional y Variabilidad Climática (Subtema: Extremos: Olas de Calor e Incendios Forestales)",
       "eje": "Variabilidad Climática",
-      "autor": "Emilio Callejas, Deniz Bozkurt",
-      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
-      "titulo": "Extremos de calor en Chile central y bloqueo atmosférico: circulación hemisférica y posibles impactos en regiones distantes",
+      "autor": "Macarena Isadora Pérez Cuevas",
+      "inst": "Universidad Austral de Chile",
+      "titulo": "Climatología de olas de calor sobre un glaciar templado andino y su impacto en el derretimiento",
       "email": "maca.pprz@gmail.com",
       "pres": "Natalia Elena Ruiz Zenteno",
       "sec": "Dr. Martín Jacques-Coper",
-      "sup": "Manuel Suazo Álvarez",
+      "sup": "Manuel Suazo Álvarez (Universidad Austral de Chile / CR2)",
       "tipo": "Oral"
     },
     {
@@ -985,7 +985,7 @@ window.CONGRESO_DATA = {
       "email": "pablo.cordova.m@mail.pucv.cl",
       "pres": "Leonora Pereira Zapata",
       "sec": "Pablo Córdova Montecinos",
-      "sup": "Luis Andrés Bravo Gómez",
+      "sup": "Luis Andrés Bravo Gómez (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1005,7 +1005,7 @@ window.CONGRESO_DATA = {
       "email": "maxiviale@mendoza-conicet.gob.ar",
       "pres": "Dr. René Garreaud",
       "sec": "Maximiliano Viale",
-      "sup": "Dr. Ricardo Muñoz",
+      "sup": "Dr. Ricardo Muñoz (Departamento de Geofísica, Universidad de Chile)",
       "tipo": "Oral"
     },
     {
@@ -1025,7 +1025,7 @@ window.CONGRESO_DATA = {
       "email": "leonora.pereira@usm.cl",
       "pres": "Leonora Pereira Zapata",
       "sec": "Pablo Córdova Montecinos",
-      "sup": "Luis Andrés Bravo Gómez",
+      "sup": "Luis Andrés Bravo Gómez (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1045,7 +1045,7 @@ window.CONGRESO_DATA = {
       "email": "luca.toloza.m@gmail.com",
       "pres": "Dr. René Garreaud",
       "sec": "Maximiliano Viale",
-      "sup": "Dr. Ricardo Muñoz",
+      "sup": "Dr. Ricardo Muñoz (Departamento de Geofísica, Universidad de Chile)",
       "tipo": "Oral"
     },
     {
@@ -1065,7 +1065,7 @@ window.CONGRESO_DATA = {
       "email": "luis.bravo@ucn.cl",
       "pres": "Leonora Pereira Zapata",
       "sec": "Pablo Córdova Montecinos",
-      "sup": "Luis Andrés Bravo Gómez",
+      "sup": "Luis Andrés Bravo Gómez (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1085,7 +1085,7 @@ window.CONGRESO_DATA = {
       "email": "rgarreau@uchile.cl",
       "pres": "Dr. René Garreaud",
       "sec": "Maximiliano Viale",
-      "sup": "Dr. Ricardo Muñoz",
+      "sup": "Dr. Ricardo Muñoz (Departamento de Geofísica, Universidad de Chile)",
       "tipo": "Oral"
     },
     {
@@ -1105,7 +1105,7 @@ window.CONGRESO_DATA = {
       "email": "mario.caceres@uv.cl",
       "pres": "Leonora Pereira Zapata",
       "sec": "Pablo Córdova Montecinos",
-      "sup": "Luis Andrés Bravo Gómez",
+      "sup": "Luis Andrés Bravo Gómez (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1125,7 +1125,7 @@ window.CONGRESO_DATA = {
       "email": "rmunoz@dgf.uchile.cl",
       "pres": "Dr. René Garreaud",
       "sec": "Maximiliano Viale",
-      "sup": "Dr. Ricardo Muñoz",
+      "sup": "Dr. Ricardo Muñoz (Departamento de Geofísica, Universidad de Chile)",
       "tipo": "Oral"
     },
     {
@@ -1145,7 +1145,7 @@ window.CONGRESO_DATA = {
       "email": "cesar.araya.cornejo@gmail.com",
       "pres": "Dra. Maricarmen Guerra Paris",
       "sec": "Cesar Alejandro Araya Cornejo",
-      "sup": "Valeska Alanis Sandoval Tapia",
+      "sup": "Valeska Alanis Sandoval Tapia (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1165,7 +1165,7 @@ window.CONGRESO_DATA = {
       "email": "julio.marin@meteo.uv.cl",
       "pres": "Dra. Lucía Scaff",
       "sec": "Dr. Julio C. Marín Aguado",
-      "sup": "Cristina Belén Verdugo Palma",
+      "sup": "Cristina Belén Verdugo Palma (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1179,13 +1179,13 @@ window.CONGRESO_DATA = {
       "sala": "Sala 2.5",
       "sesion": "Bloque 07: Olas y Tsunamis (Subtema: Oleaje Extremo, Marejadas y Tsunamis)",
       "eje": "Olas y Tsunamis",
-      "autor": "Claudia Silvana Pizarro Silva",
-      "inst": "Universidad de Valparaíso",
-      "titulo": "Pronóstico costero de oleaje y alerta temprana de marejadas en Arica, Pichilemu, Constitución, Corral y Puerto Saavedra",
+      "autor": "Maricarmen Guerra Paris",
+      "inst": "Departamento Ingeniería Civil, Universidad de Concepción; COPAS Coastal",
+      "titulo": "Variaciones del nivel del mar total durante eventos meteorológicos y de oleaje extremos en la región del Biobío",
       "email": "marguerra@udec.cl",
       "pres": "Dra. Maricarmen Guerra Paris",
       "sec": "Cesar Alejandro Araya Cornejo",
-      "sup": "Valeska Alanis Sandoval Tapia",
+      "sup": "Valeska Alanis Sandoval Tapia (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1205,7 +1205,7 @@ window.CONGRESO_DATA = {
       "email": "cristina.verdugop@gmail.com",
       "pres": "Dra. Lucía Scaff",
       "sec": "Dr. Julio C. Marín Aguado",
-      "sup": "Cristina Belén Verdugo Palma",
+      "sup": "Cristina Belén Verdugo Palma (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1225,7 +1225,7 @@ window.CONGRESO_DATA = {
       "email": "sebastian.correa@uv.cl",
       "pres": "Dra. Maricarmen Guerra Paris",
       "sec": "Cesar Alejandro Araya Cornejo",
-      "sup": "Valeska Alanis Sandoval Tapia",
+      "sup": "Valeska Alanis Sandoval Tapia (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1245,7 +1245,7 @@ window.CONGRESO_DATA = {
       "email": "jcampos2020@udec.cl",
       "pres": "Dra. Lucía Scaff",
       "sec": "Dr. Julio C. Marín Aguado",
-      "sup": "Cristina Belén Verdugo Palma",
+      "sup": "Cristina Belén Verdugo Palma (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1265,7 +1265,7 @@ window.CONGRESO_DATA = {
       "email": "valeska.sandoval.t@mail.pucv.cl",
       "pres": "Dra. Maricarmen Guerra Paris",
       "sec": "Cesar Alejandro Araya Cornejo",
-      "sup": "Valeska Alanis Sandoval Tapia",
+      "sup": "Valeska Alanis Sandoval Tapia (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1285,7 +1285,7 @@ window.CONGRESO_DATA = {
       "email": "mscaff@udec.cl",
       "pres": "Dra. Lucía Scaff",
       "sec": "Dr. Julio C. Marín Aguado",
-      "sup": "Cristina Belén Verdugo Palma",
+      "sup": "Cristina Belén Verdugo Palma (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1305,7 +1305,7 @@ window.CONGRESO_DATA = {
       "email": "nelsonqg@gmail.com",
       "pres": "Dra. Lucía Scaff",
       "sec": "Dr. Julio C. Marín Aguado",
-      "sup": "Cristina Belén Verdugo Palma",
+      "sup": "Cristina Belén Verdugo Palma (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1325,7 +1325,7 @@ window.CONGRESO_DATA = {
       "email": "roberto.rondanelli@gmail.com",
       "pres": "Dra. Lucía Scaff",
       "sec": "Dr. Julio C. Marín Aguado",
-      "sup": "Cristina Belén Verdugo Palma",
+      "sup": "Cristina Belén Verdugo Palma (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1345,7 +1345,7 @@ window.CONGRESO_DATA = {
       "email": "javier.aguirregaete@hotmail.com",
       "pres": "Allison Caitlin Espinoza Gómez",
       "sec": "Javier Alfredo Aguirre Gaete",
-      "sup": "Cristian Andrés Salas Dominguez",
+      "sup": "Cristian Andrés Salas Dominguez (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1365,7 +1365,7 @@ window.CONGRESO_DATA = {
       "email": "jab@meteo.uv.cl",
       "pres": "Dr. Raúl Valenzuela",
       "sec": "Jonathan Oberreuter",
-      "sup": "Sebastián Andrés García Loyola",
+      "sup": "Sebastián Andrés García Loyola (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -1385,7 +1385,7 @@ window.CONGRESO_DATA = {
       "email": "allison.espinoza@pucv.cl",
       "pres": "Allison Caitlin Espinoza Gómez",
       "sec": "Javier Alfredo Aguirre Gaete",
-      "sup": "Cristian Andrés Salas Dominguez",
+      "sup": "Cristian Andrés Salas Dominguez (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1405,7 +1405,7 @@ window.CONGRESO_DATA = {
       "email": "raul.valenzuela@uoh.cl",
       "pres": "Dr. Raúl Valenzuela",
       "sec": "Jonathan Oberreuter",
-      "sup": "Sebastián Andrés García Loyola",
+      "sup": "Sebastián Andrés García Loyola (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -1425,7 +1425,7 @@ window.CONGRESO_DATA = {
       "email": "csalas@inpesca.cl",
       "pres": "Allison Caitlin Espinoza Gómez",
       "sec": "Javier Alfredo Aguirre Gaete",
-      "sup": "Cristian Andrés Salas Dominguez",
+      "sup": "Cristian Andrés Salas Dominguez (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1445,7 +1445,7 @@ window.CONGRESO_DATA = {
       "email": "jonysatie@gmail.com",
       "pres": "Dr. Raúl Valenzuela",
       "sec": "Jonathan Oberreuter",
-      "sup": "Sebastián Andrés García Loyola",
+      "sup": "Sebastián Andrés García Loyola (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -1465,7 +1465,7 @@ window.CONGRESO_DATA = {
       "email": "ygarcia0218@gmail.com",
       "pres": "Dr. Raúl Valenzuela",
       "sec": "Jonathan Oberreuter",
-      "sup": "Sebastián Andrés García Loyola",
+      "sup": "Sebastián Andrés García Loyola (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -1485,7 +1485,7 @@ window.CONGRESO_DATA = {
       "email": "andres.varas.g@gmail.com",
       "pres": "Dra. María de los Ángeles Marrero Díaz",
       "sec": "ANDRÉS ALBERTO VARAS GÓMEZ",
-      "sup": "Gustavo Alfredo Rohde Medina",
+      "sup": "Gustavo Alfredo Rohde Medina (LOFISAT, Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1505,7 +1505,7 @@ window.CONGRESO_DATA = {
       "email": "cristian.martinez.v@uai.cl",
       "pres": "Leandra Grisel Loyola Giahette",
       "sec": "Dr. Cristian Martinez-Villalobos",
-      "sup": "Kennedy Richard Gomez Tunque",
+      "sup": "Kennedy Richard Gomez Tunque (UNALM / UNH, Perú)",
       "tipo": "Oral"
     },
     {
@@ -1525,7 +1525,7 @@ window.CONGRESO_DATA = {
       "email": "nicolas.donoso@innovex.cl",
       "pres": "Dra. María de los Ángeles Marrero Díaz",
       "sec": "ANDRÉS ALBERTO VARAS GÓMEZ",
-      "sup": "Gustavo Alfredo Rohde Medina",
+      "sup": "Gustavo Alfredo Rohde Medina (LOFISAT, Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1545,7 +1545,7 @@ window.CONGRESO_DATA = {
       "email": "ingkenri@gmail.com",
       "pres": "Leandra Grisel Loyola Giahette",
       "sec": "Dr. Cristian Martinez-Villalobos",
-      "sup": "Kennedy Richard Gomez Tunque",
+      "sup": "Kennedy Richard Gomez Tunque (UNALM / UNH, Perú)",
       "tipo": "Oral"
     },
     {
@@ -1565,7 +1565,7 @@ window.CONGRESO_DATA = {
       "email": "marina.hernandez@uchile.cl",
       "pres": "Dra. María de los Ángeles Marrero Díaz",
       "sec": "ANDRÉS ALBERTO VARAS GÓMEZ",
-      "sup": "Gustavo Alfredo Rohde Medina",
+      "sup": "Gustavo Alfredo Rohde Medina (LOFISAT, Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1585,7 +1585,7 @@ window.CONGRESO_DATA = {
       "email": "leloyola@alumnos.uai.cl",
       "pres": "Leandra Grisel Loyola Giahette",
       "sec": "Dr. Cristian Martinez-Villalobos",
-      "sup": "Kennedy Richard Gomez Tunque",
+      "sup": "Kennedy Richard Gomez Tunque (UNALM / UNH, Perú)",
       "tipo": "Oral"
     },
     {
@@ -1605,7 +1605,7 @@ window.CONGRESO_DATA = {
       "email": "angeles.marrero@ulpgc.es",
       "pres": "Dra. María de los Ángeles Marrero Díaz",
       "sec": "ANDRÉS ALBERTO VARAS GÓMEZ",
-      "sup": "Gustavo Alfredo Rohde Medina",
+      "sup": "Gustavo Alfredo Rohde Medina (LOFISAT, Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1625,7 +1625,7 @@ window.CONGRESO_DATA = {
       "email": "nantipil2020@udec.cl",
       "pres": "Leandra Grisel Loyola Giahette",
       "sec": "Dr. Cristian Martinez-Villalobos",
-      "sup": "Kennedy Richard Gomez Tunque",
+      "sup": "Kennedy Richard Gomez Tunque (UNALM / UNH, Perú)",
       "tipo": "Oral"
     },
     {
@@ -1645,7 +1645,7 @@ window.CONGRESO_DATA = {
       "email": "spalacios2019@udec.cl",
       "pres": "Sofía Palacios Riveros",
       "sec": "María Paz Almendra Riquelme",
-      "sup": "Sebastián Andrés Díaz Ceballos",
+      "sup": "Sebastián Andrés Díaz Ceballos (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -1665,7 +1665,7 @@ window.CONGRESO_DATA = {
       "email": "giovanna.amaya@uoh.cl",
       "pres": "Dra. Laura Gallardo",
       "sec": "Giovanna Paola Amaya Peña",
-      "sup": "Dr. Nicolás Huneeus",
+      "sup": "Dr. Nicolás Huneeus (Universidad de Chile)",
       "tipo": "Oral"
     },
     {
@@ -1685,7 +1685,7 @@ window.CONGRESO_DATA = {
       "email": "maria.almendra@alumnos.uach.cl",
       "pres": "Sofía Palacios Riveros",
       "sec": "María Paz Almendra Riquelme",
-      "sup": "Sebastián Andrés Díaz Ceballos",
+      "sup": "Sebastián Andrés Díaz Ceballos (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -1705,7 +1705,7 @@ window.CONGRESO_DATA = {
       "email": "lgallard@u.uchile.cl",
       "pres": "Dra. Laura Gallardo",
       "sec": "Giovanna Paola Amaya Peña",
-      "sup": "Dr. Nicolás Huneeus",
+      "sup": "Dr. Nicolás Huneeus (Universidad de Chile)",
       "tipo": "Oral"
     },
     {
@@ -1725,7 +1725,7 @@ window.CONGRESO_DATA = {
       "email": "sebastian.diaz2502@alumnos.ubiobio.cl",
       "pres": "Sofía Palacios Riveros",
       "sec": "María Paz Almendra Riquelme",
-      "sup": "Sebastián Andrés Díaz Ceballos",
+      "sup": "Sebastián Andrés Díaz Ceballos (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -1745,7 +1745,7 @@ window.CONGRESO_DATA = {
       "email": "nhuneeus@uchile.cl",
       "pres": "Dra. Laura Gallardo",
       "sec": "Giovanna Paola Amaya Peña",
-      "sup": "Dr. Nicolás Huneeus",
+      "sup": "Dr. Nicolás Huneeus (Universidad de Chile)",
       "tipo": "Oral"
     },
     {
@@ -1765,7 +1765,7 @@ window.CONGRESO_DATA = {
       "email": "adrian.bustamante@ifop.cl",
       "pres": "Dra. Vera Oerder",
       "sec": "Dr. Marcus Sobarzo",
-      "sup": "Dr. Oscar Pizarro",
+      "sup": "Dr. Oscar Pizarro (Director Científico CIO / IMO / UdeC)",
       "tipo": "Oral"
     },
     {
@@ -1785,7 +1785,7 @@ window.CONGRESO_DATA = {
       "email": "matiasarias97@gmail.com",
       "pres": "Noelia Vejar Ulloa",
       "sec": "Matías Arias Ortega",
-      "sup": "Rodrigo Castillo Rodríguez",
+      "sup": "Rodrigo Castillo Rodríguez (Universidad de Costa Rica)",
       "tipo": "Oral"
     },
     {
@@ -1804,8 +1804,8 @@ window.CONGRESO_DATA = {
       "titulo": "Energetic pathways of upwelling-front instabilities over a submarine canyon",
       "email": "gsaldias@ubiobio.cl",
       "pres": "Dra. Vera Oerder",
-      "sec": "Dr. Gonzalo Saldías",
-      "sup": "Dr. Oscar Pizarro Arriagada",
+      "sec": "Dr. Marcus Sobarzo",
+      "sup": "Dr. Oscar Pizarro (Director Científico CIO / IMO / UdeC)",
       "tipo": "Oral"
     },
     {
@@ -1819,13 +1819,13 @@ window.CONGRESO_DATA = {
       "sala": "Sala 3.7",
       "sesion": "Bloque 16: Variabilidad Climática (Subtema: Teleconexiones y Circulación Hemisférica)",
       "eje": "Variabilidad Climática",
-      "autor": "Deniz Bozkurt",
-      "inst": "Universidad de Valparaíso, CR2, COPAS Coastal",
-      "titulo": "Bloqueos atmosféricos en el hemisferio sur: una nueva base de datos multimétodo desde latitudes medias hasta la Antártica (1979–2024)",
+      "autor": "Rodrigo Castillo Rodríguez",
+      "inst": "Universidad de Costa Rica",
+      "titulo": "Oscilación Antártica: su influencia en la variabilidad interanual de la precipitación en Costa Rica",
       "email": "rodrigo.castillorodriguez@ucr.ac.cr",
       "pres": "Noelia Vejar Ulloa",
       "sec": "Matías Arias Ortega",
-      "sup": "Rodrigo Castillo Rodríguez",
+      "sup": "Rodrigo Castillo Rodríguez (Universidad de Costa Rica)",
       "tipo": "Oral"
     },
     {
@@ -1845,7 +1845,7 @@ window.CONGRESO_DATA = {
       "email": "marcel.ramos.q780@gmail.com",
       "pres": "Dra. Vera Oerder",
       "sec": "Dr. Marcus Sobarzo",
-      "sup": "Dr. Oscar Pizarro",
+      "sup": "Dr. Oscar Pizarro (Director Científico CIO / IMO / UdeC)",
       "tipo": "Oral"
     },
     {
@@ -1865,7 +1865,7 @@ window.CONGRESO_DATA = {
       "email": "nvejar2019@udec.cl",
       "pres": "Noelia Vejar Ulloa",
       "sec": "Matías Arias Ortega",
-      "sup": "Rodrigo Castillo Rodríguez",
+      "sup": "Rodrigo Castillo Rodríguez (Universidad de Costa Rica)",
       "tipo": "Oral"
     },
     {
@@ -1885,7 +1885,7 @@ window.CONGRESO_DATA = {
       "email": "dnarvaez@oceanografia.udec.cl",
       "pres": "Dra. Vera Oerder",
       "sec": "Dr. Marcus Sobarzo",
-      "sup": "Dr. Oscar Pizarro",
+      "sup": "Dr. Oscar Pizarro (Director Científico CIO / IMO / UdeC)",
       "tipo": "Oral"
     },
     {
@@ -1905,7 +1905,7 @@ window.CONGRESO_DATA = {
       "email": "camila.tapiat@usm.cl",
       "pres": "Noelia Vejar Ulloa",
       "sec": "Matías Arias Ortega",
-      "sup": "Rodrigo Castillo Rodríguez",
+      "sup": "Rodrigo Castillo Rodríguez (Universidad de Costa Rica)",
       "tipo": "Oral"
     },
     {
@@ -1925,7 +1925,7 @@ window.CONGRESO_DATA = {
       "email": "vera.oerder@imo-chile.cl",
       "pres": "Dra. Vera Oerder",
       "sec": "Dr. Marcus Sobarzo",
-      "sup": "Dr. Oscar Pizarro",
+      "sup": "Dr. Oscar Pizarro (Director Científico CIO / IMO / UdeC)",
       "tipo": "Oral"
     },
     {
@@ -1945,7 +1945,7 @@ window.CONGRESO_DATA = {
       "email": "catalina.rodriguezj@usm.cl",
       "pres": "Noelia Vejar Ulloa",
       "sec": "Matías Arias Ortega",
-      "sup": "Rodrigo Castillo Rodríguez",
+      "sup": "Rodrigo Castillo Rodríguez (Universidad de Costa Rica)",
       "tipo": "Oral"
     },
     {
@@ -1958,9 +1958,9 @@ window.CONGRESO_DATA = {
       "end_time": "11:30",
       "sala": "Sala 2.5",
       "sesion": "Bloque 15: Oceanografía Física Regional (Subtema: Masas de Agua, Sistema de Corrientes y Dinámica Antártica)",
-      "eje": "Oceanografía Física Regional",
-      "autor": "Andrea Piñones",
-      "inst": "1 Instituto de Ciencias Marinas y Limnológicas, Universidad Austral de Chile. 2 Centro COPAS Coastal, Concepción, Chile. 3 Instituto Milenio BASE, Santiago, Chile",
+      "eje": "Interacción Océano-Atmósfera",
+      "autor": "Dra. Andrea Piñones",
+      "inst": "Universidad Austral de Chile, Centro COPAS Coastal, Instituto Milenio BASE",
       "titulo": "Balance atmósfera-océano durante olas de calor marinas nunca antes registradas en la Península Antártica",
       "email": "andrea.pinones@uach.cl",
       "pres": "Dra. Vera Oerder",
@@ -1985,7 +1985,7 @@ window.CONGRESO_DATA = {
       "email": "ignacio.romagnoli@usm.cl",
       "pres": "Noelia Vejar Ulloa",
       "sec": "Matías Arias Ortega",
-      "sup": "Rodrigo Castillo Rodríguez",
+      "sup": "Rodrigo Castillo Rodríguez (Universidad de Costa Rica)",
       "tipo": "Oral"
     },
     {
@@ -2003,9 +2003,9 @@ window.CONGRESO_DATA = {
       "inst": "Simulación y Pronóstico Marino, SpA",
       "titulo": "Desarrollo de un modelo físico-biogeoquímico en la Patagonia norte de Chile",
       "email": "oddyale@gmail.com",
-      "pres": "Francisca Victoria del Carmen Quijada Mateluna",
-      "sec": "Martina Raquel Monasterio Sandoval",
-      "sup": "Odette Alejandra Vergara Soto",
+      "pres": "Camila Valentina Camposano Sanhueza",
+      "sec": "Francisca Victoria del Carmen Quijada Mateluna",
+      "sup": "Martina Raquel Monasterio Sandoval (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -2025,7 +2025,7 @@ window.CONGRESO_DATA = {
       "email": "felipe.sanchezg@postgrado.uv.cl",
       "pres": "Mariana Hidalgo",
       "sec": "Felipe Antonio Sánchez González",
-      "sup": "Diego Eduardo Duhalde Venegas",
+      "sup": "Diego Eduardo Duhalde Venegas (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -2045,7 +2045,7 @@ window.CONGRESO_DATA = {
       "email": "francisca.quijada.mateluna@gmail.com",
       "pres": "Camila Valentina Camposano Sanhueza",
       "sec": "Francisca Victoria del Carmen Quijada Mateluna",
-      "sup": "Martina Raquel Monasterio Sandoval",
+      "sup": "Martina Raquel Monasterio Sandoval (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -2065,7 +2065,7 @@ window.CONGRESO_DATA = {
       "email": "miguel.lagos@usm.cl",
       "pres": "Mariana Hidalgo",
       "sec": "Felipe Antonio Sánchez González",
-      "sup": "Diego Eduardo Duhalde Venegas",
+      "sup": "Diego Eduardo Duhalde Venegas (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -2085,7 +2085,7 @@ window.CONGRESO_DATA = {
       "email": "martina.monasterio@sansano.usm.cl",
       "pres": "Camila Valentina Camposano Sanhueza",
       "sec": "Francisca Victoria del Carmen Quijada Mateluna",
-      "sup": "Martina Raquel Monasterio Sandoval",
+      "sup": "Martina Raquel Monasterio Sandoval (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -2105,7 +2105,7 @@ window.CONGRESO_DATA = {
       "email": "dduhalde@alumnos.uai.cl",
       "pres": "Mariana Hidalgo",
       "sec": "Felipe Antonio Sánchez González",
-      "sup": "Diego Eduardo Duhalde Venegas",
+      "sup": "Diego Eduardo Duhalde Venegas (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -2125,7 +2125,7 @@ window.CONGRESO_DATA = {
       "email": "jennifervillarroelnenen@gmail.com",
       "pres": "Camila Valentina Camposano Sanhueza",
       "sec": "Francisca Victoria del Carmen Quijada Mateluna",
-      "sup": "Martina Raquel Monasterio Sandoval",
+      "sup": "Martina Raquel Monasterio Sandoval (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -2145,7 +2145,7 @@ window.CONGRESO_DATA = {
       "email": "l.patricio.riquelme25@gmail.com",
       "pres": "Mariana Hidalgo",
       "sec": "Felipe Antonio Sánchez González",
-      "sup": "Diego Eduardo Duhalde Venegas",
+      "sup": "Diego Eduardo Duhalde Venegas (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -2165,7 +2165,7 @@ window.CONGRESO_DATA = {
       "email": "luis.valencia102@alu.ulpgc.es",
       "pres": "Poliana Teresa Leiva Garay",
       "sec": "Luis P. Valencia",
-      "sup": "Vanessa Alejandra Carril Pardo",
+      "sup": "Vanessa Alejandra Carril Pardo (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -2185,7 +2185,7 @@ window.CONGRESO_DATA = {
       "email": "jab@meteo.uv.cl",
       "pres": "Fernanda Véliz C.",
       "sec": "Dr. Jorge Arévalo B.",
-      "sup": "Dr. Roberto Francisco Rondanelli Rojas",
+      "sup": "Dr. Roberto Francisco Rondanelli Rojas (Director CR2 / DGF Universidad de Chile)",
       "tipo": "Oral"
     },
     {
@@ -2205,7 +2205,7 @@ window.CONGRESO_DATA = {
       "email": "poliana.lega@gmail.com",
       "pres": "Poliana Teresa Leiva Garay",
       "sec": "Luis P. Valencia",
-      "sup": "Vanessa Alejandra Carril Pardo",
+      "sup": "Vanessa Alejandra Carril Pardo (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -2225,7 +2225,7 @@ window.CONGRESO_DATA = {
       "email": "mguzman.geof@gmail.com",
       "pres": "Fernanda Véliz C.",
       "sec": "Dr. Jorge Arévalo B.",
-      "sup": "Dr. Roberto Francisco Rondanelli Rojas",
+      "sup": "Dr. Roberto Francisco Rondanelli Rojas (Director CR2 / DGF Universidad de Chile)",
       "tipo": "Oral"
     },
     {
@@ -2245,7 +2245,7 @@ window.CONGRESO_DATA = {
       "email": "ialmendra.a.g@gmail.com",
       "pres": "Poliana Teresa Leiva Garay",
       "sec": "Luis P. Valencia",
-      "sup": "Vanessa Alejandra Carril Pardo",
+      "sup": "Vanessa Alejandra Carril Pardo (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -2265,7 +2265,7 @@ window.CONGRESO_DATA = {
       "email": "fernanda.veliz@usm.cl",
       "pres": "Fernanda Véliz C.",
       "sec": "Dr. Jorge Arévalo B.",
-      "sup": "Dr. Roberto Francisco Rondanelli Rojas",
+      "sup": "Dr. Roberto Francisco Rondanelli Rojas (Director CR2 / DGF Universidad de Chile)",
       "tipo": "Oral"
     },
     {
@@ -2285,7 +2285,7 @@ window.CONGRESO_DATA = {
       "email": "vcarrilpardo@gmail.com",
       "pres": "Poliana Teresa Leiva Garay",
       "sec": "Luis P. Valencia",
-      "sup": "Vanessa Alejandra Carril Pardo",
+      "sup": "Vanessa Alejandra Carril Pardo (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -2303,14 +2303,10 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Valparaíso",
       "titulo": "Caracterización de condiciones asociadas a errores extremos en el pronóstico de caudales",
       "email": "alvaro.figueroal@postgrado.uv.cl",
-      "autores": [
-        "Álvaro Marco Figueroa López",
-        "Jorge Arévalo"
-      ],
-      "autores_texto": "Álvaro Marco Figueroa López, Jorge Arévalo",
       "pres": "Fernanda Véliz C.",
       "sec": "Dr. Jorge Arévalo B.",
-      "sup": "Dr. Roberto Francisco Rondanelli Rojas (Director CR2 / DGF Universidad de Chile)"
+      "sup": "Dr. Roberto Francisco Rondanelli Rojas (Director CR2 / DGF Universidad de Chile)",
+      "tipo": "Oral"
     },
     {
       "id": "O-093",
@@ -2329,7 +2325,7 @@ window.CONGRESO_DATA = {
       "email": "a.bahamondes.d@gmail.com",
       "pres": "Angela Andrea Bahamondes Domínguez",
       "sec": "María Fabiola Monsálvez Opazo",
-      "sup": "Dr. Ángel Rodríguez Santana",
+      "sup": "Dr. Ángel Rodríguez Santana (Universidad de Las Palmas de Gran Canaria)",
       "tipo": "Oral"
     },
     {
@@ -2349,7 +2345,7 @@ window.CONGRESO_DATA = {
       "email": "tomasmusa@gmail.com",
       "pres": "Tomás Roberto Muñoz Salazar",
       "sec": "Álvaro Ossandón",
-      "sup": "Felipe Ríos-Silva",
+      "sup": "Felipe Ríos-Silva (Universidad Austral de Chile)",
       "tipo": "Oral"
     },
     {
@@ -2369,7 +2365,7 @@ window.CONGRESO_DATA = {
       "email": "marmonsalvez@udec.cl",
       "pres": "Angela Andrea Bahamondes Domínguez",
       "sec": "María Fabiola Monsálvez Opazo",
-      "sup": "Dr. Ángel Rodríguez Santana",
+      "sup": "Dr. Ángel Rodríguez Santana (Universidad de Las Palmas de Gran Canaria)",
       "tipo": "Oral"
     },
     {
@@ -2389,7 +2385,7 @@ window.CONGRESO_DATA = {
       "email": "alvaro.ossandon@usm.cl",
       "pres": "Tomás Roberto Muñoz Salazar",
       "sec": "Álvaro Ossandón",
-      "sup": "Felipe Ríos-Silva",
+      "sup": "Felipe Ríos-Silva (Universidad Austral de Chile)",
       "tipo": "Oral"
     },
     {
@@ -2409,7 +2405,7 @@ window.CONGRESO_DATA = {
       "email": "angel.santana@ulpgc.es",
       "pres": "Angela Andrea Bahamondes Domínguez",
       "sec": "María Fabiola Monsálvez Opazo",
-      "sup": "Dr. Ángel Rodríguez Santana",
+      "sup": "Dr. Ángel Rodríguez Santana (Universidad de Las Palmas de Gran Canaria)",
       "tipo": "Oral"
     },
     {
@@ -2429,7 +2425,7 @@ window.CONGRESO_DATA = {
       "email": "fsrios@uc.cl",
       "pres": "Tomás Roberto Muñoz Salazar",
       "sec": "Álvaro Ossandón",
-      "sup": "Felipe Ríos-Silva",
+      "sup": "Felipe Ríos-Silva (Universidad Austral de Chile)",
       "tipo": "Oral"
     },
     {
@@ -2449,7 +2445,7 @@ window.CONGRESO_DATA = {
       "email": "fchirino2020@udec.cl",
       "pres": "Francisca Chirino",
       "sec": "Salma Juliette Espinoza Rivera",
-      "sup": "Matías Pizarro-Koch",
+      "sup": "Matías Pizarro-Koch (Universidad de Concepción / IMO)",
       "tipo": "Oral"
     },
     {
@@ -2469,7 +2465,7 @@ window.CONGRESO_DATA = {
       "email": "felix.marcial@gmail.com",
       "pres": "Dra. Ana María Córdova Leal",
       "sec": "Félix Marcial Carrasco Galleguillos",
-      "sup": "Tomás Caballero",
+      "sup": "Tomás Caballero (CEAZA)",
       "tipo": "Oral"
     },
     {
@@ -2489,7 +2485,7 @@ window.CONGRESO_DATA = {
       "email": "saespinoza2019@udec.cl",
       "pres": "Francisca Chirino",
       "sec": "Salma Juliette Espinoza Rivera",
-      "sup": "Matías Pizarro-Koch",
+      "sup": "Matías Pizarro-Koch (Universidad de Concepción / IMO)",
       "tipo": "Oral"
     },
     {
@@ -2509,7 +2505,7 @@ window.CONGRESO_DATA = {
       "email": "tomas.caballero@ceaza.cl",
       "pres": "Dra. Ana María Córdova Leal",
       "sec": "Félix Marcial Carrasco Galleguillos",
-      "sup": "Tomás Caballero",
+      "sup": "Tomás Caballero (CEAZA)",
       "tipo": "Oral"
     },
     {
@@ -2529,7 +2525,7 @@ window.CONGRESO_DATA = {
       "email": "matias.pizarrok@gmail.com",
       "pres": "Francisca Chirino",
       "sec": "Salma Juliette Espinoza Rivera",
-      "sup": "Matías Pizarro-Koch",
+      "sup": "Matías Pizarro-Koch (Universidad de Concepción / IMO)",
       "tipo": "Oral"
     },
     {
@@ -2549,7 +2545,7 @@ window.CONGRESO_DATA = {
       "email": "urielaguayo19@gmail.com",
       "pres": "Dra. Ana María Córdova Leal",
       "sec": "Félix Marcial Carrasco Galleguillos",
-      "sup": "Tomás Caballero",
+      "sup": "Tomás Caballero (CEAZA)",
       "tipo": "Oral"
     },
     {
@@ -2569,7 +2565,7 @@ window.CONGRESO_DATA = {
       "email": "lenna.ortiz@ciep.cl",
       "pres": "Francisca Chirino",
       "sec": "Salma Juliette Espinoza Rivera",
-      "sup": "Matías Pizarro-Koch",
+      "sup": "Matías Pizarro-Koch (Universidad de Concepción / IMO)",
       "tipo": "Oral"
     },
     {
@@ -2589,7 +2585,7 @@ window.CONGRESO_DATA = {
       "email": "anamaria.cordova@meteo.uv.cl",
       "pres": "Dra. Ana María Córdova Leal",
       "sec": "Félix Marcial Carrasco Galleguillos",
-      "sup": "Tomás Caballero",
+      "sup": "Tomás Caballero (CEAZA)",
       "tipo": "Oral"
     },
     {
@@ -2609,7 +2605,7 @@ window.CONGRESO_DATA = {
       "email": "valerie.villegas.g@mail.pucv.cl",
       "pres": "Valerie Alejandra Villegas Gamboa",
       "sec": "Luke Carberry",
-      "sup": "Mauro Pinto-Juica",
+      "sup": "Mauro Pinto-Juica (Universidad Católica del Norte)",
       "tipo": "Oral"
     },
     {
@@ -2629,7 +2625,7 @@ window.CONGRESO_DATA = {
       "email": "ollompart@udec.cl",
       "pres": "Dra. Andrea Piñones",
       "sec": "Ovidio Llompart",
-      "sup": "Amin Kadim Ali Cordero",
+      "sup": "Amin Kadim Ali Cordero (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -2649,7 +2645,7 @@ window.CONGRESO_DATA = {
       "email": "lcarberry@ucsb.edu",
       "pres": "Valerie Alejandra Villegas Gamboa",
       "sec": "Luke Carberry",
-      "sup": "Mauro Pinto-Juica",
+      "sup": "Mauro Pinto-Juica (Universidad Católica del Norte)",
       "tipo": "Oral"
     },
     {
@@ -2665,11 +2661,11 @@ window.CONGRESO_DATA = {
       "eje": "Desoxigenación e hipoxia",
       "autor": "Mauro Pinto-Juica",
       "inst": "University of Gothenburg",
-      "titulo": "Procesos de mezcla de pequeña escala y su rol en la reconfiguración de las zonas de mínimo de oxígeno",
+      "titulo": "Mauro Pinto",
       "email": "mauro.pinto.j@gu.se",
       "pres": "Valerie Alejandra Villegas Gamboa",
       "sec": "Luke Carberry",
-      "sup": "Mauro Pinto-Juica",
+      "sup": "Mauro Pinto-Juica (Universidad Católica del Norte)",
       "tipo": "Oral"
     },
     {
@@ -2689,7 +2685,7 @@ window.CONGRESO_DATA = {
       "email": "aali2018@udec.cl",
       "pres": "Dra. Andrea Piñones",
       "sec": "Ovidio Llompart",
-      "sup": "Amin Kadim Ali Cordero",
+      "sup": "Amin Kadim Ali Cordero (Universidad de Concepción)",
       "tipo": "Oral"
     }
   ],
@@ -2709,9 +2705,9 @@ window.CONGRESO_DATA = {
       "inst": "Instituto Fomento Pesquero",
       "titulo": "Del océano al dato: monitoreo y acceso abierto mediante SIOM-IFOP (Sistema Integrado de Observación Marina)",
       "email": "andres.varas.g@gmail.com",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -2729,9 +2725,9 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Adventista de Chile",
       "titulo": "Evaluación de emplazamiento y caracterización local del Campo Eléctrico Atmosférico en condiciones de Buen Tiempo",
       "email": "adan.godoy@unach.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -2749,9 +2745,9 @@ window.CONGRESO_DATA = {
       "inst": "Universidade Federal do Rio Grande - FURG",
       "titulo": "Estructura Temporal de la Precipitación: de la Serie Horaria a los Eventos Agregados",
       "email": "alanricardo.97@gmail.com",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -2769,9 +2765,9 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Valparaíso",
       "titulo": "Estudio de las condiciones sinópticas asociadas a eventos de tornados en Chile centro-sur",
       "email": "diana.pozo@uv.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -2789,9 +2785,9 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Federal de Goiás",
       "titulo": "Implementación de sistema integrado de modelación atmosférica y monitoreo ambiental para la gestión de la calidad del aire en Goiás Brasil",
       "email": "angel.chovert@ufg.br",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -2809,9 +2805,9 @@ window.CONGRESO_DATA = {
       "inst": "DIRECCIÓN METEOROLÓGICA DE CHILE",
       "titulo": "CARACTERIZACIÓN DE PATRONES ESPACIALES DE PRECIPITACIÓN  EN LA CUENCA DE SANTIAGO",
       "email": "bruno.vargas@dgac.gob.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -2829,9 +2825,9 @@ window.CONGRESO_DATA = {
       "inst": "Instituto de Física, Pontificia Universidad Católica de Chile, Santiago, Chile",
       "titulo": "Metodología y uso de la Toolbox Global-Krigger en Paleo±Dust",
       "email": "bruno.varela@uc.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -2849,9 +2845,9 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Chile",
       "titulo": "Evaluación de Metodologías de Estimación de Flujo de Calor Sensible",
       "email": "catalina.alzola@ug.uchile.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -2869,9 +2865,29 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Geofísica, Universidad de Chile, Centro de Ciencia del Clima y la Resiliencia (CR2)",
       "titulo": "Transporte atmosférico y fuentes de humedad asociados a aluviones estivales en Chile central",
       "email": "charlie.opazo@ug.uchile.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
+      "tipo": "Póster"
+    },
+    {
+      "id": "P-010",
+      "dia_num": 2,
+      "fecha": "2026-11-25",
+      "dia_label": "Día 2 (Miércoles 25 Noviembre)",
+      "horario": "17:00 - 19:00",
+      "start_time": "17:00",
+      "end_time": "19:00",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
+      "eje": "Olas y Tsunamis",
+      "autor": "Claudia Silvana Pizarro Silva",
+      "inst": "Universidad de Valparaíso",
+      "titulo": "Pronóstico costero de oleaje y alerta temprana de marejadas en Arica, Pichilemu, Constitución, Corral y Puerto Saavedra",
+      "email": "claudia.pizarro.silva@gmail.com",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -2889,9 +2905,9 @@ window.CONGRESO_DATA = {
       "inst": "Escuela de Ingeniería, Pontificia Universidad Católica de Chile",
       "titulo": "Caracterización del fenómeno de la poza fría en el Salar del Huasco, Región de Tarapacá, Chile",
       "email": "daniel.espinoza@uc.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -2909,9 +2925,9 @@ window.CONGRESO_DATA = {
       "inst": "Pontificia Universidad Católica de Valparaíso",
       "titulo": "Producción primaria y respiración de la materia orgánica en la bahía de Valparaíso durante dos períodos consecutivos de primavera – verano.",
       "email": "daniela.flores.f@mail.pucv.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -2929,9 +2945,9 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Chile e Instituto Milenio BASE",
       "titulo": "Contribución de mecanismos foehn a un episodio extremo de calentamiento superficial frente a la Península Jason, Antártica",
       "email": "jose.donoso.q@ug.uchile.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -2949,9 +2965,29 @@ window.CONGRESO_DATA = {
       "inst": "GraupelTec Ambiental, Santiago, Chile; Red Meteorológica Aficionada de Chile",
       "titulo": "RedMeteo: El caso de una red densa de observaciones meteorológicas ciudadanas en tiempo real para Chile",
       "email": "redmeteoaficionadachile@gmail.com",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
+      "tipo": "Póster"
+    },
+    {
+      "id": "P-015",
+      "dia_num": 2,
+      "fecha": "2026-11-25",
+      "dia_label": "Día 2 (Miércoles 25 Noviembre)",
+      "horario": "17:00 - 19:00",
+      "start_time": "17:00",
+      "end_time": "19:00",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
+      "eje": "Meteorología Regional",
+      "autor": "Deniz Bozkurt",
+      "inst": "Universidad de Valparaíso, CR2, COPAS Coastal",
+      "titulo": "Bloqueos atmosféricos en el hemisferio sur: una nueva base de datos multimétodo desde latitudes medias hasta la Antártica (1979–2024)",
+      "email": "deniz.bozkurt@uv.cl",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -2969,9 +3005,9 @@ window.CONGRESO_DATA = {
       "inst": "University of Chile, Santiago",
       "titulo": "Synergistic Coupling of Heat and Moisture Transport in Zonal Atmospheric Rivers over the Extratropical Andes",
       "email": "d.mudiar@gmail.com",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -2989,9 +3025,9 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Geofísica, Universidad de Concepción, Chile; Centro de Ciencia del Clima y la Resiliencia (CR)2, Universidad de Concepción, Chile",
       "titulo": "Evolución y Características Sinópticas de Ríos Atmosféricos que no producen precipitación",
       "email": "ergonzalez2019@udec.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -3009,9 +3045,9 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Geofísica, Universidad de Concepción, Chile; Centro de Ciencia del Clima y la Resiliencia (CR2), Universidad de Concepción, Chile",
       "titulo": "Características hidrometeorológicas de distintas distribuciones espaciales de precipitación asociadas a Ríos Atmosféricos",
       "email": "ergonzalez2019@udec.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -3029,9 +3065,9 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Los Lagos",
       "titulo": "Cuantificación de las condiciones de hipoxia y sus forzantes en el Fiordo Puyuhuapi.",
       "email": "fabianenrique.salgado@alumnos.ulagos.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -3049,9 +3085,9 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Costa Rica, Costa Rica.",
       "titulo": "Influencia de la circulación profunda en la advección horizontal de aguas hipóxicas en la Patagonia norte.",
       "email": "fabricio.acevedo@ucr.ac.cr",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -3069,9 +3105,9 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Chile",
       "titulo": "Cambios en isopreno y ozono derivados de la megasequía (2010-2019) en Chile central",
       "email": "felipe.gonzalez.8@ug.uchile.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -3089,9 +3125,9 @@ window.CONGRESO_DATA = {
       "inst": "Université du Québec à Montréal (UQAM)",
       "titulo": "Evaluation and Physics Sensitivity of Convection-Permitting Ensemble  Simulations of the 2024 Rio Grande do Sul Extreme Precipitation Event",
       "email": "freddy.pinocheterazo@gmail.com",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -3109,9 +3145,9 @@ window.CONGRESO_DATA = {
       "inst": "PUCV",
       "titulo": "Simulación regional del Pacífico Sur Oriental (1994-2025): Tendencias de oxígeno disuelto, validación observacional y el rol de corrientes subsuperficiales",
       "email": "javiera.sainz@pucv.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -3129,9 +3165,9 @@ window.CONGRESO_DATA = {
       "inst": "Universidade Federal do Rio Grande (FURG) - Brazil",
       "titulo": "Analysis of a High-Energy Wave Event Using the Coupled COAWST Model",
       "email": "jefpmac@gmail.com",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -3149,9 +3185,9 @@ window.CONGRESO_DATA = {
       "inst": "Escuela de Ciencias de la Tierra, Universidad Andrés Bello",
       "titulo": "Multi-hazard assessment for Iquique, northern Chile, under climate variability: megathrust, tsunami, crustal fault and rainfall-triggered mass movement scenarios",
       "email": "juan.gonzalez.c@unab.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -3169,9 +3205,9 @@ window.CONGRESO_DATA = {
       "inst": "Universidade Federal do Rio Grande",
       "titulo": "Performance of the WaveWatch III model in the study of wind-generated waves during extreme events.",
       "email": "larissagodapaulamiranda@gmail.com",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -3189,9 +3225,9 @@ window.CONGRESO_DATA = {
       "inst": "Laboratorio de Dendrocronología y Cambio Global, Universidad Austral de Chile",
       "titulo": "Cambios en la circulación de la atmósfera y del clima regional están alterando procesos biológicos en los bosques subantárticos de Sudamérica",
       "email": "manu.suazo@gmail.com",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -3209,9 +3245,9 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Geofísica, Universidad de Chile",
       "titulo": "Caracterización de compuestos orgánicos volátiles mediante PTR-TOF-MS: validación instrumental y análisis de dispersión en la zona urbana-industrial de Concón.",
       "email": "nicole.zarate@ug.uchile.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -3229,9 +3265,9 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Valparaíso",
       "titulo": "Herramientas de Machine Learning como complemento para el downscaling del oleaje en la costa chilena",
       "email": "sebastian.correaar@gmail.com",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -3249,9 +3285,9 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Valparaíso",
       "titulo": "Escala de intensidad de oleaje extremo basada en impactos para el pronóstico costero de alta resolución",
       "email": "sebastian.correaar@gmail.com",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -3269,9 +3305,9 @@ window.CONGRESO_DATA = {
       "inst": "COPAS-Coastal (Universidad de Concepción)",
       "titulo": "Air-Sea-Wave Interactions During the 2023/2024 Extreme Atmospheric Rivers in Biobío: Preliminary Coupled Modeling Results",
       "email": "sebastianloyola@oceanografia.udec.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -3289,21 +3325,21 @@ window.CONGRESO_DATA = {
       "inst": "Universalidad Austral de Chile",
       "titulo": "Flujo de calor sensible como proxy de surgencia costera en el centro y norte de Chile",
       "email": "vicente.jara01@alumnos.uach.cl",
-      "pres": "Dr. Deniz Bozkurt",
-      "sec": "",
-      "sup": "Adán Godoy Matus",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
       "id": "P-080",
       "dia_num": 2,
       "fecha": "2026-11-25",
-      "dia_label": "Día 2",
+      "dia_label": "Día 2 (Miércoles 25 Noviembre)",
       "horario": "17:00 - 19:00",
       "start_time": "17:00",
       "end_time": "19:00",
       "sala": "Sectores Comunes Pisos 2 y 3",
-      "sesion": "Sesión de Pósters — Día 2",
+      "sesion": "Sesión de Pósters Día 2",
       "eje": "Variabilidad Climática",
       "autor": "Leonor Gabriela Valdés Calderón",
       "inst": "Departamento de Geofísica, Universidad de Chile (DGF-UCh)",
@@ -3329,9 +3365,9 @@ window.CONGRESO_DATA = {
       "inst": "Pontificia Universidad Católica de Valparaíso (PUCV)",
       "titulo": "Comparación de la estructura vertical biogeoquímica entre remolinos ciclónicos y anticiclónicos en el Pacífico Sur oriental durante el crucero CIMAR 28, primavera de 2023",
       "email": "abdon.olguin.n@mail.pucv.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
-      "sup": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
+      "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
     {
@@ -3349,9 +3385,9 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Adolfo Ibáñez",
       "titulo": "Cambio proyectado en olas de calor y Killing Degree Days agronómicos",
       "email": "alfopinto@alumnos.uai.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
-      "sup": "Suplente",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
+      "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
     {
@@ -3369,8 +3405,8 @@ window.CONGRESO_DATA = {
       "inst": "Pontificia Universidad Católica de Valparaíso y Núcleo Milenio DEOXS",
       "titulo": "Forzantes físicos y biogeoquímicos que influyen en la variabilidad temporal del óxido nitroso en la capa superficial frente a Valparaíso.",
       "email": "constanza.hernandez@pucv.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3389,8 +3425,8 @@ window.CONGRESO_DATA = {
       "inst": "LOFISAT, Universidad de Valparaíso",
       "titulo": "Efectos del forzamiento del viento y la descarga de agua dulce sobre la hidrografía y estabilidad termohalina de un fiordo subantártico.",
       "email": "constanzaezuniga@gmail.com",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3409,8 +3445,8 @@ window.CONGRESO_DATA = {
       "inst": "Doctorado Conjunto en Ciencias Mención Física, Universidad de Valparaíso",
       "titulo": "Variabilidad del chorro polar y su relación con los bloqueos atmosféricos en latitudes medias y altas del hemisferio sur",
       "email": "cristian.ortizvi@postgrado.uv.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3429,8 +3465,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Valparaíso",
       "titulo": "Patrones espaciales en la comunidad zooplanctónica a lo largo del gradiente meridional de agua dulce en el mar exterior de la Patagonia",
       "email": "cristine.lopez.gaul@gmail.com",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3445,12 +3481,12 @@ window.CONGRESO_DATA = {
       "sala": "Sectores Comunes Pisos 2 y 3",
       "sesion": "Sesión de Pósters Día 3",
       "eje": "Acoplamiento físico-biogeoquímico",
-      "autor": "Dr. Ramiro Riquelme-Bugueño",
-      "inst": "Universidad de Concepción / Proyecto DIPOLE / Núcleo Milenio DEOXS",
-      "titulo": "Desoxigenación y exposición del hábitat vertical del krill bajo escenarios climáticos.",
-      "email": "rriquelm@udec.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "autor": "Cristine Michelle Gaultier López",
+      "inst": "Universidad de Valparaíso",
+      "titulo": "Patrones biogeográficos del ensamble de eufáusidos en el mar exterior de la Patagonia chilena en respuesta a las condiciones oceanográficas",
+      "email": "cristine.lopez.gaul@gmail.com",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3469,8 +3505,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Valparaíso",
       "titulo": "Enfriamiento costero: homogeneización de una serie histórica y análisis de sus tendencias.",
       "email": "daniela.t.marzan@gmail.com",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3489,8 +3525,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Chile",
       "titulo": "El fitoplancton en respuesta a eventos de marejadas extremas: Análisis oceanográfico utilizando WaveWatch III y Color Oceánico Satelital.",
       "email": "magdavasquezramos@gmail.com",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3509,8 +3545,28 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Adolfo Ibáñez",
       "titulo": "Timescale dependence of projected changes in extreme precipitation under climate change",
       "email": "diegoifernandez@alumnos.uai.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
+      "sup": "Gabriel Correa",
+      "tipo": "Póster"
+    },
+    {
+      "id": "P-043",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3 (Jueves 26 Noviembre)",
+      "horario": "17:00 - 19:00",
+      "start_time": "17:00",
+      "end_time": "19:00",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
+      "eje": "Meteorología Regional",
+      "autor": "Emilio Callejas, Deniz Bozkurt",
+      "inst": "Departamento de Meteorología, Universidad de Valparaíso",
+      "titulo": "Extremos de calor en Chile central y bloqueo atmosférico: circulación hemisférica y posibles impactos en regiones distantes",
+      "email": "emilio.callejas@uv.cl",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3529,8 +3585,8 @@ window.CONGRESO_DATA = {
       "inst": "LOFISAT, Universidad de Valparaíso",
       "titulo": "Subtidal circulation and mixing in a regional inland sea, Northern Patagonia",
       "email": "fran.search.t@gmail.com",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3549,8 +3605,8 @@ window.CONGRESO_DATA = {
       "inst": "Pontificia Universidad Católica de Chile",
       "titulo": "Variabilidad espacio-temporal de una pluma de río y su relación con forzantes oceanográficos y atmosféricos",
       "email": "fcovarrubias@uc.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3569,8 +3625,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Chile / Dirección Meteorológica de Chile",
       "titulo": "Relación de la intensidad de la precipitación a escala subdiaria con la temperatura y vapor de agua en Chile central",
       "email": "francishope05@gmail.com",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3589,8 +3645,28 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Chile, Centro de Ciencia del Clima y la Resiliencia",
       "titulo": "Sensibilidad del modelo WRF en la representación de la circulación atmosférica regional del norte de Chile",
       "email": "fran.jofre.meneses@gmail.com",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
+      "sup": "Gabriel Correa",
+      "tipo": "Póster"
+    },
+    {
+      "id": "P-048",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3 (Jueves 26 Noviembre)",
+      "horario": "17:00 - 19:00",
+      "start_time": "17:00",
+      "end_time": "19:00",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 3",
+      "eje": "Oceanografía de Estuarios y Zonas Costeras",
+      "autor": "Gabriel Francisco Correa Muñoz",
+      "inst": "LOFISAT, Universidad de Valparaíso",
+      "titulo": "Patrón de circulación del mar interior de Chiloé (MIC) y su relación con el estrés del viento y la marea en septiembre de 2024.",
+      "email": "gcorreamunoz03@gmail.com",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3609,8 +3685,8 @@ window.CONGRESO_DATA = {
       "inst": "Centro de Investigación Interdisciplinaria en Riesgo, Resiliencia y Recuperación ante Desastres (CIGIDEN R+)",
       "titulo": "Evaluation of combined climate adaptation scenarios for future climate and urbanization in the Chicago Metro Area using WRF",
       "email": "ghuidobro@cigiden.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3629,8 +3705,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Magallanes",
       "titulo": "Análisis de la circulación atmosférica y el transporte local de masas de aire entre mayo y noviembre 2019 en Monte Fenton, Punta Arenas.",
       "email": "bbarja@gmail.com",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3649,8 +3725,8 @@ window.CONGRESO_DATA = {
       "inst": "Dirección Meteorológica de Chile",
       "titulo": "Patrones meteorológicos de escala sinóptica asociados a eventos de tornados en la zona centro - sur de Chile.",
       "email": "ian.trobok@dgac.gob.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3669,8 +3745,8 @@ window.CONGRESO_DATA = {
       "inst": "Escuela de Ingeniería Informática, Facultad de Ingeniería, Universidad de Valparaíso, Chile.",
       "titulo": "Automatización de la Observación de Nubosidad en Octas mediante Visión por Computadora y Deep Learning: Una Alternativa a la Medición Manual en Aeródromos Chilenos",
       "email": "ignacio.perezve@postgrado.uv.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3689,8 +3765,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Concepción",
       "titulo": "Clasificación de nubes de convección celular mesoescalar de celda abierta, cerrada y desorganizada mediante red neuronal convolucional a partir de observaciones satelitales.",
       "email": "joaquin.valenzuelaga@gmail.com",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3709,8 +3785,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Nacional",
       "titulo": "Variabilidad de temperatura y oxígeno disuelto en una Bahía tropical  de Costa Rica asociada a un forzamiento atmosférico",
       "email": "juan.salazar.ceciliano@una.cr",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3729,8 +3805,8 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Geofísica, Universidad de Concepción, Chile ; Center for Climate and Resilience Research (CR2), Chile",
       "titulo": "Estudio del rol de eventos Puelche en el desarrollo de incendios forestales",
       "email": "lavasquez2021@udec.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3749,8 +3825,8 @@ window.CONGRESO_DATA = {
       "inst": "University of California Santa Barbara",
       "titulo": "Oceanographic forcing of alongshore covariability in Macrocystis pyrifera biomass in Chile",
       "email": "lcarberry@ucsb.edu",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3769,8 +3845,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Chile",
       "titulo": "Evaluación del desempeño del modelo WRF en la representación del efecto Föhn asociado a un Río Atmosférico en la Península Antártica (Febrero 2022)",
       "email": "matiasm815@gmail.com",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3789,8 +3865,8 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Ingeniería Hidráulica y Ambiental, Pontificia Universidad Católica de Chile",
       "titulo": "Entre \"postimpresionismo\" y \"vanguardia\", variabilidad acústica y dinámica física bajo la influencia de una pluma fluvial en un fiordo chileno",
       "email": "mtroncosov8@estudiante.uc.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3809,8 +3885,8 @@ window.CONGRESO_DATA = {
       "inst": "Pontificia Universidad Católica de Valparaíso (PUCV)",
       "titulo": "Recuperación estacional y erosión de largo plazo en una playa de bolsillo: análisis morfodinámico con perfiles topográficos e imágenes satelitales.",
       "email": "mayraespinoza.p212@gmail.com",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3829,8 +3905,8 @@ window.CONGRESO_DATA = {
       "inst": "LOFISAT, Universidad de Valparaíso",
       "titulo": "Variabilidad intraestacional del nivel del mar y de la temperatura superficial del mar a lo largo de la costa de Chile entre 2000 y 2026",
       "email": "camila.camposano@estudiantes.uv.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3849,8 +3925,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Valparaíso",
       "titulo": "Pablo Herrera Klarian",
       "email": "herreraklarian@gmail.com",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3869,8 +3945,8 @@ window.CONGRESO_DATA = {
       "inst": "Escuela de Ciencias del Mar y Núcleo Milenio para el Estudio de la Desoxigenación en el Océano Pacífico Sur oriental (DEOXS), Pontificia Universidad Católica de Valparaíso, Chile.",
       "titulo": "Dinámica biogeoquímica en la bahía de Valparaíso: Serie temporal frente a Montemar (2023 - 2025)",
       "email": "paula.barbosa.p@mail.pucv.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3889,8 +3965,8 @@ window.CONGRESO_DATA = {
       "inst": "Instituto de Cs. de la Ingeniería, Univerisdad de O'Higgins",
       "titulo": "Consistencia en la Representación Microfísica de ERA5: un caso de estudio en Rancagua",
       "email": "raul.valenzuela@uoh.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3909,8 +3985,8 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Geofísica, U. de Chile",
       "titulo": "Viento en altura sobre Santiago: comparación de distintas bases de datos",
       "email": "rmunoz@dgf.uchile.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3929,8 +4005,8 @@ window.CONGRESO_DATA = {
       "inst": "Pontificia Universidad Católica de Valparaiso (PUCV) - Fundación San Ignacio del Huinay (FSIH)",
       "titulo": "Variabilidad espacio-temporal de las propiedades físico-químicas del sistema oceanográfico del fiordo Comau",
       "email": "sebastian.duran.torres@gmail.com",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3949,8 +4025,8 @@ window.CONGRESO_DATA = {
       "inst": "1.\tCentro i~mar, Universidad de Los Lagos, Puerto Montt, Chile. 2.\tCentro Interdisciplinario para la Investigación Acuícola - Investigación Aplicada (INCAR2), Universidad de Concepción, Concepción, Chile",
       "titulo": "Capas finas de fitoplancton tóxico en fiordos Patagónicos: Más allá de los métodos tradicionales de detección",
       "email": "vaiturra2021@udec.cl",
-      "pres": "Dra. Laura Farías",
-      "sec": "",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
       "tipo": "Póster"
     },
@@ -3969,9 +4045,9 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Austral de Chile",
       "titulo": "{Simulación numérica del transporte de nutrientes en la corriente de Humboldt mediante Navier-Stokes y advección-difusión",
       "email": "antonia.ricci@alumnos.uach.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
-      "sup": "Suplente",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
+      "sup": "Matías Pavez",
       "tipo": "Póster"
     },
     {
@@ -3989,8 +4065,8 @@ window.CONGRESO_DATA = {
       "inst": "Chile  Dirección Meteorológica de Chile, Chile. Departamento de Geofísica, Universidad de Chile, Chile. Centro de Ciencia del Clima y la Resiliencia (CR)2.",
       "titulo": "El Niño 2026: Experiencias y verificación del sistema Nextgen-Chile para precipitación en Chile central",
       "email": "alvaro.constanzo@dgac.gob.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4009,8 +4085,8 @@ window.CONGRESO_DATA = {
       "inst": "PUCV",
       "titulo": "Variabilidad de la capa de mezcla y turbulencia microescalar asociada a un remolino anticiclónico",
       "email": "benjamin.cornejo.av@gmail.com",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4029,8 +4105,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Valparaíso",
       "titulo": "Efecto de la transición primavera-otoño (2025-2026) sobre el oxígeno disuelto en la bahía de Laguna Verde (33.1° S), Valparaíso",
       "email": "clau.rozas@gmail.com",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4049,8 +4125,8 @@ window.CONGRESO_DATA = {
       "inst": "Magister en Ciencias Mención Oceanografía, Universidad de Concepción, Concepción, Chile",
       "titulo": "Caracterización de la circulación forzada por viento y boyantez en un sistema de fiordos y canales subantárticos",
       "email": "danielolivares1999@gmail.com",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4069,8 +4145,8 @@ window.CONGRESO_DATA = {
       "inst": "Copas Coastal, Departamento de Oceanografía, Universidad de Concepción",
       "titulo": "Sistemas móviles de observación del océano:  Implementación de sensores oceanográficos en redes de pesca",
       "email": "dnarvaez@oceanografia.udec.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4089,8 +4165,8 @@ window.CONGRESO_DATA = {
       "inst": "Centro de Estudios Avanzados en Zonas Áridas (CEAZA), Coquimbo, Chile",
       "titulo": "Estructuras Lagrangianas Coherentes Adheridas a la Costa en el Sistema de Bahías de Coquimbo",
       "email": "eduardo.flores@ceaza.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4109,8 +4185,8 @@ window.CONGRESO_DATA = {
       "inst": "State University of Ceará – UECE",
       "titulo": "Temporal Variability of Thermal Conditions in the Tropical Atlantic Ocean: A Case Study for the Period from 1990 to 2020",
       "email": "emerson.mariano@uece.br",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4129,8 +4205,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Santiago de Chile",
       "titulo": "Caracterización espacio-temporal de anomalías térmicas asociadas a eventos El Niño intensos mediante funciones ortogonales empíricas (EOF) y su versión extendida (Extended EOF)",
       "email": "felipe.silva.g@usach.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4149,8 +4225,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Chile",
       "titulo": "Evolución de las concentraciones de material particulado fino hacia la década de 2040 frente al cambio climático y trayectorias de mitigación de emisiones.",
       "email": "henry.jamanca@ug.uchile.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4169,8 +4245,8 @@ window.CONGRESO_DATA = {
       "inst": "PUCV",
       "titulo": "Regionalización oceanográfica del Pacifico Sur Oriental mediante técnicas de machine learning",
       "email": "javiera.sainz@pucv.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4189,8 +4265,8 @@ window.CONGRESO_DATA = {
       "inst": "State University of Ceará – UECE",
       "titulo": "Variability of a Thermal Comfort Index in Subtropical South America: Past Years and the Era of Climate Change",
       "email": "braboalves@gmail.com",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4209,8 +4285,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Concepción",
       "titulo": "Caracterización espaciotemporal de remolinos de mesoescala mediante un nuevo método de identificación",
       "email": "jrojas2019@udec.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4229,8 +4305,8 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Geofísica, Universidad de Chile; Centro de Acción Climática, Pontificia Universidad Católica de Valparaíso",
       "titulo": "Cambios futuros proyectados en el límite lluvia-nieve en cuencas andinas de Chile central y sus impacto hidrológico",
       "email": "marcelo.madariaga@pucv.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4249,8 +4325,8 @@ window.CONGRESO_DATA = {
       "inst": "LOFISAT, Universidad de Valparaíso",
       "titulo": "Circulación e hidrografía del Estrecho de Bransfield (62.8ºS, 57.5ºW) durante verano de 2026.",
       "email": "gustavo.rohde@estudiantes.uv.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4269,8 +4345,8 @@ window.CONGRESO_DATA = {
       "inst": "UNAB - IMO",
       "titulo": "Evaluación de Deep Learning para reducir el sesgo de TSM en modelos oceánicos en el norte de Chile",
       "email": "mario.caceres.soto@gmail.com",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4289,8 +4365,8 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Geofísica, Universidad de Chile",
       "titulo": "Influencia de los incendios forestales en el derretimiento glaciar: cambios en el albedo de los glaciares de la cuenca alta del río Olivares tras el incendio de “Las Máquinas” debido a la deposición de partículas absorbentes de luz",
       "email": "amanda.magnere@ug.uchile.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4309,8 +4385,8 @@ window.CONGRESO_DATA = {
       "inst": "Pontificia Universidad Católica de Chile",
       "titulo": "Identificación y clasificación de mecanismos generadores de olas de calor en Chile central",
       "email": "moyav.victoria@gmail.com",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4329,8 +4405,8 @@ window.CONGRESO_DATA = {
       "inst": "Instituto Milenio de Oceanografía (IMO)",
       "titulo": "Variabilidad temporal de la presión de fondo en la Fosa de Atacama: observaciones, estructura vertical e implicancias para la dinámica del océano profundo",
       "email": "matias.pizarrok@gmail.com",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4349,8 +4425,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Chile",
       "titulo": "CONTRIBUCIÓN RELATIVA DEL FORZAMIENTO ANTROPOGÉNICO A LA MANCHA CÁLIDA DEL SUR Y EL DIPOLO DE PRESIÓN MEDIANTE ENSAMBLES  CMIP6",
       "email": "mabricenoyanez@gmail.com",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4369,8 +4445,8 @@ window.CONGRESO_DATA = {
       "inst": "Shoa",
       "titulo": "Actualización de climatología de Nivel del mar y Temperatura Superficial del Mar",
       "email": "m.alvarado.nino@gmail.com",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4389,8 +4465,8 @@ window.CONGRESO_DATA = {
       "inst": "Laboratorio de Dendrocronología y Cambio Global, Facultad de Ciencias Forestales y Recursos Naturales, Universidad Austral de Chile",
       "titulo": "Mecanismos climáticos, radiativos y ontogénicos del daño por helada primaveral en Austrocedrus chilensis",
       "email": "nicolas.carrasco01@uach.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4409,8 +4485,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Valparaiso",
       "titulo": "Estimation of dew production using an analytical model and CORDEX regional climate models",
       "email": "nicolas.mora@estudiantes.uv.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4429,8 +4505,8 @@ window.CONGRESO_DATA = {
       "inst": "IMO",
       "titulo": "Numerical Mixing and Deep-Ocean Dynamics in the Atacama Trench",
       "email": "noemie.schifano@imo-chile.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4449,8 +4525,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Concepción",
       "titulo": "Influencia de la Oscilación Madden-Julian sobre la intensidad y posición de la Alta de Bolivia",
       "email": "pasandoval2021@udec.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4469,8 +4545,8 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Geofísica, Universidad de Chile",
       "titulo": "Una base de datos de precipitación con control de calidad y corrección por viento acotada y modulada por intensidad en Cerro Tres Puntas (3700 m), Chile central",
       "email": "roberto.rondanelli@gmail.com",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4489,8 +4565,8 @@ window.CONGRESO_DATA = {
       "inst": "Pontificia Universidad Católica de Chile",
       "titulo": "Modulación morfológica en desembocadura costera frente a procesos oceanográficos a partir de percepción remota de alta resolución",
       "email": "rodogomez@estudiante.uc.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4509,8 +4585,8 @@ window.CONGRESO_DATA = {
       "inst": "Facultad de Ciencias Físicas y Matématicas - Universidad de Chile",
       "titulo": "Atenuación de la radiación ultravioleta y visible superficial por una pluma volcánica fresca: un estudio de transferencia radiativa espacialmente distribuido y sus implicancias para la generación de energía solar",
       "email": "romain.bailly@ug.uchile.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4529,8 +4605,8 @@ window.CONGRESO_DATA = {
       "inst": "Pontificia Universidad Católica de Valparaíso",
       "titulo": "La distribución intra-anual de la precipitación y su modulación de la biomasa de pastizales semiáridos a lo largo de un gradiente pluviométrico",
       "email": "rosa.zamora@pucv.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4549,8 +4625,8 @@ window.CONGRESO_DATA = {
       "inst": "LOFISAT, Universidad de Valparaíso",
       "titulo": "Variabilidad submareal de la circulación profunda y su influencia sobre el oxígeno disuelto en un fiordo patagónico de cuatro capas",
       "email": "monreyes10@gmail.com",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4569,8 +4645,8 @@ window.CONGRESO_DATA = {
       "inst": "CEAZA",
       "titulo": "Evaluación del desempeño de un emulador de un modelo climático regional basado en una red neuronal convolucional para representar la precipitación en una región semiárida de Chile",
       "email": "tomas.caballero@ceaza.cl",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     },
@@ -4589,13 +4665,41 @@ window.CONGRESO_DATA = {
       "inst": "Universidad Adolfo Ibáñez",
       "titulo": "Using Linear Inverse Model Climate Realizations to Assess Precipitation Teleconnections and Multiyear Drought Risk",
       "email": "yulicaro99@hotmail.com",
-      "pres": "Dr. Boris Dewitte",
-      "sec": "",
+      "pres": "Dr. Marcus Sobarzo",
+      "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
       "tipo": "Póster"
     }
   ],
   "comites": [
+    {
+      "num": "Designación oficial de Presidente/a, Secretario/a y Suplente para cada bloque, elegidos entre los mismos expositores de cada sesión.",
+      "tipo": "",
+      "dia": "",
+      "horario": "",
+      "sala": "",
+      "sesion": "",
+      "codigos": "",
+      "pres": "",
+      "inst_pres": "",
+      "sec": "",
+      "inst_sec": "",
+      "sup": ""
+    },
+    {
+      "num": "N°",
+      "tipo": "Tipo Sesión",
+      "dia": "Día",
+      "horario": "Horario",
+      "sala": "Sala",
+      "sesion": "Sesión Temática",
+      "codigos": "Códigos Trabajos",
+      "pres": "Presidente / Presidenta",
+      "inst_pres": "Institución Presidente",
+      "sec": "Secretario / Secretaria",
+      "inst_sec": "Institución Secretario/a",
+      "sup": "Suplente Designado / Institución"
+    },
     {
       "num": "Bloque 01",
       "tipo": "Presentaciones Orales",
@@ -4605,10 +4709,10 @@ window.CONGRESO_DATA = {
       "sesion": "Oceanografía de Estuarios y Zonas Costeras — Subtema: Fiordos, Canales, Patagonia y Surgencia Costera",
       "codigos": "O-001 a O-007 (7 ponencias)",
       "pres": "Camila Paz Sola",
-      "inst_pres": "",
+      "inst_pres": "Universidad de Valparaíso y Pontificia Universidad Católica",
       "sec": "Dr. Iván Pérez-Santos",
-      "inst_sec": "",
-      "sup": "Sergio A. Rosales"
+      "inst_sec": "Centro i-mar, Universidad de Los Lagos",
+      "sup": "Sergio A. Rosales (Universidad Austral de Chile)"
     },
     {
       "num": "Bloque 02",
@@ -4619,10 +4723,10 @@ window.CONGRESO_DATA = {
       "sesion": "Meteorología Regional — Subtema: Procesos Sinópticos, Ciclones, Radiación y Dispersión Atmosférica",
       "codigos": "O-008 a O-014 (7 ponencias)",
       "pres": "Amairani Leyva",
-      "inst_pres": "",
+      "inst_pres": "FCFM y Centro de Ciencia del Clima y la Resiliencia (CR2), Universidad de Chile",
       "sec": "Cameron Wunderlin",
-      "inst_sec": "",
-      "sup": "Dr. Boris Barja"
+      "inst_sec": "University of Nebraska-Lincoln",
+      "sup": "Dr. Boris Barja (Universidad de Magallanes)"
     },
     {
       "num": "Bloque 03",
@@ -4633,10 +4737,10 @@ window.CONGRESO_DATA = {
       "sesion": "Oceanografía de Estuarios y Zonas Costeras — Subtema: Dinámica de Estuarios, Plumas Fluviales e Hidráulica Costera",
       "codigos": "O-015 a O-020 (6 ponencias)",
       "pres": "Dra. Megan Williams",
-      "inst_pres": "",
+      "inst_pres": "Pontificia Universidad Católica de Chile",
       "sec": "Pablo Ignacio Hernández Tapia",
-      "inst_sec": "",
-      "sup": "Raúl Flores Audibert"
+      "inst_sec": "Universidad Técnica Federico Santa María",
+      "sup": "Raúl Flores Audibert (Universidad Técnica Federico Santa María)"
     },
     {
       "num": "Bloque 04",
@@ -4647,10 +4751,10 @@ window.CONGRESO_DATA = {
       "sesion": "Meteorología Regional y Variabilidad Climática — Subtema: Extremos: Olas de Calor e Incendios Forestales",
       "codigos": "O-021 a O-026 (6 ponencias)",
       "pres": "Natalia Elena Ruiz Zenteno",
-      "inst_pres": "",
+      "inst_pres": "Departamento de Geofísica, Universidad de Concepción & CR2",
       "sec": "Dr. Martín Jacques-Coper",
-      "inst_sec": "",
-      "sup": "Manuel Suazo Álvarez"
+      "inst_sec": "Director Departamento de Geofísica, Universidad de Concepción / CR2",
+      "sup": "Manuel Suazo Álvarez (Universidad Austral de Chile / CR2)"
     },
     {
       "num": "Bloque 05",
@@ -4661,10 +4765,10 @@ window.CONGRESO_DATA = {
       "sesion": "Oceanografía de Estuarios y Zonas Costeras — Subtema: Procesos de Rompiente, Dinámica Litoral y Turbulencia Marina",
       "codigos": "O-027 a O-030 (4 ponencias)",
       "pres": "Leonora Pereira Zapata",
-      "inst_pres": "",
+      "inst_pres": "Universidad Técnica Federico Santa María",
       "sec": "Pablo Córdova Montecinos",
-      "inst_sec": "",
-      "sup": "Luis Andrés Bravo Gómez"
+      "inst_sec": "Pontificia Universidad Católica de Chile / Red Ocean",
+      "sup": "Luis Andrés Bravo Gómez (Universidad de Valparaíso)"
     },
     {
       "num": "Bloque 06",
@@ -4675,10 +4779,10 @@ window.CONGRESO_DATA = {
       "sesion": "Meteorología Regional — Subtema: Meteorología de Montaña, Gradientes Orográficos y Vientos Andinos",
       "codigos": "O-031 a O-034 (4 ponencias)",
       "pres": "Dr. René Garreaud",
-      "inst_pres": "",
+      "inst_pres": "Departamento de Geofísica, Universidad de Chile / CR2",
       "sec": "Maximiliano Viale",
-      "inst_sec": "",
-      "sup": "Dr. Ricardo Muñoz"
+      "inst_sec": "IANIGLA, CONICET, Mendoza, Argentina",
+      "sup": "Dr. Ricardo Muñoz (Departamento de Geofísica, Universidad de Chile)"
     },
     {
       "num": "Bloque 07",
@@ -4689,10 +4793,10 @@ window.CONGRESO_DATA = {
       "sesion": "Olas y Tsunamis — Subtema: Oleaje Extremo, Marejadas y Tsunamis",
       "codigos": "O-035 a O-038 (4 ponencias)",
       "pres": "Dra. Maricarmen Guerra Paris",
-      "inst_pres": "",
+      "inst_pres": "Departamento Ingeniería Civil, Universidad de Concepción; COPAS Coastal",
       "sec": "Cesar Alejandro Araya Cornejo",
-      "inst_sec": "",
-      "sup": "Valeska Alanis Sandoval Tapia"
+      "inst_sec": "Escuela de Ciencias del Mar, PUCV / IMO",
+      "sup": "Valeska Alanis Sandoval Tapia (Universidad de Valparaíso)"
     },
     {
       "num": "Bloque 08",
@@ -4703,10 +4807,10 @@ window.CONGRESO_DATA = {
       "sesion": "Meteorología Regional — Subtema: Tornados, Convección y Fenómenos Severos",
       "codigos": "O-039 a O-044 (6 ponencias)",
       "pres": "Dra. Lucía Scaff",
-      "inst_pres": "",
+      "inst_pres": "Departamento de Geofísica, Universidad de Concepción & CR2",
       "sec": "Dr. Julio C. Marín Aguado",
-      "inst_sec": "",
-      "sup": "Cristina Belén Verdugo Palma"
+      "inst_sec": "Universidad de Valparaíso",
+      "sup": "Cristina Belén Verdugo Palma (Universidad de Valparaíso)"
     },
     {
       "num": "Bloque 09",
@@ -4717,10 +4821,10 @@ window.CONGRESO_DATA = {
       "sesion": "Olas, Tsunamis y Eventos Térmicos Extremos — Subtema: Clima de Oleaje, Megaterremotos y Olas de Calor Marinas",
       "codigos": "O-045 a O-047 (3 ponencias)",
       "pres": "Allison Caitlin Espinoza Gómez",
-      "inst_pres": "",
+      "inst_pres": "Universidad Andrés Bello",
       "sec": "Javier Alfredo Aguirre Gaete",
-      "inst_sec": "",
-      "sup": "Cristian Andrés Salas Dominguez"
+      "inst_sec": "Universidad de Valparaíso",
+      "sup": "Cristian Andrés Salas Dominguez (Universidad de Valparaíso)"
     },
     {
       "num": "Bloque 10",
@@ -4731,10 +4835,10 @@ window.CONGRESO_DATA = {
       "sesion": "Meteorología Regional — Subtema: Radares, Instrumentación, Ríos Atmosféricos y Eventos Extremos de Precipitación",
       "codigos": "O-048 a O-051 (4 ponencias)",
       "pres": "Dr. Raúl Valenzuela",
-      "inst_pres": "",
+      "inst_pres": "Instituto de Cs. de la Ingeniería, Universidad de O'Higgins / CR2",
       "sec": "Jonathan Oberreuter",
-      "inst_sec": "",
-      "sup": "Yosvany Garcia Santos"
+      "inst_sec": "Universidad Austral de Chile",
+      "sup": "Yosvany Garcia Santos (Universidad de Chile)"
     },
     {
       "num": "Bloque 11",
@@ -4745,10 +4849,10 @@ window.CONGRESO_DATA = {
       "sesion": "Oceanografía Física Regional — Subtema: Sistemas de Observación Marina, Plataformas Autónomas y Aguas Polares",
       "codigos": "O-052 a O-055 (4 ponencias)",
       "pres": "Dra. María de los Ángeles Marrero Díaz",
-      "inst_pres": "",
+      "inst_pres": "Instituto Universitario ECOAQUA, Universidad de Las Palmas de Gran Canaria, España",
       "sec": "ANDRÉS ALBERTO VARAS GÓMEZ",
-      "inst_sec": "",
-      "sup": "Gustavo Alfredo Rohde Medina"
+      "inst_sec": "Instituto de Fomento Pesquero (IFOP)",
+      "sup": "Gustavo Alfredo Rohde Medina (LOFISAT, Universidad de Valparaíso)"
     },
     {
       "num": "Bloque 12",
@@ -4759,10 +4863,10 @@ window.CONGRESO_DATA = {
       "sesion": "Interacción Océano-Atmósfera — Subtema: Dinámica del ENOS y Acoplamiento de Gran Escala",
       "codigos": "O-056 a O-059 (4 ponencias)",
       "pres": "Leandra Grisel Loyola Giahette",
-      "inst_pres": "",
+      "inst_pres": "Universidad Adolfo Ibáñez",
       "sec": "Dr. Cristian Martinez-Villalobos",
-      "inst_sec": "",
-      "sup": "Kennedy Richard Gomez Tunque"
+      "inst_sec": "Universidad Adolfo Ibáñez / Data Observatory",
+      "sup": "Kennedy Richard Gomez Tunque (UNALM / UNH, Perú)"
     },
     {
       "num": "Bloque 13",
@@ -4773,10 +4877,10 @@ window.CONGRESO_DATA = {
       "sesion": "Oceanografía Física Regional — Subtema: Cañones Submarinos y Surgencia de Agua Profunda",
       "codigos": "O-060 a O-062 (3 ponencias)",
       "pres": "Sofía Palacios Riveros",
-      "inst_pres": "",
+      "inst_pres": "Universidad de Concepción y Centro COPAS Coastal",
       "sec": "María Paz Almendra Riquelme",
-      "inst_sec": "",
-      "sup": "Sebastián Andrés Díaz Ceballos"
+      "inst_sec": "Universidad Austral de Chile",
+      "sup": "Sebastián Andrés Díaz Ceballos (Universidad de Concepción)"
     },
     {
       "num": "Bloque 14",
@@ -4787,10 +4891,10 @@ window.CONGRESO_DATA = {
       "sesion": "Contaminación y Química Atmosférica — Subtema: Calidad del Aire, Ozono y Dispersión Urbana",
       "codigos": "O-063 a O-065 (3 ponencias)",
       "pres": "Dra. Laura Gallardo",
-      "inst_pres": "",
+      "inst_pres": "Universidad de Chile, Centro de Ciencia del Clima y la Resiliencia (CR2), DGF",
       "sec": "Giovanna Paola Amaya Peña",
-      "inst_sec": "",
-      "sup": "Dr. Nicolás Huneeus"
+      "inst_sec": "Escuela de Ciencias Agroalimentarias, Universidad de O'Higgins",
+      "sup": "Dr. Nicolás Huneeus (Universidad de Chile)"
     },
     {
       "num": "Bloque 15",
@@ -4801,10 +4905,10 @@ window.CONGRESO_DATA = {
       "sesion": "Oceanografía Física Regional — Subtema: Masas de Agua, Sistema de Corrientes y Dinámica Antártica",
       "codigos": "O-066 a O-076 (6 ponencias)",
       "pres": "Dra. Vera Oerder",
-      "inst_pres": "",
+      "inst_pres": "Universidad de Concepción / IMO / Núcleo Milenio DEOXs",
       "sec": "Dr. Gonzalo Saldías",
-      "inst_sec": "",
-      "sup": "Dr. Oscar Pizarro"
+      "inst_sec": "Universidad del Bío-Bío",
+      "sup": "Dr. Oscar Pizarro (Director Científico CIO / IMO / UdeC)"
     },
     {
       "num": "Bloque 16",
@@ -4815,10 +4919,10 @@ window.CONGRESO_DATA = {
       "sesion": "Variabilidad Climática — Subtema: Teleconexiones y Circulación Hemisférica",
       "codigos": "O-072 a O-077 (6 ponencias)",
       "pres": "Noelia Vejar Ulloa",
-      "inst_pres": "",
+      "inst_pres": "Departamento de Geofísica, Universidad de Concepción & CR2",
       "sec": "Matías Arias Ortega",
-      "inst_sec": "",
-      "sup": "Rodrigo Castillo Rodríguez"
+      "inst_sec": "Universidad de Costa Rica",
+      "sup": "Rodrigo Castillo Rodríguez (Universidad de Costa Rica)"
     },
     {
       "num": "Bloque 17",
@@ -4828,11 +4932,11 @@ window.CONGRESO_DATA = {
       "sala": "Sala 2.5",
       "sesion": "Oceanografía Física Regional — Subtema: Mareas, Ondas Internas y Nivel del Mar",
       "codigos": "O-078 a O-081 (4 ponencias)",
-      "pres": "Francisca Victoria del Carmen Quijada Mateluna",
-      "inst_pres": "",
+      "pres": "Camila Valentina Camposano Sanhueza",
+      "inst_pres": "LOFISAT, Universidad de Valparaíso",
       "sec": "Francisca Victoria del Carmen Quijada Mateluna",
-      "inst_sec": "",
-      "sup": "Martina Raquel Monasterio Sandoval"
+      "inst_sec": "Servicio Hidrográfico y Oceanográfico de la Armada (SHOA)",
+      "sup": "Martina Raquel Monasterio Sandoval (Universidad de Valparaíso)"
     },
     {
       "num": "Bloque 18",
@@ -4843,10 +4947,10 @@ window.CONGRESO_DATA = {
       "sesion": "Variabilidad Climática — Subtema: Modelación Climática Regional, Downscaling y Aplicaciones Ecológicas del ENOS",
       "codigos": "O-082 a O-085 (4 ponencias)",
       "pres": "Mariana Hidalgo",
-      "inst_pres": "",
+      "inst_pres": "Universidad Técnica Federico Santa María y AMTC",
       "sec": "Felipe Antonio Sánchez González",
-      "inst_sec": "",
-      "sup": "Diego Eduardo Duhalde Venegas"
+      "inst_sec": "Universidad de Valparaíso",
+      "sup": "Diego Eduardo Duhalde Venegas (Universidad de Concepción)"
     },
     {
       "num": "Bloque 19",
@@ -4857,10 +4961,10 @@ window.CONGRESO_DATA = {
       "sesion": "Oceanografía Física Regional — Subtema: Remolinos de Mesoescala, Submesoescala y Ondas Atrapadas",
       "codigos": "O-086 a O-089 (4 ponencias)",
       "pres": "Poliana Teresa Leiva Garay",
-      "inst_pres": "",
+      "inst_pres": "Universidad de Concepción",
       "sec": "Luis P. Valencia",
-      "inst_sec": "",
-      "sup": "Vanessa Alejandra Carril Pardo"
+      "inst_sec": "ECOAQUA, Universidad de Las Palmas de Gran Canaria, España",
+      "sup": "Vanessa Alejandra Carril Pardo (Universidad de Concepción)"
     },
     {
       "num": "Bloque 20",
@@ -4871,10 +4975,10 @@ window.CONGRESO_DATA = {
       "sesion": "Variabilidad Climática — Subtema: Variabilidad Hidroclimática, Nieve y Recursos Hídricos",
       "codigos": "O-087 a O-091B (4 ponencias)",
       "pres": "Fernanda Véliz C.",
-      "inst_pres": "",
+      "inst_pres": "Universidad Técnica Federico Santa María",
       "sec": "Dr. Jorge Arévalo B.",
-      "inst_sec": "",
-      "sup": "Matías Guzmán Muñoz"
+      "inst_sec": "Departamento de Meteorología, Universidad de Valparaíso",
+      "sup": "Matías Guzmán Muñoz (Universidad de Chile)"
     },
     {
       "num": "Bloque 21",
@@ -4885,10 +4989,10 @@ window.CONGRESO_DATA = {
       "sesion": "Acoplamiento Físico-Biogeoquímico — Subtema: Conectividad Marina y Procesos Biofísicos",
       "codigos": "O-093 a O-095 (3 ponencias)",
       "pres": "Angela Andrea Bahamondes Domínguez",
-      "inst_pres": "",
+      "inst_pres": "Instituto Milenio BASE / Instituto de Ciencias Marinas y Limnológicas, UACh",
       "sec": "María Fabiola Monsálvez Opazo",
-      "inst_sec": "",
-      "sup": "Dr. Ángel Rodríguez Santana"
+      "inst_sec": "Universidad de Concepción / COPAS Coastal",
+      "sup": "Dr. Ángel Rodríguez Santana (Universidad de Las Palmas de Gran Canaria)"
     },
     {
       "num": "Bloque 22",
@@ -4899,10 +5003,10 @@ window.CONGRESO_DATA = {
       "sesion": "Paleoclima e Hidroclimatología de Zonas Áridas — Subtema: Clima Histórico, Reconstrucciones y Dinámica de Niebla y Precipitación",
       "codigos": "O-096 a O-098 (3 ponencias)",
       "pres": "Tomás Roberto Muñoz Salazar",
-      "inst_pres": "",
+      "inst_pres": "Laboratorio de Dendrocronología y Cambio Global, Universidad Austral de Chile",
       "sec": "Álvaro Ossandón",
-      "inst_sec": "",
-      "sup": "Felipe Ríos-Silva"
+      "inst_sec": "Universidad Técnica Federico Santa María",
+      "sup": "Felipe Ríos-Silva (Universidad Austral de Chile)"
     },
     {
       "num": "Bloque 23",
@@ -4913,10 +5017,10 @@ window.CONGRESO_DATA = {
       "sesion": "Desoxigenación e Hipoxia — Subtema: Zona de Mínimo Oxígeno, Hipoxia y Nutrientes",
       "codigos": "O-099 a O-102 (4 ponencias)",
       "pres": "Francisca Chirino",
-      "inst_pres": "",
+      "inst_pres": "Departamento de Geofísica, Universidad de Concepción",
       "sec": "Salma Juliette Espinoza Rivera",
-      "inst_sec": "",
-      "sup": "Matías Pizarro-Koch"
+      "inst_sec": "Universidad de Concepción",
+      "sup": "Matías Pizarro-Koch (Universidad de Concepción / IMO)"
     },
     {
       "num": "Bloque 24",
@@ -4927,10 +5031,10 @@ window.CONGRESO_DATA = {
       "sesion": "Meteorología Regional — Subtema: Pronóstico Subestacional, Predictibilidad y Eventos Extremos",
       "codigos": "O-103 a O-106 (4 ponencias)",
       "pres": "Dra. Ana María Córdova Leal",
-      "inst_pres": "",
+      "inst_pres": "Directora Departamento de Meteorología, Universidad de Valparaíso",
       "sec": "Félix Marcial Carrasco Galleguillos",
-      "inst_sec": "",
-      "sup": "Tomás Caballero"
+      "inst_sec": "Consultor externo del Centro Regional del Clima",
+      "sup": "Tomás Caballero (CEAZA)"
     },
     {
       "num": "Bloque 25",
@@ -4941,10 +5045,10 @@ window.CONGRESO_DATA = {
       "sesion": "Acoplamiento Físico-Biogeoquímico — Subtema: Remolinos Subsuperficiales, Productividad Marina y Oxígeno",
       "codigos": "O-107 a O-109 (3 ponencias)",
       "pres": "Valerie Alejandra Villegas Gamboa",
-      "inst_pres": "",
+      "inst_pres": "Escuela de Ciencias del Mar, PUCV / Instituto Milenio de Oceanografía (IMO)",
       "sec": "Luke Carberry",
-      "inst_sec": "",
-      "sup": "Mauro Pinto-Juica"
+      "inst_sec": "University of California Santa Barbara",
+      "sup": "Mauro Pinto-Juica (Universidad Católica del Norte)"
     },
     {
       "num": "Bloque 26",
@@ -4955,10 +5059,10 @@ window.CONGRESO_DATA = {
       "sesion": "Energías Renovables y Dinámica Costera Forzada por la Atmósfera — Subtema: Recurso Eólico, Oleaje y Respuesta Hidrodinámica a Eventos Extremos",
       "codigos": "O-108 a O-112 (2 ponencias)",
       "pres": "Dr. Ovidio Llompart",
-      "inst_pres": "",
+      "inst_pres": "Pontificia Universidad Católica de Chile",
       "sec": "Ovidio Llompart",
-      "inst_sec": "",
-      "sup": "Amin Kadim Ali Cordero"
+      "inst_sec": "Universidad de Concepción",
+      "sup": "Amin Kadim Ali Cordero (Universidad de Concepción)"
     },
     {
       "num": "Pósters Día 2",
@@ -4969,10 +5073,10 @@ window.CONGRESO_DATA = {
       "sesion": "Meteorología y Clima / Procesos Oceanográficos — Subtema: Convección, Calidad del Aire, Clima de Oleaje y ZMO",
       "codigos": "P-001 a P-032 y P-080 (33 pósters)",
       "pres": "Dra. Catalina Aguirre",
-      "inst_pres": "",
+      "inst_pres": "Universidad de Valparaíso / CR2",
       "sec": "Dr. Deniz Bozkurt",
-      "inst_sec": "",
-      "sup": "Dr. René Garreaud"
+      "inst_sec": "Universidad de Valparaíso / CR2",
+      "sup": "Dr. René Garreaud (Universidad de Chile / CR2)"
     },
     {
       "num": "Pósters Día 3",
@@ -4981,12 +5085,12 @@ window.CONGRESO_DATA = {
       "horario": "17:00 a 19:00 hrs",
       "sala": "Sectores Comunes Pisos 2 y 3",
       "sesion": "Meteorología y Clima / Procesos Oceanográficos — Subtema: Redes de Observación, ENOS, Fiordos y Biogeoquímica",
-      "codigos": "P-035 a P-068 (34 pósters)",
+      "codigos": "P-033 a P-066 (34 pósters)",
       "pres": "Dra. Marcela Cornejo",
-      "inst_pres": "",
+      "inst_pres": "Pontificia Universidad Católica de Valparaíso",
       "sec": "Dr. Manuel Castillo",
-      "inst_sec": "",
-      "sup": "Dr. Iván Pérez-Santos"
+      "inst_sec": "Universidad de Valparaíso / COSTAR-UV",
+      "sup": "Dr. Iván Pérez-Santos (Universidad de Los Lagos / COPAS Coastal)"
     },
     {
       "num": "Pósters Día 4",
@@ -4997,10 +5101,10 @@ window.CONGRESO_DATA = {
       "sesion": "Meteorología y Clima / Procesos Oceanográficos — Subtema: Nieve Andina, Circulación Profunda, Fosa de Atacama y Energía Marina",
       "codigos": "P-067 a P-099 (32 pósters)",
       "pres": "Dra. Carolina Parada",
-      "inst_pres": "",
+      "inst_pres": "Universidad de Concepción",
       "sec": "Dr. Diego Narváez",
-      "inst_sec": "",
-      "sup": "Dr. Martín Jacques-Coper"
+      "inst_sec": "Universidad de Concepción",
+      "sup": "Dr. Martín Jacques-Coper (Universidad de Concepción / CR2)"
     }
   ],
   "autores": [
@@ -5111,17 +5215,6 @@ window.CONGRESO_DATA = {
           "codigo": "O-106",
           "tipo": "Oral",
           "titulo": "HidroCL ante eventos extremos: anticipar para gestionar"
-        }
-      ]
-    },
-    {
-      "nombre": "Andrea Piñones",
-      "inst": "1 Instituto de Ciencias Marinas y Limnológicas, Universidad Austral de Chile. 2 Centro COPAS Coastal, Concepción, Chile. 3 Instituto Milenio BASE, Santiago, Chile",
-      "trabajos": [
-        {
-          "codigo": "O-076",
-          "tipo": "Oral",
-          "titulo": "Balance atmósfera-océano durante olas de calor marinas nunca antes registradas en la Península Antártica"
         }
       ]
     },
@@ -5344,8 +5437,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Valparaíso",
       "trabajos": [
         {
-          "codigo": "O-037",
-          "tipo": "Oral",
+          "codigo": "P-010",
+          "tipo": "Póster",
           "titulo": "Pronóstico costero de oleaje y alerta temprana de marejadas en Arica, Pichilemu, Constitución, Corral y Puerto Saavedra"
         }
       ]
@@ -5424,6 +5517,11 @@ window.CONGRESO_DATA = {
           "codigo": "P-038",
           "tipo": "Póster",
           "titulo": "Patrones espaciales en la comunidad zooplanctónica a lo largo del gradiente meridional de agua dulce en el mar exterior de la Patagonia"
+        },
+        {
+          "codigo": "P-039",
+          "tipo": "Póster",
+          "titulo": "Patrones biogeográficos del ensamble de eufáusidos en el mar exterior de la Patagonia chilena en respuesta a las condiciones oceanográficas"
         }
       ]
     },
@@ -5520,8 +5618,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Valparaíso, CR2, COPAS Coastal",
       "trabajos": [
         {
-          "codigo": "O-069",
-          "tipo": "Oral",
+          "codigo": "P-015",
+          "tipo": "Póster",
           "titulo": "Bloqueos atmosféricos en el hemisferio sur: una nueva base de datos multimétodo desde latitudes medias hasta la Antártica (1979–2024)"
         }
       ]
@@ -5598,13 +5696,13 @@ window.CONGRESO_DATA = {
       ]
     },
     {
-      "nombre": "Dr. Ramiro Riquelme-Bugueño",
-      "inst": "Universidad de Concepción / Proyecto DIPOLE / Núcleo Milenio DEOXS",
+      "nombre": "Dra. Andrea Piñones",
+      "inst": "Universidad Austral de Chile, Centro COPAS Coastal, Instituto Milenio BASE",
       "trabajos": [
         {
-          "codigo": "P-039",
-          "tipo": "Póster",
-          "titulo": "Desoxigenación y exposición del hábitat vertical del krill bajo escenarios climáticos."
+          "codigo": "O-076",
+          "tipo": "Oral",
+          "titulo": "Balance atmósfera-océano durante olas de calor marinas nunca antes registradas en la Península Antártica"
         }
       ]
     },
@@ -5635,8 +5733,8 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Meteorología, Universidad de Valparaíso",
       "trabajos": [
         {
-          "codigo": "O-026",
-          "tipo": "Oral",
+          "codigo": "P-043",
+          "tipo": "Póster",
           "titulo": "Extremos de calor en Chile central y bloqueo atmosférico: circulación hemisférica y posibles impactos en regiones distantes"
         }
       ]
@@ -5819,6 +5917,17 @@ window.CONGRESO_DATA = {
           "codigo": "O-100",
           "tipo": "Oral",
           "titulo": "Pronóstico subestacional calibrado para el Centro Regional sobre el clima para el Sur de América del Sur (CRC-SAS): Implementación y verificación."
+        }
+      ]
+    },
+    {
+      "nombre": "Gabriel Francisco Correa Muñoz",
+      "inst": "LOFISAT, Universidad de Valparaíso",
+      "trabajos": [
+        {
+          "codigo": "P-048",
+          "tipo": "Póster",
+          "titulo": "Patrón de circulación del mar interior de Chiloé (MIC) y su relación con el estrés del viento y la marea en septiembre de 2024."
         }
       ]
     },
@@ -6317,13 +6426,24 @@ window.CONGRESO_DATA = {
       ]
     },
     {
+      "nombre": "Macarena Isadora Pérez Cuevas",
+      "inst": "Universidad Austral de Chile",
+      "trabajos": [
+        {
+          "codigo": "O-026",
+          "tipo": "Oral",
+          "titulo": "Climatología de olas de calor sobre un glaciar templado andino y su impacto en el derretimiento"
+        }
+      ]
+    },
+    {
       "nombre": "Manuel Suazo Álvarez",
-      "inst": "Laboratorio de Dendrocronología y Cambio Global, Universidad Austral de Chile, Valdivia, Chile; Centro de Ciencia del Clima y la Resiliencia CR2",
+      "inst": "Departamento de Geofísica, Universidad de Concepción, Chile",
       "trabajos": [
         {
           "codigo": "O-016",
           "tipo": "Oral",
-          "titulo": "Señales intraestacionales precursoras de incendios forestales extremos en Chile centro-sur"
+          "titulo": "Señales intraestacionales precursoras de incendios forestales extremos en Chile central"
         },
         {
           "codigo": "P-027",
@@ -6362,6 +6482,17 @@ window.CONGRESO_DATA = {
           "codigo": "O-081",
           "tipo": "Oral",
           "titulo": "Evaluación del valor agregado de modelos climáticos regionales en la representación de índices de precipitación extrema en Chile continental"
+        }
+      ]
+    },
+    {
+      "nombre": "Maricarmen Guerra Paris",
+      "inst": "Departamento Ingeniería Civil, Universidad de Concepción; COPAS Coastal",
+      "trabajos": [
+        {
+          "codigo": "O-037",
+          "tipo": "Oral",
+          "titulo": "Variaciones del nivel del mar total durante eventos meteorológicos y de oleaje extremos en la región del Biobío"
         }
       ]
     },
@@ -6559,7 +6690,7 @@ window.CONGRESO_DATA = {
         {
           "codigo": "O-111",
           "tipo": "Oral",
-          "titulo": "Procesos de mezcla de pequeña escala y su rol en la reconfiguración de las zonas de mínimo de oxígeno"
+          "titulo": "Mauro Pinto"
         }
       ]
     },
@@ -6910,6 +7041,17 @@ window.CONGRESO_DATA = {
       ]
     },
     {
+      "nombre": "Rodrigo Castillo Rodríguez",
+      "inst": "Universidad de Costa Rica",
+      "trabajos": [
+        {
+          "codigo": "O-069",
+          "tipo": "Oral",
+          "titulo": "Oscilación Antártica: su influencia en la variabilidad interanual de la precipitación en Costa Rica"
+        }
+      ]
+    },
+    {
       "nombre": "Romain Bailly",
       "inst": "Facultad de Ciencias Físicas y Matématicas - Universidad de Chile",
       "trabajos": [
@@ -7224,10 +7366,8 @@ window.CONGRESO_DATA = {
   ],
   "totales": {
     "orales": 112,
-    "posters": 95,
-    "magistrales": 3,
-    "total_ponencias": 210,
-    "autores_unicos": 232
+    "posters": 99,
+    "total": 211
   },
   "guia_gastronomica": {
     "sector": "Plaza O'Higgins y Barrio El Almendral",
