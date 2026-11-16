@@ -2661,7 +2661,7 @@ window.CONGRESO_DATA = {
       "eje": "Desoxigenación e hipoxia",
       "autor": "Mauro Pinto-Juica",
       "inst": "University of Gothenburg",
-      "titulo": "Mauro Pinto",
+      "titulo": "Procesos de mezcla de pequeña escala y su rol en la reconfiguración de las zonas de mínimo de oxígeno",
       "email": "mauro.pinto.j@gu.se",
       "pres": "Valerie Alejandra Villegas Gamboa",
       "sec": "Luke Carberry",
@@ -3731,26 +3731,6 @@ window.CONGRESO_DATA = {
       "tipo": "Póster"
     },
     {
-      "id": "P-054",
-      "dia_num": 3,
-      "fecha": "2026-11-26",
-      "dia_label": "Día 3 (Jueves 26 Noviembre)",
-      "horario": "17:00 - 19:00",
-      "start_time": "17:00",
-      "end_time": "19:00",
-      "sala": "Sectores Comunes Pisos 2 y 3",
-      "sesion": "Sesión de Pósters Día 3",
-      "eje": "Oceanografía de Estuarios y Zonas Costeras",
-      "autor": "Juan Pablo Salazar Ceciliano",
-      "inst": "Universidad Nacional",
-      "titulo": "Variabilidad de temperatura y oxígeno disuelto en una Bahía tropical  de Costa Rica asociada a un forzamiento atmosférico",
-      "email": "juan.salazar.ceciliano@una.cr",
-      "pres": "Dr. Samuel Hormazábal",
-      "sec": "Dra. Laura Farías",
-      "sup": "Gabriel Correa",
-      "tipo": "Póster"
-    },
-    {
       "id": "P-055",
       "dia_num": 3,
       "fecha": "2026-11-26",
@@ -3883,7 +3863,7 @@ window.CONGRESO_DATA = {
       "eje": "Desoxigenación e hipoxia",
       "autor": "Pablo Antonio Herrera Klarian",
       "inst": "Universidad de Valparaíso",
-      "titulo": "Pablo Herrera Klarian",
+      "titulo": "Origen de las anomalías positivas del oxígeno disuelto en el Seno Reloncaví: ¿forzantes locales o remotos?",
       "email": "herreraklarian@gmail.com",
       "pres": "Dr. Samuel Hormazábal",
       "sec": "Dra. Laura Farías",
@@ -6169,17 +6149,6 @@ window.CONGRESO_DATA = {
       ]
     },
     {
-      "nombre": "Juan Pablo Salazar Ceciliano",
-      "inst": "Universidad Nacional",
-      "trabajos": [
-        {
-          "codigo": "P-054",
-          "tipo": "Póster",
-          "titulo": "Variabilidad de temperatura y oxígeno disuelto en una Bahía tropical  de Costa Rica asociada a un forzamiento atmosférico"
-        }
-      ]
-    },
-    {
       "nombre": "Julio C. Marín Aguado",
       "inst": "Universidad de Valparaíso",
       "trabajos": [
@@ -6614,7 +6583,7 @@ window.CONGRESO_DATA = {
         {
           "codigo": "O-111",
           "tipo": "Oral",
-          "titulo": "Mauro Pinto"
+          "titulo": "Procesos de mezcla de pequeña escala y su rol en la reconfiguración de las zonas de mínimo de oxígeno"
         }
       ]
     },
@@ -6812,7 +6781,7 @@ window.CONGRESO_DATA = {
         {
           "codigo": "P-061",
           "tipo": "Póster",
-          "titulo": "Pablo Herrera Klarian"
+          "titulo": "Origen de las anomalías positivas del oxígeno disuelto en el Seno Reloncaví: ¿forzantes locales o remotos?"
         }
       ]
     },
@@ -7279,8 +7248,8 @@ window.CONGRESO_DATA = {
   ],
   "totales": {
     "orales": 112,
-    "posters": 96,
-    "total": 208
+    "posters": 95,
+    "total": 207
   },
   "guia_gastronomica": {
     "sector": "Plaza O'Higgins y Barrio El Almendral",
