@@ -3383,7 +3383,7 @@ window.CONGRESO_DATA = {
       "eje": "Oceanografía de Estuarios y Zonas Costeras",
       "autor": "Constanza Zúñiga",
       "inst": "LOFISAT, Universidad de Valparaíso",
-      "titulo": "Efectos del forzamiento del viento y la descarga de agua dulce sobre la hidrografía y estabilidad termohalina de un fiordo subantártico.",
+      "titulo": "Estacionalidad en la estratificación de un fiordo con influencia glacial: caso de estudio Fiordo Almirantazgo",
       "email": "constanzaezuniga@gmail.com",
       "pres": "Dr. Samuel Hormazábal",
       "sec": "Dra. Laura Farías",
@@ -5393,7 +5393,7 @@ window.CONGRESO_DATA = {
         {
           "codigo": "P-036",
           "tipo": "Póster",
-          "titulo": "Efectos del forzamiento del viento y la descarga de agua dulce sobre la hidrografía y estabilidad termohalina de un fiordo subantártico."
+          "titulo": "Estacionalidad en la estratificación de un fiordo con influencia glacial: caso de estudio Fiordo Almirantazgo"
         }
       ]
     },
