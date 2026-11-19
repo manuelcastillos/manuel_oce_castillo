@@ -1,14 +1,22 @@
 {
   "version": "2026.11.09.1",
-  "ultima_actualizacion": "2026-11-09T14:46:05.015233",
+  "ultima_actualizacion": "2026-11-19T16:28:37.311062",
   "avisos": [
+    {
+      "id": "aviso-cambio-sala-31-1795116517",
+      "fecha": "19 Nov 2026 - 16:30 hrs",
+      "titulo": "📢 Cambio Oficial de Sala: Meteorología y Clima a Sala 3.1",
+      "cuerpo": "Informamos a todos los participantes que las sesiones paralelas de Meteorología, Clima y Ciencias Atmosféricas (originalmente programadas en Sala 3.7) se llevarán a cabo en la SALA 3.1 (Piso 3, Edificio Aulas). La Sala 2.5 y el Auditorio FACSO se mantienen sin cambios.",
+      "tipo": "importante",
+      "fijado": true
+    },
     {
       "id": "aviso-1794246365",
       "fecha": "09 Nov 2026",
       "hora": "14:46",
       "tipo": "importante",
       "titulo": "Actualización Oficial de Horarios e Índice",
-      "mensaje": "Se intercambiaron los horarios de Cameron Wunderlin (ahora 12:50 hrs) y José Olivares (ahora 11:35 hrs) en Sala 3.7 (Día 1). Además, se depuraron las ponencias dobles y pósters duplicados.",
+      "mensaje": "Se intercambiaron los horarios de Cameron Wunderlin (ahora 12:50 hrs) y José Olivares (ahora 11:35 hrs) en Sala 3.1 (Día 1). Además, se depuraron las ponencias dobles y pósters duplicados.",
       "detalle": "El programa cuenta ahora con 111 charlas orales únicas y 100 paneles póster balanceados. El PDF oficial y el índice de autores han sido actualizados con paginación exacta.",
       "activo": true,
       "urgente": false
@@ -19,7 +27,7 @@
       "hora": "10:30",
       "tipo": "importante",
       "titulo": "Actualización de Programa: Nueva Ponencia y Conferencia Inaugural",
-      "mensaje": "Se ha integrado al programa oral la presentación O-048 'Un Radar Móvil para Fenómenos Meteorológicos Extremos y Clima' (Dr. Jorge Arévalo et al., Miércoles 25 a las 11:50 en Sala 3.7). Asimismo, se confirma la Conferencia Magistral Inaugural de la Dra. Paola Salio (CIMA / CONICET-UBA, Martes 24 a las 10:00 hrs en Auditorio FACSO).",
+      "mensaje": "Se ha integrado al programa oral la presentación O-048 'Un Radar Móvil para Fenómenos Meteorológicos Extremos y Clima' (Dr. Jorge Arévalo et al., Miércoles 25 a las 11:50 en Sala 3.1). Asimismo, se confirma la Conferencia Magistral Inaugural de la Dra. Paola Salio (CIMA / CONICET-UBA, Martes 24 a las 10:00 hrs en Auditorio FACSO).",
       "activo": true,
       "urgente": true
     },
@@ -33,5 +41,6 @@
       "activo": true,
       "urgente": false
     }
-  ]
+  ],
+  "total": 4
 }

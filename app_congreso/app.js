@@ -666,7 +666,7 @@
       return curMins >= start && curMins < end;
     });
 
-    // B) Check Oral Presentations in Sala 2.5 and Sala 3.7
+    // B) Check Oral Presentations in Sala 2.5 and Sala 3.1
     const activeOral25 = data.orales.find(o => {
       if (o.dia_num !== dayNum || !o.sala.includes('2.5')) return false;
       const start = timeStringToMinutes(o.start_time);
@@ -675,7 +675,7 @@
     });
 
     const activeOral37 = data.orales.find(o => {
-      if (o.dia_num !== dayNum || !o.sala.includes('3.7')) return false;
+      if (o.dia_num !== dayNum || !(o.sala.includes('3.1') || o.sala.includes('3.7'))) return false;
       const start = timeStringToMinutes(o.start_time);
       const end = timeStringToMinutes(o.end_time);
       return curMins >= start && curMins < end;
@@ -751,14 +751,14 @@
         `;
       }
     }
-    // Case 3: Parallel Oral Sessions (Sala 2.5 and Sala 3.7)
+    // Case 3: Parallel Oral Sessions (Sala 2.5 and Sala 3.1)
     else {
       if (cardEvent) cardEvent.style.display = 'none';
       if (card25) card25.style.display = 'block';
       if (card37) card37.style.display = 'block';
 
       renderActiveRoomCard(activeOral25, '25', curMins, dayNum, 'Sala 2.5');
-      renderActiveRoomCard(activeOral37, '37', curMins, dayNum, 'Sala 3.7');
+      renderActiveRoomCard(activeOral37, '37', curMins, dayNum, 'Sala 3.1');
     }
 
     renderNextTalks(curMins, dayNum);
@@ -824,7 +824,7 @@
       .sort((a, b) => timeStringToMinutes(a.start_time) - timeStringToMinutes(b.start_time));
 
     const next25 = upcomingOrals.find(o => o.sala.includes('2.5'));
-    const next37 = upcomingOrals.find(o => o.sala.includes('3.7'));
+    const next37 = upcomingOrals.find(o => (o.sala.includes('3.1') || o.sala.includes('3.7')));
 
     let html = '';
     if (next25) {
@@ -850,7 +850,7 @@
       html += `
         <div class="next-card ${isFav ? 'is-favorite' : ''}" onclick="window.OFMC_APP.showDetail('${next37.id}')">
           <div class="next-card-top">
-            <span class="room-tag tag-meteo"><i class="fa-solid fa-cloud-sun"></i> Sala 3.7</span>
+            <span class="room-tag tag-meteo"><i class="fa-solid fa-cloud-sun"></i> Sala 3.1</span>
             <span style="color: var(--meteo-sky); font-weight: 700;">${next37.start_time} (${waitStr})</span>
           </div>
           <div class="next-card-title">${next37.id}: ${next37.titulo}</div>
@@ -907,8 +907,8 @@
 
     if (track === '2.5') {
       combined = combined.filter(item => item.sala && item.sala.includes('2.5'));
-    } else if (track === '3.7') {
-      combined = combined.filter(item => item.sala && item.sala.includes('3.7'));
+    } else if (track === '3.1') {
+      combined = combined.filter(item => item.sala && (item.sala.includes('3.1') || item.sala.includes('3.7')));
     } else if (track === 'posters') {
       combined = combined.filter(item => item.tipo === 'PósterSummary' || (item.sala && item.sala.includes('Pisos 2 y 3') && item.titulo && item.titulo.includes('Póster')));
     } else if (track === 'events') {
@@ -940,7 +940,7 @@
 
       if (item.sala && item.sala.includes('2.5')) {
         roomClass = 'room-25'; tagClass = 'tag-ocean'; roomIcon = 'fa-water';
-      } else if (item.sala && item.sala.includes('3.7')) {
+      } else if (item.sala && (item.sala.includes('3.1') || item.sala.includes('3.7'))) {
         roomClass = 'room-37'; tagClass = 'tag-meteo'; roomIcon = 'fa-wind';
       } else if (isPostSum || (item.sala && item.sala.includes('Pisos 2 y 3') && item.tipo !== 'Pausa')) {
         roomClass = 'room-poster'; tagClass = 'tag-purple'; roomIcon = 'fa-images';
@@ -1262,7 +1262,7 @@
 
     roomBadge.textContent = `${item.sala} · ${item.horario}`;
     if (item.sala.includes('2.5')) roomBadge.style.background = 'var(--ocean-blue)';
-    else if (item.sala.includes('3.7')) roomBadge.style.background = 'var(--meteo-cyan)';
+    else if ((item.sala.includes('3.1') || item.sala.includes('3.7'))) roomBadge.style.background = 'var(--meteo-cyan)';
     else if (item.tipo === 'Póster') roomBadge.style.background = 'var(--purple-poster)';
     else roomBadge.style.background = 'var(--gold-accent)';
 
