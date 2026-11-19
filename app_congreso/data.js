@@ -224,11 +224,12 @@ window.CONGRESO_DATA = {
       "horario": "09:00 - 10:00",
       "sala": "Auditorio FACSO",
       "titulo": "Climate Change in the Salish Sea, British Columbia from 1930 to present",
-      "autor": "Dr. Jennifer M. Jackson & Sophia Johannessen",
+      "autor": "Dra. Jennifer Jackson & Sophia Johannessen",
       "inst": "Fisheries and Oceans Canada, Institute of Ocean Sciences, Sidney BC, CANADA",
       "descripcion": "Conferencia magistral plenaria internacional sobre impactos de cambio climático multidecadal en sistemas semi-cerrados y fiordos.",
       "tipo": "Magistral",
-      "categoria": "Plenaria"
+      "categoria": "Plenaria",
+      "conferencista": "Dra. Jennifer Jackson"
     },
     {
       "id": "EV-09",
