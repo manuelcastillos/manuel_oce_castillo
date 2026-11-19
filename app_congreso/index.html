@@ -38,6 +38,9 @@
       </div>
     </div>
     <div class="header-actions">
+      <button id="btnOpenWifiModal" class="icon-btn" aria-label="Wi-Fi Asistentes" title="Wi-Fi Asistentes (Visitas UV)">
+        <i class="fa-solid fa-wifi"></i>
+      </button>
       <a href="buscador.html" class="icon-btn" aria-label="Buscador Rápido Web" title="Buscador Rápido de Ponencias (Dónde y Cuándo)">
         <i class="fa-solid fa-magnifying-glass"></i>
       </a>
@@ -261,6 +264,19 @@
 
       <!-- Timeline List -->
             <!-- Quick Alarm Helper Hint -->
+      
+      <!-- Quick Wi-Fi Banner -->
+      <div class="wifi-banner-quick" onclick="window.OFMC_APP.openWifiModal()">
+        <div class="wifi-banner-left">
+          <span class="wifi-dot-pulse"></span>
+          <i class="fa-solid fa-wifi text-cyan"></i>
+          <span>Wi-Fi Sede: <strong>Visitas UV</strong> (clave: <code style="color:#38BDF8;">uvalparaiso2019</code>)</span>
+        </div>
+        <button class="wifi-banner-btn" title="Ver credenciales y QR de conexión">
+          <i class="fa-solid fa-qrcode"></i> Conectar
+        </button>
+      </div>
+
       <div class="program-alarm-hint">
         <i class="fa-solid fa-heart text-rose"></i>
         <span>Toca el <strong>corazón</strong> en cualquier charla o actividad para programar su <strong>alarma interna (vibrará 10 min antes)</strong>.</span>
@@ -269,6 +285,61 @@
       <div class="timeline-container" id="programTimelineList">
         <!-- Program cards injected by JS -->
       </div>
+
+      <!-- Auspiciadores Oficiales Strip -->
+      <div class="sponsors-strip-section">
+        <div class="sponsors-strip-header">
+          <span class="sponsors-strip-title">
+            <i class="fa-solid fa-handshake-angle"></i> Auspiciadores y Patrocinadores Oficiales
+          </span>
+          <button class="action-pill-btn" onclick="window.OFMC_APP.switchView('view-info')" style="font-size: 0.70rem; padding: 3px 8px;">
+            Ver Todos
+          </button>
+        </div>
+        <div class="sponsors-strip-scroll">
+          <div class="sponsors-strip-item" onclick="window.OFMC_APP.switchView('view-info')">
+            <img src="logos/auspiciadores/logo_copas_coastal.png" alt="COPAS Coastal">
+            <span>COPAS Coastal</span>
+          </div>
+          <div class="sponsors-strip-item" onclick="window.OFMC_APP.switchView('view-info')">
+            <img src="logos/auspiciadores/logo_cr2.png" alt="CR2">
+            <span>CR2</span>
+          </div>
+          <div class="sponsors-strip-item" onclick="window.OFMC_APP.switchView('view-info')">
+            <img src="logos/auspiciadores/logo_invap.png" alt="INVAP">
+            <span>INVAP</span>
+          </div>
+          <div class="sponsors-strip-item" onclick="window.OFMC_APP.switchView('view-info')">
+            <img src="logos/auspiciadores/logo_asl.png" alt="ASL">
+            <span>ASL Sciences</span>
+          </div>
+          <div class="sponsors-strip-item" onclick="window.OFMC_APP.switchView('view-info')">
+            <img src="logos/auspiciadores/logo_nortek.png" alt="NORTEK">
+            <span>NORTEK</span>
+          </div>
+          <div class="sponsors-strip-item" onclick="window.OFMC_APP.switchView('view-info')">
+            <img src="logos/auspiciadores/logo_cio2.png" alt="CIO">
+            <span>CIO</span>
+          </div>
+          <div class="sponsors-strip-item" onclick="window.OFMC_APP.switchView('view-info')">
+            <img src="logos/auspiciadores/logo_ucn.png" alt="UCN">
+            <span>UCN</span>
+          </div>
+          <div class="sponsors-strip-item" onclick="window.OFMC_APP.switchView('view-info')">
+            <img src="logos/auspiciadores/CascoAntiguo.jpg" alt="Casco Antiguo">
+            <span>Casco Antiguo</span>
+          </div>
+          <div class="sponsors-strip-item" onclick="window.OFMC_APP.switchView('view-info')">
+            <img src="logos/CEACC.jpeg" alt="CEACC">
+            <span>CEACC</span>
+          </div>
+          <div class="sponsors-strip-item" onclick="window.OFMC_APP.switchView('view-info')">
+            <img src="logos/costar_GRANDE.jpg" alt="COSTAR">
+            <span>COSTAR</span>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <!-- ===================================================================
@@ -426,6 +497,48 @@
             </a>
           </div>
         </div>
+
+        
+        <!-- Wi-Fi Card -->
+        <div class="info-card wifi-card-highlight">
+          <div class="info-card-header">
+            <i class="fa-solid fa-wifi text-cyan"></i>
+            <h3>Conexión Wi-Fi Asistentes (Visitas UV)</h3>
+            <span class="badge-opcional">Opcional</span>
+          </div>
+          <p class="view-intro" style="margin-bottom: 12px;">
+            Acceso a internet de cortesía en todas las salas y espacios del Congreso (Edificio Aulas y Auditorio FACSO).
+          </p>
+          <div class="wifi-card-layout">
+            <div class="wifi-card-qr">
+              <img src="assets/qr_wifi_visitas_uv.png" alt="QR Wi-Fi Visitas UV">
+              <span>Escanear para conectar</span>
+            </div>
+            <div class="wifi-card-credentials">
+              <div class="cred-row">
+                <span class="cred-label">Red (SSID):</span>
+                <span class="cred-val">Visitas UV</span>
+              </div>
+              <div class="cred-row">
+                <span class="cred-label">Contraseña:</span>
+                <span class="cred-val code-val">uvalparaiso2019</span>
+              </div>
+              <div class="cred-actions">
+                <button class="action-pill-btn" onclick="window.OFMC_APP.copyText('uvalparaiso2019', this)">
+                  <i class="fa-solid fa-copy"></i> Copiar Clave
+                </button>
+                <button class="action-pill-btn" onclick="window.OFMC_APP.openWifiModal()">
+                  <i class="fa-solid fa-expand"></i> Ver QR Grande
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="wifi-note-footer">
+            <i class="fa-solid fa-network-wired text-gold"></i>
+            <span>Red opcional: disponible también <strong>eduroam</strong> en todas las facultades UV, o su red telefónica móvil.</span>
+          </div>
+        </div>
+
 
         <!-- Sedes y Salas Card -->
         <div class="info-card">
@@ -680,29 +793,98 @@
           </div>
         </div>
 
-        <!-- Auspiciadores Card -->
+                <!-- Auspiciadores y Patrocinadores Card -->
         <div class="info-card">
           <div class="info-card-header">
             <i class="fa-solid fa-handshake-angle text-ocean"></i>
             <h3>Auspiciadores Oficiales</h3>
           </div>
-          <div class="sponsors-grid">
-            <div class="sponsor-item">COPAS Coastal</div>
-            <div class="sponsor-item">CR2</div>
-            <div class="sponsor-item">INVAP</div>
-            <div class="sponsor-item">ASL</div>
-            <div class="sponsor-item">NORTEK</div>
-            <div class="sponsor-item">CIO</div>
-            <div class="sponsor-item">UCN</div>
-            <div class="sponsor-item">Casco Antiguo</div>
-          </div>
-          <div class="info-card-header" style="margin-top: 14px; margin-bottom: 6px;">
-            <i class="fa-solid fa-award text-gold"></i>
-            <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--navy);">Patrocinadores Institucionales</h4>
-          </div>
-          <div class="sponsors-grid" style="grid-template-columns: repeat(2, 1fr);">
-            <div class="sponsor-item" style="font-size: 0.85rem; padding: 6px;">CEACC</div>
-            <div class="sponsor-item" style="font-size: 0.85rem; padding: 6px;">COSTAR</div>
+          <p class="view-intro" style="margin-bottom: 14px;">
+            Agradecemos a las empresas, centros de excelencia e instituciones que hacen posible la realización del VIII Congreso OFMC 2026:
+          </p>
+          
+          <div class="sponsors-gallery">
+            <!-- Bloque 1: Auspiciadores -->
+            <div>
+              <div class="sponsors-category-title">
+                <i class="fa-solid fa-award text-gold"></i> Auspiciadores Principales
+              </div>
+              <div class="sponsors-grid-visual">
+                <div class="sponsor-logo-box">
+                  <img src="logos/auspiciadores/logo_copas_coastal.png" alt="COPAS Coastal" class="sponsor-logo-img">
+                  <span class="sponsor-name-tag">COPAS Coastal</span>
+                </div>
+                <div class="sponsor-logo-box">
+                  <img src="logos/auspiciadores/logo_cr2.png" alt="CR2" class="sponsor-logo-img">
+                  <span class="sponsor-name-tag">CR2</span>
+                </div>
+                <div class="sponsor-logo-box">
+                  <img src="logos/auspiciadores/logo_invap.png" alt="INVAP" class="sponsor-logo-img">
+                  <span class="sponsor-name-tag">INVAP</span>
+                </div>
+                <div class="sponsor-logo-box">
+                  <img src="logos/auspiciadores/logo_asl.png" alt="ASL Environmental Sciences" class="sponsor-logo-img">
+                  <span class="sponsor-name-tag">ASL Environmental</span>
+                </div>
+                <div class="sponsor-logo-box">
+                  <img src="logos/auspiciadores/logo_nortek.png" alt="NORTEK" class="sponsor-logo-img">
+                  <span class="sponsor-name-tag">NORTEK</span>
+                </div>
+                <div class="sponsor-logo-box">
+                  <img src="logos/auspiciadores/logo_cio2.png" alt="CIO" class="sponsor-logo-img">
+                  <span class="sponsor-name-tag">CIO</span>
+                </div>
+                <div class="sponsor-logo-box">
+                  <img src="logos/auspiciadores/logo_ucn.png" alt="Universidad Católica del Norte" class="sponsor-logo-img">
+                  <span class="sponsor-name-tag">UCN</span>
+                </div>
+                <div class="sponsor-logo-box">
+                  <img src="logos/auspiciadores/CascoAntiguo.jpg" alt="Casco Antiguo" class="sponsor-logo-img">
+                  <span class="sponsor-name-tag">Casco Antiguo</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bloque 2: Patrocinadores y Colaboradores -->
+            <div>
+              <div class="sponsors-category-title" style="color: var(--gold-light);">
+                <i class="fa-solid fa-landmark"></i> Patrocinadores y Colaboradores Institucionales
+              </div>
+              <div class="sponsors-grid-visual">
+                <div class="sponsor-logo-box">
+                  <img src="logos/CEACC.jpeg" alt="CEACC" class="sponsor-logo-img">
+                  <span class="sponsor-name-tag">CEACC</span>
+                </div>
+                <div class="sponsor-logo-box">
+                  <img src="logos/costar_GRANDE.jpg" alt="COSTAR" class="sponsor-logo-img">
+                  <span class="sponsor-name-tag">COSTAR</span>
+                </div>
+                <div class="sponsor-logo-box">
+                  <img src="logos/auspiciadores/logo_anid_minciencia.jpg" alt="ANID - MinCiencia" class="sponsor-logo-img">
+                  <span class="sponsor-name-tag">ANID / MinCiencia</span>
+                </div>
+                <div class="sponsor-logo-box">
+                  <img src="logos/auspiciadores/logo_acera.png" alt="ACERA" class="sponsor-logo-img">
+                  <span class="sponsor-name-tag">ACERA</span>
+                </div>
+                <div class="sponsor-logo-box">
+                  <img src="logos/auspiciadores/logo_servimet.png" alt="Servimet" class="sponsor-logo-img">
+                  <span class="sponsor-name-tag">Servimet</span>
+                </div>
+                <div class="sponsor-logo-box">
+                  <img src="logos/auspiciadores/logo_snp.png" alt="Sociedad Nacional de Pesca" class="sponsor-logo-img">
+                  <span class="sponsor-name-tag">SNP Chile</span>
+                </div>
+                <div class="sponsor-logo-box">
+                  <img src="logos/auspiciadores/logo_ecm_pucv.png" alt="Escuela de Ciencias del Mar PUCV" class="sponsor-logo-img">
+                  <span class="sponsor-name-tag">Ciencias del Mar PUCV</span>
+                </div>
+                <div class="sponsor-logo-box">
+                  <img src="logos/auspiciadores/logo_ing_oceanica_uv.png" alt="Ingeniería Oceánica UV" class="sponsor-logo-img">
+                  <span class="sponsor-name-tag">Ing. Oceánica UV</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -923,5 +1105,73 @@
   <!-- Scripts -->
   <script src="data.js"></script>
   <script src="app.js"></script>
+
+  <!-- ===================================================================
+       WIFI MODAL (Visitas UV)
+       =================================================================== -->
+  <div id="wifiModal" class="modal-overlay">
+    <div class="modal-container wifi-modal-container" style="max-width: 420px;">
+      <div class="modal-grabber"></div>
+      <div class="detail-modal-header">
+        <span class="detail-room-badge" style="background: #0284C7; color: #FFFFFF;">
+          <i class="fa-solid fa-wifi"></i> Conexión Wi-Fi Asistentes
+        </span>
+        <button id="btnCloseWifiModal" class="modal-close-btn">&times;</button>
+      </div>
+
+      <div style="padding: 14px 18px 24px 18px;">
+        <div class="wifi-modal-card">
+          <!-- QR Frame -->
+          <div class="wifi-qr-frame">
+            <img src="assets/qr_wifi_visitas_uv.png" alt="QR Wi-Fi Visitas UV" class="wifi-qr-img">
+            <span class="wifi-qr-hint"><i class="fa-solid fa-camera"></i> Escanea con tu cámara o Google Lens para conectar al instante</span>
+          </div>
+
+          <!-- Network Info Box -->
+          <div class="wifi-info-box">
+            <div class="wifi-field">
+              <span class="wifi-field-label">Nombre de Red (SSID):</span>
+              <div class="wifi-field-val-row">
+                <strong class="wifi-ssid-name">Visitas UV</strong>
+                <button class="wifi-copy-btn" onclick="window.OFMC_APP.copyText('Visitas UV', this)" title="Copiar nombre de red">
+                  <i class="fa-solid fa-copy"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="wifi-field">
+              <span class="wifi-field-label">Contraseña:</span>
+              <div class="wifi-field-val-row">
+                <code class="wifi-password-val">uvalparaiso2019</code>
+                <button class="wifi-copy-btn btn-primary-copy" onclick="window.OFMC_APP.copyText('uvalparaiso2019', this)" title="Copiar contraseña">
+                  <i class="fa-solid fa-copy"></i> Copiar Clave
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Connect Buttons -->
+          <div class="wifi-actions-grid">
+            <button class="wifi-action-btn" onclick="window.OFMC_APP.copyText('uvalparaiso2019', this)">
+              <i class="fa-solid fa-key"></i> Copiar Clave
+            </button>
+            <a href="assets/wifi_visitas_uv.mobileconfig" download="WiFi_Visitas_UV.mobileconfig" class="wifi-action-btn wifi-btn-apple" title="Descargar perfil de configuración para iOS">
+              <i class="fa-brands fa-apple"></i> Perfil Wi-Fi (iOS)
+            </a>
+          </div>
+
+          <!-- Optional Notice / Eduroam -->
+          <div class="wifi-notice-box">
+            <i class="fa-solid fa-circle-info text-cyan" style="margin-top: 2px;"></i>
+            <div>
+              <strong>Conexión Opcional:</strong>
+              <p style="margin: 2px 0 0 0;">Esta red abierta para visitas es de libre uso para los participantes. Si tu institución dispone de <strong>eduroam</strong>, puedes conectarte con tus credenciales habituales en todo el campus, o usar tu plan de datos móviles.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

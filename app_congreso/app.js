@@ -1717,6 +1717,20 @@
     const btnCloseQr = document.getElementById('btnCloseQrModal');
     if (btnCloseQr) btnCloseQr.addEventListener('click', closeQrModal);
 
+    // WiFi Modal triggers
+    const btnOpenWifi = document.getElementById('btnOpenWifiModal');
+    if (btnOpenWifi) btnOpenWifi.addEventListener('click', openWifiModal);
+
+    const btnCloseWifi = document.getElementById('btnCloseWifiModal');
+    if (btnCloseWifi) btnCloseWifi.addEventListener('click', closeWifiModal);
+
+    const wifiModal = document.getElementById('wifiModal');
+    if (wifiModal) {
+      wifiModal.addEventListener('click', (e) => {
+        if (e.target === wifiModal) closeWifiModal();
+      });
+    }
+
     document.querySelectorAll('.qr-tab-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         switchQrTab(btn.dataset.qrtab);
@@ -1820,7 +1834,64 @@
   // =========================================================================
   // 17. GLOBAL EXPORTS
   // =========================================================================
+  
+  // ===================================================================
+  // WIFI MODAL & COPY HELPERS (OFMC 2026)
+  // ===================================================================
+  function openWifiModal() {
+    const modal = document.getElementById('wifiModal');
+    if (!modal) return;
+    modal.classList.add('open');
+  }
+
+  function closeWifiModal() {
+    const modal = document.getElementById('wifiModal');
+    if (modal) modal.classList.remove('open');
+  }
+
+  function copyText(text, btnElement) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(() => {
+        showCopyFeedback(btnElement);
+      }).catch(() => fallbackCopy(text, btnElement));
+    } else {
+      fallbackCopy(text, btnElement);
+    }
+  }
+
+  function fallbackCopy(text, btnElement) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+      document.execCommand('copy');
+      showCopyFeedback(btnElement);
+    } catch (e) {
+      alert('Copiado: ' + text);
+    }
+    document.body.removeChild(ta);
+  }
+
+  function showCopyFeedback(btnElement) {
+    if (!btnElement) return;
+    const origHtml = btnElement.innerHTML;
+    btnElement.innerHTML = '<i class="fa-solid fa-check"></i> ¡Copiado!';
+    const origBg = btnElement.style.background;
+    const origColor = btnElement.style.color;
+    btnElement.style.background = '#10B981';
+    btnElement.style.color = '#FFFFFF';
+    setTimeout(() => {
+      btnElement.innerHTML = origHtml;
+      btnElement.style.background = origBg;
+      btnElement.style.color = origColor;
+    }, 2000);
+  }
+
   window.OFMC_APP = {
+    openWifiModal,
+    closeWifiModal,
+    copyText,
     switchView: switchView,
     toggleFav: toggleFavorite,
     showDetail: showDetail,

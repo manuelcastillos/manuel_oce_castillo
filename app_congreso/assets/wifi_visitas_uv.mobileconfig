@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadDisplayName</key>
+    <string>Wi-Fi OFMC 2026 - Visitas UV</string>
+    <key>PayloadDescription</key>
+    <string>Configuración Wi-Fi Visitas UV para asistentes del Congreso OFMC 2026</string>
+    <key>PayloadIdentifier</key>
+    <string>cl.ofmc2026.wifi.visitasuv</string>
+    <key>PayloadOrganization</key>
+    <string>Congreso OFMC 2026 - Universidad de Valparaíso</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>9F8D3B2E-1A4C-4E8F-8B2A-3D5F7C9E1B2A</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.wifi.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>cl.ofmc2026.wifi.visitasuv.payload</string>
+            <key>PayloadUUID</key>
+            <string>7B6C5D4E-3F2A-1B0C-9D8E-7F6A5B4C3D2E</string>
+            <key>PayloadEnabled</key>
+            <true/>
+            <key>PayloadDisplayName</key>
+            <string>Wi-Fi Visitas UV</string>
+            <key>SSID_STR</key>
+            <string>Visitas UV</string>
+            <key>HIDDEN_NETWORK</key>
+            <false/>
+            <key>AutoJoin</key>
+            <true/>
+            <key>EncryptionType</key>
+            <string>WPA</string>
+            <key>Password</key>
+            <string>uvalparaiso2019</string>
+        </dict>
+    </array>
+</dict>
+</plist>

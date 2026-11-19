@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ofmc2026-v8';
+const CACHE_NAME = 'ofmc2026-v9';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -7,6 +7,16 @@ const ASSETS_TO_CACHE = [
   './data.js',
   './avisos.json',
   './manifest.json',
+  './assets/qr_wifi_visitas_uv.png',
+  './assets/wifi_visitas_uv.mobileconfig',
+  './logos/auspiciadores/logo_copas_coastal.png',
+  './logos/auspiciadores/logo_cr2.png',
+  './logos/auspiciadores/logo_invap.png',
+  './logos/auspiciadores/logo_asl.png',
+  './logos/auspiciadores/logo_nortek.png',
+  './logos/auspiciadores/logo_cio2.png',
+  './logos/auspiciadores/logo_ucn.png',
+  './logos/auspiciadores/CascoAntiguo.jpg',
   './assets/qr_app_congreso.png',
   './assets/qr_programa_pdf.png',
   './icons/icon-192.png',
