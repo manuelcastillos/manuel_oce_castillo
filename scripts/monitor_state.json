@@ -1,6 +1,6 @@
 {
-  "last_checked_timestamp": "2026-11-20T10:45:51.786968+00:00",
-  "last_processed_mid": 367,
+  "last_checked_timestamp": "2026-11-20T19:27:58.235535+00:00",
+  "last_processed_mid": 369,
   "processed_mids": [
     300,
     301,
@@ -41,8 +41,9 @@
     357,
     361,
     364,
-    365
+    365,
+    369
   ],
-  "total_reports_sent": 12,
-  "last_report_sent": "2026-11-20T07:45:51.786987-03:00"
+  "total_reports_sent": 13,
+  "last_report_sent": "2026-11-20T16:27:58.235611-03:00"
 }
