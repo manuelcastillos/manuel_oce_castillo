@@ -1424,12 +1424,13 @@ window.CONGRESO_DATA = {
       "eje": "Oceanografía Física Regional",
       "autor": "Cristian Andrés Salas Dominguez",
       "inst": "Instituto de Investigación Pesquera",
-      "titulo": "Descomposición del balance de calor durante olas de calor marinas frente a Chile centro-sur mediante diagnósticos en línea de un modelo hidrodinámico regional.",
+      "titulo": "Marine heatwaves off central-southern Chile (29–42°S): online heat-budget diagnostics of coastal advection, offshore surface forcing and wind relaxation",
       "email": "csalas@inpesca.cl",
       "pres": "Allison Caitlin Espinoza Gómez",
       "sec": "Javier Alfredo Aguirre Gaete",
       "sup": "Cristian Andrés Salas Dominguez (Universidad de Valparaíso)",
-      "tipo": "Oral"
+      "tipo": "Oral",
+      "resumen": "Marine heatwaves (MHWs) occur within the highly productive Humboldt Current upwelling system, yet the processes controlling their development remain poorly constrained. We use online heat-budget diagnostics from a 3-km CROCO configuration of central-southern Chile (29–42°S) to examine 76 MHWs detected during 2014–2018. Heat budgets are evaluated over a fixed 0–15 m layer and the model-diagnosed KPP surface boundary layer in three coastal and two offshore regions. Coastal and offshore events exhibit contrasting heat-budget signatures. Along the coast, MHW onset is consistently associated with anomalous advective warming that is robust to control-volume definition, reaching about 74 W m⁻² in the northern coastal region. Offshore, onset warming is dominated by non-advective processes. During decay, total advection reverses sign and provides substantial cooling in the northern and central coastal regions, equivalent to 57–70% of the onset advective warming. Although the partition between surface forcing and lower-boundary exchange depends on the control volume, their combined non-advective contribution is more robust. Over 1994–2023, wind-stress relaxations occurred within 10 days before approximately half of MHW onsets in the northern and central coastal regions, at rates 2.5–3 times higher than expected by chance. However, 80–88% of relaxations were not followed by a MHW. These results indicate that coastal MHW onset is associated with a temporary relaxation of the advective cooling regime, whereas offshore MHWs follow a predominantly surface-forced pathway."
     },
     {
       "id": "O-050",
@@ -5358,7 +5359,7 @@ window.CONGRESO_DATA = {
         {
           "codigo": "O-049",
           "tipo": "Oral",
-          "titulo": "Descomposición del balance de calor durante olas de calor marinas frente a Chile centro-sur mediante diagnósticos en línea de un modelo hidrodinámico regional."
+          "titulo": "Marine heatwaves off central-southern Chile (29–42°S): online heat-budget diagnostics of coastal advection, offshore surface forcing and wind relaxation"
         }
       ]
     },
