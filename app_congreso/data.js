@@ -3255,26 +3255,6 @@ window.CONGRESO_DATA = {
       "tipo": "Póster"
     },
     {
-      "id": "P-080",
-      "dia_num": 2,
-      "fecha": "2026-11-25",
-      "dia_label": "Día 2 (Miércoles 25 Noviembre)",
-      "horario": "17:00 - 19:00",
-      "start_time": "17:00",
-      "end_time": "19:00",
-      "sala": "Sectores Comunes Pisos 2 y 3",
-      "sesion": "Sesión de Pósters Día 2",
-      "eje": "Variabilidad Climática",
-      "autor": "Leonor Gabriela Valdés Calderón",
-      "inst": "Departamento de Geofísica, Universidad de Chile (DGF-UCh)",
-      "titulo": "Recuperación del espesor óptico de aerosoles en el ex-observatorio astronómico solar Montezuma",
-      "email": "leonor.valdes@ug.uchile.cl",
-      "pres": "Dra. Catalina Aguirre",
-      "sec": "Dr. Deniz Bozkurt",
-      "sup": "Dr. René Garreaud",
-      "tipo": "Póster"
-    },
-    {
       "id": "P-033",
       "dia_num": 3,
       "fecha": "2026-11-26",
@@ -3375,7 +3355,7 @@ window.CONGRESO_DATA = {
       "tipo": "Póster"
     },
     {
-      "id": "P-039",
+      "id": "P-038",
       "dia_num": 3,
       "fecha": "2026-11-26",
       "dia_label": "Día 3 (Jueves 26 Noviembre)",
@@ -3389,6 +3369,27 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Valparaíso",
       "titulo": "Patrones biogeográficos del ensamble de eufáusidos en el mar exterior de la Patagonia chilena en respuesta a las condiciones oceanográficas",
       "email": "cristine.lopez.gaul@gmail.com",
+      "pres": "Dr. Samuel Hormazábal",
+      "sec": "Dra. Laura Farías",
+      "sup": "Gabriel Correa",
+      "tipo": "Póster"
+    },
+    {
+      "id": "P-039",
+      "dia_num": 3,
+      "fecha": "2026-11-26",
+      "dia_label": "Día 3 (Jueves 26 Noviembre)",
+      "horario": "17:00 - 19:00",
+      "start_time": "17:00",
+      "end_time": "19:00",
+      "sala": "Sectores Comunes Pisos 2 y 3 (Conectores Salas 2.5 y 3.1)",
+      "sesion": "Sesión de Pósters Día 3",
+      "eje": "Acoplamiento físico-biogeoquímico",
+      "autor": "Dr. Ramiro Antonio Riquelme-Bugueño",
+      "inst": "Departamento de Zoología, Facultad de Ciencias Naturales y Oceanográficas, Universidad de Concepción; Núcleo Milenio DEOXS",
+      "titulo": "Desoxigenación y exposición del hábitat vertical del krill bajo escenarios climáticos.",
+      "resumen": "La desoxigenación puede comprimir el hábitat vertical del krill y alterar el acoplamiento entre la biodiversidad, la circulación y las zonas de oxígeno mínimo. Evaluamos cuándo el cambio proyectado en la concentración de oxígeno (O₂) superará su variabilidad natural y cómo depende de la residencia vertical de las especies. Analizamos celdas con presencia de krill frente a Chile, entre 18° S y 57° S, y hasta 2000 km de la costa. La climatología del WOA23 se combinó con tres modelos climáticos globales (océano, atmósfera y ciclos biogeoquímicos), tres escenarios de emisiones y controles preindustriales. El tiempo de cambio se definió mediante medias móviles de 20 años y la excedencia permanente de la variabilidad interna. La exposición entre 100 y 1000 m se ponderó según las distribuciones de Euphausia eximia, E. mucronata y E. lucens. Cuatro de las nueve combinaciones modelo-escenario mostraron cambios que superaron la variabilidad natural hasta 2100. Con altas emisiones, dos modelos proyectaron una disminución del O₂ que superaba la variabilidad natural en 2043 y 2061, mientras que el tercero no mostró cambios antes de 2100. Con emisiones moderadas, un modelo proyectó una disminución del O₂ en 2092. El escenario de bajas emisiones resultó inconsistente. El O₂ disminuyó en E. eximia y E. mucronata en la mayoría de las proyecciones, pero la fracción de hábitat con <45 µM (~1 mL O₂ L⁻¹) no mostró una respuesta consistente entre los modelos. Los resultados dependieron del modelo y de la residencia vertical, mientras que la inferencia poblacional requerirá datos de abundancia por estadios de vida.",
+      "email": "rriquelm@udec.cl",
       "pres": "Dr. Samuel Hormazábal",
       "sec": "Dra. Laura Farías",
       "sup": "Gabriel Correa",
@@ -4172,6 +4173,26 @@ window.CONGRESO_DATA = {
       "pres": "Dr. Marcus Sobarzo",
       "sec": "Dr. Boris Dewitte",
       "sup": "Matías Pavez",
+      "tipo": "Póster"
+    },
+    {
+      "id": "P-080",
+      "dia_num": 2,
+      "fecha": "2026-11-25",
+      "dia_label": "Día 2 (Miércoles 25 Noviembre)",
+      "horario": "17:00 - 19:00",
+      "start_time": "17:00",
+      "end_time": "19:00",
+      "sala": "Sectores Comunes Pisos 2 y 3",
+      "sesion": "Sesión de Pósters Día 2",
+      "eje": "Variabilidad Climática",
+      "autor": "Leonor Gabriela Valdés Calderón",
+      "inst": "Departamento de Geofísica, Universidad de Chile (DGF-UCh)",
+      "titulo": "Recuperación del espesor óptico de aerosoles en el ex-observatorio astronómico solar Montezuma",
+      "email": "leonor.valdes@ug.uchile.cl",
+      "pres": "Dra. Catalina Aguirre",
+      "sec": "Dr. Deniz Bozkurt",
+      "sup": "Dr. René Garreaud",
       "tipo": "Póster"
     },
     {
@@ -5395,7 +5416,7 @@ window.CONGRESO_DATA = {
           "titulo": "Patrones espaciales en la comunidad zooplanctónica a lo largo del gradiente meridional de agua dulce en el mar exterior de la Patagonia"
         },
         {
-          "codigo": "P-039",
+          "codigo": "P-038",
           "tipo": "Póster",
           "titulo": "Patrones biogeográficos del ensamble de eufáusidos en el mar exterior de la Patagonia chilena en respuesta a las condiciones oceanográficas"
         }
@@ -7188,12 +7209,23 @@ window.CONGRESO_DATA = {
           "titulo": "VARIABILIDAD Y CARACTERIZACIÓN AMBIENTAL EN EL ENTORNO MARINO DE GRANJAS ACUÍCOLAS COSTERAS (PROYECTOS SIRENA Y SIRENA 2)"
         }
       ]
+    },
+    {
+      "nombre": "Dr. Ramiro Antonio Riquelme-Bugueño",
+      "inst": "Departamento de Zoología, Universidad de Concepción; Núcleo Milenio DEOXS",
+      "trabajos": [
+        {
+          "codigo": "P-039",
+          "tipo": "Póster",
+          "titulo": "Desoxigenación y exposición del hábitat vertical del krill bajo escenarios climáticos."
+        }
+      ]
     }
   ],
   "totales": {
-    "orales": 112,
+    "orales": 110,
     "posters": 95,
-    "total": 207
+    "total": 205
   },
   "guia_gastronomica": {
     "sector": "Plaza O'Higgins y Barrio El Almendral",
