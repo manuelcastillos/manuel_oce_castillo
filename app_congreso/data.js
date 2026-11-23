@@ -1368,7 +1368,7 @@ window.CONGRESO_DATA = {
       "email": "jab@meteo.uv.cl",
       "pres": "Dr. Raúl Valenzuela",
       "sec": "Jonathan Oberreuter",
-      "sup": "Sebastián Andrés García Loyola (Universidad de Concepción)",
+      "sup": "Jorge Arévalo (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1408,7 +1408,7 @@ window.CONGRESO_DATA = {
       "email": "raul.valenzuela@uoh.cl",
       "pres": "Dr. Raúl Valenzuela",
       "sec": "Jonathan Oberreuter",
-      "sup": "Sebastián Andrés García Loyola (Universidad de Concepción)",
+      "sup": "Jorge Arévalo (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1449,7 +1449,7 @@ window.CONGRESO_DATA = {
       "email": "jonysatie@gmail.com",
       "pres": "Dr. Raúl Valenzuela",
       "sec": "Jonathan Oberreuter",
-      "sup": "Sebastián Andrés García Loyola (Universidad de Concepción)",
+      "sup": "Jorge Arévalo (Universidad de Valparaíso)",
       "tipo": "Oral"
     },
     {
@@ -1469,7 +1469,7 @@ window.CONGRESO_DATA = {
       "email": "andres.varas.g@gmail.com",
       "pres": "Dra. María de los Ángeles Marrero Díaz",
       "sec": "ANDRÉS ALBERTO VARAS GÓMEZ",
-      "sup": "Marina Hernández (CopernicusLAC / U. Chile)",
+      "sup": "Nicolás Andrés Donoso Castro (Innovex SpA)",
       "tipo": "Oral"
     },
     {
@@ -1509,7 +1509,7 @@ window.CONGRESO_DATA = {
       "email": "nicolas.donoso@innovex.cl",
       "pres": "Dra. María de los Ángeles Marrero Díaz",
       "sec": "ANDRÉS ALBERTO VARAS GÓMEZ",
-      "sup": "Marina Hernández (CopernicusLAC / U. Chile)",
+      "sup": "Nicolás Andrés Donoso Castro (Innovex SpA)",
       "tipo": "Oral"
     },
     {
@@ -1549,7 +1549,7 @@ window.CONGRESO_DATA = {
       "email": "marina.hernandez@uchile.cl",
       "pres": "Dra. María de los Ángeles Marrero Díaz",
       "sec": "ANDRÉS ALBERTO VARAS GÓMEZ",
-      "sup": "Marina Hernández (CopernicusLAC / U. Chile)",
+      "sup": "Nicolás Andrés Donoso Castro (Innovex SpA)",
       "tipo": "Oral"
     },
     {
@@ -1589,7 +1589,7 @@ window.CONGRESO_DATA = {
       "email": "angeles.marrero@ulpgc.es",
       "pres": "Dra. María de los Ángeles Marrero Díaz",
       "sec": "ANDRÉS ALBERTO VARAS GÓMEZ",
-      "sup": "Marina Hernández (CopernicusLAC / U. Chile)",
+      "sup": "Nicolás Andrés Donoso Castro (Innovex SpA)",
       "tipo": "Oral"
     },
     {
@@ -1748,8 +1748,8 @@ window.CONGRESO_DATA = {
       "titulo": "Distribución de masas de agua y circulación geostrófica en el Pacífico Sur Oriental: dominios verticales y su relación con la dinámica regional",
       "email": "adrian.bustamante@ifop.cl",
       "pres": "Dra. Vera Oerder",
-      "sec": "Dr. Marcus Sobarzo",
-      "sup": "Dr. Oscar Pizarro (Director Científico CIO / IMO / UdeC)",
+      "sec": "Dr. Gonzalo Saldías",
+      "sup": "Dra. Andrea Piñones (Universidad Austral de Chile / COPAS Coastal / IDEAL)",
       "tipo": "Oral"
     },
     {
@@ -1788,8 +1788,8 @@ window.CONGRESO_DATA = {
       "titulo": "Energetic pathways of upwelling-front instabilities over a submarine canyon",
       "email": "gsaldias@ubiobio.cl",
       "pres": "Dra. Vera Oerder",
-      "sec": "Dr. Marcus Sobarzo",
-      "sup": "Dr. Oscar Pizarro (Director Científico CIO / IMO / UdeC)",
+      "sec": "Dr. Gonzalo Saldías",
+      "sup": "Dra. Andrea Piñones (Universidad Austral de Chile / COPAS Coastal / IDEAL)",
       "tipo": "Oral"
     },
     {
@@ -1828,8 +1828,8 @@ window.CONGRESO_DATA = {
       "titulo": "Contribución relativa del transporte geostrófico y de Ekman a la circulación en la zona centro norte de Chile (28.5°S – 30.5°S)",
       "email": "marcel.ramos.q780@gmail.com",
       "pres": "Dra. Vera Oerder",
-      "sec": "Dr. Marcus Sobarzo",
-      "sup": "Dr. Oscar Pizarro (Director Científico CIO / IMO / UdeC)",
+      "sec": "Dr. Gonzalo Saldías",
+      "sup": "Dra. Andrea Piñones (Universidad Austral de Chile / COPAS Coastal / IDEAL)",
       "tipo": "Oral"
     },
     {
@@ -1868,8 +1868,8 @@ window.CONGRESO_DATA = {
       "titulo": "Variabilidad de alta frecuencia y sinóptica durante un evento de surgencia costera en la zona central de Chile",
       "email": "dnarvaez@oceanografia.udec.cl",
       "pres": "Dra. Vera Oerder",
-      "sec": "Dr. Marcus Sobarzo",
-      "sup": "Dr. Oscar Pizarro (Director Científico CIO / IMO / UdeC)",
+      "sec": "Dr. Gonzalo Saldías",
+      "sup": "Dra. Andrea Piñones (Universidad Austral de Chile / COPAS Coastal / IDEAL)",
       "tipo": "Oral"
     },
     {
@@ -1908,8 +1908,8 @@ window.CONGRESO_DATA = {
       "titulo": "Circulación profunda del Pacífico Sur Oriental: desafíos para su caracterización mediante observaciones y modelación numérica",
       "email": "vera.oerder@imo-chile.cl",
       "pres": "Dra. Vera Oerder",
-      "sec": "Dr. Marcus Sobarzo",
-      "sup": "Dr. Oscar Pizarro (Director Científico CIO / IMO / UdeC)",
+      "sec": "Dr. Gonzalo Saldías",
+      "sup": "Dra. Andrea Piñones (Universidad Austral de Chile / COPAS Coastal / IDEAL)",
       "tipo": "Oral"
     },
     {
@@ -1949,7 +1949,7 @@ window.CONGRESO_DATA = {
       "email": "andrea.pinones@uach.cl",
       "pres": "Dra. Vera Oerder",
       "sec": "Dr. Gonzalo Saldías",
-      "sup": "Dr. Oscar Pizarro Arriagada",
+      "sup": "Dra. Andrea Piñones (Universidad Austral de Chile / COPAS Coastal / IDEAL)",
       "tipo": "Oral"
     },
     {
@@ -1988,8 +1988,8 @@ window.CONGRESO_DATA = {
       "titulo": "Desarrollo de un modelo físico-biogeoquímico en la Patagonia norte de Chile",
       "email": "oddyale@gmail.com",
       "pres": "Odette Alejandra Vergara Soto",
-      "sec": "Francisca Victoria del Carmen Quijada Mateluna",
-      "sup": "Martina Raquel Monasterio Sandoval (Universidad de Valparaíso)",
+      "sec": "Martina Raquel Monasterio Sandoval",
+      "sup": "Jennifer Villarroel-Nenen (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -2048,8 +2048,8 @@ window.CONGRESO_DATA = {
       "titulo": "Propagación de la marea barotrópica por un estrecho interoceánico.",
       "email": "martina.monasterio@sansano.usm.cl",
       "pres": "Odette Alejandra Vergara Soto",
-      "sec": "Francisca Victoria del Carmen Quijada Mateluna",
-      "sup": "Martina Raquel Monasterio Sandoval (Universidad de Valparaíso)",
+      "sec": "Martina Raquel Monasterio Sandoval",
+      "sup": "Jennifer Villarroel-Nenen (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -2088,8 +2088,8 @@ window.CONGRESO_DATA = {
       "titulo": "Exploración de potenciales zonas de generación y propagación de mareas internas semidiurnas",
       "email": "jennifervillarroelnenen@gmail.com",
       "pres": "Odette Alejandra Vergara Soto",
-      "sec": "Francisca Victoria del Carmen Quijada Mateluna",
-      "sup": "Martina Raquel Monasterio Sandoval (Universidad de Valparaíso)",
+      "sec": "Martina Raquel Monasterio Sandoval",
+      "sup": "Jennifer Villarroel-Nenen (Universidad de Concepción)",
       "tipo": "Oral"
     },
     {
@@ -2587,8 +2587,8 @@ window.CONGRESO_DATA = {
       "inst": "Universidad de Concepción",
       "titulo": "Evaluación de los moduladores climáticos de la variabilidad del viento en América del Sur y sus efectos sobre la generación eólica futura",
       "email": "ollompart@udec.cl",
-      "pres": "Dra. Andrea Piñones",
-      "sec": "Ovidio Llompart",
+      "pres": "Dr. Ovidio Llompart",
+      "sec": "Amin Kadim Ali Cordero",
       "sup": "Amin Kadim Ali Cordero (Universidad de Concepción)",
       "tipo": "Oral"
     },
@@ -2647,8 +2647,8 @@ window.CONGRESO_DATA = {
       "inst": "Departamento de Física, Facultad de Ciencias. Universidad de Bío-Bío.",
       "titulo": "Respuesta de la circulación de Bahía Concepción a eventos de viento del norte y ríos atmosféricos",
       "email": "aali2018@udec.cl",
-      "pres": "Dra. Andrea Piñones",
-      "sec": "Ovidio Llompart",
+      "pres": "Dr. Ovidio Llompart",
+      "sec": "Amin Kadim Ali Cordero",
       "sup": "Amin Kadim Ali Cordero (Universidad de Concepción)",
       "tipo": "Oral"
     }
@@ -4704,8 +4704,8 @@ window.CONGRESO_DATA = {
       "inst_pres": "Instituto de Cs. de la Ingeniería, Universidad de O'Higgins / CR2",
       "sec": "Jonathan Oberreuter",
       "inst_sec": "Universidad Austral de Chile",
-      "sup": "Yosvany Garcia Santos (Universidad de Chile)",
-      "inst_sup": ""
+      "sup": "Jorge Arévalo",
+      "inst_sup": "Universidad de Valparaíso"
     },
     {
       "num": "Bloque 11",
@@ -4719,8 +4719,8 @@ window.CONGRESO_DATA = {
       "inst_pres": "Instituto Universitario ECOAQUA, Universidad de Las Palmas de Gran Canaria, España",
       "sec": "ANDRÉS ALBERTO VARAS GÓMEZ",
       "inst_sec": "Instituto de Fomento Pesquero (IFOP)",
-      "sup": "Gustavo Alfredo Rohde Medina (LOFISAT, Universidad de Valparaíso)",
-      "inst_sup": ""
+      "sup": "Nicolás Andrés Donoso Castro",
+      "inst_sup": "Innovex SpA"
     },
     {
       "num": "Bloque 12",
@@ -4779,8 +4779,8 @@ window.CONGRESO_DATA = {
       "inst_pres": "Universidad de Concepción / IMO / Núcleo Milenio DEOXs",
       "sec": "Dr. Gonzalo Saldías",
       "inst_sec": "Universidad del Bío-Bío",
-      "sup": "Dr. Oscar Pizarro (Director Científico CIO / IMO / UdeC)",
-      "inst_sup": ""
+      "sup": "Dra. Andrea Piñones",
+      "inst_sup": "Universidad Austral de Chile / COPAS Coastal / IDEAL"
     },
     {
       "num": "Bloque 16",
@@ -4794,8 +4794,8 @@ window.CONGRESO_DATA = {
       "inst_pres": "Departamento de Geofísica, Universidad de Concepción & CR2",
       "sec": "Matías Arias Ortega",
       "inst_sec": "Universidad de Costa Rica",
-      "sup": "Rodrigo Castillo Rodríguez (Universidad de Costa Rica)",
-      "inst_sup": ""
+      "sup": "Dr. Deniz Bozkurt",
+      "inst_sup": "Universidad de Valparaíso"
     },
     {
       "num": "Bloque 17",
@@ -4807,10 +4807,10 @@ window.CONGRESO_DATA = {
       "codigos": "O-078 a O-081 (4 ponencias)",
       "pres": "Odette Alejandra Vergara Soto",
       "inst_pres": "Simulación y Pronóstico Marino, SpA",
-      "sec": "Francisca Victoria del Carmen Quijada Mateluna",
-      "inst_sec": "Servicio Hidrográfico y Oceanográfico de la Armada (SHOA)",
-      "sup": "Martina Raquel Monasterio Sandoval (Universidad de Valparaíso)",
-      "inst_sup": ""
+      "sec": "Martina Raquel Monasterio Sandoval",
+      "inst_sec": "Universidad Técnica Federico Santa María",
+      "sup": "Jennifer Villarroel-Nenen",
+      "inst_sup": "Universidad de Concepción"
     },
     {
       "num": "Bloque 18",
@@ -4941,11 +4941,11 @@ window.CONGRESO_DATA = {
       "sesion": "Energías Renovables y Dinámica Costera Forzada por la Atmósfera — Subtema: Recurso Eólico, Oleaje y Respuesta Hidrodinámica a Eventos Extremos",
       "codigos": "O-108 a O-112 (2 ponencias)",
       "pres": "Dr. Ovidio Llompart",
-      "inst_pres": "Pontificia Universidad Católica de Chile",
-      "sec": "Ovidio Llompart",
+      "inst_pres": "Universidad de Concepción",
+      "sec": "Amin Kadim Ali Cordero",
       "inst_sec": "Universidad de Concepción",
-      "sup": "Amin Kadim Ali Cordero (Universidad de Concepción)",
-      "inst_sup": ""
+      "sup": "Amin Kadim Ali Cordero",
+      "inst_sup": "Universidad de Concepción"
     },
     {
       "num": "Pósters Día 2",
