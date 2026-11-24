@@ -109,6 +109,7 @@
       padding: 32px 28px;
       box-shadow: var(--shadow-card);
       border: 1px solid #E2E8F0;
+      margin-bottom: 24px;
     }
 
     @media (max-width: 480px) {
@@ -255,7 +256,7 @@
 
     /* Formulario */
     .form-section {
-      margin-bottom: 28px;
+      margin-bottom: 26px;
     }
 
     .section-heading {
@@ -274,6 +275,17 @@
       margin-bottom: 12px;
     }
 
+    .section-helper-alert {
+      font-size: 0.82rem;
+      color: #B45309;
+      background: #FEF3C7;
+      border: 1px solid #FDE68A;
+      padding: 8px 12px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      line-height: 1.45;
+    }
+
     .input-field {
       width: 100%;
       padding: 12px 14px;
@@ -290,6 +302,11 @@
       outline: none;
       border-color: #0284C7;
       box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+
+    textarea.input-field {
+      min-height: 75px;
+      resize: vertical;
     }
 
     /* Tarjetas Interactivas de Selección (Colores Claros) */
@@ -371,7 +388,7 @@
     }
 
     .card-icon {
-      font-size: 1.35rem;
+      font-size: 1.4rem;
     }
 
     .card-radio {
@@ -399,7 +416,7 @@
     }
 
     .card-title {
-      font-size: 0.96rem;
+      font-size: 1rem;
       font-weight: 700;
       color: #0F172A;
       margin-bottom: 4px;
@@ -411,7 +428,7 @@
       font-weight: 700;
       padding: 3px 8px;
       border-radius: 4px;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
       width: fit-content;
     }
 
@@ -479,33 +496,6 @@
       border-color: #64748B;
       background: #F1F5F9;
       color: #475569;
-    }
-
-    /* Restricciones Alimentarias */
-    .diet-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .diet-pill {
-      font-size: 0.8rem;
-      font-weight: 500;
-      padding: 6px 12px;
-      border-radius: 20px;
-      border: 1px solid #CBD5E1;
-      background: #FFFFFF;
-      color: #475569;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .diet-pill.active {
-      background: #F0F9FF;
-      border-color: #0284C7;
-      color: #0284C7;
-      font-weight: 600;
     }
 
     /* Botón Enviar */
@@ -598,87 +588,175 @@
       color: #0F172A;
     }
 
-    /* Panel de Administración / Estadísticas */
-    .admin-toggle {
-      text-align: center;
-      margin-top: 24px;
-      font-size: 0.8rem;
-      color: var(--text-light);
-    }
-
-    .admin-link {
-      color: var(--text-muted);
-      text-decoration: underline;
-      cursor: pointer;
-      font-weight: 500;
-    }
-
-    .admin-panel {
-      display: none;
+    /* =======================================================
+       SECCIÓN DE ESTADÍSTICAS EN TIEMPO REAL (SIEMPRE VISIBLE)
+       ======================================================= */
+    .stats-card {
       background: #FFFFFF;
       border: 1px solid #E2E8F0;
-      border-radius: var(--radius-md);
-      padding: 20px;
-      margin-top: 20px;
+      border-radius: var(--radius-lg);
+      padding: 24px 22px;
       box-shadow: var(--shadow-card);
+      margin-bottom: 24px;
     }
 
-    .stats-grid {
+    .stats-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #F1F5F9;
+      padding-bottom: 12px;
+    }
+
+    .stats-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #0F172A;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .live-pulse-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #FEF2F2;
+      border: 1px solid #FECACA;
+      color: #DC2626;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 20px;
+    }
+
+    .pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #DC2626;
+      box-shadow: 0 0 0 rgba(220, 38, 38, 0.4);
+      animation: pulseAnim 1.8s infinite;
+    }
+
+    @keyframes pulseAnim {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(220, 38, 38, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+    }
+
+    .stats-grid-primary {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
-      margin-bottom: 16px;
+      margin-bottom: 20px;
     }
 
     @media (max-width: 480px) {
-      .stats-grid {
+      .stats-grid-primary {
         grid-template-columns: 1fr;
       }
     }
 
-    .stat-box {
+    .stat-metric-box {
       background: #F8FAFC;
       border: 1px solid #E2E8F0;
       border-radius: var(--radius-sm);
-      padding: 12px;
+      padding: 14px 10px;
       text-align: center;
     }
 
-    .stat-number {
-      font-size: 1.4rem;
+    .stat-metric-num {
+      font-size: 1.7rem;
       font-weight: 800;
-      color: #0284C7;
+      line-height: 1.1;
     }
 
-    .stat-label {
+    .stat-metric-lbl {
       font-size: 0.75rem;
-      color: var(--text-muted);
       font-weight: 600;
+      color: var(--text-muted);
       text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* Barras Proporcionales de Comparación */
+    .comparison-section {
+      margin-bottom: 16px;
+    }
+
+    .comp-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #334155;
+      margin-bottom: 6px;
+    }
+
+    .comp-bar-container {
+      height: 14px;
+      border-radius: 7px;
+      background: #E2E8F0;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .comp-bar-fill {
+      height: 100%;
+      transition: width 0.4s ease;
+    }
+
+    .comp-legend {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      margin-top: 5px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .legend-color-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 3px;
+    }
+
+    /* Tabla de Registros */
+    .admin-table-container {
+      margin-top: 16px;
+      border-top: 1px solid #F1F5F9;
+      padding-top: 12px;
     }
 
     .admin-table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.78rem;
-      margin-top: 10px;
+      font-size: 0.8rem;
     }
 
     .admin-table th, .admin-table td {
       border: 1px solid #E2E8F0;
-      padding: 6px 8px;
+      padding: 7px 9px;
       text-align: left;
     }
 
     .admin-table th {
-      background: #F1F5F9;
+      background: #F8FAFC;
       font-weight: 700;
+      color: #475569;
     }
 
     /* Footer */
     .footer-note {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 20px;
       font-size: 0.78rem;
       color: var(--text-light);
     }
@@ -808,49 +886,44 @@
             <input type="hidden" id="categoriaVal" required>
           </div>
 
-          <!-- 3. Preferencia de Menú (Carnívoro vs Vegetariano) -->
+          <!-- 3. Preferencia de Menú (Estrictamente: Menú Tradicional o Menú Vegetariano, sin descripciones) -->
           <div class="form-section">
             <label class="section-heading">
               <i class="fa-solid fa-plate-wheat" style="color: #D97706;"></i> 4. Preferencia de Menú:
             </label>
-            <div class="section-helper">El hotel solicita conocer previamente la proporción de platos para la cocina:</div>
+            <div class="section-helper">Selecciona tu opción para estimar la proporción requerida con el hotel:</div>
 
             <div class="cards-grid">
               <!-- Tarjeta Tradicional (Ámbar Claro) -->
-              <div class="choice-card card-carnivore" id="cardCarnivoro" onclick="selectMenu('Tradicional (Carnes/Pescado)')">
+              <div class="choice-card card-carnivore" id="cardCarnivoro" onclick="selectMenu('Menú Tradicional')">
                 <div class="card-top">
                   <span class="card-icon" style="color: #D97706;">🥩</span>
                   <div class="card-radio" style="color: #D97706;"></div>
                 </div>
                 <div class="card-title">Menú Tradicional</div>
-                <div class="card-desc">Entrada fría, plato de fondo de carne de res o pescado al horno con guarnición, postre y bebestibles.</div>
               </div>
 
               <!-- Tarjeta Vegetariana (Verde Claro) -->
-              <div class="choice-card card-veggie" id="cardVegetariano" onclick="selectMenu('Vegetariano / Vegano')">
+              <div class="choice-card card-veggie" id="cardVegetariano" onclick="selectMenu('Menú Vegetariano')">
                 <div class="card-top">
                   <span class="card-icon" style="color: #059669;">🥗</span>
                   <div class="card-radio" style="color: #059669;"></div>
                 </div>
-                <div class="card-title">Menú Vegetariano / Vegano</div>
-                <div class="card-desc">Entrada vegetal de la estación, plato de fondo a base de pastas artesanales o vegetales seleccionados y postre.</div>
+                <div class="card-title">Menú Vegetariano</div>
               </div>
             </div>
             <input type="hidden" id="menuVal" required>
           </div>
 
-          <!-- 4. Restricciones Alimentarias Adicionales (Opcional) -->
+          <!-- 4. Observaciones o Restricciones Alimentarias (Opcional, con subtítulo de factibilidad) -->
           <div class="form-section">
-            <label class="section-heading">
-              <i class="fa-solid fa-shield-heart" style="color: #64748B;"></i> 5. Alergias o Restricciones (Opcional):
+            <label class="section-heading" for="obsInput">
+              <i class="fa-solid fa-clipboard-list" style="color: #B45309;"></i> 5. Observaciones o Restricciones Alimentarias (Opcional):
             </label>
-            <div class="diet-pills">
-              <div class="diet-pill" onclick="toggleDiet(this, 'Sin Gluten (Celíaco)')">🌾 Sin Gluten (Celíaco)</div>
-              <div class="diet-pill" onclick="toggleDiet(this, 'Sin Lactosa')">🥛 Sin Lactosa</div>
-              <div class="diet-pill" onclick="toggleDiet(this, 'Alergia a Mariscos')">🦐 Alergia a Mariscos</div>
-              <div class="diet-pill" onclick="toggleDiet(this, 'Alergia a Frutos Secos')">🥜 Frutos Secos</div>
+            <div class="section-helper-alert">
+              <i class="fa-solid fa-circle-info"></i> <strong>Nota:</strong> Se realizarán las consultas con la cocina del hotel respecto a las observaciones indicadas y se notificará oportunamente a cada participante sobre su factibilidad técnica.
             </div>
-            <input type="text" id="otraRestriccion" class="input-field" style="margin-top: 10px;" placeholder="Otra alergia médica o consideración alimentaria específica...">
+            <textarea id="obsInput" class="input-field" placeholder="Indica aquí si tienes alguna condición médica o restricción alimentaria relevante (ej. celiaquía, alergia severa)..."></textarea>
           </div>
 
           <!-- 5. Intención de Asistencia -->
@@ -887,7 +960,7 @@
         </div>
         <h2 class="success-title">¡Muchas Gracias por tu Respuesta!</h2>
         <p class="success-desc">
-          Tus preferencias han quedado registradas correctamente. Esta información permitirá al Comité Organizador cerrar el número de cupos con el Hotel Marina del Rey y aplicar el mayor subsidio posible a las adhesiones.
+          Tus preferencias han quedado registradas correctamente en el sistema. Esta información permitirá al Comité Organizador cerrar el número de cupos con el Hotel Marina del Rey y aplicar el mayor subsidio posible a las adhesiones.
         </p>
 
         <!-- Resumen del Registro -->
@@ -907,6 +980,10 @@
           <div class="receipt-row">
             <span class="receipt-label">Menú Seleccionado:</span>
             <span class="receipt-val" id="resMenu">-</span>
+          </div>
+          <div class="receipt-row">
+            <span class="receipt-label">Observaciones:</span>
+            <span class="receipt-val" id="resObs">Ninguna</span>
           </div>
           <div class="receipt-row">
             <span class="receipt-label">Intención de Asistencia:</span>
@@ -934,63 +1011,93 @@
 
     </div>
 
-    <!-- Panel de Administración / Estadísticas en Tiempo Real -->
-    <div class="admin-toggle">
-      <span class="admin-link" onclick="toggleAdminPanel()">
-        <i class="fa-solid fa-chart-pie"></i> Ver Estadísticas de Respuestas (Admin)
-      </span>
-    </div>
-
-    <div class="admin-panel" id="adminPanel">
-      <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 12px; color: #0F172A; display: flex; justify-content: space-between; align-items: center;">
-        <span>📊 Resumen en Tiempo Real de Encuestados</span>
-        <button onclick="exportToCSV()" style="background: #0284C7; color: #fff; border: none; padding: 6px 12px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; cursor: pointer;">
-          <i class="fa-solid fa-file-excel"></i> Descargar CSV
-        </button>
-      </h3>
-
-      <div class="stats-grid">
-        <div class="stat-box">
-          <div class="stat-number" id="statTotal">0</div>
-          <div class="stat-label">Total Respuestas</div>
+    <!-- =======================================================
+         TARJETA DE ESTADÍSTICAS EN TIEMPO REAL (SIEMPRE VISIBLE)
+         ======================================================= -->
+    <div class="stats-card">
+      <div class="stats-header">
+        <div class="stats-title">
+          <i class="fa-solid fa-chart-column" style="color: #0284C7;"></i> Estadísticas en Tiempo Real
         </div>
-        <div class="stat-box">
-          <div class="stat-number" style="color: #16A34A;" id="statEstudiantes">0</div>
-          <div class="stat-label">Estudiantes</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-number" style="color: #0284C7;" id="statInvestigadores">0</div>
-          <div class="stat-label">Investigadores</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-number" style="color: #D97706;" id="statCarnivoros">0</div>
-          <div class="stat-label">Menú Tradicional</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-number" style="color: #059669;" id="statVegetarianos">0</div>
-          <div class="stat-label">Menú Vegetariano</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-number" style="color: #15803D;" id="statSiAsiste">0</div>
-          <div class="stat-label">Confirmados Sí</div>
+        <div class="live-pulse-badge">
+          <span class="pulse-dot"></span> EN VIVO
         </div>
       </div>
 
-      <div style="max-height: 220px; overflow-y: auto;">
-        <table class="admin-table">
-          <thead>
-            <tr>
-              <th>Fecha</th>
-              <th>Nombre</th>
-              <th>Categoría</th>
-              <th>Menú</th>
-              <th>Asiste</th>
-            </tr>
-          </thead>
-          <tbody id="adminTableBody">
-            <tr><td colspan="5" style="text-align: center; color: #94A3B8;">No hay respuestas registradas aún en este navegador.</td></tr>
-          </tbody>
-        </table>
+      <!-- Métricas Principales -->
+      <div class="stats-grid-primary">
+        <div class="stat-metric-box">
+          <div class="stat-metric-num" style="color: #0F172A;" id="statTotal">0</div>
+          <div class="stat-metric-lbl">Total Respuestas</div>
+        </div>
+        <div class="stat-metric-box">
+          <div class="stat-metric-num" style="color: #16A34A;" id="statEstudiantes">0</div>
+          <div class="stat-metric-lbl">🎓 Estudiantes</div>
+        </div>
+        <div class="stat-metric-box">
+          <div class="stat-metric-num" style="color: #0284C7;" id="statInvestigadores">0</div>
+          <div class="stat-metric-lbl">🔬 Investigadores</div>
+        </div>
+      </div>
+
+      <!-- Barra Comparativa: Categoría (Estudiantes vs Investigadores) -->
+      <div class="comparison-section">
+        <div class="comp-header">
+          <span>Proporción de Asistentes</span>
+          <span id="compCatPct">--% Estudiantes / --% Investigadores</span>
+        </div>
+        <div class="comp-bar-container">
+          <div id="barEstudiantes" class="comp-bar-fill" style="background: #16A34A; width: 50%;"></div>
+          <div id="barInvestigadores" class="comp-bar-fill" style="background: #0284C7; width: 50%;"></div>
+        </div>
+        <div class="comp-legend">
+          <span class="legend-item"><span class="legend-color-dot" style="background: #16A34A;"></span> Estudiantes</span>
+          <span class="legend-item"><span class="legend-color-dot" style="background: #0284C7;"></span> Investigadores</span>
+        </div>
+      </div>
+
+      <!-- Barra Comparativa: Menú (Tradicional vs Vegetariano) -->
+      <div class="comparison-section">
+        <div class="comp-header">
+          <span>Preferencia Gastronómica</span>
+          <span id="compMenuPct">--% Tradicional / --% Vegetariano</span>
+        </div>
+        <div class="comp-bar-container">
+          <div id="barCarnivoros" class="comp-bar-fill" style="background: #D97706; width: 50%;"></div>
+          <div id="barVegetarianos" class="comp-bar-fill" style="background: #059669; width: 50%;"></div>
+        </div>
+        <div class="comp-legend">
+          <span class="legend-item"><span class="legend-color-dot" style="background: #D97706;"></span> Menú Tradicional (<span id="statCarnivoros">0</span>)</span>
+          <span class="legend-item"><span class="legend-color-dot" style="background: #059669;"></span> Menú Vegetariano (<span id="statVegetarianos">0</span>)</span>
+        </div>
+      </div>
+
+      <!-- Intención de Asistencia -->
+      <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: var(--radius-sm); padding: 12px 14px; margin-top: 14px; display: flex; justify-content: space-around; font-size: 0.82rem; text-align: center;">
+        <div>
+          <div style="font-weight: 800; font-size: 1.1rem; color: #15803D;" id="statSiAsiste">0</div>
+          <div style="color: #64748B;">Confirmados (Sí)</div>
+        </div>
+        <div style="border-left: 1px solid #E2E8F0;"></div>
+        <div>
+          <div style="font-weight: 800; font-size: 1.1rem; color: #0284C7;" id="statProbable">0</div>
+          <div style="color: #64748B;">Muy Probable</div>
+        </div>
+        <div style="border-left: 1px solid #E2E8F0;"></div>
+        <div>
+          <div style="font-weight: 800; font-size: 1.1rem; color: #94A3B8;" id="statNoAsiste">0</div>
+          <div style="color: #64748B;">No asistirán</div>
+        </div>
+      </div>
+
+      <!-- Botón de Descarga Excel / CSV -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+        <span style="font-size: 0.76rem; color: #64748B;">
+          <i class="fa-solid fa-rotate"></i> Actualizado automáticamente
+        </span>
+        <button onclick="exportToCSV()" style="background: #0284C7; color: #fff; border: none; padding: 7px 14px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+          <i class="fa-solid fa-file-excel"></i> Descargar Datos en CSV
+        </button>
       </div>
     </div>
 
@@ -1002,15 +1109,13 @@
   </div>
 
   <script>
-    // Variables de estado
+    // Variables de estado del formulario
     let selectedCategoria = '';
     let selectedMenu = '';
     let selectedAsistencia = '';
-    let activeDiets = [];
 
-    // URL opcional de Google Apps Script Webhook para almacenamiento en Google Sheets
-    // Si se desea conectar directamente a una Google Sheet, solo se pega la URL de despliegue aquí:
-    const GOOGLE_SCRIPT_WEBHOOK_URL = ''; 
+    // URL de Google Apps Script Webhook para sincronización en la nube (Google Sheet)
+    const GOOGLE_SCRIPT_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbwfqzhlj2XZ2Beta8S8iKDVV8SimRIhIHIVcSmlpqA5eJM0wvNNQFgCjvdBMGzEcvu37g/exec'; 
 
     function selectCategoria(cat) {
       selectedCategoria = cat;
@@ -1022,8 +1127,8 @@
     function selectMenu(menu) {
       selectedMenu = menu;
       document.getElementById('menuVal').value = menu;
-      document.getElementById('cardCarnivoro').classList.toggle('selected', menu.startsWith('Tradicional'));
-      document.getElementById('cardVegetariano').classList.toggle('selected', menu.startsWith('Vegetariano'));
+      document.getElementById('cardCarnivoro').classList.toggle('selected', menu === 'Menú Tradicional');
+      document.getElementById('cardVegetariano').classList.toggle('selected', menu === 'Menú Vegetariano');
     }
 
     function selectAsistencia(asist) {
@@ -1034,16 +1139,7 @@
       document.getElementById('btnNo').className = 'attendance-btn' + (asist.startsWith('No') ? ' selected-no' : '');
     }
 
-    function toggleDiet(el, dietName) {
-      el.classList.toggle('active');
-      if (activeDiets.includes(dietName)) {
-        activeDiets = activeDiets.filter(d => d !== dietName);
-      } else {
-        activeDiets.push(dietName);
-      }
-    }
-
-    function handleFormSubmit(e) {
+    async function handleFormSubmit(e) {
       e.preventDefault();
 
       if (!selectedCategoria) {
@@ -1052,7 +1148,7 @@
       }
 
       if (!selectedMenu) {
-        alert('Por favor selecciona tu preferencia de menú (Tradicional o Vegetariano/Vegano).');
+        alert('Por favor selecciona tu preferencia de menú (Menú Tradicional o Menú Vegetariano).');
         return;
       }
 
@@ -1063,9 +1159,12 @@
 
       const nombre = document.getElementById('nombreInput').value.trim();
       const email = document.getElementById('emailInput').value.trim();
-      const otra = document.getElementById('otraRestriccion').value.trim();
-      let dietTotal = [...activeDiets];
-      if (otra) dietTotal.push(otra);
+      const observaciones = document.getElementById('obsInput').value.trim() || 'Sin observaciones';
+
+      const submitBtn = document.getElementById('submitBtn');
+      const originalBtnContent = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Registrando en la base de datos...';
 
       const record = {
         fecha_registro: new Date().toLocaleString('es-CL'),
@@ -1073,11 +1172,11 @@
         email: email,
         categoria: selectedCategoria,
         menu: selectedMenu,
-        restricciones: dietTotal.join(', ') || 'Ninguna',
+        observaciones: observaciones,
         asistencia: selectedAsistencia
       };
 
-      // Guardar en localStorage
+      // Guardar en almacenamiento local del dispositivo
       try {
         let stored = JSON.parse(localStorage.getItem('OFMC2026_ENCUESTA_CENA') || '[]');
         stored.push(record);
@@ -1086,72 +1185,86 @@
         console.error(err);
       }
 
-      // Si hay webhook configurado, enviar de fondo
+      // Enviar a Google Sheets en tiempo real
       if (GOOGLE_SCRIPT_WEBHOOK_URL) {
         try {
-          fetch(GOOGLE_SCRIPT_WEBHOOK_URL, {
+          await fetch(GOOGLE_SCRIPT_WEBHOOK_URL, {
             method: 'POST',
             mode: 'no-cors',
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
             body: JSON.stringify(record)
-          }).catch(console.error);
+          });
         } catch (err) {
-          console.error(err);
+          console.error('Error al sincronizar con Google Sheets:', err);
         }
       }
+
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnContent;
 
       // Mostrar resumen en vista de éxito
       document.getElementById('resNombre').textContent = nombre;
       document.getElementById('resEmail').textContent = email;
       document.getElementById('resCategoria').textContent = selectedCategoria;
-      document.getElementById('resMenu').textContent = selectedMenu + (dietTotal.length > 0 ? ` (${dietTotal.join(', ')})` : '');
+      document.getElementById('resMenu').textContent = selectedMenu;
+      document.getElementById('resObs').textContent = observaciones;
       document.getElementById('resAsistencia').textContent = selectedAsistencia;
 
       document.getElementById('formView').style.display = 'none';
       document.getElementById('successView').style.display = 'block';
       window.scrollTo({ top: 0, behavior: 'smooth' });
 
-      updateAdminStats();
+      // Actualizar estadísticas inmediatamente
+      updateLiveStats();
     }
 
-    function toggleAdminPanel() {
-      const p = document.getElementById('adminPanel');
-      p.style.display = p.style.display === 'block' ? 'none' : 'block';
-      if (p.style.display === 'block') {
-        updateAdminStats();
-      }
-    }
-
-    function updateAdminStats() {
+    function updateLiveStats() {
       try {
         const stored = JSON.parse(localStorage.getItem('OFMC2026_ENCUESTA_CENA') || '[]');
-        document.getElementById('statTotal').textContent = stored.length;
+        const total = stored.length;
+
+        document.getElementById('statTotal').textContent = total;
 
         const est = stored.filter(r => r.categoria === 'Estudiante').length;
         const inv = stored.filter(r => r.categoria === 'Investigador').length;
-        const car = stored.filter(r => r.menu && r.menu.startsWith('Tradicional')).length;
-        const veg = stored.filter(r => r.menu && r.menu.startsWith('Vegetariano')).length;
+        const car = stored.filter(r => r.menu === 'Menú Tradicional').length;
+        const veg = stored.filter(r => r.menu === 'Menú Vegetariano').length;
         const si = stored.filter(r => r.asistencia && r.asistencia.startsWith('Si')).length;
+        const maybe = stored.filter(r => r.asistencia && r.asistencia.startsWith('Probable')).length;
+        const no = stored.filter(r => r.asistencia && r.asistencia.startsWith('No')).length;
 
         document.getElementById('statEstudiantes').textContent = est;
         document.getElementById('statInvestigadores').textContent = inv;
         document.getElementById('statCarnivoros').textContent = car;
         document.getElementById('statVegetarianos').textContent = veg;
         document.getElementById('statSiAsiste').textContent = si;
+        document.getElementById('statProbable').textContent = maybe;
+        document.getElementById('statNoAsiste').textContent = no;
 
-        const tbody = document.getElementById('adminTableBody');
-        if (stored.length === 0) {
-          tbody.innerHTML = '<tr><td colspan="5" style="text-align: center; color: #94A3B8;">No hay respuestas registradas aún en este navegador.</td></tr>';
+        // Barras proporcionales
+        if (total > 0) {
+          const estPct = Math.round((est / total) * 100);
+          const invPct = 100 - estPct;
+          document.getElementById('barEstudiantes').style.width = estPct + '%';
+          document.getElementById('barInvestigadores').style.width = invPct + '%';
+          document.getElementById('compCatPct').textContent = `${estPct}% Estudiantes / ${invPct}% Investigadores`;
+
+          const menuTotal = car + veg;
+          if (menuTotal > 0) {
+            const carPct = Math.round((car / menuTotal) * 100);
+            const vegPct = 100 - carPct;
+            document.getElementById('barCarnivoros').style.width = carPct + '%';
+            document.getElementById('barVegetarianos').style.width = vegPct + '%';
+            document.getElementById('compMenuPct').textContent = `${carPct}% Tradicional / ${vegPct}% Vegetariano`;
+          }
         } else {
-          tbody.innerHTML = stored.map(r => `
-            <tr>
-              <td>${r.fecha_registro}</td>
-              <td><strong>${r.nombre}</strong><br><span style="color:#64748B;">${r.email}</span></td>
-              <td>${r.categoria}</td>
-              <td>${r.menu}</td>
-              <td>${r.asistencia}</td>
-            </tr>
-          `).join('');
+          document.getElementById('barEstudiantes').style.width = '50%';
+          document.getElementById('barInvestigadores').style.width = '50%';
+          document.getElementById('compCatPct').textContent = 'Esperando respuestas...';
+
+          document.getElementById('barCarnivoros').style.width = '50%';
+          document.getElementById('barVegetarianos').style.width = '50%';
+          document.getElementById('compMenuPct').textContent = 'Esperando respuestas...';
         }
       } catch (err) {
         console.error(err);
@@ -1162,13 +1275,14 @@
       try {
         const stored = JSON.parse(localStorage.getItem('OFMC2026_ENCUESTA_CENA') || '[]');
         if (stored.length === 0) {
-          alert('No hay respuestas registradas para exportar.');
+          alert('Aún no hay respuestas registradas para exportar.');
           return;
         }
 
-        let csv = 'Fecha,Nombre,Email,Categoria,Menu,Restricciones,Asistencia\n';
+        let csv = '\uFEFF'; // BOM para compatibilidad con Excel
+        csv += 'Fecha Registro,Nombre,Email,Categoria,Menu,Observaciones,Intencion Asistencia\n';
         stored.forEach(r => {
-          csv += `"${r.fecha_registro}","${r.nombre}","${r.email}","${r.categoria}","${r.menu}","${r.restricciones}","${r.asistencia}"\n`;
+          csv += `"${r.fecha_registro}","${r.nombre}","${r.email}","${r.categoria}","${r.menu}","${r.observaciones}","${r.asistencia}"\n`;
         });
 
         const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
@@ -1182,8 +1296,8 @@
       }
     }
 
-    // Cargar estadísticas iniciales si hay
-    updateAdminStats();
+    // Inicializar estadísticas en vivo
+    updateLiveStats();
   </script>
 
 </body>
