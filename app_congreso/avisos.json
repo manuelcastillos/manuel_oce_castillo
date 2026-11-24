@@ -3,6 +3,16 @@
   "ultima_actualizacion": "2026-11-19T16:28:37.311062",
   "avisos": [
     {
+      "id": "aviso-encuesta-cena-marina-del-rey",
+      "fecha": "24 Nov 2026 - 15:00 hrs",
+      "titulo": "🍽️ Encuesta Oficial: Cena de Camaradería en Hotel Marina del Rey (Jueves 26)",
+      "cuerpo": "Estimadas y estimados congresistas: les invitamos a responder la breve encuesta para estimar la asistencia a la Cena de Camaradería del Jueves a las 20:30 hrs en el Hotel Marina del Rey (Ecuador 299, Viña del Mar). Costo real de $36.000 con importante subvención del Congreso (mayor porcentaje a estudiantes). Haz clic en el enlace para indicar si prefieres menú tradicional o vegetariano.",
+      "enlace": "./encuesta_cena.html",
+      "tipo": "importante",
+      "fijado": true,
+      "urgente": true
+    },
+    {
       "id": "aviso-cambio-sala-31-1795116517",
       "fecha": "19 Nov 2026 - 16:30 hrs",
       "titulo": "📢 Cambio Oficial de Sala: Meteorología y Clima a Sala 3.1",
@@ -42,5 +52,5 @@
       "urgente": false
     }
   ],
-  "total": 4
+  "total": 5
 }

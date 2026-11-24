@@ -435,11 +435,12 @@ window.CONGRESO_DATA = {
       "start_time": "20:30",
       "end_time": "23:59",
       "horario": "20:30 - 24:00",
-      "sala": "Viña del Mar (Frente al Mar)",
-      "titulo": "CENA BAILABLE DE CAMARADERÍA OFMC 2026",
-      "descripcion": "Cena de camaradería y fiesta bailable frente al mar en Viña del Mar, fuertemente subvencionada por el Congreso para toda la comunidad académica y estudiantil. Inscripciones y confirmación en el mesón de acreditación de FACSO UV.",
+      "sala": "Hotel Best Western Marina del Rey (Viña del Mar)",
+      "titulo": "CENA OFICIAL DE CAMARADERÍA OFMC 2026",
+      "descripcion": "Cena oficial de camaradería y conversación (no bailable) en el Hotel Marina del Rey (Ecuador 299, Viña del Mar, a pasos de Viana, Álvarez y Metro Miramar). Costo real de $36.000 con fuerte subvención del Congreso (mayor porcentaje a estudiantes). Por favor responder la encuesta oficial de asistencia y menú.",
       "tipo": "Evento",
-      "categoria": "Social"
+      "categoria": "Social",
+      "enlace_encuesta": "./encuesta_cena.html"
     },
     {
       "id": "EV-18",

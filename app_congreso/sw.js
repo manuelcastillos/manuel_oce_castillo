@@ -1,10 +1,11 @@
-const CACHE_NAME = 'ofmc2026-v17';
+const CACHE_NAME = 'ofmc2026-v18';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './app.css',
   './app.js',
   './data.js',
+  './encuesta_cena.html',
   './avisos.json',
   './manifest.json',
   './assets/qr_wifi_visitas_uv.png',

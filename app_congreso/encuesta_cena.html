@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta Cena Oficial de Camaradería · OFMC 2026</title>
+  <link rel="icon" type="image/png" href="./assets/qr_wifi_visitas_uv.png">
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg-body: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --text-main: #0F172A;
+      --text-muted: #64748B;
+      --text-light: #94A3B8;
+      
+      /* Colores Claros de Diferenciación */
+      --blue-light-bg: #F0F9FF;
+      --blue-border: #BAE6FD;
+      --blue-primary: #0284C7;
+      
+      --emerald-light-bg: #F0FDF4;
+      --emerald-border: #BBF7D0;
+      --emerald-primary: #16A34A;
+      
+      --amber-light-bg: #FFFBEB;
+      --amber-border: #FDE68A;
+      --amber-primary: #D97706;
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow-card: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.5;
+      padding: 24px 16px 60px 16px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main-wrapper {
+      width: 100%;
+      max-width: 680px;
+    }
+
+    /* Barra Superior */
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 30px;
+      background: #FFFFFF;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid #E2E8F0;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+
+    .btn-back:hover {
+      background: #F1F5F9;
+      color: var(--text-main);
+      border-color: #CBD5E1;
+    }
+
+    .badge-ofmc {
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 20px;
+      background: #E0F2FE;
+      color: #0369A1;
+      border: 1px solid #BAE6FD;
+    }
+
+    /* Tarjeta Principal */
+    .survey-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      box-shadow: var(--shadow-card);
+      border: 1px solid #E2E8F0;
+    }
+
+    @media (max-width: 480px) {
+      .survey-card {
+        padding: 24px 18px;
+      }
+    }
+
+    .header-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #0284C7;
+      background: #F0F9FF;
+      border: 1px solid #BAE6FD;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+
+    h1.survey-title {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #0F172A;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    .survey-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+
+    /* Información Logística del Hotel */
+    .event-info-box {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      margin-bottom: 24px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .info-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.05rem;
+      flex-shrink: 0;
+      color: #0284C7;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+
+    .info-content {
+      flex: 1;
+    }
+
+    .info-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    .info-value {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #1E293B;
+    }
+
+    .info-subtext {
+      font-size: 0.82rem;
+      color: #64748B;
+      margin-top: 3px;
+    }
+
+    .maps-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: #0284C7;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.82rem;
+      margin-top: 5px;
+    }
+
+    .maps-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Banner Destacado de Costo y Subvención */
+    .subsidy-banner {
+      background: #FFFBEB;
+      border: 1px solid #FDE68A;
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .subsidy-icon {
+      font-size: 1.4rem;
+      color: #D97706;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .subsidy-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #92400E;
+      margin-bottom: 4px;
+    }
+
+    .subsidy-desc {
+      font-size: 0.86rem;
+      color: #78350F;
+      line-height: 1.5;
+    }
+
+    /* Formulario */
+    .form-section {
+      margin-bottom: 28px;
+    }
+
+    .section-heading {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #0F172A;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-helper {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #CBD5E1;
+      border-radius: var(--radius-sm);
+      font-size: 0.92rem;
+      color: #0F172A;
+      background: #FFFFFF;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+
+    .input-field:focus {
+      outline: none;
+      border-color: #0284C7;
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+
+    /* Tarjetas Interactivas de Selección (Colores Claros) */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    @media (max-width: 540px) {
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .choice-card {
+      position: relative;
+      border: 2px solid #E2E8F0;
+      border-radius: var(--radius-md);
+      padding: 16px 14px;
+      cursor: pointer;
+      background: #FFFFFF;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+    }
+
+    .choice-card:hover {
+      border-color: #CBD5E1;
+      transform: translateY(-1px);
+    }
+
+    /* Categoría Estudiante: Menta / Esmeralda Claro */
+    .card-student {
+      background: #FAFDFA;
+    }
+    .card-student.selected {
+      border-color: #16A34A;
+      background: var(--emerald-light-bg);
+      box-shadow: 0 4px 12px rgba(22, 163, 74, 0.12);
+    }
+
+    /* Categoría Investigador: Celeste Claro */
+    .card-researcher {
+      background: #FAFCFE;
+    }
+    .card-researcher.selected {
+      border-color: #0284C7;
+      background: var(--blue-light-bg);
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.12);
+    }
+
+    /* Menú Tradicional: Ámbar Claro */
+    .card-carnivore {
+      background: #FFFEFA;
+    }
+    .card-carnivore.selected {
+      border-color: #D97706;
+      background: var(--amber-light-bg);
+      box-shadow: 0 4px 12px rgba(217, 119, 6, 0.12);
+    }
+
+    /* Menú Vegetariano: Verde Esmeralda Claro */
+    .card-veggie {
+      background: #FAFDFA;
+    }
+    .card-veggie.selected {
+      border-color: #059669;
+      background: #ECFDF5;
+      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.12);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .card-icon {
+      font-size: 1.35rem;
+    }
+
+    .card-radio {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 2px solid #CBD5E1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #FFFFFF;
+      transition: all 0.2s;
+    }
+
+    .choice-card.selected .card-radio {
+      border-color: currentColor;
+    }
+
+    .choice-card.selected .card-radio::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    .card-title {
+      font-size: 0.96rem;
+      font-weight: 700;
+      color: #0F172A;
+      margin-bottom: 4px;
+    }
+
+    .card-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 6px;
+      width: fit-content;
+    }
+
+    .badge-sub-high {
+      background: #DCFCE7;
+      color: #15803D;
+      border: 1px solid #BBF7D0;
+    }
+
+    .badge-sub-std {
+      background: #E0F2FE;
+      color: #0369A1;
+      border: 1px solid #BAE6FD;
+    }
+
+    .card-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Intención de Asistencia */
+    .attendance-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+    }
+
+    @media (max-width: 480px) {
+      .attendance-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .attendance-btn {
+      border: 2px solid #E2E8F0;
+      border-radius: var(--radius-sm);
+      padding: 12px 10px;
+      background: #FFFFFF;
+      text-align: center;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #334155;
+      transition: all 0.2s ease;
+    }
+
+    .attendance-btn:hover {
+      border-color: #CBD5E1;
+    }
+
+    .attendance-btn.selected-yes {
+      border-color: #16A34A;
+      background: #F0FDF4;
+      color: #15803D;
+    }
+
+    .attendance-btn.selected-maybe {
+      border-color: #0284C7;
+      background: #F0F9FF;
+      color: #0369A1;
+    }
+
+    .attendance-btn.selected-no {
+      border-color: #64748B;
+      background: #F1F5F9;
+      color: #475569;
+    }
+
+    /* Restricciones Alimentarias */
+    .diet-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .diet-pill {
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 20px;
+      border: 1px solid #CBD5E1;
+      background: #FFFFFF;
+      color: #475569;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .diet-pill.active {
+      background: #F0F9FF;
+      border-color: #0284C7;
+      color: #0284C7;
+      font-weight: 600;
+    }
+
+    /* Botón Enviar */
+    .btn-submit {
+      width: 100%;
+      padding: 15px;
+      background: #0284C7;
+      color: #FFFFFF;
+      border: none;
+      border-radius: var(--radius-md);
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .btn-submit:hover {
+      background: #0369A1;
+      box-shadow: 0 6px 16px rgba(2, 132, 199, 0.35);
+      transform: translateY(-1px);
+    }
+
+    /* Pantalla de Éxito */
+    .success-panel {
+      display: none;
+      text-align: center;
+      padding: 24px 12px;
+    }
+
+    .success-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #DCFCE7;
+      color: #16A34A;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin: 0 auto 16px auto;
+    }
+
+    .success-title {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #0F172A;
+      margin-bottom: 8px;
+    }
+
+    .success-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+
+    .receipt-card {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: var(--radius-md);
+      padding: 18px;
+      text-align: left;
+      font-size: 0.88rem;
+      margin-bottom: 24px;
+    }
+
+    .receipt-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      border-bottom: 1px dashed #E2E8F0;
+    }
+
+    .receipt-row:last-child {
+      border-bottom: none;
+    }
+
+    .receipt-label {
+      color: var(--text-muted);
+    }
+
+    .receipt-val {
+      font-weight: 700;
+      color: #0F172A;
+    }
+
+    /* Panel de Administración / Estadísticas */
+    .admin-toggle {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+
+    .admin-link {
+      color: var(--text-muted);
+      text-decoration: underline;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .admin-panel {
+      display: none;
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: var(--radius-md);
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 480px) {
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .stat-box {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #0284C7;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .admin-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.78rem;
+      margin-top: 10px;
+    }
+
+    .admin-table th, .admin-table td {
+      border: 1px solid #E2E8F0;
+      padding: 6px 8px;
+      text-align: left;
+    }
+
+    .admin-table th {
+      background: #F1F5F9;
+      font-weight: 700;
+    }
+
+    /* Footer */
+    .footer-note {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.78rem;
+      color: var(--text-light);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-wrapper">
+    
+    <!-- Navegación Superior -->
+    <div class="top-nav">
+      <a href="./index.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Volver a la App OFMC 2026
+      </a>
+      <span class="badge-ofmc">
+        <i class="fa-solid fa-water"></i> OFMC 2026 · Valparaíso
+      </span>
+    </div>
+
+    <!-- Tarjeta Principal de la Encuesta -->
+    <div class="survey-card" id="surveyContainer">
+      
+      <div id="formView">
+        <span class="header-tag">
+          <i class="fa-solid fa-utensils"></i> Confraternización Oficial
+        </span>
+        
+        <h1 class="survey-title">Cena Oficial de Camaradería OFMC 2026</h1>
+        <p class="survey-subtitle">
+          Por favor responde esta breve consulta para estimar el número de reservas y calcular el mayor porcentaje posible de subvención para estudiantes y congresistas.
+        </p>
+
+        <!-- Información Logística y Lugar -->
+        <div class="event-info-box">
+          <div class="info-row">
+            <div class="info-icon">
+              <i class="fa-solid fa-hotel"></i>
+            </div>
+            <div class="info-content">
+              <div class="info-label">Lugar & Salón</div>
+              <div class="info-value">Hotel Best Western Marina del Rey</div>
+              <div class="info-subtext"><strong>Dirección:</strong> Calle Ecuador 299, Viña del Mar (entre calles Álvarez/Viana y Valparaíso, a 1 cuadra de Etchevers y a 150m de Estación Miramar).</div>
+              <a href="https://www.google.com/maps/search/?api=1&query=Best+Western+Marina+del+Rey+Ecuador+299+Vina+del+Mar" target="_blank" class="maps-link">
+                <i class="fa-solid fa-map-location-dot"></i> Abrir ubicación exacta en Google Maps
+              </a>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="info-icon">
+              <i class="fa-solid fa-calendar-day"></i>
+            </div>
+            <div class="info-content">
+              <div class="info-label">Fecha y Modalidad</div>
+              <div class="info-value">Jueves 26 de Noviembre · 20:30 hrs</div>
+              <div class="info-subtext"><i class="fa-solid fa-comments"></i> <strong>Cena de Camaradería y Conversación</strong> (no es evento bailable; es un espacio ameno de encuentro distendido y diálogo científico).</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner de Transparencia de Costo y Subvención -->
+        <div class="subsidy-banner">
+          <div class="subsidy-icon">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <div>
+            <div class="subsidy-title">Costo Real y Subvención del Congreso</div>
+            <div class="subsidy-desc">
+              El costo real de banquetería por persona cotizado en el Hotel Marina del Rey es de <strong>$36.000 CLP</strong>. El Congreso OFMC 2026 financiará un subsidio directo para reducir este valor, esperando <strong>subvencionar un porcentaje significativamente mayor a estudiantes</strong> para asegurar que nadie quede fuera. El copago final dependerá directamente del volumen total de asistentes confirmado en esta encuesta.
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <form id="cenaForm" onsubmit="handleFormSubmit(event)">
+          
+          <!-- 1. Datos Personales -->
+          <div class="form-section">
+            <label class="section-heading" for="nombreInput">
+              <i class="fa-regular fa-user" style="color: #0284C7;"></i> 1. Tu Nombre y Apellidos:
+            </label>
+            <input type="text" id="nombreInput" class="input-field" placeholder="Ej. Dra. Catalina Aguirre / Juan Pérez" required>
+          </div>
+
+          <div class="form-section">
+            <label class="section-heading" for="emailInput">
+              <i class="fa-regular fa-envelope" style="color: #0284C7;"></i> 2. Correo Electrónico:
+            </label>
+            <div class="section-helper">Para enviarte el comprobante de preinscripción y el valor final subvencionado.</div>
+            <input type="email" id="emailInput" class="input-field" placeholder="tucorreo@institucion.cl" required>
+          </div>
+
+          <!-- 2. Categoría (Estudiante vs Investigador) en Tarjetas Claras Diferenciadas -->
+          <div class="form-section">
+            <label class="section-heading">
+              <i class="fa-solid fa-graduation-cap" style="color: #16A34A;"></i> 3. Categoría de Participación:
+            </label>
+            <div class="section-helper">Selecciona tu categoría para calcular el nivel de subvención del congreso:</div>
+            
+            <div class="cards-grid">
+              <!-- Tarjeta Estudiante (Color Menta / Esmeralda Claro) -->
+              <div class="choice-card card-student" id="cardEstudiante" onclick="selectCategoria('Estudiante')">
+                <div class="card-top">
+                  <span class="card-icon" style="color: #16A34A;">🎓</span>
+                  <div class="card-radio" style="color: #16A34A;"></div>
+                </div>
+                <div class="card-title">Estudiante</div>
+                <span class="card-badge badge-sub-high">
+                  <i class="fa-solid fa-star"></i> Mayor % Subvención
+                </span>
+                <div class="card-desc">Estudiante de Pregrado, Magíster o Doctorado debidamente registrado en el congreso.</div>
+              </div>
+
+              <!-- Tarjeta Investigador (Color Celeste Claro) -->
+              <div class="choice-card card-researcher" id="cardInvestigador" onclick="selectCategoria('Investigador')">
+                <div class="card-top">
+                  <span class="card-icon" style="color: #0284C7;">🔬</span>
+                  <div class="card-radio" style="color: #0284C7;"></div>
+                </div>
+                <div class="card-title">Investigador / Profesional</div>
+                <span class="card-badge badge-sub-std">
+                  <i class="fa-solid fa-building-columns"></i> Subvención Institucional
+                </span>
+                <div class="card-desc">Investigador, docente, profesional o expositor del congreso.</div>
+              </div>
+            </div>
+            <input type="hidden" id="categoriaVal" required>
+          </div>
+
+          <!-- 3. Preferencia de Menú (Carnívoro vs Vegetariano) -->
+          <div class="form-section">
+            <label class="section-heading">
+              <i class="fa-solid fa-plate-wheat" style="color: #D97706;"></i> 4. Preferencia de Menú:
+            </label>
+            <div class="section-helper">El hotel solicita conocer previamente la proporción de platos para la cocina:</div>
+
+            <div class="cards-grid">
+              <!-- Tarjeta Tradicional (Ámbar Claro) -->
+              <div class="choice-card card-carnivore" id="cardCarnivoro" onclick="selectMenu('Tradicional (Carnes/Pescado)')">
+                <div class="card-top">
+                  <span class="card-icon" style="color: #D97706;">🥩</span>
+                  <div class="card-radio" style="color: #D97706;"></div>
+                </div>
+                <div class="card-title">Menú Tradicional</div>
+                <div class="card-desc">Entrada fría, plato de fondo de carne de res o pescado al horno con guarnición, postre y bebestibles.</div>
+              </div>
+
+              <!-- Tarjeta Vegetariana (Verde Claro) -->
+              <div class="choice-card card-veggie" id="cardVegetariano" onclick="selectMenu('Vegetariano / Vegano')">
+                <div class="card-top">
+                  <span class="card-icon" style="color: #059669;">🥗</span>
+                  <div class="card-radio" style="color: #059669;"></div>
+                </div>
+                <div class="card-title">Menú Vegetariano / Vegano</div>
+                <div class="card-desc">Entrada vegetal de la estación, plato de fondo a base de pastas artesanales o vegetales seleccionados y postre.</div>
+              </div>
+            </div>
+            <input type="hidden" id="menuVal" required>
+          </div>
+
+          <!-- 4. Restricciones Alimentarias Adicionales (Opcional) -->
+          <div class="form-section">
+            <label class="section-heading">
+              <i class="fa-solid fa-shield-heart" style="color: #64748B;"></i> 5. Alergias o Restricciones (Opcional):
+            </label>
+            <div class="diet-pills">
+              <div class="diet-pill" onclick="toggleDiet(this, 'Sin Gluten (Celíaco)')">🌾 Sin Gluten (Celíaco)</div>
+              <div class="diet-pill" onclick="toggleDiet(this, 'Sin Lactosa')">🥛 Sin Lactosa</div>
+              <div class="diet-pill" onclick="toggleDiet(this, 'Alergia a Mariscos')">🦐 Alergia a Mariscos</div>
+              <div class="diet-pill" onclick="toggleDiet(this, 'Alergia a Frutos Secos')">🥜 Frutos Secos</div>
+            </div>
+            <input type="text" id="otraRestriccion" class="input-field" style="margin-top: 10px;" placeholder="Otra alergia médica o consideración alimentaria específica...">
+          </div>
+
+          <!-- 5. Intención de Asistencia -->
+          <div class="form-section">
+            <label class="section-heading">
+              <i class="fa-regular fa-calendar-check" style="color: #0F172A;"></i> 6. ¿Asistirás a la Cena el Jueves 26?
+            </label>
+            <div class="attendance-grid">
+              <div class="attendance-btn" id="btnYes" onclick="selectAsistencia('Si, asistiré')">
+                <i class="fa-solid fa-circle-check" style="color: #16A34A;"></i><br>Sí, asistiré
+              </div>
+              <div class="attendance-btn" id="btnMaybe" onclick="selectAsistencia('Probable (depende copago)')">
+                <i class="fa-solid fa-circle-question" style="color: #0284C7;"></i><br>Muy probable
+              </div>
+              <div class="attendance-btn" id="btnNo" onclick="selectAsistencia('No podré asistir')">
+                <i class="fa-solid fa-circle-xmark" style="color: #94A3B8;"></i><br>No podré asistir
+              </div>
+            </div>
+            <input type="hidden" id="asistenciaVal" required>
+          </div>
+
+          <!-- Botón Enviar -->
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <i class="fa-solid fa-paper-plane"></i> Enviar mi Respuesta
+          </button>
+        </form>
+
+      </div>
+
+      <!-- Vista de Confirmación / Éxito -->
+      <div id="successView" class="success-panel">
+        <div class="success-icon">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h2 class="success-title">¡Muchas Gracias por tu Respuesta!</h2>
+        <p class="success-desc">
+          Tus preferencias han quedado registradas correctamente. Esta información permitirá al Comité Organizador cerrar el número de cupos con el Hotel Marina del Rey y aplicar el mayor subsidio posible a las adhesiones.
+        </p>
+
+        <!-- Resumen del Registro -->
+        <div class="receipt-card">
+          <div class="receipt-row">
+            <span class="receipt-label">Participante:</span>
+            <span class="receipt-val" id="resNombre">-</span>
+          </div>
+          <div class="receipt-row">
+            <span class="receipt-label">Correo:</span>
+            <span class="receipt-val" id="resEmail">-</span>
+          </div>
+          <div class="receipt-row">
+            <span class="receipt-label">Categoría:</span>
+            <span class="receipt-val" id="resCategoria">-</span>
+          </div>
+          <div class="receipt-row">
+            <span class="receipt-label">Menú Seleccionado:</span>
+            <span class="receipt-val" id="resMenu">-</span>
+          </div>
+          <div class="receipt-row">
+            <span class="receipt-label">Intención de Asistencia:</span>
+            <span class="receipt-val" id="resAsistencia">-</span>
+          </div>
+          <div class="receipt-row">
+            <span class="receipt-label">Costo Referencial Menú:</span>
+            <span class="receipt-val">$36.000 CLP (Sujeto a subvención OFMC)</span>
+          </div>
+          <div class="receipt-row">
+            <span class="receipt-label">Lugar:</span>
+            <span class="receipt-val">Hotel Marina del Rey (Ecuador 299, Viña)</span>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+          <a href="./index.html" class="btn-back" style="padding: 10px 20px;">
+            <i class="fa-solid fa-house"></i> Volver a la App
+          </a>
+          <button onclick="window.print()" class="btn-back" style="padding: 10px 20px; cursor: pointer;">
+            <i class="fa-solid fa-print"></i> Imprimir Comprobante
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Panel de Administración / Estadísticas en Tiempo Real -->
+    <div class="admin-toggle">
+      <span class="admin-link" onclick="toggleAdminPanel()">
+        <i class="fa-solid fa-chart-pie"></i> Ver Estadísticas de Respuestas (Admin)
+      </span>
+    </div>
+
+    <div class="admin-panel" id="adminPanel">
+      <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 12px; color: #0F172A; display: flex; justify-content: space-between; align-items: center;">
+        <span>📊 Resumen en Tiempo Real de Encuestados</span>
+        <button onclick="exportToCSV()" style="background: #0284C7; color: #fff; border: none; padding: 6px 12px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; cursor: pointer;">
+          <i class="fa-solid fa-file-excel"></i> Descargar CSV
+        </button>
+      </h3>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-number" id="statTotal">0</div>
+          <div class="stat-label">Total Respuestas</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" style="color: #16A34A;" id="statEstudiantes">0</div>
+          <div class="stat-label">Estudiantes</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" style="color: #0284C7;" id="statInvestigadores">0</div>
+          <div class="stat-label">Investigadores</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" style="color: #D97706;" id="statCarnivoros">0</div>
+          <div class="stat-label">Menú Tradicional</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" style="color: #059669;" id="statVegetarianos">0</div>
+          <div class="stat-label">Menú Vegetariano</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" style="color: #15803D;" id="statSiAsiste">0</div>
+          <div class="stat-label">Confirmados Sí</div>
+        </div>
+      </div>
+
+      <div style="max-height: 220px; overflow-y: auto;">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Nombre</th>
+              <th>Categoría</th>
+              <th>Menú</th>
+              <th>Asiste</th>
+            </tr>
+          </thead>
+          <tbody id="adminTableBody">
+            <tr><td colspan="5" style="text-align: center; color: #94A3B8;">No hay respuestas registradas aún en este navegador.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      Comité Organizador · VIII Congreso de Oceanografía Física, Meteorología y Clima (OFMC 2026)<br>
+      Universidad de Valparaíso · Hotel Best Western Marina del Rey
+    </div>
+
+  </div>
+
+  <script>
+    // Variables de estado
+    let selectedCategoria = '';
+    let selectedMenu = '';
+    let selectedAsistencia = '';
+    let activeDiets = [];
+
+    // URL opcional de Google Apps Script Webhook para almacenamiento en Google Sheets
+    // Si se desea conectar directamente a una Google Sheet, solo se pega la URL de despliegue aquí:
+    const GOOGLE_SCRIPT_WEBHOOK_URL = ''; 
+
+    function selectCategoria(cat) {
+      selectedCategoria = cat;
+      document.getElementById('categoriaVal').value = cat;
+      document.getElementById('cardEstudiante').classList.toggle('selected', cat === 'Estudiante');
+      document.getElementById('cardInvestigador').classList.toggle('selected', cat === 'Investigador');
+    }
+
+    function selectMenu(menu) {
+      selectedMenu = menu;
+      document.getElementById('menuVal').value = menu;
+      document.getElementById('cardCarnivoro').classList.toggle('selected', menu.startsWith('Tradicional'));
+      document.getElementById('cardVegetariano').classList.toggle('selected', menu.startsWith('Vegetariano'));
+    }
+
+    function selectAsistencia(asist) {
+      selectedAsistencia = asist;
+      document.getElementById('asistenciaVal').value = asist;
+      document.getElementById('btnYes').className = 'attendance-btn' + (asist.startsWith('Si') ? ' selected-yes' : '');
+      document.getElementById('btnMaybe').className = 'attendance-btn' + (asist.startsWith('Probable') ? ' selected-maybe' : '');
+      document.getElementById('btnNo').className = 'attendance-btn' + (asist.startsWith('No') ? ' selected-no' : '');
+    }
+
+    function toggleDiet(el, dietName) {
+      el.classList.toggle('active');
+      if (activeDiets.includes(dietName)) {
+        activeDiets = activeDiets.filter(d => d !== dietName);
+      } else {
+        activeDiets.push(dietName);
+      }
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+
+      if (!selectedCategoria) {
+        alert('Por favor selecciona tu categoría (Estudiante o Investigador/Profesional).');
+        return;
+      }
+
+      if (!selectedMenu) {
+        alert('Por favor selecciona tu preferencia de menú (Tradicional o Vegetariano/Vegano).');
+        return;
+      }
+
+      if (!selectedAsistencia) {
+        alert('Por favor indica tu intención de asistencia para el Jueves 26.');
+        return;
+      }
+
+      const nombre = document.getElementById('nombreInput').value.trim();
+      const email = document.getElementById('emailInput').value.trim();
+      const otra = document.getElementById('otraRestriccion').value.trim();
+      let dietTotal = [...activeDiets];
+      if (otra) dietTotal.push(otra);
+
+      const record = {
+        fecha_registro: new Date().toLocaleString('es-CL'),
+        nombre: nombre,
+        email: email,
+        categoria: selectedCategoria,
+        menu: selectedMenu,
+        restricciones: dietTotal.join(', ') || 'Ninguna',
+        asistencia: selectedAsistencia
+      };
+
+      // Guardar en localStorage
+      try {
+        let stored = JSON.parse(localStorage.getItem('OFMC2026_ENCUESTA_CENA') || '[]');
+        stored.push(record);
+        localStorage.setItem('OFMC2026_ENCUESTA_CENA', JSON.stringify(stored));
+      } catch (err) {
+        console.error(err);
+      }
+
+      // Si hay webhook configurado, enviar de fondo
+      if (GOOGLE_SCRIPT_WEBHOOK_URL) {
+        try {
+          fetch(GOOGLE_SCRIPT_WEBHOOK_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(record)
+          }).catch(console.error);
+        } catch (err) {
+          console.error(err);
+        }
+      }
+
+      // Mostrar resumen en vista de éxito
+      document.getElementById('resNombre').textContent = nombre;
+      document.getElementById('resEmail').textContent = email;
+      document.getElementById('resCategoria').textContent = selectedCategoria;
+      document.getElementById('resMenu').textContent = selectedMenu + (dietTotal.length > 0 ? ` (${dietTotal.join(', ')})` : '');
+      document.getElementById('resAsistencia').textContent = selectedAsistencia;
+
+      document.getElementById('formView').style.display = 'none';
+      document.getElementById('successView').style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      updateAdminStats();
+    }
+
+    function toggleAdminPanel() {
+      const p = document.getElementById('adminPanel');
+      p.style.display = p.style.display === 'block' ? 'none' : 'block';
+      if (p.style.display === 'block') {
+        updateAdminStats();
+      }
+    }
+
+    function updateAdminStats() {
+      try {
+        const stored = JSON.parse(localStorage.getItem('OFMC2026_ENCUESTA_CENA') || '[]');
+        document.getElementById('statTotal').textContent = stored.length;
+
+        const est = stored.filter(r => r.categoria === 'Estudiante').length;
+        const inv = stored.filter(r => r.categoria === 'Investigador').length;
+        const car = stored.filter(r => r.menu && r.menu.startsWith('Tradicional')).length;
+        const veg = stored.filter(r => r.menu && r.menu.startsWith('Vegetariano')).length;
+        const si = stored.filter(r => r.asistencia && r.asistencia.startsWith('Si')).length;
+
+        document.getElementById('statEstudiantes').textContent = est;
+        document.getElementById('statInvestigadores').textContent = inv;
+        document.getElementById('statCarnivoros').textContent = car;
+        document.getElementById('statVegetarianos').textContent = veg;
+        document.getElementById('statSiAsiste').textContent = si;
+
+        const tbody = document.getElementById('adminTableBody');
+        if (stored.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="5" style="text-align: center; color: #94A3B8;">No hay respuestas registradas aún en este navegador.</td></tr>';
+        } else {
+          tbody.innerHTML = stored.map(r => `
+            <tr>
+              <td>${r.fecha_registro}</td>
+              <td><strong>${r.nombre}</strong><br><span style="color:#64748B;">${r.email}</span></td>
+              <td>${r.categoria}</td>
+              <td>${r.menu}</td>
+              <td>${r.asistencia}</td>
+            </tr>
+          `).join('');
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    function exportToCSV() {
+      try {
+        const stored = JSON.parse(localStorage.getItem('OFMC2026_ENCUESTA_CENA') || '[]');
+        if (stored.length === 0) {
+          alert('No hay respuestas registradas para exportar.');
+          return;
+        }
+
+        let csv = 'Fecha,Nombre,Email,Categoria,Menu,Restricciones,Asistencia\n';
+        stored.forEach(r => {
+          csv += `"${r.fecha_registro}","${r.nombre}","${r.email}","${r.categoria}","${r.menu}","${r.restricciones}","${r.asistencia}"\n`;
+        });
+
+        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `Encuesta_Cena_OFMC2026_${new Date().toISOString().slice(0,10)}.csv`;
+        a.click();
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    // Cargar estadísticas iniciales si hay
+    updateAdminStats();
+  </script>
+
+</body>
+</html>
