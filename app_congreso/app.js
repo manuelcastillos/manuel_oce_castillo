@@ -912,7 +912,7 @@
     } else if (track === 'posters') {
       combined = combined.filter(item => item.tipo === 'PósterSummary' || (item.sala && item.sala.includes('Pisos 2 y 3') && item.titulo && item.titulo.includes('Póster')));
     } else if (track === 'events') {
-      combined = combined.filter(item => item.tipo === 'Evento' || item.tipo === 'Magistral' || item.tipo === 'Pausa');
+      combined = combined.filter(item => item.tipo === 'Evento' || item.tipo === 'Magistral' || item.tipo === 'Pausa' || item.tipo === 'Ceremonia');
     }
 
     combined.sort((a, b) => timeStringToMinutes(a.start_time) - timeStringToMinutes(b.start_time));
