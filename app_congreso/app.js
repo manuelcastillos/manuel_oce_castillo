@@ -980,6 +980,7 @@
           <div class="talk-card-bottom">
             <span class="talk-session-label">${item.sesion || item.descripcion || ''}</span>
             ${(item.categoria === 'Almuerzo' || item.es_almuerzo) ? `<span style="color: var(--gold-accent); font-weight: 700; font-size: 0.76rem;"><i class="fa-solid fa-utensils"></i> Guía Gastronómica Plaza O'Higgins <i class="fa-solid fa-chevron-right"></i></span>` : ''}
+            ${(item.id === 'EV-17B' || item.enlace_encuesta) ? `<a href="encuesta_cena.html" onclick="event.stopPropagation();" style="display: inline-flex; align-items: center; gap: 6px; background: #F59E0B; color: #0F172A; font-weight: 700; font-size: 0.76rem; padding: 4px 10px; border-radius: 20px; text-decoration: none;"><i class="fa-solid fa-utensils"></i> Responder Encuesta Cena <i class="fa-solid fa-arrow-right"></i></a>` : ''}
             ${isPostSum ? `<span style="color: var(--purple-poster); font-weight: 700; font-size: 0.75rem;">Ver lista de pósters <i class="fa-solid fa-chevron-right"></i></span>` : ''}
           </div>
         </div>
@@ -1392,6 +1393,20 @@
           ${item.descripcion ? `<div style="font-size: 0.82rem; margin-top: 4px;">${item.descripcion}</div>` : ''}
         </div>
       </div>
+
+      ${(item.id === 'EV-17B' || item.enlace_encuesta) ? `
+        <div class="detail-section-block" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.18) 0%, rgba(217, 119, 6, 0.12) 100%); border: 1.5px solid #F59E0B; border-radius: 10px; padding: 14px; margin: 12px 0;">
+          <div style="font-weight: 800; color: #FBBF24; font-size: 0.95rem; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-utensils"></i> Confirmación de Asistencia y Menú Oficial
+          </div>
+          <p style="font-size: 0.82rem; color: #E2E8F0; line-height: 1.4; margin-bottom: 12px;">
+            Para coordinar la capacidad en el <strong>Hotel Best Western Marina del Rey</strong> y asignar el mayor subsidio posible a estudiantes, por favor completa la encuesta oficial.
+          </p>
+          <a href="encuesta_cena.html" class="btn-primary-action" style="text-decoration: none; display: flex; justify-content: center; align-items: center; gap: 8px; background: #F59E0B; color: #0F172A; font-weight: 800; font-size: 0.9rem; padding: 12px 16px; border-radius: 8px; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35);">
+            <i class="fa-solid fa-clipboard-check"></i> <span>Completar Encuesta de la Cena (Jueves 26)</span>
+          </a>
+        </div>
+      ` : ''}
 
       ${modHtml}
 

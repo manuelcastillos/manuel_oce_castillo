@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ofmc2026-v18';
+const CACHE_NAME = 'ofmc2026-v19';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

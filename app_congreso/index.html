@@ -47,6 +47,9 @@
       <a href="estadisticas.html" class="icon-btn" aria-label="Estadísticas Oficiales" title="Dashboard de Estadísticas y Métricas">
         <i class="fa-solid fa-chart-column"></i>
       </a>
+      <a href="encuesta_cena.html" class="icon-btn" aria-label="Encuesta Cena Oficial" title="Encuesta Cena de Camaradería (Jueves 26)" style="background: rgba(245, 158, 11, 0.18); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.4);">
+        <i class="fa-solid fa-utensils"></i>
+      </a>
       <button id="btnOpenAvisos" class="icon-btn badge-icon-btn" aria-label="Avisos Oficiales y Cambios" title="Avisos de la Organización">
         <i class="fa-solid fa-bell"></i>
         <span id="unreadAvisosBadge" class="header-badge-count" style="display: none;">0</span>
@@ -284,6 +287,22 @@
         <i class="fa-solid fa-heart text-rose"></i>
         <span>Toca el <strong>corazón</strong> en cualquier charla o actividad para programar su <strong>alarma interna (vibrará 10 min antes)</strong>.</span>
       </div>
+
+      <!-- Banner Encuesta Cena Oficial Jueves 26 -->
+      <a href="encuesta_cena.html" style="text-decoration: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; background: linear-gradient(135deg, rgba(245, 158, 11, 0.16) 0%, rgba(217, 119, 6, 0.10) 100%); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 12px; padding: 12px 16px; margin: 0 16px 14px 16px; box-shadow: 0 3px 10px rgba(0,0,0,0.15);">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(245, 158, 11, 0.25); display: flex; align-items: center; justify-content: center; color: #FBBF24; font-size: 1.15rem; flex-shrink: 0; border: 1px solid rgba(245, 158, 11, 0.4);">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <div>
+            <div style="font-weight: 700; font-size: 0.92rem; color: #FDE68A;">Cena Oficial de Camaradería · Jueves 26</div>
+            <div style="font-size: 0.78rem; color: #E2E8F0;">Hotel Marina del Rey (20:30 h) · Confirma tu asistencia y menú</div>
+          </div>
+        </div>
+        <div style="background: #F59E0B; color: #0F172A; padding: 6px 13px; border-radius: 20px; font-weight: 700; font-size: 0.78rem; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0; box-shadow: 0 2px 6px rgba(245, 158, 11, 0.3);">
+          <span>Encuesta</span> <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </a>
 
       <div class="timeline-container" id="programTimelineList">
         <!-- Program cards injected by JS -->
@@ -578,6 +597,31 @@
                 <p>Pasillos y halls conectores entre Salas 2.5 y 3.1: Coffee Breaks oficiales (20 min) y Exposición de Paneles Póster (P-001 a P-101).</p>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- Cena Oficial de Camaradería Card -->
+        <div class="info-card" id="cenaOficialCard" style="border: 1px solid rgba(245, 158, 11, 0.4); background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(15, 23, 42, 0.6) 100%);">
+          <div class="info-card-header">
+            <i class="fa-solid fa-champagne-glasses" style="color: #FBBF24;"></i>
+            <h3 style="color: #FDE68A;">Cena Oficial de Camaradería · Jueves 26 Nov (20:30 hrs)</h3>
+          </div>
+          <p class="view-intro" style="margin-bottom: 12px; font-size: 0.82rem; line-height: 1.45; color: #CBD5E1;">
+            Encuentro oficial de camaradería en los salones del <strong>Hotel Best Western Marina del Rey</strong> (Viña del Mar). Un espacio de conversación distendida y gastronomía para toda la comunidad científica. Costo real $36.000 (con <strong>subvención directa del Congreso, con mayor % para estudiantes</strong>).
+          </p>
+          <div style="background: rgba(0,0,0,0.25); border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 0.8rem; color: #E2E8F0;">
+            <div><i class="fa-solid fa-location-dot" style="color: #38BDF8;"></i> <strong>Dirección:</strong> Calle Ecuador #299, Viña del Mar (entre Álvarez/Viana y Valparaíso, a 150m de Estación Miramar).</div>
+            <div style="margin-top: 4px;"><i class="fa-solid fa-clock" style="color: #FBBF24;"></i> <strong>Horario:</strong> Jueves 26 de Noviembre · 20:30 hrs.</div>
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <a href="encuesta_cena.html" class="gps-btn" style="flex: 1; min-width: 180px; justify-content: center; text-decoration: none; padding: 10px 14px; font-weight: 700; background: #F59E0B; color: #0F172A;">
+              <i class="fa-solid fa-utensils"></i>
+              <span>Responder Encuesta de Asistencia y Menú</span>
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Best+Western+Marina+del+Rey+Ecuador+299+Vina+del+Mar" target="_blank" rel="noopener" class="gps-btn gps-btn-gmaps" style="text-decoration: none; padding: 10px 14px; font-weight: 600;">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <span>Ver en Maps</span>
+            </a>
           </div>
         </div>
 

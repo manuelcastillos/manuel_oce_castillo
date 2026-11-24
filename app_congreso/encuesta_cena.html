@@ -830,6 +830,9 @@
           </div>
         </div>
 
+        <!-- Contenedor para Aviso Anti-Duplicados si ya respondió -->
+        <div id="alertContainer"></div>
+
         <!-- Formulario -->
         <form id="cenaForm" onsubmit="handleFormSubmit(event)">
           
@@ -845,8 +848,11 @@
             <label class="section-heading" for="emailInput">
               <i class="fa-regular fa-envelope" style="color: #0284C7;"></i> 2. Correo Electrónico:
             </label>
-            <div class="section-helper">Para enviarte el comprobante de preinscripción y el valor final subvencionado.</div>
+            <div class="section-helper">Para asociar tu respuesta y enviarte el comprobante de preinscripción.</div>
             <input type="email" id="emailInput" class="input-field" placeholder="tucorreo@institucion.cl" required>
+            <div id="emailVerifiedBadge" style="display: none; font-size: 0.78rem; color: #16A34A; margin-top: 5px; font-weight: 600;">
+              <i class="fa-solid fa-circle-check"></i> Correo verificado desde tu invitación oficial (bloqueado para evitar duplicados)
+            </div>
           </div>
 
           <!-- 2. Categoría (Estudiante vs Investigador) en Tarjetas Claras Diferenciadas -->
@@ -1179,8 +1185,12 @@
       // Guardar en almacenamiento local del dispositivo
       try {
         let stored = JSON.parse(localStorage.getItem('OFMC2026_ENCUESTA_CENA') || '[]');
+        // Evitar duplicados en localStorage si ya existía ese correo
+        stored = stored.filter(r => (r.email || '').toLowerCase() !== email.toLowerCase());
         stored.push(record);
         localStorage.setItem('OFMC2026_ENCUESTA_CENA', JSON.stringify(stored));
+        localStorage.setItem('OFMC2026_MI_RESPUESTA_CENA', JSON.stringify(record));
+        localStorage.setItem('OFMC2026_CENA_' + email.toLowerCase(), JSON.stringify(record));
       } catch (err) {
         console.error(err);
       }
@@ -1296,8 +1306,88 @@
       }
     }
 
-    // Inicializar estadísticas en vivo
+    function initAntiDuplicados() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const emailParam = (urlParams.get('email') || '').trim();
+      const nombreParam = (urlParams.get('nombre') || '').trim();
+
+      if (emailParam) {
+        const emailInput = document.getElementById('emailInput');
+        emailInput.value = emailParam;
+        emailInput.readOnly = true;
+        emailInput.style.backgroundColor = '#F8FAFC';
+        emailInput.style.borderColor = '#94A3B8';
+        emailInput.style.cursor = 'not-allowed';
+        const badge = document.getElementById('emailVerifiedBadge');
+        if (badge) badge.style.display = 'block';
+      }
+
+      if (nombreParam) {
+        const nombreInput = document.getElementById('nombreInput');
+        if (!nombreInput.value) {
+          nombreInput.value = nombreParam;
+        }
+      }
+
+      // Verificar si este usuario o navegador ya respondió
+      const submissionKey = emailParam ? `OFMC2026_CENA_${emailParam.toLowerCase()}` : 'OFMC2026_MI_RESPUESTA_CENA';
+      const prevSaved = localStorage.getItem(submissionKey) || localStorage.getItem('OFMC2026_MI_RESPUESTA_CENA');
+
+      if (prevSaved) {
+        try {
+          const prev = JSON.parse(prevSaved);
+          if (!emailParam || (prev.email && prev.email.toLowerCase() === emailParam.toLowerCase())) {
+            mostrarAvisoYaRespondio(prev);
+          }
+        } catch (e) {
+          console.error(e);
+        }
+      }
+    }
+
+    function mostrarAvisoYaRespondio(prev) {
+      const alertContainer = document.getElementById('alertContainer');
+      if (!alertContainer) return;
+
+      alertContainer.innerHTML = `
+        <div style="background: #EFF6FF; border: 1.5px solid #3B82F6; border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.08);">
+          <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <i class="fa-solid fa-circle-check" style="color: #2563EB; font-size: 1.4rem; margin-top: 2px;"></i>
+            <div style="flex: 1;">
+              <strong style="color: #1E40AF; font-size: 0.95rem;">Ya registraste tu respuesta previamente</strong>
+              <div style="font-size: 0.84rem; color: #1E3A8A; margin: 4px 0 8px 0; line-height: 1.4;">
+                Registrado el <strong>${prev.fecha_registro}</strong><br>
+                Opción: <strong>${prev.categoria}</strong> · Menú: <strong>${prev.menu}</strong> · Asistencia: <strong>${prev.asistencia}</strong>
+              </div>
+              <div style="font-size: 0.78rem; color: #475569; line-height: 1.35;">
+                <i class="fa-solid fa-info-circle"></i> Si necesitas cambiar tu elección, puedes modificar los campos abajo y volver a enviar. Tu registro anterior se actualizará sin duplicarse en la base de datos.
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+
+      // Pre-cargar valores previos
+      if (prev.categoria) selectCategoria(prev.categoria);
+      if (prev.menu) selectMenu(prev.menu);
+      if (prev.asistencia) selectAsistencia(prev.asistencia);
+      if (prev.observaciones && prev.observaciones !== 'Sin observaciones') {
+        document.getElementById('obsInput').value = prev.observaciones;
+      }
+      if (prev.nombre && !document.getElementById('nombreInput').value) {
+        document.getElementById('nombreInput').value = prev.nombre;
+      }
+
+      // Cambiar texto del botón a "Actualizar mi Respuesta"
+      const submitBtn = document.getElementById('submitBtn');
+      if (submitBtn) {
+        submitBtn.innerHTML = '<i class="fa-solid fa-pen-to-square"></i> Actualizar mi Respuesta';
+      }
+    }
+
+    // Inicializar estadísticas en vivo y anti-duplicados
     updateLiveStats();
+    initAntiDuplicados();
   </script>
 
 </body>
