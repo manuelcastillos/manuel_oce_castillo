@@ -1317,9 +1317,9 @@
           investigadores: stored.filter(r => r.categoria === 'Investigador').length,
           tradicional: stored.filter(r => r.menu === 'Menú Tradicional').length,
           vegetariano: stored.filter(r => r.menu === 'Menú Vegetariano').length,
-          si_asiste: stored.filter(r => r.asistencia && r.asistencia.startsWith('Si')).length,
-          probable: stored.filter(r => r.asistencia && r.asistencia.startsWith('Probable')).length,
-          no_asiste: stored.filter(r => r.asistencia && r.asistencia.startsWith('No')).length
+          si_asiste: stored.filter(r => r.asistencia && (r.asistencia.toLowerCase().startsWith('si') || r.asistencia.toLowerCase().startsWith('sí')) && !r.asistencia.toLowerCase().startsWith('no')).length,
+          probable: stored.filter(r => r.asistencia && r.asistencia.toLowerCase().includes('probable')).length,
+          no_asiste: stored.filter(r => r.asistencia && r.asistencia.toLowerCase().startsWith('no')).length
         };
         renderStatsUI(stats);
       } catch (err) {
