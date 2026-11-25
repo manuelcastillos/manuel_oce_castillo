@@ -1000,25 +1000,40 @@
 
       // Cargar estadísticas en vivo de la Cena de Camaradería
       const CENA_API = 'https://script.google.com/macros/s/AKfycbwfqzhlj2XZ2Beta8S8iKDVV8SimRIhIHIVcSmlpqA5eJM0wvNNQFgCjvdBMGzEcvu37g/exec';
-      fetch(CENA_API + '?t=' + Date.now())
-        .then(r => r.json())
-        .then(data => {
-          if (data && typeof data.total === 'number') {
-            const elTot = document.getElementById('cenaStatTotal');
-            const elSi = document.getElementById('cenaStatSi');
-            const elMay = document.getElementById('cenaStatMaybe');
-            const elNo = document.getElementById('cenaStatNo');
-            const elTra = document.getElementById('cenaStatTrad');
-            const elVeg = document.getElementById('cenaStatVeg');
-            if (elTot) elTot.textContent = data.total;
-            if (elSi) elSi.textContent = data.si_asiste;
-            if (elMay) elMay.textContent = data.probable;
-            if (elNo) elNo.textContent = data.no_asiste;
-            if (elTra) elTra.textContent = data.tradicional;
-            if (elVeg) elVeg.textContent = data.vegetariano;
-          }
-        })
-        .catch(console.warn);
+
+      function applyCenaStats(data) {
+        if (!data || typeof data.total !== 'number') return;
+        const elTot = document.getElementById('cenaStatTotal');
+        const elSi = document.getElementById('cenaStatSi');
+        const elMay = document.getElementById('cenaStatMaybe');
+        const elNo = document.getElementById('cenaStatNo');
+        const elTra = document.getElementById('cenaStatTrad');
+        const elVeg = document.getElementById('cenaStatVeg');
+        if (elTot) elTot.textContent = data.total;
+        if (elSi) elSi.textContent = data.si_asiste;
+        if (elMay) elMay.textContent = data.probable;
+        if (elNo) elNo.textContent = data.no_asiste;
+        if (elTra) elTra.textContent = data.tradicional;
+        if (elVeg) elVeg.textContent = data.vegetariano;
+      }
+
+      window.handleCenaStatsJsonp = function(data) {
+        applyCenaStats(data);
+      };
+
+      function refreshCenaStats() {
+        fetch(CENA_API + '?t=' + Date.now())
+          .then(r => r.json())
+          .then(data => applyCenaStats(data))
+          .catch(() => {
+            const s = document.createElement('script');
+            s.src = CENA_API + '?callback=handleCenaStatsJsonp&t=' + Date.now();
+            document.body.appendChild(s);
+          });
+      }
+
+      refreshCenaStats();
+      setInterval(refreshCenaStats, 15000);
 
     })();
   </script>

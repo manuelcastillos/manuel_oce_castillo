@@ -1928,6 +1928,28 @@
     playAlertChime: triggerHapticAlert
   };
 
+  // Sincronización en tiempo real de estadísticas de la Cena para la app
+  function fetchCenaLiveStats() {
+    const CENA_API = 'https://script.google.com/macros/s/AKfycbwfqzhlj2XZ2Beta8S8iKDVV8SimRIhIHIVcSmlpqA5eJM0wvNNQFgCjvdBMGzEcvu37g/exec';
+
+    window.handleAppCenaStats = function(data) {
+      if (!data || typeof data.total !== 'number') return;
+      const elNumbers = document.getElementById('bannerCenaLiveNumbers');
+      if (elNumbers) {
+        elNumbers.innerHTML = `¡Ya somos <strong style="color: #4ADE80;">${data.si_asiste} confirmados</strong> y <strong style="color: #38BDF8;">${data.probable} probables</strong>!`;
+      }
+      const elSub = document.getElementById('bannerCenaLiveSub');
+      if (elSub && data.total > 0) {
+        const estPct = Math.round((data.estudiantes / data.total) * 100);
+        elSub.innerHTML = `Cena Oficial Jueves 26 · Hotel Marina del Rey · ${data.estudiantes} Estudiantes (${estPct}%) · ¡Súmate aquí!`;
+      }
+    };
+
+    const s = document.createElement('script');
+    s.src = `${CENA_API}?action=stats&callback=handleAppCenaStats&_t=${Date.now()}`;
+    document.body.appendChild(s);
+  }
+
   // =========================================================================
   // 18. INITIALIZE ON DOM READY
   // =========================================================================
@@ -1950,6 +1972,8 @@
 
     initPWA();
     fetchAvisosAndUpdates();
+    fetchCenaLiveStats();
+    setInterval(fetchCenaLiveStats, 20000); // Refresco automático en segundo plano
     console.log('OFMC 2026 Mobile App inicializada formalmente (Producción pre-congreso / tiempo real).');
   });
 

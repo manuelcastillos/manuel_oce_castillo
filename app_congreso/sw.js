@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ofmc2026-v19';
+const CACHE_NAME = 'ofmc2026-v20';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -6,6 +6,7 @@ const ASSETS_TO_CACHE = [
   './app.js',
   './data.js',
   './encuesta_cena.html',
+  './estadisticas.html',
   './avisos.json',
   './manifest.json',
   './assets/qr_wifi_visitas_uv.png',
@@ -54,8 +55,8 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
   
-  // Network-First para avisos.json y data.js (para reflejar cambios en tiempo real)
-  if (url.pathname.endsWith('avisos.json') || url.pathname.endsWith('data.js')) {
+  // Network-First para avisos, datos, estadisticas, encuesta e index (para reflejar cambios en tiempo real)
+  if (url.pathname.endsWith('avisos.json') || url.pathname.endsWith('data.js') || url.pathname.endsWith('estadisticas.html') || url.pathname.endsWith('encuesta_cena.html') || url.pathname.endsWith('index.html') || url.pathname.endsWith('/app_congreso/') || url.pathname.endsWith('/app_congreso')) {
     event.respondWith(
       fetch(event.request).then((networkResponse) => {
         if (networkResponse && networkResponse.status === 200) {
