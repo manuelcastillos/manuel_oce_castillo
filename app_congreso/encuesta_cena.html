@@ -1023,10 +1023,13 @@
     <div class="stats-card">
       <div class="stats-header">
         <div class="stats-title">
-          <i class="fa-solid fa-chart-column" style="color: #0284C7;"></i> Estadísticas en Tiempo Real
+          <i class="fa-solid fa-chart-column" style="color: #0284C7;"></i> Estadísticas Globales del Congreso
         </div>
-        <div class="live-pulse-badge">
-          <span class="pulse-dot"></span> EN VIVO
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span id="syncIndicator" style="font-size: 0.72rem; color: #16A34A; font-weight: 600;"><i class="fa-solid fa-cloud-arrow-down"></i> En vivo</span>
+          <div class="live-pulse-badge" onclick="updateLiveStats()" style="cursor: pointer;" title="Actualizar estadísticas en vivo">
+            <span class="pulse-dot"></span> EN VIVO
+          </div>
         </div>
       </div>
 
@@ -1228,58 +1231,154 @@
       updateLiveStats();
     }
 
-    function updateLiveStats() {
+    function renderStatsUI(stats) {
       try {
-        const stored = JSON.parse(localStorage.getItem('OFMC2026_ENCUESTA_CENA') || '[]');
-        const total = stored.length;
+        const total = stats.total || 0;
+        const est = stats.estudiantes || 0;
+        const inv = stats.investigadores || 0;
+        const car = stats.tradicional || 0;
+        const veg = stats.vegetariano || 0;
+        const si = stats.si_asiste || 0;
+        const maybe = stats.probable || 0;
+        const no = stats.no_asiste || 0;
 
-        document.getElementById('statTotal').textContent = total;
+        const elTotal = document.getElementById('statTotal');
+        if (elTotal) elTotal.textContent = total;
+        
+        const elEst = document.getElementById('statEstudiantes');
+        if (elEst) elEst.textContent = est;
 
-        const est = stored.filter(r => r.categoria === 'Estudiante').length;
-        const inv = stored.filter(r => r.categoria === 'Investigador').length;
-        const car = stored.filter(r => r.menu === 'Menú Tradicional').length;
-        const veg = stored.filter(r => r.menu === 'Menú Vegetariano').length;
-        const si = stored.filter(r => r.asistencia && r.asistencia.startsWith('Si')).length;
-        const maybe = stored.filter(r => r.asistencia && r.asistencia.startsWith('Probable')).length;
-        const no = stored.filter(r => r.asistencia && r.asistencia.startsWith('No')).length;
+        const elInv = document.getElementById('statInvestigadores');
+        if (elInv) elInv.textContent = inv;
 
-        document.getElementById('statEstudiantes').textContent = est;
-        document.getElementById('statInvestigadores').textContent = inv;
-        document.getElementById('statCarnivoros').textContent = car;
-        document.getElementById('statVegetarianos').textContent = veg;
-        document.getElementById('statSiAsiste').textContent = si;
-        document.getElementById('statProbable').textContent = maybe;
-        document.getElementById('statNoAsiste').textContent = no;
+        const elCar = document.getElementById('statCarnivoros');
+        if (elCar) elCar.textContent = car;
+
+        const elVeg = document.getElementById('statVegetarianos');
+        if (elVeg) elVeg.textContent = veg;
+
+        const elSi = document.getElementById('statSiAsiste');
+        if (elSi) elSi.textContent = si;
+
+        const elMaybe = document.getElementById('statProbable');
+        if (elMaybe) elMaybe.textContent = maybe;
+
+        const elNo = document.getElementById('statNoAsiste');
+        if (elNo) elNo.textContent = no;
 
         // Barras proporcionales
         if (total > 0) {
           const estPct = Math.round((est / total) * 100);
           const invPct = 100 - estPct;
-          document.getElementById('barEstudiantes').style.width = estPct + '%';
-          document.getElementById('barInvestigadores').style.width = invPct + '%';
-          document.getElementById('compCatPct').textContent = `${estPct}% Estudiantes / ${invPct}% Investigadores`;
+          const bEst = document.getElementById('barEstudiantes');
+          const bInv = document.getElementById('barInvestigadores');
+          const compCat = document.getElementById('compCatPct');
+          if (bEst) bEst.style.width = estPct + '%';
+          if (bInv) bInv.style.width = invPct + '%';
+          if (compCat) compCat.textContent = `${estPct}% Estudiantes / ${invPct}% Investigadores`;
 
           const menuTotal = car + veg;
           if (menuTotal > 0) {
             const carPct = Math.round((car / menuTotal) * 100);
             const vegPct = 100 - carPct;
-            document.getElementById('barCarnivoros').style.width = carPct + '%';
-            document.getElementById('barVegetarianos').style.width = vegPct + '%';
-            document.getElementById('compMenuPct').textContent = `${carPct}% Tradicional / ${vegPct}% Vegetariano`;
+            const bCar = document.getElementById('barCarnivoros');
+            const bVeg = document.getElementById('barVegetarianos');
+            const compMenu = document.getElementById('compMenuPct');
+            if (bCar) bCar.style.width = carPct + '%';
+            if (bVeg) bVeg.style.width = vegPct + '%';
+            if (compMenu) compMenu.textContent = `${carPct}% Tradicional / ${vegPct}% Vegetariano`;
           }
         } else {
-          document.getElementById('barEstudiantes').style.width = '50%';
-          document.getElementById('barInvestigadores').style.width = '50%';
-          document.getElementById('compCatPct').textContent = 'Esperando respuestas...';
+          const bEst = document.getElementById('barEstudiantes');
+          const bInv = document.getElementById('barInvestigadores');
+          const compCat = document.getElementById('compCatPct');
+          if (bEst) bEst.style.width = '50%';
+          if (bInv) bInv.style.width = '50%';
+          if (compCat) compCat.textContent = 'Esperando respuestas...';
 
-          document.getElementById('barCarnivoros').style.width = '50%';
-          document.getElementById('barVegetarianos').style.width = '50%';
-          document.getElementById('compMenuPct').textContent = 'Esperando respuestas...';
+          const bCar = document.getElementById('barCarnivoros');
+          const bVeg = document.getElementById('barVegetarianos');
+          const compMenu = document.getElementById('compMenuPct');
+          if (bCar) bCar.style.width = '50%';
+          if (bVeg) bVeg.style.width = '50%';
+          if (compMenu) compMenu.textContent = 'Esperando respuestas...';
         }
+      } catch (err) {
+        console.error('Error renderizando estadísticas:', err);
+      }
+    }
+
+    function renderStatsFromLocal() {
+      try {
+        const stored = JSON.parse(localStorage.getItem('OFMC2026_ENCUESTA_CENA') || '[]');
+        const stats = {
+          total: stored.length,
+          estudiantes: stored.filter(r => r.categoria === 'Estudiante').length,
+          investigadores: stored.filter(r => r.categoria === 'Investigador').length,
+          tradicional: stored.filter(r => r.menu === 'Menú Tradicional').length,
+          vegetariano: stored.filter(r => r.menu === 'Menú Vegetariano').length,
+          si_asiste: stored.filter(r => r.asistencia && r.asistencia.startsWith('Si')).length,
+          probable: stored.filter(r => r.asistencia && r.asistencia.startsWith('Probable')).length,
+          no_asiste: stored.filter(r => r.asistencia && r.asistencia.startsWith('No')).length
+        };
+        renderStatsUI(stats);
       } catch (err) {
         console.error(err);
       }
     }
+
+    // Callback global para JSONP
+    window.handleStatsJsonp = function(data) {
+      if (data && typeof data.total === 'number') {
+        renderStatsUI(data);
+        const syncEl = document.getElementById('syncIndicator');
+        if (syncEl) syncEl.innerHTML = '<i class="fa-solid fa-cloud-arrow-down"></i> Sincronizado en vivo';
+      }
+    };
+
+    function fetchStatsJSONP() {
+      if (!GOOGLE_SCRIPT_WEBHOOK_URL) return;
+      const scriptId = 'script_jsonp_stats';
+      const old = document.getElementById(scriptId);
+      if (old) old.remove();
+
+      const script = document.createElement('script');
+      script.id = scriptId;
+      script.src = GOOGLE_SCRIPT_WEBHOOK_URL + '?action=stats&callback=handleStatsJsonp&t=' + Date.now();
+      script.onerror = function() {
+        console.warn('JSONP no disponible aún, usando local.');
+        renderStatsFromLocal();
+      };
+      document.body.appendChild(script);
+    }
+
+    async function updateLiveStats() {
+      const syncEl = document.getElementById('syncIndicator');
+      if (syncEl) syncEl.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Actualizando...';
+
+      if (GOOGLE_SCRIPT_WEBHOOK_URL) {
+        try {
+          const fetchUrl = GOOGLE_SCRIPT_WEBHOOK_URL + '?action=stats&t=' + Date.now();
+          const res = await fetch(fetchUrl);
+          if (res.ok) {
+            const data = await res.json();
+            if (data && typeof data.total === 'number') {
+              renderStatsUI(data);
+              if (syncEl) syncEl.innerHTML = '<i class="fa-solid fa-cloud-arrow-down"></i> En vivo';
+              return;
+            }
+          }
+        } catch (err) {
+          // Si fetch directo encuentra redirección CORS, usar JSONP
+          fetchStatsJSONP();
+          return;
+        }
+      }
+      renderStatsFromLocal();
+    }
+
+    // Auto-actualizar estadísticas cada 15 segundos en vivo
+    setInterval(updateLiveStats, 15000);
 
     function exportToCSV() {
       try {
