@@ -3,15 +3,15 @@
   "ultima_actualizacion": "2026-11-19T16:28:37.311062",
   "avisos": [
     {
-      "id": "aviso-encuesta-cena-marina-del-rey-v2",
-      "fecha": "25 Nov 2026 - 07:30 hrs",
-      "titulo": "🍽️ Cena Oficial de Camaradería: ¡Ya somos 49 confirmados!",
-      "cuerpo": "Estimadas y estimados congresistas: Ya contamos con 49 asistentes confirmados y 12 por confirmar (68 respuestas recibidas, 66% estudiantes). Si aún no has respondido, te invitamos a confirmar tu asistencia y elegir menú (Tradicional o Vegetariano) para el Jueves 26 a las 20:30 hrs en el Hotel Marina del Rey con la subvención del Congreso.",
-      "mensaje": "¡Ya somos 49 confirmados en la Cena Oficial del Jueves! Haz clic para ver las estadísticas en vivo y confirmar tu asistencia.",
+      "id": "aviso-encuesta-cena-marina-del-rey-v3",
+      "fecha": "25 Nov 2026 - 19:45 hrs",
+      "titulo": "🍽️ Cena Oficial: Inscripciones en Pausa Temporal (81 Confirmados)",
+      "cuerpo": "Estimadas y estimados congresistas: Agradecemos la gran respuesta con 107 registros recibidos (81 asistentes confirmados y 16 probables). Para coordinar el aforo final y la dotación culinaria con el Hotel Best Western Marina del Rey, la recepción de nuevas inscripciones ha sido puesta en pausa temporal. Puedes revisar los resultados y estadísticas consolidadas en el enlace.",
+      "mensaje": "Inscripciones a la Cena Oficial en pausa temporal (81 confirmados). Haz clic para revisar las estadísticas y opciones de menú.",
       "enlace": "./encuesta_cena.html",
       "tipo": "importante",
       "fijado": true,
-      "urgente": true
+      "urgente": false
     },
     {
       "id": "aviso-cambio-sala-31-1795116517",

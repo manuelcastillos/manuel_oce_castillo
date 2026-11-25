@@ -830,11 +830,26 @@
           </div>
         </div>
 
+        <!-- Banner de Encuesta en Pausa Temporal -->
+        <div id="pauseNotice" style="background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%); border: 2px solid #3B82F6; border-radius: var(--radius-md); padding: 22px 20px; margin-bottom: 24px; text-align: center; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);">
+          <div style="font-size: 2.2rem; margin-bottom: 6px;">⏸️</div>
+          <h2 style="color: #1E40AF; font-size: 1.25rem; font-weight: 800; margin-bottom: 6px;">Inscripciones en Pausa Temporal</h2>
+          <p style="font-size: 0.92rem; color: #1E3A8A; line-height: 1.5; max-width: 560px; margin: 0 auto 12px auto;">
+            El Comité Organizador ha pausado temporalmente la recepción de nuevas respuestas para <strong>consolidar el aforo definitivo y coordinar la dotación gastronómica con la administración del Hotel Best Western Marina del Rey</strong>.
+          </p>
+          <div style="display: inline-flex; align-items: center; gap: 8px; background: #FFFFFF; border: 1px solid #BFDBFE; color: #1D4ED8; padding: 7px 16px; border-radius: 30px; font-size: 0.84rem; font-weight: 700; box-shadow: 0 2px 5px rgba(0,0,0,0.04);">
+            <i class="fa-solid fa-users-check"></i> 81 Asistentes Confirmados (107 Respuestas Registradas)
+          </div>
+          <div style="font-size: 0.82rem; color: #475569; margin-top: 14px;">
+            A continuación se presenta el <strong>consolidado de estadísticas en tiempo real</strong> acumulado:
+          </div>
+        </div>
+
         <!-- Contenedor para Aviso Anti-Duplicados si ya respondió -->
         <div id="alertContainer"></div>
 
-        <!-- Formulario -->
-        <form id="cenaForm" onsubmit="handleFormSubmit(event)">
+        <!-- Formulario (Oculto mientras esté en pausa) -->
+        <form id="cenaForm" onsubmit="handleFormSubmit(event)" style="display: none;">
           
           <!-- 1. Datos Personales -->
           <div class="form-section">
@@ -1118,6 +1133,9 @@
   </div>
 
   <script>
+    // Control de estado de la encuesta (pausada temporalmente por consolidación)
+    const ENCUESTA_PAUSADA = true;
+
     // Variables de estado del formulario
     let selectedCategoria = '';
     let selectedMenu = '';
@@ -1127,6 +1145,7 @@
     const GOOGLE_SCRIPT_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbwfqzhlj2XZ2Beta8S8iKDVV8SimRIhIHIVcSmlpqA5eJM0wvNNQFgCjvdBMGzEcvu37g/exec'; 
 
     function selectCategoria(cat) {
+      if (ENCUESTA_PAUSADA) return;
       selectedCategoria = cat;
       document.getElementById('categoriaVal').value = cat;
       document.getElementById('cardEstudiante').classList.toggle('selected', cat === 'Estudiante');
@@ -1134,6 +1153,7 @@
     }
 
     function selectMenu(menu) {
+      if (ENCUESTA_PAUSADA) return;
       selectedMenu = menu;
       document.getElementById('menuVal').value = menu;
       document.getElementById('cardCarnivoro').classList.toggle('selected', menu === 'Menú Tradicional');
@@ -1141,6 +1161,7 @@
     }
 
     function selectAsistencia(asist) {
+      if (ENCUESTA_PAUSADA) return;
       selectedAsistencia = asist;
       document.getElementById('asistenciaVal').value = asist;
       document.getElementById('btnYes').className = 'attendance-btn' + (asist.startsWith('Si') ? ' selected-yes' : '');
@@ -1150,6 +1171,11 @@
 
     async function handleFormSubmit(e) {
       e.preventDefault();
+
+      if (ENCUESTA_PAUSADA) {
+        alert('La recepción de inscripciones se encuentra en pausa temporal por consolidación de aforo y menú con el Hotel Best Western Marina del Rey.');
+        return;
+      }
 
       if (!selectedCategoria) {
         alert('Por favor selecciona tu categoría (Estudiante o Investigador/Profesional).');
@@ -1448,6 +1474,10 @@
       const alertContainer = document.getElementById('alertContainer');
       if (!alertContainer) return;
 
+      const subInfo = ENCUESTA_PAUSADA
+        ? `<i class="fa-solid fa-lock"></i> La recepción y edición de inscripciones se encuentra temporalmente en pausa mientras se consolida la lista con el Hotel Best Western Marina del Rey.`
+        : `<i class="fa-solid fa-info-circle"></i> Si necesitas cambiar tu elección, puedes modificar los campos abajo y volver a enviar. Tu registro anterior se actualizará sin duplicarse en la base de datos.`;
+
       alertContainer.innerHTML = `
         <div style="background: #EFF6FF; border: 1.5px solid #3B82F6; border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.08);">
           <div style="display: flex; align-items: flex-start; gap: 12px;">
@@ -1459,12 +1489,18 @@
                 Opción: <strong>${prev.categoria}</strong> · Menú: <strong>${prev.menu}</strong> · Asistencia: <strong>${prev.asistencia}</strong>
               </div>
               <div style="font-size: 0.78rem; color: #475569; line-height: 1.35;">
-                <i class="fa-solid fa-info-circle"></i> Si necesitas cambiar tu elección, puedes modificar los campos abajo y volver a enviar. Tu registro anterior se actualizará sin duplicarse en la base de datos.
+                ${subInfo}
               </div>
             </div>
           </div>
         </div>
       `;
+
+      if (ENCUESTA_PAUSADA) {
+        const formEl = document.getElementById('cenaForm');
+        if (formEl) formEl.style.display = 'none';
+        return;
+      }
 
       // Pre-cargar valores previos
       if (prev.categoria) selectCategoria(prev.categoria);

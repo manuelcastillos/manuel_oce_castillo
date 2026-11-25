@@ -1936,12 +1936,12 @@
       if (!data || typeof data.total !== 'number') return;
       const elNumbers = document.getElementById('bannerCenaLiveNumbers');
       if (elNumbers) {
-        elNumbers.innerHTML = `¡Ya somos <strong style="color: #4ADE80;">${data.si_asiste} confirmados</strong> y <strong style="color: #38BDF8;">${data.probable} probables</strong>!`;
+        elNumbers.innerHTML = `⏸️ Inscripciones en Pausa · <strong style="color: #4ADE80;">${data.si_asiste} confirmados</strong> y <strong style="color: #38BDF8;">${data.probable} probables</strong>`;
       }
       const elSub = document.getElementById('bannerCenaLiveSub');
       if (elSub && data.total > 0) {
         const estPct = Math.round((data.estudiantes / data.total) * 100);
-        elSub.innerHTML = `Cena Oficial Jueves 26 · Hotel Marina del Rey · ${data.estudiantes} Estudiantes (${estPct}%) · ¡Súmate aquí!`;
+        elSub.innerHTML = `Hotel Marina del Rey · ${data.estudiantes} Estudiantes (${estPct}%) · Consolidación de aforo`;
       }
     };
 
