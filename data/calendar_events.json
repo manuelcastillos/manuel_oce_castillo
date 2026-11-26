@@ -1,24 +1,8 @@
 [
   {
-    "summary": "Clases Ecología Playa Ancha, tema series de tiempo",
-    "start": "2025-11-25",
-    "end": "2025-11-26",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Presentacion Final del Curso Tutoriado  Mgister Oce",
     "start": "2025-11-26",
     "end": "2025-11-27",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Oceanografía Satelital",
-    "start": "2025-11-26T15:00:00-03:00",
-    "end": "2025-11-26T17:00:00-03:00",
     "location": "",
     "description": "",
     "recurring": true
