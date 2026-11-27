@@ -1,21 +1,5 @@
 [
   {
-    "summary": "Presentacion Final del Curso Tutoriado  Mgister Oce",
-    "start": "2025-11-26",
-    "end": "2025-11-27",
-    "location": "",
-    "description": "",
-    "recurring": true
-  },
-  {
-    "summary": "Reunión Team Oceanografía",
-    "start": "2025-11-27T09:00:00-03:00",
-    "end": "2025-11-27T10:00:00-03:00",
-    "location": "https://reuna.zoom.us/j/82486864086",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Reu con mi tesista favorita",
     "start": "2025-12-01T10:25:00-03:00",
     "end": "2025-12-01T11:25:00-03:00",
@@ -80,18 +64,18 @@
     "recurring": true
   },
   {
-    "summary": "Presentacion de Trabajo Final de Grado nº2  -  Claudia Rozas",
-    "start": "2025-12-18T09:00:00-03:00",
-    "end": "2025-12-18T10:30:00-03:00",
-    "location": "Reunión de Microsoft Teams",
-    "description": "",
-    "recurring": true
-  },
-  {
     "summary": "Reunión Team Oceanografía",
     "start": "2025-12-18T09:00:00-03:00",
     "end": "2025-12-18T10:00:00-03:00",
     "location": "https://reuna.zoom.us/j/87988492529",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentacion de Trabajo Final de Grado nº2  -  Claudia Rozas",
+    "start": "2025-12-18T09:00:00-03:00",
+    "end": "2025-12-18T10:30:00-03:00",
+    "location": "Reunión de Microsoft Teams",
     "description": "",
     "recurring": true
   },
@@ -472,7 +456,7 @@
     "recurring": true
   },
   {
-    "summary": "Reunión",
+    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -480,7 +464,7 @@
     "recurring": true
   },
   {
-    "summary": "Evento cancelado: Reunión mié 15 de abr de 2026 11:00 - 12:00 (CLT) (manuel.castillo@uv.cl)",
+    "summary": "Reunión",
     "start": "2026-04-15T11:00:00-04:00",
     "end": "2026-04-15T12:00:00-04:00",
     "location": "",
@@ -1300,6 +1284,14 @@
     "start": "2026-12-02T09:00:00-07:00",
     "end": "2026-12-02T11:00:00-07:00",
     "location": "https://ubc.zoom.us/j/6512211268?pwd=MSsrMGxqWFZ0RTRkNGwxcHEwK1ZSZz09",
+    "description": "",
+    "recurring": true
+  },
+  {
+    "summary": "Presentacion TFG2 Ignacio Bravo",
+    "start": "2026-12-09T10:00:00-03:00",
+    "end": "2026-12-09T11:00:00-03:00",
+    "location": "https://meet.google.com/oyi-jpbd-ooh",
     "description": "",
     "recurring": true
   },
